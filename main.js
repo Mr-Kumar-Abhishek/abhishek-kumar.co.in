@@ -162,26 +162,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const fetchArticles = async () => {
         const container = document.getElementById('articles-container');
         try {
-            const response = await fetch('https://mr-kumar-abhishek.github.io/blog/atom.xml');
+            // Using a relative path handles GitHub Pages custom domains gracefully and avoids CORS issues
+            const response = await fetch('/blog/atom.xml');
             if (!response.ok) throw new Error('Failed to fetch articles');
             
             const xmlText = await response.text();
             const parser = new DOMParser();
             const xml = parser.parseFromString(xmlText, 'application/xml');
             
-            const entries = Array.from(xml.querySelectorAll('entry')).slice(0, 6);
+            // The feed is actually an RSS 2.0 feed disguised as atom.xml
+            const items = Array.from(xml.querySelectorAll('item')).slice(0, 6);
             
             container.innerHTML = '';
             
-            if (entries.length === 0) {
+            if (items.length === 0) {
                 container.innerHTML = '<div class="glass-panel" style="padding: 2rem; text-align: center; grid-column: 1 / -1;"><p>No articles found.</p></div>';
                 return;
             }
 
-            entries.forEach(entry => {
-                const title = entry.querySelector('title').textContent;
-                const link = entry.querySelector('link[rel="alternate"]')?.getAttribute('href') || entry.querySelector('link')?.getAttribute('href');
-                let summary = entry.querySelector('summary')?.textContent || entry.querySelector('content')?.textContent || '';
+            items.forEach(item => {
+                const title = item.querySelector('title')?.textContent || 'Untitled';
+                const link = item.querySelector('link')?.textContent || '#';
+                let summary = item.querySelector('description')?.textContent || '';
                 
                 // Strip HTML tags from summary and limit length
                 const tmp = document.createElement('DIV');
@@ -189,11 +191,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 summary = tmp.textContent || tmp.innerText || '';
                 if (summary.length > 150) summary = summary.substring(0, 150) + '...';
 
-                const published = entry.querySelector('published')?.textContent || entry.querySelector('updated')?.textContent || '';
+                const published = item.querySelector('pubDate')?.textContent || '';
                 const dateString = published ? new Date(published).toLocaleDateString() : '';
 
                 // Generate a thumbnail using thum.io
-                const imageUrl = `https://image.thum.io/get/width/600/crop/600/https://mr-kumar-abhishek.github.io${link}`;
+                const imageUrl = `https://image.thum.io/get/width/600/crop/600/${link}`;
 
                 const card = document.createElement('div');
                 card.className = 'project-card glass-panel';
@@ -207,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ${dateString ? `<p style="color: var(--accent-1); font-size: 0.8rem; margin-bottom: 0.5rem;">${dateString}</p>` : ''}
                         <p class="project-desc">${summary}</p>
                         <div class="project-links">
-                            <a href="https://mr-kumar-abhishek.github.io${link}" target="_blank" rel="noopener noreferrer"><i class="fas fa-book-open"></i> Read Article</a>
+                            <a href="${link}" target="_blank" rel="noopener noreferrer"><i class="fas fa-book-open"></i> Read Article</a>
                         </div>
                     </div>
                 `;
