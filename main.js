@@ -41,13 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const fetchProjects = async () => {
         const container = document.getElementById('projects-container');
         try {
-            const response = await fetch('https://api.github.com/users/Mr-Kumar-Abhishek/repos?sort=updated&per_page=100');
+            const response = await fetch('https://api.github.com/users/Mr-Kumar-Abhishek/repos?sort=updated&per_page=100&type=all');
             if (!response.ok) throw new Error('Failed to fetch repositories');
             
             const repos = await response.json();
             
-            // Filter out forks to show only original projects you have worked on
-            const finalRepos = repos.filter(repo => !repo.fork);
+            // Include all projects including forks and collaborations
+            const finalRepos = repos;
 
             const itchProjects = [
                 {
