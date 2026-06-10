@@ -49,6 +49,27 @@ document.addEventListener('DOMContentLoaded', () => {
             // Include all projects including forks and collaborations
             const finalRepos = repos;
 
+            // Fetch collaborated repos from search API to distinguish contributed forks
+            let collaboratedRepos = new Set();
+            try {
+                const searchOpts = { headers: { 'Accept': 'application/vnd.github.cloak-preview' } };
+                const [res1, res2] = await Promise.all([
+                    fetch('https://api.github.com/search/commits?q=author-email:mr.kumar.abhishek@outlook.in&per_page=100', searchOpts),
+                    fetch('https://api.github.com/search/commits?q=author-email:mr.kumar.abhishek@email.com&per_page=100', searchOpts)
+                ]);
+                
+                if (res1.ok) {
+                    const data1 = await res1.json();
+                    if (data1.items) data1.items.forEach(i => collaboratedRepos.add(i.repository.name));
+                }
+                if (res2.ok) {
+                    const data2 = await res2.json();
+                    if (data2.items) data2.items.forEach(i => collaboratedRepos.add(i.repository.name));
+                }
+            } catch (e) {
+                console.warn('Could not fetch commit data:', e);
+            }
+
             const itchProjects = [
                 {
                     name: "Emoji Assault",
@@ -79,15 +100,24 @@ document.addEventListener('DOMContentLoaded', () => {
             
             allProjects.forEach(repo => {
                 // We use github's OpenGraph image endpoint for proper images of the project if an image isn't explicitly provided
-                const imageUrl = repo.imageUrl || `https://opengraph.githubassets.com/1/Mr-Kumar-Abhishek/${repo.name}`;
+                let imageUrl = repo.imageUrl || `https://opengraph.githubassets.com/1/Mr-Kumar-Abhishek/${repo.name}`;
                 
+                // If the project has a live website, display its screenshot instead of the repo preview!
+                if (!repo.imageUrl && repo.homepage && repo.homepage.startsWith('http')) {
+                    imageUrl = `https://image.thum.io/get/width/600/crop/600/${repo.homepage}`;
+                }
+
                 let badgeHTML = '';
                 if (repo.isItch) {
                     badgeHTML = '<span class="project-badge itch-badge">Game</span>';
                 } else if (repo.owner && repo.owner.login !== 'Mr-Kumar-Abhishek') {
                     badgeHTML = '<span class="project-badge collab-badge">Collaborator</span>';
                 } else if (repo.fork) {
-                    badgeHTML = '<span class="project-badge fork-badge">Fork</span>';
+                    if (collaboratedRepos.has(repo.name)) {
+                        badgeHTML = '<span class="project-badge collab-badge">Contributed Fork</span>';
+                    } else {
+                        badgeHTML = '<span class="project-badge fork-badge">Fork</span>';
+                    }
                 } else {
                     badgeHTML = '<span class="project-badge creator-badge">Creator</span>';
                 }
