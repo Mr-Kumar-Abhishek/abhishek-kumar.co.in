@@ -169,8 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const fetchArticles = async () => {
         const container = document.getElementById('articles-container');
         try {
-            // Using a relative path handles GitHub Pages custom domains gracefully and avoids CORS issues
-            const response = await fetch('/blog/atom.xml');
+            // Must use the absolute URL because the main portfolio is on Netlify and the blog is on GitHub Pages
+            const response = await fetch('https://mr-kumar-abhishek.github.io/blog/atom.xml');
             if (!response.ok) throw new Error('Failed to fetch articles');
             
             const xmlText = await response.text();
