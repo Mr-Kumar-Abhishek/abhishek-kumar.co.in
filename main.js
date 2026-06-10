@@ -71,6 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Filter out forks that you haven't committed to
             const finalRepos = repos.filter(repo => {
+                // Explicitly include known contributed forks that the commit search API might miss due to pagination/emails
+                const knownContributedForks = ['puppylinux-woof-CE.github.io'];
+                if (knownContributedForks.includes(repo.name)) {
+                    collaboratedRepos.add(repo.name);
+                    return true;
+                }
+
                 // Keep if it's not a fork, or if it is a fork and you committed to it
                 return !repo.fork || collaboratedRepos.has(repo.name);
             });
