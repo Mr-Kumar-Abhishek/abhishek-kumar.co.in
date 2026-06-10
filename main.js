@@ -158,6 +158,74 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetchProjects();
 
+    // Fetch Blog Articles
+    const fetchArticles = async () => {
+        const container = document.getElementById('articles-container');
+        try {
+            const response = await fetch('https://mr-kumar-abhishek.github.io/blog/atom.xml');
+            if (!response.ok) throw new Error('Failed to fetch articles');
+            
+            const xmlText = await response.text();
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(xmlText, 'application/xml');
+            
+            const entries = Array.from(xml.querySelectorAll('entry')).slice(0, 6);
+            
+            container.innerHTML = '';
+            
+            if (entries.length === 0) {
+                container.innerHTML = '<div class="glass-panel" style="padding: 2rem; text-align: center; grid-column: 1 / -1;"><p>No articles found.</p></div>';
+                return;
+            }
+
+            entries.forEach(entry => {
+                const title = entry.querySelector('title').textContent;
+                const link = entry.querySelector('link[rel="alternate"]')?.getAttribute('href') || entry.querySelector('link')?.getAttribute('href');
+                let summary = entry.querySelector('summary')?.textContent || entry.querySelector('content')?.textContent || '';
+                
+                // Strip HTML tags from summary and limit length
+                const tmp = document.createElement('DIV');
+                tmp.innerHTML = summary;
+                summary = tmp.textContent || tmp.innerText || '';
+                if (summary.length > 150) summary = summary.substring(0, 150) + '...';
+
+                const published = entry.querySelector('published')?.textContent || entry.querySelector('updated')?.textContent || '';
+                const dateString = published ? new Date(published).toLocaleDateString() : '';
+
+                // Generate a thumbnail using thum.io
+                const imageUrl = `https://image.thum.io/get/width/600/crop/600/https://mr-kumar-abhishek.github.io${link}`;
+
+                const card = document.createElement('div');
+                card.className = 'project-card glass-panel';
+                card.innerHTML = `
+                    <div style="position: relative;">
+                        <img src="${imageUrl}" alt="${title}" class="project-image" loading="lazy" onerror="this.src='https://via.placeholder.com/600x300/0f111a/ff0055?text=Article'">
+                        <span class="project-badge creator-badge" style="background: rgba(160, 165, 181, 0.85); border-color: #a0a5b5; color: #fff;">Article</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">${title}</h3>
+                        ${dateString ? `<p style="color: var(--accent-1); font-size: 0.8rem; margin-bottom: 0.5rem;">${dateString}</p>` : ''}
+                        <p class="project-desc">${summary}</p>
+                        <div class="project-links">
+                            <a href="https://mr-kumar-abhishek.github.io${link}" target="_blank" rel="noopener noreferrer"><i class="fas fa-book-open"></i> Read Article</a>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+            
+        } catch (error) {
+            console.error('Error fetching articles:', error);
+            container.innerHTML = `
+                <div class="glass-panel" style="padding: 2rem; text-align: center; grid-column: 1 / -1;">
+                    <p>Unable to load articles at the moment. Please visit my <a href="https://mr-kumar-abhishek.github.io/blog/" target="_blank" style="color: var(--accent-1);">Blog</a> directly.</p>
+                </div>
+            `;
+        }
+    };
+
+    fetchArticles();
+
     // Smooth Scrolling for Nav Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
