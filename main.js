@@ -81,10 +81,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 // We use github's OpenGraph image endpoint for proper images of the project if an image isn't explicitly provided
                 const imageUrl = repo.imageUrl || `https://opengraph.githubassets.com/1/Mr-Kumar-Abhishek/${repo.name}`;
                 
+                let badgeHTML = '';
+                if (repo.isItch) {
+                    badgeHTML = '<span class="project-badge itch-badge">Game</span>';
+                } else if (repo.owner && repo.owner.login !== 'Mr-Kumar-Abhishek') {
+                    badgeHTML = '<span class="project-badge collab-badge">Collaborator</span>';
+                } else if (repo.fork) {
+                    badgeHTML = '<span class="project-badge fork-badge">Fork</span>';
+                } else {
+                    badgeHTML = '<span class="project-badge creator-badge">Creator</span>';
+                }
+
                 const card = document.createElement('div');
                 card.className = 'project-card glass-panel';
                 card.innerHTML = `
-                    <img src="${imageUrl}" alt="${repo.name} Preview" class="project-image" loading="lazy" onerror="this.src='https://via.placeholder.com/600x300/0f111a/00f0ff?text=Project+Preview'">
+                    <div style="position: relative;">
+                        <img src="${imageUrl}" alt="${repo.name} Preview" class="project-image" loading="lazy" onerror="this.src='https://via.placeholder.com/600x300/0f111a/00f0ff?text=Project+Preview'">
+                        ${badgeHTML}
+                    </div>
                     <div class="project-content">
                         <h3 class="project-title">${repo.name}</h3>
                         <p class="project-desc">${repo.description || 'A fascinating project by Abhishek Kumar.'}</p>
