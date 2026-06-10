@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const repos = await response.json();
             
-            // Include all projects including forks and collaborations
-            const finalRepos = repos;
+
 
             // Fetch collaborated repos from search API to distinguish contributed forks
             let collaboratedRepos = new Set();
@@ -69,6 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (e) {
                 console.warn('Could not fetch commit data:', e);
             }
+
+            // Filter out forks that you haven't committed to
+            const finalRepos = repos.filter(repo => {
+                // Keep if it's not a fork, or if it is a fork and you committed to it
+                return !repo.fork || collaboratedRepos.has(repo.name);
+            });
 
             const itchProjects = [
                 {
