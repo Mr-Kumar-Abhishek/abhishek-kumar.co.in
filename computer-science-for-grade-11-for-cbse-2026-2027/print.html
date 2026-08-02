@@ -1,0 +1,1637 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Computer Science for Grade 11 (CBSE 2026-27)</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-b8eb1d1a.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-c341c1c2.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Computer Science for Grade 11 (CBSE 2026-27)</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="copyright-and-license"><a class="header" href="#copyright-and-license">Copyright and License</a></h1>
+<p>© 2026 Abhishek Kumar. All rights reserved.</p>
+<p><strong>Website</strong>: <a href="https://abhishek-kumar.co.in">https://abhishek-kumar.co.in</a><br><strong>Email</strong>: <a href="mailto:support@abhishek-kumar.co.in">support@abhishek-kumar.co.in</a></p>
+<p>No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-1-computer-systems-overview"><a class="header" href="#chapter-1-computer-systems-overview">Chapter 1: Computer Systems Overview</a></h1>
+<p>Welcome to the exciting world of Computer Science! This chapter lays the foundation by introducing you to the fundamental components of a computer system.</p>
+<h2 id="11-basic-computer-organisation"><a class="header" href="#11-basic-computer-organisation">1.1 Basic Computer Organisation</a></h2>
+<p>A <strong>Computer System</strong> is an electronic device that can be programmed to accept data (input), process it, and generate meaningful information (output). A computer primarily consists of hardware and software.</p>
+<h3 id="hardware-vs-software"><a class="header" href="#hardware-vs-software">Hardware vs Software</a></h3>
+<ul>
+<li><strong>Hardware</strong>: The physical, tangible components of the computer (e.g., keyboard, monitor, CPU).</li>
+<li><strong>Software</strong>: The set of instructions or programs that tell the hardware what to do.</li>
+</ul>
+<h3 id="components-of-a-computer-system"><a class="header" href="#components-of-a-computer-system">Components of a Computer System</a></h3>
+<ol>
+<li><strong>Input Devices</strong>: Devices used to provide data and instructions to the computer. Examples include Keyboard, Mouse, Scanner, Microphone, and Barcode Reader.</li>
+<li><strong>Output Devices</strong>: Devices used to display or provide the result of processing. Examples include Monitor, Printer, Speaker, and Projector.</li>
+<li><strong>Central Processing Unit (CPU)</strong>: Known as the “brain” of the computer, the CPU executes instructions. It consists of the Arithmetic Logic Unit (ALU) for calculations, and the Control Unit (CU) to manage operations.</li>
+<li><strong>Memory</strong>: Used to store data and instructions.
+<ul>
+<li><strong>Primary Memory</strong>: Volatile memory (like RAM) directly accessible by the CPU, used for active tasks. Also includes ROM (Read Only Memory).</li>
+<li><strong>Cache Memory</strong>: Extremely fast, small memory located near or inside the CPU that stores frequently used data to speed up processing.</li>
+<li><strong>Secondary Memory</strong>: Non-volatile storage for long-term data retention (e.g., Hard Disk Drives, Solid State Drives, Pen Drives, CDs).</li>
+</ul>
+</li>
+</ol>
+<h3 id="units-of-memory"><a class="header" href="#units-of-memory">Units of Memory</a></h3>
+<p>Computer memory is measured in specific units based on binary digits (0s and 1s):</p>
+<ul>
+<li><strong>Bit</strong>: A single binary digit (0 or 1).</li>
+<li><strong>Byte</strong>: 8 Bits.</li>
+<li><strong>Kilobyte (KB)</strong>: 1024 Bytes.</li>
+<li><strong>Megabyte (MB)</strong>: 1024 KB.</li>
+<li><strong>Gigabyte (GB)</strong>: 1024 MB.</li>
+<li><strong>Terabyte (TB)</strong>: 1024 GB.</li>
+<li><strong>Petabyte (PB)</strong>: 1024 TB.</li>
+</ul>
+<hr>
+<h2 id="12-types-of-software"><a class="header" href="#12-types-of-software">1.2 Types of Software</a></h2>
+<p>Software is broadly categorized based on its function.</p>
+<h3 id="1-system-software"><a class="header" href="#1-system-software">1. System Software</a></h3>
+<p>Software that provides a platform and manages computer hardware so that other software can run.</p>
+<ul>
+<li><strong>Operating Systems (OS)</strong>: The core software that manages hardware resources (e.g., Windows, macOS, Linux, Android).</li>
+<li><strong>System Utilities</strong>: Tools used for system maintenance, like disk formatting tools, antivirus programs, and file managers.</li>
+<li><strong>Device Drivers</strong>: Specialized software that allows the OS to communicate with specific hardware devices (e.g., a printer driver).</li>
+</ul>
+<h3 id="2-programming-tools-and-language-translators"><a class="header" href="#2-programming-tools-and-language-translators">2. Programming Tools and Language Translators</a></h3>
+<p>These are used by developers to write and translate code into machine language.</p>
+<ul>
+<li><strong>Assembler</strong>: Translates assembly language into machine code.</li>
+<li><strong>Compiler</strong>: Translates the entire high-level language program into machine code in one go.</li>
+<li><strong>Interpreter</strong>: Translates high-level language programs line-by-line during execution.</li>
+</ul>
+<h3 id="3-application-software"><a class="header" href="#3-application-software">3. Application Software</a></h3>
+<p>Software designed to perform specific tasks for the user (e.g., Word processors, Web browsers, Video games).</p>
+<hr>
+<h2 id="13-operating-system-os"><a class="header" href="#13-operating-system-os">1.3 Operating System (OS)</a></h2>
+<p>An <strong>Operating System</strong> acts as an intermediary between the user and the computer hardware.</p>
+<h3 id="functions-of-an-operating-system"><a class="header" href="#functions-of-an-operating-system">Functions of an Operating System</a></h3>
+<ol>
+<li><strong>Process Management</strong>: Allocating CPU time to different running programs.</li>
+<li><strong>Memory Management</strong>: Keeping track of primary memory and allocating/deallocating it as needed.</li>
+<li><strong>File Management</strong>: Organizing data into files and directories on storage devices.</li>
+<li><strong>Device Management</strong>: Managing communication with external devices via drivers.</li>
+<li><strong>Security</strong>: Protecting data and resources through passwords and access controls.</li>
+</ol>
+<h3 id="os-user-interface"><a class="header" href="#os-user-interface">OS User Interface</a></h3>
+<p>The UI is how a user interacts with the OS:</p>
+<ul>
+<li><strong>Command Line Interface (CLI)</strong>: Users type text commands (e.g., DOS, Linux Terminal). It is lightweight but requires memorizing commands.</li>
+<li><strong>Graphical User Interface (GUI)</strong>: Users interact with graphical elements like windows, icons, and menus using a mouse (e.g., Windows, macOS). It is highly user-friendly.</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency Based Questions</a></h2>
+<p><strong>Q1. Case-Based Scenario</strong>
+Ravi just bought a new computer. He wants to install a program that will allow him to type letters and create documents for his business.</p>
+<ol>
+<li>What type of software does Ravi need to install for typing documents?</li>
+<li>Mention the category of software that the Operating System falls under.</li>
+</ol>
+<p><strong>Q2. Assertion-Reasoning</strong></p>
+<ul>
+<li><strong>Assertion (A)</strong>: Cache memory is faster than Primary memory but slower than CPU registers.</li>
+<li><strong>Reason (R)</strong>: Cache memory acts as a buffer between the CPU and the Main Memory to speed up processing.
+Choose the correct option:
+a) Both A and R are true and R is the correct explanation of A.
+b) Both A and R are true but R is NOT the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.</li>
+</ul>
+<p><strong>Q3. Application-Oriented</strong>
+A school needs to store the academic records of 5000 students. The principal wants to ensure the data is not lost when the computer is turned off. Which type of memory should the school rely on to store this data permanently? Justify your answer.</p>
+<p><strong>Q4. Find the Error</strong>
+Consider the following statements regarding Language Translators. Identify the incorrect statement and correct it.</p>
+<ol>
+<li>An Assembler converts High-Level Language to Machine Code.</li>
+<li>An Interpreter translates code line by line.</li>
+<li>A Compiler translates the entire program at once.</li>
+</ol>
+<hr>
+<h3 id="answers-to-competency-based-questions"><a class="header" href="#answers-to-competency-based-questions">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong></p>
+<ol>
+<li>Ravi needs to install <strong>Application Software</strong> (specifically, Word Processing software).</li>
+<li>The Operating System falls under <strong>System Software</strong>.</li>
+</ol>
+<p><strong>A2.</strong>
+<strong>a)</strong> Both A and R are true and R is the correct explanation of A. Cache is placed between the CPU and RAM specifically to provide high-speed data access.</p>
+<p><strong>A3.</strong>
+The school should rely on <strong>Secondary Memory</strong> (such as a Hard Disk Drive or Solid State Drive).
+<em>Justification</em>: Primary memory (RAM) is volatile, meaning data is lost when the power is turned off. Secondary memory is non-volatile and is designed for long-term permanent storage of data.</p>
+<p><strong>A4.</strong>
+The incorrect statement is: “1. An Assembler converts High-Level Language to Machine Code.”
+<em>Correction</em>: An Assembler converts <strong>Assembly Language</strong> to Machine Code. High-Level Language to Machine Code conversion is done by a Compiler or an Interpreter.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-2-data-representation-and-logic"><a class="header" href="#chapter-2-data-representation-and-logic">Chapter 2: Data Representation and Logic</a></h1>
+<p>To understand how computers work internally, we must understand the foundational concepts of boolean logic, number systems, and how characters are encoded into binary formats that a machine can process.</p>
+<h2 id="21-boolean-logic"><a class="header" href="#21-boolean-logic">2.1 Boolean Logic</a></h2>
+<p>Boolean logic forms the basis of computer operations and digital circuits. It deals with variables that have two discrete values: <code>True</code> (1) and <code>False</code> (0).</p>
+<h3 id="logic-gates"><a class="header" href="#logic-gates">Logic Gates</a></h3>
+<p>Logic gates are physical devices or conceptual constructs that perform basic boolean functions.</p>
+<ul>
+<li><strong>NOT Gate</strong>: Reverses the input. If input is 1, output is 0. If input is 0, output is 1.</li>
+<li><strong>AND Gate</strong>: Outputs 1 only if <em>all</em> inputs are 1. Otherwise, it outputs 0.</li>
+<li><strong>OR Gate</strong>: Outputs 1 if <em>at least one</em> input is 1. Outputs 0 only if all inputs are 0.</li>
+<li><strong>NAND Gate</strong>: The inverse of AND. Outputs 0 only if all inputs are 1.</li>
+<li><strong>NOR Gate</strong>: The inverse of OR. Outputs 1 only if all inputs are 0.</li>
+<li><strong>XOR (Exclusive OR) Gate</strong>: Outputs 1 if the inputs are <em>different</em> (e.g., one is 1 and the other is 0).</li>
+</ul>
+<p><strong>Circuit Diagrams for Logic Gates:</strong></p>
+<p><img src="images/gates/basic_gates.svg" alt="Basic Logic Gates"></p>
+<p><img src="images/gates/advanced_gates.svg" alt="Advanced Logic Gates"></p>
+<h3 id="truth-tables"><a class="header" href="#truth-tables">Truth Tables</a></h3>
+<p>A truth table is a mathematical table used to determine if a logical expression is true for all input values.</p>
+<p><em>Truth Table for AND Gate:</em></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Input A</th><th>Input B</th><th>A AND B</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>1</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>Truth Table for OR Gate:</em></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Input A</th><th>Input B</th><th>A OR B</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>1</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>Truth Table for NOT Gate:</em></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Input A</th><th>NOT A</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>1</td></tr>
+<tr><td>1</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>Truth Table for NAND Gate:</em></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Input A</th><th>Input B</th><th>A NAND B</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>Truth Table for NOR Gate:</em></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Input A</th><th>Input B</th><th>A NOR B</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>0</td><td>1</td></tr>
+<tr><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>1</td><td>1</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>Truth Table for XOR Gate:</em></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Input A</th><th>Input B</th><th>A XOR B</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>1</td></tr>
+<tr><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>0</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="de-morgans-laws"><a class="header" href="#de-morgans-laws">De Morgan’s Laws</a></h3>
+<p>De Morgan’s laws provide a way to simplify logical expressions.</p>
+<ol>
+<li><code>NOT (A AND B) = (NOT A) OR (NOT B)</code></li>
+<li><code>NOT (A OR B) = (NOT A) AND (NOT B)</code></li>
+</ol>
+<p><strong>Circuit Diagrams representing De Morgan’s Laws:</strong></p>
+<p><strong>First Law:</strong> <code>NOT (A AND B) = (NOT A) OR (NOT B)</code>
+<img src="images/gates/demorgan_1.svg" alt="First Law: NOT (A AND B) = (NOT A) OR (NOT B)"></p>
+<p><strong>Second Law:</strong> <code>NOT (A OR B) = (NOT A) AND (NOT B)</code>
+<img src="images/gates/demorgan_2.svg" alt="Second Law: NOT (A OR B) = (NOT A) AND (NOT B)"></p>
+<h3 id="logic-circuits"><a class="header" href="#logic-circuits">Logic Circuits</a></h3>
+<p>By combining logic gates, we can build complex logic circuits that form the backbone of CPUs, performing calculations and executing decisions.</p>
+<hr>
+<h2 id="22-number-systems"><a class="header" href="#22-number-systems">2.2 Number Systems</a></h2>
+<p>We use the decimal system daily, but computers use binary because of their electronic nature (on/off).</p>
+<h3 id="common-number-systems"><a class="header" href="#common-number-systems">Common Number Systems</a></h3>
+<ol>
+<li><strong>Binary (Base 2)</strong>: Uses two digits: 0, 1.</li>
+<li><strong>Octal (Base 8)</strong>: Uses eight digits: 0 to 7.</li>
+<li><strong>Decimal (Base 10)</strong>: Uses ten digits: 0 to 9.</li>
+<li><strong>Hexadecimal (Base 16)</strong>: Uses sixteen symbols: 0 to 9, and A to F (where A=10, B=11, C=12, D=13, E=14, F=15).</li>
+</ol>
+<h3 id="conversion-between-number-systems"><a class="header" href="#conversion-between-number-systems">Conversion Between Number Systems</a></h3>
+<p><strong>1. Decimal to Binary, Octal, and Hexadecimal</strong>
+To convert a decimal number to any other base, repeatedly divide the decimal number by the target base (2, 8, or 16) and note the remainders from bottom to top.</p>
+<p><em>Example: Convert Decimal 13 to Binary, Octal, and Hexadecimal.</em></p>
+<ul>
+<li><strong>To Binary (Base 2):</strong>
+<ul>
+<li>13 / 2 = 6, Remainder 1</li>
+<li>6 / 2 = 3, Remainder 0</li>
+<li>3 / 2 = 1, Remainder 1</li>
+<li>1 / 2 = 0, Remainder 1</li>
+<li><em>Result: \(1101_2\)</em></li>
+</ul>
+</li>
+<li><strong>To Octal (Base 8):</strong>
+<ul>
+<li>13 / 8 = 1, Remainder 5</li>
+<li>1 / 8 = 0, Remainder 1</li>
+<li><em>Result: \(15_8\)</em></li>
+</ul>
+</li>
+<li><strong>To Hexadecimal (Base 16):</strong>
+<ul>
+<li>13 / 16 = 0, Remainder 13 (which is ‘D’ in Hexadecimal)</li>
+<li><em>Result: \(D_{16}\)</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Binary, Octal, and Hexadecimal to Decimal</strong>
+Multiply each digit by the base raised to the power of its position (starting from 0 on the right) and sum them up.</p>
+<p><em>Example: Convert \(1101_2\), \(15_8\), and \(D_{16}\) back to Decimal.</em></p>
+<ul>
+<li><strong>Binary \(1101_2\) to Decimal:</strong>
+\(1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 8 + 4 + 0 + 1 = 13_{10}\)</li>
+<li><strong>Octal \(15_8\) to Decimal:</strong>
+\(1 \times 8^1 + 5 \times 8^0 = 8 + 5 = 13_{10}\)</li>
+<li><strong>Hexadecimal \(D_{16}\) to Decimal:</strong>
+\(13 \times 16^0 = 13_{10}\)</li>
+</ul>
+<p><strong>3. Binary to Octal and Hexadecimal</strong></p>
+<ul>
+<li><strong>Binary to Octal:</strong> Group the binary digits into sets of three, starting from the right. Pad with leading zeros if necessary. Convert each group to its decimal equivalent (0-7).
+<em>Example: Convert \(101011_2\) to Octal.</em>
+Groups: <code>101</code> <code>011</code> -&gt; Value: <code>5</code> <code>3</code> -&gt; \(53_8\)</li>
+<li><strong>Binary to Hexadecimal:</strong> Group the binary digits into sets of four, starting from the right. Pad with leading zeros if necessary. Convert each group to its hexadecimal equivalent (0-F).
+<em>Example: Convert \(101011_2\) to Hexadecimal.</em>
+Groups: <code>0010</code> <code>1011</code> -&gt; Value: <code>2</code> <code>B</code> -&gt; \(2B_{16}\)</li>
+</ul>
+<p><strong>4. Octal and Hexadecimal to Binary</strong></p>
+<ul>
+<li><strong>Octal to Binary:</strong> Convert each octal digit into a 3-bit binary group.
+<em>Example: Convert \(53_8\) to Binary.</em>
+Digit <code>5</code> -&gt; <code>101</code>, Digit <code>3</code> -&gt; <code>011</code> -&gt; Result: \(101011_2\)</li>
+<li><strong>Hexadecimal to Binary:</strong> Convert each hex digit into a 4-bit binary group.
+<em>Example: Convert \(2B_{16}\) to Binary.</em>
+Digit <code>2</code> -&gt; <code>0010</code>, Digit <code>B</code> (11) -&gt; <code>1011</code> -&gt; Result: \(00101011_2\) or \(101011_2\)</li>
+</ul>
+<p><strong>5. Indirect Conversions: Octal to Hexadecimal and Vice Versa</strong>
+Conversions between Octal and Hexadecimal are typically performed indirectly by using either Binary or Decimal as an intermediate base.</p>
+<p><em>Method A: Via Binary (Most Common &amp; Recommended)</em></p>
+<ul>
+<li><strong>Octal to Hexadecimal:</strong> Octal \(53_8\) -&gt; Binary \(101011_2\) -&gt; Hexadecimal \(2B_{16}\)</li>
+<li><strong>Hexadecimal to Octal:</strong> Hexadecimal \(2B_{16}\) -&gt; Binary \(00101011_2\) -&gt; Octal \(53_8\)</li>
+</ul>
+<p><em>Method B: Via Decimal (Alternative)</em></p>
+<ul>
+<li><strong>Octal to Hexadecimal:</strong> Octal \(53_8\) -&gt; Decimal \(43_{10}\) -&gt; Hexadecimal \(2B_{16}\)</li>
+<li><strong>Hexadecimal to Octal:</strong> Hexadecimal \(2B_{16}\) -&gt; Decimal \(43_{10}\) -&gt; Octal \(53_8\)</li>
+</ul>
+<hr>
+<h2 id="23-encoding-schemes"><a class="header" href="#23-encoding-schemes">2.3 Encoding Schemes</a></h2>
+<p>Computers store everything, including text, as numbers. Encoding schemes dictate how characters are mapped to binary numbers.</p>
+<ul>
+<li><strong>ASCII (American Standard Code for Information Interchange)</strong>: Originally a 7-bit code (later 8-bit) representing 128 (or 256) characters. E.g., ‘A’ is 65.</li>
+<li><strong>ISCII (Indian Script Code for Information Interchange)</strong>: An 8-bit encoding scheme to represent Indian scripts (Devanagari, Bengali, etc.).</li>
+<li><strong>Unicode</strong>: A universal character encoding standard capable of representing all characters from all languages in the world.
+<ul>
+<li><strong>UTF-8</strong>: Variable-width encoding using 1 to 4 bytes per character. Highly compatible with ASCII.</li>
+<li><strong>UTF-32</strong>: Fixed-width encoding using 4 bytes (32 bits) for every character.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-1"><a class="header" href="#competency-based-questions-1">Competency Based Questions</a></h2>
+<p><strong>Q1. Predict the Output</strong>
+Evaluate the Boolean expression <code>(A OR B) AND (NOT C)</code> for the following input values:
+<code>A = 0</code>, <code>B = 1</code>, <code>C = 1</code>.</p>
+<p><strong>Q2. Application-Oriented</strong>
+A web developer needs to create a webpage that can display English, Hindi, and Japanese text on the same page. Which encoding scheme should the developer choose and why?</p>
+<p><strong>Q3. Assertion-Reasoning</strong></p>
+<ul>
+<li><strong>Assertion (A)</strong>: The hexadecimal number system uses letters A-F to represent values from 10 to 15.</li>
+<li><strong>Reason (R)</strong>: Base 16 requires 16 unique symbols, and the digits 0-9 only provide 10 symbols, so alphabet letters are borrowed for the remaining values.
+Choose the correct option:
+a) Both A and R are true and R is the correct explanation of A.
+b) Both A and R are true but R is NOT the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.</li>
+</ul>
+<p><strong>Q4. Conversion Case Study</strong>
+A sensor is outputting data in binary format. A reading from the sensor is \(11010_2\).</p>
+<ol>
+<li>Convert this reading to its Decimal equivalent so the engineer can understand it.</li>
+<li>Convert the resulting Decimal number to Hexadecimal.</li>
+</ol>
+<hr>
+<h3 id="answers-to-competency-based-questions-1"><a class="header" href="#answers-to-competency-based-questions-1">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong>
+Given <code>A = 0</code>, <code>B = 1</code>, <code>C = 1</code>.
+Expression: <code>(0 OR 1) AND (NOT 1)</code>
+Step 1: <code>(0 OR 1)</code> is <code>1</code>.
+Step 2: <code>(NOT 1)</code> is <code>0</code>.
+Step 3: <code>1 AND 0</code> is <code>0</code>.
+<strong>Result:</strong> <code>0</code> (False).</p>
+<p><strong>A2.</strong>
+The developer should choose <strong>Unicode</strong> (specifically UTF-8).
+<em>Reason:</em> ASCII and ISCII are limited to specific character sets. Unicode is a universal standard designed to represent characters from nearly all written languages around the world, making it ideal for multilingual web pages.</p>
+<p><strong>A3.</strong>
+<strong>a)</strong> Both A and R are true and R is the correct explanation of A. Hexadecimal is base 16, so it naturally needs 16 single-character symbols.</p>
+<p><strong>A4.</strong></p>
+<ol>
+<li>Convert \(11010_2\) to Decimal:
+\(= (1 \times 2^4) + (1 \times 2^3) + (0 \times 2^2) + (1 \times 2^1) + (0 \times 2^0)\)
+\(= 16 + 8 + 0 + 2 + 0\)
+\(= 26\)
+The decimal equivalent is <strong>26</strong>.</li>
+<li>Convert 26 to Hexadecimal:
+\(26 \div 16 = 1\) with a remainder of \(10\). In Hex, 10 is ‘A’.
+The hexadecimal equivalent is <strong>1A</strong>.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-3-introduction-to-problem-solving"><a class="header" href="#chapter-3-introduction-to-problem-solving">Chapter 3: Introduction to Problem-Solving</a></h1>
+<p>Before diving into writing code, it is essential to understand the systematic approach to solving problems using computers. Programming is not just about typing syntax; it’s about logic and structured thinking.</p>
+<h2 id="31-steps-for-problem-solving"><a class="header" href="#31-steps-for-problem-solving">3.1 Steps for Problem-Solving</a></h2>
+<p>Solving a problem using a computer involves a life cycle consisting of several distinct stages:</p>
+<ol>
+<li><strong>Analyzing the Problem</strong>: Understanding the core issue, identifying what the inputs are, what output is expected, and what constraints exist.</li>
+<li><strong>Developing an Algorithm</strong>: Creating a step-by-step logical sequence of instructions to solve the problem.</li>
+<li><strong>Coding</strong>: Translating the algorithm into a specific programming language (like Python) that the computer can execute.</li>
+<li><strong>Testing</strong>: Running the program with various sets of test data (including edge cases) to ensure it produces the correct output.</li>
+<li><strong>Debugging</strong>: The process of finding and fixing errors (bugs) in the code that are discovered during testing.</li>
+</ol>
+<h2 id="32-representation-of-algorithms"><a class="header" href="#32-representation-of-algorithms">3.2 Representation of Algorithms</a></h2>
+<p>Algorithms can be represented visually or textually to make them easier to understand and communicate.</p>
+<h3 id="pseudocode"><a class="header" href="#pseudocode">Pseudocode</a></h3>
+<p>Pseudocode is an informal, plain English description of the steps of an algorithm. It does not use strict programming syntax.
+<em>Example Pseudocode to find the sum of two numbers:</em></p>
+<pre><code class="language-text">Step 1: Input first number as A
+Step 2: Input second number as B
+Step 3: Calculate SUM = A + B
+Step 4: Print SUM
+</code></pre>
+<h3 id="flowcharts"><a class="header" href="#flowcharts">Flowcharts</a></h3>
+<p>A flowchart is a graphical representation of an algorithm using standard geometric shapes connected by arrows.</p>
+<ul>
+<li><strong>Oval</strong>: Start/Stop</li>
+<li><strong>Parallelogram</strong>: Input/Output</li>
+<li><strong>Rectangle</strong>: Processing/Calculation</li>
+<li><strong>Diamond</strong>: Decision/Condition</li>
+<li><strong>Arrows</strong>: Flow of control</li>
+</ul>
+<h2 id="33-decomposition"><a class="header" href="#33-decomposition">3.3 Decomposition</a></h2>
+<p><strong>Decomposition</strong> (also known as factoring) is the process of breaking down a complex problem or system into smaller, more manageable parts.
+By solving these smaller sub-problems individually and then combining their solutions, we can solve the original complex problem much more easily.</p>
+<p><em>Example</em>: Building a calculator application.
+Instead of trying to write the entire application at once, decompose it into:</p>
+<ol>
+<li>Building the User Interface.</li>
+<li>Writing the logic for Addition.</li>
+<li>Writing the logic for Subtraction.</li>
+<li>Writing the logic for Multiplication/Division.</li>
+</ol>
+<hr>
+<h2 id="competency-based-questions-2"><a class="header" href="#competency-based-questions-2">Competency Based Questions</a></h2>
+<p><strong>Q1. Case-Based Scenario</strong>
+Meera is tasked with creating a program that calculates the compound interest for a bank. She immediately opened her laptop and started typing Python code, but she soon got confused and her program gave incorrect results.</p>
+<ol>
+<li>Which crucial problem-solving step did Meera skip?</li>
+<li>What should she have done before starting to code?</li>
+</ol>
+<p><strong>Q2. Find the Error</strong>
+Consider the following pseudocode meant to check if a person is eligible to vote:</p>
+<pre><code class="language-text">Step 1: Input Age
+Step 2: If Age &lt; 18, Print "Eligible to vote"
+Step 3: Else, Print "Not eligible to vote"
+</code></pre>
+<p>Identify the logical error in the pseudocode and provide the corrected version.</p>
+<p><strong>Q3. Application-Oriented</strong>
+Draw a flowchart (or describe the shapes and flow) to input a number and check whether it is even or odd.</p>
+<p><strong>Q4. Assertion-Reasoning</strong></p>
+<ul>
+<li><strong>Assertion (A)</strong>: Debugging is done before the coding phase in the problem-solving cycle.</li>
+<li><strong>Reason (R)</strong>: Debugging is the process of finding and fixing errors in the written code.
+Choose the correct option:
+a) Both A and R are true and R is the correct explanation of A.
+b) Both A and R are true but R is NOT the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.</li>
+</ul>
+<hr>
+<h3 id="answers-to-competency-based-questions-2"><a class="header" href="#answers-to-competency-based-questions-2">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong></p>
+<ol>
+<li>Meera skipped the <strong>Analyzing the Problem</strong> and <strong>Developing an Algorithm</strong> steps.</li>
+<li>She should have first understood the formula for compound interest, determined her inputs, and written an algorithm or flowchart to structure her logic before writing any code.</li>
+</ol>
+<p><strong>A2.</strong>
+<strong>Error</strong>: The condition <code>Age &lt; 18</code> is mapped to “Eligible to vote”, which is logically backward.
+<strong>Corrected Pseudocode</strong>:</p>
+<pre><code class="language-text">Step 1: Input Age
+Step 2: If Age &gt;= 18, Print "Eligible to vote"
+Step 3: Else, Print "Not eligible to vote"
+</code></pre>
+<p><strong>A3.</strong>
+<em>Flowchart Description:</em></p>
+<ol>
+<li><strong>Oval</strong>: START</li>
+<li><strong>Parallelogram</strong>: INPUT Number (N)</li>
+<li><strong>Rectangle</strong>: Calculate Remainder R = N % 2</li>
+<li><strong>Diamond</strong>: Is R == 0?</li>
+<li>If YES (True arrow) -&gt; <strong>Parallelogram</strong>: PRINT “Even”</li>
+<li>If NO (False arrow) -&gt; <strong>Parallelogram</strong>: PRINT “Odd”</li>
+<li><strong>Oval</strong>: STOP (Both True and False paths merge here).</li>
+</ol>
+<p><strong>A4.</strong>
+<strong>d)</strong> A is false but R is true. Debugging is done <em>after</em> or <em>during</em> the coding and testing phases, not before it, because you cannot debug code that hasn’t been written yet.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-4-getting-started-with-python"><a class="header" href="#chapter-4-getting-started-with-python">Chapter 4: Getting Started with Python</a></h1>
+<p>Python is a high-level, interpreted, and general-purpose programming language. Created by Guido van Rossum, it is renowned for its readability and simplicity.</p>
+<h2 id="41-familiarization-with-basics"><a class="header" href="#41-familiarization-with-basics">4.1 Familiarization with Basics</a></h2>
+<p>Python is easy to learn and supports both procedural and object-oriented programming paradigms.</p>
+<h3 id="execution-modes"><a class="header" href="#execution-modes">Execution Modes</a></h3>
+<ol>
+<li><strong>Interactive Mode</strong>: Commands are typed directly into the Python prompt (<code>&gt;&gt;&gt;</code>) and executed immediately. Good for testing small snippets.</li>
+<li><strong>Script Mode</strong>: Python code is saved in a file with a <code>.py</code> extension and executed as a whole. Good for writing complete programs.</li>
+</ol>
+<p><em>Simple Program:</em></p>
+<pre><code class="language-python">print("Hello World!")
+</code></pre>
+<h2 id="42-tokens-and-variables"><a class="header" href="#42-tokens-and-variables">4.2 Tokens and Variables</a></h2>
+<p>A <strong>Token</strong> is the smallest individual unit in a Python program.</p>
+<ul>
+<li><strong>Keywords</strong>: Reserved words with special meaning (e.g., <code>if</code>, <code>for</code>, <code>def</code>).</li>
+<li><strong>Identifiers</strong>: Names given to variables, functions, etc. Must start with a letter or underscore, and cannot be a keyword.</li>
+<li><strong>Literals</strong>: Data items that have a fixed value (e.g., <code>42</code>, <code>"Hello"</code>).</li>
+<li><strong>Operators</strong>: Symbols that perform operations on operands (e.g., <code>+</code>, <code>-</code>).</li>
+<li><strong>Punctuators</strong>: Symbols used to organize sentence structures in programming (e.g., <code>,</code>, <code>:</code>, <code>()</code>).</li>
+</ul>
+<h3 id="variables-l-value-and-r-value"><a class="header" href="#variables-l-value-and-r-value">Variables, l-value, and r-value</a></h3>
+<p>A variable is a named memory location used to store data.</p>
+<pre><code class="language-python">age = 16  # 'age' is the l-value, 16 is the r-value
+</code></pre>
+<ul>
+<li><strong>l-value</strong>: An expression that can appear on the left side of an assignment (e.g., a variable name).</li>
+<li><strong>r-value</strong>: An expression that provides a value to be assigned (e.g., a literal or calculation).</li>
+</ul>
+<p><em>Comments</em>: Used to explain code. Python uses <code>#</code> for single-line comments.</p>
+<h2 id="43-data-types"><a class="header" href="#43-data-types">4.3 Data Types</a></h2>
+<p>Data types define the type of data a variable can hold.</p>
+<ul>
+<li><strong>Number</strong>: <code>int</code> (integers), <code>float</code> (decimals), <code>complex</code> (real + imaginary).</li>
+<li><strong>Boolean</strong>: <code>bool</code> (<code>True</code> or <code>False</code>).</li>
+<li><strong>Sequence</strong>: <code>str</code> (String), <code>list</code> (mutable sequence), <code>tuple</code> (immutable sequence).</li>
+<li><strong>Mapping</strong>: <code>dict</code> (Dictionary - key/value pairs).</li>
+<li><strong>None</strong>: Represents the absence of a value.</li>
+</ul>
+<p><em>Mutable vs Immutable:</em></p>
+<ul>
+<li><strong>Mutable</strong>: Values can be changed in place (e.g., <code>list</code>, <code>dict</code>).</li>
+<li><strong>Immutable</strong>: Values cannot be changed once created (e.g., <code>int</code>, <code>float</code>, <code>str</code>, <code>tuple</code>).</li>
+</ul>
+<h2 id="44-operators"><a class="header" href="#44-operators">4.4 Operators</a></h2>
+<ul>
+<li><strong>Arithmetic</strong>: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code> (floor division), <code>%</code> (modulus), <code>**</code> (exponentiation).</li>
+<li><strong>Relational</strong>: <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>==</code>, <code>!=</code>.</li>
+<li><strong>Logical</strong>: <code>and</code>, <code>or</code>, <code>not</code>.</li>
+<li><strong>Assignment</strong>: <code>=</code>, <code>+=</code>, <code>-=</code>, etc.</li>
+<li><strong>Identity</strong>: <code>is</code>, <code>is not</code> (checks memory location).</li>
+<li><strong>Membership</strong>: <code>in</code>, <code>not in</code> (checks if an item exists in a sequence).</li>
+</ul>
+<h2 id="45-expressions-type-conversion-and-io"><a class="header" href="#45-expressions-type-conversion-and-io">4.5 Expressions, Type Conversion, and I/O</a></h2>
+<ul>
+<li><strong>Expressions</strong>: A combination of operators and operands. Precedence rules (BODMAS/PEMDAS) apply.</li>
+<li><strong>Type Conversion</strong>:
+<ul>
+<li><em>Implicit</em>: Python automatically converts types (e.g., <code>int</code> + <code>float</code> = <code>float</code>).</li>
+<li><em>Explicit (Type Casting)</em>: Programmer forces conversion using functions like <code>int()</code>, <code>float()</code>.</li>
+</ul>
+</li>
+<li><strong>Input/Output</strong>:
+<ul>
+<li><code>input()</code> function reads input from the user as a string.</li>
+<li><code>print()</code> function displays output to the console.</li>
+</ul>
+</li>
+</ul>
+<h2 id="46-errors"><a class="header" href="#46-errors">4.6 Errors</a></h2>
+<ol>
+<li><strong>Syntax Errors</strong>: Grammatical rules of Python are violated (e.g., missing a colon). The program won’t run.</li>
+<li><strong>Logical Errors</strong>: The program runs but produces the wrong output due to flawed logic (e.g., using <code>+</code> instead of <code>-</code>).</li>
+<li><strong>Run-time Errors</strong>: The program crashes during execution due to illegal operations (e.g., dividing by zero).</li>
+</ol>
+<hr>
+<h2 id="competency-based-questions-3"><a class="header" href="#competency-based-questions-3">Competency Based Questions</a></h2>
+<p><strong>Q1. Predict the Output</strong>
+What will be the output of the following Python code snippet?</p>
+<pre><code class="language-python">x = 10
+y = 3
+print(x // y)
+print(x % y)
+</code></pre>
+<p><strong>Q2. Case-Based Scenario</strong>
+Rahul wrote the following code to calculate the area of a rectangle:</p>
+<pre><code class="language-python">length = input("Enter length: ")
+breadth = input("Enter breadth: ")
+area = length * breadth
+print("Area is", area)
+</code></pre>
+<p>When he runs the code and inputs 5 and 4, the program crashes with an error.</p>
+<ol>
+<li>Identify the type of error (Syntax, Logical, or Run-time).</li>
+<li>Explain why the error occurred and correct the code.</li>
+</ol>
+<p><strong>Q3. Assertion-Reasoning</strong></p>
+<ul>
+<li><strong>Assertion (A)</strong>: Strings and Tuples are immutable data types in Python.</li>
+<li><strong>Reason (R)</strong>: Elements of an immutable data type cannot be altered or modified in-place after they are created.
+Choose the correct option:
+a) Both A and R are true and R is the correct explanation of A.
+b) Both A and R are true but R is NOT the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.</li>
+</ul>
+<p><strong>Q4. Application-Oriented</strong>
+Write a Python expression to check if a variable <code>char</code> is a vowel (i.e., ‘a’, ‘e’, ‘i’, ‘o’, ‘u’). Use the membership operator.</p>
+<hr>
+<h3 id="answers-to-competency-based-questions-3"><a class="header" href="#answers-to-competency-based-questions-3">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong>
+Output:</p>
+<pre><code class="language-text">3
+1
+</code></pre>
+<p><em>Explanation</em>: <code>//</code> is floor division (\(10 \div 3 = 3\) remainder 1). <code>%</code> is the modulus operator, which returns the remainder (\(1\)).</p>
+<p><strong>A2.</strong></p>
+<ol>
+<li>It is a <strong>Run-time error</strong> (specifically a <code>TypeError</code>).</li>
+<li><em>Explanation</em>: The <code>input()</code> function always returns data as a <strong>string</strong>. You cannot multiply two strings together (<code>"5" * "4"</code> is invalid). Rahul needs to use explicit type conversion.
+<em>Corrected Code</em>:</li>
+</ol>
+<pre><code class="language-python">length = int(input("Enter length: "))
+breadth = int(input("Enter breadth: "))
+area = length * breadth
+print("Area is", area)
+</code></pre>
+<p><strong>A3.</strong>
+<strong>a)</strong> Both A and R are true and R is the correct explanation of A. By definition, immutable objects cannot be modified after creation.</p>
+<p><strong>A4.</strong></p>
+<pre><code class="language-python">char in 'aeiouAEIOU'
+</code></pre>
+<p><em>(Alternatively, checking against a list: <code>char.lower() in ['a', 'e', 'i', 'o', 'u']</code>)</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-5-flow-of-control"><a class="header" href="#chapter-5-flow-of-control">Chapter 5: Flow of Control</a></h1>
+<p>Usually, a Python program executes instructions sequentially from top to bottom. However, sometimes we need to skip instructions, choose between alternative paths, or repeat a block of code multiple times. This is managed by control flow statements.</p>
+<p>Python relies heavily on <strong>indentation</strong> (whitespace at the beginning of a line) to define blocks of code.</p>
+<h2 id="51-conditional-statements"><a class="header" href="#51-conditional-statements">5.1 Conditional Statements</a></h2>
+<p>Conditional statements allow a program to make decisions based on whether a condition evaluates to True or False.</p>
+<h3 id="the-if-statement"><a class="header" href="#the-if-statement">The <code>if</code> Statement</a></h3>
+<p>Executes a block of code only if the condition is True.</p>
+<pre><code class="language-python">x = 10
+if x &gt; 0:
+    print("x is positive")
+</code></pre>
+<h3 id="the-if-else-statement"><a class="header" href="#the-if-else-statement">The <code>if-else</code> Statement</a></h3>
+<p>Provides an alternative path if the condition is False.</p>
+<pre><code class="language-python">x = -5
+if x &gt;= 0:
+    print("Positive or Zero")
+else:
+    print("Negative")
+</code></pre>
+<h3 id="the-if-elif-else-statement"><a class="header" href="#the-if-elif-else-statement">The <code>if-elif-else</code> Statement</a></h3>
+<p>Used to check multiple conditions sequentially. <code>elif</code> stands for “else if”.</p>
+<pre><code class="language-python">marks = 85
+if marks &gt;= 90:
+    print("Grade A")
+elif marks &gt;= 80:
+    print("Grade B")
+else:
+    print("Grade C or below")
+</code></pre>
+<h3 id="example-program-absolute-value"><a class="header" href="#example-program-absolute-value">Example Program: Absolute Value</a></h3>
+<pre><code class="language-python">n = int(input("Enter a number: "))
+if n &lt; 0:
+    n = n * -1
+print("Absolute value is:", n)
+</code></pre>
+<h2 id="52-iterative-statements-loops"><a class="header" href="#52-iterative-statements-loops">5.2 Iterative Statements (Loops)</a></h2>
+<p>Loops are used to execute a block of code repeatedly as long as a specified condition is met.</p>
+<h3 id="the-for-loop-and-range-function"><a class="header" href="#the-for-loop-and-range-function">The <code>for</code> Loop and <code>range()</code> function</a></h3>
+<p>The <code>for</code> loop is typically used to iterate over a sequence (like a list, string, or a range of numbers).
+The <code>range(start, stop, step)</code> function generates a sequence of numbers. It stops <em>before</em> the <code>stop</code> value.</p>
+<pre><code class="language-python"># Prints numbers from 1 to 5
+for i in range(1, 6):
+    print(i)
+</code></pre>
+<h3 id="the-while-loop"><a class="header" href="#the-while-loop">The <code>while</code> Loop</a></h3>
+<p>Repeats a block of code as long as a condition remains True.</p>
+<pre><code class="language-python">count = 1
+while count &lt;= 5:
+    print(count)
+    count += 1
+</code></pre>
+<h3 id="break-and-continue-statements"><a class="header" href="#break-and-continue-statements"><code>break</code> and <code>continue</code> Statements</a></h3>
+<ul>
+<li><strong><code>break</code></strong>: Terminates the loop entirely and transfers execution to the statement immediately following the loop.</li>
+<li><strong><code>continue</code></strong>: Skips the rest of the code inside the loop for the current iteration and jumps to the next iteration.</li>
+</ul>
+<h3 id="nested-loops"><a class="header" href="#nested-loops">Nested Loops</a></h3>
+<p>A loop inside another loop.</p>
+<pre><code class="language-python"># Generating a simple pattern
+for i in range(1, 4):          # Outer loop for rows
+    for j in range(1, i + 1):  # Inner loop for columns
+        print("*", end="")
+    print()                    # Move to the next line
+</code></pre>
+<hr>
+<h2 id="competency-based-questions-4"><a class="header" href="#competency-based-questions-4">Competency Based Questions</a></h2>
+<p><strong>Q1. Predict the Output</strong>
+What will be the output of the following code snippet?</p>
+<pre><code class="language-python">for i in range(1, 10, 2):
+    if i == 5:
+        continue
+    print(i, end=" ")
+</code></pre>
+<p><strong>Q2. Find the Error</strong>
+Ankush wants to write a <code>while</code> loop that prints numbers from 10 down to 1. Identify the logical error in his code.</p>
+<pre><code class="language-python">n = 10
+while n &gt; 0:
+    print(n)
+    n = n + 1
+</code></pre>
+<p><strong>Q3. Application-Oriented</strong>
+Write a Python program using a <code>for</code> loop to calculate the factorial of a positive integer <code>N</code> input by the user. (Note: Factorial of 5 = 5 * 4 * 3 * 2 * 1 = 120).</p>
+<p><strong>Q4. Assertion-Reasoning</strong></p>
+<ul>
+<li><strong>Assertion (A)</strong>: An <code>if</code> statement can exist without an <code>else</code> statement, but an <code>else</code> statement cannot exist without an <code>if</code> statement.</li>
+<li><strong>Reason (R)</strong>: The <code>else</code> block serves as a default fallback option that only executes when the preceding <code>if</code> condition evaluates to False.
+Choose the correct option:
+a) Both A and R are true and R is the correct explanation of A.
+b) Both A and R are true but R is NOT the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.</li>
+</ul>
+<hr>
+<h3 id="answers-to-competency-based-questions-4"><a class="header" href="#answers-to-competency-based-questions-4">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong>
+<code>1 3 7 9 </code>
+<em>Explanation</em>: The loop generates odd numbers from 1 to 9 (step of 2). When <code>i</code> is 5, the <code>continue</code> statement executes, skipping the <code>print</code> statement for that iteration.</p>
+<p><strong>A2.</strong>
+<strong>Logical Error</strong>: Ankush increments <code>n</code> (<code>n = n + 1</code>) instead of decrementing it. Because <code>n</code> starts at 10 and keeps increasing, the condition <code>n &gt; 0</code> will always be true, creating an <strong>infinite loop</strong>.
+<em>Correction</em>: Change <code>n = n + 1</code> to <code>n = n - 1</code>.</p>
+<p><strong>A3.</strong></p>
+<pre><code class="language-python">n = int(input("Enter a positive integer: "))
+factorial = 1
+
+for i in range(1, n + 1):
+    factorial *= i
+
+print("Factorial of", n, "is", factorial)
+</code></pre>
+<p><strong>A4.</strong>
+<strong>a)</strong> Both A and R are true and R is the correct explanation of A. The <code>else</code> block acts as an alternative execution path dependent entirely on the failure of an <code>if</code> block.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-6-strings-in-python"><a class="header" href="#chapter-6-strings-in-python">Chapter 6: Strings in Python</a></h1>
+<p>A string is a sequence of characters enclosed in single quotes (<code>'...'</code>), double quotes (<code>"..."</code>), or triple quotes (<code>'''...'''</code> for multi-line strings). In Python, strings are <strong>immutable</strong>, meaning their contents cannot be changed after they are created.</p>
+<h2 id="61-string-operations"><a class="header" href="#61-string-operations">6.1 String Operations</a></h2>
+<p>Python provides several powerful operators to manipulate strings.</p>
+<ul>
+<li><strong>Concatenation (<code>+</code>)</strong>: Joins two strings together.
+<pre><code class="language-python">"Hello" + " World" # Output: 'Hello World'
+</code></pre>
+</li>
+<li><strong>Repetition (<code>*</code>)</strong>: Repeats a string a specified number of times.
+<pre><code class="language-python">"Py" * 3 # Output: 'PyPyPy'
+</code></pre>
+</li>
+<li><strong>Membership (<code>in</code>, <code>not in</code>)</strong>: Checks if a substring exists within a string.
+<pre><code class="language-python">"a" in "Apple" # Output: False (case-sensitive)
+</code></pre>
+</li>
+<li><strong>Slicing (<code>[start:stop:step]</code>)</strong>: Extracts a portion of the string.
+<pre><code class="language-python">text = "COMPUTER"
+print(text[1:4])  # Output: 'OMP'
+print(text[::-1]) # Output: 'RETUPMOC' (Reverses string)
+</code></pre>
+</li>
+</ul>
+<h2 id="62-traversing-a-string"><a class="header" href="#62-traversing-a-string">6.2 Traversing a String</a></h2>
+<p>You can access each character of a string one by one using a <code>for</code> or <code>while</code> loop.</p>
+<pre><code class="language-python">word = "PYTHON"
+for char in word:
+    print(char)
+</code></pre>
+<h2 id="63-built-in-string-methods"><a class="header" href="#63-built-in-string-methods">6.3 Built-in String Methods</a></h2>
+<p>Strings come with numerous built-in methods. <em>Note that string methods do not modify the original string; they return a new string.</em></p>
+<ul>
+<li><strong><code>len(str)</code></strong>: Returns the length (number of characters) of the string.</li>
+<li><strong><code>capitalize()</code></strong>: Capitalizes the first letter of the string.</li>
+<li><strong><code>title()</code></strong>: Capitalizes the first letter of every word.</li>
+<li><strong><code>lower()</code> / <code>upper()</code></strong>: Converts the string to all lowercase or all uppercase.</li>
+<li><strong><code>count(sub)</code></strong>: Returns the number of times substring <code>sub</code> appears.</li>
+<li><strong><code>find(sub)</code> / <code>index(sub)</code></strong>: Returns the lowest index where <code>sub</code> is found. <code>find()</code> returns -1 if not found, while <code>index()</code> raises an error.</li>
+<li><strong><code>startswith(prefix)</code> / <code>endswith(suffix)</code></strong>: Returns True if string starts/ends with the specified substring.</li>
+<li><strong><code>isalnum()</code></strong>: True if all characters are alphanumeric (letters or numbers).</li>
+<li><strong><code>isalpha()</code></strong>: True if all characters are alphabets.</li>
+<li><strong><code>isdigit()</code></strong>: True if all characters are digits.</li>
+<li><strong><code>islower()</code> / <code>isupper()</code> / <code>isspace()</code></strong>: Checks if all characters are lowercase, uppercase, or whitespace respectively.</li>
+<li><strong><code>lstrip()</code> / <code>rstrip()</code> / <code>strip()</code></strong>: Removes leading, trailing, or both leading and trailing whitespace characters.</li>
+<li><strong><code>replace(old, new)</code></strong>: Replaces occurrences of the <code>old</code> substring with <code>new</code>.</li>
+<li><strong><code>split(sep)</code></strong>: Splits the string into a list of words using <code>sep</code> as the delimiter.</li>
+<li><strong><code>partition(sep)</code></strong>: Splits the string into a tuple of 3 elements: (before sep, sep, after sep).</li>
+<li><strong><code>join(iterable)</code></strong>: Joins elements of an iterable (like a list) into a single string, using the string as a separator.
+<pre><code class="language-python">"-".join(["A", "B", "C"]) # Output: 'A-B-C'
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-5"><a class="header" href="#competency-based-questions-5">Competency Based Questions</a></h2>
+<p><strong>Q1. Predict the Output</strong>
+What is the output of the following code block?</p>
+<pre><code class="language-python">s = " Kendriya Vidyalaya "
+s = s.strip()
+print(s.replace("a", "@").split())
+</code></pre>
+<p><strong>Q2. Find the Error</strong>
+Riya wants to change the first letter of her name stored in a variable <code>name = "riya"</code> to a capital letter by directly modifying the character at index 0.</p>
+<pre><code class="language-python">name = "riya"
+name[0] = "R"
+print(name)
+</code></pre>
+<p>Why does this code throw an error? How can she achieve her goal using string methods?</p>
+<p><strong>Q3. Case-Based Scenario</strong>
+A password verification system requires a password to satisfy the following rules:</p>
+<ol>
+<li>It must contain only letters and numbers (no special characters).</li>
+<li>It must end with “123”.
+Which two Python string methods should the programmer use to verify these conditions?</li>
+</ol>
+<p><strong>Q4. Application-Oriented</strong>
+Write a Python program to input a string and determine whether it is a palindrome or not without using any loops. (A palindrome reads the same forwards and backwards, e.g., “MADAM”).</p>
+<hr>
+<h3 id="answers-to-competency-based-questions-5"><a class="header" href="#answers-to-competency-based-questions-5">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong>
+<code>['Kendriy@', 'Vidy@l@y@']</code>
+<em>Explanation</em>:</p>
+<ol>
+<li><code>strip()</code> removes leading/trailing spaces -&gt; <code>"Kendriya Vidyalaya"</code></li>
+<li><code>replace("a", "@")</code> -&gt; <code>"Kendriy@ Vidy@l@y@"</code></li>
+<li><code>split()</code> splits by space into a list -&gt; <code>['Kendriy@', 'Vidy@l@y@']</code>.</li>
+</ol>
+<p><strong>A2.</strong>
+<strong>Error</strong>: Strings in Python are <strong>immutable</strong>. You cannot assign a value to a specific index of an existing string (<code>name[0] = "R"</code> causes a <code>TypeError</code>).
+<strong>Correction</strong>: She should use the <code>capitalize()</code> or <code>title()</code> method.</p>
+<pre><code class="language-python">name = "riya"
+name = name.capitalize()
+print(name)
+</code></pre>
+<p><strong>A3.</strong>
+The programmer should use:</p>
+<ol>
+<li><code>isalnum()</code> (Returns True if characters are only letters and numbers).</li>
+<li><code>endswith("123")</code> (Returns True if the string ends with “123”).</li>
+</ol>
+<p><strong>A4.</strong></p>
+<pre><code class="language-python">text = input("Enter a string: ")
+# Reversing the string using slicing
+reversed_text = text[::-1]
+
+if text == reversed_text:
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-7-lists-in-python"><a class="header" href="#chapter-7-lists-in-python">Chapter 7: Lists in Python</a></h1>
+<p>A list is an ordered sequence of elements, which can be of any data type. Unlike strings, lists are <strong>mutable</strong>, meaning we can modify their contents after creation. Lists are enclosed in square brackets <code>[]</code> and elements are separated by commas.</p>
+<h2 id="71-indexing-and-operations"><a class="header" href="#71-indexing-and-operations">7.1 Indexing and Operations</a></h2>
+<p>Lists support indexing just like strings.</p>
+<ul>
+<li>Forward indexing starts from <code>0</code>.</li>
+<li>Backward indexing starts from <code>-1</code>.</li>
+</ul>
+<h3 id="list-operations"><a class="header" href="#list-operations">List Operations</a></h3>
+<ul>
+<li><strong>Concatenation (<code>+</code>)</strong>: Joins two lists. <code>[1, 2] + [3, 4]</code> results in <code>[1, 2, 3, 4]</code>.</li>
+<li><strong>Repetition (<code>*</code>)</strong>: Repeats the list. <code>[1] * 3</code> results in <code>[1, 1, 1]</code>.</li>
+<li><strong>Membership (<code>in</code>, <code>not in</code>)</strong>: Checks if an item exists in the list.</li>
+<li><strong>Slicing (<code>[start:stop:step]</code>)</strong>: Extracts a sub-list.
+<pre><code class="language-python">L = [10, 20, 30, 40, 50]
+print(L[1:4]) # Output: [20, 30, 40]
+</code></pre>
+</li>
+</ul>
+<h2 id="72-traversing-a-list"><a class="header" href="#72-traversing-a-list">7.2 Traversing a List</a></h2>
+<p>You can traverse a list using loops to access elements.</p>
+<pre><code class="language-python">L = [10, 20, 30]
+# Using a for loop directly
+for num in L:
+    print(num)
+
+# Using indexing with range and len
+for i in range(len(L)):
+    print(L[i])
+</code></pre>
+<h2 id="73-built-in-functions-and-methods"><a class="header" href="#73-built-in-functions-and-methods">7.3 Built-in Functions and Methods</a></h2>
+<p>Python provides many functions and methods to work with lists.</p>
+<ul>
+<li><strong><code>len(list)</code></strong>: Returns number of elements.</li>
+<li><strong><code>list(sequence)</code></strong>: Converts a sequence to a list.</li>
+<li><strong><code>append(item)</code></strong>: Adds a single item to the <em>end</em> of the list.</li>
+<li><strong><code>extend(iterable)</code></strong>: Appends elements from another iterable (like a list) to the end.</li>
+<li><strong><code>insert(index, item)</code></strong>: Inserts an item at a specific index.</li>
+<li><strong><code>count(item)</code></strong>: Returns the number of times <code>item</code> appears.</li>
+<li><strong><code>index(item)</code></strong>: Returns the first index of <code>item</code>.</li>
+<li><strong><code>remove(item)</code></strong>: Removes the first occurrence of <code>item</code>. Raises ValueError if not found.</li>
+<li><strong><code>pop([index])</code></strong>: Removes and returns the item at <code>index</code> (default is the last item).</li>
+<li><strong><code>reverse()</code></strong>: Reverses the elements of the list in-place.</li>
+<li><strong><code>sort()</code></strong>: Sorts the list in ascending order in-place.</li>
+<li><strong><code>sorted(list)</code></strong>: Returns a <em>new</em> sorted list without modifying the original.</li>
+<li><strong><code>min(list)</code> / <code>max(list)</code> / <code>sum(list)</code></strong>: Returns the minimum, maximum, and sum of numeric lists.</li>
+</ul>
+<h2 id="74-nested-lists"><a class="header" href="#74-nested-lists">7.4 Nested Lists</a></h2>
+<p>A list can contain another list as its element. This is called a nested list (used to represent matrices or 2D arrays).</p>
+<pre><code class="language-python">matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(matrix[0][1]) # Output: 2
+</code></pre>
+<h2 id="75-common-list-programs"><a class="header" href="#75-common-list-programs">7.5 Common List Programs</a></h2>
+<h3 id="1-linear-search"><a class="header" href="#1-linear-search">1. Linear Search</a></h3>
+<p>Finding an element in a list by checking sequentially.</p>
+<pre><code class="language-python">L = [4, 2, 9, 7, 5]
+search_key = 7
+found = False
+
+for i in range(len(L)):
+    if L[i] == search_key:
+        print("Element found at index:", i)
+        found = True
+        break
+
+if not found:
+    print("Element not found")
+</code></pre>
+<h3 id="2-frequency-of-elements"><a class="header" href="#2-frequency-of-elements">2. Frequency of Elements</a></h3>
+<p>Counting how many times a specific element appears in a list.</p>
+<pre><code class="language-python">L = [1, 2, 2, 3, 2, 4]
+target = 2
+count = 0
+for num in L:
+    if num == target:
+        count += 1
+print("Frequency of", target, "is:", count)
+</code></pre>
+<hr>
+<h2 id="competency-based-questions-6"><a class="header" href="#competency-based-questions-6">Competency Based Questions</a></h2>
+<p><strong>Q1. Predict the Output</strong>
+What will be the output of the following code?</p>
+<pre><code class="language-python">L = [10, 20, 30]
+L.append([40, 50])
+L.extend([60, 70])
+print(len(L))
+print(L[3])
+</code></pre>
+<p><strong>Q2. Find the Error</strong>
+Ankit wrote the following code to double every element in a list. But when he prints the list, the elements are unchanged. Why?</p>
+<pre><code class="language-python">L = [1, 2, 3]
+for i in L:
+    i = i * 2
+print(L)
+</code></pre>
+<p>Provide the corrected code.</p>
+<p><strong>Q3. Case-Based Scenario</strong>
+A teacher wants to maintain a list of marks for her students. She wants to add a new student’s marks (85) exactly at the 3rd position in the list. Which list method should she use? Write the line of code assuming her list is named <code>marks_list</code>.</p>
+<p><strong>Q4. Application-Oriented</strong>
+Write a Python program to find the mean (average) of numeric values stored in a list without using the built-in <code>sum()</code> function.</p>
+<hr>
+<h3 id="answers-to-competency-based-questions-6"><a class="header" href="#answers-to-competency-based-questions-6">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong>
+Output:</p>
+<pre><code class="language-text">6
+[40, 50]
+</code></pre>
+<p><em>Explanation</em>:</p>
+<ol>
+<li><code>append([40, 50])</code> adds the list <code>[40, 50]</code> as a <strong>single element</strong>. List becomes <code>[10, 20, 30, [40, 50]]</code>. Length = 4.</li>
+<li><code>extend([60, 70])</code> adds individual elements. List becomes <code>[10, 20, 30, [40, 50], 60, 70]</code>. Length = 6.</li>
+<li><code>L[3]</code> refers to the nested list <code>[40, 50]</code>.</li>
+</ol>
+<p><strong>A2.</strong>
+<strong>Error</strong>: In the <code>for i in L:</code> loop, <code>i</code> is just a temporary copy of the value. Changing <code>i</code> does not change the actual list element.
+<strong>Correction</strong>: He must use index-based assignment.</p>
+<pre><code class="language-python">L = [1, 2, 3]
+for i in range(len(L)):
+    L[i] = L[i] * 2
+print(L)
+</code></pre>
+<p><strong>A3.</strong>
+She should use the <code>insert()</code> method.</p>
+<pre><code class="language-python">marks_list.insert(2, 85)
+</code></pre>
+<p><em>(Note: Index 2 corresponds to the 3rd position, since indices start at 0).</em></p>
+<p><strong>A4.</strong></p>
+<pre><code class="language-python">L = [10, 20, 30, 40, 50]
+total = 0
+count = 0
+
+for num in L:
+    total += num
+    count += 1
+
+mean = total / count
+print("Mean is:", mean)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-8-tuples-in-python"><a class="header" href="#chapter-8-tuples-in-python">Chapter 8: Tuples in Python</a></h1>
+<p>A tuple is an ordered sequence of elements, similar to a list. However, unlike lists, tuples are <strong>immutable</strong>. Once a tuple is created, its elements cannot be changed, added, or removed. Tuples are defined by enclosing elements in parentheses <code>()</code>.</p>
+<h2 id="81-introduction-and-indexing"><a class="header" href="#81-introduction-and-indexing">8.1 Introduction and Indexing</a></h2>
+<p>Tuples are often used to store heterogeneous data (different data types) and write-protected data.</p>
+<pre><code class="language-python">t = (1, "Apple", 3.14)
+print(t[1]) # Output: Apple
+</code></pre>
+<p><em>Note</em>: To create a tuple with a single element, you must include a trailing comma, otherwise Python interprets it as an expression inside parentheses.</p>
+<pre><code class="language-python">single_t = (5,)  # This is a tuple
+not_a_t = (5)    # This is an integer
+</code></pre>
+<h2 id="82-tuple-operations"><a class="header" href="#82-tuple-operations">8.2 Tuple Operations</a></h2>
+<p>Because they are immutable, tuples only support operations that do not modify them.</p>
+<ul>
+<li><strong>Concatenation (<code>+</code>)</strong>: <code>(1, 2) + (3, 4)</code> results in <code>(1, 2, 3, 4)</code>.</li>
+<li><strong>Repetition (<code>*</code>)</strong>: <code>(1,) * 3</code> results in <code>(1, 1, 1)</code>.</li>
+<li><strong>Membership (<code>in</code>, <code>not in</code>)</strong>: Checks existence.</li>
+<li><strong>Slicing</strong>: Extracts a sub-tuple. <code>t[1:3]</code></li>
+</ul>
+<h2 id="83-tuple-assignment"><a class="header" href="#83-tuple-assignment">8.3 Tuple Assignment</a></h2>
+<p>Python supports a powerful feature called tuple assignment (or tuple unpacking). It allows you to assign values to multiple variables simultaneously.</p>
+<pre><code class="language-python"># Packing
+t = (10, 20, 30)
+
+# Unpacking
+a, b, c = t
+print(a) # Output: 10
+print(b) # Output: 20
+</code></pre>
+<p>This also makes swapping variables incredibly easy:</p>
+<pre><code class="language-python">x, y = 5, 10
+x, y = y, x  # Swaps values!
+</code></pre>
+<h2 id="84-built-in-functions-and-methods"><a class="header" href="#84-built-in-functions-and-methods">8.4 Built-in Functions and Methods</a></h2>
+<p>Since tuples are immutable, they lack methods like <code>append</code>, <code>remove</code>, or <code>sort</code>. However, many built-in functions work with tuples.</p>
+<ul>
+<li><strong><code>len(tuple)</code></strong>: Returns number of elements.</li>
+<li><strong><code>tuple(sequence)</code></strong>: Converts a sequence to a tuple.</li>
+<li><strong><code>count(item)</code></strong>: Returns the frequency of <code>item</code> in the tuple.</li>
+<li><strong><code>index(item)</code></strong>: Returns the index of the first occurrence of <code>item</code>.</li>
+<li><strong><code>min(tuple)</code> / <code>max(tuple)</code> / <code>sum(tuple)</code></strong>: Finds minimum, maximum, and sum of numeric tuples.</li>
+<li><strong><code>sorted(tuple)</code></strong>: Returns a <em>new sorted list</em> from the tuple elements (does not modify the original tuple, and returns a list, not a tuple).</li>
+</ul>
+<h2 id="85-nested-tuples"><a class="header" href="#85-nested-tuples">8.5 Nested Tuples</a></h2>
+<p>Tuples can contain other tuples (or lists).</p>
+<pre><code class="language-python">nested_t = ((1, 2), (3, 4))
+</code></pre>
+<hr>
+<h2 id="competency-based-questions-7"><a class="header" href="#competency-based-questions-7">Competency Based Questions</a></h2>
+<p><strong>Q1. Predict the Output</strong>
+What will be the output of the following code?</p>
+<pre><code class="language-python">t1 = (10, 20, 30)
+t2 = (40, 50)
+t3 = t1 + t2
+print(t3 * 2)
+</code></pre>
+<p><strong>Q2. Assertion-Reasoning</strong></p>
+<ul>
+<li><strong>Assertion (A)</strong>: The code <code>T = (10, 20); T[0] = 50</code> will result in a TypeError.</li>
+<li><strong>Reason (R)</strong>: Tuples are immutable, so item assignment is not supported.
+Choose the correct option:
+a) Both A and R are true and R is the correct explanation of A.
+b) Both A and R are true but R is NOT the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.</li>
+</ul>
+<p><strong>Q3. Case-Based Scenario</strong>
+Rohit needs to store the coordinates (Latitude and Longitude) of a specific geographical location in his program. These coordinates must never change during the execution of the program.</p>
+<ol>
+<li>Which data structure (List or Tuple) should Rohit use and why?</li>
+<li>Write the code to store Latitude <code>28.7041</code> and Longitude <code>77.1025</code> in the chosen data structure.</li>
+</ol>
+<p><strong>Q4. Application-Oriented</strong>
+Write a Python program to input a tuple of numbers and find the maximum and minimum values using built-in functions.</p>
+<hr>
+<h3 id="answers-to-competency-based-questions-7"><a class="header" href="#answers-to-competency-based-questions-7">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong>
+<code>(10, 20, 30, 40, 50, 10, 20, 30, 40, 50)</code>
+<em>Explanation</em>: <code>t1 + t2</code> concatenates to <code>(10, 20, 30, 40, 50)</code>. Multiplying by 2 repeats the entire tuple twice.</p>
+<p><strong>A2.</strong>
+<strong>a)</strong> Both A and R are true and R is the correct explanation of A. Because tuples are immutable, you cannot change the value at a specific index once it has been created.</p>
+<p><strong>A3.</strong></p>
+<ol>
+<li>Rohit should use a <strong>Tuple</strong>. Since the coordinates should never change during execution, an immutable data structure ensures the data remains write-protected and prevents accidental modifications.</li>
+<li><code>coordinates = (28.7041, 77.1025)</code></li>
+</ol>
+<p><strong>A4.</strong></p>
+<pre><code class="language-python"># Assuming the user inputs numbers separated by commas: 5, 2, 9, 1
+user_input = input("Enter numbers separated by commas: ")
+
+# Convert input string to a tuple of integers
+# Using a generator expression with tuple()
+t = tuple(int(x) for x in user_input.split(','))
+
+print("Maximum value is:", max(t))
+print("Minimum value is:", min(t))
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-9-dictionaries-in-python"><a class="header" href="#chapter-9-dictionaries-in-python">Chapter 9: Dictionaries in Python</a></h1>
+<p>A dictionary is an unordered collection of items where each item is stored as a <strong>Key-Value pair</strong>. Dictionaries are <strong>mutable</strong>, but the keys inside a dictionary must be immutable (like strings, numbers, or tuples) and unique. Dictionaries are enclosed in curly braces <code>{}</code>.</p>
+<h2 id="91-accessing-and-modifying-items"><a class="header" href="#91-accessing-and-modifying-items">9.1 Accessing and Modifying Items</a></h2>
+<p>Unlike lists, dictionaries do not use numeric indexing. You access values using their corresponding keys.</p>
+<pre><code class="language-python"># Creating a dictionary
+student = {'name': 'Rohan', 'age': 16, 'grade': 'A'}
+
+# Accessing a value
+print(student['name'])  # Output: Rohan
+
+# Adding a new term / Modifying an existing item
+student['marks'] = 95   # Adds a new key-value pair
+student['grade'] = 'A+' # Modifies existing value
+</code></pre>
+<p><em>Note</em>: Attempting to access a key that doesn’t exist using <code>dict[key]</code> will raise a <code>KeyError</code>.</p>
+<h2 id="92-traversing-a-dictionary"><a class="header" href="#92-traversing-a-dictionary">9.2 Traversing a Dictionary</a></h2>
+<p>You can loop through a dictionary to access its keys, values, or both.</p>
+<pre><code class="language-python"># Loop through keys
+for k in student:
+    print(k, student[k])
+</code></pre>
+<h2 id="93-built-in-functions-and-methods"><a class="header" href="#93-built-in-functions-and-methods">9.3 Built-in Functions and Methods</a></h2>
+<p>Dictionaries come with a rich set of methods.</p>
+<ul>
+<li><strong><code>len(dict)</code></strong>: Returns the number of key-value pairs.</li>
+<li><strong><code>dict()</code></strong>: Constructor to create a dictionary.</li>
+<li><strong><code>keys()</code></strong>: Returns a sequence of all keys.</li>
+<li><strong><code>values()</code></strong>: Returns a sequence of all values.</li>
+<li><strong><code>items()</code></strong>: Returns a sequence of tuples representing key-value pairs <code>(key, value)</code>.</li>
+<li><strong><code>get(key, [default])</code></strong>: Returns the value for <code>key</code>. If <code>key</code> is not found, returns <code>default</code> (or <code>None</code>). Avoids <code>KeyError</code>.</li>
+<li><strong><code>update(other_dict)</code></strong>: Updates the dictionary with key-value pairs from another dictionary.</li>
+<li><strong><code>del dict[key]</code></strong>: Deletes the specified key-value pair.</li>
+<li><strong><code>clear()</code></strong>: Removes all elements from the dictionary.</li>
+<li><strong><code>pop(key, [default])</code></strong>: Removes the item with <code>key</code> and returns its value.</li>
+<li><strong><code>popitem()</code></strong>: Removes and returns the last inserted key-value pair as a tuple.</li>
+<li><strong><code>setdefault(key, [default])</code></strong>: Returns the value of <code>key</code>. If <code>key</code> doesn’t exist, inserts <code>key</code> with <code>default</code> value.</li>
+<li><strong><code>fromkeys(sequence, [value])</code></strong>: Creates a new dictionary with keys from <code>sequence</code> and values set to <code>value</code>.</li>
+<li><strong><code>copy()</code></strong>: Returns a shallow copy of the dictionary.</li>
+<li><strong><code>max()</code> / <code>min()</code> / <code>sorted()</code></strong>: When applied to a dictionary, these operate on the <strong>keys</strong> by default.</li>
+</ul>
+<h2 id="94-common-programs"><a class="header" href="#94-common-programs">9.4 Common Programs</a></h2>
+<h3 id="1-counting-character-frequency"><a class="header" href="#1-counting-character-frequency">1. Counting Character Frequency</a></h3>
+<p>A common use case for dictionaries is counting the occurrences of characters in a string.</p>
+<pre><code class="language-python">text = "hello"
+freq = {}
+for char in text:
+    if char in freq:
+        freq[char] += 1
+    else:
+        freq[char] = 1
+print(freq) # Output: {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+</code></pre>
+<hr>
+<h2 id="competency-based-questions-8"><a class="header" href="#competency-based-questions-8">Competency Based Questions</a></h2>
+<p><strong>Q1. Predict the Output</strong>
+What will be the output of the following code?</p>
+<pre><code class="language-python">D = {'a': 10, 'b': 20, 'c': 30}
+D.update({'b': 40, 'd': 50})
+print(D.pop('c'))
+print(D)
+</code></pre>
+<p><strong>Q2. Find the Error</strong>
+Kiran tries to create a dictionary where she uses a list as a key to map students to their subjects.</p>
+<pre><code class="language-python">data = { ["Rahul", "Class11"] : "Computer Science" }
+print(data)
+</code></pre>
+<p>Why does this result in a <code>TypeError</code>? How can it be fixed?</p>
+<p><strong>Q3. Case-Based Scenario</strong>
+A small company wants to store data for its 3 employees. For each employee, they need to store their Name as the key and their Salary as the value.</p>
+<ol>
+<li>Write Python code to create this dictionary for ‘Amit’ (Salary: 40000), ‘Sneha’ (Salary: 55000), and ‘John’ (Salary: 30000).</li>
+<li>Write a loop to print the names of employees earning more than 35000.</li>
+</ol>
+<p><strong>Q4. Assertion-Reasoning</strong></p>
+<ul>
+<li><strong>Assertion (A)</strong>: The <code>get()</code> method is safer to use than square brackets <code>[]</code> when accessing dictionary values.</li>
+<li><strong>Reason (R)</strong>: If a key is not found, <code>get()</code> returns None (or a specified default value), whereas <code>[]</code> raises a KeyError and crashes the program.
+Choose the correct option:
+a) Both A and R are true and R is the correct explanation of A.
+b) Both A and R are true but R is NOT the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.</li>
+</ul>
+<hr>
+<h3 id="answers-to-competency-based-questions-8"><a class="header" href="#answers-to-competency-based-questions-8">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong></p>
+<pre><code class="language-text">30
+{'a': 10, 'b': 40, 'd': 50}
+</code></pre>
+<p><em>Explanation</em>:</p>
+<ol>
+<li><code>update()</code> changes the value of ‘b’ to 40 and adds ‘d’: 50.</li>
+<li><code>pop('c')</code> removes the key ‘c’ and returns its value (30).</li>
+<li>The final dictionary has keys ‘a’, ‘b’, and ‘d’.</li>
+</ol>
+<p><strong>A2.</strong>
+<strong>Error</strong>: Dictionary keys must be <strong>immutable</strong>. Lists are mutable, so they cannot be hashed and used as dictionary keys.
+<strong>Correction</strong>: Use a tuple instead of a list for the key, as tuples are immutable.</p>
+<pre><code class="language-python">data = { ("Rahul", "Class11") : "Computer Science" }
+print(data)
+</code></pre>
+<p><strong>A3.</strong></p>
+<ol>
+<li>Code to create the dictionary:</li>
+</ol>
+<pre><code class="language-python">employees = {'Amit': 40000, 'Sneha': 55000, 'John': 30000}
+</code></pre>
+<ol start="2">
+<li>Code to print names earning &gt; 35000:</li>
+</ol>
+<pre><code class="language-python">for name, salary in employees.items():
+    if salary &gt; 35000:
+        print(name)
+</code></pre>
+<p><strong>A4.</strong>
+<strong>a)</strong> Both A and R are true and R is the correct explanation of A. <code>get()</code> provides a fail-safe mechanism, preventing runtime errors if a key is missing.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-10-python-modules"><a class="header" href="#chapter-10-python-modules">Chapter 10: Python Modules</a></h1>
+<p>As programs grow larger, it becomes inefficient to write all the code in a single file. A <strong>module</strong> is a file containing Python definitions (functions, classes) and statements. Modules allow us to organize code logically and reuse it across multiple projects.</p>
+<h2 id="101-importing-modules"><a class="header" href="#101-importing-modules">10.1 Importing Modules</a></h2>
+<p>There are two primary ways to import modules in Python.</p>
+<h3 id="1-using-import-module"><a class="header" href="#1-using-import-module">1. Using <code>import &lt;module&gt;</code></a></h3>
+<p>This imports the entire module. To access a function inside the module, you must use the dot notation <code>module_name.function_name()</code>.</p>
+<pre><code class="language-python">import math
+print(math.sqrt(16))  # Output: 4.0
+</code></pre>
+<h3 id="2-using-from-module-import-function"><a class="header" href="#2-using-from-module-import-function">2. Using <code>from &lt;module&gt; import &lt;function&gt;</code></a></h3>
+<p>This imports specific functions directly into your program’s namespace, meaning you don’t need to use the dot notation.</p>
+<pre><code class="language-python">from math import pi, pow
+print(pow(2, 3))      # Output: 8.0
+print(pi)             # Output: 3.14159...
+</code></pre>
+<p><em>(Note: You can use <code>from module import *</code> to import everything without dot notation, but this is generally discouraged as it can clutter your namespace).</em></p>
+<h2 id="102-the-math-module"><a class="header" href="#102-the-math-module">10.2 The <code>math</code> Module</a></h2>
+<p>The <code>math</code> module provides mathematical functions for floating-point arithmetic.</p>
+<ul>
+<li><strong><code>pi</code></strong>: Mathematical constant \(\pi\) (3.141592…).</li>
+<li><strong><code>e</code></strong>: Mathematical constant \(e\) (2.718281…).</li>
+<li><strong><code>sqrt(x)</code></strong>: Returns the square root of x.</li>
+<li><strong><code>ceil(x)</code></strong>: Returns the smallest integer greater than or equal to x (rounds up).</li>
+<li><strong><code>floor(x)</code></strong>: Returns the largest integer less than or equal to x (rounds down).</li>
+<li><strong><code>pow(x, y)</code></strong>: Returns <code>x</code> raised to the power of <code>y</code>.</li>
+<li><strong><code>fabs(x)</code></strong>: Returns the absolute (positive) floating-point value of x.</li>
+<li><strong><code>sin(x)</code></strong>, <strong><code>cos(x)</code></strong>, <strong><code>tan(x)</code></strong>: Returns trigonometric sine, cosine, and tangent of x (x must be in radians).</li>
+</ul>
+<h2 id="103-the-random-module"><a class="header" href="#103-the-random-module">10.3 The <code>random</code> Module</a></h2>
+<p>The <code>random</code> module is used to generate pseudo-random numbers.</p>
+<ul>
+<li><strong><code>random()</code></strong>: Returns a random floating-point number between 0.0 (inclusive) and 1.0 (exclusive).</li>
+<li><strong><code>randint(a, b)</code></strong>: Returns a random integer <code>N</code> such that \(a \le N \le b\) (both inclusive).</li>
+<li><strong><code>randrange(start, stop, [step])</code></strong>: Returns a randomly selected element from <code>range(start, stop, step)</code>. The <code>stop</code> value is exclusive.</li>
+</ul>
+<h2 id="104-the-statistics-module"><a class="header" href="#104-the-statistics-module">10.4 The <code>statistics</code> Module</a></h2>
+<p>The <code>statistics</code> module provides functions to calculate mathematical statistics of numeric data.</p>
+<ul>
+<li><strong><code>mean(data)</code></strong>: Calculates the arithmetic mean (average) of the data sequence.</li>
+<li><strong><code>median(data)</code></strong>: Calculates the median (middle value) of the data sequence.</li>
+<li><strong><code>mode(data)</code></strong>: Calculates the mode (most common value) of the data sequence.</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-9"><a class="header" href="#competency-based-questions-9">Competency Based Questions</a></h2>
+<p><strong>Q1. Predict the Output</strong>
+Assuming the <code>random</code> module has been imported, what are the minimum and maximum possible values that can be generated by the following statement?</p>
+<pre><code class="language-python">x = random.randint(3, 8) - random.randrange(1, 4)
+</code></pre>
+<p><strong>Q2. Find the Error</strong>
+Sonia wrote the following program to find the square root of 25:</p>
+<pre><code class="language-python">import math
+ans = sqrt(25)
+print(ans)
+</code></pre>
+<p>The code produces a <code>NameError</code>. Why? How can she fix it (provide two different ways)?</p>
+<p><strong>Q3. Case-Based Scenario</strong>
+A teacher conducts a quiz for 5 students and records their marks out of 10 in a list: <code>marks = [7, 8, 7, 9, 7]</code>.
+She wants to find:</p>
+<ol>
+<li>The average score of the class.</li>
+<li>The score that was achieved by the maximum number of students.
+Write the Python code using the appropriate module to find these two metrics.</li>
+</ol>
+<p><strong>Q4. Assertion-Reasoning</strong></p>
+<ul>
+<li><strong>Assertion (A)</strong>: <code>math.ceil(4.2)</code> evaluates to 5, and <code>math.floor(4.8)</code> evaluates to 4.</li>
+<li><strong>Reason (R)</strong>: <code>ceil()</code> rounds a number down to the nearest integer, while <code>floor()</code> rounds it up.
+Choose the correct option:
+a) Both A and R are true and R is the correct explanation of A.
+b) Both A and R are true but R is NOT the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.</li>
+</ul>
+<hr>
+<h3 id="answers-to-competency-based-questions-9"><a class="header" href="#answers-to-competency-based-questions-9">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong>
+<code>random.randint(3, 8)</code> can generate values: 3, 4, 5, 6, 7, 8.
+<code>random.randrange(1, 4)</code> can generate values: 1, 2, 3.</p>
+<ul>
+<li><strong>Maximum possible value</strong>: Max of randint (8) - Min of randrange (1) = <strong>7</strong>.</li>
+<li><strong>Minimum possible value</strong>: Min of randint (3) - Max of randrange (3) = <strong>0</strong>.</li>
+</ul>
+<p><strong>A2.</strong>
+<strong>Error</strong>: Sonia used <code>import math</code>, which means she must access the function using the dot notation (<code>math.sqrt</code>). She used <code>sqrt</code> directly without importing it specifically into the namespace.
+<strong>Fix 1</strong>: Use dot notation.</p>
+<pre><code class="language-python">import math
+ans = math.sqrt(25)
+</code></pre>
+<p><strong>Fix 2</strong>: Import the function directly.</p>
+<pre><code class="language-python">from math import sqrt
+ans = sqrt(25)
+</code></pre>
+<p><strong>A3.</strong>
+The teacher should use the <code>statistics</code> module. The average is the <code>mean</code>, and the most frequent score is the <code>mode</code>.</p>
+<pre><code class="language-python">import statistics
+
+marks = [7, 8, 7, 9, 7]
+average_score = statistics.mean(marks)
+most_frequent = statistics.mode(marks)
+
+print("Average Score:", average_score)
+print("Most frequent score:", most_frequent)
+</code></pre>
+<p><strong>A4.</strong>
+<strong>c)</strong> A is true but R is false.
+<em>Explanation</em>: The assertion is perfectly correct. <code>ceil(4.2)</code> is 5, and <code>floor(4.8)</code> is 4. However, the reason is entirely backwards. <code>ceil()</code> rounds UP (to the ceiling), and <code>floor()</code> rounds DOWN.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-11-society-law-and-ethics"><a class="header" href="#chapter-11-society-law-and-ethics">Chapter 11: Society, Law and Ethics</a></h1>
+<p>As we spend more time online, understanding the ethical, legal, and societal implications of computing is crucial. This chapter covers how to be a responsible digital citizen, protect data, and stay safe from cyber threats.</p>
+<h2 id="111-digital-society-and-netizen"><a class="header" href="#111-digital-society-and-netizen">11.1 Digital Society and Netizen</a></h2>
+<p>A <strong>Netizen</strong> (Internet Citizen) is someone who actively uses the internet. Being a good netizen means following <strong>Net Etiquettes</strong> (rules for acceptable online behavior).</p>
+<ul>
+<li><strong>Communication Etiquettes</strong>: Be polite, avoid writing in ALL CAPS (which implies shouting), respect others’ privacy, and avoid flaming (hostile language).</li>
+<li><strong>Social Media Etiquettes</strong>: Do not share unverified information (fake news), be mindful of what you post, and respect copyrights.</li>
+</ul>
+<h3 id="digital-footprints"><a class="header" href="#digital-footprints">Digital Footprints</a></h3>
+<p>Every time you use the internet, you leave behind a trail of data called a <strong>Digital Footprint</strong>.</p>
+<ul>
+<li><strong>Active Digital Footprint</strong>: Data you intentionally submit online (e.g., social media posts, emails).</li>
+<li><strong>Passive Digital Footprint</strong>: Data collected without your explicit knowledge (e.g., IP address logging, cookies tracking your browsing habits).
+<em>Caution</em>: Digital footprints are permanent. Always think before you click or post.</li>
+</ul>
+<h2 id="112-data-protection-and-intellectual-property-rights-ipr"><a class="header" href="#112-data-protection-and-intellectual-property-rights-ipr">11.2 Data Protection and Intellectual Property Rights (IPR)</a></h2>
+<p><strong>Intellectual Property (IP)</strong> refers to creations of the mind (inventions, literary and artistic works, designs).</p>
+<ul>
+<li><strong>Copyright</strong>: Protects original works of authorship (books, software code, music).</li>
+<li><strong>Patent</strong>: Protects inventions, granting the inventor exclusive rights.</li>
+<li><strong>Trademark</strong>: Protects symbols, names, and slogans used to identify a brand.</li>
+</ul>
+<p><strong>Violations of IPR:</strong></p>
+<ul>
+<li><strong>Plagiarism</strong>: Using someone else’s work or ideas without giving them proper credit.</li>
+<li><strong>Copyright Infringement</strong>: Unauthorized use, copying, or distribution of copyrighted material (e.g., downloading pirated movies).</li>
+</ul>
+<h3 id="open-source-software-oss"><a class="header" href="#open-source-software-oss">Open Source Software (OSS)</a></h3>
+<p>Software whose source code is available for anyone to view, modify, and enhance. It relies on specific licenses:</p>
+<ul>
+<li><strong>GPL (General Public License)</strong>: Ensures the software remains free and open. Any modified versions must also be distributed under GPL.</li>
+<li><strong>Creative Commons (CC)</strong>: Used mostly for media/content, allowing creators to grant permission to others to share and use their work under specific conditions.</li>
+<li><strong>Apache License</strong>: Allows users to use the software for any purpose, distribute it, modify it, and distribute modified versions.</li>
+</ul>
+<h2 id="113-cyber-crime-and-cyber-safety"><a class="header" href="#113-cyber-crime-and-cyber-safety">11.3 Cyber Crime and Cyber Safety</a></h2>
+<p><strong>Cyber Crime</strong> is any criminal activity that involves a computer, networked device, or a network.</p>
+<ul>
+<li><strong>Hacking</strong>: Unauthorized access to a computer system or network.</li>
+<li><strong>Eavesdropping</strong>: Secretly intercepting private communications over a network.</li>
+<li><strong>Phishing</strong>: Fraudulent attempts to obtain sensitive information (like passwords) by disguising as a trustworthy entity via email.</li>
+<li><strong>Ransomware</strong>: Malware that encrypts a victim’s files and demands payment (ransom) to decrypt them.</li>
+<li><strong>Cyber Bullying</strong>: Using digital technology to harass, threaten, or humiliate someone.</li>
+<li><strong>Cyber Trolls</strong>: Individuals who intentionally post inflammatory or provocative messages online to disrupt conversations and provoke emotional responses.</li>
+</ul>
+<p><strong>Cyber Safety</strong>: The safe and responsible use of Information and Communication Technology.</p>
+<ul>
+<li><strong>Identity Protection</strong>: Using strong passwords, enabling Two-Factor Authentication (2FA), and not sharing personal details publicly.</li>
+<li><strong>Confidentiality</strong>: Ensuring data is only accessible to authorized individuals (e.g., using secure <code>HTTPS</code> websites).</li>
+</ul>
+<h2 id="114-malware"><a class="header" href="#114-malware">11.4 Malware</a></h2>
+<p><strong>Malware</strong> (Malicious Software) is designed to harm or exploit computer systems.</p>
+<ul>
+<li><strong>Virus</strong>: Attaches itself to a clean file and spreads when the infected file is executed.</li>
+<li><strong>Trojan</strong>: Disguises itself as legitimate software to trick users into installing it, creating a backdoor for hackers.</li>
+<li><strong>Adware</strong>: Unwanted software designed to throw advertisements up on your screen.</li>
+</ul>
+<h2 id="115-e-waste-and-technology-in-society"><a class="header" href="#115-e-waste-and-technology-in-society">11.5 E-Waste and Technology in Society</a></h2>
+<p><strong>E-Waste (Electronic Waste)</strong> refers to discarded electronic appliances (old phones, computers). E-waste contains toxic materials (lead, mercury) and must be disposed of properly through authorized recycling centers, not thrown in regular trash.</p>
+<h3 id="information-technology-act-it-act"><a class="header" href="#information-technology-act-it-act">Information Technology Act (IT Act)</a></h3>
+<p>In India, the <strong>IT Act, 2000</strong> (and its amendments) provides legal recognition for electronic transactions and outlines penalties for cybercrimes like hacking, data theft, and publishing obscene information online.</p>
+<h3 id="gender-and-disability-issues"><a class="header" href="#gender-and-disability-issues">Gender and Disability Issues</a></h3>
+<p>Technology should be inclusive.</p>
+<ul>
+<li><strong>Disability Issues</strong>: Websites and software should be designed with accessibility in mind (e.g., screen readers for the visually impaired, keyboard navigation for motor disabilities).</li>
+<li><strong>Gender Issues</strong>: Ensuring equal access to technology and computing education regardless of gender, and actively combating online gender-based harassment.</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-10"><a class="header" href="#competency-based-questions-10">Competency Based Questions</a></h2>
+<p><strong>Q1. Case-Based Scenario</strong>
+Amit downloads a popular mobile game from a third-party website instead of the official app store. After installation, the game works fine, but Amit notices that his phone’s battery drains rapidly, and he is constantly bombarded with pop-up advertisements even when the game is closed.</p>
+<ol>
+<li>What specific type of malware has likely infected Amit’s phone?</li>
+<li>Which cybersecurity concept did Amit ignore by downloading from an untrusted source?</li>
+</ol>
+<p><strong>Q2. Assertion-Reasoning</strong></p>
+<ul>
+<li><strong>Assertion (A)</strong>: Plagiarism is a legal offense that always leads to a jail sentence.</li>
+<li><strong>Reason (R)</strong>: Plagiarism involves using someone else’s work without giving them credit, which is ethically wrong.
+Choose the correct option:
+a) Both A and R are true and R is the correct explanation of A.
+b) Both A and R are true but R is NOT the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.</li>
+</ul>
+<p><strong>Q3. Application-Oriented</strong>
+A school has replaced 50 old desktop computers with new laptops. The administration plans to dump the old computers in the local municipal garbage bin.</p>
+<ol>
+<li>What is the term used for these discarded computers?</li>
+<li>Why is the administration’s plan dangerous, and what is the proper way to dispose of them?</li>
+</ol>
+<p><strong>Q4. Differentiate</strong>
+What is the difference between Phishing and Eavesdropping? Provide a brief one-line explanation for each.</p>
+<hr>
+<h3 id="answers-to-competency-based-questions-10"><a class="header" href="#answers-to-competency-based-questions-10">Answers to Competency Based Questions</a></h3>
+<p><strong>A1.</strong></p>
+<ol>
+<li>Amit’s phone is likely infected with a <strong>Trojan</strong> (since it disguised itself as a legitimate game) that dropped <strong>Adware</strong> (causing the constant advertisements).</li>
+<li>He ignored <strong>Cyber Safety</strong> principles, specifically safely browsing the web and downloading only from verified, official sources.</li>
+</ol>
+<p><strong>A2.</strong>
+<strong>d)</strong> A is false but R is true.
+<em>Explanation</em>: The reason is entirely correct. However, the assertion is false. While plagiarism is an ethical violation and can lead to severe academic or professional consequences (like failing a course or being fired), it is not necessarily a criminal offense that leads to jail time unless it crosses into severe, legally actionable <strong>Copyright Infringement</strong>.</p>
+<p><strong>A3.</strong></p>
+<ol>
+<li>These discarded computers are termed <strong>E-waste (Electronic Waste)</strong>.</li>
+<li>Dumping them in municipal bins is dangerous because computers contain heavy metals and toxic chemicals (like lead, cadmium, and mercury) that can leach into the soil and groundwater, causing severe environmental damage. The proper way to dispose of them is to hand them over to <strong>authorized E-waste recycling centers</strong> for safe dismantling and material recovery.</li>
+</ol>
+<p><strong>A4.</strong></p>
+<ul>
+<li><strong>Phishing</strong> involves actively deceiving a victim (usually via fake emails) into voluntarily giving up sensitive information like passwords.</li>
+<li><strong>Eavesdropping</strong> involves passively and secretly intercepting data as it travels over a network without the communicating parties’ knowledge.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    
+                    <footer style="text-align: center; padding: 20px 0; margin-top: 40px; border-top: 1px solid var(--sidebar-border); font-size: 0.9em; color: var(--fg);">
+                        Copyright &copy; 2026-2027 by Abhishek Kumar (Author). All rights reserved.<br>
+                        For support, email: <a href="mailto:support@abhishek-kumar.co.in">support@abhishek-kumar.co.in</a>
+                    </footer>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="redirect-dc09832c.js"></script>
+        <script src="mermaid-init-9ab9defc.js"></script>
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
