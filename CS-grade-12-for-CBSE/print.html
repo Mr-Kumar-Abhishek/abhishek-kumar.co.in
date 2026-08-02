@@ -1,0 +1,1885 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Computer Science for Grade 12 CBSE</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        <script>
+            if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+                window.location.protocol = 'https:';
+            }
+        </script>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-102255bf.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-50832078.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Computer Science for Grade 12 CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>Welcome to the <strong>CBSE Grade 12 Computer Science</strong> textbook!</p>
+<p>This book is designed specifically to cover the entire CBSE syllabus for Class XII (Subject Code - 083) for the academic year 2025-26.</p>
+<h2 id="structure-of-the-book"><a class="header" href="#structure-of-the-book">Structure of the Book</a></h2>
+<p>The syllabus is divided into three main units:</p>
+<ol>
+<li><strong>Computational Thinking and Programming - 2 (40 Marks)</strong>: Deepens your understanding of Python, covering functions, exception handling, file handling (text, binary, CSV), and data structures like stacks.</li>
+<li><strong>Computer Networks (10 Marks)</strong>: Introduces the evolution of networking, communication terminologies, transmission media, network devices, topologies, and basic web services.</li>
+<li><strong>Database Management (20 Marks)</strong>: Covers database concepts, the relational data model, Structured Query Language (SQL), and how to connect your Python applications to an SQL database.</li>
+</ol>
+<h3 id="competency-based-learning"><a class="header" href="#competency-based-learning">Competency-Based Learning</a></h3>
+<p>A core focus of this book is to prepare you for <strong>competency-based questions</strong>, which represent a significant portion of the CBSE board exams.</p>
+<p>At the end of each unit, you will find a dedicated section filled with competency-based questions modeled closely on the previous five years of CBSE question papers and official sample papers. These questions will test your analytical skills, logical reasoning, and ability to apply theoretical and practical knowledge to solve real-world problems.</p>
+<p>Let’s begin the journey into mastering Computer Science!</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="copyright"><a class="header" href="#copyright">Copyright</a></h1>
+<p>© 2026 Abhishek Kumar. All rights reserved.</p>
+<p>Website: <a href="https://abhishek-kumar.co.in/">abhishek-kumar.co.in</a></p>
+<p>Contact: <a href="mailto:support@abhishek-kumar.co.in">support@abhishek-kumar.co.in</a></p>
+<p>No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-1-revision-of-python-topics-class-xi"><a class="header" href="#chapter-1-revision-of-python-topics-class-xi">Chapter 1: Revision of Python Topics (Class XI)</a></h1>
+<p>Welcome to Unit 1! Before we dive into the new concepts of Class XII, it is essential to have a solid grasp of the foundational Python programming concepts you learned in Class XI.</p>
+<p>This chapter provides a quick refresher on the core components of Python.</p>
+<h2 id="11-python-basics"><a class="header" href="#11-python-basics">1.1 Python Basics</a></h2>
+<p>Python is a high-level, interpreted, interactive, and object-oriented scripting language. It uses indentation to define blocks of code instead of curly braces.</p>
+<h3 id="variables-and-data-types"><a class="header" href="#variables-and-data-types">Variables and Data Types</a></h3>
+<p>A <strong>variable</strong> is a named location in memory used to store data. In Python, you do not need to explicitly declare the data type of a variable.</p>
+<pre><code class="language-python"># Variables
+age = 17          # Integer (int)
+marks = 95.5      # Floating point (float)
+name = "Alice"    # String (str)
+is_student = True # Boolean (bool)
+</code></pre>
+<p><strong>Core Data Types:</strong></p>
+<ul>
+<li><strong>Numbers:</strong> Integers (<code>int</code>), Floating-point numbers (<code>float</code>), Complex numbers (<code>complex</code>).</li>
+<li><strong>Strings:</strong> (<code>str</code>) A sequence of characters enclosed in single or double quotes. They are immutable.</li>
+<li><strong>Lists:</strong> (<code>list</code>) An ordered, mutable collection of items enclosed in square brackets <code>[]</code>.</li>
+<li><strong>Tuples:</strong> (<code>tuple</code>) An ordered, immutable collection of items enclosed in parentheses <code>()</code>.</li>
+<li><strong>Dictionaries:</strong> (<code>dict</code>) An unordered, mutable collection of key-value pairs enclosed in curly braces <code>{}</code>. Keys must be unique and immutable.</li>
+<li><strong>Boolean:</strong> (<code>bool</code>) Represents <code>True</code> or <code>False</code>.</li>
+<li><strong>None:</strong> represents the absence of a value.</li>
+</ul>
+<h3 id="mutable-vs-immutable-types"><a class="header" href="#mutable-vs-immutable-types">Mutable vs. Immutable Types</a></h3>
+<ul>
+<li><strong>Mutable (can be changed in place):</strong> Lists, Dictionaries, Sets.</li>
+<li><strong>Immutable (cannot be changed in place):</strong> Integers, Floats, Strings, Tuples, Booleans.</li>
+</ul>
+<hr>
+<h2 id="12-operators-and-expressions"><a class="header" href="#12-operators-and-expressions">1.2 Operators and Expressions</a></h2>
+<p>Python supports various operators to perform operations on variables and values.</p>
+<ul>
+<li><strong>Arithmetic:</strong> <code>+</code> (addition), <code>-</code> (subtraction), <code>*</code> (multiplication), <code>/</code> (division - float), <code>//</code> (floor division), <code>%</code> (modulus/remainder), <code>**</code> (exponentiation).</li>
+<li><strong>Relational (Comparison):</strong> <code>==</code> (equal), <code>!=</code> (not equal), <code>&gt;</code> (greater than), <code>&lt;</code> (less than), <code>&gt;=</code> (greater than or equal), <code>&lt;=</code> (less than or equal). They return a boolean value.</li>
+<li><strong>Logical:</strong> <code>and</code>, <code>or</code>, <code>not</code>. Used to combine conditional statements.</li>
+<li><strong>Assignment:</strong> <code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, etc.</li>
+<li><strong>Identity:</strong> <code>is</code>, <code>is not</code>. Checks if two variables refer to the same object in memory.</li>
+<li><strong>Membership:</strong> <code>in</code>, <code>not in</code>. Checks if a sequence is present in an object.</li>
+</ul>
+<hr>
+<h2 id="13-flow-of-control"><a class="header" href="#13-flow-of-control">1.3 Flow of Control</a></h2>
+<p>Control flow statements determine the order in which code executes.</p>
+<h3 id="conditional-statements"><a class="header" href="#conditional-statements">Conditional Statements</a></h3>
+<p>Used for decision making.</p>
+<pre><code class="language-python">score = 85
+
+if score &gt;= 90:
+    print("Grade A")
+elif score &gt;= 80:
+    print("Grade B")
+else:
+    print("Grade C")
+</code></pre>
+<h3 id="iterative-statements-loops"><a class="header" href="#iterative-statements-loops">Iterative Statements (Loops)</a></h3>
+<p>Used to repeat a block of code.</p>
+<p><strong><code>for</code> Loop:</strong> Used to iterate over a sequence (list, tuple, dictionary, set, or string).</p>
+<pre><code class="language-python"># Using range()
+for i in range(1, 6): # Prints 1, 2, 3, 4, 5
+    print(i)
+
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+</code></pre>
+<p><strong><code>while</code> Loop:</strong> Executes a set of statements as long as a condition is true.</p>
+<pre><code class="language-python">count = 0
+while count &lt; 3:
+    print(count)
+    count += 1
+</code></pre>
+<p><strong>Jump Statements:</strong></p>
+<ul>
+<li><code>break</code>: Stops the loop entirely.</li>
+<li><code>continue</code>: Stops the current iteration and continues with the next iteration.</li>
+</ul>
+<hr>
+<h2 id="14-strings-lists-tuples-and-dictionaries-quick-reference"><a class="header" href="#14-strings-lists-tuples-and-dictionaries-quick-reference">1.4 Strings, Lists, Tuples, and Dictionaries (Quick Reference)</a></h2>
+<h3 id="strings-immutable"><a class="header" href="#strings-immutable">Strings (Immutable)</a></h3>
+<pre><code class="language-python">s = "Hello World"
+print(len(s))       # Length: 11
+print(s[0])         # Indexing: 'H'
+print(s[0:5])       # Slicing: 'Hello'
+print(s.upper())    # Methods: 'HELLO WORLD'
+print(s.replace("World", "Python")) # 'Hello Python'
+</code></pre>
+<h3 id="lists-mutable"><a class="header" href="#lists-mutable">Lists (Mutable)</a></h3>
+<pre><code class="language-python">L = [10, 20, 30]
+L.append(40)     # Adds 40 to the end [10, 20, 30, 40]
+L.insert(1, 15)  # Inserts 15 at index 1 [10, 15, 20, 30, 40]
+L.pop()          # Removes and returns the last element (40)
+L.remove(20)     # Removes the first occurrence of 20
+</code></pre>
+<h3 id="tuples-immutable"><a class="header" href="#tuples-immutable">Tuples (Immutable)</a></h3>
+<pre><code class="language-python">T = (1, 2, 3)
+# T[0] = 5 # Error! Tuples cannot be modified
+print(T.count(2)) # Counts occurrences of 2
+</code></pre>
+<h3 id="dictionaries-mutable-key-value-pairs"><a class="header" href="#dictionaries-mutable-key-value-pairs">Dictionaries (Mutable, Key-Value Pairs)</a></h3>
+<pre><code class="language-python">D = {"name": "Bob", "age": 18}
+print(D["name"])       # Access value by key: 'Bob'
+D["marks"] = 90        # Add a new key-value pair
+del D["age"]           # Delete a key-value pair
+
+for key in D.keys():   # Iterate through keys
+    print(key, D[key])
+</code></pre>
+<hr>
+<h2 id="15-introduction-to-modules"><a class="header" href="#15-introduction-to-modules">1.5 Introduction to Modules</a></h2>
+<p>A module is a file containing Python definitions and statements. You can use code from a module by importing it.</p>
+<pre><code class="language-python">import math
+print(math.sqrt(16)) # Prints 4.0
+
+import random
+print(random.randint(1, 6)) # Simulates rolling a die (1 to 6)
+</code></pre>
+<p>This brief revision covers the foundational tools you will need. In the next chapter, we will learn how to organize these tools into reusable blocks using <strong>Functions</strong>.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-2-functions-in-python"><a class="header" href="#chapter-2-functions-in-python">Chapter 2: Functions in Python</a></h1>
+<p>Functions are one of the most fundamental concepts in programming. They allow you to organize your code into manageable, reusable chunks.</p>
+<h2 id="21-what-is-a-function"><a class="header" href="#21-what-is-a-function">2.1 What is a Function?</a></h2>
+<p>A function is a named block of code that performs a specific task. Instead of writing the same code repeatedly, you can define a function once and call it whenever you need that task to be performed.</p>
+<p>Think of a function like a specialized tool in a toolbox. If you need to drive a nail, you grab a hammer. In programming, if you need to calculate an average, you call a function designed to do exactly that.</p>
+<h3 id="advantages-of-using-functions"><a class="header" href="#advantages-of-using-functions">Advantages of using Functions:</a></h3>
+<ol>
+<li><strong>Reusability:</strong> Write once, use many times.</li>
+<li><strong>Modularity:</strong> Breaks a large program into smaller, easily manageable pieces.</li>
+<li><strong>Readability:</strong> Makes code easier to understand.</li>
+<li><strong>Debugging:</strong> Easier to find and fix errors in isolated blocks of code.</li>
+</ol>
+<hr>
+<h2 id="22-types-of-functions"><a class="header" href="#22-types-of-functions">2.2 Types of Functions</a></h2>
+<p>In Python, functions are generally categorized into three types:</p>
+<ol>
+<li><strong>Built-in Functions:</strong> These are pre-defined functions built into Python that are always available for use (e.g., <code>len()</code>, <code>print()</code>, <code>type()</code>, <code>input()</code>).</li>
+<li><strong>Functions Defined in Modules:</strong> These are functions that belong to specific modules (libraries) and must be imported before they can be used (e.g., <code>math.sqrt()</code>, <code>random.randint()</code>).</li>
+<li><strong>User-Defined Functions:</strong> These are functions created by the programmer to perform specific tasks.</li>
+</ol>
+<hr>
+<h2 id="23-creating-user-defined-functions"><a class="header" href="#23-creating-user-defined-functions">2.3 Creating User-Defined Functions</a></h2>
+<p>You define your own functions using the <code>def</code> keyword, followed by the function name, parentheses <code>()</code>, and a colon <code>:</code>. The block of code within the function must be indented.</p>
+<p><strong>Syntax:</strong></p>
+<pre><code class="language-python">def function_name(parameters):
+    # Function body (statements)
+    [return statement]
+</code></pre>
+<p><strong>Example: A Simple Function</strong></p>
+<pre><code class="language-python">def say_hello():
+    print("Hello, welcome to Python programming!")
+
+# Calling the function
+say_hello() 
+</code></pre>
+<hr>
+<h2 id="24-arguments-and-parameters"><a class="header" href="#24-arguments-and-parameters">2.4 Arguments and Parameters</a></h2>
+<p>Often, a function needs information to do its job. You pass this information to the function as arguments.</p>
+<ul>
+<li><strong>Parameters:</strong> The variables listed inside the parentheses in the function <em>definition</em>.</li>
+<li><strong>Arguments:</strong> The actual values passed to the function when it is <em>called</em>.</li>
+</ul>
+<pre><code class="language-python"># 'name' is the parameter
+def greet(name): 
+    print("Hello, " + name + "!")
+
+# "Alice" and "Bob" are arguments
+greet("Alice") 
+greet("Bob")
+</code></pre>
+<h3 id="types-of-arguments"><a class="header" href="#types-of-arguments">Types of Arguments</a></h3>
+<p>Python provides flexible ways to pass arguments to functions.</p>
+<h4 id="1-positional-parameters-required-arguments"><a class="header" href="#1-positional-parameters-required-arguments">1. Positional Parameters (Required Arguments)</a></h4>
+<p>These are arguments passed to a function in the correct positional order. The number of arguments in the function call must exactly match the number of parameters defined.</p>
+<pre><code class="language-python">def subtract(a, b):
+    print(a - b)
+
+subtract(10, 5) # Output: 5. 'a' gets 10, 'b' gets 5
+subtract(5, 10) # Output: -5. Order matters!
+</code></pre>
+<h4 id="2-default-parameters"><a class="header" href="#2-default-parameters">2. Default Parameters</a></h4>
+<p>You can assign a default value to a parameter in the function definition. If an argument is missing during the function call, the default value is used.</p>
+<p><strong>Rule:</strong> Non-default arguments cannot follow default arguments.</p>
+<pre><code class="language-python">def intro(name, msg="Good Morning"):
+    print("Hello " + name + ", " + msg)
+
+intro("Alice")                 # Output: Hello Alice, Good Morning
+intro("Bob", "How are you?")   # Output: Hello Bob, How are you?
+</code></pre>
+<hr>
+<h2 id="25-returning-values-from-a-function"><a class="header" href="#25-returning-values-from-a-function">2.5 Returning Values from a Function</a></h2>
+<p>A function can send data back to the point where it was called using the <code>return</code> statement.</p>
+<ul>
+<li>A function can return a single value.</li>
+<li>A function can return multiple values (as a tuple).</li>
+<li>If a function doesn’t have a <code>return</code> statement, it implicitly returns <code>None</code>.</li>
+</ul>
+<p><strong>Example: Returning a Single Value</strong></p>
+<pre><code class="language-python">def calculate_area(length, width):
+    area = length * width
+    return area
+
+result = calculate_area(5, 4)
+print("The area is:", result) # Output: The area is: 20
+</code></pre>
+<p><strong>Example: Returning Multiple Values</strong></p>
+<pre><code class="language-python">def get_details():
+    name = "John Doe"
+    age = 30
+    return name, age # Returns a tuple ('John Doe', 30)
+
+user_name, user_age = get_details()
+print(user_name, "is", user_age)
+</code></pre>
+<hr>
+<h2 id="26-scope-of-variables-global-and-local"><a class="header" href="#26-scope-of-variables-global-and-local">2.6 Scope of Variables (Global and Local)</a></h2>
+<p>The <strong>scope</strong> of a variable determines the portion of the program where you can access a particular identifier.</p>
+<ol>
+<li><strong>Local Scope:</strong> Variables created <em>inside</em> a function belong to the local scope of that function. They can only be accessed within that specific function. Their lifetime ends when the function finishes execution.</li>
+<li><strong>Global Scope:</strong> Variables created <em>outside</em> of any function (in the main program body) belong to the global scope. They can be read from anywhere within the file, including inside functions.</li>
+</ol>
+<p><strong>Example 1: Demonstrating Local Scope</strong></p>
+<pre><code class="language-python">def my_function():
+    local_var = 10 # This variable only exists inside my_function
+    print("Inside function:", local_var)
+
+my_function()
+# print(local_var) # ERROR! NameError: name 'local_var' is not defined
+</code></pre>
+<p><strong>Example 2: Demonstrating Global Scope</strong></p>
+<pre><code class="language-python">global_var = 20 # Defined outside
+
+def read_global():
+    print("Inside function, reading global:", global_var)
+
+read_global()
+print("Outside function:", global_var)
+</code></pre>
+<p><strong>The <code>global</code> Keyword</strong>
+If you need to <em>modify</em> a global variable from inside a function, you must use the <code>global</code> keyword. Otherwise, Python will simply create a new local variable with the same name.</p>
+<pre><code class="language-python">count = 0 # Global variable
+
+def increment():
+    global count # Tell Python we want to use the global 'count'
+    count += 1
+    print("Count inside:", count)
+
+increment()
+print("Count outside:", count) # Output: 1
+</code></pre>
+<h2 id="27-flow-of-execution"><a class="header" href="#27-flow-of-execution">2.7 Flow of Execution</a></h2>
+<p>The flow of execution refers to the order in which statements are executed in a Python program.</p>
+<ol>
+<li>Execution always begins at the first statement of the script (often called the <code>__main__</code> entry point).</li>
+<li>Statements are executed one at a time, in order, from top to bottom.</li>
+<li><strong>Function Definitions (<code>def</code> blocks):</strong> When Python encounters a <code>def</code> statement, it simply “learns” the function (stores it in memory). It <em>does not</em> execute the code inside the function body at that time.</li>
+<li><strong>Function Calls:</strong> The execution of the function body only occurs when the function is explicitly called.</li>
+<li>When a function is called, the flow jumps into the function body, executes it, and then returns to the point immediately following the function call in the main program.</li>
+</ol>
+<p>Understanding how functions work, how to pass data to them, and how they return data is crucial for writing clean, structured, and professional Python code.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-3-exception-handling"><a class="header" href="#chapter-3-exception-handling">Chapter 3: Exception Handling</a></h1>
+<p>When writing programs, things don’t always go as planned. Unexpected situations can arise during the execution of a program, leading to errors. Python provides a robust mechanism called <strong>Exception Handling</strong> to deal with these situations gracefully.</p>
+<h2 id="31-what-is-an-exception"><a class="header" href="#31-what-is-an-exception">3.1 What is an Exception?</a></h2>
+<p>An exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions. When a Python script encounters a situation it cannot cope with, it “raises” an exception.</p>
+<p>If the exception is not explicitly handled by the programmer, the program will abruptly terminate (crash) and display an error traceback.</p>
+<h3 id="common-types-of-errors"><a class="header" href="#common-types-of-errors">Common Types of Errors</a></h3>
+<ol>
+<li><strong>Syntax Errors:</strong> Errors in the structure or grammar of the Python code (e.g., missing a colon <code>:</code> or incorrect indentation). The program won’t even run.</li>
+<li><strong>Logical Errors:</strong> The program runs without crashing, but it produces incorrect results due to flawed logic.</li>
+<li><strong>Runtime Errors (Exceptions):</strong> The statement is syntactically correct, but an error occurs during execution (e.g., trying to divide by zero, or trying to open a file that doesn’t exist). These are the errors we use exception handling for.</li>
+</ol>
+<p><strong>Examples of Built-in Exceptions:</strong></p>
+<ul>
+<li><code>ZeroDivisionError</code>: Occurs when a number is divided by zero.</li>
+<li><code>NameError</code>: Occurs when a variable name is not found (used before being defined).</li>
+<li><code>TypeError</code>: Occurs when an operation or function is applied to an object of inappropriate type (e.g., adding a string to an integer).</li>
+<li><code>ValueError</code>: Occurs when a function receives an argument of the correct type but an inappropriate value.</li>
+<li><code>IndexError</code>: Occurs when trying to access an index that is out of range in a sequence (like a list or tuple).</li>
+<li><code>FileNotFoundError</code>: Occurs when trying to access a file that does not exist.</li>
+</ul>
+<hr>
+<h2 id="32-introduction-to-exception-handling"><a class="header" href="#32-introduction-to-exception-handling">3.2 Introduction to Exception Handling</a></h2>
+<p>The core concept behind exception handling is to anticipate potential errors and write code that says, “Try to do this, but if an error occurs, do this instead of crashing.”</p>
+<p>In Python, this is achieved using the <code>try</code>, <code>except</code>, and <code>finally</code> blocks.</p>
+<h3 id="the-try-except-block"><a class="header" href="#the-try-except-block">The <code>try-except</code> Block</a></h3>
+<ul>
+<li><strong><code>try</code> block:</strong> This block contains the code that you think <em>might</em> raise an exception.</li>
+<li><strong><code>except</code> block:</strong> This block contains the code that will execute <em>only if</em> an exception occurs in the corresponding <code>try</code> block.</li>
+</ul>
+<p><strong>Syntax:</strong></p>
+<pre><code class="language-python">try:
+    # Code that may raise an exception
+except ExceptionName:
+    # Code to handle the specific exception
+</code></pre>
+<p><strong>Example 1: Handling Division by Zero</strong>
+Without exception handling:</p>
+<pre><code class="language-python"># If y is 0, this program crashes immediately.
+x = 10
+y = 0
+result = x / y 
+print(result)
+</code></pre>
+<p>With exception handling:</p>
+<pre><code class="language-python">try:
+    x = 10
+    y = 0
+    result = x / y
+    print("Result:", result)
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero! Please provide a non-zero denominator.")
+
+print("Program execution continues normally...")
+</code></pre>
+<p><strong>Example 2: Handling Invalid Input (<code>ValueError</code>)</strong>
+If you ask a user for an integer, but they type “hello”, it raises a <code>ValueError</code>.</p>
+<pre><code class="language-python">try:
+    age = int(input("Enter your age: "))
+    print("You are", age, "years old.")
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+</code></pre>
+<hr>
+<h2 id="33-handling-multiple-exceptions"><a class="header" href="#33-handling-multiple-exceptions">3.3 Handling Multiple Exceptions</a></h2>
+<p>A single <code>try</code> block can have multiple <code>except</code> blocks to handle different types of errors differently.</p>
+<pre><code class="language-python">try:
+    numerator = int(input("Enter numerator: "))
+    denominator = int(input("Enter denominator: "))
+    result = numerator / denominator
+    print("Result:", result)
+
+except ValueError:
+    print("Error: Please enter integer numbers only.")
+except ZeroDivisionError:
+    print("Error: Denominator cannot be zero.")
+except Exception as e:
+    # This acts as a catch-all for any other unexpected errors
+    print("An unexpected error occurred:", e)
+</code></pre>
+<p><em>(Note: While <code>except Exception:</code> catches almost everything, it’s generally best practice to catch specific, anticipated exceptions rather than using broad catch-alls.)</em></p>
+<hr>
+<h2 id="34-the-finally-block"><a class="header" href="#34-the-finally-block">3.4 The <code>finally</code> Block</a></h2>
+<p>The <code>finally</code> block offers a place to put code that must be executed <strong>no matter what happens</strong> in the <code>try</code> and <code>except</code> blocks.</p>
+<p>Whether an exception is raised or not, and whether an exception is handled or not, the code inside the <code>finally</code> block will always run. This is extremely useful for cleanup operations, such as closing files or releasing network/database connections.</p>
+<p><strong>Syntax:</strong></p>
+<pre><code class="language-python">try:
+    # Code that may cause an exception
+except SomeException:
+    # Handle the exception
+finally:
+    # Code that will ALWAYS execute
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">file_obj = None
+try:
+    print("Attempting to open file...")
+    # This will raise FileNotFoundError if 'data.txt' doesn't exist
+    file_obj = open("data.txt", "r") 
+    content = file_obj.read()
+    print("File read successfully.")
+
+except FileNotFoundError:
+    print("Error: The file 'data.txt' was not found.")
+
+finally:
+    print("Executing 'finally' block.")
+    # Always attempt to clean up
+    if file_obj:
+        file_obj.close()
+        print("File closed.")
+</code></pre>
+<h3 id="summary-of-the-flow"><a class="header" href="#summary-of-the-flow">Summary of the Flow:</a></h3>
+<ol>
+<li>The <code>try</code> block is executed.</li>
+<li>If <strong>no exception</strong> occurs, the <code>except</code> block is skipped, the <code>finally</code> block executes, and execution continues.</li>
+<li>If an <strong>exception occurs</strong>, the rest of the <code>try</code> block is skipped. If the exception type matches the <code>except</code> block, the <code>except</code> block is executed. Then, the <code>finally</code> block executes.</li>
+<li>If an <strong>exception occurs but is not handled</strong> by any <code>except</code> block, the <code>finally</code> block is still executed. After that, the program halts with a traceback error.</li>
+</ol>
+<p>Exception handling allows you to write robust, professional programs that handle errors gracefully, providing a better experience for the user and preventing catastrophic failures.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-4-file-handling-in-python"><a class="header" href="#chapter-4-file-handling-in-python">Chapter 4: File Handling in Python</a></h1>
+<p>So far, the programs we have written store their data in variables in the computer’s primary memory (RAM). However, data in RAM is volatile—it disappears when the program ends or the computer shuts down.</p>
+<p>To store data permanently, we must save it to a <strong>file</strong> on a secondary storage device (like a hard drive or SSD). The process of working with files (reading, writing, and manipulating them) is called <strong>File Handling</strong>.</p>
+<h2 id="41-types-of-files"><a class="header" href="#41-types-of-files">4.1 Types of Files</a></h2>
+<p>Python primarily deals with two main types of files:</p>
+<ol>
+<li><strong>Text Files:</strong>
+<ul>
+<li>Store data in ASCII or Unicode formats (plain text).</li>
+<li>Human-readable.</li>
+<li>Each line ends with an End-of-Line (EOL) character (usually <code>\n</code> in Python).</li>
+<li>Examples: <code>.txt</code>, <code>.py</code>, <code>.html</code>, <code>.xml</code>.</li>
+</ul>
+</li>
+<li><strong>Binary Files:</strong>
+<ul>
+<li>Store data in the exact same format as it is held in memory (0s and 1s).</li>
+<li>Not human-readable (looks like gibberish if opened in a text editor).</li>
+<li>Faster and more efficient for storing complex data structures (like objects, images, audio, etc.).</li>
+<li>Examples: <code>.dat</code>, <code>.jpg</code>, <code>.mp3</code>.</li>
+</ul>
+</li>
+</ol>
+<p>We will also cover <strong>CSV (Comma Separated Values)</strong> files, which are a specific type of text file used to store tabular data.</p>
+<hr>
+<h2 id="42-absolute-and-relative-paths"><a class="header" href="#42-absolute-and-relative-paths">4.2 Absolute and Relative Paths</a></h2>
+<p>To access a file, the Python interpreter needs to know where it is located natively on your computer’s filesystem.</p>
+<ul>
+<li><strong>Absolute Path:</strong> The complete path from the root directory to the file (e.g., <code>C:\Users\Student\Documents\data.txt</code> or <code>/home/user/data.txt</code>).</li>
+<li><strong>Relative Path:</strong> The path to the file relative to the <em>current working directory</em> (the folder where your Python script is running). If <code>script.py</code> and <code>data.txt</code> are in the same folder, the relative path is just <code>data.txt</code>.</li>
+</ul>
+<hr>
+<h2 id="43-text-file-operations"><a class="header" href="#43-text-file-operations">4.3 Text File Operations</a></h2>
+<h3 id="431-opening-and-closing-a-text-file"><a class="header" href="#431-opening-and-closing-a-text-file">4.3.1 Opening and Closing a Text File</a></h3>
+<p>You must open a file before reading or writing to it. The <code>open()</code> function returns a <strong>file object</strong> which you use to interact with the file.</p>
+<pre><code class="language-python"># Syntax: file_object = open(file_name, access_mode)
+</code></pre>
+<p><strong>Common Text File Open Modes:</strong></p>
+<ul>
+<li><code>'r'</code>: Read (default). Opens for reading. Errors if the file doesn’t exist.</li>
+<li><code>'w'</code>: Write. Opens for writing. Creates a new file or <strong>overwrites</strong> an existing file completely.</li>
+<li><code>'a'</code>: Append. Opens for appending. Adds new data to the end of the file. Creates a new file if it doesn’t exist.</li>
+<li><code>'r+'</code>: Read &amp; Write. Opens for reading and writing. The file pointer is at the beginning.</li>
+<li><code>'w+'</code>: Write &amp; Read. Opens for writing and reading. Overwrites if exists, creates if not.</li>
+<li><code>'a+'</code>: Append &amp; Read. Opens for appending and reading. The file pointer is at the end.</li>
+</ul>
+<p>Always remember to <strong>close</strong> a file after you are done! This saves changes and frees up system resources.</p>
+<pre><code class="language-python">file_obj = open("story.txt", "r") 
+# ... perform operations ...
+file_obj.close() 
+</code></pre>
+<p><strong>Using the <code>with</code> statement (Recommended Approach):</strong>
+The <code>with</code> statement automatically manages closing the file, even if exceptions occur. You don’t need a <code>close()</code> statement!</p>
+<pre><code class="language-python">with open("story.txt", "w") as f:
+    f.write("Chapter 1: The Beginning")
+# 'f' is automatically closed here
+</code></pre>
+<h3 id="432-writing-to-a-text-file"><a class="header" href="#432-writing-to-a-text-file">4.3.2 Writing to a Text File</a></h3>
+<ul>
+<li><code>write(string)</code>: Writes a specified string to the file.</li>
+<li><code>writelines(list_of_strings)</code>: Writes a list of strings to the file. (You must add <code>\n</code> manually if you want them on separate lines).</li>
+</ul>
+<pre><code class="language-python">lines = ["Line 1\n", "Line 2\n", "Line 3\n"]
+
+with open("output.txt", "w") as file:
+    file.write("This is a single line.\n")
+    file.writelines(lines)
+</code></pre>
+<h3 id="433-reading-from-a-text-file"><a class="header" href="#433-reading-from-a-text-file">4.3.3 Reading from a Text File</a></h3>
+<ul>
+<li><code>read([size])</code>: Reads and returns the entire file contents as a single string. If <code>size</code> is specified, it reads at most <code>size</code> bytes (characters).</li>
+<li><code>readline()</code>: Reads and returns exactly one line, including the newline character <code>\n</code>.</li>
+<li><code>readlines()</code>: Reads all lines and returns them as a <strong>list of strings</strong>, where each string is a line.</li>
+</ul>
+<pre><code class="language-python">with open("output.txt", "r") as file:
+    content = file.read()
+    print("Full Content:\n", content)
+
+with open("output.txt", "r") as file:
+    line1 = file.readline()
+    print("First Line:", line1)
+
+with open("output.txt", "r") as file:
+    line_list = file.readlines()
+    print("List of Lines:", line_list)
+</code></pre>
+<h3 id="434-the-seek-and-tell-methods"><a class="header" href="#434-the-seek-and-tell-methods">4.3.4 The <code>seek()</code> and <code>tell()</code> Methods</a></h3>
+<p>Python maintains a <strong>file pointer</strong> (like a cursor) that indicates the current position within the file.</p>
+<ul>
+<li><code>file.tell()</code>: Returns the current byte location of the file pointer.</li>
+<li><code>file.seek(offset, from_what)</code>: Moves the file pointer to a new location.
+<ul>
+<li><code>offset</code>: Number of bytes to move.</li>
+<li><code>from_what</code>: Reference point:
+<ul>
+<li><code>0</code>: Beginning of the file (default).</li>
+<li><code>1</code>: Current position (only works in binary mode!).</li>
+<li><code>2</code>: End of the file (only works in binary mode!).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="44-binary-file-operations"><a class="header" href="#44-binary-file-operations">4.4 Binary File Operations</a></h2>
+<p>Binary files store data exactly as it is represented in memory. To work with complex Python objects (like dictionaries or lists) in binary files, we use the <strong><code>pickle</code></strong> module. The process of converting objects to a byte stream is called <strong>pickling</strong> (or serialization), and converting them back is <strong>unpickling</strong> (deserialization).</p>
+<p><strong>File modes for binary:</strong> <code>rb</code>, <code>wb</code>, <code>ab</code>, <code>rb+</code>, <code>wb+</code>, <code>ab+</code>. (Notice the <code>b</code> appended to the text modes).</p>
+<h3 id="441-pickling-writing-to-a-binary-file"><a class="header" href="#441-pickling-writing-to-a-binary-file">4.4.1 Pickling (Writing to a Binary File)</a></h3>
+<p>Use the <code>pickle.dump(object, file_object)</code> method.</p>
+<pre><code class="language-python">import pickle
+
+student_record = {"Roll": 1, "Name": "Amit", "Marks": 85}
+
+with open("student.dat", "wb") as f:
+    pickle.dump(student_record, f) # Serializes dictionary to binary file
+</code></pre>
+<h3 id="442-unpickling-reading-from-a-binary-file"><a class="header" href="#442-unpickling-reading-from-a-binary-file">4.4.2 Unpickling (Reading from a Binary File)</a></h3>
+<p>Use the <code>pickle.load(file_object)</code> method. It reconstructs the object.</p>
+<pre><code class="language-python">import pickle
+
+with open("student.dat", "rb") as f:
+    # Deserializes the binary data back into a dictionary
+    retrieved_data = pickle.load(f) 
+    print(retrieved_data['Name']) # 'Amit'
+</code></pre>
+<hr>
+<h2 id="45-csv-file-operations"><a class="header" href="#45-csv-file-operations">4.5 CSV File Operations</a></h2>
+<p>CSV (Comma Separated Values) files are a simple, text-based format for storing tabular data (like spreadsheets or databases). Each line is a row, and values are separated by commas.</p>
+<p>Python provides the built-in <code>csv</code> module to handle these files easily.</p>
+<h3 id="451-writing-to-a-csv-file"><a class="header" href="#451-writing-to-a-csv-file">4.5.1 Writing to a CSV File</a></h3>
+<ul>
+<li><code>csv.writer(file_object)</code>: Creates a writer object.</li>
+<li><code>writerow(list)</code>: Writes a single row.</li>
+<li><code>writerows(list_of_lists)</code>: Writes multiple rows.</li>
+</ul>
+<pre><code class="language-python">import csv
+
+data = [
+    ["ID", "Name", "Department"],
+    [101, "Aarav", "IT"],
+    [102, "Kavya", "HR"]
+]
+
+# We use newline='' to prevent blank lines between rows in Windows
+with open("employees.csv", "w", newline='') as file:
+    csv_writer = csv.writer(file)
+    csv_writer.writerows(data)
+</code></pre>
+<h3 id="452-reading-from-a-csv-file"><a class="header" href="#452-reading-from-a-csv-file">4.5.2 Reading from a CSV File</a></h3>
+<ul>
+<li><code>csv.reader(file_object)</code>: Creates a reader object that you can iterate over.</li>
+</ul>
+<pre><code class="language-python">import csv
+
+with open("employees.csv", "r") as file:
+    csv_reader = csv.reader(file)
+    for row in csv_reader:
+        print(row) # Each row is returned as a list of strings
+</code></pre>
+<p>Mastering file handling is crucial because almost every real-world application requires saving and loading persistent data!</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-5-data-structures---stacks"><a class="header" href="#chapter-5-data-structures---stacks">Chapter 5: Data Structures - Stacks</a></h1>
+<p>A data structure is a specialized format for organizing, processing, retrieving and storing data. Python has built-in data structures like Lists, Tuples, and Dictionaries. In this chapter, we will learn how to implement an abstract data type called a <strong>Stack</strong> using Python lists.</p>
+<hr>
+<h2 id="51-introduction-to-stacks"><a class="header" href="#51-introduction-to-stacks">5.1 Introduction to Stacks</a></h2>
+<p>A <strong>Stack</strong> is a linear data structure that follows the <strong>LIFO (Last In First Out)</strong> or <strong>FILO (First In Last Out)</strong> principle.</p>
+<p>Imagine a stack of plates in a cafeteria. You can only comfortably add a new plate to the <em>top</em> of the stack, and you can only remove the plate from the <em>top</em> of the stack. The plate that was added last is the first one to be removed.</p>
+<p><strong>Real-world analogies:</strong></p>
+<ul>
+<li>A pile of books.</li>
+<li>The “Undo” (Ctrl+Z) feature in a text editor (undoes the most recent action first).</li>
+<li>Browser history (clicking the “Back” button returns you to the most recently visited page).</li>
+<li>Function call stack in programming execution.</li>
+</ul>
+<hr>
+<h2 id="52-core-stack-operations"><a class="header" href="#52-core-stack-operations">5.2 Core Stack Operations</a></h2>
+<p>A typical stack data structure supports the following fundamental operations:</p>
+<ol>
+<li><strong>Push:</strong> Adding a new element to the top of the stack.</li>
+<li><strong>Pop:</strong> Removing and returning the top element from the stack.</li>
+<li><strong>Peek (or Top):</strong> Returning the top element of the stack without removing it.</li>
+<li><strong>isEmpty:</strong> Checking whether the stack contains any elements.</li>
+<li><strong>Size:</strong> Finding the number of elements currently in the stack.</li>
+</ol>
+<h3 id="important-condition-underflow"><a class="header" href="#important-condition-underflow">Important Condition: Underflow</a></h3>
+<p>If you try to perform a <strong>Pop</strong> operation on an empty stack, it results in a condition known as <strong>Underflow</strong>. You must always check if the stack is empty before popping!</p>
+<p><em>(Note: While some programming languages have a fixed-size stack which can lead to ‘Overflow’ if you try to push too many items, Python lists grow dynamically, so Overflow is rarely a concern unless the system runs entirely out of memory).</em></p>
+<hr>
+<h2 id="53-implementing-a-stack-using-python-lists"><a class="header" href="#53-implementing-a-stack-using-python-lists">5.3 Implementing a Stack using Python Lists</a></h2>
+<p>Python does not have a built-in <code>Stack</code> class, but we can easily implement one using the versatile Python <code>list</code>. We design it so that the <em>end</em> of the list serves as the <em>top</em> of the stack.</p>
+<ul>
+<li>Adding to the top (Push) is equivalent to <code>list.append()</code>.</li>
+<li>Removing from the top (Pop) is equivalent to <code>list.pop()</code>.</li>
+</ul>
+<h3 id="step-by-step-implementation"><a class="header" href="#step-by-step-implementation">Step-by-Step Implementation</a></h3>
+<p>Let’s build a programmatic stack handling system:</p>
+<pre><code class="language-python"># Initialize an empty stack (represented by a list)
+stack = []
+
+# 1. Implementation of is_empty function
+def is_empty(stk):
+    if len(stk) == 0:
+        return True
+    else:
+        return False
+
+# 2. Implementation of Push operation (adding to the top)
+def push(stk, item):
+    stk.append(item)
+    print(f"Pushed: {item}")
+
+# 3. Implementation of Pop operation (removing from the top)
+def pop(stk):
+    if is_empty(stk):
+        return "Underflow! Stack is empty."
+    else:
+        removed_item = stk.pop() # Removes and returns the last element
+        return removed_item
+
+# 4. Implementation of Peek operation (viewing the top element)
+def peek(stk):
+    if is_empty(stk):
+        return "Stack is empty."
+    else:
+        top_index = len(stk) - 1 # The last index
+        return stk[top_index]
+
+# 5. Implementation of Display operation
+def display(stk):
+    if is_empty(stk):
+        print("Stack is empty.")
+    else:
+        print("Current Stack Content:")
+        # Displaying elements starting from the Top (the end of the list)
+        top = len(stk) - 1
+        for i in range(top, -1, -1):
+            if i == top:
+                print(f"{stk[i]} &lt;-- Top")
+            else:
+                print(stk[i])
+
+# 6. Implementation of Size operation
+def size(stk):
+    return len(stk)
+</code></pre>
+<h3 id="lets-test-it"><a class="header" href="#lets-test-it">Let’s Test It!</a></h3>
+<p>Let’s use the functions we just defined to simulate stack operations:</p>
+<pre><code class="language-python"># Execution starts here
+print("Is Stack empty?", is_empty(stack)) # Expected: True
+
+print("--- Pushing Elements ---")
+push(stack, 10)
+push(stack, 20)
+push(stack, 30)
+
+print("\n--- Current Status ---")
+display(stack)
+# Output should look like:
+# 30 &lt;-- Top
+# 20
+# 10
+
+print("Stack size:", size(stack)) # Expected: 3
+
+print("Peek Top Element:", peek(stack)) # Expected: 30
+
+print("\n--- Popping an Element ---")
+popped_value = pop(stack)
+print(f"Popped value: {popped_value}") # Expected: 30
+
+print("\n--- Final Status ---")
+display(stack)
+# Output should look like:
+# 20 &lt;-- Top
+# 10
+</code></pre>
+<p>By understanding Stacks, you are taking your first step into understanding complex software architectures, such as how programming languages manage function memory and evaluate expressions!</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-1-competency-based-questions"><a class="header" href="#unit-1-competency-based-questions">Unit 1: Competency-Based Questions</a></h1>
+<p>In accordance with the latest CBSE guidelines, a significant portion of your exam will consist of competency-based questions. These questions test your ability to apply the concepts of Python programming to real-world scenarios, debug code, and understand the logic behind algorithms.</p>
+<p>This section provides a set of questions modeled on the previous 5 years of CBSE Question Papers and Official Sample Papers.</p>
+<hr>
+<h2 id="1-output-based-questions-tracing-and-logic"><a class="header" href="#1-output-based-questions-tracing-and-logic">1. Output Based Questions (Tracing and Logic)</a></h2>
+<p><strong>Question 1.1</strong>
+What will be the output of the following Python code snippet? Explain the logic.</p>
+<pre><code class="language-python">def changeList(L, n):
+    for i in range(len(L)):
+        if L[i] % n == 0:
+            L[i] = L[i] // n
+        else:
+            L[i] = L[i] * n
+    return L
+
+myList = [10, 20, 30, 40, 50]
+print(changeList(myList, 10))
+</code></pre>
+<p><em>Expected Answer:</em>
+<code>[1, 2, 3, 4, 5]</code>
+<em>Logic:</em> The loop iterates through each element. Since every element in <code>myList</code> is divisible by <code>n</code> (which is 10), the <code>if</code> condition is always true. Thus, each element is replaced by its integer division by 10. List is mutable, so changes persist.</p>
+<p><strong>Question 1.2</strong>
+Find and write the output of the following python code:</p>
+<pre><code class="language-python">x = "Global"
+def func1():
+    x = "Enclosing"
+    def func2():
+        global x
+        x = "Local"
+    func2()
+    print("Inner:", x)
+
+func1()
+print("Outer:", x)
+</code></pre>
+<p><em>Expected Answer:</em></p>
+<pre><code class="language-text">Inner: Enclosing
+Outer: Local
+</code></pre>
+<p><em>Logic:</em></p>
+<ol>
+<li><code>func1()</code> starts. A local variable <code>x</code> (“Enclosing”) is created.</li>
+<li><code>func2()</code> is called. Inside <code>func2()</code>, the <code>global x</code> statement binds the local name <code>x</code> to the global variable. It then sets the global <code>x</code> to “Local”.</li>
+<li>Inside <code>func1()</code>, <code>print("Inner:", x)</code> prints the local <code>x</code> belonging to <code>func1</code>, which is still “Enclosing”.</li>
+<li>Finally, the main program prints the global <code>x</code>, which was modified by <code>func2()</code> to “Local”.</li>
+</ol>
+<hr>
+<h2 id="2-debugging-and-error-spotting"><a class="header" href="#2-debugging-and-error-spotting">2. Debugging and Error Spotting</a></h2>
+<p><strong>Question 2.1</strong>
+Raman has written the following code to find the sum of all digit characters in a string. However, his code has some errors. Rewrite the correct code and underline the corrections made.</p>
+<pre><code class="language-python">def sumDigits(s)
+    sum == 0
+    for char in s:
+        if char.isdigit():
+            sum = sum + char
+    Print("Sum is", sum)
+
+sumDigits("Abc12d3")
+</code></pre>
+<p><em>Corrected Code:</em></p>
+<pre><code class="language-python">def sumDigits(s):  # Correction: Added colon ':'
+    sum = 0        # Correction: Assignment operator '=' instead of '=='
+    for char in s:
+        if char.isdigit():
+            sum = sum + int(char) # Correction: Converted string character to int
+    print("Sum is", sum) # Correction: 'print' must be all lowercase
+
+sumDigits("Abc12d3")
+</code></pre>
+<hr>
+<h2 id="3-advanced-file-handling-scenarios"><a class="header" href="#3-advanced-file-handling-scenarios">3. Advanced File Handling Scenarios</a></h2>
+<p><strong>Question 3.1 (Text Files)</strong>
+A text file named <code>"STORY.txt"</code> contains some text. Write a user-defined function <code>count_words()</code> in Python that counts and displays the number of words in the file that start with an uppercase vowel (A, E, I, O, U).</p>
+<p><em>Solution Idea:</em></p>
+<pre><code class="language-python">def count_words():
+    count = 0
+    vowels = ['A', 'E', 'I', 'O', 'U']
+    try:
+        with open("STORY.txt", "r") as file:
+            data = file.read()
+            words = data.split() # Splits text into a list of words
+            for word in words:
+                if word[0] in vowels: # Checks if the first letter is an uppercase vowel
+                    count += 1
+        print("Total words starting with uppercase vowel:", count)
+    except FileNotFoundError:
+        print("File not found.")
+</code></pre>
+<p><strong>Question 3.2 (Binary Files - Case Study Based)</strong>
+A binary file <code>"book.dat"</code> has structure <code>[BookNo, Book_Name, Author, Price]</code>.
+Write a function <code>Search_Author(Author_Name)</code> in Python that searches and displays the details of all books written by the author whose name is passed as an argument. Assume the module <code>pickle</code> is already imported.</p>
+<p><em>Solution Idea:</em></p>
+<pre><code class="language-python">import pickle
+
+def Search_Author(Author_Name):
+    found = False
+    try:
+        with open("book.dat", "rb") as file:
+            while True:
+                try:
+                    book_record = pickle.load(file)
+                    # Check if the 3rd element (index 2) matches the Author_Name
+                    if book_record[2] == Author_Name:
+                        print(book_record)
+                        found = True
+                except EOFError:
+                    break # Reached the End of File
+        if not found:
+            print(f"No books found by author {Author_Name}")
+    except FileNotFoundError:
+        print("File 'book.dat' not found.")
+</code></pre>
+<hr>
+<h2 id="4-stack-implementation-application-based"><a class="header" href="#4-stack-implementation-application-based">4. Stack Implementation (Application Based)</a></h2>
+<p><strong>Question 4.1</strong>
+A list <code>Names</code> contains names of students. Write a program to implement a stack allowing Push and Pop operations for the students whose name starts with the alphabet ‘A’.
+For example: If <code>Names = ["Amit", "Rohit", "Akash", "Suman"]</code>, the stack should store “Amit” and “Akash”.</p>
+<p><em>Solution Idea:</em></p>
+<pre><code class="language-python">Names = ["Amit", "Rohit", "Akash", "Suman"]
+stack_A = []
+
+def Push_A(names_list, stk):
+    for name in names_list:
+        if name[0].upper() == 'A':
+            stk.append(name)
+            print(f"Pushed: {name}")
+
+def Pop_A(stk):
+    if len(stk) == 0:
+        print("Underflow")
+    else:
+        removed = stk.pop()
+        print(f"Popped: {removed}")
+
+# Execution
+Push_A(Names, stack_A)
+Pop_A(stack_A)
+Pop_A(stack_A)
+Pop_A(stack_A) # Tests underflow
+</code></pre>
+<hr>
+<h3 id="study-tip"><a class="header" href="#study-tip">Study Tip</a></h3>
+<p><em>Practicing these types of questions regularly is the key to scoring well. Focus heavily on identifying what kind of data structure or file operation is best suited for the scenario presented in the exam.</em></p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-6-evolution-of-networking--terminologies"><a class="header" href="#chapter-6-evolution-of-networking--terminologies">Chapter 6: Evolution of Networking &amp; Terminologies</a></h1>
+<p>A <strong>Computer Network</strong> is a collection of interconnected computers and devices that can communicate with each other and share resources like data, hardware (printers), and software.</p>
+<h2 id="61-evolution-of-networking"><a class="header" href="#61-evolution-of-networking">6.1 Evolution of Networking</a></h2>
+<p>The Internet as we know it didn’t appear overnight. It evolved through several key research projects.</p>
+<ol>
+<li>
+<p><strong>ARPANET (Advanced Research Projects Agency Network):</strong></p>
+<ul>
+<li>Considered the grandfather of the Internet.</li>
+<li>Created in 1969 by the US Department of Defense (ARPA).</li>
+<li>Its primary goal was to connect computers at different universities and research institutions to allow scientists to share data and resources optimally, even over unreliable military lines.</li>
+</ul>
+</li>
+<li>
+<p><strong>NSFNET (National Science Foundation Network):</strong></p>
+<ul>
+<li>Created in the mid-1980s by the US National Science Foundation.</li>
+<li>It was a high-capacity network designed to connect supercomputer centers across the country. It was much faster than ARPANET and had broader access, but initially restricted to research use only.</li>
+</ul>
+</li>
+<li>
+<p><strong>The INTERNET:</strong></p>
+<ul>
+<li>As ARPANET and NSFNET grew, eventually smaller regional and local networks were interconnected, forming a massive “network of networks.” This global interconnection of networks became known as the Internet.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="62-data-communication-terminologies"><a class="header" href="#62-data-communication-terminologies">6.2 Data Communication Terminologies</a></h2>
+<p>Data communication is the exchange of data between two devices via some form of transmission medium.</p>
+<h3 id="621-core-components-of-communication"><a class="header" href="#621-core-components-of-communication">6.2.1 Core Components of Communication</a></h3>
+<ol>
+<li><strong>Sender:</strong> The device (computer, phone) sending the data.</li>
+<li><strong>Receiver:</strong> The device receiving the data.</li>
+<li><strong>Message:</strong> The information (text, audio, video) being communicated.</li>
+<li><strong>Communication Media (Medium):</strong> The physical path (e.g., cables, radio waves) over which the message travels.</li>
+<li><strong>Protocols:</strong> A set of strict rules governing the communication process (so the sender and receiver understand each other).</li>
+</ol>
+<h3 id="622-measuring-network-capacity"><a class="header" href="#622-measuring-network-capacity">6.2.2 Measuring Network Capacity</a></h3>
+<ul>
+<li><strong>Bandwidth:</strong> The difference between the highest and lowest frequencies that can be transmitted on a channel. In computer networks, bandwidth often loosely refers to the amount of data that can be transmitted in a fixed amount of time. It’s measured in Hertz (Hz).</li>
+<li><strong>Data Transfer Rate (DTR):</strong> The actual speed at which data is transferred over a network. Common units include:
+<ul>
+<li>bps (bits per second)</li>
+<li>Kbps (Kilobits per second)</li>
+<li>Mbps (Megabits per second)</li>
+<li>Gbps (Gigabits per second)</li>
+</ul>
+</li>
+</ul>
+<h3 id="623-ip-address"><a class="header" href="#623-ip-address">6.2.3 IP Address</a></h3>
+<p>Every device connected to an IP network (like the Internet) is assigned a unique numerical label called an <strong>Internet Protocol (IP) Address</strong>. It serves two principal functions: host identification and location addressing.</p>
+<p><em>(Example: <code>192.168.1.1</code> in IPv4)</em>. A computer’s real physical address baked into its network card is called the <strong>MAC address</strong>, which never changes, unlike an IP address.</p>
+<h3 id="624-switching-techniques"><a class="header" href="#624-switching-techniques">6.2.4 Switching Techniques</a></h3>
+<p>When data travels across a complex network, it must be routed efficiently from the source to the destination. There are two primary techniques:</p>
+<ol>
+<li>
+<p><strong>Circuit Switching:</strong></p>
+<ul>
+<li>A dedicated physical path (circuit) is established between the sender and receiver <em>before</em> data transmission begins.</li>
+<li>The path remains dedicated to that connection until communication ends.</li>
+<li><em>Analogy:</em> Making a traditional landline telephone call.</li>
+</ul>
+</li>
+<li>
+<p><strong>Packet Switching:</strong></p>
+<ul>
+<li>No dedicated path is established.</li>
+<li>The message is divided into small chunks called <strong>packets</strong>.</li>
+<li>Each packet carries the source and destination addresses.</li>
+<li>Packets are routed independently through the network. They may take different paths and arrive out of order. The receiving computer reassembles them.</li>
+<li><em>Analogy:</em> Sending a letter via the postal service. This is how the modern Internet works.</li>
+</ul>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-7-transmission-media--devices"><a class="header" href="#chapter-7-transmission-media--devices">Chapter 7: Transmission Media &amp; Devices</a></h1>
+<p>For computers to communicate, they must be physically or wirelessly connected.</p>
+<h2 id="71-transmission-media-channels"><a class="header" href="#71-transmission-media-channels">7.1 Transmission Media (Channels)</a></h2>
+<p>Transmission media are the pathways that carry data signals from one computer to another. They are broadly divided into two categories.</p>
+<h3 id="711-wired-communication-media-guided-media"><a class="header" href="#711-wired-communication-media-guided-media">7.1.1 Wired Communication Media (Guided Media)</a></h3>
+<p>Data travels through solid physical conductors.</p>
+<ol>
+<li><strong>Twisted Pair Cable:</strong>
+<ul>
+<li>Consists of pairs of insulated copper wires twisted together. Twisting reduces electromagnetic interference (noise).</li>
+<li>Common in older telephone systems and standard local networks (Ethernet).</li>
+<li><em>Pros:</em> Inexpensive, easy to install.</li>
+<li><em>Cons:</em> Susceptible to noise, lower bandwidth, short range.</li>
+</ul>
+</li>
+<li><strong>Coaxial Cable:</strong>
+<ul>
+<li>Has an inner copper core surrounded by an insulating layer, covered by a braided metal shield, and an outer plastic jacket.</li>
+<li>Often used for cable television lines.</li>
+<li><em>Pros:</em> Better shielding than twisted pair, higher bandwidth, longer range.</li>
+<li><em>Cons:</em> Thicker, less flexible, slightly more expensive.</li>
+</ul>
+</li>
+<li><strong>Fiber-Optic Cable:</strong>
+<ul>
+<li>Made of thin strands of glass or plastic.</li>
+<li>Uses <strong>pulses of light</strong> to transmit data instead of electrical signals.</li>
+<li><em>Pros:</em> Extremely high bandwidth, very fast, immune to electromagnetic interference, very secure, transmits over very long distances.</li>
+<li><em>Cons:</em> Very expensive, fragile, difficult to install and splice.</li>
+</ul>
+</li>
+</ol>
+<h3 id="712-wireless-media-unguided-media"><a class="header" href="#712-wireless-media-unguided-media">7.1.2 Wireless Media (Unguided Media)</a></h3>
+<p>Data travels through the air or space using electromagnetic waves.</p>
+<ol>
+<li><strong>Radio Waves:</strong>
+<ul>
+<li>Used for AM/FM radio, television, and mobile phones.</li>
+<li>Omnidirectional (travel in all directions). Can penetrate solid objects (walls).</li>
+</ul>
+</li>
+<li><strong>Microwaves:</strong>
+<ul>
+<li>Used for point-to-point communication (like between tall antennas) and satellite communication.</li>
+<li>They require line-of-sight (antennas must see each other without obstacles). Cannot easily penetrate solid objects.</li>
+</ul>
+</li>
+<li><strong>Infrared Waves:</strong>
+<ul>
+<li>Used for short-range communication.</li>
+<li>Cannot penetrate solid objects (e.g., a TV remote control sending signals to a TV).</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="72-network-devices"><a class="header" href="#72-network-devices">7.2 Network Devices</a></h2>
+<p>Network devices are physical hardware components used to connect computers together and regulate traffic.</p>
+<ol>
+<li><strong>Modem (Modulator-Demodulator):</strong> Converts digital signals from a computer into analog signals to travel over telephone lines, and vice versa. It literally connects your home to your Internet Service Provider (ISP).</li>
+<li><strong>Ethernet Card (Network Interface Card - NIC):</strong> A hardware component installed in a computer that allows it to connect to a network. It provides the physical connection port.</li>
+<li><strong>RJ45 (Registered Jack 45):</strong> This is the physical plastic connector (the plug) at the end of an Ethernet twisted-pair cable.</li>
+<li><strong>Repeater:</strong> An electronic device that receives a weak signal, cleans it, amplifies it, and retransmits it so the data can travel longer distances without degradation.</li>
+<li><strong>Hub:</strong> A simple device that connects multiple computers. It operates via broadcasting: when it receives an incoming data packet, it blindly sends it out to <em>all</em> other connected ports. It is considered “dumb” and creates a lot of unnecessary network traffic.</li>
+<li><strong>Switch:</strong> A much “smarter” alternative to a hub. A switch connects devices, but it learns the MAC addresses of connected devices. When it receives a packet, it sends it <em>only</em> to the specific intended destination port, reducing network congestion significantly.</li>
+<li><strong>Router:</strong> Operates at a higher level than switches. Routers connect completely different networks together (like connecting your home network to the global Internet). They read IP addresses and determine the best path (route) for packets to travel to reach their final destination.</li>
+<li><strong>Gateway:</strong> A device (or software) that acts as a bridge between two networks that use completely different protocols. It translates the data so the two incompatible networks can communicate.</li>
+<li><strong>Wi-Fi Card:</strong> Similar to an Ethernet card, but it contains a radio antenna to allow a computer to connect to a network wirelessly.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-8-topologies-protocols--web-services"><a class="header" href="#chapter-8-topologies-protocols--web-services">Chapter 8: Topologies, Protocols &amp; Web Services</a></h1>
+<h2 id="81-network-types"><a class="header" href="#81-network-types">8.1 Network Types</a></h2>
+<p>Depending on their geographical span, networks can be grouped into:</p>
+<ol>
+<li><strong>PAN (Personal Area Network):</strong> Covers a very small area (up to a few meters). Usually connects personal devices like Bluetooth headphones to a smartphone, or a wireless mouse to a computer.</li>
+<li><strong>LAN (Local Area Network):</strong> Spans a single building or a small geographical area, such as a school campus, office, or home. Very fast and privately owned.</li>
+<li><strong>MAN (Metropolitan Area Network):</strong> Connects two or more LANs across a larger area, typically a city or a large campus. For example, a cable TV network.</li>
+<li><strong>WAN (Wide Area Network):</strong> Covers vast geographical regions, such as countries or even spanning the globe. The Internet is the world’s largest WAN. They often use public infrastructure (like telephone lines or satellites).</li>
+</ol>
+<hr>
+<h2 id="82-network-topologies"><a class="header" href="#82-network-topologies">8.2 Network Topologies</a></h2>
+<p>Topology refers to the physical or logical layout of a network.</p>
+<ol>
+<li><strong>Bus Topology:</strong>
+<ul>
+<li>All devices are connected to a single central cable, called the main trunk or backbone.</li>
+<li><em>Pros:</em> Easy to install, uses the least cable, cheap.</li>
+<li><em>Cons:</em> If the main cable breaks, the entire network fails. Hard to find where the fault is. Performance drops under heavy traffic.</li>
+</ul>
+</li>
+<li><strong>Star Topology:</strong>
+<ul>
+<li>All computers are connected to a central device, such as a Hub or Switch.</li>
+<li><em>Pros:</em> Most common and reliable. If one cable breaks, only that single computer goes down. Easy to add new devices. Easy to troubleshoot.</li>
+<li><em>Cons:</em> If the central Hub/Switch fails, the entire network crashes. Requires more cable than a Bus topology.</li>
+</ul>
+</li>
+<li><strong>Tree Topology (Hierarchical):</strong>
+<ul>
+<li>A combination of Bus and Star topologies. It relies on a central “root” node, with branches fanning out (like an inverted tree). Common in hierarchical large organizations.</li>
+<li><em>Pros:</em> Highly scalable. Easy to manage individual segments (branches).</li>
+<li><em>Cons:</em> If the main bus cable fails, the entire network drops. Complex to configure compared to Star.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="83-network-protocols"><a class="header" href="#83-network-protocols">8.3 Network Protocols</a></h2>
+<p>A protocol is a set of rules that computers use to communicate over a network.</p>
+<ul>
+<li><strong>HTTP (HyperText Transfer Protocol):</strong> Governs how web pages are transmitted over the Internet from web servers to your browser. Uses port 80.</li>
+<li><strong>HTTPS (HTTP Secure):</strong> A secure version of HTTP that encrypts data between the server and the client to protect sensitive information (like passwords or credit card numbers). Uses port 443.</li>
+<li><strong>FTP (File Transfer Protocol):</strong> Standard protocol used for transferring files between a client and a server on a computer network.</li>
+<li><strong>TCP/IP (Transmission Control Protocol / Internet Protocol):</strong> The foundational suite of protocols for the Internet.
+<ul>
+<li><em>TCP:</em> Handles the reliable delivery of packets (breaking data down, verifying delivery, reassembling).</li>
+<li><em>IP:</em> Handles the physical addressing (routing) of packets so they reach the correct destination.</li>
+</ul>
+</li>
+<li><strong>SMTP (Simple Mail Transfer Protocol):</strong> Used universally for <strong>sending</strong> email messages from an email client to an email server.</li>
+<li><strong>POP3 (Post Office Protocol version 3):</strong> Used for <strong>receiving/downloading</strong> emails from a server to a local client.</li>
+<li><strong>PPP (Point-to-Point Protocol):</strong> Used to establish a direct connection between two nodes (e.g., dial-up connection).</li>
+<li><strong>TELNET:</strong> An older protocol used for remote login into a computer over a network. Security is a concern because it sends data in plain text.</li>
+<li><strong>VoIP (Voice over Internet Protocol):</strong> Allows making voice calls using a broadband Internet connection instead of a regular analog phone line (e.g., WhatsApp calls, Skype).</li>
+</ul>
+<hr>
+<h2 id="84-introduction-to-web-services"><a class="header" href="#84-introduction-to-web-services">8.4 Introduction to Web Services</a></h2>
+<p>The Internet provides the infrastructure, but various services run on top of it. One of them is the <strong>World Wide Web (WWW)</strong>. The web consists of interconnected documents (web pages).</p>
+<ol>
+<li><strong>HTML (HyperText Markup Language):</strong> The standard language used to create the structure and content of a web page.</li>
+<li><strong>XML (eXtensible Markup Language):</strong> Used primarily to structure and transport data, rather than display it (like HTML). It allows users to define their own tags.</li>
+<li><strong>URL (Uniform Resource Locator):</strong> The unique global address of a specific resource on the web (e.g., <code>https://www.google.com/images/logo.png</code>).</li>
+<li><strong>Domain Name:</strong> A human-readable name that identifies an IP address on the Internet (e.g., <code>google.com</code>). This makes it easier for humans to remember addresses instead of memorizing numerical IP strings.</li>
+<li><strong>Website:</strong> A collection of related web pages hosted under a single domain name.</li>
+<li><strong>Web Browser:</strong> A software application (like Chrome, Firefox, Safari) used to access, retrieve, and display information from the World Wide Web.</li>
+<li><strong>Web Server:</strong> A specialized computer or software program that stores website files and delivers them back to clients’ web browsers upon request over the Internet.</li>
+<li><strong>Web Hosting:</strong> The business of providing storage space and access for websites on a web server so they are accessible on the Internet 24/7.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-2-competency-based-questions"><a class="header" href="#unit-2-competency-based-questions">Unit 2: Competency-Based Questions</a></h1>
+<p>The Computer Networks unit heavily features <strong>case-study based questions</strong>. You will typically be given a scenario of an organization setting up a new campus network, and you will have to make engineering decisions based on the concepts learned in Chapters 6-8.</p>
+<hr>
+<h2 id="case-study-type-questions"><a class="header" href="#case-study-type-questions">Case Study Type Questions</a></h2>
+<p><strong>Question 2.1</strong>
+Tech Vidya is an educational NGO that is setting up its new central campus in Delhi. They have 4 main buildings: Administrative Block (Admin), Computer Science Block (CS), Library, and Science Block (Science).</p>
+<p>The distances between the buildings are:</p>
+<ul>
+<li>Admin to CS: 50 meters</li>
+<li>Admin to Library: 150 meters</li>
+<li>CS to Library: 70 meters</li>
+<li>CS to Science: 60 meters</li>
+<li>Library to Science: 120 meters</li>
+</ul>
+<p>The number of computers expected in each building:</p>
+<ul>
+<li>Admin: 30</li>
+<li>CS: 150</li>
+<li>Library: 20</li>
+<li>Science: 60</li>
+</ul>
+<p>Based on the above specifications, answer the following questions:</p>
+<p><strong>a) Suggest the most appropriate building to house the server. Provide a reason for your choice.</strong>
+<em>Answer:</em> The Computer Science (CS) block.
+<em>Reason:</em> In network design, the server should ideally be placed in the building with the maximum number of computers (150 computers). This minimizes network traffic on the main backbone cables connecting other buildings, ensuring faster response times for the majority of users.</p>
+<p><strong>b) Suggest the cable layout design (topology) for connecting all the buildings to the server. Draw a simple diagram or describe it.</strong>
+<em>Answer:</em> A Star Topology spanning out from the Server in the CS block.
+<em>Description:</em> Connect Admin, Library, and Science blocks directly to the main switch/server located in the CS block.</p>
+<pre><code class="language-text">Admin Block &lt;----(50m)----&gt; CS Block (SERVER)
+                              |  \
+                           (70m)  (60m)
+                              |     \
+                        Library      Science Block
+</code></pre>
+<p><strong>c) Suggest the placement of the following network devices with justification:</strong></p>
+<ul>
+<li><strong>(i) Repeater</strong></li>
+<li><strong>(ii) Hub/Switch</strong></li>
+</ul>
+<p><em>Answer:</em></p>
+<ul>
+<li><strong>(i) Repeater:</strong> None of the distances between the buildings in the star layout exceed 100 meters (the typical limit for unshielded twisted pair cables without signal loss). However, if they were connecting Admin to Library directly (150m), a repeater would be needed after 100m. In the suggested star layout, no repeater is strictly necessary.</li>
+<li><strong>(ii) Hub/Switch:</strong> A switch should be placed in <em>every building</em> (Admin, CS, Library, Science) to connect all the individual computers within that building together.</li>
+</ul>
+<p><strong>d) Suggest the best wired medium to connect the buildings together to ensure high-speed data transfer.</strong>
+<em>Answer:</em> Fiber-Optic Cable.
+<em>Reason:</em> It provides very high bandwidth, immunity to electromagnetic interference, and is ideal for connecting building backbones over moderate distances.</p>
+<hr>
+<h2 id="2-differentiate--concept-based-questions"><a class="header" href="#2-differentiate--concept-based-questions">2. Differentiate / Concept Based Questions</a></h2>
+<p><strong>Question 2.2</strong>
+Differentiate between HTTP and HTTPS protocols. Why is HTTPS preferred for banking websites?
+<em>Answer:</em> HTTP transmits data across the web in plain, readable text. HTTPS is its secure version; it uses encryption to scramble data during transmission. Banking websites prefer HTTPS to ensure that sensitive user data (like passwords, account numbers, PINs) cannot be intercepted and read by hackers while travelling across the network.</p>
+<p><strong>Question 2.3</strong>
+Your friend is setting up a cyber cafe and wants all computers to share the same internet connection effectively without causing unnecessary broadcast traffic. Should he buy a Hub or a Switch? Give a reason.
+<em>Answer:</em> He should buy a <strong>Switch</strong>.
+<em>Reason:</em> A Hub is a dumb device that broadcasts incoming data to all its ports, leading to heavy network congestion and security risks. A Switch is intelligent; it learns the MAC addresses of connected devices and forwards data packets only to the specific port where the destination device is connected, thereby reducing traffic.</p>
+<p><strong>Question 2.4</strong>
+Write down the expanded forms of:</p>
+<ol>
+<li><strong>SMTP:</strong> Simple Mail Transfer Protocol</li>
+<li><strong>VoIP:</strong> Voice over Internet Protocol</li>
+<li><strong>ARPANET:</strong> Advanced Research Projects Agency Network</li>
+<li><strong>MAC:</strong> Media Access Control</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-9-database-concepts--relational-data-model"><a class="header" href="#chapter-9-database-concepts--relational-data-model">Chapter 9: Database Concepts &amp; Relational Data Model</a></h1>
+<p>In the modern world, immense amounts of data are generated every second. Managing this data efficiently is crucial for any organization. This is where Databases come in.</p>
+<h2 id="91-introduction-to-database-concepts"><a class="header" href="#91-introduction-to-database-concepts">9.1 Introduction to Database Concepts</a></h2>
+<p>A <strong>Database</strong> is an organized collection of structured data, typically stored electronically in a computer system. The software used to manage this database is called a <strong>Database Management System (DBMS)</strong> (e.g., MySQL, Oracle, PostgreSQL).</p>
+<h3 id="why-do-we-need-databases"><a class="header" href="#why-do-we-need-databases">Why do we need Databases?</a></h3>
+<p>Before databases, data was often stored in traditional file systems (like text files or Excel sheets). This led to numerous problems:</p>
+<ol>
+<li><strong>Data Redundancy:</strong> Duplication of the same data across multiple files wastes storage space.</li>
+<li><strong>Data Inconsistency:</strong> If duplicate data exists, updating it in one place but forgetting another leads to mismatched, inconsistent data.</li>
+<li><strong>Data Isolation:</strong> It’s difficult to retrieve and combine data spread across multiple disjointed files.</li>
+<li><strong>Security Problems:</strong> File systems offer very limited user access controls.</li>
+</ol>
+<p>A DBMS solves these problems by providing centralized control, reducing redundancy, ensuring consistency, and offering robust security mechanisms.</p>
+<hr>
+<h2 id="92-the-relational-data-model"><a class="header" href="#92-the-relational-data-model">9.2 The Relational Data Model</a></h2>
+<p>There are different ways to structure a database. The most popular and widely used model is the <strong>Relational Data Model</strong>, proposed by E.F. Codd in 1970.</p>
+<p>In the relational model, data is organized into two-dimensional tables called <strong>Relations</strong>.</p>
+<h3 id="terminology-mapping"><a class="header" href="#terminology-mapping">Terminology Mapping</a></h3>
+<ul>
+<li><strong>Relation:</strong> A Table. It stores data about a specific entity (e.g., a “Student” table, an “Employee” table).</li>
+<li><strong>Tuple:</strong> A Row (or Record) in a table. It represents a single, complete set of related data about one specific instance of the entity.</li>
+<li><strong>Attribute:</strong> A Column (or Field) in a table. It represents a specific property or characteristic of the entity.</li>
+<li><strong>Domain:</strong> The set of all possible permissible values for a specific attribute (e.g., the domain for “Gender” might be just ‘M’ or ‘F’).</li>
+<li><strong>Degree:</strong> The total number of <em>attributes (columns)</em> in a relation.</li>
+<li><strong>Cardinality:</strong> The total number of <em>tuples (rows)</em> in a relation.</li>
+</ul>
+<p><strong>Example Table: <code>STUDENT</code></strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: left">AdmNo</th><th style="text-align: left">Name</th><th style="text-align: left">Age</th><th style="text-align: left">Stream</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: left">S01</td><td style="text-align: left">Amit</td><td style="text-align: left">16</td><td style="text-align: left">Science</td></tr>
+<tr><td style="text-align: left">S02</td><td style="text-align: left">Neha</td><td style="text-align: left">17</td><td style="text-align: left">Commerce</td></tr>
+<tr><td style="text-align: left">S03</td><td style="text-align: left">Rahul</td><td style="text-align: left">16</td><td style="text-align: left">Arts</td></tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><strong>Degree of <code>STUDENT</code>:</strong> 4 (AdmNo, Name, Age, Stream)</li>
+<li><strong>Cardinality of <code>STUDENT</code>:</strong> 3 (Number of rows of data)</li>
+</ul>
+<hr>
+<h2 id="93-keys-in-a-relational-database"><a class="header" href="#93-keys-in-a-relational-database">9.3 Keys in a Relational Database</a></h2>
+<p>Keys are attributes (or sets of attributes) that uniquely identify a row within a table or establish relationships between tables.</p>
+<ol>
+<li><strong>Candidate Key:</strong> An attribute, or combination of attributes, that <em>can</em> uniquely identify a tuple in a relation. A table can have multiple Candidate Keys. (e.g., <code>AdmNo</code>, <code>RollNo</code>, <code>AadharCardNumber</code>).</li>
+<li><strong>Primary Key:</strong> The specific Candidate Key chosen by the database designer to uniquely identify tuples in the relation. There can be only <strong>one</strong> Primary Key per table. Crucially, a Primary Key cannot contain NULL values. (e.g., we choose <code>AdmNo</code> as the Primary Key).</li>
+<li><strong>Alternate Key(s):</strong> The Candidate Keys that were <em>not</em> chosen as the Primary Key. (If <code>AdmNo</code> is the Primary Key, then <code>RollNo</code> and <code>AadharCardNumber</code> become Alternate Keys).</li>
+<li><strong>Foreign Key:</strong> A non-key attribute in one table whose values are drawn from the Primary Key of another table. It is used to establish and enforce a link (relationship) between the two tables.</li>
+</ol>
+<p>Understanding these concepts is vital before we start writing queries to manipulate the database using SQL.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-10-structured-query-language-sql"><a class="header" href="#chapter-10-structured-query-language-sql">Chapter 10: Structured Query Language (SQL)</a></h1>
+<p><strong>SQL (Structured Query Language)</strong> is the standard language for interacting with Relational Database Management Systems (RDBMS). It is used to create, modify, retrieve, and delete data within databases.</p>
+<p>SQL commands are broadly categorized into two main groups:</p>
+<ol>
+<li><strong>DDL (Data Definition Language):</strong> Used to define or alter the database structure (schema). These commands affect the <em>tables themselves</em>, not just the data inside them.
+<ul>
+<li>Examples: <code>CREATE</code>, <code>ALTER</code>, <code>DROP</code></li>
+</ul>
+</li>
+<li><strong>DML (Data Manipulation Language):</strong> Used to manage and manipulate the actual <em>data</em> stored within the tables.
+<ul>
+<li>Examples: <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code>, <code>SELECT</code></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="101-ddl-commands-creating--modifying-tables"><a class="header" href="#101-ddl-commands-creating--modifying-tables">10.1 DDL Commands: Creating &amp; Modifying Tables</a></h2>
+<h3 id="1-data-types-and-constraints"><a class="header" href="#1-data-types-and-constraints">1. Data Types and Constraints</a></h3>
+<p>When creating a table, you must define the type of data each column will hold.</p>
+<ul>
+<li><strong><code>CHAR(n)</code>:</strong> Fixed-length character string. (e.g., <code>CHAR(10)</code> always uses 10 bytes, padding with spaces if needed).</li>
+<li><strong><code>VARCHAR(n)</code>:</strong> Variable-length character string. (Uses only the storage needed, up to a maximum of <code>n</code> characters. Better for storage efficiency).</li>
+<li><strong><code>INT</code> / <code>INTEGER</code>:</strong> Whole numbers.</li>
+<li><strong><code>FLOAT</code>:</strong> Decimal numbers.</li>
+<li><strong><code>DATE</code>:</strong> Stores dates (format usually ‘YYYY-MM-DD’).</li>
+</ul>
+<p><strong>Constraints</strong> are rules applied to columns to enforce data integrity:</p>
+<ul>
+<li><code>NOT NULL</code>: Ensures that a column cannot have a NULL (empty) value.</li>
+<li><code>UNIQUE</code>: Ensures all values in a column are entirely distinct.</li>
+<li><code>PRIMARY KEY</code>: A combination of a <code>NOT NULL</code> and <code>UNIQUE</code>. Uniquely identifies each row in a table.</li>
+</ul>
+<h3 id="2-basic-database-commands"><a class="header" href="#2-basic-database-commands">2. Basic Database Commands</a></h3>
+<ul>
+<li><code>CREATE DATABASE School;</code> (Creates a new database)</li>
+<li><code>USE School;</code> (Selects the active database to work on)</li>
+<li><code>SHOW DATABASES;</code> (Lists all databases on the server)</li>
+<li><code>DROP DATABASE School;</code> (Deletes the entire database)</li>
+</ul>
+<h3 id="3-creating-a-table"><a class="header" href="#3-creating-a-table">3. Creating a Table</a></h3>
+<pre><code class="language-sql">CREATE TABLE Student (
+    RollNo INT PRIMARY KEY,
+    Name VARCHAR(30) NOT NULL,
+    DOB DATE,
+    Fee FLOAT
+);
+</code></pre>
+<h3 id="4-viewing-table-structure"><a class="header" href="#4-viewing-table-structure">4. Viewing Table Structure</a></h3>
+<ul>
+<li><code>SHOW TABLES;</code> (Lists all tables in the current database)</li>
+<li><code>DESCRIBE Student;</code> or <code>DESC Student;</code> (Shows the column definitions of the table)</li>
+</ul>
+<h3 id="5-altering-and-dropping-tables"><a class="header" href="#5-altering-and-dropping-tables">5. Altering and Dropping Tables</a></h3>
+<pre><code class="language-sql">-- Adding a completely new column
+ALTER TABLE Student ADD City VARCHAR(20);
+
+-- Modifying the data type of an existing column
+ALTER TABLE Student MODIFY Name VARCHAR(50);
+
+-- Removing a primary key (Note: there can be only one, so you don't name it)
+ALTER TABLE Student DROP PRIMARY KEY;
+
+-- Deleting the entire table
+DROP TABLE Student;
+</code></pre>
+<hr>
+<h2 id="102-dml-commands-manipulating-data"><a class="header" href="#102-dml-commands-manipulating-data">10.2 DML Commands: Manipulating Data</a></h2>
+<h3 id="1-inserting-data"><a class="header" href="#1-inserting-data">1. Inserting Data</a></h3>
+<pre><code class="language-sql">-- Inserting a single row (must match the column order exactly)
+INSERT INTO Student VALUES (1, 'Ravi', '2005-04-12', 4500.50, 'Delhi');
+
+-- Inserting explicitly into specific columns
+INSERT INTO Student (RollNo, Name, Fee) VALUES (2, 'Priya', 5000.00);
+</code></pre>
+<h3 id="2-the-powerful-select-command-retrieval"><a class="header" href="#2-the-powerful-select-command-retrieval">2. The Powerful <code>SELECT</code> Command (Retrieval)</a></h3>
+<p>The <code>SELECT</code> command is the most frequently used SQL command. It allows you to query the database and retrieve specific data.</p>
+<pre><code class="language-sql">-- 1. Display all columns for every row
+SELECT * FROM Student;
+
+-- 2. Display specific columns
+SELECT Name, City FROM Student;
+
+-- 3. ALIASING (Renaming columns in the output for readability)
+SELECT Name AS 'Student Name', Fee AS 'Monthly Fee' FROM Student;
+
+-- 4. DISTINCT (Removing duplicate values from the result)
+SELECT DISTINCT City FROM Student;
+</code></pre>
+<h3 id="3-filtering-and-conditions-where-clause"><a class="header" href="#3-filtering-and-conditions-where-clause">3. Filtering and Conditions (<code>WHERE</code> clause)</a></h3>
+<pre><code class="language-sql">SELECT * FROM Student WHERE City = 'Delhi';
+SELECT * FROM Student WHERE Fee &gt; 4000;
+
+-- Relational Operators: =, &gt;, &lt;, &gt;=, &lt;=, != or &lt;&gt;
+-- Logical Operators: AND, OR, NOT
+
+SELECT * FROM Student WHERE City = 'Delhi' AND Fee &gt; 4500;
+</code></pre>
+<h3 id="4-special-operators-in-between-like-is-null"><a class="header" href="#4-special-operators-in-between-like-is-null">4. Special Operators (<code>IN</code>, <code>BETWEEN</code>, <code>LIKE</code>, <code>IS NULL</code>)</a></h3>
+<pre><code class="language-sql">-- IN: Matches any value in a defined list
+SELECT * FROM Student WHERE City IN ('Delhi', 'Mumbai', 'Pune');
+
+-- BETWEEN: Specifies a range (inclusive)
+SELECT * FROM Student WHERE Fee BETWEEN 3000 AND 5000;
+
+-- LIKE: Pattern matching. 
+-- '%' matches zero or more characters. '_' matches exactly ONE character.
+SELECT * FROM Student WHERE Name LIKE 'A%';   -- Starts with 'A'
+SELECT * FROM Student WHERE Name LIKE '%A';   -- Ends with 'A'
+SELECT * FROM Student WHERE Name LIKE '_a%';  -- Second letter is 'a'
+
+-- IS NULL: Checks for empty values. (Do NOT use '= NULL')
+SELECT * FROM Student WHERE City IS NULL;
+SELECT * FROM Student WHERE City IS NOT NULL;
+</code></pre>
+<h3 id="5-sorting-data-order-by"><a class="header" href="#5-sorting-data-order-by">5. Sorting Data (<code>ORDER BY</code>)</a></h3>
+<p>Sorts the result set. Default is Ascending (<code>ASC</code>). Use <code>DESC</code> for Descending.</p>
+<pre><code class="language-sql">SELECT * FROM Student ORDER BY Name ASC;
+SELECT * FROM Student ORDER BY Fee DESC, Name ASC;
+</code></pre>
+<h3 id="6-updating-data-update"><a class="header" href="#6-updating-data-update">6. Updating Data (<code>UPDATE</code>)</a></h3>
+<p>Modifies existing records. <strong>Always use a <code>WHERE</code> clause!</strong> If you forget it, <em>every single row</em> in the table will be updated.</p>
+<pre><code class="language-sql">UPDATE Student SET Fee = Fee + 500 WHERE City = 'Delhi';
+</code></pre>
+<h3 id="7-deleting-data-delete"><a class="header" href="#7-deleting-data-delete">7. Deleting Data (<code>DELETE</code>)</a></h3>
+<p>Removes existing records. Again, <strong>always use a <code>WHERE</code> clause!</strong></p>
+<pre><code class="language-sql">DELETE FROM Student WHERE RollNo = 2;
+-- (If you wrote `DELETE FROM Student;`, the table would be emptied)
+</code></pre>
+<hr>
+<h2 id="103-advanced-sql-concepts"><a class="header" href="#103-advanced-sql-concepts">10.3 Advanced SQL Concepts</a></h2>
+<h3 id="1-aggregate-functions"><a class="header" href="#1-aggregate-functions">1. Aggregate Functions</a></h3>
+<p>These functions perform a calculation on a set of values and return a single value. They ignore NULL values (except <code>COUNT(*)</code>).</p>
+<ul>
+<li><code>MAX()</code>: Returns the largest value.</li>
+<li><code>MIN()</code>: Returns the smallest value.</li>
+<li><code>AVG()</code>: Returns the average value.</li>
+<li><code>SUM()</code>: Returns the total sum.</li>
+<li><code>COUNT()</code>: Returns the number of rows.
+<ul>
+<li><code>COUNT(*)</code> counts all rows including NULLs.</li>
+<li><code>COUNT(column_name)</code> counts non-NULL values in that column.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-sql">SELECT MAX(Fee), MIN(Fee), AVG(Fee) FROM Student;
+SELECT COUNT(*) FROM Student WHERE City = 'Delhi';
+</code></pre>
+<h3 id="2-grouping-data-group-by-and-having"><a class="header" href="#2-grouping-data-group-by-and-having">2. Grouping Data (<code>GROUP BY</code> and <code>HAVING</code>)</a></h3>
+<p><code>GROUP BY</code> groups rows that have the same values into summary rows. It is almost always used in conjunction with aggregate functions.</p>
+<pre><code class="language-sql">-- Count how many students are in each city
+SELECT City, COUNT(*) FROM Student GROUP BY City;
+</code></pre>
+<p>The <code>HAVING</code> clause was added to SQL because the <code>WHERE</code> keyword cannot be used with aggregate functions. <code>HAVING</code> applies conditions <em>after</em> the grouping has occurred.</p>
+<pre><code class="language-sql">-- Find cities that have MORE than 5 students
+SELECT City, COUNT(*) FROM Student GROUP BY City HAVING COUNT(*) &gt; 5;
+</code></pre>
+<h3 id="3-joins-combining-tables"><a class="header" href="#3-joins-combining-tables">3. Joins (Combining Tables)</a></h3>
+<p>A JOIN is used to combine rows from two or more tables based on a related column (usually Primary Key and Foreign Key) between them.</p>
+<p>Suppose we have an <code>Employee</code> table and a <code>Department</code> table.</p>
+<ul>
+<li><strong>Cartesian Product (Cross Join):</strong> Combines every row in the first table with every row in the second table. Rarely useful on its own, produces massive output. (Used when no condition is specified).</li>
+<li><strong>Equi-Join:</strong> Joins tables based on an equality condition (<code>=</code>) between two columns.
+<pre><code class="language-sql">SELECT Employee.Name, Department.DeptName 
+FROM Employee, Department 
+WHERE Employee.DeptId = Department.DeptId;
+</code></pre>
+</li>
+<li><strong>Natural Join:</strong> A simpler way to write an Equi-Join. If the two tables share a column with the exact same name (like <code>DeptId</code>), a Natural Join automatically connects them based on that column, without needing a <code>WHERE</code> clause.
+<pre><code class="language-sql">SELECT * FROM Employee NATURAL JOIN Department;
+</code></pre>
+</li>
+</ul>
+<p>Mastering SQL is the key to interacting effectively with databases of any size. Practices these queries extensively!</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-11-interfacing-python-with-sql"><a class="header" href="#chapter-11-interfacing-python-with-sql">Chapter 11: Interfacing Python with SQL</a></h1>
+<p>While SQL is great for manipulating databases, users rarely interact with a database directly through an SQL command line. They interact through applications (like websites or desktop software). In this chapter, we will learn how to write a Python application that connects to an SQL database (like MySQL) to perform database operations programmatically.</p>
+<h2 id="111-the-architecture"><a class="header" href="#111-the-architecture">11.1 The Architecture</a></h2>
+<p>To connect Python to MySQL, we need a connector module. The most common one used in the CBSE curriculum is <code>mysql-connector-python</code>.</p>
+<p><strong>Steps for Database Connectivity:</strong></p>
+<ol>
+<li><strong>Import the module:</strong> Bring the connector library into your Python script.</li>
+<li><strong>Establish a connection:</strong> Open a connection to the MySQL server using credentials (host, user, password, database).</li>
+<li><strong>Create a cursor instance:</strong> A cursor is an object that executes SQL queries and retrieves results.</li>
+<li><strong>Execute a query:</strong> Pass your SQL command as a string to the cursor.</li>
+<li><strong>Extract the results:</strong> If it was a <code>SELECT</code> query, fetch the data. If it was <code>INSERT</code>, <code>UPDATE</code>, or <code>DELETE</code>, <code>commit()</code> the changes.</li>
+<li><strong>Clean up:</strong> Close the cursor and the connection.</li>
+</ol>
+<hr>
+<h2 id="112-connecting-to-the-database"><a class="header" href="#112-connecting-to-the-database">11.2 Connecting to the Database</a></h2>
+<pre><code class="language-python">import mysql.connector
+
+try:
+    # 1. Establish connection
+    mydb = mysql.connector.connect(
+      host="localhost",
+      user="yourusername",
+      password="yourpassword",
+      database="SchoolDB" # Assuming this database already exists
+    )
+
+    print("Connection established successfully!")
+
+except mysql.connector.Error as err:
+    print(f"Error connecting to database: {err}")
+
+# Optional: Close connection immediately if just testing
+# if mydb.is_connected():
+#     mydb.close()
+</code></pre>
+<hr>
+<h2 id="113-executing-queries-using-the-cursor"><a class="header" href="#113-executing-queries-using-the-cursor">11.3 Executing Queries using the Cursor</a></h2>
+<h3 id="1-retrieving-data-select-queries"><a class="header" href="#1-retrieving-data-select-queries">1. Retrieving Data (SELECT Queries)</a></h3>
+<p>To fetch data, we use the cursor’s <code>execute()</code> method to run the query, and then fetch the results.</p>
+<ul>
+<li><code>fetchone()</code>: Returns the next row of the result set as a tuple. Returns <code>None</code> if no more rows are available.</li>
+<li><code>fetchall()</code>: Returns all remaining rows as a list of tuples.</li>
+<li><code>rowcount</code>: An attribute of the cursor that tells you how many rows were returned or affected by the last executed statement.</li>
+</ul>
+<pre><code class="language-python">import mysql.connector
+
+# ... (Connection code from above) ...
+mydb = mysql.connector.connect(host="localhost", user="root", password="", database="SchoolDB")
+
+# 2. Create the cursor
+mycursor = mydb.cursor()
+
+# 3. Execute the query
+mycursor.execute("SELECT * FROM Student")
+
+# 4. Extract results
+results = mycursor.fetchall()
+
+print("Total rows retrieved:", mycursor.rowcount)
+
+for row in results:
+    # row is a tuple containing the data for exactly one record
+    print(f"RollNo: {row[0]}, Name: {row[1]}, City: {row[3]}")
+
+# 5. Clean up
+mycursor.close()
+mydb.close()
+</code></pre>
+<h3 id="2-modifying-data-insert-update-delete"><a class="header" href="#2-modifying-data-insert-update-delete">2. Modifying Data (INSERT, UPDATE, DELETE)</a></h3>
+<p>When you make structural changes to the database or modify the data, you <strong>MUST</strong> call the <code>commit()</code> method on the connection object. If you don’t commit, the changes will be rolled back (undone) when the script ends!</p>
+<pre><code class="language-python">import mysql.connector
+
+mydb = mysql.connector.connect(host="localhost", user="root", password="", database="SchoolDB")
+mycursor = mydb.cursor()
+
+# Example: UPDATE operation
+sql = "UPDATE Student SET Fee = Fee + 100 WHERE City = 'Delhi'"
+mycursor.execute(sql)
+
+# IMPORTANT: Commit the transaction to save changes
+mydb.commit()
+
+# Output the number of rows affected
+print(mycursor.rowcount, "record(s) updated.")
+
+mycursor.close()
+mydb.close()
+</code></pre>
+<hr>
+<h2 id="114-parameterized-queries-handling-dynamic-input"><a class="header" href="#114-parameterized-queries-handling-dynamic-input">11.4 Parameterized Queries (Handling Dynamic Input)</a></h2>
+<p>Often, you don’t want to hardcode the SQL query. You want to insert data provided by a user (e.g., from an <code>input()</code> statement).</p>
+<p><strong>Warning:</strong> Never use simple string concatenation (<code>+</code> or f-strings) to inject user input directly into an SQL query string. This makes your application vulnerable to <strong>SQL Injection</strong> attacks, where a malicious user could potentially delete your entire database.</p>
+<p>Instead, use the <code>%s</code> format specifier. The connector will safely sanitize the inputs before executing the query.</p>
+<pre><code class="language-python">import mysql.connector
+
+mydb = mysql.connector.connect(host="localhost", user="root", password="", database="SchoolDB")
+mycursor = mydb.cursor()
+
+# Get data from the user
+new_roll = int(input("Enter Roll No: "))
+new_name = input("Enter Name: ")
+new_city = input("Enter City: ")
+new_fee = float(input("Enter Fee: "))
+
+# The SQL query string uses %s placeholders
+sql = "INSERT INTO Student (RollNo, Name, City, Fee) VALUES (%s, %s, %s, %s)"
+
+# The data MUST be provided as a tuple
+val = (new_roll, new_name, new_city, new_fee)
+
+# Execute by passing both the query string and the data tuple
+mycursor.execute(sql, val)
+
+mydb.commit()
+print(mycursor.rowcount, "record inserted.")
+
+mycursor.close()
+mydb.close()
+</code></pre>
+<p><em>(Note: While some older Python code uses the string <code>.format()</code> method to achieve parameterization, using the <code>%s</code> binding built into the MySQL connector is the safest and most standard practice).</em></p>
+<p>By combining the logic of Python with the data management power of SQL, you can build incredibly robust, data-driven applications.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-3-competency-based-questions"><a class="header" href="#unit-3-competency-based-questions">Unit 3: Competency-Based Questions</a></h1>
+<p>Database Management competency questions usually involve providing you with one or two tables populated with data and asking you to write SQL queries to achieve specific results, or to predict the output of given SQL queries. Another common format involves debugging incomplete Python-SQL connectivity code.</p>
+<hr>
+<h2 id="1-sql-query-writing-based-on-a-table"><a class="header" href="#1-sql-query-writing-based-on-a-table">1. SQL Query Writing (Based on a Table)</a></h2>
+<p>Consider the following table named <strong><code>INVENTORY</code></strong>.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: left">ItemCode</th><th style="text-align: left">ItemName</th><th style="text-align: left">Category</th><th style="text-align: left">Qty</th><th style="text-align: left">Price</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: left">A101</td><td style="text-align: left">Motherboard</td><td style="text-align: left">Hardware</td><td style="text-align: left">50</td><td style="text-align: left">4500.00</td></tr>
+<tr><td style="text-align: left">A102</td><td style="text-align: left">Keyboard</td><td style="text-align: left">Hardware</td><td style="text-align: left">120</td><td style="text-align: left">850.50</td></tr>
+<tr><td style="text-align: left">C201</td><td style="text-align: left">Antivirus</td><td style="text-align: left">Software</td><td style="text-align: left">200</td><td style="text-align: left">1100.00</td></tr>
+<tr><td style="text-align: left">C202</td><td style="text-align: left">OfficeSuite</td><td style="text-align: left">Software</td><td style="text-align: left">80</td><td style="text-align: left">5000.00</td></tr>
+<tr><td style="text-align: left">A105</td><td style="text-align: left">Mouse</td><td style="text-align: left">Hardware</td><td style="text-align: left">150</td><td style="text-align: left">400.00</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Question 3.1</strong> Write SQL queries for the following:
+<em>(a) To display the details of all items in the ‘Hardware’ category, sorted by their price in descending order.</em>
+<em>Answer:</em>
+<code>SELECT * FROM INVENTORY WHERE Category = 'Hardware' ORDER BY Price DESC;</code></p>
+<p><em>(b) To count the number of items in each category.</em>
+<em>Answer:</em>
+<code>SELECT Category, COUNT(*) FROM INVENTORY GROUP BY Category;</code></p>
+<p><em>(c) To display the ItemName and total value of stock (Qty * Price) for all items where the total value is greater than 100,000.</em>
+<em>Answer:</em>
+<code>SELECT ItemName, Qty * Price FROM INVENTORY WHERE (Qty * Price) &gt; 100000;</code></p>
+<p><em>(d) To increase the price of all ‘Software’ category items by 10%.</em>
+<em>Answer:</em>
+<code>UPDATE INVENTORY SET Price = Price * 1.10 WHERE Category = 'Software';</code></p>
+<hr>
+<h2 id="2-output-prediction-sql"><a class="header" href="#2-output-prediction-sql">2. Output Prediction (SQL)</a></h2>
+<p><strong>Question 3.2</strong> Based on the <code>INVENTORY</code> table above, what will be the output of the following queries?</p>
+<p><em>(a) <code>SELECT MAX(Price), MIN(Price) FROM INVENTORY;</code></em>
+<em>Output:</em></p>
+<pre><code class="language-text">MAX(Price)  | MIN(Price)
+5000.00     | 400.00
+</code></pre>
+<p><em>(b) <code>SELECT ItemName FROM INVENTORY WHERE ItemName LIKE '%board';</code></em>
+<em>Output:</em></p>
+<pre><code class="language-text">ItemName
+Motherboard
+Keyboard
+</code></pre>
+<hr>
+<h2 id="3-python-sql-connectivity-debugging"><a class="header" href="#3-python-sql-connectivity-debugging">3. Python-SQL Connectivity Debugging</a></h2>
+<p><strong>Question 3.3</strong>
+Sunita has written a Python script to insert a new record into a <code>STUDENT</code> table in a MySQL database. However, the code has missing segments labeled <code>Statement-1</code> and <code>Statement-2</code>. Fill in the blanks to make the code functional.</p>
+<pre><code class="language-python">import mysql.connector
+
+mycon = mysql.connector.connect(host="localhost", user="root", password="pwd", database="school")
+cursor = mycon.cursor()
+
+query = "INSERT INTO STUDENT (RollNo, Name) VALUES (%s, %s)"
+data = (10, 'Aman')
+
+# Statement-1: Execute the query
+____________________________________
+
+# Statement-2: Save the changes permanently to the database
+____________________________________
+
+print("Record Inserted")
+mycon.close()
+</code></pre>
+<p><em>Answer:</em></p>
+<ul>
+<li><strong>Statement-1:</strong> <code>cursor.execute(query, data)</code></li>
+<li><strong>Statement-2:</strong> <code>mycon.commit()</code></li>
+</ul>
+<hr>
+<h2 id="4-database-theory--keys"><a class="header" href="#4-database-theory--keys">4. Database Theory &amp; Keys</a></h2>
+<p><strong>Question 3.4</strong>
+An airline company maintains two tables: <code>PASSENGER</code> (PnrNo, Name, Age, FlightNo) and <code>FLIGHT</code> (FlightNo, Start, Destination, Airline).</p>
+<p><em>(a) Identify the Primary Keys in both tables.</em>
+<em>Answer:</em> Primary Key of <code>PASSENGER</code> is <code>PnrNo</code>. Primary Key of <code>FLIGHT</code> is <code>FlightNo</code>.</p>
+<p><em>(b) Which attribute acts as a Foreign Key in the <code>PASSENGER</code> table? How does it help?</em>
+<em>Answer:</em> <code>FlightNo</code> acts as the Foreign Key in the <code>PASSENGER</code> table. It helps establish a relationship between the two tables, allowing us to query and link a specific passenger to the details of the flight they are travelling on.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="appendix-a-suggested-practical-list"><a class="header" href="#appendix-a-suggested-practical-list">Appendix A: Suggested Practical List</a></h1>
+<p>This section details the practical programming assignments as suggested by the CBSE syllabus. These practicals are crucial for the Lab Test portion of the exam (12 marks) and the Report File (7 marks).</p>
+<h2 id="a1-python-programming-minimum-15-programs"><a class="header" href="#a1-python-programming-minimum-15-programs">A.1 Python Programming (Minimum 15 Programs)</a></h2>
+<p>Your report file should include at least 15 Python programs covering the concepts learned in Class XI and XII.</p>
+<h3 id="fundamental-logic--stringslists"><a class="header" href="#fundamental-logic--stringslists">Fundamental Logic &amp; Strings/Lists</a></h3>
+<ol>
+<li>Read a text file line by line and display each word separated by a <code>#</code>.</li>
+<li>Read a text file and display the number of vowels, consonants, uppercase, and lowercase characters in the file.</li>
+<li>Remove all the lines that contain the character ‘a’ in a file and write the remaining lines to another file.</li>
+<li>Write a random number generator that generates random numbers between 1 and 6 (simulating a dice roll).</li>
+</ol>
+<h3 id="stacks"><a class="header" href="#stacks">Stacks</a></h3>
+<ol start="5">
+<li>Write a Python program to implement a stack using a list. (Include push, pop, display, and peek operations).</li>
+</ol>
+<h3 id="binary-file-handling"><a class="header" href="#binary-file-handling">Binary File Handling</a></h3>
+<ol start="6">
+<li>Create a binary file with user records (Name and Roll Number). Search for a given roll number and display the name; if not found, display an appropriate message.</li>
+<li>Create a binary file with <code>RollNo</code>, <code>Name</code>, and <code>Marks</code>. Input a roll number from the user and update the marks for that student.</li>
+</ol>
+<h3 id="csv-file-handling"><a class="header" href="#csv-file-handling">CSV File Handling</a></h3>
+<ol start="8">
+<li>Create a CSV file by entering <code>user_id</code> and <code>password</code>. Write a script to read and search for a password given a specific <code>user_id</code>.</li>
+</ol>
+<p><em>(Add 7 more programs of similar complexity involving functions, complex lists/dictionaries manipulation, and basic algorithms like linear search or bubble sort to fulfill the minimum requirement of 15).</em></p>
+<hr>
+<h2 id="a2-sql-queries-minimum-5-sets"><a class="header" href="#a2-sql-queries-minimum-5-sets">A.2 SQL Queries (Minimum 5 Sets)</a></h2>
+<p>Your report file should include basic to advanced SQL operations. For example, create a target database like “SchoolManagement” or “InventorySystem”.</p>
+<p><strong>Set 1: Basic DDL and DML</strong></p>
+<ol>
+<li>Create a <code>STUDENT</code> table with attributes like RollNo, Name, Class, DOB, Gender, City, Marks.</li>
+<li>Insert at least 5 rows of sample data.</li>
+<li>Display all records from the table.</li>
+</ol>
+<p><strong>Set 2: Modifying Structure and Data</strong>
+4.  Use <code>ALTER TABLE</code> to add a new attribute (e.g., <code>Email</code>).
+5.  Use <code>UPDATE</code> to modify the marks of a specific student.
+6.  Use <code>DELETE</code> to remove a student’s record based on their RollNo.</p>
+<p><strong>Set 3: Filtering and Sorting</strong>
+7.  Display names of students belonging to a specific city.
+8.  Use <code>ORDER BY</code> to display data sorted by their marks in descending order.</p>
+<p><strong>Set 4: Aggregate Functions and Grouping</strong>
+9.  Find the minimum, maximum, and average marks of the class.
+10. Use <code>GROUP BY</code> to find the count of male and female students separately.</p>
+<p><strong>Set 5: Specific Constraints</strong>
+11. Write an <code>ALTER TABLE</code> query to drop an attribute.
+12. Modify the table to change the data type of an existing attribute.</p>
+<hr>
+<h2 id="a3-python---sql-connectivity-minimum-4-programs"><a class="header" href="#a3-python---sql-connectivity-minimum-4-programs">A.3 Python - SQL Connectivity (Minimum 4 Programs)</a></h2>
+<p>These programs demonstrate the integration of the database backend with the Python frontend application.</p>
+<ol>
+<li><strong>Read:</strong> Write a Python program to connect to your SQL database, execute a <code>SELECT *</code> query on a table, and print all the fetched records in a formatted way.</li>
+<li><strong>Insert:</strong> Write a Python program that takes user input (using <code>input()</code>) for a new record and inserts it into an SQL table using parameterized queries (<code>%s</code>).</li>
+<li><strong>Update:</strong> Write a Python script that takes a specific ID (like <code>RollNo</code> or <code>EmployeeID</code>) from the user and a new value (like updated marks or salary), and executes an <code>UPDATE</code> query.</li>
+<li><strong>Delete:</strong> Write a script to prompt the user for an ID and safely execute a <code>DELETE</code> command to remove that specific record from the SQL table. Ensure the script reports how many rows were affected.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="appendix-b-project-guidelines"><a class="header" href="#appendix-b-project-guidelines">Appendix B: Project Guidelines</a></h1>
+<p>The class project carries <strong>8 marks</strong> in your practical examination. The objective is to apply the concepts learned in Classes XI and XII (specifically Python file handling and Python-SQL connectivity) to create a tangible, useful application that solves a real-world problem.</p>
+<hr>
+<h2 id="b1-project-requirements"><a class="header" href="#b1-project-requirements">B.1 Project Requirements</a></h2>
+<ol>
+<li><strong>Group Size:</strong> The project should be done in groups of two to three students.</li>
+<li><strong>Timeline:</strong> It should be started at least 6 months before the final submission deadline.</li>
+<li><strong>Core Technology:</strong> The project <em>must</em> utilize either:
+<ul>
+<li>Python File Handling (Text, Binary, or CSV files) for data storage.</li>
+<li>Python-SQL Connectivity, using a backend database like MySQL. (This is generally preferred and leads to more robust applications).</li>
+</ul>
+</li>
+<li><strong>Originality:</strong> Students must avoid plagiarism and copyright violations. Do not download pre-made projects from the internet. The code must be written by your group.</li>
+</ol>
+<hr>
+<h2 id="b2-finding-a-problem-to-solve"><a class="header" href="#b2-finding-a-problem-to-solve">B.2 Finding a Problem to Solve</a></h2>
+<p>You are encouraged to look around your community, school, or local businesses for inspiration. A good project solves a specific problem.</p>
+<p><strong>Ideas from the CBSE Syllabus:</strong></p>
+<ul>
+<li><strong>Business Invoice System:</strong> Visit a local shop. If they struggle with filing GST claims or generating bills manually, create a Python app that takes transaction data, calculates tax rates, groups items by category, and generates formatted invoices (saving them to CSV or a Database).</li>
+<li><strong>School Management Software:</strong> Create a system for the school library to track books issued and returned, or a system for managing student attendance and generating reports.</li>
+<li><strong>Accessibility Software:</strong> Build software designed to help disabled fellow students learn or interact with computers more easily.</li>
+<li><strong>Educational Games:</strong> Build a quiz game or an interactive learning application using <code>pygame</code> or standard Tkinter GUI, storing high scores in a database.</li>
+</ul>
+<hr>
+<h2 id="b3-project-phases--documentation"><a class="header" href="#b3-project-phases--documentation">B.3 Project Phases &amp; Documentation</a></h2>
+<p>Your final submission must include entirely functional code and a detailed <strong>Project Report File</strong>.</p>
+<p><strong>Phase 1: Analysis &amp; Design</strong></p>
+<ul>
+<li><strong>Problem Statement:</strong> Clearly define what the project does and who it is for.</li>
+<li><strong>Requirements specification:</strong> Hardware and software needed.</li>
+<li><strong>Database Design:</strong> If using SQL, draw an Entity-Relationship (ER) diagram or clearly list the tables, their attributes, primary keys, and relationships.</li>
+</ul>
+<p><strong>Phase 2: Development</strong></p>
+<ul>
+<li>Write modular code using functions.</li>
+<li>Implement robust Exception Handling to ensure the program doesn’t crash on invalid user input.</li>
+<li>Comment your code extensively so the examiner understands your logic.</li>
+</ul>
+<p><strong>Phase 3: Testing</strong></p>
+<ul>
+<li>Test all features with various inputs (valid and invalid) to ensure accuracy.</li>
+</ul>
+<p><strong>Phase 4: Creating the Report File</strong>
+The printed report file should typically contain:</p>
+<ol>
+<li><strong>Title Page</strong> (Project Name, Group Members, School Info).</li>
+<li><strong>Certificate of Authenticity</strong> (Signed by the teacher).</li>
+<li><strong>Acknowledgement.</strong></li>
+<li><strong>Index/Table of Contents.</strong></li>
+<li><strong>Introduction / Problem Statement.</strong></li>
+<li><strong>Hardware &amp; Software Requirements.</strong></li>
+<li><strong>Database Design (Schema).</strong></li>
+<li><strong>Source Code</strong> (Printed neatly).</li>
+<li><strong>Output Screens</strong> (Screenshots proving the program works).</li>
+<li><strong>Bibliography / References.</strong></li>
+</ol>
+<hr>
+<h2 id="b4-tips-for-success"><a class="header" href="#b4-tips-for-success">B.4 Tips for Success</a></h2>
+<ul>
+<li><strong>Don’t overcomplicate it:</strong> A simple project that works flawlessly and is thoroughly understood by the group is much better than a heavily complex project that is broken or was copied from somewhere else.</li>
+<li><strong>Focus on the interface:</strong> Use basic menus in the console (e.g., “Press 1 to Add Book, Press 2 to Search…”) to make the application user-friendly. If you are ambitious, look into learning Tkinter for graphical interfaces, but standard console menus are perfectly acceptable.</li>
+<li><strong>Prepare for the Viva:</strong> During the practical exam, the external examiner will ask you questions about your code (the Viva Voce, worth 3 marks). You must be able to explain how your code works line by line.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
