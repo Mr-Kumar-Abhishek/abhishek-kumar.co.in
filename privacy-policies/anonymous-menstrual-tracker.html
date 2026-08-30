@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Anonymous Menstrual Tracker</title>
+    <meta name="description" content="Privacy policy for the Anonymous Menstrual Tracker app. We collect zero personal data.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: rgba(30, 41, 59, 0.7);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-glow: #ec4899;
+            --accent-glow-secondary: #8b5cf6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated Background Gradients */
+        .bg-glow {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%);
+            opacity: 0.15;
+            top: -200px;
+            left: -200px;
+            filter: blur(80px);
+            z-index: -1;
+            animation: float 10s ease-in-out infinite alternate;
+        }
+
+        .bg-glow-2 {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--accent-glow-secondary) 0%, transparent 60%);
+            opacity: 0.15;
+            bottom: -100px;
+            right: -100px;
+            filter: blur(80px);
+            z-index: -1;
+            animation: float 12s ease-in-out infinite alternate-reverse;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s forwards;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #f9a8d4, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+            width: 100%;
+        }
+
+        .policy-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .policy-section {
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .policy-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy-section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .policy-section h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 24px;
+            background: linear-gradient(to bottom, #ec4899, #8b5cf6);
+            border-radius: 4px;
+        }
+
+        .policy-section p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .highlight-box {
+            background: rgba(236, 72, 153, 0.1);
+            border-left: 4px solid var(--accent-glow);
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box p {
+            color: #f1f5f9;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            opacity: 0;
+            animation: fadeIn 1s 1s forwards;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .reveal {
+            animation: fadeInUp 0.8s forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .policy-card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <header>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Anonymous Menstrual Tracker</p>
+    </header>
+
+    <main class="container">
+        <div class="policy-card" id="card">
+            
+            <div class="policy-section">
+                <h2>Our Philosophy: Zero Data</h2>
+                <p>We built the Anonymous Menstrual Tracker with one fundamental principle: <strong>your body is your business, and your data belongs to you.</strong></p>
+                <div class="highlight-box">
+                    <p>We do not collect, transmit, store, sell, or share any of your health data, personal information, or usage habits.</p>
+                </div>
+            </div>
+
+            <div class="policy-section">
+                <h2>Local Storage Only</h2>
+                <p>Everything you enter into the app—your cycle dates, symptoms, notes, and predictions—is stored exclusively on your device's local storage.</p>
+                <p>We do not have servers, databases, or cloud syncing mechanisms. If you uninstall the app or clear its data, your records are permanently deleted. We have zero access to your information at any time.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>Google Play Store Requirements</h2>
+                <p>As the app is distributed via the Google Play Store, Google may automatically collect minimal, anonymized analytical data necessary for the app store ecosystem to function. This includes:</p>
+                <ul>
+                    <li style="color: var(--text-muted); margin-left: 1.5rem; margin-bottom: 0.5rem;">Basic installation metrics (e.g., number of downloads)</li>
+                    <li style="color: var(--text-muted); margin-left: 1.5rem; margin-bottom: 0.5rem;">Crash logs and ANR (App Not Responding) reports</li>
+                    <li style="color: var(--text-muted); margin-left: 1.5rem; margin-bottom: 0.5rem;">Device models and OS versions for compatibility</li>
+                </ul>
+                <p style="margin-top: 1rem;">This information is standard across all Google Play apps, is completely anonymous, and is processed entirely by Google. We only see aggregate numbers to ensure the app is functioning properly. <strong>None of this data is linked to your identity or your health information.</strong></p>
+            </div>
+
+            <div class="policy-section">
+                <h2>No Third-Party Trackers</h2>
+                <p>Unlike many other health apps, we do not integrate any third-party SDKs for advertising, user tracking, or behavioral analytics (e.g., no Firebase, no Facebook Pixel, no Mixpanel).</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>Updates to this Policy</h2>
+                <p>Because our app does not collect data, this privacy policy is unlikely to change. However, if any legal or platform requirements necessitate an update, we will revise this page. The date of the latest revision will always be displayed below.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>Contact</h2>
+                <p>If you have any questions or concerns regarding this privacy policy or how your app functions securely offline, please reach out to the developer directly.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Effective Date: September 2026</p>
+        <p>&copy; Anonymous Menstrual Tracker. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple intersection observer to trigger fade in for the card
+        document.addEventListener("DOMContentLoaded", () => {
+            const card = document.getElementById('card');
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+                card.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+            }, 300);
+        });
+    </script>
+</body>
+</html>
