@@ -17,6 +17,10 @@ Live Site: [abhishek-kumar.co.in](https://abhishek-kumar.co.in/)
 *   **Zero Dependencies:** Built entirely without massive frontend frameworks. No React, no Vue, no build steps. Just pure, highly optimized web standards.
 *   **Fully Responsive:** Fluid CSS Grid and Flexbox layouts ensure the site looks gorgeous on 4K monitors and mobile phones alike.
 
+## 📊 Cost Estimation
+
+We have calculated the estimated development cost of this entire repository using the Constructive Cost Model (COCOMO). You can view the full calculations and pricing breakdown in the [`cocomo_calculation.md`](cocomo_calculation.md) file.
+
 ## 🚀 Architecture
 
 *   **`index.html`**: The semantic skeleton of the application. Contains the layout, navigation, and placeholder containers for dynamic content.
