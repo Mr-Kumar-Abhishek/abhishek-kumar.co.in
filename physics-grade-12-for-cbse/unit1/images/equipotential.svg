@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="300">
+  <rect width="100%" height="100%" fill="#f9fafb" rx="10"/>
+  
+  <g fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="8,4">
+    <!-- Positive charge equipotential surfaces -->
+    <path d="M 170 150 A 20 20 0 1 0 130 150 A 20 20 0 1 0 170 150 Z" />
+    <path d="M 185 150 A 35 40 0 1 0 115 150 A 35 40 0 1 0 185 150 Z" />
+    <path d="M 197 150 A 47 60 0 1 0 103 150 A 47 60 0 1 0 197 150 Z" />
+
+    <!-- Negative charge equipotential surfaces -->
+    <path d="M 270 150 A 20 20 0 1 0 230 150 A 20 20 0 1 0 270 150 Z" />
+    <path d="M 285 150 A 35 40 0 1 0 215 150 A 35 40 0 1 0 285 150 Z" />
+    <path d="M 297 150 A 47 60 0 1 0 203 150 A 47 60 0 1 0 297 150 Z" />
+  </g>
+
+  <!-- Central equipotential plane (V=0) -->
+  <line x1="200" y1="20" x2="200" y2="280" stroke="#6b7280" stroke-width="2" stroke-dasharray="8,4" />
+
+  <!-- Charges -->
+  <circle cx="150" cy="150" r="12" fill="#ef4444" />
+  <text x="150" y="154" fill="#fff" font-size="16" font-family="sans-serif" text-anchor="middle" font-weight="bold">+</text>
+
+  <circle cx="250" cy="150" r="12" fill="#3b82f6" />
+  <text x="250" y="153" fill="#fff" font-size="16" font-family="sans-serif" text-anchor="middle" font-weight="bold">-</text>
+
+  <!-- Label -->
+  <text x="50" y="270" fill="#374151" font-size="14" font-family="sans-serif">Dashed lines represent Equipotential Surfaces</text>
+</svg>

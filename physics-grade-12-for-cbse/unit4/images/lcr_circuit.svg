@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" width="100%" height="250">
+  <defs>
+    <!-- AC Source -->
+    <g id="ac">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#111827" stroke-width="2" />
+      <path d="M -10 0 Q -5 -10 0 0 Q 5 10 10 0" fill="none" stroke="#111827" stroke-width="2" />
+    </g>
+    <!-- Inductor -->
+    <g id="inductor">
+      <path d="M 0 0 Q 5 -15 10 0 Q 15 -15 20 0 Q 25 -15 30 0 Q 35 -15 40 0 Q 45 -15 50 0" fill="none" stroke="#111827" stroke-width="3" />
+    </g>
+    <!-- Capacitor -->
+    <g id="capacitor">
+      <line x1="20" y1="-15" x2="20" y2="15" stroke="#111827" stroke-width="3" />
+      <line x1="30" y1="-15" x2="30" y2="15" stroke="#111827" stroke-width="3" />
+      <line x1="0" y1="0" x2="20" y2="0" stroke="#111827" stroke-width="2" />
+      <line x1="30" y1="0" x2="50" y2="0" stroke="#111827" stroke-width="2" />
+    </g>
+    <!-- Resistor -->
+    <g id="resistor">
+      <path d="M 0 0 L 5 0 L 10 -10 L 15 10 L 20 -10 L 25 10 L 30 -10 L 35 10 L 40 -10 L 45 0 L 50 0" fill="none" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f9fafb" rx="10"/>
+
+  <g stroke="#111827" stroke-width="2">
+    <!-- Connecting Wires -->
+    <line x1="100" y1="200" x2="100" y2="50" />
+    <line x1="100" y1="50" x2="150" y2="50" />
+    <line x1="200" y1="50" x2="250" y2="50" />
+    <line x1="300" y1="50" x2="350" y2="50" />
+    <line x1="400" y1="50" x2="400" y2="200" />
+    <line x1="100" y1="200" x2="230" y2="200" />
+    <line x1="270" y1="200" x2="400" y2="200" />
+  </g>
+
+  <!-- Components -->
+  <use href="#inductor" x="150" y="50" />
+  <use href="#capacitor" x="250" y="50" />
+  <use href="#resistor" x="350" y="50" />
+  <use href="#ac" x="250" y="200" />
+
+  <!-- Labels -->
+  <text x="175" y="30" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2563eb">L</text>
+  <text x="275" y="30" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2563eb">C</text>
+  <text x="375" y="30" font-family="sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#ef4444">R</text>
+
+  <text x="250" y="240" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#374151">E = E₀ sin(ωt)</text>
+</svg>

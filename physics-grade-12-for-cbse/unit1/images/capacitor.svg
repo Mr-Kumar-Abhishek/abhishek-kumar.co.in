@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="300">
+  <defs>
+    <style>
+      .charge { font-family: sans-serif; font-size: 20px; font-weight: bold; fill: #ef4444; }
+      .charge-neg { font-family: sans-serif; font-size: 20px; font-weight: bold; fill: #3b82f6; }
+      .field { stroke: #9ca3af; stroke-width: 2; marker-end: url(#arrow-field); }
+      .label { font-family: sans-serif; font-size: 16px; fill: #111827; }
+    </style>
+    <marker id="arrow-field" viewBox="0 -5 10 10" refX="8" refY="0" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 -5L10 0L0 5" fill="#9ca3af"/>
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f9fafb" rx="10"/>
+
+  <!-- Left Plate (Positive) -->
+  <rect x="80" y="40" width="20" height="220" fill="#fca5a5" stroke="#ef4444" stroke-width="2"/>
+  <text x="90" y="70" text-anchor="middle" class="charge">+</text>
+  <text x="90" y="110" text-anchor="middle" class="charge">+</text>
+  <text x="90" y="150" text-anchor="middle" class="charge">+</text>
+  <text x="90" y="190" text-anchor="middle" class="charge">+</text>
+  <text x="90" y="230" text-anchor="middle" class="charge">+</text>
+
+  <!-- Right Plate (Negative) -->
+  <rect x="300" y="40" width="20" height="220" fill="#bfdbfe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="310" y="68" text-anchor="middle" class="charge-neg">-</text>
+  <text x="310" y="108" text-anchor="middle" class="charge-neg">-</text>
+  <text x="310" y="148" text-anchor="middle" class="charge-neg">-</text>
+  <text x="310" y="188" text-anchor="middle" class="charge-neg">-</text>
+  <text x="310" y="228" text-anchor="middle" class="charge-neg">-</text>
+
+  <!-- Dielectric Slab -->
+  <rect x="120" y="60" width="160" height="180" fill="#fef08a" fill-opacity="0.8" stroke="#ca8a04" stroke-width="2"/>
+  <text x="200" y="155" text-anchor="middle" class="label" font-weight="bold">Dielectric (K)</text>
+
+  <!-- Induced Charges on Dielectric -->
+  <!-- Left face: negative -->
+  <text x="130" y="88" text-anchor="middle" class="charge-neg" font-size="16">-</text>
+  <text x="130" y="128" text-anchor="middle" class="charge-neg" font-size="16">-</text>
+  <text x="130" y="168" text-anchor="middle" class="charge-neg" font-size="16">-</text>
+  <text x="130" y="208" text-anchor="middle" class="charge-neg" font-size="16">-</text>
+  <!-- Right face: positive -->
+  <text x="270" y="90" text-anchor="middle" class="charge" font-size="16">+</text>
+  <text x="270" y="130" text-anchor="middle" class="charge" font-size="16">+</text>
+  <text x="270" y="170" text-anchor="middle" class="charge" font-size="16">+</text>
+  <text x="270" y="210" text-anchor="middle" class="charge" font-size="16">+</text>
+
+  <!-- Original E Field outside dielectric -->
+  <line x1="100" y1="50" x2="300" y2="50" class="field" />
+  <line x1="100" y1="250" x2="300" y2="250" class="field" />
+  <text x="200" y="42" text-anchor="middle" class="label">E₀</text>
+
+  <!-- Labels -->
+  <text x="90" y="20" text-anchor="middle" class="label" fill="#ef4444" font-weight="bold">+Q</text>
+  <text x="310" y="20" text-anchor="middle" class="label" fill="#3b82f6" font-weight="bold">-Q</text>
+</svg>
