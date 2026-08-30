@@ -1,0 +1,757 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Grade 12 Applied Mathematics (CBSE)</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/custom-17874ec3.css">
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-b8ad9cac.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-a09e51e9.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Grade 12 Applied Mathematics (CBSE)</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="unit-1-numbers-quantification-and-numerical-applications"><a class="header" href="#unit-1-numbers-quantification-and-numerical-applications">Unit 1: Numbers, Quantification and Numerical Applications</a></h1>
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>In this unit, we explore advanced concepts of modulo arithmetic, congruence modulo, basic mathematical applications like alligation, mixtures, boats and streams, pipelines, races, and numerical inequalities. Understanding these concepts is fundamental to applied mathematics and various competitive examinations.</p>
+<h2 id="modulo-arithmetic-and-congruence"><a class="header" href="#modulo-arithmetic-and-congruence">Modulo Arithmetic and Congruence</a></h2>
+<p><strong>Modulo operator</strong> refers to the remainder of a division operation. If we have two integers \(a\) and \(n\) (with \(n &gt; 0\)), then \(a \pmod n\) is the remainder when \(a\) is divided by \(n\).</p>
+<p>\[
+a \equiv b \pmod n \implies n \mid (a - b)
+\]</p>
+<p>This means that \(a\) and \(b\) leave the same remainder when divided by \(n\).</p>
+<h3 id="example-of-congruence-modulo"><a class="header" href="#example-of-congruence-modulo">Example of Congruence Modulo</a></h3>
+<p>Let’s check if \( 38 \equiv 14 \pmod{12} \).
+Since \( 38 - 14 = 24 \), and \( 24 \) is divisible by \( 12 \) (\( 24 = 12 \times 2 \)), the congruence holds true.</p>
+<h2 id="alligation-and-mixture"><a class="header" href="#alligation-and-mixture">Alligation and Mixture</a></h2>
+<p>Alligation is a rule that enables us to find the ratio in which two or more ingredients at a given price must be mixed to produce a mixture of a desired price.</p>
+<svg width="400" height="200" viewbox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9f9f9" rx="10" />
+  <text x="100" y="40" font-family="Arial" font-size="14" fill="black" text-anchor="middle">Cheaper Quantity (C)</text>
+  <text x="300" y="40" font-family="Arial" font-size="14" fill="black" text-anchor="middle">Dearer Quantity (D)</text>
+  <text x="200" y="100" font-family="Arial" font-size="14" fill="black" text-anchor="middle" font-weight="bold">Mean Price (M)</text>
+  <path d="M 120 50 L 180 90" stroke="blue" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 280 50 L 220 90" stroke="red" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="100" y="160" font-family="Arial" font-size="14" fill="black" text-anchor="middle">D - M</text>
+  <text x="300" y="160" font-family="Arial" font-size="14" fill="black" text-anchor="middle">M - C</text>
+  <path d="M 180 110 L 120 150" stroke="red" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 220 110 L 280 150" stroke="blue" stroke-width="2" marker-end="url(#arrow)" />
+  <defs>
+    <marker id="arrow" markerwidth="10" markerheight="10" refx="9" refy="3" orient="auto" markerunits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+  </defs>
+</svg>
+<h2 id="numerical-problems"><a class="header" href="#numerical-problems">Numerical Problems</a></h2>
+<h3 id="boats-and-streams"><a class="header" href="#boats-and-streams">Boats and Streams</a></h3>
+<p>When a boat moves in the direction of the stream, it is called <strong>downstream</strong>, and when it moves against the stream, it is called <strong>upstream</strong>.</p>
+<p>Let the speed of the boat in still water be \(u\) km/hr and the speed of the stream be \(v\) km/hr. Then:</p>
+<ul>
+<li>Speed Downstream = \( (u + v) \) km/hr</li>
+<li>Speed Upstream = \( (u - v) \) km/hr</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<p><strong>Q1.</strong> The time shown on a 12-hour clock modulo 12 can be thought of as a congruence class. If it is currently 8:00 AM, what time will it be in 137 hours?</p>
+<ol>
+<li>Calculate \( 137 \pmod{12} \).</li>
+<li>Add the remainder to the current time.</li>
+</ol>
+<p><strong>Q2.</strong> Two types of rice costing ₹ 45/kg and ₹ 60/kg are mixed together. At what ratio must they be mixed to have a mixture worth ₹ 54/kg?</p>
+<ul>
+<li>Apply the rule of alligation where \( C = 45 \), \( D = 60 \), and \( M = 54 \).</li>
+<li>Analyze the ratio \( \frac{D - M}{M - C} \).</li>
+</ul>
+<p><strong>Q3.</strong> A pipe can fill a cistern in 10 hours, and another pipe can empty it in 15 hours. If both pipes are opened simultaneously, when will the cistern be full?</p>
+<ul>
+<li>Determine the net work done in an hour.</li>
+<li>Formulate the equation mathematically to find the total time.</li>
+</ul>
+<p><strong>Q4.</strong> Compare the performance: Athlete A completes a 400m race in 45 seconds, while Athlete B completes it in 48 seconds. If they both maintain their speeds, what would be the distance of Athlete B from the finish line when Athlete A completes the race?</p>
+<h3 id="answers"><a class="header" href="#answers">Answers</a></h3>
+<p><strong>Ans 1.</strong> 137 mod 12 = 5. Currently 8:00 AM + 5 hours = 1:00 PM.</p>
+<p><strong>Ans 2.</strong> Using alligation: \( \frac{D - M}{M - C} = \frac{60 - 54}{54 - 45} = \frac{6}{9} = 2:3 \).</p>
+<p><strong>Ans 3.</strong> Net work in an hour = \( \frac{1}{10} - \frac{1}{15} = \frac{3 - 2}{30} = \frac{1}{30} \). Therefore, it takes 30 hours to fill the cistern.</p>
+<p><strong>Ans 4.</strong> Speed of A = \( \frac{400}{45} \) m/s. Speed of B = \( \frac{400}{48} \) m/s. When A completes 400m (45s), distance of B = \( \frac{400}{48} \times 45 = 375 \)m. So B is 25m from the finish line.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-2-algebra"><a class="header" href="#unit-2-algebra">Unit 2: Algebra</a></h1>
+<h2 id="introduction-to-matrices"><a class="header" href="#introduction-to-matrices">Introduction to Matrices</a></h2>
+<p>A <strong>matrix</strong> is an ordered rectangular array of numbers or functions. The numbers or functions are called the elements or the entries of the matrix. A matrix having \(m\) rows and \(n\) columns is called a matrix of order \(m \times n\).</p>
+<h3 id="types-of-matrices"><a class="header" href="#types-of-matrices">Types of Matrices</a></h3>
+<ol>
+<li><strong>Column Matrix</strong>: A matrix having only one column.</li>
+<li><strong>Row Matrix</strong>: A matrix having only one row.</li>
+<li><strong>Square Matrix</strong>: A matrix in which the number of rows is equal to the number of columns (\(m = n\)).</li>
+<li><strong>Diagonal Matrix</strong>: A square matrix where all non-diagonal elements are zero.</li>
+</ol>
+<h2 id="algebra-of-matrices"><a class="header" href="#algebra-of-matrices">Algebra of Matrices</a></h2>
+<h3 id="addition-and-subtraction"><a class="header" href="#addition-and-subtraction">Addition and Subtraction</a></h3>
+<p>Two matrices can be added or subtracted if and only if they have the same order.</p>
+<p>\[
+A = \begin{bmatrix} a_{11} &amp; a_{12} \ a_{21} &amp; a_{22} \end{bmatrix}, \quad
+B = \begin{bmatrix} b_{11} &amp; b_{12} \ b_{21} &amp; b_{22} \end{bmatrix}
+\]</p>
+<p>\[
+A + B = \begin{bmatrix} a_{11} + b_{11} &amp; a_{12} + b_{12} \ a_{21} + b_{21} &amp; a_{22} + b_{22} \end{bmatrix}
+\]</p>
+<h3 id="multiplication"><a class="header" href="#multiplication">Multiplication</a></h3>
+<p>The product of two matrices \(A\) and \(B\) is defined if the number of columns of \(A\) is equal to the number of rows of \(B\).</p>
+<svg width="600" height="250" viewbox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <fedropshadow dx="2" dy="4" stddeviation="4" flood-opacity="0.15" />
+    </filter>
+    <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0f5ff" />
+    </lineargradient>
+    <marker id="arrowhead" markerwidth="8" markerheight="6" refx="7" refy="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2da44e" />
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#fafbfc" rx="12" />
+  <g transform="translate(40, 60)">
+    <rect width="120" height="90" fill="url(#grad1)" stroke="#d0d7de" stroke-width="1.5" rx="8" filter="url(#shadow)" />
+    <text x="60" y="40" font-family="&#39;Inter&#39;, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#24292f" text-anchor="middle">Matrix A</text>
+    <text x="60" y="70" font-family="&#39;Inter&#39;, monospace" font-size="16" fill="#57606a" text-anchor="middle">m × <tspan font-weight="bold" fill="#cf222e">n</tspan></text>
+  </g>
+  <text x="195" y="110" font-family="&#39;Inter&#39;, sans-serif" font-size="24" fill="#8c959f" text-anchor="middle">×</text>
+  <g transform="translate(230, 60)">
+    <rect width="120" height="90" fill="url(#grad1)" stroke="#d0d7de" stroke-width="1.5" rx="8" filter="url(#shadow)" />
+    <text x="60" y="40" font-family="&#39;Inter&#39;, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#24292f" text-anchor="middle">Matrix B</text>
+    <text x="60" y="70" font-family="&#39;Inter&#39;, monospace" font-size="16" fill="#57606a" text-anchor="middle"><tspan font-weight="bold" fill="#cf222e">n</tspan> × p</text>
+  </g>
+  <text x="385" y="110" font-family="&#39;Inter&#39;, sans-serif" font-size="24" fill="#8c959f" text-anchor="middle">=</text>
+  <g transform="translate(420, 60)">
+    <rect width="140" height="90" fill="#f3fdf8" stroke="#3fb950" stroke-width="1.5" rx="8" filter="url(#shadow)" />
+    <text x="70" y="40" font-family="&#39;Inter&#39;, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#216e39" text-anchor="middle">Matrix C</text>
+    <text x="70" y="70" font-family="&#39;Inter&#39;, monospace" font-size="16" fill="#2da44e" text-anchor="middle">m × p</text>
+  </g>
+  <path d="M 120 140 Q 195 190 270 140" fill="none" stroke="#cf222e" stroke-width="2" stroke-dasharray="6,4" />
+  <text x="195" y="195" font-family="&#39;Inter&#39;, sans-serif" font-size="14" font-weight="600" fill="#cf222e" text-anchor="middle">Inner dimensions must match</text>
+  <path d="M 85 50 L 85 20 L 490 20 L 490 50" fill="none" stroke="#2da44e" stroke-width="2" marker-end="url(#arrowhead)" />
+  <text x="287" y="12" font-family="&#39;Inter&#39;, sans-serif" font-size="13" font-weight="600" fill="#2da44e" text-anchor="middle">Outer dimensions form the new matrix</text>
+</svg>
+<h2 id="determinants-and-inverses"><a class="header" href="#determinants-and-inverses">Determinants and Inverses</a></h2>
+<p>For any square matrix \(A\) of order \(n\), we associate a number (real or complex) called its <strong>determinant</strong>, denoted by \(|A|\) or \(\det(A)\).</p>
+<p>A square matrix \(A\) is invertible if and only if \(A\) is a <strong>non-singular matrix</strong> (\(|A| \neq 0\)).</p>
+<p>\[
+A^{-1} = \frac{1}{|A|} \text{adj}(A)
+\]</p>
+<h3 id="system-of-linear-equations"><a class="header" href="#system-of-linear-equations">System of Linear Equations</a></h3>
+<p>Using matrices, we can solve systems of simultaneous linear equations with the form \(AX = B\), giving the solution \(X = A^{-1}B\).</p>
+<hr>
+<h2 id="competency-based-questions-1"><a class="header" href="#competency-based-questions-1">Competency-Based Questions</a></h2>
+<p><strong>Q1.</strong> A firm produces three products, \(P_1\), \(P_2\), and \(P_3\), which require raw materials \(R_1\) and \(R_2\). Formulate a matrix representation showing the raw material requirements for producing 100 units of each product.</p>
+<p><strong>Q2.</strong> Suppose the supply chain function of a company can be transformed using the operation \( AB = C \). If \( A \) is a \( 3 \times 2 \) matrix representing supply routes and \( B \) is a \( 2 \times 4 \) matrix representing capacities, determine the dimensions of the output matrix \(C\) and interpret its meaning in a real-world scenario.</p>
+<p><strong>Q3.</strong> Solve the following system of linear equations using the matrix method to deduce the equilibrium prices for three commodities:
+\[
+2x + y + z = 1 \
+x - 2y - z = \frac{3}{2} \
+3y - 5z = 9
+\]</p>
+<p><strong>Q4.</strong> A school needs to allocate resources equally among its sports, arts, and science departments based on a matrix of their budgets. Explain why an inverse matrix might not exist for the budget allocation matrix if all departments exactly mirror the budget ratios of the principal fund.</p>
+<h3 id="answers-1"><a class="header" href="#answers-1">Answers</a></h3>
+<p><strong>Ans 1.</strong> Let \( R \) be the \( 2 \times 3 \) matrix of raw materials per product. Then requirement matrix \( M = R \times \begin{bmatrix} 100 \ 100 \ 100 \end{bmatrix} \).</p>
+<p><strong>Ans 2.</strong> \( C \) is a \( 3 \times 4 \) matrix. In a supply chain, it might represent the total supply capacity distribution taking into account 3 sets of routes to 4 different processing or warehouse nodes.</p>
+<p><strong>Ans 3.</strong> The determinant \( |A| = -17 \). Using \( X = A^{-1}B \), the solution resolves to \( x=1, y=2, z=-3 \). (Assuming typical equilibrium problem, standard inverses apply).</p>
+<p><strong>Ans 4.</strong> If the departments mirror the principal fund’s budget ratios, the rows of the budget matrix will be proportional (linearly dependent). This makes the determinant zero, meaning the matrix is singular and its inverse does not exist.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-3-calculus"><a class="header" href="#unit-3-calculus">Unit 3: Calculus</a></h1>
+<h2 id="differentiation-and-its-applications"><a class="header" href="#differentiation-and-its-applications">Differentiation and its Applications</a></h2>
+<p>Differentiation is the process of finding the derivative of a function. For a function \( y = f(x) \), its derivative \( f’(x) \) or \( \frac{dy}{dx} \) is defined as:</p>
+<p>\[
+f’(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}
+\]</p>
+<h3 id="maxima-and-minima"><a class="header" href="#maxima-and-minima">Maxima and Minima</a></h3>
+<p>A common application of derivatives is finding the local maximum and minimum values of a function.</p>
+<ol>
+<li>Find the first derivative \( f’(x) \).</li>
+<li>Set \( f’(x) = 0 \) to find the critical points.</li>
+<li>Use the second derivative test \( f’‘(x) \) to determine if it is a maximum (\( f’‘(x) &lt; 0 \)) or minimum (\( f’’(x) &gt; 0 \)).</li>
+</ol>
+<h2 id="integration-and-its-applications"><a class="header" href="#integration-and-its-applications">Integration and its Applications</a></h2>
+<p><strong>Integration</strong> is the reverse process of differentiation. The indefinite integral of a function represents a family of curves, while the definite integral gives the area under a curve.</p>
+<p>\[
+\int f(x) dx = F(x) + C
+\]
+where \( F’(x) = f(x) \).</p>
+<svg width="400" height="200" viewbox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f9f9f9" rx="10" />
+  <!-- Axes -->
+  <path d="M 50 180 L 350 180" stroke="black" stroke-width="2" marker-end="url(#arrow-axis)" />
+  <path d="M 50 180 L 50 30" stroke="black" stroke-width="2" marker-end="url(#arrow-axis)" />
+  <text x="360" y="185" font-family="Arial" font-size="14" fill="black">x</text>
+  <text x="35" y="25" font-family="Arial" font-size="14" fill="black">y</text>
+  <!-- Curve -->
+  <path id="curve" d="M 100 150 Q 200 40 300 120" stroke="blue" stroke-width="2" fill="none" />
+  <!-- Area fill -->
+  <path d="M 100 150 Q 200 40 300 120 L 300 180 L 100 180 Z" fill="lightblue" opacity="0.5" />
+  <!-- Labels -->
+  <text x="160" y="80" font-family="Arial" font-size="14" fill="black">y = f(x)</text>
+  <text x="200" y="160" font-family="Arial" font-size="14" fill="blue" text-anchor="middle">Area = ∫ f(x) dx</text>
+  <!-- Bounds -->
+  <path d="M 100 150 L 100 180" stroke="black" stroke-dasharray="4" />
+  <path d="M 300 120 L 300 180" stroke="black" stroke-dasharray="4" />
+  <text x="100" y="195" font-family="Arial" font-size="12" fill="black" text-anchor="middle">a</text>
+  <text x="300" y="195" font-family="Arial" font-size="12" fill="black" text-anchor="middle">b</text>
+  <defs>
+    <marker id="arrow-axis" markerwidth="10" markerheight="10" refx="9" refy="3" orient="auto" markerunits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+  </defs>
+</svg>
+<h3 id="consumer-and-producer-surplus"><a class="header" href="#consumer-and-producer-surplus">Consumer and Producer Surplus</a></h3>
+<ul>
+<li><strong>Consumer Surplus</strong>: Area representing the difference between what consumers are willing to pay and what they actually pay.</li>
+<li><strong>Producer Surplus</strong>: Area representing the difference between the actual price and the minimum price at which producers are willing to supply the good.</li>
+</ul>
+<p>\[
+CS = \int_{0}^{x_0} f(x) dx - p_0 \cdot x_0
+\]</p>
+<h2 id="differential-equations"><a class="header" href="#differential-equations">Differential Equations</a></h2>
+<p>A differential equation contains the derivative of an unknown function. We solve simple differential equations using the <strong>Variable Separable Method</strong>.</p>
+<hr>
+<h2 id="competency-based-questions-2"><a class="header" href="#competency-based-questions-2">Competency-Based Questions</a></h2>
+<p><strong>Q1.</strong> A company calculates that its marginal cost for producing \( x \) units is \( MC(x) = 3x^2 - 10x + 5 \). Find the total cost function \( C(x) \) if the fixed cost is ₹ 500. Formulate the differential equation and solve it.</p>
+<p><strong>Q2.</strong> The equilibrium price and quantity for a commodity are ₹ 15 and 200 units, respectively. The demand function is given by \( p = 35 - 0.1x \). Calculate the consumer surplus at the point of market equilibrium.</p>
+<p><strong>Q3.</strong> A population model predicts that the rate of change of the population \( P \) with respect to time \( t \) is proportional to \( P \). Write down the differential equation governing this growth. If initially the population is 10,000 and it doubles in 5 years, determine the population after 10 years using integration.</p>
+<p><strong>Q4.</strong> A firm’s revenue function is \( R(x) = -2x^2 + 400x \). Evaluate the quantity \( x \) that maximizes the revenue. Plot the graph and show the maxima point.</p>
+<h3 id="answers-2"><a class="header" href="#answers-2">Answers</a></h3>
+<p><strong>Ans 1.</strong> \( C(x) = \int (3x^2 - 10x + 5) dx = x^3 - 5x^2 + 5x + C_1 \). Since fixed cost \( C(0) = 500 \), \( C_1 = 500 \). So \( C(x) = x^3 - 5x^2 + 5x + 500 \).</p>
+<p><strong>Ans 2.</strong> Consumer Surplus \( = \int_0^{200} (35 - 0.1x) dx - (15 \times 200) = [35x - 0.05x^2]_0^{200} - 3000 = (7000 - 2000) - 3000 = 2000 \). CS is ₹ 2,000.</p>
+<p><strong>Ans 3.</strong> Diff. Equation: \( \frac{dP}{dt} = kP \). Solving gives \( P(t) = P_0 e^{kt} \). If it doubles in 5 years, in 10 years it doubles twice, meaning \( 10000 \times 4 = 40,000 \).</p>
+<p><strong>Ans 4.</strong> Find derivative: \( R’(x) = -4x + 400 \). Setting to 0 gives \( x = 100 \). Second derivative \( R’’(x) = -4 &lt; 0 \), confirming it’s a maxima.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-4-probability-distributions"><a class="header" href="#unit-4-probability-distributions">Unit 4: Probability Distributions</a></h1>
+<h2 id="introduction-1"><a class="header" href="#introduction-1">Introduction</a></h2>
+<p>A random variable is a real-valued function whose domain is the sample space of a random experiment. It can be discrete (taking countable values) or continuous (taking uncountably many values in an interval).</p>
+<h2 id="mathematical-expectation"><a class="header" href="#mathematical-expectation">Mathematical Expectation</a></h2>
+<p>The expected value representing the weighted average of all possible values. For a discrete random variable \( X \):</p>
+<p>\[
+E(X) = \sum x_i P(X = x_i)
+\]</p>
+<p>The variance, measuring the spread of the data, is given by:</p>
+<p>\[
+\operatorname{Var}(X) = E(X^2) - [E(X)]^2
+\]</p>
+<h2 id="important-distributions"><a class="header" href="#important-distributions">Important Distributions</a></h2>
+<h3 id="1-binomial-distribution"><a class="header" href="#1-binomial-distribution">1. Binomial Distribution</a></h3>
+<p>A distribution resulting from \( n \) independent Bernoulli trials, each with probability of success \( p \).</p>
+<p>\[
+P(X = r) = \binom{n}{r} p^r q^{n-r}
+\]
+where \( q = 1 - p \).</p>
+<ul>
+<li>Mean = \( np \)</li>
+<li>Variance = \( npq \)</li>
+</ul>
+<h3 id="2-poisson-distribution"><a class="header" href="#2-poisson-distribution">2. Poisson Distribution</a></h3>
+<p>Applied to processes where events occur randomly in a continuous space or time. Used when \( n \) is very large and \( p \) is very small.</p>
+<p>\[
+P(X = x) = \frac{\lambda^x e^{-\lambda}}{x!}
+\]
+where \( \lambda \) is the mean number of occurrences.</p>
+<h3 id="3-normal-distribution"><a class="header" href="#3-normal-distribution">3. Normal Distribution</a></h3>
+<p>A continuous symmetric distribution forming a classic bell curve.</p>
+<svg width="400" height="200" viewbox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#ffffff" rx="10" />
+  <!-- Axis -->
+  <path d="M 20 160 L 380 160" stroke="black" stroke-width="2" />
+  <!-- Normal curve -->
+  <path d="M 20 160 Q 150 160 180 80 Q 200 20 220 80 Q 250 160 380 160" stroke="purple" stroke-width="2" fill="none" />
+  <!-- Fill area up to 1 stdev -->
+  <path d="M 150 160 L 150 130 Q 180 80 200 42 Q 220 80 250 130 L 250 160 Z" fill="rgba(128,0,128,0.2)" />
+  <!-- Labels -->
+  <path d="M 200 42 L 200 160" stroke="black" stroke-dasharray="4" />
+  <text x="200" y="175" font-family="Arial" font-size="12" fill="black" text-anchor="middle">μ (Mean)</text>
+  <path d="M 150 130 L 150 160" stroke="gray" stroke-dasharray="2" />
+  <text x="150" y="175" font-family="Arial" font-size="12" fill="gray" text-anchor="middle">μ - σ</text>
+  <path d="M 250 130 L 250 160" stroke="gray" stroke-dasharray="2" />
+  <text x="250" y="175" font-family="Arial" font-size="12" fill="gray" text-anchor="middle">μ + σ</text>
+  <text x="200" y="100" font-family="Arial" font-size="14" fill="purple" text-anchor="middle">68%</text>
+</svg>
+<p>The standard normal variate is defined as:
+\[
+Z = \frac{X - \mu}{\sigma}
+\]</p>
+<hr>
+<h2 id="competency-based-questions-3"><a class="header" href="#competency-based-questions-3">Competency-Based Questions</a></h2>
+<p><strong>Q1.</strong> The probability of predicting the correct outcome of a match is 0.4. If a sports analyst predicts 10 matches, find the probability of exactly 6 correct predictions using the Binomial Distribution formula.</p>
+<p><strong>Q2.</strong> An insurance call center receives on average 3 calls per minute. Apply the Poisson distribution to determine the probability that in any given minute, they will receive exactly 5 calls. (Given \( e^{-3} = 0.0498 \))</p>
+<p><strong>Q3.</strong> The scores of a competitive exam form a normal distribution with a mean of 60 and a standard deviation of 12. Determine the percentage of candidates who scored above 84. (Assume standard normal table values for \( Z \)).</p>
+<p><strong>Q4.</strong> Let \( X \) be a discrete random variable signifying the number of defective computers in a batch of 4. Calculate the expected value \( E(X) \) and variance of the defectives if the probability of encountering a defective computer is 10%.</p>
+<h3 id="answers-3"><a class="header" href="#answers-3">Answers</a></h3>
+<p><strong>Ans 1.</strong> \( n=10, p=0.4, q=0.6, r=6 \). Probability \( P(X=6) = \binom{10}{6} (0.4)^6 (0.6)^4 pprox 0.111 \).</p>
+<p><strong>Ans 2.</strong> \( \lambda=3, x=5 \). \( P(X=5) = \frac{3^5 e^{-3}}{5!} = \frac{243 \times 0.0498}{120} pprox 0.1008 \).</p>
+<p><strong>Ans 3.</strong> \( Z = \frac{84 - 60}{12} = 2 \). The area to the right of \( Z = 2 \) is \( 0.5 - 0.4772 = 0.0228 \). Hence, 2.28% candidates scored above 84.</p>
+<p><strong>Ans 4.</strong> Since it is a Binomial setting with \( n=4, p=0.1 \), \( E(X) = np = 4 \times 0.1 = 0.4 \) and Variance \( = npq = 4 \times 0.1 \times 0.9 = 0.36 \).</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-5-inferential-statistics"><a class="header" href="#unit-5-inferential-statistics">Unit 5: Inferential Statistics</a></h1>
+<h2 id="population-and-sample"><a class="header" href="#population-and-sample">Population and Sample</a></h2>
+<p>In statistics, the <strong>Population</strong> is the entire set of items/individuals under study, while a <strong>Sample</strong> is a subset selected from the population.</p>
+<ul>
+<li><strong>Representative sample:</strong> An unbiased sample that captures the characteristics of the population.</li>
+<li><strong>Random Sampling:</strong> Drawing a sample from the population such that every unit has an equal chance of selection. Example techniques include Simple Random Sampling and Systematic Random Sampling.</li>
+</ul>
+<h2 id="parameter-and-statistics"><a class="header" href="#parameter-and-statistics">Parameter and Statistics</a></h2>
+<ul>
+<li><strong>Parameter</strong>: A numerical value summarizing some characteristic of the population (e.g., Population Mean \( \mu \)).</li>
+<li><strong>Statistic</strong>: A numerical value summarizing some characteristic of the sample (e.g., Sample Mean \( \overline{x} \)).</li>
+</ul>
+<p>Statistical inferences use sample statistics to estimate or test hypotheses about population parameters. The <strong>Central Limit Theorem</strong> is pivotal here, stating that the sampling distribution of the sample mean approaches a normal distribution as the sample size gets larger, no matter what the shape of the population distribution.</p>
+<h2 id="hypothesis-testing"><a class="header" href="#hypothesis-testing">Hypothesis Testing</a></h2>
+<p>A <strong>Hypothesis</strong> is an assumption made about a population parameter.</p>
+<ul>
+<li><strong>Null Hypothesis (\( H_0 \))</strong>: Typically the hypothesis of no difference or no effect.</li>
+<li><strong>Alternate Hypothesis (\( H_1 \))</strong>: The hypothesis that contradicts the null hypothesis.</li>
+</ul>
+<h3 id="the-t-test"><a class="header" href="#the-t-test">The t-Test</a></h3>
+<p>Given a small sample size (usually less than 30), a <strong>t-test</strong> is used to determine if there is a significant difference between the means of two groups.
+The t-statistic is computed as:</p>
+<p>\[
+t = \frac{\overline{x} - \mu}{\frac{s}{\sqrt{n}}}
+\]</p>
+<p>where:</p>
+<ul>
+<li>\( \overline{x} \) = Sample mean</li>
+<li>\( \mu \) = Population mean</li>
+<li>\( s \) = Sample standard deviation</li>
+<li>\( n \) = Sample size</li>
+<li>Degrees of Freedom (df) = \( n - 1 \)</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-4"><a class="header" href="#competency-based-questions-4">Competency-Based Questions</a></h2>
+<p><strong>Q1.</strong> A psychological study randomly samples 25 individuals out of a population of 10,000 to gauge reading speed. The population average reading speed is 220 words per minute. Is “220 words per minute” a parameter or a statistic? Explain your reasoning with respect to inferential statistics.</p>
+<p><strong>Q2.</strong> An LED bulb manufacturer claims their new bulbs have an average lifespan of 1000 hours. A consumer rights group tests 16 bulbs and finds an average lifespan of 970 hours with a standard deviation of 40 hours. State the Null and Alternate hypotheses.</p>
+<p><strong>Q3.</strong> With reference to Q2, compute the t-statistic for the sample data. Will you reject or not reject the null hypothesis at the given degrees of freedom? Frame your answer step-by-step.</p>
+<p><strong>Q4.</strong> Explain the difference between Simple Random Sampling and Systematic Random Sampling. Provide a scenario where systematic sampling might introduce a bias that simple random sampling avoids.</p>
+<h3 id="answers-4"><a class="header" href="#answers-4">Answers</a></h3>
+<p><strong>Ans 1.</strong> It is a parameter, because it describes the average of the whole population (the entire 10,000 individuals).</p>
+<p><strong>Ans 2.</strong> \( H_0: \mu = 1000 \) (The average lifespan is 1000 hours). \( H_1: \mu \neq 1000 \) (The average lifespan is not 1000 hours).</p>
+<p><strong>Ans 3.</strong> \( t = \frac{970 - 1000}{40 / \sqrt{16}} = \frac{-30}{10} = -3.0 \). With df = 15, the critical value at 5% significance level is approx 2.13. Since |-3.0| &gt; 2.13, we reject the null hypothesis.</p>
+<p><strong>Ans 4.</strong> Simple random sampling gives every subset an equal chance. Systematic random sampling selects every \( k^{th} \) element. If the list has a periodic pattern (e.g., every 10th item is a manager), systematic sampling might only pick managers, introducing bias.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-6-time-based-data"><a class="header" href="#unit-6-time-based-data">Unit 6: Time-based Data</a></h1>
+<h2 id="time-series"><a class="header" href="#time-series">Time Series</a></h2>
+<p>A <strong>Time Series</strong> is a sequence of numerical data points in successive order. Usually, a time series is a sequence taken at successive equally spaced points in time. Time Series Analysis involves methods for analyzing time series data to extract meaningful statistics and characteristics of the data.</p>
+<h2 id="components-of-time-series"><a class="header" href="#components-of-time-series">Components of Time Series</a></h2>
+<p>A time series may consist of the following four components:</p>
+<ol>
+<li><strong>Secular Trend (T):</strong> The long-term tendency of the data to increase or decrease. For example, population growth over decades.</li>
+<li><strong>Seasonal Variation (S):</strong> Short-term fluctuations that occur regularly during a year, month, or week. E.g., increased sales of winter clothes in December.</li>
+<li><strong>Cyclical Variation (C):</strong> Oscillating movements lasting more than a year. These are typical of business cycles (prosperity, recession, depression, recovery).</li>
+<li><strong>Irregular Variation (I):</strong> Unpredictable, random variations due to unforeseen events like strikes, natural disasters, or wars.</li>
+</ol>
+<svg width="400" height="200" viewbox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#ffffff" rx="10" />
+  <!-- Axis -->
+  <path d="M 40 160 L 380 160" stroke="black" stroke-width="2" marker-end="url(#arrow-X)" />
+  <path d="M 40 160 L 40 20" stroke="black" stroke-width="2" marker-end="url(#arrow-Y)" />
+  <text x="375" y="180" font-family="Arial" font-size="12" fill="black">Time</text>
+  <text x="10" y="30" font-family="Arial" font-size="12" fill="black">Value</text>
+  <!-- Secular Trend Line -->
+  <path d="M 40 140 L 360 40" stroke="red" stroke-width="2" stroke-dasharray="4" />
+  <text x="320" y="30" font-family="Arial" font-size="12" fill="red">Trend</text>
+  <!-- Oscillating Data Curve -->
+  <path d="M 40 140 
+           Q 60 110 80 130 
+           T 120 110
+           T 160 90
+           T 200 80
+           T 240 60
+           T 280 50
+           T 320 30
+           T 360 40" fill="none" stroke="blue" stroke-width="2" />
+  <text x="150" y="150" font-family="Arial" font-size="12" fill="blue">Actual Data</text>
+  <defs>
+  <marker id="arrow-X" markerwidth="10" markerheight="10" refx="9" refy="3" orient="auto" markerunits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+  </marker>
+  <marker id="arrow-Y" markerwidth="10" markerheight="10" refx="9" refy="3" orient="auto" markerunits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+  </marker>
+  </defs>
+</svg>
+<h2 id="methods-of-measuring-trend"><a class="header" href="#methods-of-measuring-trend">Methods of Measuring Trend</a></h2>
+<p>To isolate and measure the secular trend component, we typically use the following methods:</p>
+<p><strong>1. Moving Average Method</strong>
+The moving average is created by averaging the data points over a specified period (e.g., 3-yearly or 5-yearly moving average). It smooths out short-term fluctuations.</p>
+<p><strong>2. Method of Least Squares</strong>
+This method provides a mathematical equation to fit the trend exactly. For a straight-line trend \( y = a + bx \), we find the constants \( a \) and \( b \) by solving the normal equations:</p>
+<p>\[
+\sum y = n a + b \sum x
+\]
+\[
+\sum xy = a \sum x + b \sum x^2
+\]</p>
+<hr>
+<h2 id="competency-based-questions-5"><a class="header" href="#competency-based-questions-5">Competency-Based Questions</a></h2>
+<p><strong>Q1.</strong> A firm observing its 5-year sales data notices an unexpected dip in sales in 2020 due to the pandemic lockdowns. Identify which component of the Time Series this dip represents. Does it represent cyclical variation? Justify your answer.</p>
+<p><strong>Q2.</strong> The profit (in lakhs) of a retail company from 2018 to 2022 is 12, 16, 22, 28, and 30, respectively. Find the 3-yearly moving averages to calculate the trend values.</p>
+<p><strong>Q3.</strong> For the dataset in Q2, establish the equation for a straight-line trend using the Method of Least Squares. Estimate the profit for the year 2025 using the trend line equation.</p>
+<p><strong>Q4.</strong> Why is the Method of Least Squares considered mathematically more rigorous and reliable for forecasting than the Moving Average Method? Discuss the limitations of the Moving Average Method.</p>
+<h3 id="answers-5"><a class="header" href="#answers-5">Answers</a></h3>
+<p><strong>Ans 1.</strong> Irregular Variation. The dip is due to an unforeseen, unpredictable event (the pandemic), unlike Cyclical Variation which has natural rhythmic economic cycles lasting more than a year.</p>
+<p><strong>Ans 2.</strong> Moving averages: For 2019: \( \frac{12+16+22}{3} = 16.67 \). For 2020: \( \frac{16+22+28}{3} = 22 \). For 2021: \( \frac{22+28+30}{3} = 26.67 \).</p>
+<p><strong>Ans 3.</strong> Taking mid-year 2020 as Origin (X = 0), \( x \) values are -2, -1, 0, 1, 2. \( \sum x = 0 \), \( \sum y = 108 \), \( \sum x^2 = 10 \), \( \sum xy = 46 \). \( a = \frac{108}{5} = 21.6 \), \( b = \frac{46}{10} = 4.6 \). Line: \( y = 21.6 + 4.6x \). For 2025 (\( x = 5 \)): \( y = 21.6 + 4.6(5) = 44.6 \) lakhs.</p>
+<p><strong>Ans 4.</strong> Method of Least Squares uses a strict mathematical formula giving an exact trend line free from subjective bias, and it can forecast future values. Moving Average cannot estimate extreme (start/end) boundary values and ignores the exact mathematical curve best fit.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-7-financial-mathematics"><a class="header" href="#unit-7-financial-mathematics">Unit 7: Financial Mathematics</a></h1>
+<h2 id="perpetuity-and-sinking-funds"><a class="header" href="#perpetuity-and-sinking-funds">Perpetuity and Sinking Funds</a></h2>
+<h3 id="perpetuity"><a class="header" href="#perpetuity">Perpetuity</a></h3>
+<p>A <strong>Perpetuity</strong> is an annuity in which the periodic payments begin on a fixed date and continue indefinitely.</p>
+<ul>
+<li>The Present Value (PV) of a perpetuity of \( R \) per period at an interest rate of \( i \) per period is:</li>
+</ul>
+<p>\[
+PV = \frac{R}{i}
+\]</p>
+<h3 id="sinking-fund"><a class="header" href="#sinking-fund">Sinking Fund</a></h3>
+<p>A <strong>Sinking Fund</strong> is a fund created by accumulating predetermined equal periodic payments to pay off a given sum of money at a specified future date. Businesses use sinking funds to retire debts, replace machinery, or fund major future expenses.</p>
+<p>Unlike a standard savings account, the purpose of a sinking fund is explicitly defined, ensuring that a specific financial obligation is met on time.</p>
+<p>\[
+A = R \left[ \frac{(1 + i)^n - 1}{i} \right]
+\]
+where \( A \) = Accumulated Amount, \( R \) = Periodic Payment, \( i \) = Interest Rate per period, \( n \) = Number of periods.</p>
+<h2 id="valuation-of-bonds"><a class="header" href="#valuation-of-bonds">Valuation of Bonds</a></h2>
+<p>A bond is a debt security issued by a company or government. Valuation of a bond means determining its present fair market value. The bond’s value equals the present value of future interest payments (Coupons) plus the present value of the face value at maturity.</p>
+<p>\[
+V = C \left[ \frac{1 - (1+i)^{-n}}{i} \right] + F(1+i)^{-n}
+\]
+where \( V \) = Valuation, \( C \) = Periodic Coupon Payment, \( i \) = Required Yield to Maturity, \( n \) = Number of periods to maturity, \( F \) = Face Value.</p>
+<h2 id="calculation-of-emi-equated-monthly-installment"><a class="header" href="#calculation-of-emi-equated-monthly-installment">Calculation of EMI (Equated Monthly Installment)</a></h2>
+<p>EMI is the fixed payment made by a borrower to a lender at a specified date each calendar month. EMIs are used to pay off both interest and principal each month so that over a specified number of years, the loan is paid off in full.</p>
+<p>There are two primary methods:</p>
+<ol>
+<li><strong>Flat-Rate Method</strong>: Interest is computed on the entire original principal amount for the entire duration of the loan.</li>
+<li><strong>Reducing-Balance Method</strong>: Interest is calculated strictly on the outstanding balance.</li>
+</ol>
+<p>For Reducing Balance:
+\[
+E = P \cdot \frac{i(1+i)^n}{(1+i)^n - 1}
+\]
+where \( P \) is the loan amount, \( i \) is the monthly interest rate, and \( n \) is the number of months.</p>
+<svg width="400" height="200" viewbox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f4f4f4" rx="10" />
+  <path d="M 50 160 L 350 160" stroke="black" stroke-width="2" />
+  <path d="M 50 160 L 50 20" stroke="black" stroke-width="2" />
+  <text x="360" y="165" font-family="Arial" font-size="12" fill="black">Time</text>
+  <text x="20" y="25" font-family="Arial" font-size="12" fill="black">EMI</text>
+  <!-- Total fixed EMI Line -->
+  <path d="M 50 40 L 350 40" stroke="blue" stroke-width="3" />
+  <text x="180" y="30" font-family="Arial" font-size="14" fill="blue" font-weight="bold">Total EMI (Fixed)</text>
+  <!-- Interest Component decreasing -->
+  <path d="M 50 40 Q 200 120 350 160" stroke="red" stroke-width="2" fill="lightpink" opacity="0.6" />
+  <path d="M 50 160 L 350 160 L 350 40 Z" fill="lightgreen" opacity="0.6" />
+  <path d="M 50 40 Q 200 120 350 160 L 50 160 Z" fill="lightpink" opacity="0.6" />
+  <text x="100" y="120" font-family="Arial" font-size="12" fill="darkred">Interest</text>
+  <text x="250" y="100" font-family="Arial" font-size="12" fill="darkgreen">Principal</text>
+</svg>
+<h2 id="compound-annual-growth-rate-cagr-and-depreciation"><a class="header" href="#compound-annual-growth-rate-cagr-and-depreciation">Compound Annual Growth Rate (CAGR) and Depreciation</a></h2>
+<p><strong>CAGR</strong> represents the smoothed annualized growth rate of an investment over a specified time period.
+\[
+CAGR = \left( \frac{EV}{BV} \right)^{\frac{1}{n}} - 1
+\]
+where \( EV \) = Ending Value, \( BV \) = Beginning Value, \( n \) = Number of years.</p>
+<p><strong>Linear Method of Depreciation</strong> (Straight-Line Method)
+\[
+D = \frac{Cost - Residual\ Value}{Useful\ Life}
+\]</p>
+<hr>
+<h2 id="competency-based-questions-6"><a class="header" href="#competency-based-questions-6">Competency-Based Questions</a></h2>
+<p><strong>Q1.</strong> A scholarship fund has been established to pay ₹ 50,000 annually. If the fund earns 5% interest compounded annually, what must be the initial endowment (Present Value of the Perpetuity) for the scholarship to last indefinitely?</p>
+<p><strong>Q2.</strong> For a loan of ₹ 10 Lakhs at 9% p.a. interest, to be repaid in 5 years, calculate the Equated Monthly Installment (EMI) using the Reducing-Balance Method. Why might a borrower prefer this method over the Flat-Rate Method?</p>
+<p><strong>Q3.</strong> A bond with a Face Value of ₹ 1,000 pays a semi-annual coupon of 4% (annual rate of 8%). If the current required yield to maturity is 6% per annum, find the present fair market value of the bond if it matures in 5 years.</p>
+<p><strong>Q4.</strong> A company invests in advanced machinery costing ₹ 50 Lakhs. They estimate its useful life to be 10 years, and its scrap value thereafter to be ₹ 5 Lakhs. Calculate the annual depreciation charge using the Linear Method. What will be the book value of the machinery at the end of Year 6?</p>
+<h3 id="answers-6"><a class="header" href="#answers-6">Answers</a></h3>
+<p><strong>Ans 1.</strong> \( PV = \frac{R}{i} = \frac{50000}{0.05} = 10,00,000 \). The initial endowment must be ₹ 10 Lakhs.</p>
+<p><strong>Ans 2.</strong> \( P = 10,00,000  \), \( i = \frac{0.09}{12} = 0.0075 \), \( n = 5 \times 12 = 60 \). \( E = 1000000 \times \frac{0.0075(1+0.0075)^{60}}{(1+0.0075)^{60} - 1} pprox 20,758 \). Borrowers prefer it as interest is charged only on the remaining balance, meaning lower total interest paid overall.</p>
+<p><strong>Ans 3.</strong> Semi-annual yield \( i_y = 3% = 0.03 \). \( n = 10 \) periods. Coupon \( C = 4% \times 1000 = 40 \). \( V = 40 \left[ \frac{1 - (1.03)^{-10}}{0.03} \right] + 1000(1.03)^{-10} = 40(8.53) + 1000(0.744) = 341.2 + 744.1 = 1085.3 \). Market value is ₹ 1085.3.</p>
+<p><strong>Ans 4.</strong> Annual Depreciation \( = \frac{50 - 5}{10} = 4.5 \) Lakhs per year. Book value after Year 6 = \( 50 - (4.5 \times 6) = 50 - 27 = 23 \) Lakhs.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-8-linear-programming"><a class="header" href="#unit-8-linear-programming">Unit 8: Linear Programming</a></h1>
+<h2 id="introduction-and-terminology"><a class="header" href="#introduction-and-terminology">Introduction and Terminology</a></h2>
+<p>Linear Programming (LP) is a mathematical method for determining a way to achieve the best outcome (such as maximum profit or lowest cost) in a given mathematical model for some list of requirements represented as linear relationships.</p>
+<p>Common terminology used:</p>
+<ul>
+<li><strong>Decision Variables:</strong> The variables whose values we seek to determine (e.g., \( x \) and \( y \)).</li>
+<li><strong>Constraints:</strong> The linear inequalities or equations representing resource limitations or conditions.</li>
+<li><strong>Objective Function:</strong> The linear function \( Z \) that needs to be maximized or minimized (e.g., \( Z = 5x + 3y \)).</li>
+<li><strong>Non-negative Constraints:</strong> The condition that decision variables cannot be negative (e.g., \( x \ge 0, y \ge 0 \)).</li>
+<li><strong>Feasible Region:</strong> The common region determined by all the constraints, including the non-negative constraints.</li>
+<li><strong>Optimal Solution:</strong> Any point in the feasible region that gives the optimal value (maximum or minimum) of the objective function.</li>
+</ul>
+<svg width="400" height="250" viewbox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#ffffff" rx="10" />
+  <path d="M 40 220 L 360 220" stroke="black" stroke-width="2" />
+  <path d="M 40 220 L 40 20" stroke="black" stroke-width="2" />
+  <text x="365" y="235" font-family="Arial" font-size="12" fill="black">x</text>
+  <text x="25" y="25" font-family="Arial" font-size="12" fill="black">y</text>
+  <!-- Constraint Lines -->
+  <path d="M 40 60 L 260 220" stroke="red" stroke-width="2" />
+  <path d="M 40 140 L 320 220" stroke="blue" stroke-width="2" />
+  <!-- Feasible Region Fill (Intersection) -->
+  <polygon points="40,220 260,220 180,165 40,140" fill="yellow" opacity="0.4" stroke="black" stroke-width="1" />
+  <text x="90" y="190" font-family="Arial" font-size="14" font-weight="bold" fill="darkgreen">Feasible Region</text>
+  <circle cx="180" cy="165" r="4" fill="purple" />
+  <text x="180" y="150" font-family="Arial" font-size="12" fill="purple">Optimal Point</text>
+  <!-- Corner Points -->
+  <circle cx="40" cy="220" r="3" fill="black" />
+  <circle cx="260" cy="220" r="3" fill="black" />
+  <circle cx="40" cy="140" r="3" fill="black" />
+</svg>
+<h2 id="mathematical-formulation"><a class="header" href="#mathematical-formulation">Mathematical Formulation</a></h2>
+<p>To formulate a real-life situation mathematically into a linear programming problem:</p>
+<ol>
+<li>Identify the decision variables and denote them as \( x \), \( y \), etc.</li>
+<li>Identify the objective function and express it mathematically as a linear function. State whether it is to be maximized or minimized.</li>
+<li>Identify the constraints or restrictions from the given conditions and express them as linear inequalities.</li>
+<li>Add the non-negative constraints.</li>
+</ol>
+<h2 id="types-of-linear-programming-problems"><a class="header" href="#types-of-linear-programming-problems">Types of Linear Programming Problems</a></h2>
+<p>Common application types:</p>
+<ul>
+<li><strong>Manufacturing Problems:</strong> To determine the number of units of different products which should be produced to maximize profit.</li>
+<li><strong>Diet Problems:</strong> To determine the minimal cost of a diet which contains a certain minimum amount of each nutrient.</li>
+<li><strong>Transportation Problems:</strong> To determine a transportation schedule that minimizes the total cost of transporting a commodity from various sources to various destinations.</li>
+</ul>
+<h3 id="graphical-solution-method"><a class="header" href="#graphical-solution-method">Graphical Solution Method</a></h3>
+<p>The Graphical Method is used when there are only two decision variables.</p>
+<ol>
+<li>Plot each constraint line on a graph.</li>
+<li>Identify the feasible region satisfying all inequalities simultaneously.</li>
+<li>Determine the coordinates of the corner points of the feasible region.</li>
+<li>Evaluate the objective function at each corner point to find the maximum or minimum value.</li>
+</ol>
+<hr>
+<h2 id="competency-based-questions-7"><a class="header" href="#competency-based-questions-7">Competency-Based Questions</a></h2>
+<p><strong>Q1.</strong> A furniture manufacturer has 200 units of wood and 150 hours of labor labor available per week. He produces tables and chairs. Each table requires 4 units of wood and 2 hours of labor, yielding a profit of ₹ 800. Each chair requires 2 units of wood and 3 hours of labor, yielding a profit of ₹ 500. Formulate this LP problem mathematically.</p>
+<p><strong>Q2.</strong> Identify the objective function \( Z \) from Q1. Is it a maximization or minimization function?</p>
+<p><strong>Q3.</strong> Graphically solve the formulated LP problem from Q1 to determine how many tables and chairs should be produced to maximize total profit. State the corner points and the optimal profit.</p>
+<p><strong>Q4.</strong> A nutritionist is designing a diet plan for an athlete using two food sources, A and B. Source A costs ₹ 30/kg and Source B costs ₹ 40/kg. Discuss what happens to the optimal solution if the price of Food Source A increases significantly, causing the objective function slope to change relative to the constraint slopes.</p>
+<h3 id="answers-7"><a class="header" href="#answers-7">Answers</a></h3>
+<p><strong>Ans 1.</strong> Let \( x \) be tables and \( y \) be chairs. Maximize \( Z = 800x + 500y \). Constraints: \( 4x + 2y \le 200 \) (wood), \( 2x + 3y \le 150 \) (labor), \( x,y \ge 0 \).</p>
+<p><strong>Ans 2.</strong> The objective function is \( Z = 800x + 500y \). It is a maximization function (maximizing profit).</p>
+<p><strong>Ans 3.</strong> Feasible region corners: \( (0,0), (50,0), (0,50), (37.5, 25) \). Evaluating \( Z \) at (37.5, 25) gives \( 800(37.5) + 500(25) = 30000 + 12500 = 42500 \). Maximum profit is ₹ 42,500 by producing 37.5 tables and 25 chairs (or 37 and 25 practically for integer values).</p>
+<p><strong>Ans 4.</strong> If the cost of Food Source A increases significantly, the slope of the objective function (cost line) steepens. The optimal solution might shift along the boundaries of the feasible region towards a vertex that relies less on Food Source A and more on Food Source B.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
