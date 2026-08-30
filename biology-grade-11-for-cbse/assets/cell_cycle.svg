@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 20px; font-weight: bold; fill: #333; text-anchor: middle; }
+      .phase-label { font-family: 'Arial', sans-serif; font-size: 24px; font-weight: bold; fill: #fff; text-anchor: middle; }
+      .sub-label { font-family: 'Arial', sans-serif; font-size: 14px; fill: #fff; text-anchor: middle; }
+      .out-label { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; fill: #333; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Center calculations: cx=250 cy=250, r=150 -->
+  <!-- We use SVG arcs to draw the pie slices for the phases -->
+  
+  <!-- Interphase Group (G1, S, G2) -->
+  <!-- G1 Phase: 0 to 160 degrees -->
+  <path d="M 250 250 L 250 50 A 200 200 0 0 1 446.96 215.27 Z" fill="#4caf50" stroke="#fff" stroke-width="3"/>
+  
+  <!-- S Phase: 160 to 280 degrees -->
+  <path d="M 250 250 L 446.96 215.27 A 200 200 0 0 1 215.27 446.96 Z" fill="#2196f3" stroke="#fff" stroke-width="3"/>
+  
+  <!-- G2 Phase: 280 to 340 degrees -->
+  <path d="M 250 250 L 215.27 446.96 A 200 200 0 0 1 61.32 181.59 Z" fill="#ff9800" stroke="#fff" stroke-width="3"/>
+  
+  <!-- M Phase: 340 to 360(0) degrees -->
+  <path d="M 250 250 L 61.32 181.59 A 200 200 0 0 1 250 50 Z" fill="#e53935" stroke="#fff" stroke-width="3"/>
+
+  <!-- Inner Circle for aesthetics -->
+  <circle cx="250" cy="250" r="80" fill="#fff" stroke="#ccc" stroke-width="2"/>
+  <text x="250" y="245" class="title">Cell</text>
+  <text x="250" y="270" class="title">Cycle</text>
+
+  <!-- Labels -->
+  <!-- G1 Label -->
+  <text x="360" y="140" class="phase-label">G&#8321;</text>
+  <text x="360" y="160" class="sub-label">Cell Growth</text>
+  
+  <!-- S Label -->
+  <text x="340" y="360" class="phase-label">S</text>
+  <text x="340" y="380" class="sub-label">DNA Synthesis</text>
+  
+  <!-- G2 Label -->
+  <text x="140" y="330" class="phase-label">G&#8322;</text>
+  <text x="140" y="350" class="sub-label">Prep for Mitosis</text>
+
+  <!-- M Label -->
+  <text x="150" y="120" class="phase-label">M</text>
+  <text x="150" y="140" class="sub-label">Mitosis</text>
+
+  <!-- Outer Labels -->
+  <text x="350" y="30" class="out-label">Interphase (95%)</text>
+  
+  <!-- Brackets or visual indicators for Interphase -->
+  <path d="M 250 30 Q 500 30 460 210" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M 460 210 Q 500 480 200 460" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M 200 460 Q 40 450 40 180" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+
+</svg>

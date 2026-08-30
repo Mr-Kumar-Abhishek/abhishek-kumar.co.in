@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 20px; font-weight: bold; fill: #333; text-anchor: middle; }
+      .axis { stroke: #333; stroke-width: 2; }
+      .label { font-family: 'Arial', sans-serif; font-size: 14px; fill: #555; }
+      .curveUncat { fill: none; stroke: #e53935; stroke-width: 4; }
+      .curveCat { fill: none; stroke: #43a047; stroke-width: 4; stroke-dasharray: 8,4; }
+      .dashed { stroke: #999; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+      .text-annotate { font-family: 'Arial', sans-serif; font-size: 12px; font-weight: bold; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" rx="10"/>
+
+  <!-- Title -->
+  <text x="300" y="30" class="title">Effect of Enzyme on Activation Energy</text>
+
+  <!-- Axes -->
+  <!-- Y axis (Potential Energy) -->
+  <line x1="80" y1="350" x2="80" y2="60" class="axis" marker-end="url(#arrow)"/>
+  <text x="30" y="200" class="label" transform="rotate(-90 30 200)">Potential Energy</text>
+
+  <!-- X axis (Progress of Reaction) -->
+  <line x1="80" y1="350" x2="550" y2="350" class="axis" marker-end="url(#arrow)"/>
+  <text x="300" y="380" class="label" text-anchor="middle">Progress of Reaction</text>
+
+  <!-- Substrate baseline -->
+  <line x1="80" y1="260" x2="160" y2="260" class="axis"/>
+  <text x="100" y="250" class="label" font-weight="bold">Substrate (S)</text>
+
+  <!-- Product baseline -->
+  <line x1="400" y1="320" x2="520" y2="320" class="axis"/>
+  <text x="430" y="310" class="label" font-weight="bold">Product (P)</text>
+
+  <!-- Uncatalyzed Curve -->
+  <!-- Start (160, 260), Peak (280, 80), End (400, 320) -->
+  <path d="M 160 260 C 230 260, 240 80, 280 80 C 320 80, 330 320, 400 320" class="curveUncat"/>
+
+  <!-- Catalyzed Curve -->
+  <!-- Start (160, 260), Peak (280, 180), End (400, 320) -->
+  <path d="M 160 260 C 220 260, 230 180, 280 180 C 330 180, 340 320, 400 320" class="curveCat"/>
+
+  <!-- Annotations: Activation Energy Uncatalyzed -->
+  <line x1="280" y1="260" x2="280" y2="80" class="dashed"/>
+  <line x1="160" y1="260" x2="500" y2="260" class="dashed"/> <!-- S baseline extension -->
+  
+  <path d="M 285 260 L 285 80" stroke="#e53935" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="295" y="140" class="text-annotate" fill="#e53935">Activation energy</text>
+  <text x="295" y="155" class="text-annotate" fill="#e53935">without enzyme</text>
+
+  <!-- Annotations: Activation Energy Catalyzed -->
+  <path d="M 275 260 L 275 180" stroke="#43a047" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="265" y="225" class="text-annotate" fill="#43a047" text-anchor="end">Activation energy</text>
+  <text x="265" y="240" class="text-annotate" fill="#43a047" text-anchor="end">with enzyme</text>
+
+</svg>

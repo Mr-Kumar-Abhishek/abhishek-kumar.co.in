@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 24px; font-weight: bold; fill: #111; text-anchor: middle; }
+      .label { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #333; }
+      .cell { fill: #bbdefb; stroke: #1976d2; stroke-width: 3; }
+      .dendrite { stroke: #1976d2; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .axon { fill: #bbdefb; stroke: #1976d2; stroke-width: 3; }
+      .myelin { fill: #fff9c4; stroke: #fbc02d; stroke-width: 2; rx: 8; ry: 8; }
+      .nucleus { fill: #7b1fa2; }
+      .nissl { fill: #4527a0; }
+      .terminal { fill: #bbdefb; stroke: #1976d2; stroke-width: 3; }
+      .pointer { stroke: #555; stroke-width: 1.5; fill: none; stroke-dasharray: 2,2; }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f4f6f9" rx="10"/>
+  <text x="400" y="40" class="title">Structure of a Multipolar Neuron</text>
+
+  <g transform="translate(50, 80)">
+    
+    <!-- Dendrites -->
+    <!-- Top left -->
+    <path d="M 120 100 Q 80 50 60 70 M 80 50 L 70 30 M 90 70 L 110 50" class="dendrite"/>
+    <!-- Bottom left -->
+    <path d="M 120 140 Q 70 180 50 160 M 80 170 L 70 190 M 100 150 L 90 180" class="dendrite"/>
+    <!-- Top & Bottom -->
+    <path d="M 150 80 Q 150 30 130 10 M 130 30 L 160 20" class="dendrite"/>
+    <path d="M 150 160 Q 140 220 160 230 M 160 200 L 180 220" class="dendrite"/>
+
+    <!-- Cell Body (Soma) -->
+    <path d="M 120 100 C 100 120, 100 140, 130 150 C 150 170, 170 160, 180 140 C 200 140, 210 130, 210 120 C 210 110, 190 100, 170 90 C 150 80, 130 80, 120 100 Z" class="cell"/>
+
+    <!-- Nucleus & Nucleolus -->
+    <circle cx="155" cy="120" r="18" fill="#e1bee7" stroke="#9c27b0" stroke-width="2"/>
+    <circle cx="155" cy="120" r="6" class="nucleus"/>
+
+    <!-- Nissl Granules (Dots in Cytoplasm) -->
+    <circle cx="125" cy="120" r="2" class="nissl"/><circle cx="130" cy="110" r="2" class="nissl"/><circle cx="135" cy="130" r="2" class="nissl"/>
+    <circle cx="140" cy="95" r="2" class="nissl"/><circle cx="175" cy="100" r="2" class="nissl"/><circle cx="180" cy="115" r="2" class="nissl"/>
+    <circle cx="170" cy="140" r="2" class="nissl"/><circle cx="145" cy="145" r="2" class="nissl"/>
+
+    <!-- Axon Hillock -->
+    <path d="M 195 110 Q 220 120 230 116 L 230 124 Q 220 120 195 130 Z" fill="#bbdefb"/>
+
+    <!-- Axon Line (Internal Tube) -->
+    <rect x="230" y="116" width="350" height="8" class="axon"/>
+
+    <!-- Schwann Cells / Myelin Sheath sections -->
+    <!-- Nodes of Ranvier are the gaps -->
+    <rect x="240" y="108" width="60" height="24" class="myelin"/>
+    <circle cx="270" cy="120" r="3" fill="#333"/> <!-- Schwann cell nucleus -->
+
+    <rect x="310" y="108" width="60" height="24" class="myelin"/>
+    <circle cx="340" cy="120" r="3" fill="#333"/>
+
+    <rect x="380" y="108" width="60" height="24" class="myelin"/>
+    <circle cx="410" cy="120" r="3" fill="#333"/>
+
+    <rect x="450" y="108" width="60" height="24" class="myelin"/>
+    <circle cx="480" cy="120" r="3" fill="#333"/>
+
+    <rect x="520" y="108" width="50" height="24" class="myelin"/>
+    <circle cx="545" cy="120" r="3" fill="#333"/>
+
+    <!-- Axon Terminals (Synaptic knobs) -->
+    <path d="M 580 120 L 610 80 M 610 80 L 620 85 M 610 80 L 615 70" stroke="#1976d2" stroke-width="3" fill="none"/>
+    <circle cx="620" cy="85" r="5" class="terminal"/>
+    <circle cx="615" cy="70" r="5" class="terminal"/>
+
+    <path d="M 580 120 L 620 120 M 620 120 L 630 115 M 620 120 L 630 125" stroke="#1976d2" stroke-width="3" fill="none"/>
+    <circle cx="630" cy="115" r="5" class="terminal"/>
+    <circle cx="630" cy="125" r="5" class="terminal"/>
+
+    <path d="M 580 120 L 610 160 M 610 160 L 620 155 M 610 160 L 615 170" stroke="#1976d2" stroke-width="3" fill="none"/>
+    <circle cx="620" cy="155" r="5" class="terminal"/>
+    <circle cx="615" cy="170" r="5" class="terminal"/>
+
+    <!-- Text Labels & Pointers -->
+    <text x="50" y="-10" class="label">Dendrites</text>
+    <path d="M 80 0 L 100 50" class="pointer"/>
+
+    <text x="155" y="-10" class="label">Cell Body (Soma)</text>
+    <path d="M 155 0 L 155 80" class="pointer"/>
+
+    <text x="250" y="-10" class="label">Nucleus</text>
+    <path d="M 250 0 L 165 110" class="pointer"/>
+
+    <text x="350" y="-10" class="label">Myelin Sheath</text>
+    <path d="M 350 0 L 330 100" class="pointer"/>
+
+    <text x="450" y="-10" class="label">Node of Ranvier</text>
+    <path d="M 450 0 L 445 110" class="pointer"/>
+
+    <text x="550" y="-10" class="label">Axon</text>
+    <path d="M 550 0 L 515 110" class="pointer"/>
+
+    <text x="630" y="20" class="label">Synaptic</text>
+    <text x="630" y="35" class="label">Knob</text>
+    <path d="M 630 45 L 622 65" class="pointer"/>
+
+    <text x="220" y="190" class="label">Axon Hillock</text>
+    <path d="M 220 170 L 220 140" class="pointer"/>
+
+    <text x="380" y="190" class="label">Schwann Cell</text>
+    <path d="M 380 170 L 400 135" class="pointer"/>
+
+  </g>
+</svg>
