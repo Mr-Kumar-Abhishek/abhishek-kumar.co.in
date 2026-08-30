@@ -1,0 +1,119 @@
+/* Custom styles for Chemistry Grade 11 CBSE mdBook */
+
+/* Better rendering for SVG diagrams */
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em auto;
+}
+
+/* Question sections styling */
+.question-section {
+  margin-top: 2em;
+  padding: 1em;
+  border-left: 4px solid #2196F3;
+  background: #f8f9fa;
+  border-radius: 0 8px 8px 0;
+}
+
+.question-section h2,
+.question-section h3 {
+  color: #1565C0;
+}
+
+/* Answer key styling */
+.answer-key {
+  margin-top: 1em;
+  padding: 0.8em;
+  background: #e8f5e9;
+  border-left: 4px solid #4CAF50;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Important box */
+.important-box {
+  padding: 1em;
+  margin: 1em 0;
+  background: #fff3e0;
+  border-left: 4px solid #FF9800;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Image attribution */
+.attribution {
+  font-size: 0.8em;
+  color: #666;
+  text-align: center;
+  font-style: italic;
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #e3f2fd;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* MathJax display equations spacing */
+.MathJax_Display {
+  margin: 1em 0 !important;
+}
+
+/* Ensure line breaks work in questions */
+ol li,
+ul li {
+  margin-bottom: 0.5em;
+}
+
+/* Competency-based question type headers */
+.question-type {
+  font-weight: bold;
+  color: #1565C0;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  border-bottom: 2px solid #90CAF9;
+  padding-bottom: 0.3em;
+}
+
+/* Credit/attribution for Wikimedia images */
+.image-credit {
+  font-size: 0.75em;
+  color: #888;
+  text-align: center;
+  margin-top: 0.3em;
+}
+
+/* Fix navigation arrow shadow alignment */
+.nav-chapters {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.nav-chapters i,
+.nav-chapters .fa,
+.nav-chapters svg {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}

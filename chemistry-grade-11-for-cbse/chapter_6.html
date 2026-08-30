@@ -1,0 +1,555 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 6: Equilibrium - Chemistry Grade 11 — CBSE</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="A comprehensive Grade 11 Chemistry textbook aligned with the CBSE 2025-26 syllabus, featuring competency-based questions from previous years&#x27; CBSE papers.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/custom-adb700e2.css">
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-f7287dab.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-ad05ae13.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Chemistry Grade 11 — CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-6-equilibrium"><a class="header" href="#chapter-6-equilibrium">Chapter 6: Equilibrium</a></h1>
+<h2 id="61-equilibrium-in-physical-processes"><a class="header" href="#61-equilibrium-in-physical-processes">6.1 Equilibrium in Physical Processes</a></h2>
+<p><strong>Physical equilibrium</strong> is the equilibrium established in physical processes such as:</p>
+<ul>
+<li><strong>Solid ⇌ Liquid</strong> (melting/freezing at melting point)</li>
+<li><strong>Liquid ⇌ Gas</strong> (evaporation/condensation at boiling point)</li>
+<li><strong>Solute in Solid ⇌ Solute in Solution</strong> (dissolution/crystallization at saturation)</li>
+<li><strong>Gas ⇌ Gas dissolved in liquid</strong> (Henry’s law)</li>
+</ul>
+<p>At equilibrium, the rate of the forward process equals the rate of the reverse process.</p>
+<h2 id="62-equilibrium-in-chemical-processes--dynamic-equilibrium"><a class="header" href="#62-equilibrium-in-chemical-processes--dynamic-equilibrium">6.2 Equilibrium in Chemical Processes — Dynamic Equilibrium</a></h2>
+<p>In a reversible reaction at equilibrium:</p>
+<p>\[ \text{Rate of forward reaction} = \text{Rate of backward reaction} \]</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 550 300" font-family="Arial, sans-serif" font-size="12">
+  <text x="275" y="22" text-anchor="middle" fill="#333" font-weight="bold" font-size="14">Approach to Chemical Equilibrium</text>
+  <!-- Axes -->
+  <line x1="70" y1="250" x2="500" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="70" y1="250" x2="70" y2="40" stroke="#333" stroke-width="2" />
+  <text x="285" y="280" text-anchor="middle" fill="#333" font-size="12">Time →</text>
+  <text x="30" y="145" text-anchor="middle" fill="#333" font-size="11" transform="rotate(-90 30 145)">Rate →</text>
+  <!-- Forward rate curve (decreasing) -->
+  <path d="M 80 80 Q 180 85, 250 150 Q 300 180, 350 185 L 490 185" fill="none" stroke="#E53935" stroke-width="2.5" />
+  <text x="140" y="72" fill="#E53935" font-weight="bold">Forward rate</text>
+  <!-- Reverse rate curve (increasing) -->
+  <path d="M 80 240 Q 180 235, 250 180 Q 300 165, 350 185 L 490 185" fill="none" stroke="#1565C0" stroke-width="2.5" />
+  <text x="140" y="248" fill="#1565C0" font-weight="bold">Reverse rate</text>
+  <!-- Equilibrium line -->
+  <line x1="350" y1="45" x2="350" y2="245" stroke="#43A047" stroke-width="1.5" stroke-dasharray="6,3" />
+  <text x="350" y="40" text-anchor="middle" fill="#43A047" font-weight="bold" font-size="12">Equilibrium</text>
+  <!-- Label -->
+  <text x="420" y="180" fill="#43A047" font-size="11" font-weight="bold">r_f = r_b</text>
+</svg>
+<p><strong>Characteristics of chemical equilibrium:</strong></p>
+<ol>
+<li>Equilibrium is <strong>dynamic</strong> (both forward and reverse reactions continue)</li>
+<li>Equilibrium can be reached from either direction</li>
+<li>A <strong>catalyst</strong> does not change the equilibrium position, only speeds up attainment</li>
+<li>At equilibrium, the concentrations remain constant</li>
+</ol>
+<h2 id="63-law-of-mass-action-and-equilibrium-constant"><a class="header" href="#63-law-of-mass-action-and-equilibrium-constant">6.3 Law of Mass Action and Equilibrium Constant</a></h2>
+<p>For a general reversible reaction:</p>
+<p>\[ a\text{A} + b\text{B} \rightleftharpoons c\text{C} + d\text{D} \]</p>
+<p>The <strong>equilibrium constant expression</strong> (in terms of concentrations):</p>
+<p>\[ K_c = \frac{[\text{C}]^c[\text{D}]^d}{[\text{A}]^a[\text{B}]^b} \]</p>
+<p>In terms of partial pressures (for gaseous reactions):</p>
+<p>\[ K_p = \frac{(P_\text{C})^c(P_\text{D})^d}{(P_\text{A})^a(P_\text{B})^b} \]</p>
+<h3 id="relationship-between-kp-and-kc"><a class="header" href="#relationship-between-kp-and-kc">Relationship between Kp and Kc</a></h3>
+<p>\[ K_p = K_c(RT)^{\Delta n_g} \]</p>
+<p>where \(\Delta n_g\) = (moles of gaseous products) − (moles of gaseous reactants)</p>
+<h3 id="important-relationships"><a class="header" href="#important-relationships">Important Relationships</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Reaction</th><th>Equilibrium Constant</th></tr>
+</thead>
+<tbody>
+<tr><td>Forward: \(K\)</td><td>Reverse: \(K’ = \frac{1}{K}\)</td></tr>
+<tr><td>Multiplied by \(n\):</td><td>\(K’’ = K^n\)</td></tr>
+<tr><td>Sum of reactions:</td><td>\(K_{\text{net}} = K_1 \times K_2\)</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="64-factors-affecting-equilibrium--le-chateliers-principle"><a class="header" href="#64-factors-affecting-equilibrium--le-chateliers-principle">6.4 Factors Affecting Equilibrium — Le Chatelier’s Principle</a></h2>
+<blockquote>
+<p><em>“If a system at equilibrium is subjected to a change, the equilibrium will shift in the direction that tends to counteract the change.”</em></p>
+</blockquote>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Change</th><th>Direction of Shift</th></tr>
+</thead>
+<tbody>
+<tr><td>Increase concentration of reactant</td><td>Forward (→)</td></tr>
+<tr><td>Decrease concentration of reactant</td><td>Backward (←)</td></tr>
+<tr><td>Increase concentration of product</td><td>Backward (←)</td></tr>
+<tr><td>Increase temperature (exothermic rxn)</td><td>Backward (←)</td></tr>
+<tr><td>Increase temperature (endothermic rxn)</td><td>Forward (→)</td></tr>
+<tr><td>Increase pressure</td><td>Towards fewer moles of gas</td></tr>
+<tr><td>Addition of catalyst</td><td>No shift (equilibrium reached faster)</td></tr>
+<tr><td>Addition of inert gas at constant V</td><td>No shift</td></tr>
+<tr><td>Addition of inert gas at constant P</td><td>Shift towards more moles of gas</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Example:</strong> Haber’s process:</p>
+<p>\[ \text{N}_2(g) + 3\text{H}_2(g) \rightleftharpoons 2\text{NH}_3(g) \quad \Delta H = -92.4;\text{kJ/mol} \]</p>
+<p>Favourable conditions: <strong>High pressure</strong> (forward has fewer moles of gas), <strong>Low temperature</strong> (exothermic), use of <strong>Fe catalyst</strong> (for faster rate).</p>
+<h2 id="65-ionic-equilibrium-in-solution"><a class="header" href="#65-ionic-equilibrium-in-solution">6.5 Ionic Equilibrium in Solution</a></h2>
+<h3 id="electrolytes"><a class="header" href="#electrolytes">Electrolytes</a></h3>
+<ul>
+<li><strong>Strong electrolytes:</strong> Completely ionize in solution (e.g., NaCl, HCl, NaOH, KNO₃)</li>
+<li><strong>Weak electrolytes:</strong> Partially ionize in solution (e.g., CH₃COOH, NH₃, H₂CO₃)</li>
+</ul>
+<h3 id="degree-of-ionization-alpha"><a class="header" href="#degree-of-ionization-alpha">Degree of Ionization (\(\alpha\))</a></h3>
+<p>\[ \alpha = \frac{\text{Number of moles ionized}}{\text{Total moles of electrolyte}} \]</p>
+<h2 id="66-ionization-of-acids-and-bases"><a class="header" href="#66-ionization-of-acids-and-bases">6.6 Ionization of Acids and Bases</a></h2>
+<h3 id="arrhenius-concept"><a class="header" href="#arrhenius-concept">Arrhenius Concept</a></h3>
+<ul>
+<li><strong>Acid:</strong> Produces H⁺ in water</li>
+<li><strong>Base:</strong> Produces OH⁻ in water</li>
+</ul>
+<h3 id="brønsted-lowry-concept"><a class="header" href="#brønsted-lowry-concept">Brønsted-Lowry Concept</a></h3>
+<ul>
+<li><strong>Acid:</strong> Proton (H⁺) donor</li>
+<li><strong>Base:</strong> Proton (H⁺) acceptor</li>
+</ul>
+<p><strong>Conjugate acid-base pairs:</strong></p>
+<p>\[ \text{CH}_3\text{COOH} + \text{H}_2\text{O} \rightleftharpoons \text{CH}_3\text{COO}^- + \text{H}_3\text{O}^+ \]</p>
+<p>Here, CH₃COOH/CH₃COO⁻ is a conjugate acid-base pair.</p>
+<h3 id="lewis-concept"><a class="header" href="#lewis-concept">Lewis Concept</a></h3>
+<ul>
+<li><strong>Acid:</strong> Electron pair acceptor (e.g., BF₃, AlCl₃)</li>
+<li><strong>Base:</strong> Electron pair donor (e.g., NH₃, H₂O)</li>
+</ul>
+<h2 id="67-ionization-constant-of-weak-acids-ka"><a class="header" href="#67-ionization-constant-of-weak-acids-ka">6.7 Ionization Constant of Weak Acids (Ka)</a></h2>
+<p>For a weak acid HA:</p>
+<p>\[ \text{HA} \rightleftharpoons \text{H}^+ + \text{A}^- \]</p>
+<p>\[ K_a = \frac{[\text{H}^+][\text{A}^-]}{[\text{HA}]} \]</p>
+<p>If \(c\) = initial concentration and \(\alpha\) = degree of ionization:</p>
+<p>\[ K_a = \frac{c\alpha^2}{1 - \alpha} \approx c\alpha^2 \quad (\text{if } \alpha \ll 1) \]</p>
+<p>\[ \alpha = \sqrt{\frac{K_a}{c}} \]</p>
+<h3 id="polybasic-acids"><a class="header" href="#polybasic-acids">Polybasic Acids</a></h3>
+<p>For acids with more than one ionizable hydrogen (e.g., H₃PO₄):</p>
+<p>\[ K_{a_1} \gg K_{a_2} \gg K_{a_3} \]</p>
+<p>Each successive proton is harder to remove.</p>
+<h2 id="68-ionization-constant-of-weak-bases-kb"><a class="header" href="#68-ionization-constant-of-weak-bases-kb">6.8 Ionization Constant of Weak Bases (Kb)</a></h2>
+<p>\[ \text{NH}_3 + \text{H}_2\text{O} \rightleftharpoons \text{NH}_4^+ + \text{OH}^- \]</p>
+<p>\[ K_b = \frac{[\text{NH}_4^+][\text{OH}^-]}{[\text{NH}_3]} \]</p>
+<h3 id="relationship-between-ka-and-kb-for-a-conjugate-pair"><a class="header" href="#relationship-between-ka-and-kb-for-a-conjugate-pair">Relationship between Ka and Kb for a conjugate pair:</a></h3>
+<p>\[ K_a \times K_b = K_w = 1.0 \times 10^{-14} \quad (\text{at 25°C}) \]</p>
+<h2 id="69-concept-of-ph"><a class="header" href="#69-concept-of-ph">6.9 Concept of pH</a></h2>
+<h3 id="ionic-product-of-water-kw"><a class="header" href="#ionic-product-of-water-kw">Ionic Product of Water (Kw)</a></h3>
+<p>\[ \text{H}_2\text{O} \rightleftharpoons \text{H}^+ + \text{OH}^- \]</p>
+<p>\[ K_w = [\text{H}^+][\text{OH}^-] = 1.0 \times 10^{-14} \quad (\text{at 25°C}) \]</p>
+<h3 id="ph-scale"><a class="header" href="#ph-scale">pH Scale</a></h3>
+<p>\[ \text{pH} = -\log[\text{H}^+] \]</p>
+<p>\[ \text{pOH} = -\log[\text{OH}^-] \]</p>
+<p>\[ \text{pH} + \text{pOH} = 14 \quad (\text{at 25°C}) \]</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 700 180" font-family="Arial, sans-serif" font-size="11">
+  <text x="350" y="20" text-anchor="middle" fill="#333" font-weight="bold" font-size="14">pH Scale</text>
+  <!-- Scale bar -->
+  <defs>
+    <lineargradient id="phGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E53935" />
+      <stop offset="15%" style="stop-color:#FF7043" />
+      <stop offset="30%" style="stop-color:#FFA726" />
+      <stop offset="43%" style="stop-color:#FFEE58" />
+      <stop offset="50%" style="stop-color:#66BB6A" />
+      <stop offset="65%" style="stop-color:#29B6F6" />
+      <stop offset="80%" style="stop-color:#5C6BC0" />
+      <stop offset="100%" style="stop-color:#7B1FA2" />
+    </lineargradient>
+  </defs>
+  <rect x="50" y="40" width="600" height="30" rx="5" fill="url(#phGrad)" />
+  <!-- pH numbers -->
+  <line x1="50" y1="72" x2="50" y2="82" stroke="#333" stroke-width="1" />
+  <text x="50" y="95" text-anchor="middle" fill="#333" font-weight="bold">0</text>
+  <line x1="92.8" y1="72" x2="92.8" y2="82" stroke="#333" stroke-width="1" />
+  <text x="93" y="95" text-anchor="middle" fill="#333">1</text>
+  <line x1="135.7" y1="72" x2="135.7" y2="82" stroke="#333" stroke-width="1" />
+  <text x="136" y="95" text-anchor="middle" fill="#333">2</text>
+  <line x1="178.5" y1="72" x2="178.5" y2="82" stroke="#333" stroke-width="1" />
+  <text x="179" y="95" text-anchor="middle" fill="#333">3</text>
+  <line x1="221.4" y1="72" x2="221.4" y2="82" stroke="#333" stroke-width="1" />
+  <text x="221" y="95" text-anchor="middle" fill="#333">4</text>
+  <line x1="264.3" y1="72" x2="264.3" y2="82" stroke="#333" stroke-width="1" />
+  <text x="264" y="95" text-anchor="middle" fill="#333">5</text>
+  <line x1="307.1" y1="72" x2="307.1" y2="82" stroke="#333" stroke-width="1" />
+  <text x="307" y="95" text-anchor="middle" fill="#333">6</text>
+  <line x1="350" y1="72" x2="350" y2="82" stroke="#333" stroke-width="1.5" />
+  <text x="350" y="95" text-anchor="middle" fill="#333" font-weight="bold">7</text>
+  <line x1="392.8" y1="72" x2="392.8" y2="82" stroke="#333" stroke-width="1" />
+  <text x="393" y="95" text-anchor="middle" fill="#333">8</text>
+  <line x1="435.7" y1="72" x2="435.7" y2="82" stroke="#333" stroke-width="1" />
+  <text x="436" y="95" text-anchor="middle" fill="#333">9</text>
+  <line x1="478.5" y1="72" x2="478.5" y2="82" stroke="#333" stroke-width="1" />
+  <text x="479" y="95" text-anchor="middle" fill="#333">10</text>
+  <line x1="521.4" y1="72" x2="521.4" y2="82" stroke="#333" stroke-width="1" />
+  <text x="521" y="95" text-anchor="middle" fill="#333">11</text>
+  <line x1="564.3" y1="72" x2="564.3" y2="82" stroke="#333" stroke-width="1" />
+  <text x="564" y="95" text-anchor="middle" fill="#333">12</text>
+  <line x1="607.1" y1="72" x2="607.1" y2="82" stroke="#333" stroke-width="1" />
+  <text x="607" y="95" text-anchor="middle" fill="#333">13</text>
+  <line x1="650" y1="72" x2="650" y2="82" stroke="#333" stroke-width="1" />
+  <text x="650" y="95" text-anchor="middle" fill="#333" font-weight="bold">14</text>
+  <!-- Labels -->
+  <text x="150" y="115" text-anchor="middle" fill="#C62828" font-weight="bold" font-size="13">ACIDIC</text>
+  <text x="350" y="115" text-anchor="middle" fill="#2E7D32" font-weight="bold" font-size="13">NEUTRAL</text>
+  <text x="550" y="115" text-anchor="middle" fill="#283593" font-weight="bold" font-size="13">BASIC</text>
+  <!-- Examples -->
+  <text x="70" y="140" fill="#C62828" font-size="9">HCl</text>
+  <text x="130" y="140" fill="#E65100" font-size="9">Lemon</text>
+  <text x="215" y="140" fill="#F9A825" font-size="9">Vinegar</text>
+  <text x="340" y="140" fill="#2E7D32" font-size="9">Water</text>
+  <text x="430" y="140" fill="#1565C0" font-size="9">Baking soda</text>
+  <text x="550" y="140" fill="#283593" font-size="9">Ammonia</text>
+  <text x="630" y="140" fill="#4A148C" font-size="9">NaOH</text>
+  <!-- Arrows -->
+  <text x="150" y="160" text-anchor="middle" fill="#C62828" font-size="10">← Increasing [H⁺]</text>
+  <text x="550" y="160" text-anchor="middle" fill="#283593" font-size="10">Increasing [OH⁻] →</text>
+</svg>
+<h2 id="610-hydrolysis-of-salts"><a class="header" href="#610-hydrolysis-of-salts">6.10 Hydrolysis of Salts</a></h2>
+<p>Hydrolysis is the reaction of a salt with water, producing acidic or basic solutions.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Salt type</th><th>Acid</th><th>Base</th><th>pH of solution</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td>Strong acid + Strong base</td><td>Strong</td><td>Strong</td><td>7 (neutral)</td><td>NaCl</td></tr>
+<tr><td>Strong acid + Weak base</td><td>Strong</td><td>Weak</td><td>&lt; 7 (acidic)</td><td>NH₄Cl</td></tr>
+<tr><td>Weak acid + Strong base</td><td>Weak</td><td>Strong</td><td>&gt; 7 (basic)</td><td>CH₃COONa</td></tr>
+<tr><td>Weak acid + Weak base</td><td>Weak</td><td>Weak</td><td>Depends on Ka, Kb</td><td>CH₃COONH₄</td></tr>
+</tbody>
+</table>
+</div>
+<p>For a salt of <strong>weak acid + strong base</strong> (e.g., CH₃COONa):</p>
+<p>\[ \text{pH} = 7 + \frac{1}{2}\text{p}K_a + \frac{1}{2}\log c \]</p>
+<p>For a salt of <strong>strong acid + weak base</strong> (e.g., NH₄Cl):</p>
+<p>\[ \text{pH} = 7 - \frac{1}{2}\text{p}K_b - \frac{1}{2}\log c \]</p>
+<h2 id="611-buffer-solutions"><a class="header" href="#611-buffer-solutions">6.11 Buffer Solutions</a></h2>
+<p>A <strong>buffer solution</strong> resists changes in pH on the addition of small amounts of acid or base.</p>
+<p><strong>Types:</strong></p>
+<ol>
+<li><strong>Acidic buffer:</strong> Weak acid + its conjugate base (salt), e.g., CH₃COOH + CH₃COONa</li>
+<li><strong>Basic buffer:</strong> Weak base + its conjugate acid (salt), e.g., NH₃ + NH₄Cl</li>
+</ol>
+<h3 id="henderson-hasselbalch-equation"><a class="header" href="#henderson-hasselbalch-equation">Henderson-Hasselbalch Equation</a></h3>
+<p>For acidic buffer:</p>
+<p>\[ \text{pH} = \text{p}K_a + \log\frac{[\text{Salt}]}{[\text{Acid}]} \]</p>
+<p>For basic buffer:</p>
+<p>\[ \text{pOH} = \text{p}K_b + \log\frac{[\text{Salt}]}{[\text{Base}]} \]</p>
+<h2 id="612-solubility-equilibria--solubility-product-ksp"><a class="header" href="#612-solubility-equilibria--solubility-product-ksp">6.12 Solubility Equilibria — Solubility Product (Ksp)</a></h2>
+<p>For a sparingly soluble salt \(\text{A}_x\text{B}_y\):</p>
+<p>\[ \text{A}_x\text{B}_y(s) \rightleftharpoons x\text{A}^{y+}(aq) + y\text{B}^{x-}(aq) \]</p>
+<p>\[ K_{sp} = [\text{A}^{y+}]^x[\text{B}^{x-}]^y \]</p>
+<p><strong>Relationship between \(K_{sp}\) and solubility (\(s\)):</strong></p>
+<p>For AB type (e.g., AgCl): \(K_{sp} = s^2\)</p>
+<p>For AB₂ type (e.g., PbCl₂): \(K_{sp} = 4s^3\)</p>
+<h3 id="common-ion-effect"><a class="header" href="#common-ion-effect">Common Ion Effect</a></h3>
+<p>The solubility of a sparingly soluble salt <strong>decreases</strong> in the presence of a common ion.</p>
+<p><strong>Example:</strong> Solubility of AgCl decreases in NaCl solution (Cl⁻ is the common ion).</p>
+<hr>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="multiple-choice-questions-mcqs"><a class="header" href="#multiple-choice-questions-mcqs">Multiple Choice Questions (MCQs)</a></h3>
+<p><strong>1.</strong> The equilibrium constant for the reaction \(\text{N}_2 + 3\text{H}_2 \rightleftharpoons 2\text{NH}_3\) is \(K\). The equilibrium constant for \(\text{NH}_3 \rightleftharpoons \frac{1}{2}\text{N}_2 + \frac{3}{2}\text{H}_2\) is:</p>
+<p> (a) \(\frac{1}{K}\)</p>
+<p> (b) \(K^{1/2}\)</p>
+<p> (c) \(\frac{1}{K^{1/2}}\)</p>
+<p> (d) \(K^2\)</p>
+<br>
+<p><strong>2.</strong> The pH of a 0.001 M HCl solution is:</p>
+<p> (a) 1</p>
+<p> (b) 2</p>
+<p> (c) 3</p>
+<p> (d) 4</p>
+<br>
+<p><strong>3.</strong> A buffer solution can be prepared by mixing:</p>
+<p> (a) NaCl + HCl</p>
+<p> (b) CH₃COOH + CH₃COONa</p>
+<p> (c) NaOH + NaCl</p>
+<p> (d) HCl + NaOH</p>
+<br>
+<p><strong>4.</strong> The solubility product of AgCl is \(1.6 \times 10^{-10}\). Its solubility in mol/L is:</p>
+<p> (a) \(1.26 \times 10^{-5}\)</p>
+<p> (b) \(1.6 \times 10^{-5}\)</p>
+<p> (c) \(4.0 \times 10^{-5}\)</p>
+<p> (d) \(1.6 \times 10^{-10}\)</p>
+<br>
+<p><strong>5.</strong> For which reaction does \(K_p = K_c\)?</p>
+<p> (a) \(\text{N}_2(g) + 3\text{H}_2(g) \rightleftharpoons 2\text{NH}_3(g)\)</p>
+<p> (b) \(\text{PCl}_5(g) \rightleftharpoons \text{PCl}_3(g) + \text{Cl}_2(g)\)</p>
+<p> (c) \(\text{H}_2(g) + \text{I}_2(g) \rightleftharpoons 2\text{HI}(g)\)</p>
+<p> (d) \(2\text{SO}_2(g) + \text{O}_2(g) \rightleftharpoons 2\text{SO}_3(g)\)</p>
+<h3 id="short-answer-questions-23-marks"><a class="header" href="#short-answer-questions-23-marks">Short Answer Questions (2–3 Marks)</a></h3>
+<p><strong>6.</strong> State Le Chatelier’s principle. Predict the direction of shift for the reaction \(\text{N}_2 + 3\text{H}_2 \rightleftharpoons 2\text{NH}_3 + \text{heat}\) when (i) pressure is increased, (ii) temperature is increased.</p>
+<br>
+<p><strong>7.</strong> Calculate the pH of a 0.01 M Ba(OH)₂ solution.</p>
+<br>
+<p><strong>8.</strong> The \(K_a\) for HF is \(6.8 \times 10^{-4}\). Calculate the degree of ionization of HF in its 0.1 M solution.</p>
+<br>
+<p><strong>9.</strong> Write the Henderson-Hasselbalch equation. Calculate the pH of a buffer made by mixing 0.1 M CH₃COOH and 0.1 M CH₃COONa. (\(K_a = 1.8 \times 10^{-5}\))</p>
+<br>
+<p><strong>10.</strong> What is the common ion effect? How does it affect the solubility of AgCl in NaCl solution?</p>
+<h3 id="long-answer-questions-5-marks"><a class="header" href="#long-answer-questions-5-marks">Long Answer Questions (5 Marks)</a></h3>
+<p><strong>11.</strong> (a) Derive the relationship between \(K_p\) and \(K_c\).</p>
+<p> (b) For the reaction \(\text{N}_2\text{O}_4(g) \rightleftharpoons 2\text{NO}_2(g)\), the value of \(K_c = 0.36\) at 100°C. If the initial concentration of N₂O₄ is 0.1 M, calculate the concentrations at equilibrium.</p>
+<br>
+<p><strong>12.</strong> (a) Define ionic product of water. What is its value at 25°C? How does it vary with temperature?</p>
+<p> (b) The pH of gastric juice is 1.2. Calculate the concentration of HCl in gastric juice.</p>
+<p> (c) What is the pH of a 0.002 M NaOH solution?</p>
+<br>
+<p><strong>13.</strong> (a) Explain hydrolysis of salts with examples. Why does a solution of sodium acetate have a pH &gt; 7?</p>
+<p> (b) Calculate the pH of 0.1 M NH₄Cl solution. (\(K_b\) for NH₃ = \(1.8 \times 10^{-5}\))</p>
+<h3 id="assertion-reason-questions"><a class="header" href="#assertion-reason-questions">Assertion-Reason Questions</a></h3>
+<p><strong>14.</strong> <strong>Assertion (A):</strong> Addition of an inert gas at constant volume does not affect the equilibrium.</p>
+<p><strong>Reason (R):</strong> The concentrations (partial pressures) of the reactants and products remain unchanged.</p>
+<br>
+<p><strong>15.</strong> <strong>Assertion (A):</strong> The pH of 10⁻⁸ M HCl is not 8.</p>
+<p><strong>Reason (R):</strong> For very dilute solutions of acids, the contribution of H⁺ from water must be considered.</p>
+<br>
+<h3 id="answer-key"><a class="header" href="#answer-key">Answer Key</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Q</th><th>Answer</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>(c) — Reverse + halved: K’ = (1/K)^(1/2) = 1/√K</td></tr>
+<tr><td>2</td><td>(c) — pH = −log(0.001) = 3</td></tr>
+<tr><td>3</td><td>(b) — Weak acid + conjugate base (salt)</td></tr>
+<tr><td>4</td><td>(a) — s = √(Ksp) = √(1.6 × 10⁻¹⁰) = 1.26 × 10⁻⁵ M</td></tr>
+<tr><td>5</td><td>(c) — Δn_g = 2 − 2 = 0, so Kp = Kc</td></tr>
+<tr><td>14</td><td>(a) — Both true, R correctly explains A</td></tr>
+<tr><td>15</td><td>(a) — Both true, R correctly explains A</td></tr>
+</tbody>
+</table>
+</div>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
