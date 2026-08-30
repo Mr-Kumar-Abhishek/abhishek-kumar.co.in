@@ -24,7 +24,8 @@ def generate():
         "mathematics-for-grade-12-for-cbse",
         "applied-mathematics-for-grade-11-cbse",
         "applied-mathematics-for-grade-12-cbse",
-        "ai-grade-11-for-cbse"
+        "ai-grade-11-for-cbse",
+        "physics-grade-11-for-cbse"
     ]
     
     urls = []
