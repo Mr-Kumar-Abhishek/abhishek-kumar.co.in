@@ -1,0 +1,795 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Python Programming for AI - Artificial Intelligence grade 11 for CBSE</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-0bc00430.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-cb39d2e2.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Artificial Intelligence grade 11 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-2-python-programming-for-ai"><a class="header" href="#chapter-2-python-programming-for-ai">Chapter 2: Python Programming for AI</a></h1>
+<h2 id="learning-outcomes"><a class="header" href="#learning-outcomes">Learning Outcomes</a></h2>
+<p>By the end of this chapter, students will be able to:</p>
+<ul>
+<li>Explain the basics of Python programming language and write programs with basic concepts of tokens</li>
+<li>Use selective and iterative statements effectively</li>
+<li>Gain practical knowledge on how to use libraries efficiently</li>
+</ul>
+<h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
+<h3 id="python-basics"><a class="header" href="#python-basics">Python Basics</a></h3>
+<p>Python is a high-level, interpreted programming language known for its readability and simplicity. It supports multiple programming paradigms including procedural, object-oriented, and functional programming.</p>
+<h4 id="key-features"><a class="header" href="#key-features">Key Features</a></h4>
+<ul>
+<li><strong>Readability</strong>: Clean syntax with indentation-based blocks</li>
+<li><strong>Versatility</strong>: Used in web development, data science, AI, and more</li>
+<li><strong>Libraries</strong>: Extensive collection of libraries for various tasks</li>
+<li><strong>Cross-platform</strong>: Runs on Windows, macOS, Linux, and more</li>
+</ul>
+<h3 id="level-1-basics-of-python-programming"><a class="header" href="#level-1-basics-of-python-programming">Level 1: Basics of Python Programming</a></h3>
+<h4 id="character-sets-and-tokens"><a class="header" href="#character-sets-and-tokens">Character Sets and Tokens</a></h4>
+<ul>
+<li><strong>Character Set</strong>: Letters (A-Z, a-z), Digits (0-9), Special symbols (+, -, *, /, etc.)</li>
+<li><strong>Tokens</strong>: The smallest unit of a program
+<ul>
+<li><strong>Keywords</strong>: Reserved words (if, else, for, while, def, class, etc.)</li>
+<li><strong>Identifiers</strong>: Names given to variables, functions, classes</li>
+<li><strong>Literals</strong>: Constant values (numbers, strings, booleans)</li>
+<li><strong>Operators</strong>: Arithmetic, relational, logical, assignment</li>
+<li><strong>Punctuators</strong>: Brackets, commas, colons, semicolons</li>
+</ul>
+</li>
+</ul>
+<h4 id="modes-of-python"><a class="header" href="#modes-of-python">Modes of Python</a></h4>
+<ul>
+<li><strong>Interactive Mode</strong>: Execute commands one at a time in Python shell</li>
+<li><strong>Script Mode</strong>: Write complete programs in .py files and execute</li>
+</ul>
+<h4 id="operators"><a class="header" href="#operators">Operators</a></h4>
+<pre><code class="language-python"># Arithmetic Operators
+a = 10
+b = 3
+print(a + b)   # Addition: 13
+print(a - b)   # Subtraction: 7
+print(a * b)   # Multiplication: 30
+print(a / b)   # Division: 3.333...
+print(a // b)  # Floor Division: 3
+print(a % b)   # Modulus: 1
+print(a ** b)  # Exponentiation: 1000
+
+# Relational Operators
+print(a &gt; b)   # Greater than: True
+print(a &lt; b)   # Less than: False
+print(a == b)  # Equal to: False
+print(a != b)  # Not equal to: True
+
+# Logical Operators
+x = True
+y = False
+print(x and y)  # False
+print(x or y)   # True
+print(not x)    # False
+</code></pre>
+<h4 id="data-types"><a class="header" href="#data-types">Data Types</a></h4>
+<pre><code class="language-python"># Integer
+age = 25
+
+# Float
+price = 19.99
+
+# String
+name = "Python"
+
+# Boolean
+is_active = True
+
+# List (mutable sequence)
+fruits = ["apple", "banana", "cherry"]
+
+# Tuple (immutable sequence)
+coordinates = (10, 20)
+
+# Dictionary (key-value pairs)
+student = {"name": "Alice", "age": 17}
+
+# Set (unique elements)
+unique_numbers = {1, 2, 3, 4, 5}
+</code></pre>
+<h4 id="control-statements"><a class="header" href="#control-statements">Control Statements</a></h4>
+<pre><code class="language-python"># Conditional Statements
+score = 85
+if score &gt;= 90:
+    print("Grade: A")
+elif score &gt;= 80:
+    print("Grade: B")
+elif score &gt;= 70:
+    print("Grade: C")
+else:
+    print("Grade: F")
+
+# For Loop
+for i in range(5):
+    print(i)
+
+# While Loop
+count = 0
+while count &lt; 5:
+    print(count)
+    count += 1
+
+# Break and Continue
+for num in range(10):
+    if num == 5:
+        break  # Exit loop
+    if num == 2:
+        continue  # Skip to next iteration
+    print(num)
+</code></pre>
+<h3 id="level-2-csv-files-and-libraries"><a class="header" href="#level-2-csv-files-and-libraries">Level 2: CSV Files and Libraries</a></h3>
+<h4 id="working-with-csv-files"><a class="header" href="#working-with-csv-files">Working with CSV Files</a></h4>
+<pre><code class="language-python">import csv
+
+# Reading CSV file
+with open('data.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
+
+# Writing to CSV file
+with open('output.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['Name', 'Age', 'Grade'])
+    writer.writerow(['Alice', 17, 'A'])
+    writer.writerow(['Bob', 18, 'B'])
+</code></pre>
+<h4 id="numpy-library"><a class="header" href="#numpy-library">NumPy Library</a></h4>
+<p>NumPy is a library for numerical computing with support for arrays and matrices.</p>
+<pre><code class="language-python">import numpy as np
+
+# Creating arrays
+arr1 = np.array([1, 2, 3, 4, 5])
+arr2 = np.array([[1, 2, 3], [4, 5, 6]])
+
+# Array operations
+print(arr1 + 10)      # Add 10 to each element
+print(arr1 * 2)       # Multiply each element by 2
+print(arr1.mean())    # Calculate mean
+print(arr1.sum())     # Calculate sum
+
+# Matrix operations
+matrix = np.array([[1, 2], [3, 4]])
+print(np.transpose(matrix))  # Transpose
+print(np.linalg.det(matrix)) # Determinant
+</code></pre>
+<h4 id="pandas-library"><a class="header" href="#pandas-library">Pandas Library</a></h4>
+<p>Pandas is a library for data manipulation and analysis.</p>
+<pre><code class="language-python">import pandas as pd
+
+# Creating a DataFrame
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [17, 18, 16],
+    'Grade': ['A', 'B', 'A']
+}
+df = pd.DataFrame(data)
+
+# Reading CSV file
+df = pd.read_csv('students.csv')
+
+# Basic operations
+print(df.head())        # First 5 rows
+print(df.describe())    # Statistical summary
+print(df['Age'].mean()) # Mean of Age column
+
+# Filtering data
+filtered = df[df['Age'] &gt; 16]
+
+# Sorting data
+sorted_df = df.sort_values('Age')
+</code></pre>
+<h4 id="scikit-learn-library"><a class="header" href="#scikit-learn-library">Scikit-learn Library</a></h4>
+<p>Scikit-learn is a library for machine learning.</p>
+<pre><code class="language-python">from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+# Sample data
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([2, 4, 6, 8, 10])
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Create and train model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Make predictions
+predictions = model.predict(X_test)
+</code></pre>
+<h2 id="practical-activities"><a class="header" href="#practical-activities">Practical Activities</a></h2>
+<h3 id="activity-1-python-basics-level-1"><a class="header" href="#activity-1-python-basics-level-1">Activity 1: Python Basics (Level 1)</a></h3>
+<p>Write programs using operators, data types, and control statements:</p>
+<p><strong>Program 1: Calculator</strong></p>
+<pre><code class="language-python">def calculator():
+    num1 = float(input("Enter first number: "))
+    operator = input("Enter operator (+, -, *, /): ")
+    num2 = float(input("Enter second number: "))
+    
+    if operator == '+':
+        result = num1 + num2
+    elif operator == '-':
+        result = num1 - num2
+    elif operator == '*':
+        result = num1 * num2
+    elif operator == '/':
+        result = num1 / num2 if num2 != 0 else "Error: Division by zero"
+    else:
+        result = "Invalid operator"
+    
+    print(f"Result: {result}")
+
+calculator()
+</code></pre>
+<p><strong>Program 2: Prime Number Checker</strong></p>
+<pre><code class="language-python">def is_prime(n):
+    if n &lt; 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+number = int(input("Enter a number: "))
+if is_prime(number):
+    print(f"{number} is a prime number")
+else:
+    print(f"{number} is not a prime number")
+</code></pre>
+<p><strong>Program 3: Factorial Calculator</strong></p>
+<pre><code class="language-python">def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        result = 1
+        for i in range(2, n + 1):
+            result *= i
+        return result
+
+num = int(input("Enter a number: "))
+print(f"Factorial of {num} is {factorial(num)}")
+</code></pre>
+<h3 id="activity-2-libraries-in-ai-level-2"><a class="header" href="#activity-2-libraries-in-ai-level-2">Activity 2: Libraries in AI (Level 2)</a></h3>
+<p>Write programs using NumPy, Pandas, and Scikit-learn:</p>
+<p><strong>Program 1: NumPy Array Operations</strong></p>
+<pre><code class="language-python">import numpy as np
+
+# Create arrays
+arr = np.array([10, 20, 30, 40, 50])
+matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# Array statistics
+print(f"Mean: {arr.mean()}")
+print(f"Standard Deviation: {arr.std()}")
+print(f"Sum: {arr.sum()}")
+
+# Matrix operations
+print(f"Matrix Transpose:\n{matrix.T}")
+print(f"Matrix Sum: {matrix.sum()}")
+</code></pre>
+<p><strong>Program 2: Pandas Data Analysis</strong></p>
+<pre><code class="language-python">import pandas as pd
+
+# Create DataFrame
+data = {
+    'Student': ['Alice', 'Bob', 'Charlie', 'Diana', 'Eve'],
+    'Math': [85, 90, 78, 92, 88],
+    'Science': [88, 85, 82, 95, 90],
+    'English': [92, 80, 85, 88, 95]
+}
+df = pd.DataFrame(data)
+
+# Analysis
+print("First 3 rows:")
+print(df.head(3))
+
+print("\nStatistical Summary:")
+print(df.describe())
+
+print(f"\nAverage Math Score: {df['Math'].mean()}")
+print(f"Highest Science Score: {df['Science'].max()}")
+</code></pre>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<h3 id="example-questions"><a class="header" href="#example-questions">Example Questions</a></h3>
+<ol>
+<li><strong>Write a Python program to find the factorial of a number. (2 marks)</strong></li>
+<li><strong>Explain the difference between lists and tuples in Python. (3 marks)</strong></li>
+<li><strong>Write a function to check if a number is prime. (4 marks)</strong></li>
+<li><strong>Use NumPy to create a 3x3 matrix and perform matrix multiplication. (5 marks)</strong></li>
+<li><strong>Explain the role of Pandas in data analysis for AI projects. (6 marks)</strong></li>
+</ol>
+<h3 id="answers-to-example-questions"><a class="header" href="#answers-to-example-questions">Answers to Example Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+num = int(input("Enter a number: "))
+print(f"Factorial of {num} is {factorial(num)}")
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Feature</th><th>List</th><th>Tuple</th></tr>
+</thead>
+<tbody>
+<tr><td>Mutability</td><td>Mutable (can be changed)</td><td>Immutable (cannot be changed)</td></tr>
+<tr><td>Syntax</td><td>Square brackets <code>[]</code></td><td>Parentheses <code>()</code></td></tr>
+<tr><td>Performance</td><td>Slower</td><td>Faster</td></tr>
+<tr><td>Use case</td><td>When data needs modification</td><td>When data should remain constant</td></tr>
+<tr><td>Example</td><td><code>[1, 2, 3]</code></td><td><code>(1, 2, 3)</code></td></tr>
+</tbody>
+</table>
+</div>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">def is_prime(n):
+    if n &lt; 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+number = int(input("Enter a number: "))
+if is_prime(number):
+    print(f"{number} is prime")
+else:
+    print(f"{number} is not prime")
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">import numpy as np
+
+# Create two 3x3 matrices
+A = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+B = np.array([[9, 8, 7], [6, 5, 4], [3, 2, 1]])
+
+# Matrix multiplication
+C = np.dot(A, B)  # or A @ B
+print("Matrix A:\n", A)
+print("Matrix B:\n", B)
+print("A × B:\n", C)
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong> Pandas plays a crucial role in AI data analysis:</p>
+<ul>
+<li><strong>Data Loading</strong>: Reads various formats (CSV, Excel, SQL, JSON)</li>
+<li><strong>Data Cleaning</strong>: Handles missing values, duplicates, and outliers</li>
+<li><strong>Data Transformation</strong>: Reshaping, merging, and aggregating data</li>
+<li><strong>Exploration</strong>: Statistical summaries and data inspection with <code>describe()</code>, <code>info()</code></li>
+<li><strong>Feature Engineering</strong>: Creating new features for ML models</li>
+<li><strong>Integration</strong>: Works seamlessly with NumPy, Scikit-learn, and visualization libraries</li>
+</ul>
+</li>
+</ol>
+<h3 id="official-sample-paper-questions"><a class="header" href="#official-sample-paper-questions">Official Sample Paper Questions</a></h3>
+<ol>
+<li><strong>What is the purpose of the NumPy library in Python? (2 marks)</strong></li>
+<li><strong>Write a Python program to sort a list of numbers in ascending order. (3 marks)</strong></li>
+<li><strong>Explain the difference between a list and a dictionary in Python. (4 marks)</strong></li>
+<li><strong>Use Pandas to read a CSV file and display the first five rows. (5 marks)</strong></li>
+<li><strong>Discuss the importance of Python in the field of artificial intelligence. (6 marks)</strong></li>
+</ol>
+<h3 id="answers-to-official-sample-paper-questions"><a class="header" href="#answers-to-official-sample-paper-questions">Answers to Official Sample Paper Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong> NumPy provides support for large, multi-dimensional arrays and matrices, along with mathematical functions to operate on them efficiently. It forms the foundation for scientific computing and AI in Python.</p>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">numbers = [64, 34, 25, 12, 22, 11, 90]
+numbers.sort()  # In-place sorting
+print("Sorted list:", numbers)
+# Or using sorted(): sorted_numbers = sorted(numbers)
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Feature</th><th>List</th><th>Dictionary</th></tr>
+</thead>
+<tbody>
+<tr><td>Structure</td><td>Ordered sequence</td><td>Key-value pairs</td></tr>
+<tr><td>Access</td><td>By index</td><td>By key</td></tr>
+<tr><td>Syntax</td><td><code>[1, 2, 3]</code></td><td><code>{'a': 1, 'b': 2}</code></td></tr>
+<tr><td>Order</td><td>Maintains insertion order</td><td>Maintains insertion order (Python 3.7+)</td></tr>
+<tr><td>Use</td><td>Sequential data</td><td>Associated data mapping</td></tr>
+</tbody>
+</table>
+</div>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">import pandas as pd
+
+# Read CSV file
+df = pd.read_csv('data.csv')
+
+# Display first five rows
+print(df.head())
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong> Python is crucial for AI because:</p>
+<ul>
+<li><strong>Simple Syntax</strong>: Easy to learn and read, faster prototyping</li>
+<li><strong>Extensive Libraries</strong>: TensorFlow, PyTorch, Scikit-learn, Keras</li>
+<li><strong>Data Handling</strong>: NumPy, Pandas for efficient data manipulation</li>
+<li><strong>Community Support</strong>: Large community, extensive documentation</li>
+<li><strong>Integration</strong>: Interfaces with C/C++ for performance-critical code</li>
+<li><strong>Versatility</strong>: Suitable for research, development, and production</li>
+</ul>
+</li>
+</ol>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="multiple-choice-questions"><a class="header" href="#multiple-choice-questions">Multiple Choice Questions</a></h3>
+<ol>
+<li>
+<p>Which of the following is a mutable data type in Python?
+a) int
+b) float
+c) list
+d) tuple</p>
+</li>
+<li>
+<p>What is the output of the following code?</p>
+<pre><code class="language-python">print("Hello" + "World")
+</code></pre>
+<p>a) HelloWorld
+b) Hello World
+c) Error
+d) None</p>
+</li>
+<li>
+<p>Which library is used for numerical operations in Python?
+a) NumPy
+b) Pandas
+c) Matplotlib
+d) Scikit-learn</p>
+</li>
+<li>
+<p>What does the <code>//</code> operator do in Python?
+a) Regular division
+b) Floor division
+c) Modulus
+d) Exponentiation</p>
+</li>
+<li>
+<p>Which keyword is used to define a function in Python?
+a) function
+b) func
+c) def
+d) define</p>
+</li>
+</ol>
+<h3 id="short-answer-questions"><a class="header" href="#short-answer-questions">Short Answer Questions</a></h3>
+<ol>
+<li>Define a variable in Python and provide an example.</li>
+<li>Explain the difference between a for loop and a while loop.</li>
+<li>What is the purpose of the Pandas library in Python?</li>
+<li>Write a Python program to calculate the sum of even numbers from 1 to 100.</li>
+</ol>
+<h3 id="long-answer-questions"><a class="header" href="#long-answer-questions">Long Answer Questions</a></h3>
+<ol>
+<li>Discuss the role of Python in artificial intelligence and machine learning.</li>
+<li>Explain the difference between lists and tuples in Python with examples.</li>
+<li>Write a Python program to read a CSV file and calculate the average of a specific column.</li>
+</ol>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<h3 id="key-points"><a class="header" href="#key-points">Key Points</a></h3>
+<ul>
+<li>Python is a versatile programming language with simple syntax</li>
+<li>It supports multiple programming paradigms and has extensive libraries</li>
+<li>Python is widely used in AI for data processing, model training, and deployment</li>
+<li>Key libraries include NumPy for numerical operations, Pandas for data manipulation, and Scikit-learn for machine learning</li>
+</ul>
+<h3 id="important-terminologies"><a class="header" href="#important-terminologies">Important Terminologies</a></h3>
+<ul>
+<li><strong>Token</strong>: Smallest unit of a program (keywords, identifiers, literals, operators)</li>
+<li><strong>Variable</strong>: Container for storing data values</li>
+<li><strong>Data Type</strong>: Classification of data (int, float, str, list, dict)</li>
+<li><strong>Control Statement</strong>: Statements that control the flow of execution</li>
+<li><strong>NumPy</strong>: Library for numerical computing with arrays</li>
+<li><strong>Pandas</strong>: Library for data manipulation and analysis</li>
+<li><strong>Scikit-learn</strong>: Library for machine learning algorithms</li>
+</ul>
+<h2 id="solutions-to-practice-questions"><a class="header" href="#solutions-to-practice-questions">Solutions to Practice Questions</a></h2>
+<h3 id="multiple-choice-answers"><a class="header" href="#multiple-choice-answers">Multiple Choice Answers</a></h3>
+<ol>
+<li>c) list</li>
+<li>a) HelloWorld</li>
+<li>a) NumPy</li>
+<li>b) Floor division</li>
+<li>c) def</li>
+</ol>
+<h3 id="short-answer-model-answers"><a class="header" href="#short-answer-model-answers">Short Answer Model Answers</a></h3>
+<ol>
+<li>A variable is a named storage location for data values. Example: <code>x = 10</code> assigns the value 10 to variable x.</li>
+<li>A for loop iterates over a sequence (like a list or range), while a while loop runs as long as a condition is true.</li>
+<li>Pandas is used for data manipulation and analysis, providing data structures like DataFrames for handling tabular data.</li>
+<li>
+<pre><code class="language-python">sum = 0
+for i in range(1, 101):
+    if i % 2 == 0:
+        sum += i
+print(sum)  # Output: 2550
+</code></pre>
+</li>
+</ol>
+<h3 id="long-answer-model-answers"><a class="header" href="#long-answer-model-answers">Long Answer Model Answers</a></h3>
+<ol>
+<li>Python’s simplicity, readability, and extensive libraries make it ideal for AI development. It enables rapid prototyping and deployment of machine learning models with libraries like TensorFlow, PyTorch, and Scikit-learn.</li>
+<li>Lists are mutable (can be changed after creation) and use square brackets [], while tuples are immutable (cannot be changed) and use parentheses (). Lists are better for collections that need modification; tuples are better for fixed collections.</li>
+<li>
+<pre><code class="language-python">import pandas as pd
+
+df = pd.read_csv('data.csv')
+average = df['column_name'].mean()
+print(f"Average: {average}")
+</code></pre>
+</li>
+</ol>
+<h2 id="ibm-skills-build-integration"><a class="header" href="#ibm-skills-build-integration">IBM Skills Build Integration</a></h2>
+<p>Complete the <strong>IBM Skills Build - Python for Data Science</strong> course to:</p>
+<ul>
+<li>Gain hands-on experience with Python programming</li>
+<li>Learn to use NumPy, Pandas, and data visualization libraries</li>
+<li>Practice with real-world datasets</li>
+<li>Earn a certification to add to your portfolio</li>
+</ul>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<ul>
+<li>CBSE Artificial Intelligence Curriculum for Class XI (2025-2026)</li>
+<li>IBM Skills Build - Python for Data Science</li>
+<li>Python Official Documentation (python.org)</li>
+<li>NumPy, Pandas, and Scikit-learn Documentation</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

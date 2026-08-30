@@ -1,0 +1,672 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Introduction to Capstone Project - Artificial Intelligence grade 11 for CBSE</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-0bc00430.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-cb39d2e2.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Artificial Intelligence grade 11 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-3-introduction-to-capstone-project"><a class="header" href="#chapter-3-introduction-to-capstone-project">Chapter 3: Introduction to Capstone Project</a></h1>
+<h2 id="learning-outcomes"><a class="header" href="#learning-outcomes">Learning Outcomes</a></h2>
+<p>By the end of this chapter, students will be able to:</p>
+<ul>
+<li>Decompose any problem using the 5W1H method</li>
+<li>Apply Design thinking methodology</li>
+<li>Create empathy maps</li>
+<li>Align problems to Sustainable Development Goals (SDGs)</li>
+<li>Apply all learnings in solving real-world problems</li>
+<li>Express their solution to a problem in non-technical words</li>
+</ul>
+<h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
+<h3 id="what-is-a-capstone-project"><a class="header" href="#what-is-a-capstone-project">What is a Capstone Project?</a></h3>
+<p>A capstone project is a comprehensive assignment that serves as a culminating experience for students, requiring them to apply knowledge and skills acquired throughout the course to solve a real-world problem. In the context of AI, a capstone project allows students to demonstrate their understanding of AI concepts, tools, and techniques by developing a practical solution.</p>
+<h3 id="design-thinking-methodology"><a class="header" href="#design-thinking-methodology">Design Thinking Methodology</a></h3>
+<p>Design thinking is a user-centered, iterative process that focuses on understanding user needs, defining problems, ideating solutions, prototyping, and testing. The five stages are:</p>
+<h4 id="1-empathize"><a class="header" href="#1-empathize">1. Empathize</a></h4>
+<ul>
+<li>Understand the user’s needs and perspectives</li>
+<li>Conduct interviews and observations</li>
+<li>Gather qualitative data about user experiences</li>
+<li>Build genuine empathy for users’ problems</li>
+</ul>
+<h4 id="2-define"><a class="header" href="#2-define">2. Define</a></h4>
+<ul>
+<li>Clearly articulate the problem statement</li>
+<li>Synthesize observations from the empathy phase</li>
+<li>Create a clear and actionable problem definition</li>
+<li>Focus on user needs, not solutions</li>
+</ul>
+<h4 id="3-ideate"><a class="header" href="#3-ideate">3. Ideate</a></h4>
+<ul>
+<li>Generate creative ideas and potential solutions</li>
+<li>Brainstorm without judgment</li>
+<li>Encourage wild ideas</li>
+<li>Build on others’ ideas</li>
+<li>Use techniques like mind mapping and sketching</li>
+</ul>
+<h4 id="4-prototype"><a class="header" href="#4-prototype">4. Prototype</a></h4>
+<ul>
+<li>Build a tangible representation of the solution</li>
+<li>Create low-fidelity models to test concepts</li>
+<li>Focus on learning, not perfection</li>
+<li>Make prototypes quickly and cheaply</li>
+</ul>
+<h4 id="5-test"><a class="header" href="#5-test">5. Test</a></h4>
+<ul>
+<li>Evaluate the prototype with users</li>
+<li>Gather feedback</li>
+<li>Iterate based on findings</li>
+<li>Refine the solution</li>
+</ul>
+<h3 id="the-5w1h-method-for-problem-decomposition"><a class="header" href="#the-5w1h-method-for-problem-decomposition">The 5W1H Method for Problem Decomposition</a></h3>
+<p>The 5W1H method is a framework for understanding and decomposing problems:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Question</th><th>Purpose</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Who</strong></td><td>Identify stakeholders and users</td><td>Who is affected by this problem?</td></tr>
+<tr><td><strong>What</strong></td><td>Define the problem clearly</td><td>What exactly is the problem?</td></tr>
+<tr><td><strong>When</strong></td><td>Understand timing and frequency</td><td>When does this problem occur?</td></tr>
+<tr><td><strong>Where</strong></td><td>Identify location and context</td><td>Where does this problem happen?</td></tr>
+<tr><td><strong>Why</strong></td><td>Understand root causes</td><td>Why does this problem exist?</td></tr>
+<tr><td><strong>How</strong></td><td>Explore mechanisms and solutions</td><td>How can we solve this problem?</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="empathy-maps"><a class="header" href="#empathy-maps">Empathy Maps</a></h3>
+<p>Empathy maps are visual tools that help students understand user experiences by capturing what users:</p>
+<pre><code>┌─────────────────────────────────────────────────┐
+│                    EMPATHY MAP                   │
+├────────────────────┬────────────────────────────┤
+│       SAYS         │          THINKS            │
+│ What does the user │ What might the user be     │
+│ say about their    │ thinking about the         │
+│ experience?        │ situation?                 │
+├────────────────────┼────────────────────────────┤
+│       DOES         │          FEELS             │
+│ What actions does  │ What emotions does the     │
+│ the user take?     │ user experience?           │
+└────────────────────┴────────────────────────────┘
+</code></pre>
+<p><strong>Key Components:</strong></p>
+<ul>
+<li><strong>Says</strong>: Direct quotes and statements from users</li>
+<li><strong>Thinks</strong>: What might be going through their mind</li>
+<li><strong>Does</strong>: Observable actions and behaviors</li>
+<li><strong>Feels</strong>: Emotional state and reactions</li>
+</ul>
+<h3 id="sustainable-development-goals-sdgs"><a class="header" href="#sustainable-development-goals-sdgs">Sustainable Development Goals (SDGs)</a></h3>
+<p>The United Nations has defined 17 Sustainable Development Goals to address global challenges. In AI projects, students should align their solutions with relevant SDGs to ensure societal benefit.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>SDG</th><th>Goal</th><th>AI Application Examples</th></tr>
+</thead>
+<tbody>
+<tr><td>SDG 1</td><td>No Poverty</td><td>Financial inclusion AI</td></tr>
+<tr><td>SDG 2</td><td>Zero Hunger</td><td>Crop yield prediction</td></tr>
+<tr><td>SDG 3</td><td>Good Health</td><td>Disease diagnosis AI</td></tr>
+<tr><td>SDG 4</td><td>Quality Education</td><td>Personalized learning</td></tr>
+<tr><td>SDG 5</td><td>Gender Equality</td><td>Bias detection in hiring</td></tr>
+<tr><td>SDG 6</td><td>Clean Water</td><td>Water quality monitoring</td></tr>
+<tr><td>SDG 7</td><td>Affordable Energy</td><td>Smart grid optimization</td></tr>
+<tr><td>SDG 8</td><td>Decent Work</td><td>Job matching platforms</td></tr>
+<tr><td>SDG 9</td><td>Industry Innovation</td><td>Predictive maintenance</td></tr>
+<tr><td>SDG 10</td><td>Reduced Inequalities</td><td>Accessibility AI</td></tr>
+<tr><td>SDG 11</td><td>Sustainable Cities</td><td>Traffic optimization</td></tr>
+<tr><td>SDG 12</td><td>Responsible Consumption</td><td>Waste reduction AI</td></tr>
+<tr><td>SDG 13</td><td>Climate Action</td><td>Climate modeling</td></tr>
+<tr><td>SDG 14</td><td>Life Below Water</td><td>Ocean monitoring</td></tr>
+<tr><td>SDG 15</td><td>Life on Land</td><td>Wildlife conservation</td></tr>
+<tr><td>SDG 16</td><td>Peace &amp; Justice</td><td>Fake news detection</td></tr>
+<tr><td>SDG 17</td><td>Partnerships</td><td>Collaborative platforms</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="capstone-project-process"><a class="header" href="#capstone-project-process">Capstone Project Process</a></h3>
+<ol>
+<li><strong>Form a Team</strong>: Collaborate with peers to develop diverse perspectives</li>
+<li><strong>Define the Problem</strong>: Use the 5W1H method to clearly define the problem</li>
+<li><strong>Research and Empathize</strong>: Conduct user research to understand needs and pain points</li>
+<li><strong>Ideate Solutions</strong>: Brainstorm multiple potential solutions</li>
+<li><strong>Select and Design</strong>: Choose the most viable solution and design the implementation</li>
+<li><strong>Develop Prototype</strong>: Create a working model or simulation</li>
+<li><strong>Test and Iterate</strong>: Evaluate the prototype and make improvements</li>
+<li><strong>Document and Present</strong>: Prepare comprehensive documentation and present findings</li>
+</ol>
+<h2 id="practical-activities"><a class="header" href="#practical-activities">Practical Activities</a></h2>
+<h3 id="activity-1-problem-decomposition-using-5w1h"><a class="header" href="#activity-1-problem-decomposition-using-5w1h">Activity 1: Problem Decomposition using 5W1H</a></h3>
+<p>Decompose the following problems using the 5W1H method:</p>
+<p><strong>Problem: “Improve access to quality education in rural areas”</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Question</th><th>Analysis</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Who</strong></td><td>Students in rural areas, teachers, parents, government</td></tr>
+<tr><td><strong>What</strong></td><td>Limited access to quality educational resources and teachers</td></tr>
+<tr><td><strong>When</strong></td><td>Ongoing issue, especially during school hours and exam periods</td></tr>
+<tr><td><strong>Where</strong></td><td>Rural and remote areas with poor infrastructure</td></tr>
+<tr><td><strong>Why</strong></td><td>Lack of qualified teachers, poor internet connectivity, limited resources</td></tr>
+<tr><td><strong>How</strong></td><td>AI-powered learning apps, virtual classrooms, offline content delivery</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="activity-2-empathy-map-creation"><a class="header" href="#activity-2-empathy-map-creation">Activity 2: Empathy Map Creation</a></h3>
+<p>Create an empathy map for a user persona in the context of AI-based healthcare solutions.</p>
+<p><strong>User Persona: Rural Healthcare Worker</strong></p>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                    EMPATHY MAP                               │
+│              Rural Healthcare Worker                         │
+├─────────────────────────────┬───────────────────────────────┤
+│           SAYS              │            THINKS             │
+│ "I need quick access to     │ "Am I making the right        │
+│  medical information"       │  diagnosis?"                  │
+│ "The nearest hospital is    │ "How can I help more patients │
+│  too far"                   │  with limited resources?"     │
+│ "I wish I had expert        │ "What if I miss something     │
+│  guidance available"        │  critical?"                   │
+├─────────────────────────────┼───────────────────────────────┤
+│           DOES              │            FEELS              │
+│ Consults multiple sources   │ Anxious about patient outcomes│
+│ Makes decisions alone       │ Overwhelmed by workload       │
+│ Travels long distances      │ Hopeful about new technology  │
+│ Works with limited tools    │ Frustrated by lack of support │
+└─────────────────────────────┴───────────────────────────────┘
+</code></pre>
+<h3 id="activity-3-project-abstract-creation"><a class="header" href="#activity-3-project-abstract-creation">Activity 3: Project Abstract Creation</a></h3>
+<p>Create a project abstract using the Design Thinking Framework:</p>
+<p><strong>Sample Project Abstract</strong></p>
+<p><strong>Project Title</strong>: AI-Powered Crop Disease Detection System</p>
+<p><strong>SDG Alignment</strong>: SDG 2 (Zero Hunger)</p>
+<p><strong>Problem Statement</strong>: Farmers in developing regions lose significant crop yields due to late detection of plant diseases.</p>
+<p><strong>Target Users</strong>: Small-scale farmers with smartphone access</p>
+<p><strong>Proposed Solution</strong>: A mobile application that uses computer vision to identify crop diseases from photographs, providing instant recommendations for treatment.</p>
+<p><strong>Key Features</strong>:</p>
+<ul>
+<li>Image-based disease detection</li>
+<li>Offline functionality</li>
+<li>Multi-language support</li>
+<li>Treatment recommendations</li>
+</ul>
+<h3 id="activity-4-design-thinking-workshop"><a class="header" href="#activity-4-design-thinking-workshop">Activity 4: Design Thinking Workshop</a></h3>
+<p>Participate in a design thinking workshop to solve a real-world problem:</p>
+<p><strong>Workshop Steps</strong>:</p>
+<ol>
+<li><strong>Warm-up (10 minutes)</strong>: Team introductions and icebreaker activities</li>
+<li><strong>Empathize (20 minutes)</strong>: Interview partners about their experiences with the problem</li>
+<li><strong>Define (15 minutes)</strong>: Create a clear problem statement</li>
+<li><strong>Ideate (20 minutes)</strong>: Brainstorm solutions using sticky notes</li>
+<li><strong>Prototype (25 minutes)</strong>: Create a simple prototype</li>
+<li><strong>Test (15 minutes)</strong>: Present prototype and gather feedback</li>
+<li><strong>Reflect (10 minutes)</strong>: Discuss learnings and next steps</li>
+</ol>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<h3 id="example-questions"><a class="header" href="#example-questions">Example Questions</a></h3>
+<ol>
+<li><strong>Explain the 5W1H method for problem decomposition. (2 marks)</strong></li>
+<li><strong>Describe the role of empathy maps in user-centered design. (3 marks)</strong></li>
+<li><strong>List the five stages of the design thinking process. (4 marks)</strong></li>
+<li><strong>How can AI solutions be aligned with Sustainable Development Goals? (5 marks)</strong></li>
+<li><strong>Discuss the importance of team collaboration in capstone projects. (6 marks)</strong></li>
+</ol>
+<h3 id="answers-to-example-questions"><a class="header" href="#answers-to-example-questions">Answers to Example Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong> 5W1H is a problem decomposition framework:</p>
+<ul>
+<li><strong>Who</strong>: Identifies stakeholders affected</li>
+<li><strong>What</strong>: Defines the problem clearly</li>
+<li><strong>When</strong>: Determines timing and frequency</li>
+<li><strong>Where</strong>: Specifies location and context</li>
+<li><strong>Why</strong>: Explores root causes</li>
+<li><strong>How</strong>: Plans solution approaches</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong> Empathy maps help designers understand users by capturing four dimensions: what users <strong>Say</strong> (direct quotes), <strong>Think</strong> (internal thoughts), <strong>Do</strong> (actions and behaviors), and <strong>Feel</strong> (emotions). This helps create user-centered solutions by building genuine understanding of user needs and pain points.</p>
+</li>
+<li>
+<p><strong>Answer:</strong> The five stages of design thinking are:</p>
+<ol>
+<li><strong>Empathize</strong>: Understand users’ needs through research</li>
+<li><strong>Define</strong>: Create a clear problem statement</li>
+<li><strong>Ideate</strong>: Brainstorm multiple solutions</li>
+<li><strong>Prototype</strong>: Build testable representations</li>
+<li><strong>Test</strong>: Evaluate with users and iterate</li>
+</ol>
+</li>
+<li>
+<p><strong>Answer:</strong> AI solutions can align with SDGs by:</p>
+<ul>
+<li>Identifying relevant SDGs for the problem domain</li>
+<li>Ensuring the solution addresses specific SDG targets</li>
+<li>Measuring impact against SDG indicators</li>
+<li>Examples: AI for crop prediction (SDG 2), disease diagnosis (SDG 3), personalized learning (SDG 4), climate modeling (SDG 13)</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong> Team collaboration is important because:</p>
+<ul>
+<li><strong>Diverse Perspectives</strong>: Different skills and viewpoints improve solutions</li>
+<li><strong>Division of Labor</strong>: Efficient task distribution</li>
+<li><strong>Peer Learning</strong>: Team members learn from each other</li>
+<li><strong>Real-world Preparation</strong>: Mirrors professional AI development</li>
+<li><strong>Creativity</strong>: Brainstorming generates better ideas</li>
+<li><strong>Support</strong>: Mutual help overcoming challenges</li>
+</ul>
+</li>
+</ol>
+<h3 id="official-sample-paper-questions"><a class="header" href="#official-sample-paper-questions">Official Sample Paper Questions</a></h3>
+<ol>
+<li><strong>What is the purpose of a capstone project in AI education? (2 marks)</strong></li>
+<li><strong>Explain the design thinking process with its five stages. (3 marks)</strong></li>
+<li><strong>Create an empathy map for a user interested in AI-based financial services. (4 marks)</strong></li>
+<li><strong>How can AI solutions contribute to achieving SDG 13 (Climate Action)? (5 marks)</strong></li>
+<li><strong>Outline the steps involved in developing a capstone project proposal. (6 marks)</strong></li>
+</ol>
+<h3 id="answers-to-official-sample-paper-questions"><a class="header" href="#answers-to-official-sample-paper-questions">Answers to Official Sample Paper Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong> A capstone project allows students to apply their AI knowledge to solve real-world problems, demonstrating practical skills in problem-solving, design thinking, implementation, and presentation while connecting learning to societal needs.</p>
+</li>
+<li>
+<p><strong>Answer:</strong> Design thinking is a user-centered approach:</p>
+<ul>
+<li><strong>Empathize</strong>: Research and understand user needs</li>
+<li><strong>Define</strong>: Articulate the problem statement</li>
+<li><strong>Ideate</strong>: Generate creative solutions</li>
+<li><strong>Prototype</strong>: Create quick, testable models</li>
+<li><strong>Test</strong>: Gather feedback and refine</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Says</th><th>Thinks</th></tr>
+</thead>
+<tbody>
+<tr><td>“I want secure transactions”</td><td>“Is my money safe with AI?”</td></tr>
+<tr><td>“I need quick financial advice”</td><td>“Can AI understand my needs?”</td></tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Does</th><th>Feels</th></tr>
+</thead>
+<tbody>
+<tr><td>Checks account frequently</td><td>Anxious about security</td></tr>
+<tr><td>Compares multiple services</td><td>Hopeful about convenience</td></tr>
+</tbody>
+</table>
+</div>
+</li>
+<li>
+<p><strong>Answer:</strong> AI can contribute to SDG 13 (Climate Action) through:</p>
+<ul>
+<li><strong>Climate Modeling</strong>: Predicting weather patterns and climate change impacts</li>
+<li><strong>Energy Optimization</strong>: Smart grids reducing energy waste</li>
+<li><strong>Carbon Monitoring</strong>: Tracking emissions using satellite imagery</li>
+<li><strong>Disaster Prediction</strong>: Early warning systems for extreme weather</li>
+<li><strong>Sustainable Agriculture</strong>: Optimizing farming to reduce environmental impact</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong> Steps for capstone project proposal:</p>
+<ol>
+<li>Form a team with diverse skills</li>
+<li>Select a problem aligned with SDGs</li>
+<li>Apply 5W1H to define the problem</li>
+<li>Conduct user research and create empathy maps</li>
+<li>Ideate multiple solutions</li>
+<li>Select feasible solution and define scope</li>
+<li>Plan timeline and resources</li>
+<li>Document proposal with objectives, methodology, and expected outcomes</li>
+</ol>
+</li>
+</ol>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="multiple-choice-questions"><a class="header" href="#multiple-choice-questions">Multiple Choice Questions</a></h3>
+<ol>
+<li>
+<p>Which of the following is NOT one of the five stages of design thinking?
+a) Empathize
+b) Define
+c) Ideate
+d) Implement</p>
+</li>
+<li>
+<p>The 5W1H method stands for:
+a) Who, What, When, Where, Why, How
+b) Five Ways to Improve Human Cognition
+c) Five Windows for Innovation Hubs
+d) None of the above</p>
+</li>
+<li>
+<p>Which SDG focuses on climate action?
+a) SDG 13
+b) SDG 14
+c) SDG 15
+d) SDG 7</p>
+</li>
+<li>
+<p>An empathy map captures which of the following?
+a) Says, Thinks, Does, Feels
+b) Past, Present, Future
+c) Strengths, Weaknesses, Opportunities, Threats
+d) Input, Process, Output</p>
+</li>
+<li>
+<p>The primary purpose of prototyping in design thinking is to:
+a) Create a final product
+b) Test ideas quickly and cheaply
+c) Impress stakeholders
+d) Generate revenue</p>
+</li>
+</ol>
+<h3 id="short-answer-questions"><a class="header" href="#short-answer-questions">Short Answer Questions</a></h3>
+<ol>
+<li>Define the 5W1H method and explain its importance in problem decomposition.</li>
+<li>What is an empathy map and how does it help in understanding user needs?</li>
+<li>How can AI solutions be aligned with Sustainable Development Goals?</li>
+<li>What are the key components of a capstone project proposal?</li>
+</ol>
+<h3 id="long-answer-questions"><a class="header" href="#long-answer-questions">Long Answer Questions</a></h3>
+<ol>
+<li>Discuss the complete design thinking process and its application in AI capstone projects.</li>
+<li>Explain how empathy maps and user research contribute to effective AI solution design.</li>
+<li>Describe the steps involved in aligning an AI project with Sustainable Development Goals.</li>
+<li>Outline a detailed plan for developing a capstone project from problem definition to final presentation.</li>
+</ol>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<h3 id="key-points"><a class="header" href="#key-points">Key Points</a></h3>
+<ul>
+<li>Capstone projects allow students to apply AI knowledge to real-world problems</li>
+<li>Design thinking methodology consists of five stages: Empathize, Define, Ideate, Prototype, Test</li>
+<li>The 5W1H method helps decompose problems systematically</li>
+<li>Empathy maps help in understanding user perspectives and needs</li>
+<li>AI solutions should be aligned with Sustainable Development Goals for societal benefit</li>
+<li>Team collaboration and communication are essential for successful capstone projects</li>
+</ul>
+<h3 id="important-terminologies"><a class="header" href="#important-terminologies">Important Terminologies</a></h3>
+<ul>
+<li><strong>Capstone Project</strong>: A comprehensive project that demonstrates learning and skills</li>
+<li><strong>Design Thinking</strong>: A user-centered approach to problem-solving</li>
+<li><strong>Empathy Map</strong>: A visual tool for understanding user experiences</li>
+<li><strong>SDGs</strong>: 17 global goals set by the United Nations for sustainable development</li>
+<li><strong>5W1H</strong>: A problem decomposition framework (Who, What, When, Where, Why, How)</li>
+<li><strong>Prototype</strong>: A preliminary model used to test concepts</li>
+<li><strong>Iteration</strong>: The process of refining solutions based on feedback</li>
+</ul>
+<h2 id="solutions-to-practice-questions"><a class="header" href="#solutions-to-practice-questions">Solutions to Practice Questions</a></h2>
+<h3 id="multiple-choice-answers"><a class="header" href="#multiple-choice-answers">Multiple Choice Answers</a></h3>
+<ol>
+<li>d) Implement</li>
+<li>a) Who, What, When, Where, Why, How</li>
+<li>a) SDG 13</li>
+<li>a) Says, Thinks, Does, Feels</li>
+<li>b) Test ideas quickly and cheaply</li>
+</ol>
+<h3 id="short-answer-model-answers"><a class="header" href="#short-answer-model-answers">Short Answer Model Answers</a></h3>
+<ol>
+<li>The 5W1H method is a problem decomposition technique that asks Who, What, When, Where, Why, and How to fully understand a problem. It helps break down complex problems into manageable components.</li>
+<li>An empathy map visualizes what users say, think, feel, and do, helping designers understand user needs and pain points effectively.</li>
+<li>AI solutions can be aligned with SDGs by identifying relevant global challenges (like healthcare, education, or climate) and ensuring the project contributes to solving those challenges.</li>
+<li>Key components include problem definition, user research, proposed solution, technical approach, timeline, and expected outcomes.</li>
+</ol>
+<h3 id="long-answer-model-answers"><a class="header" href="#long-answer-model-answers">Long Answer Model Answers</a></h3>
+<ol>
+<li>The design thinking process involves empathizing with users to understand their needs, defining the problem clearly, ideating multiple solutions, prototyping the best ideas, and testing with users. In AI capstone projects, this ensures solutions are user-centered and address real needs.</li>
+<li>Empathy maps and user research provide insights into user experiences, helping developers create AI systems that truly address user pain points and preferences rather than making assumptions.</li>
+<li>Aligning AI projects with SDGs involves identifying relevant global goals, researching how AI can contribute, designing solutions that address specific targets, and measuring impact against SDG indicators.</li>
+<li>Steps include: team formation, problem identification through research, defining scope using 5W1H, empathizing with users, ideating solutions, prototyping, testing, iterating, documenting, and presenting.</li>
+</ol>
+<h2 id="ibm-skills-build-integration"><a class="header" href="#ibm-skills-build-integration">IBM Skills Build Integration</a></h2>
+<p>Complete the <strong>IBM Skills Build - What is Design thinking?</strong> course to:</p>
+<ul>
+<li>Learn the fundamentals of design thinking methodology</li>
+<li>Understand how to apply design thinking to AI projects</li>
+<li>Practice creating empathy maps and prototypes</li>
+<li>Earn a certification in design thinking</li>
+</ul>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<ul>
+<li>CBSE Artificial Intelligence Curriculum for Class XI (2025-2026)</li>
+<li>IBM Skills Build - What is Design thinking?</li>
+<li>United Nations Sustainable Development Goals</li>
+<li>Stanford d.school Design Thinking Resources</li>
+<li>IDEO Design Thinking Resources</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

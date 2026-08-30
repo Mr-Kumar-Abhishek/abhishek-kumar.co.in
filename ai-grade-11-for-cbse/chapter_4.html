@@ -1,0 +1,860 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Data Literacy – Data Collection to Data Analysis - Artificial Intelligence grade 11 for CBSE</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-0bc00430.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-cb39d2e2.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Artificial Intelligence grade 11 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-4-data-literacy--data-collection-to-data-analysis"><a class="header" href="#chapter-4-data-literacy--data-collection-to-data-analysis">Chapter 4: Data Literacy – Data Collection to Data Analysis</a></h1>
+<h2 id="learning-outcomes"><a class="header" href="#learning-outcomes">Learning Outcomes</a></h2>
+<p>By the end of this chapter, students will be able to:</p>
+<ul>
+<li>Explain the importance of data literacy in AI</li>
+<li>Identify different data collection methods and their applications</li>
+<li>Comprehend mathematical concepts related to matrices and their operations</li>
+<li>Apply basic data analysis techniques</li>
+<li>Visualize data using various techniques</li>
+</ul>
+<h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
+<h3 id="what-is-data-literacy"><a class="header" href="#what-is-data-literacy">What is Data Literacy?</a></h3>
+<p>Data literacy is the ability to read, understand, create, and communicate data as information. In AI, it’s crucial for preprocessing data, interpreting model outputs, and making data-driven decisions.</p>
+<p><strong>Key Components of Data Literacy:</strong></p>
+<ul>
+<li>Understanding data types and structures</li>
+<li>Interpreting statistical measures</li>
+<li>Creating meaningful visualizations</li>
+<li>Making informed decisions based on data</li>
+</ul>
+<h3 id="data-collection-methods"><a class="header" href="#data-collection-methods">Data Collection Methods</a></h3>
+<h4 id="1-surveys-and-questionnaires"><a class="header" href="#1-surveys-and-questionnaires">1. Surveys and Questionnaires</a></h4>
+<ul>
+<li><strong>Description</strong>: Structured data collection from large populations</li>
+<li><strong>Applications</strong>: User feedback, market research, opinion polling</li>
+<li><strong>Advantages</strong>: Scalable, standardized responses</li>
+<li><strong>Limitations</strong>: Response bias, limited depth</li>
+</ul>
+<h4 id="2-sensors-and-iot-devices"><a class="header" href="#2-sensors-and-iot-devices">2. Sensors and IoT Devices</a></h4>
+<ul>
+<li><strong>Description</strong>: Real-time data collection from physical systems</li>
+<li><strong>Applications</strong>: Weather monitoring, health tracking, smart cities</li>
+<li><strong>Advantages</strong>: Continuous, automated data collection</li>
+<li><strong>Limitations</strong>: Equipment costs, maintenance requirements</li>
+</ul>
+<h4 id="3-web-scraping"><a class="header" href="#3-web-scraping">3. Web Scraping</a></h4>
+<ul>
+<li><strong>Description</strong>: Extracting data from websites programmatically</li>
+<li><strong>Applications</strong>: Price monitoring, content aggregation, research</li>
+<li><strong>Advantages</strong>: Access to large datasets, automation</li>
+<li><strong>Limitations</strong>: Legal considerations, website structure changes</li>
+</ul>
+<h4 id="4-databases"><a class="header" href="#4-databases">4. Databases</a></h4>
+<ul>
+<li><strong>Description</strong>: Structured data storage and retrieval systems</li>
+<li><strong>Applications</strong>: Enterprise systems, historical records, transactions</li>
+<li><strong>Advantages</strong>: Organized, queryable, secure</li>
+<li><strong>Limitations</strong>: Requires setup and maintenance</li>
+</ul>
+<h4 id="5-crowdsourcing"><a class="header" href="#5-crowdsourcing">5. Crowdsourcing</a></h4>
+<ul>
+<li><strong>Description</strong>: Collecting data from a large group of people</li>
+<li><strong>Applications</strong>: Image labeling, transcription, problem-solving</li>
+<li><strong>Advantages</strong>: Diverse perspectives, scalable</li>
+<li><strong>Limitations</strong>: Quality control challenges</li>
+</ul>
+<h3 id="exploring-data"><a class="header" href="#exploring-data">Exploring Data</a></h3>
+<h4 id="levels-of-measurement"><a class="header" href="#levels-of-measurement">Levels of Measurement</a></h4>
+<p>Data can be classified into four levels of measurement:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Level</th><th>Description</th><th>Examples</th><th>Operations</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Nominal</strong></td><td>Categories without order</td><td>Gender, Color, City</td><td>Mode, Frequency</td></tr>
+<tr><td><strong>Ordinal</strong></td><td>Categories with order</td><td>Ratings, Education Level</td><td>Median, Percentile</td></tr>
+<tr><td><strong>Interval</strong></td><td>Equal intervals, no true zero</td><td>Temperature (°C), Dates</td><td>Mean, Std Dev</td></tr>
+<tr><td><strong>Ratio</strong></td><td>Equal intervals, true zero</td><td>Height, Weight, Age</td><td>All operations</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="statistical-analysis-of-data"><a class="header" href="#statistical-analysis-of-data">Statistical Analysis of Data</a></h3>
+<h4 id="measures-of-central-tendency"><a class="header" href="#measures-of-central-tendency">Measures of Central Tendency</a></h4>
+<pre><code class="language-python">import numpy as np
+
+data = [85, 90, 78, 92, 88, 76, 95, 89, 84, 91]
+
+# Mean (Average)
+mean = np.mean(data)
+print(f"Mean: {mean}")  # Output: 86.8
+
+# Median (Middle value)
+median = np.median(data)
+print(f"Median: {median}")  # Output: 88.5
+
+# Mode (Most frequent value)
+from scipy import stats
+mode = stats.mode(data)
+print(f"Mode: {mode.mode}")
+</code></pre>
+<h4 id="measures-of-dispersion"><a class="header" href="#measures-of-dispersion">Measures of Dispersion</a></h4>
+<pre><code class="language-python">import numpy as np
+
+data = [85, 90, 78, 92, 88, 76, 95, 89, 84, 91]
+
+# Standard Deviation
+std_dev = np.std(data)
+print(f"Standard Deviation: {std_dev}")
+
+# Variance
+variance = np.var(data)
+print(f"Variance: {variance}")
+
+# Range
+data_range = max(data) - min(data)
+print(f"Range: {data_range}")
+</code></pre>
+<h3 id="introduction-to-matrices"><a class="header" href="#introduction-to-matrices">Introduction to Matrices</a></h3>
+<h4 id="what-is-a-matrix"><a class="header" href="#what-is-a-matrix">What is a Matrix?</a></h4>
+<p>A matrix is a rectangular array of numbers arranged in rows and columns. Matrices are fundamental in AI for:</p>
+<ul>
+<li>Representing data</li>
+<li>Storing model weights</li>
+<li>Performing transformations</li>
+</ul>
+<h4 id="matrix-notation"><a class="header" href="#matrix-notation">Matrix Notation</a></h4>
+<p>A matrix A with m rows and n columns:</p>
+<pre><code>A = | a₁₁  a₁₂  a₁₃ |
+    | a₂₁  a₂₂  a₂₃ |
+    | a₃₁  a₃₂  a₃₃ |
+</code></pre>
+<h4 id="matrix-operations"><a class="header" href="#matrix-operations">Matrix Operations</a></h4>
+<p><strong>Addition and Subtraction</strong></p>
+<pre><code class="language-python">import numpy as np
+
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+
+# Addition
+C = A + B
+print("A + B =\n", C)  # [[6, 8], [10, 12]]
+
+# Subtraction
+D = A - B
+print("A - B =\n", D)  # [[-4, -4], [-4, -4]]
+</code></pre>
+<p><strong>Scalar Multiplication</strong></p>
+<pre><code class="language-python">import numpy as np
+
+A = np.array([[1, 2], [3, 4]])
+scalar = 3
+
+result = scalar * A
+print("3 * A =\n", result)  # [[3, 6], [9, 12]]
+</code></pre>
+<p><strong>Matrix Multiplication</strong></p>
+<pre><code class="language-python">import numpy as np
+
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+
+# Matrix multiplication
+C = np.dot(A, B)
+# or C = A @ B
+print("A × B =\n", C)  # [[19, 22], [43, 50]]
+</code></pre>
+<p><strong>Transpose</strong></p>
+<pre><code class="language-python">import numpy as np
+
+A = np.array([[1, 2, 3], [4, 5, 6]])
+
+# Transpose
+A_T = A.T
+print("Transpose of A =\n", A_T)
+# [[1, 4],
+#  [2, 5],
+#  [3, 6]]
+</code></pre>
+<h3 id="data-visualization-with-python"><a class="header" href="#data-visualization-with-python">Data Visualization with Python</a></h3>
+<h4 id="using-matplotlib"><a class="header" href="#using-matplotlib">Using Matplotlib</a></h4>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+categories = ['A', 'B', 'C', 'D', 'E']
+values = [23, 45, 56, 78, 32]
+</code></pre>
+<p><strong>Line Graph</strong></p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+
+months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+sales = [150, 180, 170, 200, 220, 250]
+
+plt.figure(figsize=(10, 6))
+plt.plot(months, sales, marker='o', color='blue', linewidth=2)
+plt.title('Monthly Sales Trend')
+plt.xlabel('Month')
+plt.ylabel('Sales')
+plt.grid(True)
+plt.savefig('line_graph.png')
+plt.show()
+</code></pre>
+<p><strong>Bar Graph</strong></p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+
+categories = ['Math', 'Science', 'English', 'History', 'Art']
+scores = [85, 92, 78, 88, 95]
+
+plt.figure(figsize=(10, 6))
+plt.bar(categories, scores, color='steelblue')
+plt.title('Subject-wise Scores')
+plt.xlabel('Subjects')
+plt.ylabel('Scores')
+plt.ylim(0, 100)
+plt.savefig('bar_graph.png')
+plt.show()
+</code></pre>
+<p><strong>Histogram</strong></p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate random data
+data = np.random.normal(70, 15, 1000)
+
+plt.figure(figsize=(10, 6))
+plt.hist(data, bins=30, color='green', edgecolor='black', alpha=0.7)
+plt.title('Distribution of Student Scores')
+plt.xlabel('Score')
+plt.ylabel('Frequency')
+plt.savefig('histogram.png')
+plt.show()
+</code></pre>
+<p><strong>Scatter Plot</strong></p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+study_hours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+exam_scores = [45, 50, 55, 65, 70, 75, 82, 88, 92, 95]
+
+plt.figure(figsize=(10, 6))
+plt.scatter(study_hours, exam_scores, color='red', s=100)
+plt.title('Study Hours vs Exam Scores')
+plt.xlabel('Study Hours')
+plt.ylabel('Exam Score')
+plt.grid(True)
+plt.savefig('scatter_plot.png')
+plt.show()
+</code></pre>
+<p><strong>Pie Chart</strong></p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+
+labels = ['Python', 'Java', 'JavaScript', 'C++', 'Others']
+sizes = [35, 25, 20, 10, 10]
+colors = ['#ff9999', '#66b3ff', '#99ff99', '#ffcc99', '#ff99cc']
+explode = (0.1, 0, 0, 0, 0)
+
+plt.figure(figsize=(8, 8))
+plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%')
+plt.title('Programming Language Popularity')
+plt.savefig('pie_chart.png')
+plt.show()
+</code></pre>
+<h3 id="data-pre-processing"><a class="header" href="#data-pre-processing">Data Pre-processing</a></h3>
+<h4 id="handling-missing-values"><a class="header" href="#handling-missing-values">Handling Missing Values</a></h4>
+<pre><code class="language-python">import pandas as pd
+import numpy as np
+
+# Create DataFrame with missing values
+df = pd.DataFrame({
+    'Name': ['Alice', 'Bob', 'Charlie', 'Diana'],
+    'Age': [25, np.nan, 30, 28],
+    'Score': [85, 90, np.nan, 78]
+})
+
+# Check for missing values
+print(df.isnull().sum())
+
+# Drop rows with missing values
+df_dropped = df.dropna()
+
+# Fill missing values with mean
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+df['Score'].fillna(df['Score'].mean(), inplace=True)
+</code></pre>
+<h4 id="normalization-and-scaling"><a class="header" href="#normalization-and-scaling">Normalization and Scaling</a></h4>
+<pre><code class="language-python">from sklearn.preprocessing import MinMaxScaler, StandardScaler
+import numpy as np
+
+data = np.array([[100, 0.001], [8, 0.05], [50, 0.005], [88, 0.07]])
+
+# Min-Max Normalization (scales to 0-1)
+min_max_scaler = MinMaxScaler()
+normalized = min_max_scaler.fit_transform(data)
+print("Min-Max Normalized:\n", normalized)
+
+# Standardization (mean=0, std=1)
+standard_scaler = StandardScaler()
+standardized = standard_scaler.fit_transform(data)
+print("Standardized:\n", standardized)
+</code></pre>
+<h3 id="data-in-modelling-and-evaluation"><a class="header" href="#data-in-modelling-and-evaluation">Data in Modelling and Evaluation</a></h3>
+<h4 id="data-splitting"><a class="header" href="#data-splitting">Data Splitting</a></h4>
+<pre><code class="language-python">from sklearn.model_selection import train_test_split
+
+X = [[1, 2], [3, 4], [5, 6], [7, 8], [9, 10]]
+y = [0, 0, 1, 1, 1]
+
+# Split into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+print(f"Training set size: {len(X_train)}")
+print(f"Testing set size: {len(X_test)}")
+</code></pre>
+<h2 id="practical-activities"><a class="header" href="#practical-activities">Practical Activities</a></h2>
+<h3 id="activity-1-identification-of-level-of-measurement"><a class="header" href="#activity-1-identification-of-level-of-measurement">Activity 1: Identification of Level of Measurement</a></h3>
+<p>Identify the level of measurement for each variable:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Variable</th><th>Level of Measurement</th></tr>
+</thead>
+<tbody>
+<tr><td>Student ID</td><td>Nominal</td></tr>
+<tr><td>Exam Grade (A, B, C, D, F)</td><td>Ordinal</td></tr>
+<tr><td>Temperature in Celsius</td><td>Interval</td></tr>
+<tr><td>Height in centimeters</td><td>Ratio</td></tr>
+<tr><td>Blood Type</td><td>Nominal</td></tr>
+<tr><td>Customer Satisfaction (1-5)</td><td>Ordinal</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="activity-2-statistical-analysis-with-python"><a class="header" href="#activity-2-statistical-analysis-with-python">Activity 2: Statistical Analysis with Python</a></h3>
+<pre><code class="language-python">import numpy as np
+
+# Sample dataset: Student exam scores
+scores = [78, 85, 92, 76, 88, 95, 82, 79, 91, 87, 83, 90, 86, 74, 93]
+
+# Calculate statistics
+mean = np.mean(scores)
+median = np.median(scores)
+std_dev = np.std(scores)
+variance = np.var(scores)
+
+print(f"Mean: {mean:.2f}")
+print(f"Median: {median:.2f}")
+print(f"Standard Deviation: {std_dev:.2f}")
+print(f"Variance: {variance:.2f}")
+</code></pre>
+<h3 id="activity-3-data-visualization"><a class="header" href="#activity-3-data-visualization">Activity 3: Data Visualization</a></h3>
+<p>Create visualizations using the rainfall.csv dataset:</p>
+<pre><code class="language-python">import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the rainfall data
+df = pd.read_csv('rainfall.csv')
+
+# Line graph - Monthly rainfall trend
+plt.figure(figsize=(12, 5))
+plt.subplot(1, 2, 1)
+plt.plot(df['Month'], df['Rainfall'], marker='o')
+plt.title('Monthly Rainfall')
+plt.xlabel('Month')
+plt.ylabel('Rainfall (mm)')
+plt.xticks(rotation=45)
+
+# Bar graph - Comparison
+plt.subplot(1, 2, 2)
+plt.bar(df['Month'], df['Rainfall'], color='skyblue')
+plt.title('Monthly Rainfall Comparison')
+plt.xlabel('Month')
+plt.ylabel('Rainfall (mm)')
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+plt.savefig('rainfall_analysis.png')
+plt.show()
+</code></pre>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<h3 id="example-questions"><a class="header" href="#example-questions">Example Questions</a></h3>
+<ol>
+<li><strong>Explain the concept of data literacy and its relevance to AI. (2 marks)</strong></li>
+<li><strong>List three methods of data collection and provide examples for each. (3 marks)</strong></li>
+<li><strong>Write a Python program to calculate the mean of a dataset. (4 marks)</strong></li>
+<li><strong>Using matplotlib, create a scatter plot to visualize the relationship between two variables. (5 marks)</strong></li>
+<li><strong>Discuss how data preprocessing impacts the performance of AI models. (6 marks)</strong></li>
+</ol>
+<h3 id="answers-to-example-questions"><a class="header" href="#answers-to-example-questions">Answers to Example Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong> Data literacy is the ability to read, understand, create, and communicate data. In AI, it’s essential for: understanding data requirements, preprocessing data correctly, interpreting model results, and making data-driven decisions. Without data literacy, AI models may be built on flawed data leading to poor outcomes.</p>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<ul>
+<li><strong>Surveys</strong>: Questionnaires collecting user opinions (e.g., Google Forms for market research)</li>
+<li><strong>Sensors/IoT</strong>: Automated real-time data (e.g., weather stations, fitness trackers)</li>
+<li><strong>Web Scraping</strong>: Extracting data from websites (e.g., collecting product prices from e-commerce sites)</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">import numpy as np
+
+data = [78, 85, 92, 76, 88, 95, 82, 79, 91, 87]
+
+# Method 1: Using NumPy
+mean_np = np.mean(data)
+
+# Method 2: Manual calculation
+mean_manual = sum(data) / len(data)
+
+print(f"Mean: {mean_np}")
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+
+# Sample data
+study_hours = [1, 2, 3, 4, 5, 6, 7, 8]
+exam_scores = [45, 50, 55, 65, 70, 78, 85, 92]
+
+plt.figure(figsize=(8, 6))
+plt.scatter(study_hours, exam_scores, color='blue', s=100)
+plt.title('Study Hours vs Exam Scores')
+plt.xlabel('Study Hours')
+plt.ylabel('Exam Score')
+plt.grid(True)
+plt.savefig('scatter_plot.png')
+plt.show()
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong> Data preprocessing significantly impacts AI model performance:</p>
+<ul>
+<li><strong>Handling Missing Values</strong>: Prevents errors and biased results</li>
+<li><strong>Normalization/Scaling</strong>: Ensures features contribute equally, improves convergence</li>
+<li><strong>Outlier Removal</strong>: Prevents extreme values from skewing model</li>
+<li><strong>Feature Engineering</strong>: Creates informative features improving accuracy</li>
+<li><strong>Data Cleaning</strong>: Removes noise and inconsistencies</li>
+<li>Poor preprocessing leads to “garbage in, garbage out” - unreliable predictions</li>
+</ul>
+</li>
+</ol>
+<h3 id="official-sample-paper-questions"><a class="header" href="#official-sample-paper-questions">Official Sample Paper Questions</a></h3>
+<ol>
+<li><strong>What are the key steps in data preprocessing for AI applications? (2 marks)</strong></li>
+<li><strong>Write a Python program to read a CSV file and calculate the standard deviation of a column. (3 marks)</strong></li>
+<li><strong>Explain the difference between descriptive and inferential statistics. (4 marks)</strong></li>
+<li><strong>Create a histogram to represent the frequency distribution of a dataset. (5 marks)</strong></li>
+<li><strong>How can data visualization aid in understanding AI model outputs? (6 marks)</strong></li>
+</ol>
+<h3 id="answers-to-official-sample-paper-questions"><a class="header" href="#answers-to-official-sample-paper-questions">Answers to Official Sample Paper Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong> Key preprocessing steps: (1) Handle missing values (remove/impute), (2) Remove duplicates, (3) Handle outliers, (4) Normalize/scale features, (5) Encode categorical variables, (6) Split into training/testing sets.</p>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">import pandas as pd
+
+df = pd.read_csv('data.csv')
+std_dev = df['column_name'].std()
+print(f"Standard Deviation: {std_dev}")
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Aspect</th><th>Descriptive Statistics</th><th>Inferential Statistics</th></tr>
+</thead>
+<tbody>
+<tr><td>Purpose</td><td>Summarize data</td><td>Make predictions</td></tr>
+<tr><td>Scope</td><td>Describes current data</td><td>Generalizes to population</td></tr>
+<tr><td>Methods</td><td>Mean, median, mode</td><td>Hypothesis testing, regression</td></tr>
+<tr><td>Output</td><td>Tables, charts, numbers</td><td>Conclusions, predictions</td></tr>
+</tbody>
+</table>
+</div>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate sample data
+data = np.random.normal(70, 15, 500)
+
+plt.figure(figsize=(10, 6))
+plt.hist(data, bins=20, color='steelblue', edgecolor='black')
+plt.title('Frequency Distribution of Scores')
+plt.xlabel('Score')
+plt.ylabel('Frequency')
+plt.savefig('histogram.png')
+plt.show()
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong> Data visualization aids AI understanding by:</p>
+<ul>
+<li><strong>Pattern Discovery</strong>: Identifying trends, clusters, and relationships</li>
+<li><strong>Outlier Detection</strong>: Spotting anomalies visually</li>
+<li><strong>Model Evaluation</strong>: Comparing predicted vs actual values</li>
+<li><strong>Feature Importance</strong>: Visualizing which features matter most</li>
+<li><strong>Communication</strong>: Explaining results to non-technical stakeholders</li>
+<li><strong>Debugging</strong>: Understanding why models make certain predictions</li>
+</ul>
+</li>
+</ol>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="multiple-choice-questions"><a class="header" href="#multiple-choice-questions">Multiple Choice Questions</a></h3>
+<ol>
+<li>
+<p>Which of the following is NOT a data collection method?
+a) Surveys
+b) Web scraping
+c) Machine learning
+d) Sensor data</p>
+</li>
+<li>
+<p>What is the primary purpose of data preprocessing?
+a) To increase dataset size
+b) To clean and transform data
+c) To train machine learning models
+d) To visualize data</p>
+</li>
+<li>
+<p>Which statistical measure indicates the spread of data?
+a) Mean
+b) Median
+c) Standard deviation
+d) Mode</p>
+</li>
+<li>
+<p>Which level of measurement has a true zero point?
+a) Nominal
+b) Ordinal
+c) Interval
+d) Ratio</p>
+</li>
+<li>
+<p>In matrix multiplication, if A is a 2×3 matrix and B is a 3×4 matrix, what is the size of A×B?
+a) 2×4
+b) 3×3
+c) 2×3
+d) 3×4</p>
+</li>
+</ol>
+<h3 id="short-answer-questions"><a class="header" href="#short-answer-questions">Short Answer Questions</a></h3>
+<ol>
+<li>Define data literacy and explain why it’s important in AI.</li>
+<li>Compare and contrast surveys and sensor-based data collection.</li>
+<li>Write a Python function to calculate the variance of a list of numbers.</li>
+<li>Describe how data visualization helps in AI model interpretation.</li>
+</ol>
+<h3 id="long-answer-questions"><a class="header" href="#long-answer-questions">Long Answer Questions</a></h3>
+<ol>
+<li>Discuss the process of data collection for an AI project aimed at predicting crop yields.</li>
+<li>Explain how matrices are used in neural network computations.</li>
+<li>Design a data analysis pipeline for an AI application in healthcare.</li>
+<li>Evaluate the effectiveness of different data visualization techniques for a given dataset.</li>
+</ol>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<h3 id="key-points"><a class="header" href="#key-points">Key Points</a></h3>
+<ul>
+<li>Data literacy is essential for effective AI development and interpretation</li>
+<li>Common data collection methods include surveys, sensors, web scraping, and databases</li>
+<li>Statistical measures (mean, median, mode, standard deviation) help understand data</li>
+<li>Matrices and their operations form the mathematical foundation for AI</li>
+<li>Data visualization helps in understanding patterns and communicating results</li>
+<li>Data preprocessing (handling missing values, normalization) is crucial for AI models</li>
+</ul>
+<h3 id="important-terminologies"><a class="header" href="#important-terminologies">Important Terminologies</a></h3>
+<ul>
+<li><strong>Data Literacy</strong>: Ability to read, understand, create, and communicate data</li>
+<li><strong>Nominal Data</strong>: Categorical data without inherent order</li>
+<li><strong>Ordinal Data</strong>: Categorical data with inherent order</li>
+<li><strong>Interval Data</strong>: Numerical data with equal intervals but no true zero</li>
+<li><strong>Ratio Data</strong>: Numerical data with equal intervals and true zero</li>
+<li><strong>Mean</strong>: Average of all values</li>
+<li><strong>Median</strong>: Middle value when sorted</li>
+<li><strong>Mode</strong>: Most frequently occurring value</li>
+<li><strong>Standard Deviation</strong>: Measure of data spread</li>
+<li><strong>Matrix</strong>: Rectangular array of numbers</li>
+<li><strong>Normalization</strong>: Scaling data to a specific range</li>
+</ul>
+<h2 id="solutions-to-practice-questions"><a class="header" href="#solutions-to-practice-questions">Solutions to Practice Questions</a></h2>
+<h3 id="multiple-choice-answers"><a class="header" href="#multiple-choice-answers">Multiple Choice Answers</a></h3>
+<ol>
+<li>c) Machine learning</li>
+<li>b) To clean and transform data</li>
+<li>c) Standard deviation</li>
+<li>d) Ratio</li>
+<li>a) 2×4</li>
+</ol>
+<h3 id="short-answer-model-answers"><a class="header" href="#short-answer-model-answers">Short Answer Model Answers</a></h3>
+<ol>
+<li>Data literacy is the ability to understand and work with data. It’s crucial in AI for tasks like data preprocessing, model interpretation, and making informed decisions based on data insights.</li>
+<li>Surveys collect structured data from people through questions, while sensors gather real-time data from physical systems automatically. Surveys are better for subjective data; sensors are better for objective measurements.</li>
+<li>
+<pre><code class="language-python">def calculate_variance(numbers):
+    mean = sum(numbers) / len(numbers)
+    variance = sum((x - mean) ** 2 for x in numbers) / len(numbers)
+    return variance
+</code></pre>
+</li>
+<li>Data visualization helps identify patterns, outliers, and trends in data, making it easier to understand complex AI model outputs and communicate findings effectively.</li>
+</ol>
+<h3 id="long-answer-model-answers"><a class="header" href="#long-answer-model-answers">Long Answer Model Answers</a></h3>
+<ol>
+<li>Data collection for crop yield prediction would involve gathering historical weather data, soil samples, and yield records. This data would be preprocessed to handle missing values and normalized before being used to train a regression model.</li>
+<li>Matrices are used in neural networks to represent weights and perform operations like forward propagation. Matrix multiplication is fundamental to calculating activations in each layer.</li>
+<li>A healthcare data analysis pipeline might involve collecting patient data, preprocessing it to handle missing values, applying feature engineering, training a classification model, and visualizing results for medical professionals.</li>
+<li>Different visualization techniques serve different purposes. Bar charts show comparisons, line graphs show trends, scatter plots show correlations, and pie charts show proportions.</li>
+</ol>
+<h2 id="ibm-skills-build-integration"><a class="header" href="#ibm-skills-build-integration">IBM Skills Build Integration</a></h2>
+<p>Complete the <strong>IBM Skills Build - Data Visualization with Python (Modules 1, 2, 3)</strong> course to:</p>
+<ul>
+<li>Learn data visualization fundamentals</li>
+<li>Master matplotlib and other visualization libraries</li>
+<li>Practice creating various chart types</li>
+<li>Earn a certification in data visualization</li>
+</ul>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<ul>
+<li>CBSE Artificial Intelligence Curriculum for Class XI (2025-2026)</li>
+<li>IBM Skills Build - Data Visualization with Python</li>
+<li>NumPy and Pandas Official Documentation</li>
+<li>Matplotlib Documentation</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

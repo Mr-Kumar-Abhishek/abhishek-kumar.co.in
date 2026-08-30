@@ -1,0 +1,929 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Unlocking Your Future in AI - Artificial Intelligence grade 11 for CBSE</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-0bc00430.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-cb39d2e2.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Artificial Intelligence grade 11 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-7-unlocking-your-future-in-ai"><a class="header" href="#chapter-7-unlocking-your-future-in-ai">Chapter 7: Unlocking Your Future in AI</a></h1>
+<h2 id="learning-outcomes"><a class="header" href="#learning-outcomes">Learning Outcomes</a></h2>
+<p>By the end of this chapter, students will be able to:</p>
+<ul>
+<li>Articulate the demand for AI professionals and the diverse career opportunities available in the field</li>
+<li>Identify the requisite skills and tools needed to pursue a career in artificial intelligence</li>
+<li>Understand the potential roles and responsibilities of AI professionals across different industries</li>
+<li>Explore resources for further learning and skill development in the field of AI</li>
+<li>Evaluate their own interests and skills to determine potential pathways for a career in AI</li>
+</ul>
+<h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
+<h3 id="the-global-demand-for-ai-professionals"><a class="header" href="#the-global-demand-for-ai-professionals">The Global Demand for AI Professionals</a></h3>
+<p>The demand for AI professionals has grown exponentially as organizations across all sectors recognize the transformative potential of artificial intelligence.</p>
+<p><strong>Key Statistics:</strong></p>
+<ul>
+<li>AI market projected to reach $1.8 trillion by 2030</li>
+<li>97 million new AI-related jobs expected by 2025</li>
+<li>AI specialists among the most in-demand jobs globally</li>
+<li>Shortage of qualified AI professionals in most countries</li>
+</ul>
+<p><strong>Why is AI in High Demand?</strong></p>
+<ol>
+<li><strong>Digital Transformation</strong>: Organizations are digitizing operations</li>
+<li><strong>Automation</strong>: Businesses seek efficiency through AI-powered automation</li>
+<li><strong>Data Explosion</strong>: Need to process and analyze massive amounts of data</li>
+<li><strong>Competitive Advantage</strong>: AI provides strategic business advantages</li>
+<li><strong>Innovation</strong>: AI enables new products and services</li>
+</ol>
+<h3 id="some-common-job-roles-in-ai"><a class="header" href="#some-common-job-roles-in-ai">Some Common Job Roles in AI</a></h3>
+<h4 id="1-aimachine-learning-engineer"><a class="header" href="#1-aimachine-learning-engineer">1. AI/Machine Learning Engineer</a></h4>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Design and develop AI/ML models</li>
+<li>Train and optimize machine learning algorithms</li>
+<li>Deploy models to production systems</li>
+<li>Collaborate with data scientists and software engineers</li>
+</ul>
+<p><strong>Skills Required:</strong></p>
+<ul>
+<li>Python, TensorFlow, PyTorch</li>
+<li>Deep learning algorithms</li>
+<li>Software engineering principles</li>
+<li>Mathematics (linear algebra, calculus, statistics)</li>
+</ul>
+<p><strong>Average Salary Range:</strong> $100,000 - $150,000 (varies by region)</p>
+<h4 id="2-data-scientist"><a class="header" href="#2-data-scientist">2. Data Scientist</a></h4>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Analyze complex datasets to extract insights</li>
+<li>Build predictive models</li>
+<li>Communicate findings to stakeholders</li>
+<li>Develop data-driven solutions</li>
+</ul>
+<p><strong>Skills Required:</strong></p>
+<ul>
+<li>Statistical analysis</li>
+<li>Python, R programming</li>
+<li>Data visualization</li>
+<li>Machine learning</li>
+</ul>
+<p><strong>Average Salary Range:</strong> $90,000 - $140,000</p>
+<h4 id="3-ai-research-scientist"><a class="header" href="#3-ai-research-scientist">3. AI Research Scientist</a></h4>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Conduct cutting-edge AI research</li>
+<li>Publish research papers</li>
+<li>Develop new algorithms and techniques</li>
+<li>Advance the field of AI</li>
+</ul>
+<p><strong>Skills Required:</strong></p>
+<ul>
+<li>Advanced mathematics</li>
+<li>Deep learning expertise</li>
+<li>Research methodology</li>
+<li>Publication track record</li>
+</ul>
+<p><strong>Average Salary Range:</strong> $120,000 - $180,000</p>
+<h4 id="4-natural-language-processing-nlp-engineer"><a class="header" href="#4-natural-language-processing-nlp-engineer">4. Natural Language Processing (NLP) Engineer</a></h4>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Build systems that understand human language</li>
+<li>Develop chatbots and virtual assistants</li>
+<li>Work on machine translation and text analysis</li>
+<li>Improve voice recognition systems</li>
+</ul>
+<p><strong>Skills Required:</strong></p>
+<ul>
+<li>NLP techniques and libraries</li>
+<li>Deep learning (transformers, BERT)</li>
+<li>Linguistics knowledge</li>
+<li>Text processing</li>
+</ul>
+<p><strong>Average Salary Range:</strong> $95,000 - $145,000</p>
+<h4 id="5-computer-vision-engineer"><a class="header" href="#5-computer-vision-engineer">5. Computer Vision Engineer</a></h4>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Develop image and video analysis systems</li>
+<li>Build object detection and recognition models</li>
+<li>Work on autonomous vehicles and robotics</li>
+<li>Create facial recognition systems</li>
+</ul>
+<p><strong>Skills Required:</strong></p>
+<ul>
+<li>Image processing techniques</li>
+<li>Deep learning (CNNs)</li>
+<li>OpenCV, TensorFlow</li>
+<li>Mathematics</li>
+</ul>
+<p><strong>Average Salary Range:</strong> $100,000 - $150,000</p>
+<h4 id="6-robotics-engineer"><a class="header" href="#6-robotics-engineer">6. Robotics Engineer</a></h4>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Design and build robots</li>
+<li>Integrate AI with robotic systems</li>
+<li>Develop autonomous navigation systems</li>
+<li>Work on human-robot interaction</li>
+</ul>
+<p><strong>Skills Required:</strong></p>
+<ul>
+<li>Mechanical engineering</li>
+<li>Control systems</li>
+<li>AI/ML algorithms</li>
+<li>Programming (C++, Python)</li>
+</ul>
+<p><strong>Average Salary Range:</strong> $85,000 - $130,000</p>
+<h4 id="7-ai-product-manager"><a class="header" href="#7-ai-product-manager">7. AI Product Manager</a></h4>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Define AI product vision and strategy</li>
+<li>Work with engineering teams</li>
+<li>Understand customer needs</li>
+<li>Drive product development</li>
+</ul>
+<p><strong>Skills Required:</strong></p>
+<ul>
+<li>Understanding of AI/ML concepts</li>
+<li>Product management</li>
+<li>Communication skills</li>
+<li>Business acumen</li>
+</ul>
+<p><strong>Average Salary Range:</strong> $110,000 - $160,000</p>
+<h4 id="8-ai-ethics-specialist"><a class="header" href="#8-ai-ethics-specialist">8. AI Ethics Specialist</a></h4>
+<p><strong>Responsibilities:</strong></p>
+<ul>
+<li>Ensure ethical AI development</li>
+<li>Develop AI governance frameworks</li>
+<li>Assess AI bias and fairness</li>
+<li>Create ethical guidelines</li>
+</ul>
+<p><strong>Skills Required:</strong></p>
+<ul>
+<li>Understanding of AI systems</li>
+<li>Ethics and philosophy</li>
+<li>Policy development</li>
+<li>Communication skills</li>
+</ul>
+<p><strong>Average Salary Range:</strong> $80,000 - $130,000</p>
+<h3 id="essential-skills-and-tools-for-prospective-ai-careers"><a class="header" href="#essential-skills-and-tools-for-prospective-ai-careers">Essential Skills and Tools for Prospective AI Careers</a></h3>
+<h4 id="technical-skills"><a class="header" href="#technical-skills">Technical Skills</a></h4>
+<p><strong>Programming Languages:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Language</th><th>Primary Use in AI</th></tr>
+</thead>
+<tbody>
+<tr><td>Python</td><td>Most popular AI language, extensive libraries</td></tr>
+<tr><td>R</td><td>Statistical analysis, data visualization</td></tr>
+<tr><td>Java</td><td>Enterprise AI applications, big data</td></tr>
+<tr><td>C++</td><td>Performance-critical AI systems, robotics</td></tr>
+<tr><td>JavaScript</td><td>AI in web applications, TensorFlow.js</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Machine Learning Frameworks:</strong></p>
+<ul>
+<li><strong>TensorFlow</strong>: Google’s open-source ML framework</li>
+<li><strong>PyTorch</strong>: Facebook’s deep learning framework</li>
+<li><strong>Scikit-learn</strong>: Classical ML algorithms</li>
+<li><strong>Keras</strong>: High-level neural network API</li>
+<li><strong>XGBoost</strong>: Gradient boosting library</li>
+</ul>
+<p><strong>Data Tools:</strong></p>
+<ul>
+<li><strong>Pandas</strong>: Data manipulation and analysis</li>
+<li><strong>NumPy</strong>: Numerical computing</li>
+<li><strong>SQL</strong>: Database querying</li>
+<li><strong>Spark</strong>: Big data processing</li>
+<li><strong>Tableau/Power BI</strong>: Data visualization</li>
+</ul>
+<p><strong>Cloud Platforms:</strong></p>
+<ul>
+<li><strong>AWS (Amazon Web Services)</strong>: SageMaker, Lambda</li>
+<li><strong>Google Cloud Platform</strong>: AutoML, Vertex AI</li>
+<li><strong>Microsoft Azure</strong>: Azure ML, Cognitive Services</li>
+<li><strong>IBM Cloud</strong>: Watson AI services</li>
+</ul>
+<h4 id="soft-skills"><a class="header" href="#soft-skills">Soft Skills</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Skill</th><th>Importance in AI Career</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Problem-solving</strong></td><td>Breaking down complex problems</td></tr>
+<tr><td><strong>Critical thinking</strong></td><td>Evaluating models and results</td></tr>
+<tr><td><strong>Communication</strong></td><td>Explaining AI concepts to non-technical stakeholders</td></tr>
+<tr><td><strong>Collaboration</strong></td><td>Working with cross-functional teams</td></tr>
+<tr><td><strong>Creativity</strong></td><td>Developing innovative solutions</td></tr>
+<tr><td><strong>Continuous learning</strong></td><td>Keeping up with rapidly evolving field</td></tr>
+<tr><td><strong>Ethical reasoning</strong></td><td>Ensuring responsible AI development</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="opportunities-in-ai-across-various-industries"><a class="header" href="#opportunities-in-ai-across-various-industries">Opportunities in AI Across Various Industries</a></h3>
+<h4 id="1-healthcare"><a class="header" href="#1-healthcare">1. Healthcare</a></h4>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Disease diagnosis and prediction</li>
+<li>Drug discovery and development</li>
+<li>Medical imaging analysis</li>
+<li>Personalized treatment plans</li>
+<li>Robot-assisted surgery</li>
+</ul>
+<p><strong>Companies Hiring:</strong></p>
+<ul>
+<li>Hospitals and healthcare systems</li>
+<li>Pharmaceutical companies</li>
+<li>Medical device manufacturers</li>
+<li>Health tech startups</li>
+</ul>
+<h4 id="2-financial-services"><a class="header" href="#2-financial-services">2. Financial Services</a></h4>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Fraud detection</li>
+<li>Algorithmic trading</li>
+<li>Risk assessment</li>
+<li>Customer service chatbots</li>
+<li>Credit scoring</li>
+</ul>
+<p><strong>Companies Hiring:</strong></p>
+<ul>
+<li>Banks and investment firms</li>
+<li>Insurance companies</li>
+<li>FinTech startups</li>
+<li>Credit card companies</li>
+</ul>
+<h4 id="3-retail-and-e-commerce"><a class="header" href="#3-retail-and-e-commerce">3. Retail and E-commerce</a></h4>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Recommendation systems</li>
+<li>Inventory management</li>
+<li>Price optimization</li>
+<li>Customer behavior analysis</li>
+<li>Visual search</li>
+</ul>
+<p><strong>Companies Hiring:</strong></p>
+<ul>
+<li>Online retailers</li>
+<li>Brick-and-mortar stores</li>
+<li>Supply chain companies</li>
+<li>Marketing agencies</li>
+</ul>
+<h4 id="4-transportation-and-logistics"><a class="header" href="#4-transportation-and-logistics">4. Transportation and Logistics</a></h4>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Autonomous vehicles</li>
+<li>Route optimization</li>
+<li>Demand forecasting</li>
+<li>Fleet management</li>
+<li>Traffic prediction</li>
+</ul>
+<p><strong>Companies Hiring:</strong></p>
+<ul>
+<li>Automotive companies</li>
+<li>Ride-sharing services</li>
+<li>Logistics companies</li>
+<li>Delivery services</li>
+</ul>
+<h4 id="5-manufacturing"><a class="header" href="#5-manufacturing">5. Manufacturing</a></h4>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Predictive maintenance</li>
+<li>Quality control</li>
+<li>Supply chain optimization</li>
+<li>Robotic automation</li>
+<li>Production planning</li>
+</ul>
+<p><strong>Companies Hiring:</strong></p>
+<ul>
+<li>Manufacturing plants</li>
+<li>Industrial equipment makers</li>
+<li>Robotics companies</li>
+<li>Consulting firms</li>
+</ul>
+<h4 id="6-education"><a class="header" href="#6-education">6. Education</a></h4>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Personalized learning systems</li>
+<li>Automated grading</li>
+<li>Student performance prediction</li>
+<li>Intelligent tutoring</li>
+<li>Content recommendation</li>
+</ul>
+<p><strong>Companies Hiring:</strong></p>
+<ul>
+<li>EdTech companies</li>
+<li>Universities and schools</li>
+<li>Online learning platforms</li>
+<li>Educational publishers</li>
+</ul>
+<h4 id="7-agriculture"><a class="header" href="#7-agriculture">7. Agriculture</a></h4>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Crop yield prediction</li>
+<li>Pest detection</li>
+<li>Irrigation optimization</li>
+<li>Soil analysis</li>
+<li>Autonomous farming equipment</li>
+</ul>
+<p><strong>Companies Hiring:</strong></p>
+<ul>
+<li>AgTech startups</li>
+<li>Agricultural equipment manufacturers</li>
+<li>Food processing companies</li>
+<li>Research institutions</li>
+</ul>
+<h3 id="educational-pathways-and-resources"><a class="header" href="#educational-pathways-and-resources">Educational Pathways and Resources</a></h3>
+<p><strong>Formal Education:</strong></p>
+<ul>
+<li>Bachelor’s in Computer Science, Data Science, or related field</li>
+<li>Master’s in AI, Machine Learning, or Data Science</li>
+<li>PhD for research positions</li>
+</ul>
+<p><strong>Online Courses and Certifications:</strong></p>
+<ul>
+<li>Coursera: Machine Learning by Andrew Ng</li>
+<li>edX: MIT AI courses</li>
+<li>Udacity: AI Nanodegree programs</li>
+<li>IBM Skills Build: AI certifications</li>
+<li>Google AI courses</li>
+<li>Microsoft AI School</li>
+</ul>
+<p><strong>Self-Learning Resources:</strong></p>
+<ul>
+<li>Books: “Hands-On Machine Learning” by Géron, “Deep Learning” by Goodfellow</li>
+<li>YouTube channels: 3Blue1Brown, Sentdex, Two Minute Papers</li>
+<li>Blogs: Towards Data Science, AI Weekly</li>
+<li>Research papers: arXiv, Google Scholar</li>
+</ul>
+<h3 id="top-companies-hiring-ai-professionals"><a class="header" href="#top-companies-hiring-ai-professionals">Top Companies Hiring AI Professionals</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Company</th><th>AI Focus Areas</th><th>Locations</th></tr>
+</thead>
+<tbody>
+<tr><td>Google</td><td>Search, NLP, Computer Vision</td><td>Global</td></tr>
+<tr><td>Microsoft</td><td>Azure AI, Cognitive Services</td><td>Global</td></tr>
+<tr><td>Amazon</td><td>Alexa, AWS AI, Robotics</td><td>Global</td></tr>
+<tr><td>Meta</td><td>NLP, Computer Vision, AR/VR</td><td>Global</td></tr>
+<tr><td>Apple</td><td>Siri, Machine Learning</td><td>USA, Global</td></tr>
+<tr><td>NVIDIA</td><td>GPU computing, Autonomous Vehicles</td><td>Global</td></tr>
+<tr><td>Tesla</td><td>Autonomous Driving, Robotics</td><td>USA, Global</td></tr>
+<tr><td>IBM</td><td>Watson AI, Enterprise AI</td><td>Global</td></tr>
+<tr><td>OpenAI</td><td>Research, GPT models</td><td>USA</td></tr>
+<tr><td>DeepMind</td><td>AI Research, Healthcare</td><td>UK, Global</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="planning-your-ai-career-path"><a class="header" href="#planning-your-ai-career-path">Planning Your AI Career Path</a></h3>
+<p><strong>Step 1: Build Foundation (6-12 months)</strong></p>
+<ul>
+<li>Learn Python programming</li>
+<li>Study mathematics (linear algebra, statistics, calculus)</li>
+<li>Complete online AI/ML courses</li>
+<li>Build small projects</li>
+</ul>
+<p><strong>Step 2: Develop Skills (12-24 months)</strong></p>
+<ul>
+<li>Specialize in an area (NLP, Computer Vision, etc.)</li>
+<li>Work on real-world projects</li>
+<li>Contribute to open-source</li>
+<li>Participate in competitions (Kaggle)</li>
+</ul>
+<p><strong>Step 3: Gain Experience (24+ months)</strong></p>
+<ul>
+<li>Internships</li>
+<li>Entry-level positions</li>
+<li>Freelance projects</li>
+<li>Research opportunities</li>
+</ul>
+<p><strong>Step 4: Advance Career</strong></p>
+<ul>
+<li>Senior positions</li>
+<li>Specialization</li>
+<li>Leadership roles</li>
+<li>Entrepreneurship</li>
+</ul>
+<h2 id="practical-activities"><a class="header" href="#practical-activities">Practical Activities</a></h2>
+<h3 id="activity-1-identify-ai-companies"><a class="header" href="#activity-1-identify-ai-companies">Activity 1: Identify AI Companies</a></h3>
+<p>Research and identify ten companies currently hiring employees for specific AI positions.</p>
+<p><strong>Template:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Company Name</th><th>Position</th><th>Location</th><th>Required Skills</th></tr>
+</thead>
+<tbody>
+<tr><td>1.</td><td></td><td></td><td></td></tr>
+<tr><td>2.</td><td></td><td></td><td></td></tr>
+<tr><td>…</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="activity-2-skills-analysis"><a class="header" href="#activity-2-skills-analysis">Activity 2: Skills Analysis</a></h3>
+<p>Note down the technical skills and soft skills listed by any two companies for a specific AI position.</p>
+<p><strong>Company 1: _____________</strong></p>
+<ul>
+<li>Position: _______________</li>
+<li>Technical Skills Required:
+1.
+2.
+3.</li>
+<li>Soft Skills Required:
+1.
+2.
+3.</li>
+</ul>
+<p><strong>Company 2: _____________</strong></p>
+<ul>
+<li>Position: _______________</li>
+<li>Technical Skills Required:
+1.
+2.
+3.</li>
+<li>Soft Skills Required:
+1.
+2.
+3.</li>
+</ul>
+<h3 id="activity-3-self-assessment"><a class="header" href="#activity-3-self-assessment">Activity 3: Self-Assessment</a></h3>
+<p>Evaluate your current skills and interests to identify potential AI career paths.</p>
+<p><strong>Current Skills:</strong></p>
+<ul>
+<li>Programming: [ ] None [ ] Basic [ ] Intermediate [ ] Advanced</li>
+<li>Mathematics: [ ] None [ ] Basic [ ] Intermediate [ ] Advanced</li>
+<li>Communication: [ ] None [ ] Basic [ ] Intermediate [ ] Advanced</li>
+</ul>
+<p><strong>Interests:</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> Building intelligent systems</li>
+<li><input disabled="" type="checkbox"> Analyzing data</li>
+<li><input disabled="" type="checkbox"> Research and innovation</li>
+<li><input disabled="" type="checkbox"> Healthcare applications</li>
+<li><input disabled="" type="checkbox"> Autonomous systems</li>
+<li><input disabled="" type="checkbox"> Language understanding</li>
+</ul>
+<p><strong>Potential Career Paths (based on assessment):</strong>
+1.
+2.
+3.</p>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<h3 id="example-questions"><a class="header" href="#example-questions">Example Questions</a></h3>
+<ol>
+<li><strong>List three common job roles in AI and describe their responsibilities. (3 marks)</strong></li>
+<li><strong>Explain the importance of technical and soft skills for AI professionals. (4 marks)</strong></li>
+<li><strong>Discuss the applications of AI in any two industries. (5 marks)</strong></li>
+<li><strong>Outline a career path for becoming an AI professional. (6 marks)</strong></li>
+</ol>
+<h3 id="answers-to-example-questions"><a class="header" href="#answers-to-example-questions">Answers to Example Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong></p>
+<ul>
+<li><strong>ML Engineer</strong>: Designs and deploys machine learning models, optimizes algorithms, maintains ML infrastructure</li>
+<li><strong>Data Scientist</strong>: Analyzes data to extract insights, builds predictive models, communicates findings to stakeholders</li>
+<li><strong>NLP Engineer</strong>: Develops systems that understand human language, builds chatbots, works on translation and text analysis</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong>
+<strong>Technical Skills:</strong></p>
+<ul>
+<li>Programming (Python, R) for building AI systems</li>
+<li>Math/Statistics for understanding algorithms</li>
+<li>ML frameworks for model development</li>
+<li>Data manipulation for preprocessing</li>
+</ul>
+<p><strong>Soft Skills:</strong></p>
+<ul>
+<li>Communication: Explaining AI to non-technical stakeholders</li>
+<li>Problem-solving: Breaking down complex challenges</li>
+<li>Collaboration: Working in cross-functional teams</li>
+<li>Continuous Learning: Keeping up with rapidly evolving field</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong>
+<strong>Healthcare:</strong></p>
+<ul>
+<li>Disease diagnosis from medical images</li>
+<li>Drug discovery and development</li>
+<li>Personalized treatment recommendations</li>
+<li>Patient monitoring and prediction</li>
+</ul>
+<p><strong>Financial Services:</strong></p>
+<ul>
+<li>Fraud detection in transactions</li>
+<li>Algorithmic trading</li>
+<li>Credit risk assessment</li>
+<li>Customer service chatbots</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong> Career path to AI professional:</p>
+<ol>
+<li><strong>Foundation (Year 1)</strong>: Learn Python, mathematics (linear algebra, statistics), basic ML concepts</li>
+<li><strong>Skill Building (Years 2-3)</strong>: Complete online courses, work on projects, learn ML frameworks</li>
+<li><strong>Specialization (Years 3-4)</strong>: Choose focus area (NLP, CV, etc.), participate in competitions</li>
+<li><strong>Experience (Years 4+)</strong>: Internships, entry-level positions, contribute to open source</li>
+<li><strong>Growth</strong>: Senior roles, leadership, specialization or entrepreneurship</li>
+</ol>
+</li>
+</ol>
+<h3 id="official-sample-paper-questions"><a class="header" href="#official-sample-paper-questions">Official Sample Paper Questions</a></h3>
+<ol>
+<li><strong>What are the key factors driving the demand for AI professionals? (2 marks)</strong></li>
+<li><strong>Compare and contrast the roles of a Data Scientist and an ML Engineer. (3 marks)</strong></li>
+<li><strong>List and explain the essential technical skills needed for AI careers. (4 marks)</strong></li>
+<li><strong>Discuss the opportunities available in AI across different industries. (5 marks)</strong></li>
+</ol>
+<h3 id="answers-to-official-sample-paper-questions"><a class="header" href="#answers-to-official-sample-paper-questions">Answers to Official Sample Paper Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong> Key factors driving AI demand:</p>
+<ul>
+<li>Digital transformation across industries</li>
+<li>Explosion of data requiring analysis</li>
+<li>Need for automation and efficiency</li>
+<li>Competitive advantages from AI adoption</li>
+<li>Innovation in products and services</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Aspect</th><th>Data Scientist</th><th>ML Engineer</th></tr>
+</thead>
+<tbody>
+<tr><td>Focus</td><td>Analysis &amp; insights</td><td>Building &amp; deploying models</td></tr>
+<tr><td>Skills</td><td>Statistics, visualization</td><td>Software engineering, MLOps</td></tr>
+<tr><td>Output</td><td>Reports, recommendations</td><td>Production-ready systems</td></tr>
+<tr><td>Tools</td><td>Jupyter, Pandas, Matplotlib</td><td>TensorFlow, Docker, AWS</td></tr>
+</tbody>
+</table>
+</div>
+</li>
+<li>
+<p><strong>Answer:</strong> Essential technical skills:</p>
+<ul>
+<li><strong>Python</strong>: Primary language for AI development</li>
+<li><strong>Mathematics</strong>: Linear algebra, calculus, statistics</li>
+<li><strong>ML Frameworks</strong>: TensorFlow, PyTorch, Scikit-learn</li>
+<li><strong>Data Tools</strong>: Pandas, NumPy, SQL</li>
+<li><strong>Cloud Platforms</strong>: AWS, GCP, Azure for deployment</li>
+<li><strong>Version Control</strong>: Git for collaboration</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong> AI opportunities across industries:</p>
+<ul>
+<li><strong>Healthcare</strong>: Diagnosis, drug discovery, patient monitoring</li>
+<li><strong>Finance</strong>: Fraud detection, trading, risk assessment</li>
+<li><strong>Retail</strong>: Recommendations, inventory, pricing</li>
+<li><strong>Manufacturing</strong>: Predictive maintenance, quality control</li>
+<li><strong>Transportation</strong>: Autonomous vehicles, route optimization</li>
+<li><strong>Education</strong>: Personalized learning, automated grading</li>
+</ul>
+</li>
+</ol>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="multiple-choice-questions"><a class="header" href="#multiple-choice-questions">Multiple Choice Questions</a></h3>
+<ol>
+<li>
+<p>Which programming language is most commonly used in AI development?
+a) Java
+b) Python
+c) C++
+d) JavaScript</p>
+</li>
+<li>
+<p>What is the primary role of a Data Scientist?
+a) Building robotic systems
+b) Analyzing data to extract insights
+c) Managing AI projects
+d) Ensuring ethical AI development</p>
+</li>
+<li>
+<p>Which industry uses AI for fraud detection?
+a) Healthcare
+b) Financial services
+c) Agriculture
+d) Education</p>
+</li>
+<li>
+<p>Which skill is NOT typically required for AI professionals?
+a) Programming
+b) Mathematics
+c) Graphic design
+d) Problem-solving</p>
+</li>
+<li>
+<p>What is TensorFlow?
+a) A programming language
+b) A machine learning framework
+c) A database system
+d) A cloud platform</p>
+</li>
+</ol>
+<h3 id="short-answer-questions"><a class="header" href="#short-answer-questions">Short Answer Questions</a></h3>
+<ol>
+<li>List three soft skills important for AI professionals and explain why they matter.</li>
+<li>Describe the role of an NLP Engineer.</li>
+<li>What educational paths can lead to a career in AI?</li>
+<li>Why is continuous learning important in AI careers?</li>
+</ol>
+<h3 id="long-answer-questions"><a class="header" href="#long-answer-questions">Long Answer Questions</a></h3>
+<ol>
+<li>Discuss the global demand for AI professionals and the factors driving this demand.</li>
+<li>Compare different AI job roles and the skills required for each.</li>
+<li>Explain how students can prepare for AI careers while still in school.</li>
+</ol>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<h3 id="key-points"><a class="header" href="#key-points">Key Points</a></h3>
+<ul>
+<li>AI is one of the fastest-growing career fields globally</li>
+<li>Various roles exist: ML Engineer, Data Scientist, Research Scientist, etc.</li>
+<li>Both technical skills (programming, ML frameworks) and soft skills are essential</li>
+<li>AI opportunities exist across all industries</li>
+<li>Multiple pathways exist to enter AI careers</li>
+<li>Continuous learning is crucial due to rapid technological advancement</li>
+</ul>
+<h3 id="important-terminologies"><a class="header" href="#important-terminologies">Important Terminologies</a></h3>
+<ul>
+<li><strong>Machine Learning Engineer</strong>: Designs and deploys ML models</li>
+<li><strong>Data Scientist</strong>: Analyzes data and builds predictive models</li>
+<li><strong>AI Research Scientist</strong>: Conducts cutting-edge AI research</li>
+<li><strong>NLP Engineer</strong>: Works on language understanding systems</li>
+<li><strong>Computer Vision Engineer</strong>: Develops image/video analysis systems</li>
+<li><strong>AI Ethics Specialist</strong>: Ensures responsible AI development</li>
+<li><strong>TensorFlow/PyTorch</strong>: Popular ML frameworks</li>
+<li><strong>Cloud AI</strong>: AI services provided through cloud platforms</li>
+</ul>
+<h2 id="solutions-to-practice-questions"><a class="header" href="#solutions-to-practice-questions">Solutions to Practice Questions</a></h2>
+<h3 id="multiple-choice-answers"><a class="header" href="#multiple-choice-answers">Multiple Choice Answers</a></h3>
+<ol>
+<li>b) Python</li>
+<li>b) Analyzing data to extract insights</li>
+<li>b) Financial services</li>
+<li>c) Graphic design</li>
+<li>b) A machine learning framework</li>
+</ol>
+<h3 id="short-answer-model-answers"><a class="header" href="#short-answer-model-answers">Short Answer Model Answers</a></h3>
+<ol>
+<li>Important soft skills: (1) Communication - to explain complex AI concepts to non-technical stakeholders, (2) Problem-solving - to break down complex problems into manageable components, (3) Collaboration - to work effectively with cross-functional teams.</li>
+<li>An NLP Engineer builds systems that understand and generate human language, develops chatbots and virtual assistants, works on machine translation, and improves text and speech processing systems.</li>
+<li>Educational paths include: formal degrees (BS/MS in CS, Data Science), online certifications (Coursera, edX), bootcamps, self-learning through projects and competitions.</li>
+<li>AI technology evolves rapidly with new algorithms, tools, and techniques emerging constantly. Professionals must continue learning to stay relevant and competitive.</li>
+</ol>
+<h3 id="long-answer-model-answers"><a class="header" href="#long-answer-model-answers">Long Answer Model Answers</a></h3>
+<ol>
+<li>Global demand for AI professionals is driven by digital transformation across industries, the need for automation and efficiency, explosion of data requiring analysis, competitive advantages AI provides, and the creation of new products and services powered by AI.</li>
+<li>ML Engineers focus on building and deploying models; Data Scientists analyze data for insights; Research Scientists advance AI through research; NLP Engineers work on language systems. Each requires programming skills but differs in specialization depth and focus.</li>
+<li>Students can prepare by: learning Python programming, studying mathematics (statistics, linear algebra), taking online AI courses, building projects, participating in competitions, reading about AI developments, and choosing relevant subjects in higher education.</li>
+</ol>
+<h2 id="ibm-skills-build-integration"><a class="header" href="#ibm-skills-build-integration">IBM Skills Build Integration</a></h2>
+<p>Complete the <strong>IBM Skills Build - Your Future in AI: The Job Landscape</strong> course to:</p>
+<ul>
+<li>Explore AI career opportunities</li>
+<li>Understand industry requirements</li>
+<li>Learn about different AI roles</li>
+<li>Plan your AI career path</li>
+<li>Earn a certification</li>
+</ul>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<ul>
+<li>CBSE Artificial Intelligence Curriculum for Class XI (2025-2026)</li>
+<li>IBM Skills Build - Your Future in AI: The Job Landscape</li>
+<li>LinkedIn Workforce Report</li>
+<li>World Economic Forum Future of Jobs Report</li>
+<li>Glassdoor AI Career Data</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

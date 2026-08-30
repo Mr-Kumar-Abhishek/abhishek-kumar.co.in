@@ -1,0 +1,873 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>AI Ethics and Values - Artificial Intelligence grade 11 for CBSE</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-0bc00430.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-cb39d2e2.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Artificial Intelligence grade 11 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-8-ai-ethics-and-values"><a class="header" href="#chapter-8-ai-ethics-and-values">Chapter 8: AI Ethics and Values</a></h1>
+<h2 id="learning-outcomes"><a class="header" href="#learning-outcomes">Learning Outcomes</a></h2>
+<p>By the end of this chapter, students will be able to:</p>
+<ul>
+<li>Demonstrate an understanding of the fundamental principles of ethics and gain insight into ethical considerations related to AI technologies</li>
+<li>Develop an understanding of AI bias, its sources, and its real-world implications, as well as the ethical considerations</li>
+<li>Identify and apply strategies for mitigating bias in AI systems to promote fairness and transparency in technology</li>
+<li>Recognize the significance of AI policies in promoting responsible, safe, and ethical use of AI technologies</li>
+</ul>
+<h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
+<h3 id="ethics-in-artificial-intelligence"><a class="header" href="#ethics-in-artificial-intelligence">Ethics in Artificial Intelligence</a></h3>
+<p><strong>What is Ethics?</strong>
+Ethics is the branch of philosophy that deals with questions of right and wrong, morality, and proper conduct. In the context of AI, ethics refers to the moral principles that guide the development, deployment, and use of AI systems.</p>
+<p><strong>Why AI Ethics Matters:</strong></p>
+<ul>
+<li>AI systems make decisions that affect human lives</li>
+<li>AI can perpetuate or amplify existing biases</li>
+<li>AI systems can be opaque and difficult to understand</li>
+<li>AI raises questions about privacy, autonomy, and human dignity</li>
+<li>AI development is outpacing regulatory frameworks</li>
+</ul>
+<p><strong>Key Questions in AI Ethics:</strong></p>
+<ol>
+<li>Should AI systems make decisions that affect human lives?</li>
+<li>Who is responsible when AI systems cause harm?</li>
+<li>How do we ensure AI treats all people fairly?</li>
+<li>How do we maintain human oversight of AI?</li>
+<li>How do we balance innovation with safety?</li>
+</ol>
+<h3 id="the-five-pillars-of-ai-ethics"><a class="header" href="#the-five-pillars-of-ai-ethics">The Five Pillars of AI Ethics</a></h3>
+<h4 id="1-fairness"><a class="header" href="#1-fairness">1. Fairness</a></h4>
+<p><strong>Definition:</strong> AI systems should treat all individuals and groups equitably, without discrimination.</p>
+<p><strong>Considerations:</strong></p>
+<ul>
+<li>Equal treatment across demographic groups</li>
+<li>Avoiding discriminatory outcomes</li>
+<li>Ensuring equal access to AI benefits</li>
+<li>Addressing historical biases in data</li>
+</ul>
+<p><strong>Example:</strong> An AI hiring system should evaluate all candidates based on relevant qualifications, not demographic characteristics.</p>
+<h4 id="2-accountability"><a class="header" href="#2-accountability">2. Accountability</a></h4>
+<p><strong>Definition:</strong> Clear responsibility for AI systems’ development, deployment, and outcomes.</p>
+<p><strong>Considerations:</strong></p>
+<ul>
+<li>Identifying who is responsible for AI decisions</li>
+<li>Creating mechanisms for redress when harm occurs</li>
+<li>Documenting AI development processes</li>
+<li>Establishing governance frameworks</li>
+</ul>
+<p><strong>Example:</strong> A hospital using AI for diagnosis should have clear protocols for human oversight and responsibility for outcomes.</p>
+<h4 id="3-transparency"><a class="header" href="#3-transparency">3. Transparency</a></h4>
+<p><strong>Definition:</strong> AI systems should be understandable but also provide clarity about their limitations, functioning, and purpose.</p>
+<p><strong>Considerations:</strong></p>
+<ul>
+<li>Explainability of AI decisions</li>
+<li>Clear communication of AI capabilities and limitations</li>
+<li>Disclosure when AI is being used</li>
+<li>Open development processes where appropriate</li>
+</ul>
+<p><strong>Example:</strong> Users should be informed when they’re interacting with a chatbot rather than a human.</p>
+<h4 id="4-privacy"><a class="header" href="#4-privacy">4. Privacy</a></h4>
+<p><strong>Definition:</strong> Protecting personal information and ensuring individuals have control over their data.</p>
+<p><strong>Considerations:</strong></p>
+<ul>
+<li>Data collection minimization</li>
+<li>Secure data storage and processing</li>
+<li>User consent for data use</li>
+<li>Right to be forgotten</li>
+<li>Protection against surveillance</li>
+</ul>
+<p><strong>Example:</strong> AI-powered health apps should protect sensitive medical data and give users control over what is shared.</p>
+<h4 id="5-safety-and-security"><a class="header" href="#5-safety-and-security">5. Safety and Security</a></h4>
+<p><strong>Definition:</strong> AI systems should be safe, reliable, and protected against malicious use.</p>
+<p><strong>Considerations:</strong></p>
+<ul>
+<li>Robust testing and validation</li>
+<li>Fail-safe mechanisms</li>
+<li>Protection against adversarial attacks</li>
+<li>Cybersecurity measures</li>
+<li>Prevention of harmful applications</li>
+</ul>
+<p><strong>Example:</strong> Autonomous vehicles must have multiple safety systems to prevent accidents.</p>
+<h3 id="bias-in-ai-systems"><a class="header" href="#bias-in-ai-systems">Bias in AI Systems</a></h3>
+<p><strong>What is AI Bias?</strong>
+AI bias occurs when an AI system produces results that systematically favor or disadvantage certain groups. Bias can lead to unfair, discriminatory, or harmful outcomes.</p>
+<p><strong>Types of Bias:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Description</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Historical Bias</strong></td><td>Reflects biases present in historical data</td><td>AI trained on past hiring decisions perpetuates discrimination</td></tr>
+<tr><td><strong>Representation Bias</strong></td><td>Data doesn’t represent all populations equally</td><td>Facial recognition performs poorly on certain skin tones</td></tr>
+<tr><td><strong>Measurement Bias</strong></td><td>Flaws in how data is collected or labeled</td><td>Using arrest rates as proxy for criminal behavior</td></tr>
+<tr><td><strong>Aggregation Bias</strong></td><td>Using single model for different groups</td><td>Medical AI not accounting for biological differences</td></tr>
+<tr><td><strong>Evaluation Bias</strong></td><td>Testing on non-representative data</td><td>Evaluating with limited demographic diversity</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="bias-awareness"><a class="header" href="#bias-awareness">Bias Awareness</a></h3>
+<p><strong>Recognizing Bias:</strong>
+Bias can appear at multiple stages of AI development:</p>
+<ol>
+<li>
+<p><strong>Data Collection Stage:</strong></p>
+<ul>
+<li>Who is included/excluded in data?</li>
+<li>How was data collected?</li>
+<li>What historical biases exist in data?</li>
+</ul>
+</li>
+<li>
+<p><strong>Model Development Stage:</strong></p>
+<ul>
+<li>What features are used?</li>
+<li>How are labels defined?</li>
+<li>What assumptions are made?</li>
+</ul>
+</li>
+<li>
+<p><strong>Deployment Stage:</strong></p>
+<ul>
+<li>How is the model being used?</li>
+<li>Who has access to the technology?</li>
+<li>What decisions are being made?</li>
+</ul>
+</li>
+<li>
+<p><strong>Evaluation Stage:</strong></p>
+<ul>
+<li>How is performance measured?</li>
+<li>Is performance equal across groups?</li>
+<li>What metrics are prioritized?</li>
+</ul>
+</li>
+</ol>
+<h3 id="sources-of-bias"><a class="header" href="#sources-of-bias">Sources of Bias</a></h3>
+<p><strong>1. Training Data Bias</strong></p>
+<ul>
+<li>Historical discrimination reflected in data</li>
+<li>Underrepresentation of certain groups</li>
+<li>Incorrect or biased labels</li>
+<li>Selection bias in data collection</li>
+</ul>
+<p><strong>2. Algorithmic Bias</strong></p>
+<ul>
+<li>Choice of features that correlate with protected characteristics</li>
+<li>Optimization for biased objectives</li>
+<li>Model architecture limitations</li>
+</ul>
+<p><strong>3. Human Bias</strong></p>
+<ul>
+<li>Developers’ unconscious biases</li>
+<li>Biased assumptions in problem framing</li>
+<li>Biased interpretation of results</li>
+</ul>
+<p><strong>4. Societal Bias</strong></p>
+<ul>
+<li>Existing social inequalities</li>
+<li>Institutional discrimination</li>
+<li>Cultural stereotypes</li>
+</ul>
+<h3 id="real-world-examples-of-ai-bias"><a class="header" href="#real-world-examples-of-ai-bias">Real-World Examples of AI Bias</a></h3>
+<p><strong>Example 1: Hiring Algorithms</strong>
+A major tech company’s AI hiring tool was found to discriminate against women because it was trained on historical hiring data that reflected past gender biases.</p>
+<p><strong>Example 2: Facial Recognition</strong>
+Studies have shown that some facial recognition systems have significantly higher error rates for people with darker skin tones, particularly for women of color.</p>
+<p><strong>Example 3: Criminal Justice</strong>
+Risk assessment algorithms used in criminal justice have been found to disproportionately label Black defendants as higher risk compared to white defendants with similar profiles.</p>
+<p><strong>Example 4: Healthcare</strong>
+An AI system used to allocate healthcare resources was found to systematically underestimate needs of Black patients because it used healthcare spending as a proxy for health needs.</p>
+<p><strong>Example 5: Language Models</strong>
+Large language models have been shown to associate certain professions with specific genders and exhibit other stereotypical biases present in their training data.</p>
+<h3 id="mitigating-bias-in-ai-systems"><a class="header" href="#mitigating-bias-in-ai-systems">Mitigating Bias in AI Systems</a></h3>
+<h4 id="pre-processing-strategies"><a class="header" href="#pre-processing-strategies">Pre-Processing Strategies</a></h4>
+<p><strong>Data-level interventions:</strong></p>
+<ul>
+<li>Collect more diverse and representative data</li>
+<li>Balance datasets across demographic groups</li>
+<li>Remove or modify biased features</li>
+<li>Use data augmentation techniques</li>
+</ul>
+<h4 id="in-processing-strategies"><a class="header" href="#in-processing-strategies">In-Processing Strategies</a></h4>
+<p><strong>Algorithm-level interventions:</strong></p>
+<ul>
+<li>Use fairness constraints during training</li>
+<li>Apply adversarial debiasing techniques</li>
+<li>Implement fair representation learning</li>
+<li>Use ensemble methods with diverse models</li>
+</ul>
+<h4 id="post-processing-strategies"><a class="header" href="#post-processing-strategies">Post-Processing Strategies</a></h4>
+<p><strong>Output-level interventions:</strong></p>
+<ul>
+<li>Adjust decision thresholds for different groups</li>
+<li>Apply calibration techniques</li>
+<li>Use fairness-aware evaluation metrics</li>
+<li>Implement human review for edge cases</li>
+</ul>
+<h4 id="best-practices-for-bias-mitigation"><a class="header" href="#best-practices-for-bias-mitigation">Best Practices for Bias Mitigation</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Stage</th><th>Action</th><th>Purpose</th></tr>
+</thead>
+<tbody>
+<tr><td>Design</td><td>Diverse team composition</td><td>Multiple perspectives</td></tr>
+<tr><td>Data</td><td>Audit datasets for bias</td><td>Identify problems early</td></tr>
+<tr><td>Development</td><td>Test across demographics</td><td>Ensure equal performance</td></tr>
+<tr><td>Deployment</td><td>Monitor outcomes</td><td>Detect bias in real use</td></tr>
+<tr><td>Evaluation</td><td>Use multiple fairness metrics</td><td>Comprehensive assessment</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="developing-ai-policies"><a class="header" href="#developing-ai-policies">Developing AI Policies</a></h3>
+<p><strong>What are AI Policies?</strong>
+AI policies are guidelines, regulations, and governance frameworks that guide the development and use of AI technologies.</p>
+<p><strong>Why AI Policies are Important:</strong></p>
+<ul>
+<li>Protect individuals from harm</li>
+<li>Ensure fair and equitable AI use</li>
+<li>Build public trust in AI</li>
+<li>Guide responsible innovation</li>
+<li>Address legal and liability issues</li>
+</ul>
+<p><strong>Key Components of AI Policies:</strong></p>
+<ol>
+<li>
+<p><strong>Principles and Values</strong></p>
+<ul>
+<li>Core ethical principles</li>
+<li>Organizational values</li>
+<li>Alignment with human rights</li>
+</ul>
+</li>
+<li>
+<p><strong>Governance Structure</strong></p>
+<ul>
+<li>Oversight mechanisms</li>
+<li>Decision-making processes</li>
+<li>Roles and responsibilities</li>
+</ul>
+</li>
+<li>
+<p><strong>Risk Assessment</strong></p>
+<ul>
+<li>Impact evaluation procedures</li>
+<li>Risk classification</li>
+<li>Mitigation requirements</li>
+</ul>
+</li>
+<li>
+<p><strong>Accountability Mechanisms</strong></p>
+<ul>
+<li>Documentation requirements</li>
+<li>Audit processes</li>
+<li>Redress procedures</li>
+</ul>
+</li>
+<li>
+<p><strong>Transparency Requirements</strong></p>
+<ul>
+<li>Disclosure obligations</li>
+<li>Explainability standards</li>
+<li>Public reporting</li>
+</ul>
+</li>
+</ol>
+<h3 id="global-ai-policy-landscape"><a class="header" href="#global-ai-policy-landscape">Global AI Policy Landscape</a></h3>
+<p><strong>Notable AI Policies and Guidelines:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Organization</th><th>Policy/Framework</th><th>Key Focus</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>European Union</strong></td><td>AI Act</td><td>Risk-based regulation</td></tr>
+<tr><td><strong>OECD</strong></td><td>AI Principles</td><td>International standards</td></tr>
+<tr><td><strong>UNESCO</strong></td><td>Recommendation on AI Ethics</td><td>Global ethical framework</td></tr>
+<tr><td><strong>IEEE</strong></td><td>Ethically Aligned Design</td><td>Technical standards</td></tr>
+<tr><td><strong>US Government</strong></td><td>AI Bill of Rights</td><td>Individual protections</td></tr>
+<tr><td><strong>China</strong></td><td>AI Governance Principles</td><td>National guidelines</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>India’s AI Initiatives:</strong></p>
+<ul>
+<li>NITI Aayog’s National Strategy for AI</li>
+<li>Responsible AI initiatives</li>
+<li>AI ethics guidelines for various sectors</li>
+<li>Focus on “AI for All” approach</li>
+</ul>
+<h3 id="understanding-ethical-dilemmas"><a class="header" href="#understanding-ethical-dilemmas">Understanding Ethical Dilemmas</a></h3>
+<p><strong>The Trolley Problem and AI:</strong>
+The classic trolley problem has new relevance for AI:</p>
+<ul>
+<li>How should autonomous vehicles make life-and-death decisions?</li>
+<li>Who decides the ethical principles programmed into AI?</li>
+<li>How do we balance competing values?</li>
+</ul>
+<p><strong>Key Ethical Dilemmas in AI:</strong></p>
+<ol>
+<li>
+<p><strong>Privacy vs. Benefit</strong></p>
+<ul>
+<li>More data improves AI performance</li>
+<li>But data collection raises privacy concerns</li>
+</ul>
+</li>
+<li>
+<p><strong>Automation vs. Employment</strong></p>
+<ul>
+<li>AI can increase efficiency</li>
+<li>But may displace workers</li>
+</ul>
+</li>
+<li>
+<p><strong>Personalization vs. Manipulation</strong></p>
+<ul>
+<li>AI can customize experiences</li>
+<li>But may exploit psychological vulnerabilities</li>
+</ul>
+</li>
+<li>
+<p><strong>Innovation vs. Safety</strong></p>
+<ul>
+<li>Rapid development drives progress</li>
+<li>But may introduce unforeseen risks</li>
+</ul>
+</li>
+</ol>
+<h2 id="practical-activities"><a class="header" href="#practical-activities">Practical Activities</a></h2>
+<h3 id="activity-1-moral-machine-game"><a class="header" href="#activity-1-moral-machine-game">Activity 1: Moral Machine Game</a></h3>
+<p>Visit the Moral Machine website (moralmachine.mit.edu) to explore ethical dilemmas faced by autonomous vehicles.</p>
+<p><strong>Instructions:</strong></p>
+<ol>
+<li>Complete the moral machine scenarios</li>
+<li>Note your choices and reasoning</li>
+<li>Compare your results with others</li>
+<li>Reflect on how AI should make these decisions</li>
+</ol>
+<p><strong>Reflection Questions:</strong></p>
+<ul>
+<li>What factors influenced your decisions?</li>
+<li>Were some decisions harder than others? Why?</li>
+<li>Should AI systems make these decisions? How?</li>
+</ul>
+<h3 id="activity-2-survival-of-the-best-fit-game"><a class="header" href="#activity-2-survival-of-the-best-fit-game">Activity 2: Survival of the Best Fit Game</a></h3>
+<p>Play the “Survival of the Best Fit” game (survivalofthebestfit.com) to understand hiring bias.</p>
+<p><strong>Instructions:</strong></p>
+<ol>
+<li>Complete the game scenarios</li>
+<li>Observe how bias enters the system</li>
+<li>Note when problems become apparent</li>
+<li>Reflect on real-world implications</li>
+</ol>
+<p><strong>Reflection Questions:</strong></p>
+<ul>
+<li>How did bias enter the AI system?</li>
+<li>What were the consequences of the biased AI?</li>
+<li>How could the bias have been prevented?</li>
+</ul>
+<h3 id="activity-3-video-analysis---humans-need-not-apply"><a class="header" href="#activity-3-video-analysis---humans-need-not-apply">Activity 3: Video Analysis - “Humans Need Not Apply”</a></h3>
+<p>Watch and summarize the video “Humans Need Not Apply” (available on YouTube).</p>
+<p><strong>Template for Summary:</strong></p>
+<ol>
+<li><strong>Main Argument:</strong> What is the video’s main point?</li>
+<li><strong>Key Examples:</strong> What examples support the argument?</li>
+<li><strong>Implications:</strong> What are the consequences discussed?</li>
+<li><strong>Personal Response:</strong> What do you think about the claims?</li>
+<li><strong>Ethical Considerations:</strong> What ethical issues are raised?</li>
+</ol>
+<h3 id="activity-4-role-play---biased-ai-systems"><a class="header" href="#activity-4-role-play---biased-ai-systems">Activity 4: Role Play - Biased AI Systems</a></h3>
+<p>Conduct a role-play activity exploring perspectives on biased AI.</p>
+<p><strong>Roles:</strong></p>
+<ul>
+<li>AI Developer who created the system</li>
+<li>User negatively affected by bias</li>
+<li>Company executive defending the AI</li>
+<li>Policy maker considering regulations</li>
+<li>AI ethics researcher</li>
+</ul>
+<p><strong>Scenario:</strong> An AI system used for loan approvals has been found to have racial bias.</p>
+<h3 id="activity-5-comparative-study-of-ai-policies"><a class="header" href="#activity-5-comparative-study-of-ai-policies">Activity 5: Comparative Study of AI Policies</a></h3>
+<p>Research and compare AI policies from different organizations.</p>
+<p><strong>Template:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Aspect</th><th>Organization 1</th><th>Organization 2</th></tr>
+</thead>
+<tbody>
+<tr><td>Principles</td><td></td><td></td></tr>
+<tr><td>Governance</td><td></td><td></td></tr>
+<tr><td>Enforcement</td><td></td><td></td></tr>
+<tr><td>Transparency</td><td></td><td></td></tr>
+<tr><td>Accountability</td><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<h3 id="example-questions"><a class="header" href="#example-questions">Example Questions</a></h3>
+<ol>
+<li><strong>Explain the five pillars of AI ethics. (5 marks)</strong></li>
+<li><strong>Discuss the sources of bias in AI systems and provide examples. (6 marks)</strong></li>
+<li><strong>Describe strategies for mitigating bias in AI systems. (5 marks)</strong></li>
+<li><strong>Compare AI policies from two different organizations. (6 marks)</strong></li>
+</ol>
+<h3 id="answers-to-example-questions"><a class="header" href="#answers-to-example-questions">Answers to Example Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong> The five pillars of AI ethics:</p>
+<ul>
+<li><strong>Fairness</strong>: AI should treat all individuals equitably without discrimination</li>
+<li><strong>Accountability</strong>: Clear responsibility for AI decisions and outcomes</li>
+<li><strong>Transparency</strong>: Openness about AI capabilities, limitations, and decision-making</li>
+<li><strong>Privacy</strong>: Protecting personal data and giving users control over their information</li>
+<li><strong>Safety</strong>: Ensuring AI systems are reliable and secure from harm</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong> Sources of AI bias:</p>
+<ul>
+<li><strong>Training Data Bias</strong>: Historical hiring data excluding women → AI discriminates against female candidates</li>
+<li><strong>Algorithmic Bias</strong>: Features that correlate with race used in loan decisions</li>
+<li><strong>Human Bias</strong>: Developers’ unconscious biases reflected in design choices</li>
+<li><strong>Representation Bias</strong>: Facial recognition trained mostly on light-skinned faces → poor performance on darker skin</li>
+<li><strong>Measurement Bias</strong>: Using arrest rates as proxy for crime rates → racial disparities amplified</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong> Bias mitigation strategies:</p>
+<ul>
+<li><strong>Pre-processing</strong>: Collect diverse data, balance datasets, remove biased features</li>
+<li><strong>In-processing</strong>: Apply fairness constraints during training, use adversarial debiasing</li>
+<li><strong>Post-processing</strong>: Adjust decision thresholds, calibrate outputs across groups</li>
+<li><strong>Governance</strong>: Diverse teams, bias audits, regular monitoring</li>
+<li><strong>Testing</strong>: Evaluate performance across demographic groups</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Aspect</th><th>EU AI Act</th><th>OECD AI Principles</th></tr>
+</thead>
+<tbody>
+<tr><td>Approach</td><td>Risk-based regulation</td><td>Voluntary guidelines</td></tr>
+<tr><td>Scope</td><td>Legal requirements</td><td>Recommendations</td></tr>
+<tr><td>Enforcement</td><td>Fines and penalties</td><td>Self-governance</td></tr>
+<tr><td>Focus</td><td>Consumer protection</td><td>Innovation balance</td></tr>
+<tr><td>Key Element</td><td>Transparency obligations</td><td>Human-centered AI</td></tr>
+</tbody>
+</table>
+</div>
+</li>
+</ol>
+<h3 id="official-sample-paper-questions"><a class="header" href="#official-sample-paper-questions">Official Sample Paper Questions</a></h3>
+<ol>
+<li><strong>What is AI bias and why is it a concern? (2 marks)</strong></li>
+<li><strong>List the five pillars of AI ethics. (3 marks)</strong></li>
+<li><strong>Explain the role of transparency in ethical AI development. (4 marks)</strong></li>
+<li><strong>Discuss the importance of AI policies for responsible AI development. (5 marks)</strong></li>
+</ol>
+<h3 id="answers-to-official-sample-paper-questions"><a class="header" href="#answers-to-official-sample-paper-questions">Answers to Official Sample Paper Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong> AI bias occurs when AI systems produce unfair outcomes that systematically favor or disadvantage certain groups. It’s a concern because it can perpetuate discrimination, harm vulnerable populations, erode trust in AI, and have legal implications.</p>
+</li>
+<li>
+<p><strong>Answer:</strong> The five pillars are:</p>
+<ol>
+<li>Fairness</li>
+<li>Accountability</li>
+<li>Transparency</li>
+<li>Privacy</li>
+<li>Safety and Security</li>
+</ol>
+</li>
+<li>
+<p><strong>Answer:</strong> Transparency in ethical AI:</p>
+<ul>
+<li><strong>Explainability</strong>: Users understand why AI makes decisions</li>
+<li><strong>Disclosure</strong>: Clear when AI is being used</li>
+<li><strong>Limitations</strong>: Honest about what AI can and cannot do</li>
+<li><strong>Documentation</strong>: Record of how AI was developed and tested</li>
+<li><strong>Trust Building</strong>: Openness creates confidence in AI systems</li>
+<li><strong>Accountability</strong>: Enables identification of problems</li>
+</ul>
+</li>
+<li>
+<p><strong>Answer:</strong> AI policies are important because they:</p>
+<ul>
+<li><strong>Protect individuals</strong> from AI-related harms</li>
+<li><strong>Ensure fairness</strong> through standards and requirements</li>
+<li><strong>Build public trust</strong> in AI technology</li>
+<li><strong>Guide innovation</strong> while maintaining safety</li>
+<li><strong>Address liability</strong> questions when AI causes harm</li>
+<li><strong>Promote responsible</strong> development practices</li>
+<li><strong>Harmonize</strong> approaches across organizations and countries</li>
+</ul>
+</li>
+</ol>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="multiple-choice-questions"><a class="header" href="#multiple-choice-questions">Multiple Choice Questions</a></h3>
+<ol>
+<li>
+<p>Which is NOT one of the five pillars of AI ethics?
+a) Fairness
+b) Accountability
+c) Profitability
+d) Transparency</p>
+</li>
+<li>
+<p>What is historical bias in AI?
+a) Bias that increases over time
+b) Bias reflecting past discrimination in training data
+c) Bias in historical AI systems
+d) Bias in historical research</p>
+</li>
+<li>
+<p>Which strategy addresses bias at the data level?
+a) Post-processing
+b) Pre-processing
+c) In-processing
+d) Algorithmic adjustment</p>
+</li>
+<li>
+<p>What is the Moral Machine experiment about?
+a) Testing AI intelligence
+b) Exploring ethical dilemmas in autonomous vehicles
+c) Evaluating machine learning accuracy
+d) Measuring AI processing speed</p>
+</li>
+<li>
+<p>What is the main purpose of AI policies?
+a) To slow down AI development
+b) To increase AI profits
+c) To guide responsible AI development and use
+d) To eliminate all AI systems</p>
+</li>
+</ol>
+<h3 id="short-answer-questions"><a class="header" href="#short-answer-questions">Short Answer Questions</a></h3>
+<ol>
+<li>What is AI bias and why should we be concerned about it?</li>
+<li>Explain the difference between fairness and accountability in AI ethics.</li>
+<li>How can training data contribute to biased AI systems?</li>
+<li>Why is transparency important in AI systems?</li>
+</ol>
+<h3 id="long-answer-questions"><a class="header" href="#long-answer-questions">Long Answer Questions</a></h3>
+<ol>
+<li>Discuss the five pillars of AI ethics with examples of how each applies to real-world AI systems.</li>
+<li>Explain the various sources of bias in AI systems and strategies to mitigate them.</li>
+<li>Analyze the role of AI policies in ensuring ethical AI development and compare approaches from different regions.</li>
+</ol>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<h3 id="key-points"><a class="header" href="#key-points">Key Points</a></h3>
+<ul>
+<li>AI ethics concerns the moral principles guiding AI development and use</li>
+<li>The five pillars of AI ethics: Fairness, Accountability, Transparency, Privacy, Safety</li>
+<li>AI bias can arise from data, algorithms, human factors, and society</li>
+<li>Bias can be mitigated through pre-processing, in-processing, and post-processing strategies</li>
+<li>AI policies provide governance frameworks for responsible AI development</li>
+<li>Ethical dilemmas in AI require balancing competing values and interests</li>
+<li>Understanding AI ethics is crucial for developing beneficial AI systems</li>
+</ul>
+<h3 id="important-terminologies"><a class="header" href="#important-terminologies">Important Terminologies</a></h3>
+<ul>
+<li><strong>AI Ethics</strong>: Moral principles guiding AI development and use</li>
+<li><strong>Bias</strong>: Systematic errors that favor or disadvantage certain groups</li>
+<li><strong>Fairness</strong>: Equitable treatment of all individuals by AI systems</li>
+<li><strong>Accountability</strong>: Clear responsibility for AI outcomes</li>
+<li><strong>Transparency</strong>: Openness about AI capabilities and limitations</li>
+<li><strong>Explainability</strong>: Ability to understand how AI makes decisions</li>
+<li><strong>AI Governance</strong>: Frameworks for managing AI development and deployment</li>
+<li><strong>Algorithmic Discrimination</strong>: Unfair outcomes from AI algorithms</li>
+</ul>
+<h2 id="solutions-to-practice-questions"><a class="header" href="#solutions-to-practice-questions">Solutions to Practice Questions</a></h2>
+<h3 id="multiple-choice-answers"><a class="header" href="#multiple-choice-answers">Multiple Choice Answers</a></h3>
+<ol>
+<li>c) Profitability</li>
+<li>b) Bias reflecting past discrimination in training data</li>
+<li>b) Pre-processing</li>
+<li>b) Exploring ethical dilemmas in autonomous vehicles</li>
+<li>c) To guide responsible AI development and use</li>
+</ol>
+<h3 id="short-answer-model-answers"><a class="header" href="#short-answer-model-answers">Short Answer Model Answers</a></h3>
+<ol>
+<li>AI bias occurs when AI systems produce outcomes that systematically favor or disadvantage certain groups. It is concerning because biased AI can perpetuate discrimination, cause harm to vulnerable populations, and undermine trust in AI technology.</li>
+<li>Fairness focuses on equitable treatment and outcomes for all individuals, while accountability ensures clear responsibility for AI decisions and consequences. Both are essential but address different aspects of ethical AI.</li>
+<li>Training data can contribute to bias through historical discrimination reflected in the data, underrepresentation of certain groups, biased labeling, or selection bias in data collection methods.</li>
+<li>Transparency is important because it allows users to understand how AI makes decisions, enables identification of errors or biases, builds trust, and supports accountability when problems occur.</li>
+</ol>
+<h3 id="long-answer-model-answers"><a class="header" href="#long-answer-model-answers">Long Answer Model Answers</a></h3>
+<ol>
+<li>
+<p>The five pillars ensure comprehensive ethical AI:</p>
+<ul>
+<li><strong>Fairness</strong>: Hiring AI evaluating candidates equally regardless of demographics</li>
+<li><strong>Accountability</strong>: Clear lines of responsibility when AI healthcare diagnoses are wrong</li>
+<li><strong>Transparency</strong>: Disclosing when customers interact with chatbots</li>
+<li><strong>Privacy</strong>: Healthcare AI protecting patient data</li>
+<li><strong>Safety</strong>: Autonomous vehicles with multiple safety systems</li>
+</ul>
+</li>
+<li>
+<p><strong>Sources of bias:</strong></p>
+<ul>
+<li>Data: Historical discrimination, underrepresentation</li>
+<li>Algorithms: Biased features, optimization objectives</li>
+<li>Human: Developer biases, assumptions</li>
+<li>Society: Existing inequalities</li>
+</ul>
+<p><strong>Mitigation strategies:</strong></p>
+<ul>
+<li>Pre-processing: Diverse data, balanced datasets</li>
+<li>In-processing: Fairness constraints, adversarial debiasing</li>
+<li>Post-processing: Threshold adjustment, calibration</li>
+</ul>
+</li>
+<li>
+<p>AI policies provide necessary governance through principles, accountability mechanisms, risk assessment, and transparency requirements. The EU takes a risk-based approach, while the US focuses on individual rights. Both aim to balance innovation with protection but differ in implementation approaches.</p>
+</li>
+</ol>
+<h2 id="ibm-skills-build-integration"><a class="header" href="#ibm-skills-build-integration">IBM Skills Build Integration</a></h2>
+<p>Complete the <strong>IBM Skills Build - AI Ethics</strong> course to:</p>
+<ul>
+<li>Understand fundamental AI ethics principles</li>
+<li>Learn about bias detection and mitigation</li>
+<li>Explore real-world ethical scenarios</li>
+<li>Develop skills in responsible AI development</li>
+<li>Earn a certification in AI ethics</li>
+</ul>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<ul>
+<li>CBSE Artificial Intelligence Curriculum for Class XI (2025-2026)</li>
+<li>IBM Skills Build - AI Ethics</li>
+<li>MIT Moral Machine Experiment</li>
+<li>“Weapons of Math Destruction” by Cathy O’Neil</li>
+<li>“The Alignment Problem” by Brian Christian</li>
+<li>IEEE Ethically Aligned Design Guidelines</li>
+<li>EU AI Act</li>
+<li>UNESCO Recommendation on AI Ethics</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_7.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_7.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

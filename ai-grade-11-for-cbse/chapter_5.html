@@ -1,0 +1,847 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Machine Learning Algorithms - Artificial Intelligence grade 11 for CBSE</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-0bc00430.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-cb39d2e2.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Artificial Intelligence grade 11 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-5-machine-learning-algorithms"><a class="header" href="#chapter-5-machine-learning-algorithms">Chapter 5: Machine Learning Algorithms</a></h1>
+<h2 id="learning-outcomes"><a class="header" href="#learning-outcomes">Learning Outcomes</a></h2>
+<p>By the end of this chapter, students will be able to:</p>
+<ul>
+<li>Differentiate between various types of machine learning methods</li>
+<li>Understand the concept behind each machine learning method</li>
+<li>Apply these methods to develop simple solutions for real-world problems</li>
+<li>Build up knowledge to apply during capstone project development</li>
+</ul>
+<h2 id="theory"><a class="header" href="#theory">Theory</a></h2>
+<h3 id="machine-learning-in-a-nutshell"><a class="header" href="#machine-learning-in-a-nutshell">Machine Learning in a Nutshell</a></h3>
+<p>Machine learning is a subset of artificial intelligence that focuses on developing systems that can learn from data and improve their performance over time without being explicitly programmed. Instead of following rigid rules, ML systems identify patterns in data and make decisions based on those patterns.</p>
+<p><strong>Key Characteristics:</strong></p>
+<ul>
+<li>Learning from experience (data)</li>
+<li>Improving performance over time</li>
+<li>Making predictions or decisions</li>
+<li>Handling complex, non-linear relationships</li>
+</ul>
+<h3 id="types-of-machine-learning"><a class="header" href="#types-of-machine-learning">Types of Machine Learning</a></h3>
+<h4 id="1-supervised-learning"><a class="header" href="#1-supervised-learning">1. Supervised Learning</a></h4>
+<p>In supervised learning, the algorithm learns from labeled data (input-output pairs) to make predictions on new, unseen data.</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li>Training data includes both features (inputs) and labels (outputs)</li>
+<li>Goal is to learn a mapping function from inputs to outputs</li>
+<li>Performance is measured against known correct answers</li>
+</ul>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Email spam detection</li>
+<li>Medical diagnosis</li>
+<li>Credit scoring</li>
+<li>Image classification</li>
+</ul>
+<h4 id="2-unsupervised-learning"><a class="header" href="#2-unsupervised-learning">2. Unsupervised Learning</a></h4>
+<p>In unsupervised learning, the algorithm finds patterns in data without labeled outputs.</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li>Training data has no labels</li>
+<li>Algorithm discovers hidden structures</li>
+<li>Used for grouping similar data points</li>
+</ul>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Customer segmentation</li>
+<li>Anomaly detection</li>
+<li>Market basket analysis</li>
+<li>Document clustering</li>
+</ul>
+<h4 id="3-reinforcement-learning"><a class="header" href="#3-reinforcement-learning">3. Reinforcement Learning</a></h4>
+<p>In reinforcement learning, an agent learns by interacting with an environment and receiving rewards or penalties.</p>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li>Learning through trial and error</li>
+<li>Reward-based feedback</li>
+<li>Sequential decision making</li>
+<li>Balance between exploration and exploitation</li>
+</ul>
+<p><strong>Applications:</strong></p>
+<ul>
+<li>Game playing (Chess, Go)</li>
+<li>Robotics</li>
+<li>Autonomous vehicles</li>
+<li>Resource optimization</li>
+</ul>
+<h3 id="supervised-learning-algorithms"><a class="header" href="#supervised-learning-algorithms">Supervised Learning Algorithms</a></h3>
+<h4 id="understanding-correlation"><a class="header" href="#understanding-correlation">Understanding Correlation</a></h4>
+<p><strong>What is Correlation?</strong>
+Correlation measures the strength and direction of the relationship between two variables.</p>
+<p><strong>Pearson Correlation Coefficient (r):</strong></p>
+<ul>
+<li>Ranges from -1 to +1</li>
+<li>+1: Perfect positive correlation</li>
+<li>0: No correlation</li>
+<li>-1: Perfect negative correlation</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<pre><code>r = Σ(xi - x̄)(yi - ȳ) / √[Σ(xi - x̄)² × Σ(yi - ȳ)²]
+</code></pre>
+<p><strong>Calculating in MS Excel:</strong></p>
+<pre><code>=CORREL(data_range_x, data_range_y)
+</code></pre>
+<p><strong>Example:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Study Hours (X)</th><th>Exam Score (Y)</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>45</td></tr>
+<tr><td>2</td><td>50</td></tr>
+<tr><td>3</td><td>55</td></tr>
+<tr><td>4</td><td>65</td></tr>
+<tr><td>5</td><td>70</td></tr>
+</tbody>
+</table>
+</div>
+<p>The correlation coefficient ≈ 0.98 (strong positive correlation)</p>
+<h4 id="linear-regression"><a class="header" href="#linear-regression">Linear Regression</a></h4>
+<p><strong>What is Linear Regression?</strong>
+Linear regression finds the best-fitting straight line through data points to predict continuous values.</p>
+<p><strong>The Line Equation:</strong></p>
+<pre><code>y = mx + b
+</code></pre>
+<p>Where:</p>
+<ul>
+<li>y = predicted value</li>
+<li>x = input feature</li>
+<li>m = slope (coefficient)</li>
+<li>b = y-intercept (bias)</li>
+</ul>
+<p><strong>Finding the Best Line:</strong>
+The goal is to minimize the difference between predicted values and actual values (minimize error).</p>
+<p><strong>Mean Squared Error (MSE):</strong></p>
+<pre><code>MSE = (1/n) × Σ(yi - ŷi)²
+</code></pre>
+<p><strong>Linear Regression in MS Excel:</strong></p>
+<ol>
+<li>Select your data</li>
+<li>Insert → Scatter chart</li>
+<li>Click on data points → Add Trendline</li>
+<li>Select “Linear” and “Display Equation on chart”</li>
+</ol>
+<p><strong>Linear Regression in Python:</strong></p>
+<pre><code class="language-python">from sklearn.linear_model import LinearRegression
+import numpy as np
+
+# Sample data
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([45, 50, 55, 65, 70])
+
+# Create and train model
+model = LinearRegression()
+model.fit(X, y)
+
+# Model parameters
+print(f"Slope (m): {model.coef_[0]:.2f}")
+print(f"Intercept (b): {model.intercept_:.2f}")
+
+# Make predictions
+new_hours = np.array([[6], [7]])
+predictions = model.predict(new_hours)
+print(f"Predicted scores for 6 and 7 hours: {predictions}")
+</code></pre>
+<h4 id="classification"><a class="header" href="#classification">Classification</a></h4>
+<p><strong>What is Classification?</strong>
+Classification assigns data points to predefined categories (classes).</p>
+<p><strong>Types of Classification:</strong></p>
+<ul>
+<li><strong>Binary Classification</strong>: Two classes (e.g., spam/not spam)</li>
+<li><strong>Multi-class Classification</strong>: Multiple classes (e.g., animal types)</li>
+</ul>
+<p><strong>How Classification Works:</strong></p>
+<ol>
+<li>Feature extraction from training data</li>
+<li>Learning decision boundaries</li>
+<li>Assigning new data to classes based on boundaries</li>
+</ol>
+<h4 id="k-nearest-neighbors-k-nn-algorithm"><a class="header" href="#k-nearest-neighbors-k-nn-algorithm">K-Nearest Neighbors (k-NN) Algorithm</a></h4>
+<p><strong>What is k-NN?</strong>
+K-Nearest Neighbors classifies a data point based on the majority class of its k nearest neighbors.</p>
+<p><strong>How k-NN Works:</strong></p>
+<ol>
+<li>Choose the number of neighbors (k)</li>
+<li>Calculate distance between new point and all training points</li>
+<li>Find the k closest neighbors</li>
+<li>Assign the class by majority vote</li>
+</ol>
+<p><strong>Distance Metrics:</strong></p>
+<ul>
+<li><strong>Euclidean Distance</strong>: √[(x₂-x₁)² + (y₂-y₁)²]</li>
+<li><strong>Manhattan Distance</strong>: |x₂-x₁| + |y₂-y₁|</li>
+</ul>
+<p><strong>Choosing k:</strong></p>
+<ul>
+<li>Small k: Sensitive to noise</li>
+<li>Large k: Smoother boundaries but may miss local patterns</li>
+<li>Common approach: Try odd values to avoid ties</li>
+</ul>
+<p><strong>k-NN in Python:</strong></p>
+<pre><code class="language-python">from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+import numpy as np
+
+# Sample data
+X = np.array([[1, 2], [2, 3], [3, 1], [6, 5], [7, 7], [8, 6]])
+y = np.array([0, 0, 0, 1, 1, 1])  # Two classes
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+# Create and train k-NN model
+knn = KNeighborsClassifier(n_neighbors=3)
+knn.fit(X_train, y_train)
+
+# Make predictions
+new_point = np.array([[4, 4]])
+prediction = knn.predict(new_point)
+print(f"Predicted class: {prediction[0]}")
+
+# Evaluate accuracy
+accuracy = knn.score(X_test, y_test)
+print(f"Accuracy: {accuracy * 100:.2f}%")
+</code></pre>
+<h3 id="unsupervised-learning-algorithms"><a class="header" href="#unsupervised-learning-algorithms">Unsupervised Learning Algorithms</a></h3>
+<h4 id="clustering"><a class="header" href="#clustering">Clustering</a></h4>
+<p><strong>What is Clustering?</strong>
+Clustering groups similar data points together without predefined labels.</p>
+<p><strong>Types of Clustering:</strong></p>
+<ul>
+<li><strong>Partition-based</strong>: k-means, k-medoids</li>
+<li><strong>Hierarchical</strong>: Agglomerative, Divisive</li>
+<li><strong>Density-based</strong>: DBSCAN</li>
+<li><strong>Model-based</strong>: Gaussian Mixture Models</li>
+</ul>
+<h4 id="k-means-clustering-algorithm"><a class="header" href="#k-means-clustering-algorithm">K-Means Clustering Algorithm</a></h4>
+<p><strong>What is K-Means?</strong>
+K-Means partitions data into k clusters where each point belongs to the cluster with the nearest mean (centroid).</p>
+<p><strong>How K-Means Works:</strong></p>
+<ol>
+<li><strong>Initialize</strong>: Randomly select k initial centroids</li>
+<li><strong>Assign</strong>: Assign each point to nearest centroid</li>
+<li><strong>Update</strong>: Recalculate centroids as mean of assigned points</li>
+<li><strong>Repeat</strong>: Continue until centroids don’t change</li>
+</ol>
+<p><strong>K-Means Algorithm Steps:</strong></p>
+<pre><code>Step 1: Choose k (number of clusters)
+Step 2: Initialize k centroids randomly
+Step 3: Repeat until convergence:
+    a. Assign each data point to nearest centroid
+    b. Recalculate centroids as mean of cluster points
+Step 4: Return final clusters
+</code></pre>
+<p><strong>K-Means in Python:</strong></p>
+<pre><code class="language-python">from sklearn.cluster import KMeans
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Sample data
+X = np.array([[1, 2], [1.5, 1.8], [5, 8], [8, 8], [1, 0.6], [9, 11]])
+
+# Create k-means model
+kmeans = KMeans(n_clusters=2, random_state=42)
+kmeans.fit(X)
+
+# Get cluster labels and centroids
+labels = kmeans.labels_
+centroids = kmeans.cluster_centers_
+
+print(f"Cluster labels: {labels}")
+print(f"Centroids:\n{centroids}")
+
+# Visualize
+plt.scatter(X[:, 0], X[:, 1], c=labels, cmap='viridis', s=100)
+plt.scatter(centroids[:, 0], centroids[:, 1], c='red', marker='X', s=200)
+plt.title('K-Means Clustering')
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.savefig('kmeans_clustering.png')
+plt.show()
+</code></pre>
+<p><strong>Choosing k (Elbow Method):</strong></p>
+<pre><code class="language-python">from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+# Calculate inertia for different k values
+inertias = []
+K_range = range(1, 10)
+for k in K_range:
+    kmeans = KMeans(n_clusters=k, random_state=42)
+    kmeans.fit(X)
+    inertias.append(kmeans.inertia_)
+
+# Plot elbow curve
+plt.plot(K_range, inertias, 'bo-')
+plt.xlabel('Number of clusters (k)')
+plt.ylabel('Inertia')
+plt.title('Elbow Method for Optimal k')
+plt.savefig('elbow_method.png')
+plt.show()
+</code></pre>
+<h3 id="summary-of-algorithms"><a class="header" href="#summary-of-algorithms">Summary of Algorithms</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Algorithm</th><th>Type</th><th>Use Case</th><th>Key Parameters</th></tr>
+</thead>
+<tbody>
+<tr><td>Linear Regression</td><td>Supervised</td><td>Predicting continuous values</td><td>-</td></tr>
+<tr><td>k-NN</td><td>Supervised</td><td>Classification</td><td>k (neighbors)</td></tr>
+<tr><td>K-Means</td><td>Unsupervised</td><td>Clustering</td><td>k (clusters)</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="practical-activities"><a class="header" href="#practical-activities">Practical Activities</a></h2>
+<h3 id="activity-1-pearson-correlation-in-ms-excel"><a class="header" href="#activity-1-pearson-correlation-in-ms-excel">Activity 1: Pearson Correlation in MS Excel</a></h3>
+<ol>
+<li>Open MS Excel with sample data (Study Hours vs Exam Scores)</li>
+<li>Use <code>=CORREL(A2:A10, B2:B10)</code> to calculate correlation</li>
+<li>Interpret the result</li>
+</ol>
+<h3 id="activity-2-linear-regression-in-ms-excel"><a class="header" href="#activity-2-linear-regression-in-ms-excel">Activity 2: Linear Regression in MS Excel</a></h3>
+<ol>
+<li>Create a scatter plot with data</li>
+<li>Add a trendline (Linear)</li>
+<li>Display equation on chart</li>
+<li>Use equation to predict new values</li>
+</ol>
+<h3 id="activity-3-linear-regression-in-python-advanced-learners"><a class="header" href="#activity-3-linear-regression-in-python-advanced-learners">Activity 3: Linear Regression in Python (Advanced Learners)</a></h3>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+# Data: House size (sq ft) vs Price ($1000s)
+X = np.array([[1000], [1500], [2000], [2500], [3000]])
+y = np.array([150, 200, 250, 300, 350])
+
+# Train model
+model = LinearRegression()
+model.fit(X, y)
+
+# Predictions
+X_pred = np.linspace(500, 3500, 100).reshape(-1, 1)
+y_pred = model.predict(X_pred)
+
+# Plot
+plt.scatter(X, y, color='blue', label='Actual data')
+plt.plot(X_pred, y_pred, color='red', label='Regression line')
+plt.xlabel('House Size (sq ft)')
+plt.ylabel('Price ($1000s)')
+plt.title('House Price Prediction')
+plt.legend()
+plt.savefig('linear_regression.png')
+plt.show()
+</code></pre>
+<h3 id="activity-4-k-nn-classification-advanced-learners"><a class="header" href="#activity-4-k-nn-classification-advanced-learners">Activity 4: k-NN Classification (Advanced Learners)</a></h3>
+<pre><code class="language-python">from sklearn.datasets import load_iris
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+
+# Load iris dataset
+iris = load_iris()
+X, y = iris.data, iris.target
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+
+# Train k-NN
+knn = KNeighborsClassifier(n_neighbors=5)
+knn.fit(X_train, y_train)
+
+# Evaluate
+accuracy = knn.score(X_test, y_test)
+print(f"Accuracy: {accuracy * 100:.2f}%")
+</code></pre>
+<h3 id="activity-5-k-means-clustering-advanced-learners"><a class="header" href="#activity-5-k-means-clustering-advanced-learners">Activity 5: K-Means Clustering (Advanced Learners)</a></h3>
+<pre><code class="language-python">from sklearn.cluster import KMeans
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Customer data for segmentation
+data = {
+    'Annual Income': [15, 16, 17, 18, 19, 55, 56, 57, 58, 59],
+    'Spending Score': [39, 81, 6, 77, 40, 5, 10, 23, 35, 37]
+}
+df = pd.DataFrame(data)
+
+# K-Means clustering
+kmeans = KMeans(n_clusters=2, random_state=42)
+df['Cluster'] = kmeans.fit_predict(df)
+
+# Visualize
+plt.scatter(df['Annual Income'], df['Spending Score'], c=df['Cluster'], cmap='viridis')
+plt.xlabel('Annual Income')
+plt.ylabel('Spending Score')
+plt.title('Customer Segmentation')
+plt.savefig('customer_segments.png')
+plt.show()
+</code></pre>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<h3 id="example-questions"><a class="header" href="#example-questions">Example Questions</a></h3>
+<ol>
+<li><strong>Explain the difference between supervised and unsupervised learning. (3 marks)</strong></li>
+<li><strong>Write a Python program to implement linear regression using NumPy. (4 marks)</strong></li>
+<li><strong>Describe how decision trees work and provide an example. (5 marks)</strong></li>
+<li><strong>Discuss the advantages and limitations of K-Nearest Neighbors. (6 marks)</strong></li>
+</ol>
+<h3 id="answers-to-example-questions"><a class="header" href="#answers-to-example-questions">Answers to Example Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong></p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Aspect</th><th>Supervised Learning</th><th>Unsupervised Learning</th></tr>
+</thead>
+<tbody>
+<tr><td>Data</td><td>Labeled (input-output pairs)</td><td>Unlabeled (input only)</td></tr>
+<tr><td>Goal</td><td>Predict outputs</td><td>Find patterns/structure</td></tr>
+<tr><td>Examples</td><td>Classification, Regression</td><td>Clustering, Dimensionality reduction</td></tr>
+<tr><td>Algorithms</td><td>Linear Regression, k-NN</td><td>K-Means, PCA</td></tr>
+</tbody>
+</table>
+</div>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">import numpy as np
+
+# Sample data
+X = np.array([1, 2, 3, 4, 5])
+y = np.array([2, 4, 5, 4, 5])
+
+# Calculate slope (m) and intercept (b)
+n = len(X)
+m = (n * np.sum(X * y) - np.sum(X) * np.sum(y)) / (n * np.sum(X**2) - np.sum(X)**2)
+b = (np.sum(y) - m * np.sum(X)) / n
+
+print(f"y = {m:.2f}x + {b:.2f}")
+
+# Predict for x = 6
+prediction = m * 6 + b
+print(f"Prediction for x=6: {prediction:.2f}")
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong> Decision trees work by recursively splitting data based on feature values to create a tree-like model:</p>
+<ul>
+<li><strong>Root Node</strong>: Contains entire dataset</li>
+<li><strong>Splitting</strong>: Data divided based on best feature (using metrics like Gini impurity or information gain)</li>
+<li><strong>Branches</strong>: Each split creates branches</li>
+<li><strong>Leaf Nodes</strong>: Final predictions</li>
+</ul>
+<p><strong>Example</strong>: Classifying whether to play tennis based on weather. Root splits on “Outlook” → if Sunny, checks “Humidity” → if High, decision is “Don’t Play.”</p>
+</li>
+<li>
+<p><strong>Answer:</strong>
+<strong>Advantages:</strong></p>
+<ul>
+<li>Simple to understand and implement</li>
+<li>No training phase (lazy learning)</li>
+<li>Works for classification and regression</li>
+<li>Adapts to new data easily</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>Slow for large datasets (calculates all distances)</li>
+<li>Sensitive to irrelevant features</li>
+<li>Requires feature scaling</li>
+<li>Poor performance with high-dimensional data</li>
+<li>Choice of k affects results significantly</li>
+</ul>
+</li>
+</ol>
+<h3 id="official-sample-paper-questions"><a class="header" href="#official-sample-paper-questions">Official Sample Paper Questions</a></h3>
+<ol>
+<li><strong>What is the primary purpose of machine learning in AI? (2 marks)</strong></li>
+<li><strong>Compare and contrast supervised and unsupervised learning. (3 marks)</strong></li>
+<li><strong>Implement a KNN classifier to classify iris flowers using the scikit-learn library. (4 marks)</strong></li>
+<li><strong>Explain how k-means clustering algorithm works with an example. (5 marks)</strong></li>
+</ol>
+<h3 id="answers-to-official-sample-paper-questions"><a class="header" href="#answers-to-official-sample-paper-questions">Answers to Official Sample Paper Questions</a></h3>
+<ol>
+<li>
+<p><strong>Answer:</strong> Machine learning enables AI systems to learn from data and improve performance without explicit programming. It allows systems to recognize patterns, make predictions, and automate decision-making by learning from experience.</p>
+</li>
+<li>
+<p><strong>Answer:</strong> Supervised learning uses labeled data to train models that predict known outputs (e.g., spam detection), while unsupervised learning finds hidden patterns in unlabeled data (e.g., customer segmentation). Supervised needs human-labeled examples; unsupervised discovers structure automatically.</p>
+</li>
+<li>
+<p><strong>Answer:</strong></p>
+<pre><code class="language-python">from sklearn.datasets import load_iris
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+
+# Load data
+iris = load_iris()
+X_train, X_test, y_train, y_test = train_test_split(
+    iris.data, iris.target, test_size=0.3, random_state=42
+)
+
+# Train k-NN
+knn = KNeighborsClassifier(n_neighbors=5)
+knn.fit(X_train, y_train)
+
+# Evaluate
+accuracy = knn.score(X_test, y_test)
+print(f"Accuracy: {accuracy * 100:.2f}%")
+</code></pre>
+</li>
+<li>
+<p><strong>Answer:</strong> K-means clustering:</p>
+<ol>
+<li><strong>Initialize</strong>: Randomly place k centroids</li>
+<li><strong>Assign</strong>: Each point assigned to nearest centroid</li>
+<li><strong>Update</strong>: Recalculate centroids as cluster means</li>
+<li><strong>Repeat</strong>: Until centroids stabilize</li>
+</ol>
+<p><strong>Example</strong>: Customer segmentation with k=3. Initial centroids placed randomly. Customers assigned to nearest centroid based on spending and income. Centroids recalculated. After iterations, three distinct customer segments emerge: low spenders, moderate spenders, high spenders.</p>
+</li>
+</ol>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="multiple-choice-questions"><a class="header" href="#multiple-choice-questions">Multiple Choice Questions</a></h3>
+<ol>
+<li>
+<p>Which algorithm is used for regression tasks?
+a) K-Nearest Neighbors
+b) K-Means Clustering
+c) Linear Regression
+d) Decision Tree Classification</p>
+</li>
+<li>
+<p>In k-NN, what does ‘k’ represent?
+a) Number of features
+b) Number of neighbors
+c) Number of clusters
+d) Number of iterations</p>
+</li>
+<li>
+<p>Which technique is used to find the optimal k in k-means?
+a) Cross-validation
+b) Elbow method
+c) Grid search
+d) Random search</p>
+</li>
+<li>
+<p>What type of learning is k-means clustering?
+a) Supervised
+b) Unsupervised
+c) Reinforcement
+d) Semi-supervised</p>
+</li>
+<li>
+<p>What does a correlation coefficient of -0.9 indicate?
+a) Strong positive correlation
+b) Weak positive correlation
+c) Strong negative correlation
+d) No correlation</p>
+</li>
+</ol>
+<h3 id="short-answer-questions"><a class="header" href="#short-answer-questions">Short Answer Questions</a></h3>
+<ol>
+<li>Define machine learning and explain its relationship to artificial intelligence.</li>
+<li>Describe the steps involved in training a linear regression model.</li>
+<li>How does the K-Nearest Neighbors algorithm work?</li>
+<li>What is the purpose of the elbow method in k-means clustering?</li>
+</ol>
+<h3 id="long-answer-questions"><a class="header" href="#long-answer-questions">Long Answer Questions</a></h3>
+<ol>
+<li>Discuss the applications of machine learning in healthcare and education.</li>
+<li>Compare and contrast k-NN and k-means algorithms.</li>
+<li>Design a machine learning pipeline for predicting student performance based on historical data.</li>
+</ol>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<h3 id="key-points"><a class="header" href="#key-points">Key Points</a></h3>
+<ul>
+<li>Machine learning enables systems to learn from data and improve over time</li>
+<li>Three main types: Supervised, Unsupervised, and Reinforcement Learning</li>
+<li>Linear regression predicts continuous values using a best-fit line</li>
+<li>k-NN classifies data based on majority vote of nearest neighbors</li>
+<li>K-means clusters data by minimizing distance to cluster centroids</li>
+<li>Correlation measures the relationship between two variables</li>
+</ul>
+<h3 id="important-terminologies"><a class="header" href="#important-terminologies">Important Terminologies</a></h3>
+<ul>
+<li><strong>Supervised Learning</strong>: Learning from labeled data</li>
+<li><strong>Unsupervised Learning</strong>: Finding patterns in unlabeled data</li>
+<li><strong>Reinforcement Learning</strong>: Learning through rewards and penalties</li>
+<li><strong>Linear Regression</strong>: Predicting continuous values</li>
+<li><strong>Classification</strong>: Assigning data to categories</li>
+<li><strong>Clustering</strong>: Grouping similar data points</li>
+<li><strong>Correlation</strong>: Measure of relationship strength</li>
+<li><strong>Centroid</strong>: Center point of a cluster</li>
+<li><strong>Overfitting</strong>: Model performs well on training but poorly on new data</li>
+</ul>
+<h2 id="solutions-to-practice-questions"><a class="header" href="#solutions-to-practice-questions">Solutions to Practice Questions</a></h2>
+<h3 id="multiple-choice-answers"><a class="header" href="#multiple-choice-answers">Multiple Choice Answers</a></h3>
+<ol>
+<li>c) Linear Regression</li>
+<li>b) Number of neighbors</li>
+<li>b) Elbow method</li>
+<li>b) Unsupervised</li>
+<li>c) Strong negative correlation</li>
+</ol>
+<h3 id="short-answer-model-answers"><a class="header" href="#short-answer-model-answers">Short Answer Model Answers</a></h3>
+<ol>
+<li>Machine learning is a subset of AI that focuses on developing systems that learn from data and improve their performance without explicit programming.</li>
+<li>Steps: Collect and preprocess data, split into training/testing sets, initialize model, fit model to training data, evaluate on test data, tune parameters.</li>
+<li>k-NN finds the k closest data points to a new point and assigns the majority class among those neighbors.</li>
+<li>The elbow method plots inertia vs k and identifies the point where adding more clusters doesn’t significantly reduce inertia.</li>
+</ol>
+<h3 id="long-answer-model-answers"><a class="header" href="#long-answer-model-answers">Long Answer Model Answers</a></h3>
+<ol>
+<li>In healthcare, ML enables disease diagnosis, drug discovery, and personalized treatment. In education, it powers adaptive learning systems, automated grading, and student performance prediction.</li>
+<li>k-NN is a supervised algorithm for classification using labeled data, while k-means is an unsupervised algorithm for clustering without labels. k-NN uses distance to classify, k-means uses distance to cluster.</li>
+<li>Pipeline: Collect student data (grades, attendance, demographics), preprocess (handle missing values, normalize), split data, train regression model, evaluate using MSE/R², deploy for predictions.</li>
+</ol>
+<h2 id="ibm-skills-build-integration"><a class="header" href="#ibm-skills-build-integration">IBM Skills Build Integration</a></h2>
+<p>Complete the <strong>IBM Skills Build - Machine Learning with Python</strong> course to:</p>
+<ul>
+<li>Understand machine learning fundamentals</li>
+<li>Practice implementing ML algorithms</li>
+<li>Learn model evaluation techniques</li>
+<li>Earn a certification in machine learning</li>
+</ul>
+<h2 id="references"><a class="header" href="#references">References</a></h2>
+<ul>
+<li>CBSE Artificial Intelligence Curriculum for Class XI (2025-2026)</li>
+<li>IBM Skills Build - Machine Learning with Python</li>
+<li>Scikit-learn Documentation</li>
+<li>“Introduction to Machine Learning” by Ethem Alpaydin</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_6.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_6.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
