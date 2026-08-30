@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="auto">
+  <defs>
+    <!-- Gradients for realistic look -->
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff99cc" />
+      <stop offset="100%" stop-color="#ff3399" />
+    </linearGradient>
+    <linearGradient id="petalGradLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffccdd" />
+      <stop offset="100%" stop-color="#ff66b2" />
+    </linearGradient>
+    <linearGradient id="sepalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66cc66" />
+      <stop offset="100%" stop-color="#339933" />
+    </linearGradient>
+    <linearGradient id="stemGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4d9900" />
+      <stop offset="100%" stop-color="#264d00" />
+    </linearGradient>
+    <linearGradient id="ovaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6ffe6" />
+      <stop offset="100%" stop-color="#99e699" />
+    </linearGradient>
+    <linearGradient id="antherGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd633" />
+      <stop offset="100%" stop-color="#cca300" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="#fcfcfc" />
+
+  <g transform="translate(400, 350)">
+    <!-- Pedicel (Stem) -->
+    <path d="M-10,150 L10,150 L8,250 L-8,250 Z" fill="url(#stemGrad)" />
+
+    <!-- Receptacle -->
+    <path d="M-30,120 Q0,160 30,120 L20,150 Q0,160 -20,150 Z" fill="url(#sepalGrad)" />
+
+    <!-- Back Petals -->
+    <path d="M0,50 C-100,-150 -150,-100 -50,50 Z" fill="url(#petalGradLight)" opacity="0.8" />
+    <path d="M0,50 C100,-150 150,-100 50,50 Z" fill="url(#petalGradLight)" opacity="0.8" />
+    
+    <!-- Sepals -->
+    <path d="M-25,125 C-60,100 -90,140 -20,140 Z" fill="url(#sepalGrad)" />
+    <path d="M25,125 C60,100 90,140 20,140 Z" fill="url(#sepalGrad)" />
+
+    <!-- Main Petals -->
+    <path d="M-20,100 C-200,-50 -150,50 -20,120 Z" fill="url(#petalGrad)" />
+    <path d="M20,100 C200,-50 150,50 20,120 Z" fill="url(#petalGrad)" />
+
+    <!-- Stamens (Filament + Anther) -->
+    <!-- Left Stamen 1 -->
+    <path d="M-15,100 Q-70,50 -90,0" fill="none" stroke="#e6e600" stroke-width="3" />
+    <ellipse cx="-90" cy="0" rx="10" ry="15" fill="url(#antherGrad)" />
+    <!-- Left Stamen 2 -->
+    <path d="M-10,100 Q-50,0 -40,-40" fill="none" stroke="#e6e600" stroke-width="3" />
+    <ellipse cx="-40" cy="-40" rx="10" ry="15" fill="url(#antherGrad)" />
+    
+    <!-- Right Stamen 1 -->
+    <path d="M15,100 Q70,50 90,0" fill="none" stroke="#e6e600" stroke-width="3" />
+    <ellipse cx="90" cy="0" rx="10" ry="15" fill="url(#antherGrad)" />
+    <!-- Right Stamen 2 -->
+    <path d="M10,100 Q50,0 40,-40" fill="none" stroke="#e6e600" stroke-width="3" />
+    <ellipse cx="40" cy="-40" rx="10" ry="15" fill="url(#antherGrad)" />
+
+    <!-- Gynoecium (Pistil) -->
+    <!-- Ovary -->
+    <path d="M-25,120 C-35,60 35,60 25,120 Z" fill="url(#ovaryGrad)" stroke="#339933" stroke-width="2" />
+    <!-- Ovulues (inside ovary) -->
+    <circle cx="-10" cy="100" r="4" fill="#ccffcc" stroke="#006600" />
+    <circle cx="10" cy="100" r="4" fill="#ccffcc" stroke="#006600" />
+    <circle cx="-5" cy="110" r="4" fill="#ccffcc" stroke="#006600" />
+    <circle cx="5" cy="110" r="4" fill="#ccffcc" stroke="#006600" />
+
+    <!-- Style -->
+    <path d="M-5,65 L5,65 L3,-50 L-3,-50 Z" fill="#b3ffb3" stroke="#339933" stroke-width="1" />
+    
+    <!-- Stigma -->
+    <path d="M-15,-50 Q0,-70 15,-50 Q0,-40 -15,-50 Z" fill="#80ff80" stroke="#339933" stroke-width="2" />
+  </g>
+
+  <!-- Labels & Pointers -->
+  <g font-family="Arial, sans-serif" font-size="16" fill="#333">
+    <!-- Stigma -->
+    <line x1="400" y1="280" x2="520" y2="250" stroke="#333" stroke-width="1" stroke-dasharray="4" />
+    <text x="530" y="255">Stigma</text>
+
+    <!-- Style -->
+    <line x1="400" y1="360" x2="520" y2="350" stroke="#333" stroke-width="1" stroke-dasharray="4" />
+    <text x="530" y="355">Style</text>
+
+    <!-- Ovary -->
+    <line x1="410" y1="440" x2="520" y2="440" stroke="#333" stroke-width="1" stroke-dasharray="4" />
+    <text x="530" y="445">Ovary</text>
+
+    <!-- Pistil Bracket -->
+    <path d="M600,240 L620,240 L620,450 L600,450" fill="none" stroke="#333" stroke-width="2" />
+    <text x="630" y="350" font-weight="bold">Pistil (Carpel)</text>
+
+    <!-- Anther -->
+    <line x1="310" y1="350" x2="200" y2="300" stroke="#333" stroke-width="1" stroke-dasharray="4" />
+    <text x="140" y="295">Anther</text>
+
+    <!-- Filament -->
+    <line x1="340" y1="410" x2="200" y2="390" stroke="#333" stroke-width="1" stroke-dasharray="4" />
+    <text x="120" y="395">Filament</text>
+
+    <!-- Stamen Bracket -->
+    <path d="M120,280 L100,280 L100,400 L120,400" fill="none" stroke="#333" stroke-width="2" />
+    <text x="30" y="345" font-weight="bold">Stamen</text>
+
+    <!-- Petal (Corolla) -->
+    <line x1="300" y1="420" x2="160" y2="460" stroke="#333" stroke-width="1" stroke-dasharray="4" />
+    <text x="40" y="465">Petal (Corolla)</text>
+
+    <!-- Sepal (Calyx) -->
+    <line x1="330" y1="480" x2="160" y2="520" stroke="#333" stroke-width="1" stroke-dasharray="4" />
+    <text x="40" y="525">Sepal (Calyx)</text>
+
+    <!-- Receptacle -->
+    <line x1="400" y1="480" x2="520" y2="520" stroke="#333" stroke-width="1" stroke-dasharray="4" />
+    <text x="530" y="525">Receptacle</text>
+
+    <!-- Pedicel -->
+    <line x1="400" y1="530" x2="520" y2="560" stroke="#333" stroke-width="1" stroke-dasharray="4" />
+    <text x="530" y="565">Pedicel (Stem)</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#222">L.S. of a Typical Flower</text>
+</svg>
