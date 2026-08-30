@@ -1,0 +1,547 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 2: Motion in a Straight Line - Physics – Class XI (CBSE 2025-26)</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="A comprehensive Class 11 Physics book aligned with the CBSE 2025-26 syllabus, featuring competency-based questions and SVG diagrams.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-47982ccc.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-3d194626.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Physics – Class XI (CBSE 2025-26)</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-2-motion-in-a-straight-line"><a class="header" href="#chapter-2-motion-in-a-straight-line">Chapter 2: Motion in a Straight Line</a></h1>
+<p><strong>Unit II – Kinematics</strong></p>
+<hr>
+<h2 id="21-frame-of-reference"><a class="header" href="#21-frame-of-reference">2.1 Frame of Reference</a></h2>
+<p>A <strong>frame of reference</strong> is a coordinate system relative to which we describe the position and motion of objects.</p>
+<ul>
+<li><strong>Origin</strong>: The fixed reference point.</li>
+<li><strong>Position</strong>: Described by coordinates \((x, y, z)\).</li>
+<li>In 1D motion, we use a single axis (usually the x-axis).</li>
+</ul>
+<hr>
+<h2 id="22-types-of-motion"><a class="header" href="#22-types-of-motion">2.2 Types of Motion</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Uniform motion</strong></td><td>Equal distances in equal time intervals</td></tr>
+<tr><td><strong>Non-uniform motion</strong></td><td>Unequal distances in equal time intervals</td></tr>
+<tr><td><strong>Uniformly accelerated</strong></td><td>Constant acceleration (e.g., free fall)</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="23-distance-displacement-speed-velocity"><a class="header" href="#23-distance-displacement-speed-velocity">2.3 Distance, Displacement, Speed, Velocity</a></h2>
+<ul>
+<li><strong>Distance</strong>: Total path length (scalar)</li>
+<li><strong>Displacement</strong>: Change in position — shortest path from start to end (vector)</li>
+</ul>
+<p>\[
+\vec{s} = \vec{r_f} - \vec{r_i}
+\]</p>
+<ul>
+<li><strong>Average speed</strong>: \(\bar{v} = \dfrac{\text{total distance}}{\text{total time}}\)</li>
+<li><strong>Average velocity</strong>: \(\bar{v} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}\)</li>
+<li><strong>Instantaneous velocity</strong>: \(v = \displaystyle\lim_{\Delta t \to 0} \dfrac{\Delta x}{\Delta t} = \dfrac{dx}{dt}\)</li>
+<li><strong>Instantaneous speed</strong> = magnitude of instantaneous velocity</li>
+</ul>
+<hr>
+<h2 id="24-acceleration"><a class="header" href="#24-acceleration">2.4 Acceleration</a></h2>
+<p>\[
+a = \frac{dv}{dt} = \frac{d^2x}{dt^2}
+\]</p>
+<ul>
+<li><strong>Average acceleration</strong>: \(\bar{a} = \dfrac{v_2 - v_1}{t_2 - t_1}\)</li>
+<li><strong>Positive acceleration</strong>: velocity increasing in +x direction</li>
+<li><strong>Deceleration (retardation)</strong>: acceleration opposite to velocity</li>
+</ul>
+<hr>
+<h2 id="25-equations-of-uniformly-accelerated-motion"><a class="header" href="#25-equations-of-uniformly-accelerated-motion">2.5 Equations of Uniformly Accelerated Motion</a></h2>
+<p>These three kinematic equations are fundamental:</p>
+<p>\[
+\boxed{v = u + at}
+\]</p>
+<p>\[
+\boxed{s = ut + \frac{1}{2}at^2}
+\]</p>
+<p>\[
+\boxed{v^2 = u^2 + 2as}
+\]</p>
+<p>Also:</p>
+<p>\[
+s_n = u + a\left(n - \frac{1}{2}\right) \quad \text{(displacement in } n\text{th second)}
+\]</p>
+<p>Where:</p>
+<ul>
+<li>\(u\) = initial velocity</li>
+<li>\(v\) = final velocity</li>
+<li>\(a\) = uniform acceleration</li>
+<li>\(s\) = displacement</li>
+<li>\(t\) = time</li>
+</ul>
+<hr>
+<h2 id="26-free-fall"><a class="header" href="#26-free-fall">2.6 Free Fall</a></h2>
+<p>An object falling under gravity alone (no air resistance) is in <strong>free fall</strong>.</p>
+<p>\[
+g = 9.8 \text{ m s}^{-2} \approx 10 \text{ m s}^{-2}
+\]</p>
+<p>For a body dropped from rest:
+\[
+v = gt, \quad h = \frac{1}{2}gt^2, \quad v^2 = 2gh
+\]</p>
+<p>Time to fall height \(h\):
+\[
+t = \sqrt{\frac{2h}{g}}
+\]</p>
+<hr>
+<h2 id="27-position-time-x-t-graph"><a class="header" href="#27-position-time-x-t-graph">2.7 Position-Time (x-t) Graph</a></h2>
+<svg viewbox="0 0 420 300" width="420" height="300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="12">
+  <rect width="420" height="300" fill="#f8f9ff" rx="8" />
+  <text x="210" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a237e">Position–Time (x–t) Graphs</text>
+  <!-- Axes -->
+  <line x1="50" y1="250" x2="390" y2="250" stroke="#333" stroke-width="1.5" marker-end="url(#arrowX2)" />
+  <line x1="50" y1="250" x2="50" y2="40" stroke="#333" stroke-width="1.5" marker-end="url(#arrowY2)" />
+  <text x="395" y="254" fill="#333" font-size="12">t</text>
+  <text x="40" y="38" fill="#333" font-size="12">x</text>
+  <!-- Curve 1: uniform motion (straight line) -->
+  <line x1="60" y1="230" x2="200" y2="100" stroke="#1565c0" stroke-width="2" />
+  <text x="145" y="140" fill="#1565c0" font-size="11">Uniform motion</text>
+  <text x="145" y="153" fill="#1565c0" font-size="11">(constant slope)</text>
+  <!-- Curve 2: rest (horizontal) -->
+  <line x1="60" y1="200" x2="150" y2="200" stroke="#388e3c" stroke-width="2" />
+  <text x="160" y="204" fill="#388e3c" font-size="11">Body at rest</text>
+  <!-- Curve 3: accelerated (upward curve) -->
+  <path d="M 220 240 Q 280 190 370 90" fill="none" stroke="#e53935" stroke-width="2" />
+  <text x="305" y="165" fill="#e53935" font-size="11">Accelerated</text>
+  <text x="305" y="178" fill="#e53935" font-size="11">motion</text>
+  <!-- Curve 4: decelerated (flattening) -->
+  <path d="M 220 200 Q 280 175 370 170" fill="none" stroke="#f57c00" stroke-width="2" stroke-dasharray="5,3" />
+  <text x="270" y="258" fill="#f57c00" font-size="11">Decelerated</text>
+  <!-- Legend note -->
+  <rect x="55" y="255" width="220" height="38" rx="4" fill="#e3f2fd" stroke="#1565c0" stroke-width="1" />
+  <text x="165" y="270" text-anchor="middle" fill="#0d47a1" font-size="10">Slope of x–t graph = instantaneous velocity</text>
+  <text x="165" y="284" text-anchor="middle" fill="#0d47a1" font-size="10">Steeper line → higher velocity</text>
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowX2" markerwidth="8" markerheight="8" refx="6" refy="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#333" />
+    </marker>
+    <marker id="arrowY2" markerwidth="8" markerheight="8" refx="6" refy="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#333" />
+    </marker>
+  </defs>
+</svg>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li>Slope of x-t graph = (instantaneous) velocity</li>
+<li>A straight line: uniform motion (constant velocity)</li>
+<li>Curved line: non-uniform motion</li>
+<li>Horizontal line: body at rest</li>
+<li>Negative slope: motion in negative direction</li>
+</ul>
+<hr>
+<h2 id="28-velocity-time-v-t-graph"><a class="header" href="#28-velocity-time-v-t-graph">2.8 Velocity-Time (v-t) Graph</a></h2>
+<svg viewbox="0 0 420 300" width="420" height="300" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="12">
+  <rect width="420" height="300" fill="#f8f9ff" rx="8" />
+  <text x="210" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a237e">Velocity–Time (v–t) Graphs</text>
+  <!-- Axes -->
+  <line x1="50" y1="200" x2="390" y2="200" stroke="#333" stroke-width="1.5" marker-end="url(#arrowXv)" />
+  <line x1="50" y1="270" x2="50" y2="40" stroke="#333" stroke-width="1.5" marker-end="url(#arrowYv)" />
+  <text x="395" y="204" fill="#333" font-size="12">t</text>
+  <text x="38" y="38" fill="#333" font-size="12">v</text>
+  <!-- Uniform motion: horizontal -->
+  <line x1="60" y1="140" x2="200" y2="140" stroke="#1565c0" stroke-width="2" />
+  <text x="205" y="144" fill="#1565c0" font-size="10">Uniform</text>
+  <!-- Uniformly accelerated: rising diagonal -->
+  <line x1="60" y1="230" x2="200" y2="80" stroke="#e53935" stroke-width="2" />
+  <text x="110" y="128" fill="#e53935" font-size="10" transform="rotate(-42 110 128)">Uniform accel.</text>
+  <!-- Decelerated: falling -->
+  <line x1="220" y1="80" x2="360" y2="200" stroke="#f57c00" stroke-width="2" />
+  <text x="247" y="110" fill="#f57c00" font-size="10" transform="rotate(40 247 110)">Decelerated</text>
+  <!-- Area shading -->
+  <polygon points="60,200 200,140 200,200" fill="rgba(21,101,192,0.15)" stroke="none" />
+  <text x="115" y="192" fill="#0d47a1" font-size="10">Area = displacement</text>
+  <!-- Legend -->
+  <rect x="55" y="255" width="310" height="38" rx="4" fill="#e3f2fd" stroke="#1565c0" stroke-width="1" />
+  <text x="210" y="271" text-anchor="middle" fill="#0d47a1" font-size="10">Slope of v–t graph = acceleration</text>
+  <text x="210" y="285" text-anchor="middle" fill="#0d47a1" font-size="10">Area under v–t graph = displacement</text>
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowXv" markerwidth="8" markerheight="8" refx="6" refy="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#333" />
+    </marker>
+    <marker id="arrowYv" markerwidth="8" markerheight="8" refx="6" refy="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#333" />
+    </marker>
+  </defs>
+</svg>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li>Slope of v-t graph = acceleration</li>
+<li>Area under v-t graph = displacement</li>
+<li>\(a\)-\(t\) graph: area = change in velocity</li>
+</ul>
+<hr>
+<h2 id="29-relative-velocity"><a class="header" href="#29-relative-velocity">2.9 Relative Velocity</a></h2>
+<p>If two objects A and B move with velocities \(v_A\) and \(v_B\) in the same direction:</p>
+<p>\[
+v_{AB} = v_A - v_B \quad \text{(velocity of A relative to B)}
+\]</p>
+<p>If moving in opposite directions:</p>
+<p>\[
+v_{AB} = v_A + v_B
+\]</p>
+<hr>
+<h2 id="key-formulas-summary"><a class="header" href="#key-formulas-summary">Key Formulas Summary</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Quantity</th><th>Formula</th></tr>
+</thead>
+<tbody>
+<tr><td>Instantaneous velocity</td><td>\(v = \dfrac{dx}{dt}\)</td></tr>
+<tr><td>Instantaneous acceleration</td><td>\(a = \dfrac{dv}{dt}\)</td></tr>
+<tr><td>First equation of motion</td><td>\(v = u + at\)</td></tr>
+<tr><td>Second equation of motion</td><td>\(s = ut + \frac{1}{2}at^2\)</td></tr>
+<tr><td>Third equation of motion</td><td>\(v^2 = u^2 + 2as\)</td></tr>
+<tr><td>Displacement in nth second</td><td>\(s_n = u + a(n - \frac{1}{2})\)</td></tr>
+<tr><td>Free fall time</td><td>\(t = \sqrt{\frac{2h}{g}}\)</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="section-a--multiple-choice-questions-1-mark-each"><a class="header" href="#section-a--multiple-choice-questions-1-mark-each">Section A – Multiple Choice Questions (1 mark each)</a></h3>
+<p><strong>Q1.</strong> The slope of a position-time graph gives:</p>
+<p>(a) Acceleration   (b) Displacement   (c) Velocity   (d) Force</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(c) Velocity</strong> — \(v = \dfrac{dx}{dt}\) = slope of x-t graph.</p>
+</details>
+<hr>
+<p><strong>Q2.</strong> A body starts from rest and moves with uniform acceleration. The ratio of distances covered in the 1st, 2nd, and 3rd seconds is:</p>
+<p>(a) 1:2:3   (b) 1:3:5   (c) 1:4:9   (d) 1:2:4</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(b) 1:3:5</strong></p>
+<p>Using \(s_n = u + a(n - \frac{1}{2})\) with \(u = 0\):</p>
+<p>\(s_1 = \frac{a}{2},; s_2 = \frac{3a}{2},; s_3 = \frac{5a}{2}\) → ratio 1:3:5.</p>
+</details>
+<hr>
+<p><strong>Q3.</strong> A ball is thrown vertically upward with speed \(20 \text{ m/s}\). The maximum height reached is (\(g = 10 \text{ m/s}^2\)):</p>
+<p>(a) 10 m   (b) 20 m   (c) 30 m   (d) 40 m</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(b) 20 m</strong></p>
+<p>\(v^2 = u^2 - 2gh\), at max height \(v = 0\):</p>
+<p>\(h = \dfrac{u^2}{2g} = \dfrac{400}{20} = 20 \text{ m}\)</p>
+</details>
+<hr>
+<h3 id="section-b--short-answer-questions-23-marks"><a class="header" href="#section-b--short-answer-questions-23-marks">Section B – Short Answer Questions (2–3 marks)</a></h3>
+<p><strong>Q4.</strong> A train starts from rest and accelerates uniformly at \(2 \text{ m/s}^2\) for \(10\text{ s}\). It then moves at constant velocity for \(20\text{ s}\) and finally decelerates to rest at \(4 \text{ m/s}^2\). Find the total distance.</p>
+<details>
+<summary>Answer</summary>
+<p><strong>Phase 1 (Acceleration):</strong></p>
+<p>\(v = u + at = 0 + 2 \times 10 = 20 \text{ m/s}\)</p>
+<p>\(s_1 = \frac{1}{2} \times 2 \times 100 = 100 \text{ m}\)</p>
+<p><strong>Phase 2 (Constant velocity):</strong></p>
+<p>\(s_2 = 20 \times 20 = 400 \text{ m}\)</p>
+<p><strong>Phase 3 (Deceleration):</strong></p>
+<p>\(t_3 = \dfrac{20}{4} = 5 \text{ s}\), \(s_3 = \dfrac{v^2}{2 \times 4} = \dfrac{400}{8} = 50 \text{ m}\)</p>
+<p><strong>Total</strong> = \(100 + 400 + 50 = \mathbf{550 \text{ m}}\)</p>
+</details>
+<hr>
+<p><strong>Q5.</strong> From the top of a tower 40 m high, a stone is thrown vertically upward with a speed of \(10 \text{ m/s}\). When does the stone hit the ground? (\(g = 10 \text{ m/s}^2\))</p>
+<details>
+<summary>Answer</summary>
+<p>Taking upward as positive, initial position at top (+40 m from ground):</p>
+<p>\[
+y = y_0 + ut - \frac{1}{2}gt^2 \Rightarrow 0 = 40 + 10t - 5t^2
+\]</p>
+<p>\[
+5t^2 - 10t - 40 = 0 \Rightarrow t^2 - 2t - 8 = 0 \Rightarrow (t-4)(t+2) = 0
+\]</p>
+<p>\(t = 4 \text{ s}\) (taking positive root)</p>
+</details>
+<hr>
+<h3 id="section-c--long-answer-questions-5-marks"><a class="header" href="#section-c--long-answer-questions-5-marks">Section C – Long Answer Questions (5 marks)</a></h3>
+<p><strong>Q6.</strong> Derive the three equations of uniformly accelerated motion using the graphical (v-t graph) method.</p>
+<details>
+<summary>Answer</summary>
+<p>Consider a v-t graph where a body accelerates uniformly from velocity \(u\) at \(t=0\) to velocity \(v\) at time \(t\).</p>
+<p><strong>Equation 1:</strong> Slope of v-t graph = acceleration</p>
+<p>\[
+a = \frac{v - u}{t} \Rightarrow \boxed{v = u + at}
+\]</p>
+<p><strong>Equation 2:</strong> Area under v-t graph = displacement</p>
+<p>Area = trapezium = \(\dfrac{1}{2}(u + v)t = \dfrac{1}{2}(u + u + at)t\)</p>
+<p>\[
+\boxed{s = ut + \frac{1}{2}at^2}
+\]</p>
+<p><strong>Equation 3:</strong> From equations 1 and 2:</p>
+<p>\(s = \dfrac{(v+u)}{2} \times t\) and \(t = \dfrac{v-u}{a}\)</p>
+<p>\[
+s = \dfrac{(v+u)(v-u)}{2a} \Rightarrow \boxed{v^2 = u^2 + 2as}
+\]</p>
+</details>
+<hr>
+<h3 id="section-d--competency-based-questions"><a class="header" href="#section-d--competency-based-questions">Section D – Competency-Based Questions</a></h3>
+<p><strong>Q7.</strong> <em>(Graph-based)</em> Study the v-t graph below and answer:</p>
+<p>A car starts from rest, accelerates to \(20 \text{ m/s}\) in \(10 \text{ s}\), maintains this speed for \(20 \text{ s}\), then decelerates to rest in \(5 \text{ s}\).</p>
+<p>(i) What is the acceleration in the first phase?</p>
+<p>(ii) What is the retardation in the last phase?</p>
+<p>(iii) Calculate total displacement using the area method.</p>
+<p>(iv) What does the area of the v-t graph represent physically?</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(i)</strong> \(a = \dfrac{20 - 0}{10} = \mathbf{2 \text{ m/s}^2}\)</p>
+<p><strong>(ii)</strong> Retardation = \(\dfrac{20 - 0}{5} = \mathbf{4 \text{ m/s}^2}\)</p>
+<p><strong>(iii)</strong></p>
+<ul>
+<li>Triangle 1 (0–10 s): \(\frac{1}{2} \times 10 \times 20 = 100\) m</li>
+<li>Rectangle (10–30 s): \(20 \times 20 = 400\) m</li>
+<li>Triangle 2 (30–35 s): \(\frac{1}{2} \times 5 \times 20 = 50\) m</li>
+<li><strong>Total = 550 m</strong></li>
+</ul>
+<p><strong>(iv)</strong> Area under v-t graph = <strong>displacement</strong> (not distance, unless motion is one-directional)</p>
+</details>
+<hr>
+<p><strong>Q8.</strong> <em>(Assertion-Reason)</em> <strong>Assertion (A):</strong> A body with zero velocity may have non-zero acceleration.</p>
+<p><strong>Reason (R):</strong> Velocity and acceleration are independent quantities.</p>
+<p>(a) Both A and R are true, and R is the correct explanation of A</p>
+<p>(b) Both A and R are true, but R is not the correct explanation of A</p>
+<p>(c) A is true, but R is false</p>
+<p>(d) A is false, but R is true</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(a)</strong> Both are true, and R explains A.</p>
+<p>Example: At the highest point of a vertically thrown ball, velocity = 0 but \(a = g \neq 0\).</p>
+</details>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

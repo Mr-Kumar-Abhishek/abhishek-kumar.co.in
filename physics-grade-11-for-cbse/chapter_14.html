@@ -1,0 +1,522 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 14: Waves - Physics – Class XI (CBSE 2025-26)</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="A comprehensive Class 11 Physics book aligned with the CBSE 2025-26 syllabus, featuring competency-based questions and SVG diagrams.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-47982ccc.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-3d194626.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Physics – Class XI (CBSE 2025-26)</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-14-waves"><a class="header" href="#chapter-14-waves">Chapter 14: Waves</a></h1>
+<p><strong>Unit X – Oscillations and Waves</strong></p>
+<hr>
+<h2 id="141-introduction-to-waves"><a class="header" href="#141-introduction-to-waves">14.1 Introduction to Waves</a></h2>
+<p>A <strong>wave</strong> is a disturbance that propagates through a medium (or vacuum), transferring energy <strong>without</strong> the net transfer of matter.</p>
+<p><strong>Types of waves by medium:</strong></p>
+<ul>
+<li><strong>Mechanical waves</strong>: Require a medium (sound, water waves, seismic waves)</li>
+<li><strong>Electromagnetic waves</strong>: Do not require a medium (light, radio waves, X-rays)</li>
+</ul>
+<hr>
+<h2 id="142-transverse-and-longitudinal-waves"><a class="header" href="#142-transverse-and-longitudinal-waves">14.2 Transverse and Longitudinal Waves</a></h2>
+<h3 id="transverse-waves"><a class="header" href="#transverse-waves">Transverse Waves</a></h3>
+<ul>
+<li>Particle displacement is <strong>perpendicular</strong> to the direction of wave propagation.</li>
+<li>Example: Waves on a string, light waves.</li>
+</ul>
+<h3 id="longitudinal-waves"><a class="header" href="#longitudinal-waves">Longitudinal Waves</a></h3>
+<ul>
+<li>Particle displacement is <strong>parallel</strong> to the direction of wave propagation.</li>
+<li>Consist of <strong>compressions (C)</strong> and <strong>rarefactions (R)</strong>.</li>
+<li>Example: Sound waves.</li>
+</ul>
+<svg viewbox="0 0 480 250" width="480" height="250" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="12">
+  <rect width="480" height="250" fill="#f8f9ff" rx="8" />
+  <text x="240" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a237e">Transverse vs Longitudinal Waves</text>
+  <!-- Transverse wave label -->
+  <text x="20" y="65" fill="#1565c0" font-size="11" font-weight="bold">Transverse Wave</text>
+  <!-- Transverse wave (sinusoidal) -->
+  <line x1="30" y1="100" x2="450" y2="100" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3" />
+  <path d="M 30 100 C 55 75 80 55 110 55 C 140 55 165 75 190 100 C 215 125 240 145 270 145 C 300 145 325 125 350 100 C 375 75 400 55 430 55" fill="none" stroke="#1565c0" stroke-width="2.5" />
+  <!-- Transverse arrows (particle displacement) -->
+  <line x1="110" y1="100" x2="110" y2="58" stroke="#e53935" stroke-width="1.5" marker-end="url(#arrTv)" />
+  <text x="115" y="75" fill="#e53935" font-size="9">particle</text>
+  <!-- Wave direction arrow -->
+  <line x1="30" y1="120" x2="120" y2="120" stroke="#388e3c" stroke-width="2" marker-end="url(#arrWd)" />
+  <text x="35" y="135" fill="#388e3c" font-size="10">→ wave direction</text>
+  <!-- Longitudinal wave label -->
+  <text x="20" y="170" fill="#e53935" font-size="11" font-weight="bold">Longitudinal Wave</text>
+  <!-- Longitudinal wave (compressions and rarefactions using dots) -->
+  <!-- Compression region -->
+  <circle cx="70" cy="200" r="4" fill="#1565c0" />
+  <circle cx="82" cy="200" r="4" fill="#1565c0" />
+  <circle cx="94" cy="200" r="4" fill="#1565c0" />
+  <!-- Rarefaction -->
+  <circle cx="120" cy="200" r="4" fill="#1565c0" />
+  <circle cx="145" cy="200" r="4" fill="#1565c0" />
+  <circle cx="170" cy="200" r="4" fill="#1565c0" />
+  <!-- Compression -->
+  <circle cx="190" cy="200" r="4" fill="#1565c0" />
+  <circle cx="202" cy="200" r="4" fill="#1565c0" />
+  <circle cx="214" cy="200" r="4" fill="#1565c0" />
+  <!-- Rarefaction -->
+  <circle cx="240" cy="200" r="4" fill="#1565c0" />
+  <circle cx="265" cy="200" r="4" fill="#1565c0" />
+  <!-- Labels -->
+  <text x="80" y="220" text-anchor="middle" fill="#1565c0" font-size="10">C</text>
+  <text x="145" y="220" text-anchor="middle" fill="#1565c0" font-size="10">R</text>
+  <text x="202" y="220" text-anchor="middle" fill="#1565c0" font-size="10">C</text>
+  <text x="255" y="220" text-anchor="middle" fill="#1565c0" font-size="10">R</text>
+  <text x="310" y="200" fill="#333" font-size="10">→ wave direction</text>
+  <defs>
+    <marker id="arrTv" markerwidth="8" markerheight="8" refx="6" refy="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e53935" />
+    </marker>
+    <marker id="arrWd" markerwidth="8" markerheight="8" refx="6" refy="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#388e3c" />
+    </marker>
+  </defs>
+</svg>
+<hr>
+<h2 id="143-characteristics-of-a-wave"><a class="header" href="#143-characteristics-of-a-wave">14.3 Characteristics of a Wave</a></h2>
+<ul>
+<li><strong>Wavelength (\(\lambda\))</strong>: Distance between two consecutive points in the same phase (m)</li>
+<li><strong>Amplitude (A)</strong>: Maximum displacement from equilibrium</li>
+<li><strong>Frequency (f)</strong>: Number of oscillations per second (Hz)</li>
+<li><strong>Time period (T)</strong>: \(T = 1/f\)</li>
+<li><strong>Wave speed (v)</strong>: \(v = \lambda f = \lambda/T\)</li>
+<li><strong>Wave number (k)</strong>: \(k = 2\pi/\lambda\)</li>
+<li><strong>Angular frequency</strong>: \(\omega = 2\pi f\)</li>
+</ul>
+<hr>
+<h2 id="144-displacement-relation-for-a-progressive-wave"><a class="header" href="#144-displacement-relation-for-a-progressive-wave">14.4 Displacement Relation for a Progressive Wave</a></h2>
+<p>A plane progressive (travelling) wave moving in +x direction:</p>
+<p>\[
+y(x, t) = A\sin(kx - \omega t + \phi)
+\]</p>
+<p>where:</p>
+<ul>
+<li>\(k = \dfrac{2\pi}{\lambda}\) (wave number)</li>
+<li>\(\omega = 2\pi f\) (angular frequency)</li>
+<li>\(\phi\) = initial phase</li>
+</ul>
+<p><strong>Wave speed:</strong></p>
+<p>\[
+v = \frac{\omega}{k} = \frac{\lambda}{T} = f\lambda
+\]</p>
+<hr>
+<h2 id="145-speed-of-different-waves"><a class="header" href="#145-speed-of-different-waves">14.5 Speed of Different Waves</a></h2>
+<h3 id="speed-of-transverse-wave-in-a-string"><a class="header" href="#speed-of-transverse-wave-in-a-string">Speed of Transverse Wave in a String</a></h3>
+<p>\[
+v = \sqrt{\frac{T}{\mu}}
+\]</p>
+<p>where \(T\) = tension, \(\mu\) = linear mass density (kg/m)</p>
+<h3 id="speed-of-sound-in-a-medium-newton-laplace"><a class="header" href="#speed-of-sound-in-a-medium-newton-laplace">Speed of Sound in a Medium (Newton-Laplace)</a></h3>
+<p>\[
+v = \sqrt{\frac{B}{\rho}}
+\]</p>
+<p>For ideal gas (\(v_{sound}\)):</p>
+<p>\[
+v = \sqrt{\frac{\gamma P}{\rho}} = \sqrt{\frac{\gamma RT}{M}}
+\]</p>
+<p>At 0°C, \(v_{sound} \approx 332 \text{ m/s}\) in air; at 27°C, \(\approx 347 \text{ m/s}\)</p>
+<hr>
+<h2 id="146-principle-of-superposition"><a class="header" href="#146-principle-of-superposition">14.6 Principle of Superposition</a></h2>
+<p>When two or more waves overlap, the resultant displacement at any point is the <strong>algebraic sum</strong> of their individual displacements:</p>
+<p>\[
+y = y_1 + y_2
+\]</p>
+<hr>
+<h2 id="147-reflection-of-waves"><a class="header" href="#147-reflection-of-waves">14.7 Reflection of Waves</a></h2>
+<ul>
+<li><strong>At a rigid boundary (closed end)</strong>: Wave is reflected with a <strong>phase change of π</strong> (inversion).</li>
+<li><strong>At a free end (open end)</strong>: Wave is reflected <strong>without phase change</strong> (crest reflects as crest).</li>
+</ul>
+<hr>
+<h2 id="148-standing-stationary-waves"><a class="header" href="#148-standing-stationary-waves">14.8 Standing (Stationary) Waves</a></h2>
+<p>When two identical waves travel in opposite directions, they interfere to form <strong>standing waves</strong>.</p>
+<p>\[
+y = 2A\cos(kx)\sin(\omega t)
+\]</p>
+<ul>
+<li><strong>Nodes</strong>: Points of zero displacement: \(kx = n\pi\) (\(n\) = integer)</li>
+<li><strong>Antinodes</strong>: Points of maximum displacement: \(kx = (2n+1)\frac{\pi}{2}\)</li>
+</ul>
+<p>Adjacent nodes are separated by \(\lambda/2\).</p>
+<hr>
+<h2 id="149-standing-waves-in-strings-stretched-string-fixed-at-both-ends"><a class="header" href="#149-standing-waves-in-strings-stretched-string-fixed-at-both-ends">14.9 Standing Waves in Strings (Stretched String Fixed at Both Ends)</a></h2>
+<svg viewbox="0 0 500 260" width="500" height="260" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="12">
+  <rect width="500" height="260" fill="#f8f9ff" rx="8" />
+  <text x="250" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a237e">Harmonics in a Stretched String</text>
+  <!-- Fixed ends markers -->
+  <rect x="30" y="60" width="8" height="180" fill="#795548" rx="2" />
+  <rect x="462" y="60" width="8" height="180" fill="#795548" rx="2" />
+  <!-- Fundamental (n=1): half wave -->
+  <path d="M 38 100 Q 250 55 462 100" fill="none" stroke="#1565c0" stroke-width="2.5" />
+  <path d="M 38 100 Q 250 145 462 100" fill="none" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,3" />
+  <text x="480" y="104" fill="#1565c0" font-size="11">n=1 (f₁)</text>
+  <!-- 2nd harmonic (n=2): full wave -->
+  <path d="M 38 155 Q 155 120 250 155 Q 350 190 462 155" fill="none" stroke="#e53935" stroke-width="2.5" />
+  <path d="M 38 155 Q 155 190 250 155 Q 350 120 462 155" fill="none" stroke="#e53935" stroke-width="1.5" stroke-dasharray="4,3" />
+  <text x="480" y="159" fill="#e53935" font-size="11">n=2 (f₂=2f₁)</text>
+  <!-- 3rd harmonic (n=3) -->
+  <path d="M 38 210 Q 120 185 200 210 Q 250 230 300 210 Q 380 185 462 210" fill="none" stroke="#388e3c" stroke-width="2.5" />
+  <text x="480" y="214" fill="#388e3c" font-size="11">n=3 (f₃=3f₁)</text>
+  <!-- Labels N A N -->
+  <text x="38" y="248" text-anchor="middle" fill="#333" font-size="10">N</text>
+  <text x="250" y="50" text-anchor="middle" fill="#1565c0" font-size="10">A</text>
+  <text x="462" y="248" text-anchor="middle" fill="#333" font-size="10">N</text>
+  <!-- L label -->
+  <line x1="38" y1="240" x2="462" y2="240" stroke="#333" stroke-width="1" />
+  <text x="250" y="255" text-anchor="middle" fill="#333" font-size="11">L</text>
+</svg>
+<p><strong>Harmonics for string (both ends fixed):</strong></p>
+<p>\[
+\lambda_n = \frac{2L}{n}, \quad f_n = n\frac{v}{2L} = nf_1 \quad (n = 1, 2, 3, …)
+\]</p>
+<p><strong>Fundamental frequency:</strong></p>
+<p>\[
+f_1 = \frac{1}{2L}\sqrt{\frac{T}{\mu}}
+\]</p>
+<hr>
+<h2 id="1410-standing-waves-in-air-columns"><a class="header" href="#1410-standing-waves-in-air-columns">14.10 Standing Waves in Air Columns</a></h2>
+<h3 id="open-pipe-open-at-both-ends"><a class="header" href="#open-pipe-open-at-both-ends">Open Pipe (Open at Both Ends)</a></h3>
+<p>Both ends are antinodes:</p>
+<p>\[
+f_n = n\frac{v}{2L} \quad (n = 1, 2, 3, …)
+\]</p>
+<p>All harmonics are present.</p>
+<h3 id="closed-pipe-closed-at-one-end"><a class="header" href="#closed-pipe-closed-at-one-end">Closed Pipe (Closed at One End)</a></h3>
+<p>Closed end → node, open end → antinode:</p>
+<p>\[
+f_n = (2n-1)\frac{v}{4L} \quad (n = 1, 2, 3, …)
+\]</p>
+<p>Only <strong>odd harmonics</strong> are present.</p>
+<hr>
+<h2 id="1411-beats"><a class="header" href="#1411-beats">14.11 Beats</a></h2>
+<p>When two sound waves of slightly different frequencies \(f_1\) and \(f_2\) interfere:</p>
+<p>\[
+\text{Beat frequency} = |f_1 - f_2|
+\]</p>
+<hr>
+<h2 id="1412-doppler-effect"><a class="header" href="#1412-doppler-effect">14.12 Doppler Effect</a></h2>
+<p>The <strong>Doppler effect</strong> is the change in observed frequency due to relative motion between source and observer.</p>
+<p>\[
+f_{obs} = f_0\left(\frac{v + v_o}{v - v_s}\right)
+\]</p>
+<p>where:</p>
+<ul>
+<li>\(v\) = speed of sound in medium</li>
+<li>\(v_o\) = speed of observer (+ if moving towards source)</li>
+<li>\(v_s\) = speed of source (+ if moving towards observer)</li>
+</ul>
+<hr>
+<h2 id="key-formulas-summary"><a class="header" href="#key-formulas-summary">Key Formulas Summary</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Formula</th><th>Quantity</th></tr>
+</thead>
+<tbody>
+<tr><td>\(v = f\lambda\)</td><td>Wave speed</td></tr>
+<tr><td>\(y = A\sin(kx - \omega t)\)</td><td>Progressive wave</td></tr>
+<tr><td>\(v = \sqrt{T/\mu}\)</td><td>Speed in string</td></tr>
+<tr><td>\(v = \sqrt{\gamma RT/M}\)</td><td>Speed of sound in gas</td></tr>
+<tr><td>\(f_n = nv/(2L)\)</td><td>Harmonics in string / open pipe</td></tr>
+<tr><td>\(f_n = (2n-1)v/(4L)\)</td><td>Harmonics in closed pipe</td></tr>
+<tr><td>Beat freq = \(|f_1 - f_2|\)</td><td>Beats</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="section-a--mcq-1-mark-each"><a class="header" href="#section-a--mcq-1-mark-each">Section A – MCQ (1 mark each)</a></h3>
+<p><strong>Q1.</strong> A wave of frequency 500 Hz travels at 340 m/s. Its wavelength is:</p>
+<p>(a) 0.68 m   (b) 0.34 m   (c) 1.7 m   (d) 170 m</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(a) 0.68 m</strong> — \(\lambda = v/f = 340/500 = 0.68 \text{ m}\)</p>
+</details>
+<hr>
+<p><strong>Q2.</strong> The closed organ pipe produces harmonics in the ratio:</p>
+<p>(a) 1:2:3   (b) 1:3:5   (c) 2:4:6   (d) 1:2:4</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(b) 1:3:5</strong> — only odd harmonics (\(f, 3f, 5f, …\))</p>
+</details>
+<hr>
+<p><strong>Q3.</strong> Two sound waves of frequencies 256 Hz and 260 Hz are sounded together. The number of beats heard per second is:</p>
+<p>(a) 2   (b) 4   (c) 8   (d) 516</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(b) 4</strong> — Beat frequency = \(|260 - 256| = 4\) Hz.</p>
+</details>
+<hr>
+<h3 id="section-b--short-answer-23-marks"><a class="header" href="#section-b--short-answer-23-marks">Section B – Short Answer (2–3 marks)</a></h3>
+<p><strong>Q4.</strong> A string of length 0.5 m is fixed at both ends and vibrates in its fundamental mode. If the speed of the wave in the string is 120 m/s, find the frequency.</p>
+<details>
+<summary>Answer</summary>
+<p>\(f_1 = \dfrac{v}{2L} = \dfrac{120}{2 \times 0.5} = \dfrac{120}{1} = \mathbf{120 \text{ Hz}}\)</p>
+</details>
+<hr>
+<p><strong>Q5.</strong> Explain why sound travels faster in summer than in winter.</p>
+<details>
+<summary>Answer</summary>
+<p>Speed of sound in air: \(v = \sqrt{\dfrac{\gamma RT}{M}}\)</p>
+<p>In summer, temperature \(T\) is higher → \(v\) is greater.</p>
+<p>In winter, temperature is lower → \(v\) is smaller.</p>
+<p>Hence <strong>sound travels faster in summer</strong>.</p>
+<p>Quantitatively: \(v \propto \sqrt{T}\); for every 1°C rise in temperature, speed increases by approximately 0.61 m/s.</p>
+</details>
+<hr>
+<h3 id="section-d--competency-based-questions"><a class="header" href="#section-d--competency-based-questions">Section D – Competency-Based Questions</a></h3>
+<p><strong>Q6.</strong> <em>(Case Study)</em> An ambulance is approaching a stationary observer at 20 m/s with its siren blowing at 1000 Hz. Speed of sound = 340 m/s.</p>
+<p>(i) What frequency does the observer hear as the ambulance approaches?</p>
+<p>(ii) What frequency does the observer hear as the ambulance moves away (at the same speed)?</p>
+<p>(iii) Explain the Doppler effect using the compression and stretching of wave fronts.</p>
+<p>(iv) State one application of the Doppler effect in medicine.</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(i)</strong> Source approaches, observer stationary (\(v_o = 0\), \(v_s = 20\)):</p>
+<p>\[
+f_{obs} = f_0\frac{v}{v - v_s} = 1000 \times \frac{340}{340 - 20} = 1000 \times \frac{340}{320} \approx \mathbf{1063 \text{ Hz}}
+\]</p>
+<p><strong>(ii)</strong> Source moves away:</p>
+<p>\[
+f_{obs} = f_0\frac{v}{v + v_s} = 1000 \times \frac{340}{360} \approx \mathbf{944 \text{ Hz}}
+\]</p>
+<p><strong>(iii)</strong> As the source approaches, it “catches up” with previously emitted waves, <strong>compressing</strong> them → wavelength decreases → frequency increases. As it moves away, waves are <strong>stretched</strong> → frequency decreases.</p>
+<p><strong>(iv)</strong> <strong>Echocardiography / Doppler ultrasound</strong> — measures blood flow velocity by detecting the Doppler shift in reflected ultrasound waves. Used to detect blockages, measure heart function.</p>
+</details>
+<hr>
+<p><strong>Q7.</strong> <em>(Assertion-Reason)</em> <strong>Assertion (A):</strong> Standing waves do not transport energy from one place to another.</p>
+<p><strong>Reason (R):</strong> In standing waves, the nodes are stationary and there is no net flow of energy.</p>
+<p>(a) Both A and R true; R explains A</p>
+<p>(b) Both A and R true; R does not explain A</p>
+<p>(c) A true; R false</p>
+<p>(d) A false; R true</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(a)</strong> Both are true and R correctly explains A. In standing waves, energy oscillates between KE (at antinodes) and PE (at nodes) but is not transported from one point to another.</p>
+</details>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_13.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_13.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
