@@ -1,0 +1,943 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Chapter 2: Methods of Enquiry in Psychology - Psychology – Class XI (CBSE 2025-26)</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="A comprehensive Class 11 Psychology book aligned with the CBSE 2025-26 syllabus, featuring competency-based questions, SVG diagrams, and LaTeX support.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-a1798000.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-9cb917e4.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Psychology – Class XI (CBSE 2025-26)</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-2-methods-of-enquiry-in-psychology"><a class="header" href="#chapter-2-methods-of-enquiry-in-psychology">Chapter 2: Methods of Enquiry in Psychology</a></h1>
+<p><strong>Unit II – Methods of Enquiry in Psychology (13 Marks)</strong></p>
+<hr>
+<h2 id="21-introduction"><a class="header" href="#21-introduction">2.1 Introduction</a></h2>
+<p>Psychology is an <strong>empirical discipline</strong> — its conclusions are based on evidence gathered through systematic observation and experimentation, not armchair speculation. This chapter explores the <strong>goals</strong>, <strong>methods</strong>, and <strong>ethical principles</strong> that guide psychological research.</p>
+<hr>
+<h2 id="22-goals-of-psychological-enquiry"><a class="header" href="#22-goals-of-psychological-enquiry">2.2 Goals of Psychological Enquiry</a></h2>
+<p>Every scientific investigation in psychology is guided by four broad goals:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Goal</th><th>Question It Answers</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Description</strong></td><td><em>What</em> is happening?</td><td>“Students who sleep fewer than 6 hours report more anxiety.”</td></tr>
+<tr><td><strong>Prediction</strong></td><td><em>When</em> will it happen?</td><td>“If sleep drops below 6 hours, anxiety scores will increase.”</td></tr>
+<tr><td><strong>Explanation</strong></td><td><em>Why</em> does it happen?</td><td>“Sleep deprivation disrupts serotonin regulation, increasing anxiety.”</td></tr>
+<tr><td><strong>Control</strong></td><td><em>How</em> can we change it?</td><td>“A sleep-hygiene programme reduces anxiety in students.”</td></tr>
+</tbody>
+</table>
+</div>
+<svg viewbox="0 0 600 200" width="600" height="200" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="12">
+  <rect width="600" height="200" fill="#e8f5e9" rx="10" />
+  <text x="300" y="25" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b5e20">Goals of Psychological Enquiry</text>
+  <!-- Boxes -->
+  <rect x="20" y="50" width="120" height="55" rx="8" fill="#a5d6a7" stroke="#2e7d32" stroke-width="1.5" />
+  <text x="80" y="72" text-anchor="middle" font-weight="bold" fill="#1b5e20">Description</text>
+  <text x="80" y="92" text-anchor="middle" font-size="10" fill="#333">What?</text>
+  <rect x="165" y="50" width="120" height="55" rx="8" fill="#81c784" stroke="#2e7d32" stroke-width="1.5" />
+  <text x="225" y="72" text-anchor="middle" font-weight="bold" fill="#1b5e20">Prediction</text>
+  <text x="225" y="92" text-anchor="middle" font-size="10" fill="#333">When?</text>
+  <rect x="310" y="50" width="120" height="55" rx="8" fill="#66bb6a" stroke="#2e7d32" stroke-width="1.5" />
+  <text x="370" y="72" text-anchor="middle" font-weight="bold" fill="#fff">Explanation</text>
+  <text x="370" y="92" text-anchor="middle" font-size="10" fill="#fff">Why?</text>
+  <rect x="455" y="50" width="120" height="55" rx="8" fill="#43a047" stroke="#2e7d32" stroke-width="1.5" />
+  <text x="515" y="72" text-anchor="middle" font-weight="bold" fill="#fff">Control</text>
+  <text x="515" y="92" text-anchor="middle" font-size="10" fill="#fff">How?</text>
+  <!-- Arrows -->
+<p><defs><marker id="a2" markerwidth="8" markerheight="8" refx="6" refy="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#2e7d32" /></marker></defs>
+<line x1="140" y1="77" x2="163" y2="77" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#a2)" />
+<line x1="285" y1="77" x2="308" y2="77" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#a2)" />
+<line x1="430" y1="77" x2="453" y2="77" stroke="#2e7d32" stroke-width="1.5" marker-end="url(#a2)" /></p>
+  <!-- Bottom label -->
+<p><text x="300" y="140" text-anchor="middle" font-size="11" fill="#555">From basic observation → to applied intervention</text>
+<text x="300" y="180" text-anchor="middle" font-size="11" fill="#555" font-style="italic">Fig 2.1 – The four goals of psychological enquiry</text>
+</p>
+<h3 id="221-steps-in-conducting-scientific-research"><a class="header" href="#221-steps-in-conducting-scientific-research">2.2.1 Steps in Conducting Scientific Research</a></h3>
+<p>Scientific research in psychology follows a systematic sequence:</p>
+<ol>
+<li><strong>Conceptualising the problem</strong> — Identify a question or gap in knowledge</li>
+<li><strong>Formulating a hypothesis</strong> — A testable prediction about the relationship between variables</li>
+<li><strong>Choosing a research design</strong> — Select the appropriate method (experiment, survey, etc.)</li>
+<li><strong>Collecting data</strong> — Gather information using tools like questionnaires, observations, tests</li>
+<li><strong>Analysing data</strong> — Use statistical or qualitative analysis to interpret results</li>
+<li><strong>Drawing conclusions</strong> — Determine whether the hypothesis is supported</li>
+<li><strong>Reporting findings</strong> — Publish or present the results for peer review</li>
+</ol>
+<blockquote>
+<p><strong>Hypothesis:</strong> A tentative and testable statement about the expected relationship between two or more variables.</p>
+</blockquote>
+<h3 id="222-alternative-paradigms-of-research"><a class="header" href="#222-alternative-paradigms-of-research">2.2.2 Alternative Paradigms of Research</a></h3>
+<p>Psychological research can follow different paradigms:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Paradigm</th><th>Approach</th><th>Focus</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Positivist / Quantitative</strong></td><td>Objective measurement, experiments, statistical analysis</td><td>Generalisation, cause-and-effect</td></tr>
+<tr><td><strong>Constructivist / Qualitative</strong></td><td>Subjective experience, interviews, narrative analysis</td><td>Meaning, context, individual perspective</td></tr>
+<tr><td><strong>Mixed Methods</strong></td><td>Combines quantitative and qualitative approaches</td><td>Rich, multi-faceted understanding</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="23-nature-of-psychological-data"><a class="header" href="#23-nature-of-psychological-data">2.3 Nature of Psychological Data</a></h2>
+<p><strong>Data</strong> in psychology refers to any information collected systematically that is relevant to the research question.</p>
+<h3 id="types-of-data"><a class="header" href="#types-of-data">Types of Data</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Description</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Demographic</strong></td><td>Background characteristics</td><td>Age, gender, education, socio-economic status</td></tr>
+<tr><td><strong>Physical</strong></td><td>Bodily or physiological information</td><td>Heart rate, brain scans (EEG, fMRI)</td></tr>
+<tr><td><strong>Physiological</strong></td><td>Internal body processes</td><td>Hormone levels, galvanic skin response</td></tr>
+<tr><td><strong>Psychological</strong></td><td>Mental processes and behaviour</td><td>Intelligence scores, attitudes, personality traits</td></tr>
+<tr><td><strong>Environmental</strong></td><td>Contextual or situational information</td><td>Location, time, cultural context</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="24-some-important-methods-in-psychology"><a class="header" href="#24-some-important-methods-in-psychology">2.4 Some Important Methods in Psychology</a></h2>
+<svg viewbox="0 0 700 340" width="700" height="340" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="12">
+  <rect width="700" height="340" fill="#ede7f6" rx="12" />
+  <text x="350" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#4a148c">Research Methods in Psychology</text>
+  <!-- Row 1 -->
+  <rect x="20" y="50" width="200" height="65" rx="8" fill="#d1c4e9" stroke="#7b1fa2" stroke-width="1.5" />
+  <text x="120" y="72" text-anchor="middle" font-weight="bold" fill="#4a148c">Observation</text>
+  <text x="120" y="88" text-anchor="middle" font-size="10" fill="#333">Naturalistic / Participant</text>
+  <text x="120" y="102" text-anchor="middle" font-size="10" fill="#333">Watch &amp; record behaviour</text>
+  <rect x="250" y="50" width="200" height="65" rx="8" fill="#d1c4e9" stroke="#7b1fa2" stroke-width="1.5" />
+  <text x="350" y="72" text-anchor="middle" font-weight="bold" fill="#4a148c">Experiment</text>
+  <text x="350" y="88" text-anchor="middle" font-size="10" fill="#333">IV → DV; control group</text>
+  <text x="350" y="102" text-anchor="middle" font-size="10" fill="#333">Cause &amp; effect</text>
+  <rect x="480" y="50" width="200" height="65" rx="8" fill="#d1c4e9" stroke="#7b1fa2" stroke-width="1.5" />
+  <text x="580" y="72" text-anchor="middle" font-weight="bold" fill="#4a148c">Correlation</text>
+  <text x="580" y="88" text-anchor="middle" font-size="10" fill="#333">Relationship between</text>
+  <text x="580" y="102" text-anchor="middle" font-size="10" fill="#333">two variables (no causation)</text>
+  <!-- Row 2 -->
+  <rect x="20" y="140" width="200" height="65" rx="8" fill="#c5cae9" stroke="#283593" stroke-width="1.5" />
+  <text x="120" y="162" text-anchor="middle" font-weight="bold" fill="#1a237e">Survey</text>
+  <text x="120" y="178" text-anchor="middle" font-size="10" fill="#333">Questionnaires, interviews</text>
+  <text x="120" y="192" text-anchor="middle" font-size="10" fill="#333">Large samples</text>
+  <rect x="250" y="140" width="200" height="65" rx="8" fill="#c5cae9" stroke="#283593" stroke-width="1.5" />
+  <text x="350" y="162" text-anchor="middle" font-weight="bold" fill="#1a237e">Psychological Testing</text>
+  <text x="350" y="178" text-anchor="middle" font-size="10" fill="#333">Standardised tests</text>
+  <text x="350" y="192" text-anchor="middle" font-size="10" fill="#333">IQ, personality measures</text>
+  <rect x="480" y="140" width="200" height="65" rx="8" fill="#c5cae9" stroke="#283593" stroke-width="1.5" />
+  <text x="580" y="162" text-anchor="middle" font-weight="bold" fill="#1a237e">Case Study</text>
+  <text x="580" y="178" text-anchor="middle" font-size="10" fill="#333">In-depth study of one</text>
+  <text x="580" y="192" text-anchor="middle" font-size="10" fill="#333">individual or small group</text>
+<p><text x="350" y="260" text-anchor="middle" font-size="11" fill="#555" font-style="italic">Fig 2.2 – Overview of major research methods</text>
+</p>
+<h3 id="241-observational-method"><a class="header" href="#241-observational-method">2.4.1 Observational Method</a></h3>
+<p><strong>Observation</strong> involves systematically watching and recording behaviour as it naturally occurs (or in controlled settings).</p>
+<h4 id="types-of-observation"><a class="header" href="#types-of-observation">Types of Observation</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Type</th><th>Description</th><th>Advantage</th><th>Limitation</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Naturalistic</strong></td><td>Behaviour is observed in its natural setting without interference</td><td>High ecological validity (real-life behaviour)</td><td>No control over variables; observer bias</td></tr>
+<tr><td><strong>Participant</strong></td><td>Observer becomes part of the group being studied</td><td>Deeper insight into the group</td><td>Risk of loss of objectivity</td></tr>
+<tr><td><strong>Non-participant</strong></td><td>Observer watches from outside without joining the group</td><td>Greater objectivity</td><td>May miss subtle dynamics</td></tr>
+<tr><td><strong>Controlled</strong></td><td>Observation in a laboratory or structured setting</td><td>Greater control; can be replicated</td><td>Behaviour may be artificial</td></tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p><strong>Key Concern:</strong> <strong>Observer bias</strong> — the observer’s expectations or beliefs may influence what is noticed and recorded.</p>
+</blockquote>
+<h3 id="242-experimental-method"><a class="header" href="#242-experimental-method">2.4.2 Experimental Method</a></h3>
+<p>The experimental method is the most <strong>controlled</strong> and <strong>rigorous</strong> method in psychology. It aims to establish <strong>cause-and-effect</strong> relationships.</p>
+<h4 id="key-terms"><a class="header" href="#key-terms">Key Terms</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Term</th><th>Definition</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Independent Variable (IV)</strong></td><td>The variable that the researcher <strong>manipulates</strong></td></tr>
+<tr><td><strong>Dependent Variable (DV)</strong></td><td>The variable that is <strong>measured</strong> (the outcome)</td></tr>
+<tr><td><strong>Extraneous Variable</strong></td><td>Any variable other than the IV that might affect the DV</td></tr>
+<tr><td><strong>Control Group</strong></td><td>The group that does <strong>not</strong> receive the experimental treatment</td></tr>
+<tr><td><strong>Experimental Group</strong></td><td>The group that <strong>receives</strong> the treatment</td></tr>
+</tbody>
+</table>
+</div>
+<h4 id="steps-in-an-experiment"><a class="header" href="#steps-in-an-experiment">Steps in an Experiment</a></h4>
+<svg viewbox="0 0 680 180" width="680" height="180" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="11">
+  <rect width="680" height="180" fill="#fff3e0" rx="10" />
+  <text x="340" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">Steps in an Experiment</text>
+  <defs><marker id="a3" markerwidth="8" markerheight="8" refx="6" refy="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#e65100" /></marker></defs>
+  <rect x="10" y="45" width="100" height="50" rx="6" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5" />
+  <text x="60" y="65" text-anchor="middle" font-size="10" fill="#bf360c">Formulate</text>
+  <text x="60" y="78" text-anchor="middle" font-size="10" fill="#bf360c">Hypothesis</text>
+  <line x1="110" y1="70" x2="130" y2="70" stroke="#e65100" stroke-width="1.5" marker-end="url(#a3)" />
+  <rect x="132" y="45" width="100" height="50" rx="6" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5" />
+  <text x="182" y="65" text-anchor="middle" font-size="10" fill="#bf360c">Identify</text>
+  <text x="182" y="78" text-anchor="middle" font-size="10" fill="#bf360c">IV &amp; DV</text>
+  <line x1="232" y1="70" x2="252" y2="70" stroke="#e65100" stroke-width="1.5" marker-end="url(#a3)" />
+  <rect x="254" y="45" width="100" height="50" rx="6" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5" />
+  <text x="304" y="65" text-anchor="middle" font-size="10" fill="#bf360c">Assign</text>
+  <text x="304" y="78" text-anchor="middle" font-size="10" fill="#bf360c">Groups</text>
+  <line x1="354" y1="70" x2="374" y2="70" stroke="#e65100" stroke-width="1.5" marker-end="url(#a3)" />
+  <rect x="376" y="45" width="100" height="50" rx="6" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5" />
+  <text x="426" y="65" text-anchor="middle" font-size="10" fill="#bf360c">Conduct</text>
+  <text x="426" y="78" text-anchor="middle" font-size="10" fill="#bf360c">Experiment</text>
+  <line x1="476" y1="70" x2="496" y2="70" stroke="#e65100" stroke-width="1.5" marker-end="url(#a3)" />
+  <rect x="498" y="45" width="100" height="50" rx="6" fill="#ffe0b2" stroke="#e65100" stroke-width="1.5" />
+  <text x="548" y="65" text-anchor="middle" font-size="10" fill="#bf360c">Analyse</text>
+  <text x="548" y="78" text-anchor="middle" font-size="10" fill="#bf360c">Results</text>
+  <line x1="598" y1="70" x2="610" y2="70" stroke="#e65100" stroke-width="1.5" marker-end="url(#a3)" />
+  <rect x="612" y="45" width="60" height="50" rx="6" fill="#ff9800" stroke="#e65100" stroke-width="1.5" />
+  <text x="642" y="65" text-anchor="middle" font-size="10" fill="#fff">Draw</text>
+  <text x="642" y="78" text-anchor="middle" font-size="10" fill="#fff">Conclusion</text>
+<p><text x="340" y="140" text-anchor="middle" font-size="11" fill="#555" font-style="italic">Fig 2.3 – Steps in the experimental method</text>
+</p>
+<blockquote>
+<p><strong>Example:</strong> To test whether classical music improves concentration:</p>
+<ul>
+<li><strong>IV:</strong> Type of background music (classical vs. no music)</li>
+<li><strong>DV:</strong> Score on a concentration test</li>
+<li><strong>Experimental group:</strong> Listens to classical music while taking the test</li>
+<li><strong>Control group:</strong> Takes the test in silence</li>
+<li>If the experimental group scores significantly higher, we can infer a causal relationship.</li>
+</ul>
+</blockquote>
+<h4 id="strengths-and-limitations"><a class="header" href="#strengths-and-limitations">Strengths and Limitations</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Strengths</th><th>Limitations</th></tr>
+</thead>
+<tbody>
+<tr><td>Establishes cause-and-effect</td><td>Artificial setting may reduce ecological validity</td></tr>
+<tr><td>High degree of control</td><td>Demand characteristics (participants behave differently when observed)</td></tr>
+<tr><td>Can be replicated</td><td>Ethical issues with manipulation</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="243-correlational-research"><a class="header" href="#243-correlational-research">2.4.3 Correlational Research</a></h3>
+<p><strong>Correlational research</strong> examines the <strong>relationship</strong> between two variables without manipulating either one.</p>
+<ul>
+<li><strong>Positive correlation:</strong> As one variable increases, the other also increases (e.g., study hours and exam scores)</li>
+<li><strong>Negative correlation:</strong> As one variable increases, the other decreases (e.g., stress and immune function)</li>
+<li><strong>Zero correlation:</strong> No systematic relationship between the variables</li>
+</ul>
+<p>The <strong>correlation coefficient</strong> (\(r\)) ranges from \(-1\) to \(+1\):</p>
+<p>\[
+-1 \leq r \leq +1
+\]</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Value of <em>r</em></th><th>Interpretation</th></tr>
+</thead>
+<tbody>
+<tr><td><em>r</em> = +1</td><td>Perfect positive correlation</td></tr>
+<tr><td><em>r</em> = −1</td><td>Perfect negative correlation</td></tr>
+<tr><td><em>r</em> = 0</td><td>No correlation</td></tr>
+<tr><td>0.7 ≤ |<em>r</em>| ≤ 1.0</td><td>Strong correlation</td></tr>
+<tr><td>0.4 ≤ |<em>r</em>| &lt; 0.7</td><td>Moderate correlation</td></tr>
+<tr><td>0 &lt; |<em>r</em>| &lt; 0.4</td><td>Weak correlation</td></tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>⚠️ <strong>Critical Point: Correlation does not imply causation.</strong> Just because two variables are correlated does not mean one causes the other. There may be a <strong>third variable</strong> (confounding variable) responsible for both.</p>
+</blockquote>
+<h3 id="244-survey-research"><a class="header" href="#244-survey-research">2.4.4 Survey Research</a></h3>
+<p>A <strong>survey</strong> collects data from a <strong>large number</strong> of participants using structured instruments.</p>
+<h4 id="tools-used-in-surveys"><a class="header" href="#tools-used-in-surveys">Tools Used in Surveys</a></h4>
+<ul>
+<li><strong>Questionnaires</strong> — Written sets of questions (open-ended or closed-ended)</li>
+<li><strong>Interviews</strong> — Face-to-face or telephonic conversation (structured, semi-structured, or unstructured)</li>
+</ul>
+<h4 id="advantages-and-limitations"><a class="header" href="#advantages-and-limitations">Advantages and Limitations</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Advantages</th><th>Limitations</th></tr>
+</thead>
+<tbody>
+<tr><td>Can reach a large sample quickly</td><td>Responses may be dishonest (social desirability bias)</td></tr>
+<tr><td>Cost-effective</td><td>Question wording can influence responses</td></tr>
+<tr><td>Can study opinions, attitudes, behaviours</td><td>Cannot establish cause-and-effect</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="245-psychological-testing"><a class="header" href="#245-psychological-testing">2.4.5 Psychological Testing</a></h3>
+<p><strong>Psychological tests</strong> are standardised instruments used to measure specific psychological attributes — intelligence, aptitude, personality, attitudes, etc.</p>
+<p>Characteristics of a good psychological test:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Property</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Reliability</strong></td><td>The test gives <strong>consistent</strong> results when repeated</td></tr>
+<tr><td><strong>Validity</strong></td><td>The test <strong>measures what it claims</strong> to measure</td></tr>
+<tr><td><strong>Standardisation</strong></td><td>The test is administered and scored using <strong>uniform procedures</strong></td></tr>
+<tr><td><strong>Norms</strong></td><td>Scores can be compared to a <strong>reference group</strong></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="246-case-study"><a class="header" href="#246-case-study">2.4.6 Case Study</a></h3>
+<p>A <strong>case study</strong> is an <strong>in-depth investigation</strong> of a single individual, group, community, or event.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Feature</th><th>Details</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Sources</strong></td><td>Interviews, observations, documents, diaries, medical records</td></tr>
+<tr><td><strong>Strength</strong></td><td>Rich, detailed, holistic understanding</td></tr>
+<tr><td><strong>Limitation</strong></td><td>Findings may not be generalisable; researcher bias</td></tr>
+<tr><td><strong>Used in</strong></td><td>Clinical psychology, developmental studies, rare disorders</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="25-analysis-of-data"><a class="header" href="#25-analysis-of-data">2.5 Analysis of Data</a></h2>
+<h3 id="251-quantitative-method"><a class="header" href="#251-quantitative-method">2.5.1 Quantitative Method</a></h3>
+<p>Quantitative analysis involves the use of <strong>statistics</strong> to summarise, describe, and draw inferences from numerical data.</p>
+<h4 id="measures-of-central-tendency"><a class="header" href="#measures-of-central-tendency">Measures of Central Tendency</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Measure</th><th>Formula / Method</th><th>When to Use</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Mean</strong> (\(\bar{x}\))</td><td>\(\bar{x} = \dfrac{\sum x_i}{n}\)</td><td>When data is normally distributed; no extreme outliers</td></tr>
+<tr><td><strong>Median</strong></td><td>Middle value when data is arranged in order</td><td>When data has outliers or is skewed</td></tr>
+<tr><td><strong>Mode</strong></td><td>Most frequently occurring value</td><td>For categorical data</td></tr>
+</tbody>
+</table>
+</div>
+<h4 id="measures-of-variability"><a class="header" href="#measures-of-variability">Measures of Variability</a></h4>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Measure</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Range</strong></td><td>Difference between highest and lowest values: \(\text{Range} = X_{\max} - X_{\min}\)</td></tr>
+<tr><td><strong>Standard Deviation</strong> (\(\sigma\))</td><td>Average deviation of scores from the mean</td></tr>
+<tr><td><strong>Variance</strong> (\(\sigma^2\))</td><td>Square of the standard deviation</td></tr>
+</tbody>
+</table>
+</div>
+<p>The <strong>standard deviation</strong> for a sample is:</p>
+<p>\[
+\sigma = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n - 1}}
+\]</p>
+<h3 id="252-qualitative-method"><a class="header" href="#252-qualitative-method">2.5.2 Qualitative Method</a></h3>
+<p>Qualitative analysis is used when data is <strong>non-numerical</strong> — words, narratives, descriptions.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Technique</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Content analysis</strong></td><td>Systematic coding and categorisation of text/media</td></tr>
+<tr><td><strong>Thematic analysis</strong></td><td>Identifying patterns or themes in qualitative data</td></tr>
+<tr><td><strong>Narrative analysis</strong></td><td>Studying personal stories to understand experiences</td></tr>
+<tr><td><strong>Grounded theory</strong></td><td>Building theory from data rather than testing pre-existing ideas</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="26-limitations-of-psychological-enquiry"><a class="header" href="#26-limitations-of-psychological-enquiry">2.6 Limitations of Psychological Enquiry</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Limitation</th><th>Explanation</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Subjectivity</strong></td><td>Human behaviour is complex and influenced by subjective experiences that are difficult to quantify</td></tr>
+<tr><td><strong>Cultural bias</strong></td><td>Findings from one culture may not apply to another</td></tr>
+<tr><td><strong>Participant bias</strong></td><td>Social desirability, demand characteristics</td></tr>
+<tr><td><strong>Ethical constraints</strong></td><td>Certain experiments cannot be done for ethical reasons (e.g., deliberately causing harm)</td></tr>
+<tr><td><strong>Lack of precision</strong></td><td>Psychology cannot achieve the same level of precision as natural sciences</td></tr>
+<tr><td><strong>Unique individual</strong></td><td>Every individual is unique, making perfect generalisation impossible</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="27-ethical-issues"><a class="header" href="#27-ethical-issues">2.7 Ethical Issues</a></h2>
+<p>Ethical guidelines protect the rights and well-being of research participants.</p>
+<h3 id="key-ethical-principles"><a class="header" href="#key-ethical-principles">Key Ethical Principles</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Principle</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Informed consent</strong></td><td>Participants must be told about the study and freely agree to participate</td></tr>
+<tr><td><strong>Confidentiality</strong></td><td>Personal data must be kept private</td></tr>
+<tr><td><strong>Right to withdraw</strong></td><td>Participants can leave the study at any time</td></tr>
+<tr><td><strong>Debriefing</strong></td><td>After the study, participants are told the true purpose (especially if deception was used)</td></tr>
+<tr><td><strong>No harm</strong></td><td>Participants should not be physically or psychologically harmed</td></tr>
+<tr><td><strong>Deception</strong></td><td>Should be avoided; if used, it must be justified and followed by debriefing</td></tr>
+<tr><td><strong>Competence</strong></td><td>Researchers must be trained and qualified</td></tr>
+</tbody>
+</table>
+</div>
+<svg viewbox="0 0 500 320" width="500" height="320" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="12">
+  <rect width="500" height="320" fill="#fce4ec" rx="10" />
+  <text x="250" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#880e4f">Ethical Principles in Psychological Research</text>
+  <!-- Shield icon -->
+  <circle cx="250" cy="100" r="40" fill="#f8bbd0" stroke="#c2185b" stroke-width="2" />
+  <text x="250" y="96" text-anchor="middle" font-size="24" fill="#880e4f">🛡️</text>
+  <text x="250" y="118" text-anchor="middle" font-size="10" fill="#880e4f" font-weight="bold">ETHICS</text>
+  <!-- Spokes -->
+  <line x1="210" y1="90" x2="100" y2="60" stroke="#c2185b" stroke-width="1" />
+  <line x1="290" y1="90" x2="400" y2="60" stroke="#c2185b" stroke-width="1" />
+  <line x1="210" y1="110" x2="80" y2="170" stroke="#c2185b" stroke-width="1" />
+  <line x1="290" y1="110" x2="420" y2="170" stroke="#c2185b" stroke-width="1" />
+  <line x1="250" y1="140" x2="250" y2="200" stroke="#c2185b" stroke-width="1" />
+  <line x1="220" y1="130" x2="120" y2="240" stroke="#c2185b" stroke-width="1" />
+  <line x1="280" y1="130" x2="380" y2="240" stroke="#c2185b" stroke-width="1" />
+  <!-- Labels -->
+  <rect x="25" y="43" width="110" height="30" rx="5" fill="#f48fb1" stroke="#c2185b" stroke-width="1" />
+  <text x="80" y="63" text-anchor="middle" font-size="10" fill="#fff">Informed Consent</text>
+  <rect x="355" y="43" width="110" height="30" rx="5" fill="#f48fb1" stroke="#c2185b" stroke-width="1" />
+  <text x="410" y="63" text-anchor="middle" font-size="10" fill="#fff">Confidentiality</text>
+  <rect x="10" y="155" width="110" height="30" rx="5" fill="#f48fb1" stroke="#c2185b" stroke-width="1" />
+  <text x="65" y="175" text-anchor="middle" font-size="10" fill="#fff">Right to Withdraw</text>
+  <rect x="370" y="155" width="110" height="30" rx="5" fill="#f48fb1" stroke="#c2185b" stroke-width="1" />
+  <text x="425" y="175" text-anchor="middle" font-size="10" fill="#fff">Debriefing</text>
+  <rect x="195" y="200" width="110" height="30" rx="5" fill="#f48fb1" stroke="#c2185b" stroke-width="1" />
+  <text x="250" y="220" text-anchor="middle" font-size="10" fill="#fff">No Harm</text>
+  <rect x="55" y="225" width="110" height="30" rx="5" fill="#f48fb1" stroke="#c2185b" stroke-width="1" />
+  <text x="110" y="245" text-anchor="middle" font-size="10" fill="#fff">Min. Deception</text>
+  <rect x="330" y="225" width="110" height="30" rx="5" fill="#f48fb1" stroke="#c2185b" stroke-width="1" />
+  <text x="385" y="245" text-anchor="middle" font-size="10" fill="#fff">Competence</text>
+  <text x="250" y="300" text-anchor="middle" font-size="11" fill="#555" font-style="italic">Fig 2.4 – Key ethical principles in psychological research</text>
+</svg>
+<hr>
+<h2 id="key-terms-summary"><a class="header" href="#key-terms-summary">Key Terms Summary</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Term</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Hypothesis</strong></td><td>Testable prediction about the relationship between variables</td></tr>
+<tr><td><strong>Variable</strong></td><td>Any characteristic that can take different values</td></tr>
+<tr><td><strong>Independent Variable</strong></td><td>The variable manipulated by the researcher</td></tr>
+<tr><td><strong>Dependent Variable</strong></td><td>The variable measured as the outcome</td></tr>
+<tr><td><strong>Sample</strong></td><td>A subset of the population selected for study</td></tr>
+<tr><td><strong>Population</strong></td><td>The entire group to which findings are to be generalised</td></tr>
+<tr><td><strong>Reliability</strong></td><td>Consistency of a test’s results</td></tr>
+<tr><td><strong>Validity</strong></td><td>Whether a test measures what it claims to measure</td></tr>
+<tr><td><strong>Correlation coefficient</strong></td><td>A number between −1 and +1 indicating the strength and direction of a relationship</td></tr>
+<tr><td><strong>Standard deviation</strong></td><td>A measure of the spread of scores around the mean</td></tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="practice-questions"><a class="header" href="#practice-questions">Practice Questions</a></h2>
+<h3 id="section-a--multiple-choice-questions-1-mark-each"><a class="header" href="#section-a--multiple-choice-questions-1-mark-each">Section A – Multiple Choice Questions (1 mark each)</a></h3>
+<p><strong>Q1.</strong> Which research method is best suited to establish a cause-and-effect relationship?</p>
+<p>(a) Survey   (b) Case study   (c) Experiment   (d) Observation</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(c) Experiment</strong></p>
+<p>Only the experimental method, with its controlled manipulation of the independent variable and random assignment to groups, can establish cause-and-effect relationships.</p>
+</details>
+<hr>
+<p><strong>Q2.</strong> A correlation coefficient of \(r = -0.85\) indicates:</p>
+<p>(a) A weak positive relationship   (b) No relationship   (c) A strong negative relationship   (d) A moderate positive relationship</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(c) A strong negative relationship</strong></p>
+<p>The magnitude \(|r| = 0.85\) indicates a strong relationship. The negative sign means that as one variable increases, the other decreases.</p>
+</details>
+<hr>
+<p><strong>Q3.</strong> Which of the following is NOT a measure of central tendency?</p>
+<p>(a) Mean   (b) Median   (c) Mode   (d) Standard Deviation</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(d) Standard Deviation</strong></p>
+<p>Standard deviation is a measure of <strong>variability</strong> (dispersion), not central tendency. It measures how spread out the data values are from the mean.</p>
+</details>
+<hr>
+<p><strong>Q4.</strong> The ethical principle that requires researchers to tell participants the true purpose of a study after it is over is called:</p>
+<p>(a) Informed consent   (b) Debriefing   (c) Confidentiality   (d) Right to withdraw</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(b) Debriefing</strong></p>
+<p>Debriefing involves explaining the true nature and purpose of the study to participants after their participation, especially if any deception was used.</p>
+</details>
+<hr>
+<p><strong>Q5.</strong> Which method involves an in-depth study of a single individual?</p>
+<p>(a) Survey   (b) Correlational study   (c) Case study   (d) Experiment</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(c) Case study</strong></p>
+<p>A case study is an intensive investigation of a single individual (or a small group), using multiple sources of data like interviews, observations, and records.</p>
+</details>
+<hr>
+<h3 id="section-b--short-answer-questions-2-marks-each"><a class="header" href="#section-b--short-answer-questions-2-marks-each">Section B – Short Answer Questions (2 marks each)</a></h3>
+<p><strong>Q6.</strong> Distinguish between independent variable and dependent variable with an example.</p>
+<details>
+<summary>Answer</summary>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Feature</th><th>Independent Variable (IV)</th><th>Dependent Variable (DV)</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Definition</strong></td><td>The variable that is <strong>manipulated</strong> by the researcher</td><td>The variable that is <strong>measured</strong> as the outcome</td></tr>
+<tr><td><strong>Role</strong></td><td>The <strong>cause</strong></td><td>The <strong>effect</strong></td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Example:</strong> In a study on the effect of sleep on memory:</p>
+<ul>
+<li><strong>IV:</strong> Number of hours of sleep (e.g., 4 hours vs. 8 hours)</li>
+<li><strong>DV:</strong> Score on a memory test</li>
+</ul>
+<p>The researcher manipulates the amount of sleep and measures how it affects memory performance.</p>
+</details>
+<hr>
+<p><strong>Q7.</strong> Why is it said that “correlation does not imply causation”? Illustrate with an example.</p>
+<details>
+<summary>Answer</summary>
+<p>Correlation indicates that two variables are <strong>related</strong> — they tend to change together. However, this does not mean that one <strong>causes</strong> the other.</p>
+<p><strong>Example:</strong> There is a positive correlation between ice cream sales and drowning incidents. This does not mean ice cream causes drowning. Both are influenced by a <strong>third variable</strong> — hot weather. People buy more ice cream and swim more in summer, leading to both higher sales and more drowning incidents.</p>
+<p>To establish causation, one would need a <strong>controlled experiment</strong> where the independent variable is manipulated and all other variables are kept constant.</p>
+</details>
+<hr>
+<p><strong>Q8.</strong> What is meant by reliability and validity in psychological testing?</p>
+<details>
+<summary>Answer</summary>
+<p><strong>Reliability:</strong> A test is reliable when it produces <strong>consistent and stable</strong> results across different occasions, raters, or versions.</p>
+<ul>
+<li><em>Example:</em> If a student takes an IQ test on Monday and again on Friday, a reliable test should give similar scores both times.</li>
+</ul>
+<p><strong>Validity:</strong> A test is valid when it <strong>measures what it claims</strong> to measure.</p>
+<ul>
+<li><em>Example:</em> An intelligence test is valid if it truly measures intelligence and not just memory or vocabulary.</li>
+</ul>
+<p>A test can be reliable but not valid (consistently measuring the wrong thing), but a valid test must also be reliable.</p>
+</details>
+<hr>
+<h3 id="section-c--long-answer-questions-5-marks-each"><a class="header" href="#section-c--long-answer-questions-5-marks-each">Section C – Long Answer Questions (5 marks each)</a></h3>
+<p><strong>Q9.</strong> Describe the experimental method in psychology. Discuss its strengths and limitations.</p>
+<details>
+<summary>Answer</summary>
+<p><strong>The Experimental Method</strong> is the most rigorous method in psychology, designed to establish <strong>cause-and-effect relationships</strong>.</p>
+<p><strong>Key Features:</strong></p>
+<ol>
+<li>
+<p><strong>Manipulation of the IV:</strong> The researcher deliberately changes one variable (IV) to observe its effect on another variable (DV).</p>
+</li>
+<li>
+<p><strong>Control of extraneous variables:</strong> Other variables that could affect the DV are kept constant or controlled.</p>
+</li>
+<li>
+<p><strong>Random assignment:</strong> Participants are randomly assigned to the experimental group (receives the treatment) or the control group (does not receive the treatment).</p>
+</li>
+<li>
+<p><strong>Measurement of the DV:</strong> The outcome is objectively measured.</p>
+</li>
+</ol>
+<p><strong>Example:</strong> To test whether meditation reduces anxiety:</p>
+<ul>
+<li><strong>IV:</strong> Meditation (practised vs. not practised)</li>
+<li><strong>DV:</strong> Anxiety score on a standardised scale</li>
+<li><strong>Experimental group:</strong> Practises 20 minutes of meditation daily for 4 weeks</li>
+<li><strong>Control group:</strong> Does not practise meditation</li>
+<li>After 4 weeks, anxiety scores of both groups are compared.</li>
+</ul>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Can establish <strong>cause-and-effect</strong></li>
+<li><strong>High control</strong> over variables</li>
+<li><strong>Replicable</strong> — other researchers can repeat the study</li>
+<li>Results can be <strong>statistically analysed</strong></li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li><strong>Artificial setting</strong> may reduce ecological validity (results may not generalise to real life)</li>
+<li><strong>Ethical issues:</strong> Some variables cannot be manipulated for ethical reasons (e.g., deliberately causing stress)</li>
+<li><strong>Demand characteristics:</strong> Participants may guess the purpose and alter their behaviour</li>
+<li><strong>Experimenter bias:</strong> The researcher’s expectations may unconsciously influence results</li>
+</ul>
+</details>
+<hr>
+<p><strong>Q10.</strong> Discuss the ethical issues that a researcher must consider while conducting psychological research.</p>
+<details>
+<summary>Answer</summary>
+<p>Psychological research involves human participants, so researchers must follow strict <strong>ethical guidelines</strong> to protect their rights and well-being.</p>
+<p><strong>Key Ethical Issues:</strong></p>
+<ol>
+<li>
+<p><strong>Informed Consent:</strong> Participants must be given clear information about the purpose, procedures, risks, and benefits of the study. They must voluntarily agree to participate.</p>
+</li>
+<li>
+<p><strong>Confidentiality:</strong> All personal data collected must be kept private. Participants should not be identifiable in published reports.</p>
+</li>
+<li>
+<p><strong>Right to Withdraw:</strong> Participants must be free to leave the study at any time without penalty or negative consequences.</p>
+</li>
+<li>
+<p><strong>Freedom from Harm:</strong> Participants should not experience physical or psychological harm. If any risk exists, it must be minimised and clearly communicated.</p>
+</li>
+<li>
+<p><strong>Debriefing:</strong> After the study, participants should be informed about its true purpose, especially if deception was involved.</p>
+</li>
+<li>
+<p><strong>Minimal Deception:</strong> Deception should be avoided whenever possible. If it is necessary (e.g., to prevent demand characteristics), it must be justified, and participants must be debriefed afterwards.</p>
+</li>
+<li>
+<p><strong>Competence:</strong> Researchers must possess the necessary skills, training, and qualifications to conduct the study responsibly.</p>
+</li>
+<li>
+<p><strong>Special Populations:</strong> Extra care must be taken when studying children, mentally ill individuals, or other vulnerable groups, including obtaining consent from guardians.</p>
+</li>
+</ol>
+<p><strong>Importance:</strong> Ethical guidelines ensure that the pursuit of scientific knowledge does not come at the cost of individual rights, dignity, and well-being.</p>
+</details>
+<hr>
+<h3 id="section-d--competency-based-questions-cbse-pattern"><a class="header" href="#section-d--competency-based-questions-cbse-pattern">Section D – Competency-Based Questions (CBSE Pattern)</a></h3>
+<p><strong>Q11.</strong> <em>(Assertion–Reason)</em></p>
+<p><strong>Assertion (A):</strong> Correlational research cannot establish causation.</p>
+<p><strong>Reason (R):</strong> In correlational research, the researcher does not manipulate any variable.</p>
+<p>(a) Both A and R are true and R is the correct explanation of A</p>
+<p>(b) Both A and R are true but R is NOT the correct explanation of A</p>
+<p>(c) A is true but R is false</p>
+<p>(d) A is false but R is true</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(a) Both A and R are true and R is the correct explanation of A</strong></p>
+<p>Causation can only be established when the researcher <strong>manipulates</strong> one variable (IV) and measures the effect on another (DV) while controlling extraneous variables. In correlational research, no variable is manipulated — only the existing relationship is measured. Therefore, the reason correctly explains the assertion.</p>
+</details>
+<hr>
+<p><strong>Q12.</strong> <em>(Case Study)</em></p>
+<p>A researcher wants to study the effect of background noise on students’ reading comprehension. She randomly assigns 60 students into three groups:</p>
+<ul>
+<li>Group A reads in silence</li>
+<li>Group B reads with soft music</li>
+<li>Group C reads with loud traffic noise</li>
+</ul>
+<p>After 30 minutes of reading, all students take a comprehension test.</p>
+<p>(i) Identify the independent variable and the dependent variable.</p>
+<p>(ii) Why is random assignment important in this study?</p>
+<p>(iii) If Group A scores the highest, can the researcher conclude that silence <em>causes</em> better comprehension? Why or why not?</p>
+<p>(iv) Name one ethical principle the researcher should follow.</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(i)</strong></p>
+<ul>
+<li><strong>Independent Variable (IV):</strong> Type of background noise (silence, soft music, loud traffic noise)</li>
+<li><strong>Dependent Variable (DV):</strong> Score on the reading comprehension test</li>
+</ul>
+<p><strong>(ii)</strong> Random assignment is important because it ensures that each participant has an <strong>equal chance</strong> of being placed in any group. This helps to:</p>
+<ul>
+<li>Distribute individual differences (e.g., reading ability, intelligence) evenly across groups</li>
+<li>Reduce the influence of <strong>confounding variables</strong></li>
+<li>Allow valid comparison of group outcomes</li>
+</ul>
+<p><strong>(iii)</strong> Yes, the researcher can reasonably conclude a <strong>causal relationship</strong>, because this is a <strong>true experiment</strong>:</p>
+<ul>
+<li>The IV (noise type) was <strong>manipulated</strong></li>
+<li>Participants were <strong>randomly assigned</strong> to groups</li>
+<li>Extraneous variables were controlled (same reading material, same time duration)</li>
+</ul>
+<p>However, she should also ensure the result is <strong>statistically significant</strong> and should acknowledge possible limitations (e.g., Hawthorne effect, demand characteristics).</p>
+<p><strong>(iv)</strong> The researcher should obtain <strong>informed consent</strong> — participants must be informed about the study’s purpose and procedures and must voluntarily agree to participate.</p>
+</details>
+<hr>
+<p><strong>Q13.</strong> <em>(Data Interpretation)</em></p>
+<p>A psychologist collects the following scores on a stress questionnaire from 7 participants:</p>
+<p>\[
+12, ; 15, ; 18, ; 14, ; 20, ; 16, ; 15
+\]</p>
+<p>(i) Calculate the <strong>mean</strong> of the scores.</p>
+<p>(ii) Find the <strong>median</strong>.</p>
+<p>(iii) Find the <strong>mode</strong>.</p>
+<p>(iv) Calculate the <strong>range</strong>.</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(i) Mean:</strong></p>
+<p>\[
+\bar{x} = \frac{12 + 15 + 18 + 14 + 20 + 16 + 15}{7} = \frac{110}{7} \approx 15.71
+\]</p>
+<p><strong>(ii) Median:</strong></p>
+<p>Arrange in ascending order: \(12, 14, 15, 15, 16, 18, 20\)</p>
+<p>Since \(n = 7\) (odd), the median is the middle value (4th value):</p>
+<p>\[
+\text{Median} = 15
+\]</p>
+<p><strong>(iii) Mode:</strong></p>
+<p>The most frequently occurring value is <strong>15</strong> (appears twice).</p>
+<p>\[
+\text{Mode} = 15
+\]</p>
+<p><strong>(iv) Range:</strong></p>
+<p>\[
+\text{Range} = X_{\max} - X_{\min} = 20 - 12 = 8
+\]</p>
+</details>
+<hr>
+<p><strong>Q14.</strong> <em>(Competency-Based – Application)</em></p>
+<p>A school principal wants to understand why students in Class 11 are experiencing high levels of exam anxiety. She decides to use <strong>two</strong> research methods.</p>
+<p>(i) Suggest which two methods she could use and explain why each is suitable.</p>
+<p>(ii) What kind of data (quantitative or qualitative) will each method generate?</p>
+<p>(iii) Mention one limitation of each method you have suggested.</p>
+<details>
+<summary>Answer</summary>
+<p><strong>(i)</strong> Suggested methods:</p>
+<ol>
+<li>
+<p><strong>Survey (questionnaire):</strong> The principal can distribute a standardised anxiety questionnaire (e.g., a Likert-scale questionnaire on exam anxiety) to a large number of Class 11 students. This is suitable because it can quickly collect data from many students and identify patterns.</p>
+</li>
+<li>
+<p><strong>Interview (semi-structured):</strong> She can conduct one-on-one interviews with a smaller sample of students who report high anxiety. This is suitable because it provides <strong>in-depth understanding</strong> of personal experiences, feelings, and triggers that a questionnaire may miss.</p>
+</li>
+</ol>
+<p><strong>(ii)</strong> Data types:</p>
+<ol>
+<li><strong>Survey:</strong> Primarily <strong>quantitative data</strong> — numerical scores on the anxiety scale that can be statistically analysed.</li>
+<li><strong>Interview:</strong> Primarily <strong>qualitative data</strong> — verbal descriptions, narratives, and insights that need thematic analysis.</li>
+</ol>
+<p><strong>(iii)</strong> Limitations:</p>
+<ol>
+<li><strong>Survey:</strong> Students may not answer honestly due to <strong>social desirability bias</strong> (they may underreport anxiety to appear strong) or may not understand questions correctly.</li>
+<li><strong>Interview:</strong> It is <strong>time-consuming</strong> and can only cover a small number of students. The interviewer’s presence may also influence students’ responses.</li>
+</ol>
+</details>
+</svg></svg></svg>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="chapter_1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="chapter_3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="chapter_1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="chapter_3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
