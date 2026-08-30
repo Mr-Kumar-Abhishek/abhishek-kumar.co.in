@@ -31,7 +31,8 @@ def generate():
         "chemistry-grade-11-for-cbse",
         "chemistry-for-grade-12-for-cbse",
         "biology-grade-11-for-cbse",
-        "biology-grade-12-for-cbse"
+        "biology-grade-12-for-cbse",
+        "physical-education-grade-11-for-cbse"
     ]
     
     urls = []
