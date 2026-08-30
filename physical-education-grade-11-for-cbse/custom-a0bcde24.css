@@ -1,0 +1,96 @@
+/* Custom CSS for Grade 11 Physical Education mdBook */
+
+/* SVG Image containers */
+.svg-container {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    width: 100%;
+}
+
+.svg-container svg {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: white; /* Ensure SVGs look good in dark mode */
+}
+
+/* Competency-based questions section styling */
+.questions-section {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 2px solid var(--theme-popup-border);
+}
+
+.question {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background-color: var(--theme-popup-bg);
+    border-radius: 6px;
+    border-left: 4px solid var(--theme-popup-border);
+}
+
+.question-text {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    display: block; /* ensure proper line break for question text */
+}
+
+.options {
+    list-style-type: lower-alpha;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.options li {
+    margin-bottom: 0.3em;
+}
+
+.answer {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: var(--theme-hover);
+    border-radius: 4px;
+    display: block; /* line break for answer */
+}
+
+/* Specific styling for long-form answers to ensure LaTeX line breaks */
+.answer p {
+    margin-bottom: 0.8em;
+}
+
+/* Tables styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+}
+
+th, td {
+    border: 1px solid var(--sidebar-border);
+    padding: 0.75em;
+    text-align: left;
+}
+
+th {
+    background-color: var(--theme-hover);
+    font-weight: bold;
+}
+
+/* Highlight boxes for important notes */
+.note-box {
+    padding: 1em;
+    margin: 1.5em 0;
+    border-radius: 6px;
+    background-color: rgba(65, 131, 196, 0.1);
+    border-left: 4px solid #4183C4;
+}
+
+.definition-box {
+    padding: 1em;
+    margin: 1.5em 0;
+    border-radius: 6px;
+    background-color: rgba(92, 184, 92, 0.1);
+    border-left: 4px solid #5cb85c;
+}
