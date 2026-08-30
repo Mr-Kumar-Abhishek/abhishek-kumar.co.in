@@ -20,6 +20,7 @@ def generate():
         "computer-science-for-grade-11-for-cbse-2026-2027",
         "CS-grade-12-for-CBSE",
         "accountancy-grade-11-for-cbse",
+        "accountancy-grade-12-for-cbse",
         "mathematics-grade-11-for-cbse",
         "mathematics-for-grade-12-for-cbse",
         "applied-mathematics-for-grade-11-cbse",
