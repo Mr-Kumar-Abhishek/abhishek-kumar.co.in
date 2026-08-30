@@ -1,0 +1,1101 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Economics Grade 11 for CBSE</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-196ec7b4.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-90054a73.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Economics Grade 11 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="preface"><a class="header" href="#preface">Preface</a></h1>
+<p>Welcome to <strong>Economics Grade 11 for CBSE</strong>.</p>
+<p>This book is designed in strict accordance with the CBSE syllabus for the 2025-26 academic year. It aims to build a strong foundation in both Statistics for Economics and Introductory Microeconomics, preparing students for competency-based assessments using previously tested concepts and official sample papers.</p>
+<p>Let’s begin exploring the dynamic world of Economics!</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-1-introduction-to-statistics"><a class="header" href="#chapter-1-introduction-to-statistics">Chapter 1: Introduction to Statistics</a></h1>
+<h2 id="what-is-economics"><a class="header" href="#what-is-economics">What is Economics?</a></h2>
+<p>Economics is broadly defined as the social science that studies the production, distribution, and consumption of goods and services. It focuses on how individuals, businesses, governments, and nations make choices about how to allocate scarce resources to satisfy their unlimited wants.</p>
+<p>Economics is generally divided into two main branches:</p>
+<ul>
+<li><strong>Microeconomics</strong>: Focuses on individual behavior, households, and firms.</li>
+<li><strong>Macroeconomics</strong>: Looks at the economy as a whole, dealing with aggregates like national income and inflation.</li>
+</ul>
+<h2 id="meaning-scope-functions-and-importance-of-statistics-in-economics"><a class="header" href="#meaning-scope-functions-and-importance-of-statistics-in-economics">Meaning, Scope, Functions, and Importance of Statistics in Economics</a></h2>
+<p><strong>Statistics</strong> refers to the quantitative data or the methods used for collecting, organizing, presenting, and analyzing data.</p>
+<h3 id="scope-of-statistics"><a class="header" href="#scope-of-statistics">Scope of Statistics</a></h3>
+<p>Statistics is integral to economics as it helps in understanding and solving various economic problems. Its scope extends across:</p>
+<ul>
+<li>Analyzing economic changes over time.</li>
+<li>Comparing economic variables across different regions.</li>
+<li>Establishing economic relationships (e.g., between price and demand).</li>
+<li>Formulation of economic policies and planning.</li>
+</ul>
+<h3 id="functions-of-statistics"><a class="header" href="#functions-of-statistics">Functions of Statistics</a></h3>
+<ol>
+<li><strong>Simplifies Complex Data</strong>: Converts mass data into an understandable numerical format.</li>
+<li><strong>Presents Facts in Definite Form</strong>: States conditions in precise quantitative terms rather than vague descriptions.</li>
+<li><strong>Facilitates Comparison</strong>: Allows for the comparison of data across time and categories.</li>
+<li><strong>Formulates Policies</strong>: Helps governments and organizations draft data-backed strategies.</li>
+</ol>
+<h3 id="importance-of-statistics-in-economics"><a class="header" href="#importance-of-statistics-in-economics">Importance of Statistics in Economics</a></h3>
+<ul>
+<li><strong>Economic Planning</strong>: Invaluable for preparing national budgets and five-year plans.</li>
+<li><strong>Formulating Economic Policies</strong>: Essential for policies related to taxation, employment, and poverty alleviation.</li>
+<li><strong>Economic Forecasting</strong>: Predicting future trends based on historical data.</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<h3 id="multiple-choice-questions"><a class="header" href="#multiple-choice-questions">Multiple Choice Questions</a></h3>
+<p><strong>Q1.</strong> Which function of statistics is depicted when the government uses previous years’ poverty data to launch a new rural employment scheme?
+(a) Simplifies complex data
+(b) Facilitates comparison
+(c) Formulation of policies
+(d) Forecasting future trends</p>
+<p><strong>Answer:</strong> (c) Formulation of policies</p>
+<h3 id="analytical-questions"><a class="header" href="#analytical-questions">Analytical Questions</a></h3>
+<p><strong>Q2.</strong> “Statistics acts as a tool to bridge the gap between abstract economic theories and real-world realities.” Justify this statement with a suitable example.</p>
+<p><strong>Answer:</strong>
+Economic theories often propose relationships between variables logically (e.g., the Law of Demand states that as price increases, demand decreases). However, statistics provides the empirical evidence required to validate these theories. For example, by collecting data on the prices of a commodity over several months and the corresponding quantities demanded by consumers, statisticians can visually plot this and statistically prove the inverse relationship. This real-world validation ensures that economic policies and strategies are based on concrete realities, rather than just abstract theoretical models.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-2-collection-of-data"><a class="header" href="#chapter-2-collection-of-data">Chapter 2: Collection of Data</a></h1>
+<h2 id="sources-of-data-primary-and-secondary"><a class="header" href="#sources-of-data-primary-and-secondary">Sources of Data: Primary and Secondary</a></h2>
+<p>In statistical inquiry, data acts as the raw material. Based on the source of collection, data is classified into two types:</p>
+<ol>
+<li><strong>Primary Data</strong>: Data collected originally for the first time by the investigator for a specific purpose. It is first-hand information.</li>
+<li><strong>Secondary Data</strong>: Data that has already been collected by someone else and has passed through the statistical process.</li>
+</ol>
+<h3 id="methods-of-collecting-primary-data"><a class="header" href="#methods-of-collecting-primary-data">Methods of Collecting Primary Data</a></h3>
+<ul>
+<li><strong>Direct Personal Investigation</strong>: The investigator personally contacts informants.</li>
+<li><strong>Indirect Oral Investigation</strong>: Information is collected orally from third parties who are likely to possess the necessary information.</li>
+<li><strong>Information from Local Sources or Correspondents</strong>: Local agents report information continuously in their own manner.</li>
+<li><strong>Questionnaires and Schedules</strong>: Questionnaires are sent by mail or asked by enumerators to gather detailed responses.</li>
+</ul>
+<h2 id="concepts-of-sampling"><a class="header" href="#concepts-of-sampling">Concepts of Sampling</a></h2>
+<p>Since studying an entire population (Census) is often time-consuming and expensive, statisticians use sampling. A <strong>sample</strong> is a subset of the population selected to represent the entire group.</p>
+<ul>
+<li><strong>Random Sampling</strong>: Every item in the universe has an equal chance of being selected (e.g., lottery method).</li>
+<li><strong>Non-Random Sampling</strong>: Items are selected based on the investigator’s judgment or convenience.</li>
+</ul>
+<h2 id="important-sources-of-secondary-data"><a class="header" href="#important-sources-of-secondary-data">Important Sources of Secondary Data</a></h2>
+<ol>
+<li><strong>Census of India</strong>: Published by the Government of India every 10 years, it provides comprehensive demographic, social, and economic data.</li>
+<li><strong>National Sample Survey Organisation (NSSO)</strong>: Now part of the NSO, it conducts nationwide large-scale sample surveys on various socio-economic issues.</li>
+</ol>
+<hr>
+<h2 id="competency-based-questions-1"><a class="header" href="#competency-based-questions-1">Competency-Based Questions</a></h2>
+<h3 id="case-based-question"><a class="header" href="#case-based-question">Case-Based Question</a></h3>
+<p><strong>Q1.</strong> A researcher wants to understand the impact of online education on the mental health of Grade 11 students in a specific school. If the researcher designs a questionnaire and distributes it to a randomly selected group of 50 students from that school, identify:
+(a) The type of data being collected (Primary or Secondary).
+(b) The method of data collection being utilized.</p>
+<p><strong>Answer:</strong>
+(a) The data collected is <strong>Primary Data</strong>, as it is originally gathered by the researcher for this exact study.
+(b) The method of data collection is the use of <strong>Questionnaires</strong> combined with <strong>Random Sampling</strong>, since the researcher selected 50 students randomly and gathered responses directly.</p>
+<h3 id="analytical-questions-1"><a class="header" href="#analytical-questions-1">Analytical Questions</a></h3>
+<p><strong>Q2.</strong> Differentiate between a Census and a Sample Survey. Why might the NSSO prefer sample surveys over a complete census for tracking employment figures annually?</p>
+<p><strong>Answer:</strong></p>
+<ul>
+<li><strong>Census</strong> involves collecting data from each and every unit of the population, whereas a <strong>Sample Survey</strong> involves collecting data from a representative subset of the population.</li>
+<li>The NSSO prefers sample surveys for annual tracking because conducting a complete census every year is highly resource-intensive, time-consuming, and practically impossible at a national scale. Sample surveys provide swift and reasonably accurate estimates, allowing the government to adapt its employment policies proactively.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-3-organisation-of-data"><a class="header" href="#chapter-3-organisation-of-data">Chapter 3: Organisation of Data</a></h1>
+<h2 id="meaning-of-organisation-of-data"><a class="header" href="#meaning-of-organisation-of-data">Meaning of Organisation of Data</a></h2>
+<p>Once data is collected, it is usually in an unorganized, raw format known as <strong>raw data</strong>. Organisation of data refers to the arrangement of figures in such a form that comparison of the masses of similar data may be facilitated and further analysis may be possible. Classification is the basic step in organization.</p>
+<h2 id="types-of-variables"><a class="header" href="#types-of-variables">Types of Variables</a></h2>
+<p>A variable is a characteristic that can take on different values. In statistics, variables are broadly classified into two categories:</p>
+<ol>
+<li><strong>Discrete Variables</strong>: These variables jump from one complete number to another. They do not take intermediate values. Examples include the number of children in a family, number of rooms in a house, and cars produced by a company.</li>
+<li><strong>Continuous Variables</strong>: These variables can take any fractional value within a specific range. Examples include height, weight, temperature, and income.</li>
+</ol>
+<h2 id="frequency-distribution"><a class="header" href="#frequency-distribution">Frequency Distribution</a></h2>
+<p>A frequency distribution is a comprehensive way to classify data according to some measurable characteristics.</p>
+<ul>
+<li><strong>Frequency</strong>: The number of times a particular observation occurs in the given data.</li>
+<li><strong>Class Interval</strong>: The range into which data is grouped (e.g., 0-10, 10-20). The difference between the upper limit and the lower limit is the class size.</li>
+</ul>
+<p>When constructing a frequency distribution, one can use:</p>
+<ol>
+<li><strong>Exclusive Method</strong>: The upper limit of one class is the lower limit of the next class (e.g., 10-20, 20-30). A value exactly equal to the upper limit is excluded from that class and included in the next.</li>
+<li><strong>Inclusive Method</strong>: The upper limit of one class does not overlap with the lower limit of the next class (e.g., 10-19, 20-29). Both limits are included in the class.</li>
+</ol>
+<hr>
+<h2 id="competency-based-questions-2"><a class="header" href="#competency-based-questions-2">Competency-Based Questions</a></h2>
+<h3 id="multiple-choice-questions-1"><a class="header" href="#multiple-choice-questions-1">Multiple Choice Questions</a></h3>
+<p><strong>Q1.</strong> The marks obtained by students in a test can be fractional (e.g., 85.5). Which type of variable is this?
+(a) Discrete variable
+(b) Continuous variable
+(c) Qualitative variable
+(d) None of the above</p>
+<p><strong>Answer:</strong> (b) Continuous variable</p>
+<h3 id="analytical-questions-2"><a class="header" href="#analytical-questions-2">Analytical Questions</a></h3>
+<p><strong>Q2.</strong> An investigator collected data on the ages of residents in a society. They classified the ages as 0-9, 10-19, 20-29, 30-39.
+(a) Identify the method of classification used here.
+(b) Convert this distribution into an exclusive series. What is the necessity of making such a conversion?</p>
+<p><strong>Answer:</strong>
+(a) The investigator used the <strong>Inclusive Method</strong> of classification.
+(b) To convert it to an exclusive series, we find the adjustment factor, which is half the difference between the lower limit of a class and the upper limit of the previous class (\( (10-9)/2 = 0.5 \)). We subtract 0.5 from lower limits and add 0.5 to upper limits:</p>
+<ul>
+<li>-0.5–9.5 (or realistically 0-9.5)</li>
+<li>9.5–19.5</li>
+<li>19.5–29.5</li>
+<li>29.5–39.5</li>
+</ul>
+<p>Such conversion is necessary when calculating certain statistical measures like median or mode, which require continuous class boundaries to find exact values using formulas.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-4-presentation-of-data"><a class="header" href="#chapter-4-presentation-of-data">Chapter 4: Presentation of Data</a></h1>
+<p>Data presentation is the art of displaying collected and organized data in an attractive, easily readable, and understandable manner.</p>
+<h2 id="tabular-presentation-of-data"><a class="header" href="#tabular-presentation-of-data">Tabular Presentation of Data</a></h2>
+<p>Tabulation involves presenting numerical data systematically in rows and columns. A well-constructed table contains a Table Number, Title, Headnotes, Stubs (row headings), Captions (column headings), Body, Footnotes, and Source.</p>
+<h2 id="diagrammatic-presentation-of-data"><a class="header" href="#diagrammatic-presentation-of-data">Diagrammatic Presentation of Data</a></h2>
+<p>Diagrams are visual representations that make complex data immediately comprehensible.</p>
+<h3 id="1-geometric-forms-bar-diagrams-and-pie-diagrams"><a class="header" href="#1-geometric-forms-bar-diagrams-and-pie-diagrams">1. Geometric Forms: Bar Diagrams and Pie Diagrams</a></h3>
+<p><strong>Bar Diagrams</strong> are graphs composed of a series of bars of equal width. The height or length of the bars determines the value.</p>
+<svg viewbox="0 0 500 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+  <line x1="50" y1="250" x2="450" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <text x="40" y="255" text-anchor="end" font-size="12">0</text>
+  <text x="40" y="205" text-anchor="end" font-size="12">20</text>
+  <text x="40" y="155" text-anchor="end" font-size="12">40</text>
+  <text x="40" y="105" text-anchor="end" font-size="12">60</text>
+  <text x="40" y="55" text-anchor="end" font-size="12">80</text>
+  <line x1="50" y1="200" x2="450" y2="200" stroke="#ddd" stroke-dasharray="4" />
+  <line x1="50" y1="150" x2="450" y2="150" stroke="#ddd" stroke-dasharray="4" />
+  <line x1="50" y1="100" x2="450" y2="100" stroke="#ddd" stroke-dasharray="4" />
+  <line x1="50" y1="50" x2="450" y2="50" stroke="#ddd" stroke-dasharray="4" />
+  <rect x="80" y="100" width="40" height="150" fill="#4dabf7" rx="2" />
+  <text x="100" y="270" text-anchor="middle" font-size="12">2020</text>
+  <rect x="150" y="150" width="40" height="100" fill="#4dabf7" rx="2" />
+  <text x="170" y="270" text-anchor="middle" font-size="12">2021</text>
+  <rect x="220" y="80" width="40" height="170" fill="#4dabf7" rx="2" />
+  <text x="240" y="270" text-anchor="middle" font-size="12">2022</text>
+  <rect x="290" y="50" width="40" height="200" fill="#4dabf7" rx="2" />
+  <text x="310" y="270" text-anchor="middle" font-size="12">2023</text>
+  <rect x="360" y="120" width="40" height="130" fill="#4dabf7" rx="2" />
+  <text x="380" y="270" text-anchor="middle" font-size="12">2024</text>
+  <text x="250" y="25" text-anchor="middle" font-size="16" font-weight="bold">Production Over Years (in '000 tonnes)</text>
+</svg>
+<p><strong>Pie Diagrams</strong> represent data in a circle, where the area of each slice is proportional to the quantity it represents. Total angle is 360°.</p>
+<svg viewbox="0 0 500 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif; margin-top: 1rem; margin-bottom: 2rem;">
+  <path d="M 200 150 L 200 50 A 100 100 0 0 1 258.78 230.90 Z" fill="#4dabf7" stroke="#fff" stroke-width="2" />
+  <path d="M 200 150 L 258.78 230.90 A 100 100 0 0 1 104.89 180.90 Z" fill="#ff8787" stroke="#fff" stroke-width="2" />
+  <path d="M 200 150 L 104.89 180.90 A 100 100 0 0 1 141.22 69.10 Z" fill="#38d9a9" stroke="#fff" stroke-width="2" />
+  <path d="M 200 150 L 141.22 69.10 A 100 100 0 0 1 200 50 Z" fill="#fcc419" stroke="#fff" stroke-width="2" />
+  <rect x="330" y="80" width="15" height="15" fill="#4dabf7" rx="2" />
+  <text x="355" y="92" font-size="12">Food (40%)</text>
+  <rect x="330" y="110" width="15" height="15" fill="#ff8787" rx="2" />
+  <text x="355" y="122" font-size="12">Rent (30%)</text>
+  <rect x="330" y="140" width="15" height="15" fill="#38d9a9" rx="2" />
+  <text x="355" y="152" font-size="12">Clothing (20%)</text>
+  <rect x="330" y="170" width="15" height="15" fill="#fcc419" rx="2" />
+  <text x="355" y="182" font-size="12">Saving (10%)</text>
+  <text x="250" y="25" text-anchor="middle" font-size="16" font-weight="bold">Household Expenditure Distribution</text>
+</svg>
+<h3 id="2-frequency-diagrams-histogram-polygon-and-ogive"><a class="header" href="#2-frequency-diagrams-histogram-polygon-and-ogive">2. Frequency Diagrams: Histogram, Polygon, and Ogive</a></h3>
+<p>A <strong>Histogram</strong> is a two-dimensional diagram. It is a set of contiguous rectangles where class intervals are represented on the X-axis and frequencies on the Y-axis.</p>
+<svg viewbox="0 0 500 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif; margin-top: 1rem;">
+  <line x1="50" y1="250" x2="450" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <rect x="50" y="200" width="60" height="50" fill="#ff8787" stroke="#fff" stroke-width="1" />
+  <rect x="110" y="150" width="60" height="100" fill="#ff8787" stroke="#fff" stroke-width="1" />
+  <rect x="170" y="75" width="60" height="175" fill="#ff8787" stroke="#fff" stroke-width="1" />
+  <rect x="230" y="110" width="60" height="140" fill="#ff8787" stroke="#fff" stroke-width="1" />
+  <rect x="290" y="220" width="60" height="30" fill="#ff8787" stroke="#fff" stroke-width="1" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="110" y="270" text-anchor="middle" font-size="12">10</text>
+  <text x="170" y="270" text-anchor="middle" font-size="12">20</text>
+  <text x="230" y="270" text-anchor="middle" font-size="12">30</text>
+  <text x="290" y="270" text-anchor="middle" font-size="12">40</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12">50</text>
+  <text x="250" y="25" text-anchor="middle" font-size="16" font-weight="bold">Frequency Distribution Histogram</text>
+</svg>
+<p>A <strong>Frequency Polygon</strong> is formed by joining the mid-points of the tops of all rectangles in a histogram by straight lines. It can also be drawn independently by plotting the frequencies against the mid-values of the class intervals.</p>
+<svg viewbox="0 0 500 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif; margin-top: 1rem; margin-bottom: 1rem;">
+  <line x1="50" y1="250" x2="450" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <path d="M 50 250 L 80 200 L 140 150 L 200 75 L 260 110 L 320 220 L 380 250" fill="none" stroke="#2b8a3e" stroke-width="3" />
+  <circle cx="50" cy="250" r="4" fill="#2b8a3e" />
+  <circle cx="80" cy="200" r="4" fill="#2b8a3e" />
+  <circle cx="140" cy="150" r="4" fill="#2b8a3e" />
+  <circle cx="200" cy="75" r="4" fill="#2b8a3e" />
+  <circle cx="260" cy="110" r="4" fill="#2b8a3e" />
+  <circle cx="320" cy="220" r="4" fill="#2b8a3e" />
+  <circle cx="380" cy="250" r="4" fill="#2b8a3e" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="80" y="270" text-anchor="middle" font-size="12">5</text>
+  <text x="140" y="270" text-anchor="middle" font-size="12">15</text>
+  <text x="200" y="270" text-anchor="middle" font-size="12">25</text>
+  <text x="260" y="270" text-anchor="middle" font-size="12">35</text>
+  <text x="320" y="270" text-anchor="middle" font-size="12">45</text>
+  <text x="380" y="270" text-anchor="middle" font-size="12">55</text>
+  <text x="250" y="25" text-anchor="middle" font-size="16" font-weight="bold">Frequency Polygon</text>
+  <text x="40" y="55" text-anchor="middle" font-size="12">Freq</text>
+</svg>
+<p>An <strong>Ogive</strong> or Cumulative Frequency Curve is constructed by plotting cumulative frequencies against the respective class limits.</p>
+<svg viewbox="0 0 500 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif; margin-top: 1rem;">
+  <line x1="50" y1="250" x2="450" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <path d="M 50 250 L 110 230 L 170 190 L 230 130 L 290 80 L 350 50" fill="none" stroke="#228be6" stroke-width="3" />
+  <path d="M 50 50 L 110 80 L 170 110 L 230 160 L 290 220 L 350 250" fill="none" stroke="#e03131" stroke-width="3" />
+  <circle cx="50" cy="250" r="4" fill="#228be6" />
+  <circle cx="110" cy="230" r="4" fill="#228be6" />
+  <circle cx="170" cy="190" r="4" fill="#228be6" />
+  <circle cx="230" cy="130" r="4" fill="#228be6" />
+  <circle cx="290" cy="80" r="4" fill="#228be6" />
+  <circle cx="350" cy="50" r="4" fill="#228be6" />
+  <circle cx="50" cy="50" r="4" fill="#e03131" />
+  <circle cx="110" cy="80" r="4" fill="#e03131" />
+  <circle cx="170" cy="110" r="4" fill="#e03131" />
+  <circle cx="230" cy="160" r="4" fill="#e03131" />
+  <circle cx="290" cy="220" r="4" fill="#e03131" />
+  <circle cx="350" cy="250" r="4" fill="#e03131" />
+  <circle cx="206" cy="154" r="5" fill="#000" />
+  <line x1="206" y1="154" x2="206" y2="250" stroke="#333" stroke-dasharray="4" />
+  <text x="206" y="270" text-anchor="middle" font-size="12" font-weight="bold">Median</text>
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12">Class Boundaries</text>
+  <text x="40" y="55" text-anchor="middle" font-size="12">c.f.</text>
+  <line x1="310" y1="90" x2="340" y2="90" stroke="#228be6" stroke-width="3" />
+  <text x="350" y="94" font-size="12">Less Than Ogive</text>
+  <line x1="310" y1="110" x2="340" y2="110" stroke="#e03131" stroke-width="3" />
+  <text x="350" y="114" font-size="12">More Than Ogive</text>
+  <text x="250" y="25" text-anchor="middle" font-size="16" font-weight="bold">Ogive (Cumulative Frequency Curve)</text>
+</svg>
+<h3 id="3-arithmetic-line-graphs-time-series-graph"><a class="header" href="#3-arithmetic-line-graphs-time-series-graph">3. Arithmetic Line Graphs (Time Series Graph)</a></h3>
+<p>Used primarily to represent data recorded over time, such as national income or population over decades.</p>
+<svg viewbox="0 0 500 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif; margin-top: 1rem;">
+  <line x1="50" y1="250" x2="450" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="200" x2="450" y2="200" stroke="#ddd" stroke-dasharray="4" />
+  <line x1="50" y1="150" x2="450" y2="150" stroke="#ddd" stroke-dasharray="4" />
+  <line x1="50" y1="100" x2="450" y2="100" stroke="#ddd" stroke-dasharray="4" />
+  <line x1="50" y1="50" x2="450" y2="50" stroke="#ddd" stroke-dasharray="4" />
+  <text x="40" y="255" text-anchor="end" font-size="12">0</text>
+  <text x="40" y="205" text-anchor="end" font-size="12">10</text>
+  <text x="40" y="155" text-anchor="end" font-size="12">20</text>
+  <text x="40" y="105" text-anchor="end" font-size="12">30</text>
+  <text x="40" y="55" text-anchor="end" font-size="12">40</text>
+  <text x="100" y="270" text-anchor="middle" font-size="12">2019</text>
+  <text x="170" y="270" text-anchor="middle" font-size="12">2020</text>
+  <text x="240" y="270" text-anchor="middle" font-size="12">2021</text>
+  <text x="310" y="270" text-anchor="middle" font-size="12">2022</text>
+  <text x="380" y="270" text-anchor="middle" font-size="12">2023</text>
+  <path d="M 100 220 L 170 190 L 240 180 L 310 120 L 380 70" fill="none" stroke="#f59f00" stroke-width="3" />
+  <circle cx="100" cy="220" r="5" fill="#f59f00" />
+  <circle cx="170" cy="190" r="5" fill="#f59f00" />
+  <circle cx="240" cy="180" r="5" fill="#f59f00" />
+  <circle cx="310" cy="120" r="5" fill="#f59f00" />
+  <circle cx="380" cy="70" r="5" fill="#f59f00" />
+  <text x="250" y="25" text-anchor="middle" font-size="16" font-weight="bold">Growth (Time Series Graph)</text>
+</svg>
+<hr>
+<h2 id="competency-based-questions-3"><a class="header" href="#competency-based-questions-3">Competency-Based Questions</a></h2>
+<h3 id="application-based-question"><a class="header" href="#application-based-question">Application-Based Question</a></h3>
+<p><strong>Q1.</strong> A school wants to analyze the pass percentage of its Grade 11 students across five years. Which geometric form of a diagram would most visibly demonstrate the comparison, and why?</p>
+<p><strong>Answer:</strong>
+A <strong>Multiple Bar Diagram</strong> or a simple <strong>Bar Diagram</strong> would most visibly demonstrate this comparison. Since time series data across discrete intervals (years) is involved, placing bars side-by-side easily reveals trends and variations in the pass percentage over the years.</p>
+<h3 id="evaluation-question"><a class="header" href="#evaluation-question">Evaluation Question</a></h3>
+<p><strong>Q2.</strong> Identify the diagram used to graphically locate the Median and Mode of a frequency distribution.</p>
+<p><strong>Answer:</strong></p>
+<ul>
+<li>The <strong>Histogram</strong> can be used to graphically locate the <strong>Mode</strong> (by joining the top corners of the highest rectangle to the corners of the adjacent rectangles).</li>
+<li>The <strong>Ogive</strong> (Cumulative Frequency Curve) is used to locate the <strong>Median</strong> (by plotting the less than ogive and more than ogive; their intersection point corresponds to the median on the X-axis).</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-5-measures-of-central-tendency"><a class="header" href="#chapter-5-measures-of-central-tendency">Chapter 5: Measures of Central Tendency</a></h1>
+<p>A measure of central tendency is a single representative value around which the bulk of the data values cluster. The main measures are the Arithmetic Mean, Median, and Mode.</p>
+<h2 id="arithmetic-mean--barx-"><a class="header" href="#arithmetic-mean--barx-">Arithmetic Mean (\( \bar{X} \))</a></h2>
+<p>Arithmetic mean is the sum of all observations divided by the number of observations. It is the most common measure of central tendency.</p>
+<p>For discrete series (Ungrouped data):
+$$ \bar{X} = \frac{\sum x}{N} $$</p>
+<p>For frequency distribution (Grouped data) via Direct Method:
+$$ \bar{X} = \frac{\sum f x}{\sum f} $$</p>
+<p>For Grouped data via Step-Deviation Method:
+$$ \bar{X} = A + \frac{\sum f d’}{\sum f} \times c $$
+Where \(A\) is the assumed mean, \(d’ = \frac{x - A}{c}\), and \(c\) is the common class magnitude.</p>
+<h2 id="median-m"><a class="header" href="#median-m">Median (\(M\))</a></h2>
+<p>The median is the exactly middle value of a series when the data is arranged in ascending or descending order. It divides the distribution into two equal parts.</p>
+<p>For continuous series:
+$$ M = L + \frac{\frac{N}{2} - c.f.}{f} \times i $$
+Where:</p>
+<ul>
+<li>\(L\) = Lower limit of the median class</li>
+<li>\(N\) = Sum of frequencies</li>
+<li>\(c.f.\) = Cumulative frequency of the class preceding the median class</li>
+<li>\(f\) = Frequency of the median class</li>
+<li>\(i\) = Class interval of the median class</li>
+</ul>
+<h2 id="mode-z"><a class="header" href="#mode-z">Mode (\(Z\))</a></h2>
+<p>The mode is the value that occurs most frequently in a statistical distribution. It is the point of maximum concentration.</p>
+<p>For continuous series:
+$$ Z = L + \frac{f_1 - f_0}{2f_1 - f_0 - f_2} \times i $$
+Where:</p>
+<ul>
+<li>\(L\) = Lower limit of the modal class</li>
+<li>\(f_1\) = Frequency of the modal class</li>
+<li>\(f_0\) = Frequency of the class preceding the modal class</li>
+<li>\(f_2\) = Frequency of the class succeeding the modal class</li>
+<li>\(i\) = Size of the class interval</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-4"><a class="header" href="#competency-based-questions-4">Competency-Based Questions</a></h2>
+<h3 id="numerical-application"><a class="header" href="#numerical-application">Numerical Application</a></h3>
+<p><strong>Q1.</strong> The weekly wages of 5 workers are ₹1500, ₹2000, ₹1800, ₹2200, and ₹2500. Calculate the Arithmetic Mean of their wages.</p>
+<p><strong>Answer:</strong>
+Given wages \(x\): 1500, 2000, 1800, 2200, 2500
+Number of workers \(N\) = 5
+$$ \bar{X} = \frac{\sum x}{N} $$
+$$ \bar{X} = \frac{1500 + 2000 + 1800 + 2200 + 2500}{5} = \frac{10000}{5} = 2000 $$
+The Arithmetic Mean of the weekly wages is <strong>₹2000</strong>.</p>
+<h3 id="analytical-questions-3"><a class="header" href="#analytical-questions-3">Analytical Questions</a></h3>
+<p><strong>Q2.</strong> Under what circumstances is the Median considered a better measure of central tendency than the Arithmetic Mean? Provide a logical rationale.</p>
+<p><strong>Answer:</strong>
+The <strong>Median is considered better</strong> when a dataset contains extreme values or outliers.
+<em>Reasoning</em>: The Arithmetic mean relies on all observations, meaning a single extremely high or low value excessively shifts the mean, causing it to misrepresent the bulk of the data. For instance, in income data, a handful of billionaires heavily skew the mean upward. The median, being a positional average, remains unaffected by extreme values and precisely reflects the middle point of the distribution, offering a superior representation of the typical value.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-6-correlation"><a class="header" href="#chapter-6-correlation">Chapter 6: Correlation</a></h1>
+<p>Correlation is a statistical technique used to measure the relationship or association between two variables. If a change in one variable results in a corresponding change in the other series, they are said to be correlated.</p>
+<h2 id="properties-of-correlation"><a class="header" href="#properties-of-correlation">Properties of Correlation</a></h2>
+<ul>
+<li>Correlation measures the degree and direction of relationship.</li>
+<li>The coefficient of correlation (\(r\)) always lies between -1 and +1 (\(-1 \le r \le 1\)).</li>
+<li>If \(r = 1\), there is a perfect positive correlation; if \(r = -1\), there is a perfect negative correlation; if \(r = 0\), there is no correlation.</li>
+</ul>
+<h2 id="scatter-diagram"><a class="header" href="#scatter-diagram">Scatter Diagram</a></h2>
+<p>A scatter diagram is a simple visual tool to determine if two variables are related. It involves plotting pairs of observations as points on a graph.</p>
+<h3 id="positive-correlation-scatter-plot"><a class="header" href="#positive-correlation-scatter-plot">Positive Correlation Scatter Plot</a></h3>
+<p>When values of both variables move in the same direction.</p>
+<svg viewbox="0 0 400 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+  <line x1="50" y1="250" x2="350" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">X</text>
+  <text x="30" y="50" text-anchor="end" font-size="12">Y</text>
+  <circle cx="80" cy="220" r="4" fill="#3b5bdb" />
+  <circle cx="100" cy="210" r="4" fill="#3b5bdb" />
+  <circle cx="130" cy="190" r="4" fill="#3b5bdb" />
+  <circle cx="150" cy="180" r="4" fill="#3b5bdb" />
+  <circle cx="160" cy="150" r="4" fill="#3b5bdb" />
+  <circle cx="200" cy="140" r="4" fill="#3b5bdb" />
+  <circle cx="220" cy="120" r="4" fill="#3b5bdb" />
+  <circle cx="250" cy="100" r="4" fill="#3b5bdb" />
+  <circle cx="280" cy="80" r="4" fill="#3b5bdb" />
+  <circle cx="310" cy="70" r="4" fill="#3b5bdb" />
+  <line x1="70" y1="230" x2="320" y2="60" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="4" />
+</svg>
+<h2 id="measuring-correlation"><a class="header" href="#measuring-correlation">Measuring Correlation</a></h2>
+<h3 id="karl-pearsons-method"><a class="header" href="#karl-pearsons-method">Karl Pearson’s Method</a></h3>
+<p>Karl Pearson developed a mathematical method for measuring the linear relationship between two continuous variables.
+$$ r = \frac{\sum xy}{\sqrt{\sum x^2 \times \sum y^2}} $$
+Where:</p>
+<ul>
+<li>\(x = X - \bar{X}\) (deviation of X from its mean)</li>
+<li>\(y = Y - \bar{Y}\) (deviation of Y from its mean)</li>
+</ul>
+<h3 id="spearmans-rank-correlation"><a class="header" href="#spearmans-rank-correlation">Spearman’s Rank Correlation</a></h3>
+<p>When data cannot be measured quantitatively but can be ranked, Spearman’s rank correlation coefficient (\(R\)) is used. This is especially useful for qualitative data like intelligence or beauty.</p>
+<p><strong>For Non-Repeated Ranks:</strong>
+$$ R = 1 - \frac{6 \sum D^2}{N^3 - N} $$
+Where \(D\) is the difference between ranks of the corresponding pairs of variables (\(R_1 - R_2\)) and \(N\) is the number of pairs.</p>
+<p><strong>For Repeated Ranks:</strong>
+An adjustment/correction factor \(\frac{1}{12}(m^3 - m)\) is added to \(\sum D^2\) for every tied rank, where \(m\) is the number of times a rank is repeated.</p>
+<hr>
+<h2 id="competency-based-questions-5"><a class="header" href="#competency-based-questions-5">Competency-Based Questions</a></h2>
+<h3 id="scenario-analysis"><a class="header" href="#scenario-analysis">Scenario Analysis</a></h3>
+<p><strong>Q1.</strong> Two judges independently rank 10 contestants in a singing competition. You calculate Spearman’s rank correlation coefficient and find \(R = -0.85\).
+(a) Interpret this result.
+(b) Does this signify that the judges have highly similar or highly dissimilar tastes?</p>
+<p><strong>Answer:</strong>
+(a) An \(R = -0.85\) indicates a strong negative correlation between the rankings given by the two judges.
+(b) This signifies that the judges have <strong>highly dissimilar tastes</strong>. A contestant ranked high by one judge is very likely ranked low by the other judge, and vice versa.</p>
+<h3 id="knowledge-question"><a class="header" href="#knowledge-question">Knowledge Question</a></h3>
+<p><strong>Q2.</strong> Identify the method of correlation analysis appropriate for determining the relationship between the honesty and punctuality of 15 employees.
+(a) Karl Pearson’s method
+(b) Spearman’s Rank method
+(c) Scatter Diagram
+(d) Time Series</p>
+<p><strong>Answer:</strong> (b) Spearman’s Rank method. Honesty and punctuality are qualitative attributes that cannot be measured in exact units but can be ranked in order of preference.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-7-index-numbers"><a class="header" href="#chapter-7-index-numbers">Chapter 7: Index Numbers</a></h1>
+<p>An Index Number is a statistical device designed to measure changes in a variable or a group of related variables with respect to time, geographic location, or other characteristics.</p>
+<h2 id="important-types-of-index-numbers"><a class="header" href="#important-types-of-index-numbers">Important Types of Index Numbers</a></h2>
+<ol>
+<li><strong>Wholesale Price Index (WPI)</strong>: Measures the relative changes in the prices of commodities traded in wholesale markets. It broadly indicates general inflation in an economy.</li>
+<li><strong>Consumer Price Index (CPI)</strong>: Also known as the Cost of Living Index, it measures changes in the prices of a basket of consumer goods and services purchased by households.</li>
+<li><strong>Index of Industrial Production (IIP)</strong>: Measures changes in the volume of industrial production over a given period.</li>
+</ol>
+<h2 id="uses-of-index-numbers"><a class="header" href="#uses-of-index-numbers">Uses of Index Numbers</a></h2>
+<ul>
+<li>Formulating government and business policies.</li>
+<li>Measuring trends and tendencies (like inflation or output growth).</li>
+<li>Deflating macroeconomic variables (e.g., converting nominal GDP to real GDP).</li>
+</ul>
+<h2 id="inflation-and-index-numbers"><a class="header" href="#inflation-and-index-numbers">Inflation and Index Numbers</a></h2>
+<p>Inflation refers to a general and persistent rise in the price level. It is conventionally measured using price index numbers (mainly CPI in many countries, though WPI also plays a role).
+$$ \text{Rate of Inflation} = \frac{A_2 - A_1}{A_1} \times 100 $$
+Where \(A_1\) is the price index in year 1 and \(A_2\) is the price index in year 2.</p>
+<h2 id="simple-aggregative-method"><a class="header" href="#simple-aggregative-method">Simple Aggregative Method</a></h2>
+<p>The simplest way to calculate an index number is to express the aggregate price of all commodities in the current year as a percentage of the aggregate price of the same commodities in the base year.</p>
+<p>$$ P_{01} = \frac{\sum P_1}{\sum P_0} \times 100 $$</p>
+<p>Where:</p>
+<ul>
+<li>\(P_{01} \) = Price index of the current year relative to the base year.</li>
+<li>\(\sum P_1 \) = Sum of prices of commodities in the current year.</li>
+<li>\(\sum P_0 \) = Sum of prices of commodities in the base year.</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-6"><a class="header" href="#competency-based-questions-6">Competency-Based Questions</a></h2>
+<h3 id="application-based-question-1"><a class="header" href="#application-based-question-1">Application-Based Question</a></h3>
+<p><strong>Q1.</strong> Suppose the sum of the prices of a basket of goods in the base year (2015) was ₹5,000. In the current year (2024), the price of the exact same basket is ₹7,500.
+Calculate the price index number using the Simple Aggregative Method.</p>
+<p><strong>Answer:</strong>
+Given:</p>
+<ul>
+<li>\(\sum P_0 \) = 5000</li>
+<li>\(\sum P_1 \) = 7500</li>
+</ul>
+<p>Using the formula:
+$$ P_{01} = \frac{\sum P_1}{\sum P_0} \times 100 $$
+$$ P_{01} = \frac{7500}{5000} \times 100 = 1.5 \times 100 = 150 $$</p>
+<p>The Price index number is <strong>150</strong>, which indicates that prices have risen by 50% since the base year.</p>
+<h3 id="analytical-question"><a class="header" href="#analytical-question">Analytical Question</a></h3>
+<p><strong>Q2.</strong> How does the Consumer Price Index (CPI) help employers design wage contracts for their employees in times of high inflation?</p>
+<p><strong>Answer:</strong>
+The CPI accurately reflects the cost of living by measuring the prices of essential goods and services consumed by households. In times of high inflation, the purchasing power of money falls. Employers utilize the CPI to adjust wages and calculate the <strong>Dearness Allowance (DA)</strong>. By indexing salaries to the CPI, employers grant wage increases that match the inflation rate, thereby safeguarding the real income and standard of living of their employees against rising prices.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-8-introduction-to-microeconomics"><a class="header" href="#chapter-8-introduction-to-microeconomics">Chapter 8: Introduction to Microeconomics</a></h1>
+<p>Economics is defined as the study of how people allocate their limited resources to satisfy unlimited wants. The study is divided into two major parts: Microeconomics and Macroeconomics.</p>
+<h2 id="microeconomics-vs-macroeconomics"><a class="header" href="#microeconomics-vs-macroeconomics">Microeconomics vs Macroeconomics</a></h2>
+<ul>
+<li><strong>Microeconomics</strong> studies the behavior of individual economic units—such as a single consumer, firm, or industry. Topics include price determination of a commodity, consumer behavior, and producer behavior.</li>
+<li><strong>Macroeconomics</strong> studies the economy as a whole. Topics include national income, aggregate demand, and inflation.</li>
+</ul>
+<h2 id="positive-and-normative-economics"><a class="header" href="#positive-and-normative-economics">Positive and Normative Economics</a></h2>
+<ul>
+<li><strong>Positive Economics</strong> deals with “what is”, “what was”, and “what will be”. It involves facts that can be verified. Example: “The current poverty rate in Country X is 10%.”</li>
+<li><strong>Normative Economics</strong> involves value judgments and opinions. It deals with “what ought to be”. Example: “The government should increase the minimum wage to eradicate poverty.”</li>
+</ul>
+<h2 id="central-problems-of-an-economy"><a class="header" href="#central-problems-of-an-economy">Central Problems of an Economy</a></h2>
+<p>Due to the scarcity of resources and their alternative uses, every economy faces three fundamental economic choices:</p>
+<ol>
+<li><strong>What to produce?</strong> (Choosing which goods and services to produce and in what quantities, e.g., consumer goods vs capital goods).</li>
+<li><strong>How to produce?</strong> (Choosing the technique of production: Labour-Intensive vs Capital-Intensive).</li>
+<li><strong>For whom to produce?</strong> (Choosing how the produced goods will be distributed among the members of society).</li>
+</ol>
+<h2 id="production-possibility-frontier-ppf"><a class="header" href="#production-possibility-frontier-ppf">Production Possibility Frontier (PPF)</a></h2>
+<p>The PPF is a curve that shows all the possible combinations of two goods that can be produced in an economy with given resources and technology, assuming they are fully and efficiently utilized.</p>
+<svg viewbox="0 0 400 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+  <line x1="50" y1="250" x2="350" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12">Consumer Goods (Units)</text>
+  <text x="50" y="40" text-anchor="middle" font-size="12">Capital Goods</text>
+  <path d="M 50 60 Q 250 60 300 250" fill="none" stroke="#228be6" stroke-width="3" />
+  <circle cx="150" cy="115" r="4" fill="#fa5252" />
+  <text x="160" y="110" font-size="12" fill="#fa5252">A (Attainable/Efficient)</text>
+  <circle cx="250" cy="200" r="4" fill="#fa5252" />
+  <text x="260" y="195" font-size="12" fill="#fa5252">B (Attainable/Efficient)</text>
+  <circle cx="100" cy="200" r="4" fill="#12b886" />
+  <text x="110" y="215" font-size="12" fill="#12b886">C (Inefficient)</text>
+  <circle cx="280" cy="100" r="4" fill="#fcc419" />
+  <text x="290" y="95" font-size="12" fill="#fcc419">D (Unattainable)</text>
+</svg>
+<h3 id="opportunity-cost"><a class="header" href="#opportunity-cost">Opportunity Cost</a></h3>
+<p>Opportunity cost is defined as the value of the next best alternative forgone when making a choice. Since resources on a PPF are fully employed, increasing the output of Consumer Goods requires taking resources away from Capital Goods. The amount of Capital Goods sacrificed is the opportunity cost of producing more Consumer Goods.</p>
+<hr>
+<h2 id="competency-based-questions-7"><a class="header" href="#competency-based-questions-7">Competency-Based Questions</a></h2>
+<h3 id="application-based-question-2"><a class="header" href="#application-based-question-2">Application-Based Question</a></h3>
+<p><strong>Q1.</strong> The government of a developing nation passes a resolution adopting advanced, imported, robotic manufacturing technology instead of employing manual laborers for a massive textile project. Which of the central economic problems does this decision address?
+(a) What to produce
+(b) How to produce
+(c) For whom to produce
+(d) Why to produce</p>
+<p><strong>Answer:</strong> (b) How to produce. This problem relates directly to the choice of the technique of production (Capital-intensive technique using robotic manufacturing).</p>
+<h3 id="analytical-questions-4"><a class="header" href="#analytical-questions-4">Analytical Questions</a></h3>
+<p><strong>Q2.</strong> Widespread unemployment is observed in an economy.
+(a) Show this situation using a Production Possibility Frontier (PPF).
+(b) Will the elimination of this unemployment lead to an outward shift of the PPF? Give reasons.</p>
+<p><strong>Answer:</strong>
+(a) An economy experiencing widespread unemployment indicates that its resources are neither fully nor efficiently utilized. On the PPF diagram, this is represented by a point <strong>inside</strong> the PPF curve (like point C in the diagram above).
+(b) The elimination of unemployment will <strong>not lead to an outward shift</strong> of the PPF. The PPF shows the <em>maximum possible</em> output an economy can produce given fully utilized resources. Eliminating unemployment moves the economy from a point inside the PPF to a point <em>on</em> the PPF, but the PPF curve itself does not shift unless the <em>amount</em> of total available resources increases or technology improves.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-9-consumers-equilibrium"><a class="header" href="#chapter-9-consumers-equilibrium">Chapter 9: Consumer’s Equilibrium</a></h1>
+<p>A consumer is said to be in equilibrium when they maximize their satisfaction from their given income and the prices of commodities, and find no reason to change their spending pattern. There are two approaches to analyze this: Marginal Utility Analysis and Indifference Curve Analysis.</p>
+<h2 id="utility-analysis"><a class="header" href="#utility-analysis">Utility Analysis</a></h2>
+<p><strong>Utility</strong> refers to the want-satisfying power of a commodity. It is the imagined capability of a commodity to provide satisfaction.</p>
+<ul>
+<li><strong>Total Utility (TU):</strong> Total satisfaction derived from the consumption of a given quantity of a commodity.</li>
+<li><strong>Marginal Utility (MU):</strong> The additional satisfaction derived by consuming one more unit of a commodity. (\( MU_n = TU_n - TU_{n-1} \))</li>
+</ul>
+<h3 id="law-of-diminishing-marginal-utility-dmu"><a class="header" href="#law-of-diminishing-marginal-utility-dmu">Law of Diminishing Marginal Utility (DMU)</a></h3>
+<p>This fundamental psychological law states that as a consumer consumes more and more standard units of a commodity continuously, the marginal utility derived from every additional unit goes on declining.</p>
+<h3 id="consumers-equilibrium-marginal-utility-approach"><a class="header" href="#consumers-equilibrium-marginal-utility-approach">Consumer’s Equilibrium (Marginal Utility Approach)</a></h3>
+<p>In a single commodity case, a consumer attains equilibrium when the Marginal Utility of the good (expressed in terms of money) equals its price:
+$$ MU_x = P_x $$</p>
+<h2 id="indifference-curve-analysis-ordinal-utility"><a class="header" href="#indifference-curve-analysis-ordinal-utility">Indifference Curve Analysis (Ordinal Utility)</a></h2>
+<p>An <strong>Indifference Curve (IC)</strong> is a curve showing all combinations of two goods that give the identical level of satisfaction to the consumer. Because all points on the curve yield equal satisfaction, the consumer is indifferent between them.</p>
+<p>An <strong>Indifference Map</strong> is a set of indifference curves representing different levels of satisfaction. Higher indifference curves represent higher levels of satisfaction.</p>
+<svg viewbox="0 0 400 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+  <line x1="50" y1="250" x2="350" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12">Good X</text>
+  <text x="50" y="40" text-anchor="middle" font-size="12">Good Y</text>
+  <path d="M 60 180 Q 120 120 220 100" fill="none" stroke="#adb5bd" stroke-width="2" />
+  <text x="230" y="105" font-size="12" fill="#adb5bd">IC1</text>
+  <path d="M 80 230 Q 170 160 300 120" fill="none" stroke="#228be6" stroke-width="3" />
+  <text x="310" y="125" font-size="12" fill="#228be6">IC2 (Optimal)</text>
+  <path d="M 120 250 Q 230 190 350 140" fill="none" stroke="#adb5bd" stroke-width="2" />
+  <text x="360" y="145" font-size="12" fill="#adb5bd">IC3 (Unattainable)</text>
+  <line x1="50" y1="90" x2="280" y2="250" stroke="#e03131" stroke-width="2" />
+  <text x="290" y="265" font-size="12" fill="#e03131">Budget Line</text>
+  <circle cx="150" cy="160" r="4" fill="#000" />
+  <text x="160" y="155" font-size="12" font-weight="bold">E (Equilibrium)</text>
+  <line x1="150" y1="160" x2="150" y2="250" stroke="#333" stroke-dasharray="4" />
+  <line x1="150" y1="160" x2="50" y2="160" stroke="#333" stroke-dasharray="4" />
+</svg>
+<h3 id="the-budget-set-and-budget-line"><a class="header" href="#the-budget-set-and-budget-line">The Budget Set and Budget Line</a></h3>
+<p>The <strong>Budget Set</strong> represents all bundles of two goods that a consumer can purchase that cost less than or equal to the consumer’s income given prices.
+The <strong>Budget Line</strong> represents all combinations of two goods that exactly cost the consumer’s income. It is a straight, downward-sloping line.</p>
+<h3 id="consumers-equilibrium-indifference-curve-approach"><a class="header" href="#consumers-equilibrium-indifference-curve-approach">Consumer’s Equilibrium (Indifference Curve Approach)</a></h3>
+<p>Equilibrium is reached at the point where the Budget Line is strictly tangent to the highest attainable Indifference Curve (Point E in the diagram).
+Conditions for equilibrium:</p>
+<ol>
+<li>Slope of IC (\(MRS_{xy}\)) = Slope of Budget Line (\(\frac{P_x}{P_y}\))</li>
+<li>IC must be strictly convex to the origin.</li>
+</ol>
+<hr>
+<h2 id="competency-based-questions-8"><a class="header" href="#competency-based-questions-8">Competency-Based Questions</a></h2>
+<h3 id="case-based-question-1"><a class="header" href="#case-based-question-1">Case-Based Question</a></h3>
+<p><strong>Q1.</strong> Suppose a pizza slice costs ₹100. Ramesh derives a Marginal Utility of 120 from the first slice, 100 from the second, and 60 from the third slice. (Assume 1 unit of utility equals ₹1).
+(a) At what point will Ramesh stop buying pizza slices to attain consumer equilibrium?
+(b) Which economic law governs the falling marginal utility values given?</p>
+<p><strong>Answer:</strong>
+(a) Ramesh will attain equilibrium and stop buying when \(MU_x = P_x\).
+For the 1st slice: \(MU = 120\), \(P_x = 100\) (\(MU &gt; P_x\), he will buy).
+For the 2nd slice: \(MU = 100\), \(P_x = 100\) (\(MU = P_x\), he attains equilibrium).
+For the 3rd slice: \(MU = 60\), \(P_x = 100\) (\(MU &lt; P_x\), he will not buy).
+Therefore, he will buy exactly <strong>two slices</strong> of pizza.
+(b) The <strong>Law of Diminishing Marginal Utility</strong> governs this behavior.</p>
+<h3 id="analytical-question-1"><a class="header" href="#analytical-question-1">Analytical Question</a></h3>
+<p><strong>Q2.</strong> An indifference curve is convex to the origin. Discuss the economic reasoning behind this property.</p>
+<p><strong>Answer:</strong>
+An indifference curve is convex toward the origin due to the operation of the <strong>Law of Diminishing Marginal Rate of Substitution (MRS)</strong>. As a consumer acquires more and more units of Good X, their intensity of desire for it decreases. At the same time, the stock of Good Y with them is decreasing, making their desire for Good Y stronger. Consequently, the consumer is willing to sacrifice less and less of Good Y to obtain every additional unit of Good X. Because they sacrifice a diminishing amount of Y for an equal increase in X, the slope or MRS declines continuously, resulting in a curve that is convex to the origin.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-10-consumers-demand-and-elasticity"><a class="header" href="#chapter-10-consumers-demand-and-elasticity">Chapter 10: Consumer’s Demand and Elasticity</a></h1>
+<p>Demand refers to the quantity of a commodity that a consumer is willing and able to purchase at various given prices during a given period of time. It requires two things: Desire to buy AND Ability to pay (purchasing power).</p>
+<h2 id="determinants-of-demand"><a class="header" href="#determinants-of-demand">Determinants of Demand</a></h2>
+<p>The demand for a commodity depends on several factors:</p>
+<ol>
+<li>Price of the commodity (\(P_x\)).</li>
+<li>Price of related goods (Substitute Goods like tea and coffee; Complementary Goods like cars and petrol).</li>
+<li>Income of the consumer (\(Y\)).</li>
+<li>Tastes and Preferences.</li>
+</ol>
+<h2 id="demand-schedule-and-demand-curve"><a class="header" href="#demand-schedule-and-demand-curve">Demand Schedule and Demand Curve</a></h2>
+<p>A <strong>Demand Schedule</strong> is a tabular statement showing different quantities demanded at different prices.
+A <strong>Demand Curve</strong> is the graphical representation of the demand schedule. Due to the inverse relationship between price and quantity demanded (Law of Demand), the curve slopes downward from left to right.</p>
+<h2 id="movement-vs-shift-in-the-demand-curve"><a class="header" href="#movement-vs-shift-in-the-demand-curve">Movement vs. Shift in the Demand Curve</a></h2>
+<h3 id="movement-along-the-demand-curve"><a class="header" href="#movement-along-the-demand-curve">Movement along the Demand Curve</a></h3>
+<p>When change in quantity demanded occurs strictly due to a change in the product’s own price (keeping all other factors constant), it leads to a movement along the same curve.</p>
+<ul>
+<li><strong>Expansion of demand</strong>: Downward movement due to a fall in price.</li>
+<li><strong>Contraction of demand</strong>: Upward movement due to a rise in price.</li>
+</ul>
+<h3 id="shift-in-the-demand-curve"><a class="header" href="#shift-in-the-demand-curve">Shift in the Demand Curve</a></h3>
+<p>When quantity demanded changes due to factors <em>other</em> than the product’s own price (e.g., an increase in consumer income), the entire curve shifts.</p>
+<ul>
+<li><strong>Increase in Demand</strong>: Curve shifts completely to the right.</li>
+<li><strong>Decrease in Demand</strong>: Curve shifts completely to the left.</li>
+</ul>
+<svg viewbox="0 0 400 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+  <line x1="50" y1="250" x2="350" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12">Quantity Q</text>
+  <text x="50" y="40" text-anchor="middle" font-size="12">Price P</text>
+  <line x1="100" y1="70" x2="250" y2="220" stroke="#228be6" stroke-width="3" />
+  <text x="260" y="230" font-size="12" fill="#228be6">D1</text>
+  <line x1="160" y1="70" x2="310" y2="220" stroke="#12b886" stroke-width="3" stroke-dasharray="6" />
+  <text x="320" y="230" font-size="12" fill="#12b886">D2 (Shift)</text>
+  <line x1="150" y1="120" x2="210" y2="120" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" />
+  <polygon points="210,116 218,120 210,124" fill="#333" />
+</svg>
+<h2 id="price-elasticity-of-demand-e_d"><a class="header" href="#price-elasticity-of-demand-e_d">Price Elasticity of Demand (\(E_d\))</a></h2>
+<p>Price elasticity of demand measures the degree of responsiveness of quantity demanded to a change in the price of the commodity.</p>
+<h3 id="measurement-using-percentage-change-method"><a class="header" href="#measurement-using-percentage-change-method">Measurement using Percentage Change Method</a></h3>
+<p>$$ E_d = -\frac{%\text{ change in Quantity Demanded}}{%\text{ change in price}} $$
+$$ E_d = \frac{\Delta Q}{\Delta P} \times \frac{P}{Q} $$
+Where:</p>
+<ul>
+<li>\(\Delta Q = Q_1 - Q_0\) (Change in Quantity)</li>
+<li>\(\Delta P = P_1 - P_0\) (Change in Price)</li>
+</ul>
+<h3 id="factors-affecting-elasticity"><a class="header" href="#factors-affecting-elasticity">Factors Affecting Elasticity</a></h3>
+<ul>
+<li>Availability of substitutes (High substitutes = Highly elastic)</li>
+<li>Nature of commodity (Necessities = Inelastic, Luxuries = Elastic)</li>
+<li>Proportion of income spent (High proportion = Elastic)</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-9"><a class="header" href="#competency-based-questions-9">Competency-Based Questions</a></h2>
+<h3 id="data-based-question"><a class="header" href="#data-based-question">Data-Based Question</a></h3>
+<p><strong>Q1.</strong> The price of a smartphone drops from ₹20,000 to ₹16,000. As a result, its monthly demand scales up from 5,000 units to 6,250 units. Calculate the price elasticity of demand using the percentage method. Based on the value, comment on the nature of its elasticity.</p>
+<p><strong>Answer:</strong>
+Given:
+\(P = 20,000\); \(P_1 = 16,000\) \(\implies\Delta P = -4,000\)
+\(Q = 5,000\); \(Q_1 = 6,250\) \(\implies\Delta Q = +1,250\)</p>
+<p>$$ E_d = \frac{\Delta Q}{\Delta P} \times \frac{P}{Q} $$
+$$ E_d = \frac{1,250}{-4,000} \times \frac{20,000}{5,000} $$
+$$ E_d = -0.3125 \times 4 = -1.25 $$</p>
+<p>Since \(|E_d| &gt; 1\), the demand for the smartphone is <strong>highly elastic</strong>. A small percentage drop in price led to a proportionately larger increase in demand.</p>
+<h3 id="analytical-question-2"><a class="header" href="#analytical-question-2">Analytical Question</a></h3>
+<p><strong>Q2.</strong> The price of Coffee rises in the global market. Using a diagrammatic explanation or clear reasoning, state what will happen to the demand curve for Tea.</p>
+<p><strong>Answer:</strong>
+Tea and Coffee are <strong>substitute goods</strong>. If the price of coffee rises, coffee becomes relatively more expensive to consumers, prompting many to switch their consumption from coffee to tea, even though the price of tea itself has not changed.
+Consequently, the demand for tea will increase at its existing price. Graphically, this is represented by a <strong>rightward shift</strong> of the entire demand curve for tea (an “Increase in Demand”).</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-11-producer-behaviour-and-production-function"><a class="header" href="#chapter-11-producer-behaviour-and-production-function">Chapter 11: Producer Behaviour and Production Function</a></h1>
+<p>The behavior of a producer revolves around making fundamental decisions: what to produce, how much to produce, and which combination of inputs to use to maximize profits.</p>
+<h2 id="meaning-of-production-function"><a class="header" href="#meaning-of-production-function">Meaning of Production Function</a></h2>
+<p>Production is the transformation of inputs into output. The <strong>Production Function</strong> expresses the technological relationship between physical inputs and physical output of a good.</p>
+<ul>
+<li><strong>Short-Run Production Function:</strong> Relates to a period where at least one factor of production is fixed (e.g., land, heavy machinery), while others are variable (e.g., raw materials, unskilled labor).</li>
+<li><strong>Long-Run Production Function:</strong> Relates to a period where all factors of production are variable.</li>
+</ul>
+<h2 id="concepts-of-product"><a class="header" href="#concepts-of-product">Concepts of Product</a></h2>
+<ol>
+<li><strong>Total Product (TP):</strong> Total quantity of goods produced by a firm during a given period with given inputs.</li>
+<li><strong>Average Product (AP):</strong> Output per unit of variable input (\( AP = \frac{TP}{L} \)).</li>
+<li><strong>Marginal Product (MP):</strong> The addition to Total Product when one more unit of variable input is employed (\( MP_n = TP_n - TP_{n-1} \)).</li>
+</ol>
+<h2 id="law-of-variable-proportions-returns-to-a-factor"><a class="header" href="#law-of-variable-proportions-returns-to-a-factor">Law of Variable Proportions (Returns to a Factor)</a></h2>
+<p>It states that as we increase the quantity of only one input keeping other inputs fixed, total product (TP) initially increases at an increasing rate, then at a decreasing rate, and finally falls.</p>
+<p>This law operates in three stages:</p>
+<ol>
+<li><strong>Stage I (Increasing Returns):</strong> TP increases at an increasing rate. MP is rising.</li>
+<li><strong>Stage II (Diminishing Returns):</strong> TP increases at a decreasing rate. MP is falling but remains positive. (This is the stage of rational production).</li>
+<li><strong>Stage III (Negative Returns):</strong> TP starts declining. MP becomes negative.</li>
+</ol>
+<svg viewbox="0 0 400 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+  <line x1="50" y1="250" x2="350" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="20" stroke="#333" stroke-width="2" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12">Variable Input (Labor)</text>
+  <text x="50" y="10" text-anchor="middle" font-size="12">TP / MP</text>
+  <path d="M 50 250 Q 80 200 130 130 T 220 50 T 320 100" fill="none" stroke="#e03131" stroke-width="2" />
+  <text x="330" y="100" font-size="12" fill="#e03131">TP</text>
+  <path d="M 50 250 Q 70 120 110 90 T 260 250 T 320 300" fill="none" stroke="#12b886" stroke-width="2" />
+  <text x="320" y="295" font-size="12" fill="#12b886">MP</text>
+  <line x1="110" y1="90" x2="110" y2="250" stroke="#adb5bd" stroke-dasharray="4" />
+  <text x="80" y="40" font-size="12" fill="#868e96">Stage I</text>
+  <line x1="260" y1="50" x2="260" y2="250" stroke="#adb5bd" stroke-dasharray="4" />
+  <text x="180" y="40" font-size="12" fill="#868e96">Stage II</text>
+  <text x="290" y="40" font-size="12" fill="#868e96">Stage III</text>
+</svg>
+<hr>
+<h2 id="competency-based-questions-10"><a class="header" href="#competency-based-questions-10">Competency-Based Questions</a></h2>
+<h3 id="application-based-question-3"><a class="header" href="#application-based-question-3">Application-Based Question</a></h3>
+<p><strong>Q1.</strong> A farmer applies more and more fertilizer to a fixed plot of land. Initially, his crop yield increases significantly. However, after a certain point, adding more fertilizer actually reduces the total harvest. Name the economic law that explains this scenario and identify the specific stage the farmer has reached.</p>
+<p><strong>Answer:</strong>
+The scenario is explained by the <strong>Law of Variable Proportions</strong>. The farmer has reached <strong>Stage III (Negative Returns)</strong> where the Marginal Product (MP) of the variable input (fertilizer) has become negative, thereby causing the Total Product (harvest) to decline. This happens because the fixed factor (land) becomes over-crowded and the combination of fixed and variable factors becomes extremely disproportionate and inefficient.</p>
+<h3 id="evaluative-question"><a class="header" href="#evaluative-question">Evaluative Question</a></h3>
+<p><strong>Q2.</strong> As a rational producer aiming for maximum efficiency, in which stage of the Law of Variable Proportions would you prefer to operate, and why?</p>
+<p><strong>Answer:</strong>
+A rational producer will always choose to operate in <strong>Stage II (Diminishing Returns)</strong>.
+<em>Reasoning</em>:
+In Stage I, MP is rising, meaning every additional unit of the variable factor adds more to the output than the previous unit. Stopping here means leaving potential efficiency and output unutilized.
+In Stage III, MP is negative, meaning total output is actually falling; employing more resources here physically harms production and wastes money.
+Therefore, Stage II is the only logical choice, where total product is still increasing (albeit at a decreasing rate) until MP eventually hits zero.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-12-cost-and-revenue"><a class="header" href="#chapter-12-cost-and-revenue">Chapter 12: Cost and Revenue</a></h1>
+<h2 id="theory-of-cost"><a class="header" href="#theory-of-cost">Theory of Cost</a></h2>
+<p>Cost refers to the expenditure incurred by a producer on the factors of production to produce a given quantity of output.</p>
+<h3 id="short-run-costs"><a class="header" href="#short-run-costs">Short-Run Costs</a></h3>
+<p>In the short run, costs are classified into fixed and variable costs.</p>
+<ul>
+<li><strong>Total Fixed Cost (TFC):</strong> Costs that do not change with the level of output (e.g., rent, insurance). It remains constant even if output is zero.</li>
+<li><strong>Total Variable Cost (TVC):</strong> Costs that vary directly with the level of output (e.g., raw materials, wages of casual labor).</li>
+<li><strong>Total Cost (TC):</strong> \( TC = TFC + TVC \)</li>
+</ul>
+<h3 id="average-and-marginal-costs"><a class="header" href="#average-and-marginal-costs">Average and Marginal Costs</a></h3>
+<ul>
+<li><strong>Average Fixed Cost (AFC):</strong> \( AFC = \frac{TFC}{Q} \). It continuously falls as output increases, forming a rectangular hyperbola curve.</li>
+<li><strong>Average Variable Cost (AVC):</strong> \( AVC = \frac{TVC}{Q} \). It is U-shaped.</li>
+<li><strong>Average Total Cost (AC):</strong> \( AC = \frac{TC}{Q} = AFC + AVC \). It is also U-shaped.</li>
+<li><strong>Marginal Cost (MC):</strong> Addition made to total cost by producing one more unit. (\( MC = TC_n - TC_{n-1} \)). MC is strictly U-shaped due to the Law of Variable Proportions.</li>
+</ul>
+<h3 id="relationship-between-ac-and-mc"><a class="header" href="#relationship-between-ac-and-mc">Relationship Between AC and MC</a></h3>
+<ol>
+<li>When \(MC &lt; AC\), AC falls.</li>
+<li>When \(MC = AC\), AC is minimum and constant.</li>
+<li>When \(MC &gt; AC\), AC rises.</li>
+<li>The MC curve cuts the AC curve from below at its minimum point.</li>
+</ol>
+<svg viewbox="0 0 400 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+  <line x1="50" y1="250" x2="350" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="20" stroke="#333" stroke-width="2" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12">Output</text>
+  <text x="50" y="10" text-anchor="middle" font-size="12">Cost</text>
+  <path d="M 70 60 Q 150 250 300 100" fill="none" stroke="#3b5bdb" stroke-width="2" />
+  <text x="310" y="95" font-size="12" fill="#3b5bdb">AC</text>
+  <path d="M 60 150 Q 120 300 250 40" fill="none" stroke="#e03131" stroke-width="2" />
+  <text x="260" y="50" font-size="12" fill="#e03131">MC</text>
+  <circle cx="160" cy="183" r="4" fill="#000" />
+  <text x="170" y="195" font-size="12">MC = Min AC</text>
+  <line x1="160" y1="183" x2="160" y2="250" stroke="#868e96" stroke-dasharray="4" />
+</svg>
+<h2 id="theory-of-revenue"><a class="header" href="#theory-of-revenue">Theory of Revenue</a></h2>
+<p>Revenue refers to the total money receipts of a firm from the sale of its output.</p>
+<ul>
+<li><strong>Total Revenue (TR):</strong> \( TR = P \times Q \)</li>
+<li><strong>Average Revenue (AR):</strong> \( AR = \frac{TR}{Q} = P \). Thus, AR is simply the price of the commodity.</li>
+<li><strong>Marginal Revenue (MR):</strong> Additional revenue generated from selling one more unit. (\( MR = TR_n - TR_{n-1} \)).</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-11"><a class="header" href="#competency-based-questions-11">Competency-Based Questions</a></h2>
+<h3 id="case-based-question-2"><a class="header" href="#case-based-question-2">Case-Based Question</a></h3>
+<p><strong>Q1.</strong> A firm’s Total Fixed Cost is ₹500. At an output level of 10 units, its Total Variable Cost is ₹1,500.
+Calculate the firm’s Average Fixed Cost (AFC) and Average Total Cost (AC) at this output level.</p>
+<p><strong>Answer:</strong>
+Given:
+TFC = ₹500
+TVC = ₹1500
+Output (\(Q\)) = 10 units</p>
+<ol>
+<li>\( AFC = \frac{TFC}{Q} = \frac{500}{10} = \text{₹}50 \)</li>
+<li>\( TC = TFC + TVC = 500 + 1500 = \text{₹}2000 \)</li>
+<li>\( AC = \frac{TC}{Q} = \frac{2000}{10} = \text{₹}200 \)
+Therefore, AFC is <strong>₹50</strong> and AC is <strong>₹200</strong>.</li>
+</ol>
+<h3 id="conceptual-question"><a class="header" href="#conceptual-question">Conceptual Question</a></h3>
+<p><strong>Q2.</strong> Why does the Average Fixed Cost (AFC) curve never touch the X-axis, even at extremely high levels of output?</p>
+<p><strong>Answer:</strong>
+AFC is calculated as \( TFC / Q \). Because Total Fixed Cost (TFC) is a positive constant number (e.g., rent must be paid regardless of output), dividing it by continuously increasing output (\(Q\)) makes the resulting AFC smaller and smaller. However, as long as TFC is greater than zero, the division result can never mathematically reach exactly zero. Therefore, the curve approaches the X-axis asymptotically but never actually touches it.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-13-producers-equilibrium-and-supply"><a class="header" href="#chapter-13-producers-equilibrium-and-supply">Chapter 13: Producer’s Equilibrium and Supply</a></h1>
+<h2 id="producers-equilibrium-mr-mc-approach"><a class="header" href="#producers-equilibrium-mr-mc-approach">Producer’s Equilibrium (MR-MC Approach)</a></h2>
+<p>A producer is in equilibrium when they are producing that level of output where their profits are maximized, and they have no incentive to change their production level.</p>
+<p>According to the <strong>MR-MC approach</strong>, two conditions must be fulfilled for producer’s equilibrium:</p>
+<ol>
+<li><strong>MR = MC</strong>: Marginal Revenue must equal Marginal Cost. At this point, the firm’s total profits are maximized.</li>
+<li><strong>MC must be rising beyond the point of equilibrium</strong>: MC must cut MR from below. If MC is falling and equals MR, producing another unit will add more to revenue than to cost, meaning profits can still increase. Equilibrium is only stable when MC rises after equaling MR.</li>
+</ol>
+<h2 id="supply-and-its-determinants"><a class="header" href="#supply-and-its-determinants">Supply and its Determinants</a></h2>
+<p><strong>Supply</strong> refers to the quantity of a commodity that a firm is willing and able to offer for sale at a given price during a given period.</p>
+<p>Determinants of Supply include:</p>
+<ul>
+<li>Price of the commodity</li>
+<li>Prices of related goods</li>
+<li>Prices of factors of production (input costs)</li>
+<li>State of technology</li>
+<li>Government policy (taxes and subsidies)</li>
+</ul>
+<h2 id="supply-schedule-and-supply-curve"><a class="header" href="#supply-schedule-and-supply-curve">Supply Schedule and Supply Curve</a></h2>
+<p>A <strong>Supply Schedule</strong> shows various quantities of a commodity offered for sale at different alternative prices.
+A <strong>Supply Curve</strong> is the graphical representation of the supply schedule. According to the <strong>Law of Supply</strong>, keeping other factors constant, as the price of a commodity increases, the quantity supplied increases. This gives the supply curve a positive (upward) slope.</p>
+<svg viewbox="0 0 400 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+  <line x1="50" y1="250" x2="350" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12">Quantity Supplied</text>
+  <text x="50" y="40" text-anchor="middle" font-size="12">Price</text>
+  <line x1="80" y1="220" x2="300" y2="80" stroke="#2b8a3e" stroke-width="3" />
+  <text x="310" y="70" font-size="12" fill="#2b8a3e">S</text>
+</svg>
+<h2 id="price-elasticity-of-supply-e_s"><a class="header" href="#price-elasticity-of-supply-e_s">Price Elasticity of Supply (\(E_s\))</a></h2>
+<p>Price elasticity of supply measures the responsiveness of the quantity supplied to a change in price.
+$$ E_s = \frac{%\text{ change in quantity supplied}}{%\text{ change in price}} = \frac{\Delta Q}{\Delta P} \times \frac{P}{Q} $$</p>
+<hr>
+<h2 id="competency-based-questions-12"><a class="header" href="#competency-based-questions-12">Competency-Based Questions</a></h2>
+<h3 id="application-based-question-4"><a class="header" href="#application-based-question-4">Application-Based Question</a></h3>
+<p><strong>Q1.</strong> The government imposes a heavy environmental tax on factories producing plastic bags. Analyze the impact of this tax on the supply curve of plastic bags using economic reasoning.</p>
+<p><strong>Answer:</strong>
+Imposing a tax increases the cost of production for the manufacturers. As the cost of producing plastic bags increases, the firm’s profit margin drops at the existing market price. Consequently, producers will be willing to supply fewer plastic bags at any given price. Graphically, this is represented as a <strong>leftward shift</strong> in the supply curve (Decrease in Supply).</p>
+<h3 id="analytical-question-3"><a class="header" href="#analytical-question-3">Analytical Question</a></h3>
+<p><strong>Q2.</strong> A firm observes that at 40 units of output, MR = ₹10 and MC = ₹10. At 41 units, MR = ₹10 and MC = ₹8. Is the firm at equilibrium at 40 units? Justify your answer using the MR-MC approach.</p>
+<p><strong>Answer:</strong>
+No, the firm is <strong>not in equilibrium</strong> at 40 units.
+<em>Reasoning</em>: While the first condition of equilibrium (MR = MC) is fulfilled at 40 units (₹10 = ₹10), the second condition is violated. The second condition states that MC must be rising beyond the point of equilibrium. However, at 41 units, MC falls to ₹8 while MR remains ₹10. This implies that producing the 41st unit brings more revenue (₹10) than it costs (₹8), thereby adding ₹2 to total profits. A rational producer will continue to expand output to increase profits until MC rises and equals MR again.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-14-perfect-competition-and-price-determination"><a class="header" href="#chapter-14-perfect-competition-and-price-determination">Chapter 14: Perfect Competition and Price Determination</a></h1>
+<h2 id="perfect-competition"><a class="header" href="#perfect-competition">Perfect Competition</a></h2>
+<p>Perfect Competition is a market structure characterized by a very large number of buyers and sellers, dealing in purely homogeneous (identical) products, at a single uniform price dictated by market forces.</p>
+<h3 id="features-of-perfect-competition"><a class="header" href="#features-of-perfect-competition">Features of Perfect Competition</a></h3>
+<ol>
+<li><strong>Large Number of Buyers and Sellers:</strong> The individual seller’s output is an insignificantly small fraction of total market supply. Thus, a single seller is a “Price Taker”, not a “Price Maker”.</li>
+<li><strong>Homogeneous Product:</strong> Products sold by different firms are identical in size, quality, and design. There is zero product differentiation.</li>
+<li><strong>Free Entry and Exit:</strong> Firms can enter or leave the industry without restrictions in the long run.</li>
+<li><strong>Perfect Knowledge:</strong> Buyers and sellers are fully aware of market conditions and prices.</li>
+</ol>
+<h2 id="determination-of-market-equilibrium"><a class="header" href="#determination-of-market-equilibrium">Determination of Market Equilibrium</a></h2>
+<p><strong>Market Equilibrium</strong> occurs at the price where Market Demand strictly equals Market Supply.</p>
+<ul>
+<li>The price at which this occurs is the <strong>Equilibrium Price</strong>.</li>
+<li>The quantity traded is the <strong>Equilibrium Quantity</strong>.</li>
+</ul>
+<p>If the market price is above the equilibrium price, there will be <strong>Excess Supply</strong> (Surplus), which forces sellers to reduce prices.
+If the market price is below the equilibrium price, there will be <strong>Excess Demand</strong> (Shortage), creating competition among buyers that pushes the price up.</p>
+<svg viewbox="0 0 400 300" width="100%" height="300" style="background-color: #f8f9fa; border-radius: 8px; font-family: sans-serif;">
+  <line x1="50" y1="250" x2="350" y2="250" stroke="#333" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="#333" stroke-width="2" />
+  <text x="50" y="270" text-anchor="middle" font-size="12">0</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12">Quantity</text>
+  <text x="50" y="40" text-anchor="middle" font-size="12">Price</text>
+  <line x1="80" y1="70" x2="300" y2="230" stroke="#228be6" stroke-width="2" />
+  <text x="310" y="240" font-size="12" fill="#228be6">D</text>
+  <line x1="80" y1="230" x2="300" y2="70" stroke="#2b8a3e" stroke-width="2" />
+  <text x="310" y="70" font-size="12" fill="#2b8a3e">S</text>
+  <circle cx="190" cy="150" r="5" fill="#e03131" />
+  <line x1="50" y1="150" x2="190" y2="150" stroke="#333" stroke-dasharray="4" />
+  <line x1="190" y1="150" x2="190" y2="250" stroke="#333" stroke-dasharray="4" />
+  <text x="180" y="140" font-size="12" font-weight="bold" fill="#e03131">E (Equilibrium)</text>
+  <text x="30" y="155" text-anchor="end" font-size="12">Pe</text>
+  <text x="190" y="270" text-anchor="middle" font-size="12">Qe</text>
+</svg>
+<h2 id="simple-applications-of-demand-and-supply"><a class="header" href="#simple-applications-of-demand-and-supply">Simple Applications of Demand and Supply</a></h2>
+<p>The government sometimes intervenes in free markets to control prices for societal welfare.</p>
+<ul>
+<li><strong>Price Ceiling:</strong> The maximum legal price that sellers can charge for a vital necessity (e.g., life-saving drugs). It is set <em>below</em> the equilibrium price to protect consumers, causing Excess Demand (shortage) and sometimes leading to black marketing.</li>
+<li><strong>Price Floor (Minimum Support Price):</strong> The legal minimum price set by the government, primarily used for agricultural goods to protect farmers. It is set <em>above</em> the equilibrium price, causing Excess Supply, which the government usually buys to maintain buffer stocks.</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-13"><a class="header" href="#competency-based-questions-13">Competency-Based Questions</a></h2>
+<h3 id="case-based-question-3"><a class="header" href="#case-based-question-3">Case-Based Question</a></h3>
+<p><strong>Q1.</strong> The government announces a guaranteed minimum price for wheat, which is substantially higher than the market-determined equilibrium price.
+(a) Identify this economic concept.
+(b) Evaluate the immediate impact of this policy on the open market for wheat.</p>
+<p><strong>Answer:</strong>
+(a) This concept is known as a <strong>Price Floor</strong> or <strong>Minimum Support Price (MSP)</strong>.
+(b) Setting a price floor above the equilibrium price encourages farmers to produce and supply more wheat, while the high price deters consumers, reducing the quantity demanded. Consequently, an <strong>Excess Supply (surplus)</strong> of wheat is created in the open market. To prevent the price from dropping back, the government must step in and purchase this surplus to create buffer stocks.</p>
+<h3 id="analytical-question-4"><a class="header" href="#analytical-question-4">Analytical Question</a></h3>
+<p><strong>Q2.</strong> “Under Perfect Competition, an individual firm is a price taker, not a price maker.” Support this statement with two logical justifications.</p>
+<p><strong>Answer:</strong>
+This statement is true because of the foundational features of perfect competition:</p>
+<ol>
+<li><strong>Large Number of Sellers:</strong> A single firm produces such an insignificantly small fraction of the total market output that even if it doubles its output or halts production entirely, it cannot affect the overall market supply or the equilibrium price.</li>
+<li><strong>Homogeneous Products:</strong> If a firm tries to act as a “price maker” by charging a price even slightly higher than the prevailing market price, buyers will instantly shift to countless other sellers offering the identical product at the lower market price. Therefore, the firm has no choice but to “take” the price determined by the broader market forces of aggregate demand and supply.</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
