@@ -1,0 +1,1559 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>mathematics grade 11 for CBSE</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-71a6b94e.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-f53d1f3b.css">
+        <link rel="stylesheet" href="css/general-26f427df.css">
+        <link rel="stylesheet" href="css/chrome-efc1a725.css">
+        <link rel="stylesheet" href="css/print-12fda3f6.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9f6ffc94.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-f8ad6210.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-a51cce7f.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-9ca4f747.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">mathematics grade 11 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="unit-i-sets-and-functions"><a class="header" href="#unit-i-sets-and-functions">Unit I: Sets and Functions</a></h1>
+<p>This unit forms the foundation for higher mathematics. It covers set theory, the various relations and functions between sets, and the deep study of trigonometric functions.</p>
+<p><strong>Chapters in this Unit:</strong></p>
+<ol>
+<li>Sets</li>
+<li>Relations and Functions</li>
+<li>Trigonometric Functions</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-1-sets"><a class="header" href="#chapter-1-sets">Chapter 1: Sets</a></h1>
+<h2 id="11-introduction-to-sets"><a class="header" href="#11-introduction-to-sets">1.1 Introduction to Sets</a></h2>
+<p>A <strong>set</strong> is a well-defined collection of objects. These objects are called the elements or members of the set.
+Sets are usually denoted by capital letters: \( A, B, C, X, Y, Z \), etc.
+The elements of a set are represented by small letters: \( a, b, c, x, y, z \), etc.</p>
+<p>If \( a \) is an element of set \( A \), we write \( a \in A \) (read as “\( a \) belongs to \( A \)”).
+If \( b \) is not an element of \( A \), we write \( b \notin A \).</p>
+<h3 id="representations-of-sets"><a class="header" href="#representations-of-sets">Representations of Sets</a></h3>
+<ol>
+<li><strong>Roster or Tabular Form:</strong> All elements of the set are listed, separated by commas, and enclosed within braces \( \{ \} \).
+<em>Example:</em> The set of all vowels in the English alphabet is \( V = \{a, e, i, o, u\} \).</li>
+<li><strong>Set-Builder Form:</strong> All elements possess a single common property which is not possessed by any element outside the set.
+<em>Example:</em> \( V = \{x : x \text{ is a vowel in English alphabet}\} \).</li>
+</ol>
+<h2 id="12-types-of-sets"><a class="header" href="#12-types-of-sets">1.2 Types of Sets</a></h2>
+<ul>
+<li><strong>Empty Set:</strong> A set which does not contain any element. Denoted by \( \emptyset \) or \( \{\} \).</li>
+<li><strong>Finite and Infinite Sets:</strong> A set which is empty or consists of a definite number of elements is finite, otherwise it is infinite.</li>
+<li><strong>Equal Sets:</strong> Two sets \( A \) and \( B \) are equal if they have exactly the same elements. We write \( A = B \).</li>
+<li><strong>Subsets:</strong> A set \( A \) is a subset of \( B \) if every element of \( A \) is also an element of \( B \). We write \( A \subseteq B \).</li>
+<li><strong>Universal Set:</strong> A broad set that contains all elements under consideration, denoted by \( U \).</li>
+</ul>
+<h3 id="subsets-of-real-numbers"><a class="header" href="#subsets-of-real-numbers">Subsets of Real Numbers</a></h3>
+<p>Important numerical sets and their standard notations:</p>
+<ul>
+<li>\( \mathbb{N} \): Set of natural numbers \( \{1, 2, 3, \ldots\} \)</li>
+<li>\( \mathbb{Z} \): Set of integers \( \{\ldots, -2, -1, 0, 1, 2, \ldots\} \)</li>
+<li>\( \mathbb{Q} \): Set of rational numbers</li>
+<li>\( \mathbb{R} \): Set of real numbers</li>
+</ul>
+<h4 id="intervals-as-subsets-of--mathbbr-"><a class="header" href="#intervals-as-subsets-of--mathbbr-">Intervals as Subsets of \( \mathbb{R} \)</a></h4>
+<ul>
+<li><strong>Open interval:</strong> \( (a, b) = \{x : a &lt; x &lt; b\} \)</li>
+<li><strong>Closed interval:</strong> \( [a, b] = \{x : a \le x \le b\} \)</li>
+<li><strong>Semi-open intervals:</strong> \( [a, b) = \{x : a \le x &lt; b\} \) and \( (a, b] = \{x : a &lt; x \le b\} \)</li>
+</ul>
+<h2 id="13-venn-diagrams"><a class="header" href="#13-venn-diagrams">1.3 Venn Diagrams</a></h2>
+<p>Most relationships between sets can be visualized using diagrams, known as Venn Diagrams.
+The Universal Set \( U \) is represented by a rectangle, and its subsets are represented by circles.</p>
+<div style="text-align: center; margin: 20px 0;">
+    <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+        <rect width="300" height="200" style="fill:#f4f4f4; stroke:#333; stroke-width:2" />
+        <text x="10" y="20" font-family="Arial" font-size="16">U</text>
+        <circle cx="100" cy="100" r="60" style="fill:rgba(0,0,255,0.2); stroke:blue; stroke-width:2" />
+        <text x="70" y="100" font-family="Arial" font-size="16">A</text>
+        <circle cx="200" cy="100" r="60" style="fill:rgba(255,0,0,0.2); stroke:red; stroke-width:2" />
+        <text x="210" y="100" font-family="Arial" font-size="16">B</text>
+    </svg>
+    <br />
+    <em>Figure 1.1: A Venn diagram showing two intersecting sets A and B.</em>
+</div>
+
+<h2 id="14-operations-on-sets"><a class="header" href="#14-operations-on-sets">1.4 Operations on Sets</a></h2>
+<ol>
+<li><strong>Union of Sets:</strong> The union of \( A \) and \( B \) is the set of all elements which are either in \( A \), or in \( B \), or in both.
+\[ A \cup B = \{x : x \in A \text{ or } x \in B\} \]</li>
+<li><strong>Intersection of Sets:</strong> The intersection is the set of elements common to both \( A \) and \( B \).
+\[ A \cap B = \{x : x \in A \text{ and } x \in B\} \]</li>
+<li><strong>Difference of Sets:</strong> The difference \( A - B \) is the set of elements which belong to \( A \) but not to \( B \).
+\[ A - B = \{x : x \in A \text{ and } x \notin B\} \]</li>
+<li><strong>Complement of a Set:</strong> Given a universal set \( U \) and a subset \( A \), the complement of \( A \) is the set of all elements of \( U \) which are not elements of \( A \).
+\[ A’ = \{x : x \in U \text{ and } x \notin A\} = U - A \]</li>
+</ol>
+<h3 id="properties-of-complement"><a class="header" href="#properties-of-complement">Properties of Complement</a></h3>
+<ul>
+<li>Complement Laws: \( A \cup A’ = U \) and \( A \cap A’ = \emptyset \)</li>
+<li>De Morgan’s Laws:
+<ul>
+<li>\( (A \cup B)’ = A’ \cap B’ \)</li>
+<li>\( (A \cap B)’ = A’ \cup B’ \)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>A marketing firm conducted a survey of 1000 people to find out their preferences for three different brands of coffee: A, B, and C. It was found that 450 preferred brand A, 350 preferred brand B, and 300 preferred brand C. Furthermore, 150 preferred both A and B, 100 preferred both B and C, and 120 preferred both A and C. If 80 people liked all three brands, how many people do not prefer any of the three brands? Identify this via set operations.</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>Let \( U \) be the set of surveyed people. Thus, \( n(U) = 1000 \).</p>
+<p>Let \( A, B, C \) represent the sets of people preferring brands A, B, and C respectively.</p>
+<p>We are given:</p>
+<p>\( n(A) = 450 \), \( n(B) = 350 \), \( n(C) = 300 \)</p>
+<p>\( n(A \cap B) = 150 \)</p>
+<p>\( n(B \cap C) = 100 \)</p>
+<p>\( n(A \cap C) = 120 \)</p>
+<p>\( n(A \cap B \cap C) = 80 \)</p>
+<p>We need to find the number of people who do NOT prefer any brand, which is \( n( (A \cup B \cup C)’ ) \).</p>
+<p>First, calculate the union of all three sets:</p>
+<p>\[ n(A \cup B \cup C) = n(A) + n(B) + n(C) - n(A \cap B) - n(B \cap C) - n(A \cap C) + n(A \cap B \cap C) \]</p>
+<p>\[ n(A \cup B \cup C) = 450 + 350 + 300 - 150 - 100 - 120 + 80 \]</p>
+<p>\[ n(A \cup B \cup C) = 1100 - 370 + 80 = 810 \]</p>
+<p>The number of people who do not prefer any brand:</p>
+<p>\[ n( (A \cup B \cup C)’ ) = n(U) - n(A \cup B \cup C) = 1000 - 810 = 190 \]</p>
+<p><strong>Conclusion:</strong> 190 people evaluated in the survey did not prefer any of the three brands.</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Let \( U = \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \), \( A = \{2, 4, 6, 8\} \), and \( B = \{2, 3, 5, 7\} \).</p>
+<p>Verify De Morgan’s Law: \( (A \cup B)’ = A’ \cap B’ \).</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p><strong>Step 1:</strong> Find \( A \cup B \).</p>
+<p>\( A \cup B = \{2, 3, 4, 5, 6, 7, 8\} \)</p>
+<p><strong>Step 2:</strong> Find \( (A \cup B)’ \).</p>
+<p>\( (A \cup B)’ = U - (A \cup B) = \{1, 9\} \)</p>
+<p><strong>Step 3:</strong> Find \( A’ \) and \( B’ \).</p>
+<p>\( A’ = U - A = \{1, 3, 5, 7, 9\} \)</p>
+<p>\( B’ = U - B = \{1, 4, 6, 8, 9\} \)</p>
+<p><strong>Step 4:</strong> Find \( A’ \cap B’ \).</p>
+<p>\( A’ \cap B’ = \{1, 9\} \)</p>
+<p><strong>Conclusion:</strong> Since \( (A \cup B)’ = \{1, 9\} \) and \( A’ \cap B’ = \{1, 9\} \), De Morgan’s Law \( (A \cup B)’ = A’ \cap B’ \) is verified.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-2-relations-and-functions"><a class="header" href="#chapter-2-relations-and-functions">Chapter 2: Relations and Functions</a></h1>
+<h2 id="21-cartesian-product-of-sets"><a class="header" href="#21-cartesian-product-of-sets">2.1 Cartesian Product of Sets</a></h2>
+<p>Let \( A \) and \( B \) be two non-empty sets. The Cartesian product \( A \times B \) is the set of all ordered pairs of elements from \( A \) and \( B \).
+\[ A \times B = \{ (a, b) : a \in A, b \in B \} \]
+If either \( A \) or \( B \) is the null set, then \( A \times B \) will also be empty set.</p>
+<ul>
+<li>Number of elements: If \( n(A) = p \) and \( n(B) = q \), then \( n(A \times B) = pq \).</li>
+<li>Three-dimensional product: \( A \times A \times A = \{(a, b, c) : a, b, c \in A\} \).</li>
+</ul>
+<h2 id="22-relations"><a class="header" href="#22-relations">2.2 Relations</a></h2>
+<p>A relation \( R \) from a non-empty set \( A \) to a non-empty set \( B \) is a subset of the Cartesian product \( A \times B \). This subset is derived by describing a relationship between the first element and the second element of the ordered pairs in \( A \times B \).</p>
+<ul>
+<li><strong>Domain:</strong> The set of all first elements of the ordered pairs in a relation \( R \) from set \( A \) to \( B \) is called the domain.</li>
+<li><strong>Range:</strong> The set of all second elements in a relation \( R \).</li>
+<li><strong>Co-domain:</strong> The whole set \( B \) is called the co-domain of the relation \( R \). Note that \( \text{Range} \subseteq \text{Co-domain} \).</li>
+</ul>
+<p>Pictorial representation: Relations can be visually represented using arrow diagrams.</p>
+<div style="text-align: center; margin: 20px 0;">
+    <svg width="400" height="230" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="100" rx="40" ry="80" style="fill:#e0f7fa; stroke:#00838f; stroke-width:2" />
+        <ellipse cx="300" cy="100" rx="40" ry="80" style="fill:#e0f7fa; stroke:#00838f; stroke-width:2" />
+        <text x="95" y="60" font-family="Arial">1</text>
+        <text x="95" y="100" font-family="Arial">2</text>
+        <text x="95" y="140" font-family="Arial">3</text>
+        <text x="80" y="210" font-family="Arial">Set A</text>
+        <text x="295" y="60" font-family="Arial">a</text>
+        <text x="295" y="100" font-family="Arial">b</text>
+        <text x="295" y="140" font-family="Arial">c</text>
+        <text x="280" y="210" font-family="Arial">Set B</text>
+        <!-- Arrows -->
+        <g stroke="#ff5722" stroke-width="2" marker-end="url(#arrow)">
+            <line x1="120" y1="60" x2="280" y2="60" />
+            <line x1="120" y1="100" x2="280" y2="140" />
+        </g>
+        <!-- Arrow definition needed for defs -->
+        <defs>
+            <marker id="arrow" markerwidth="10" markerheight="10" refx="9" refy="3" orient="auto">
+                <path d="M0,0 L0,6 L9,3 z" fill="#ff5722" />
+            </marker>
+        </defs>
+    </svg>
+    <br />
+    <em>Figure 2.1: An arrow diagram representing a relation from set A to set B.</em>
+</div>
+
+<h2 id="23-functions"><a class="header" href="#23-functions">2.3 Functions</a></h2>
+<p>A relation \( f \) from a set \( A \) to a set \( B \) is said to be a <strong>function</strong> if every element of set \( A \) has one and only one image in set \( B \).
+If \( (a, b) \in f \), then \( f(a) = b \), where \( b \) is called the <strong>image</strong> of \( a \) under \( f \), and \( a \) is called the <strong>pre-image</strong> of \( b \) under \( f \).</p>
+<h3 id="some-functions-and-their-graphs"><a class="header" href="#some-functions-and-their-graphs">Some Functions and their Graphs</a></h3>
+<ul>
+<li><strong>Identity Function:</strong> \( f(x) = x \)</li>
+<li><strong>Constant Function:</strong> \( f(x) = c \)</li>
+<li><strong>Polynomial Function:</strong> \( f(x) = a_n x^n + \dots + a_1 x + a_0 \)</li>
+<li><strong>Rational Function:</strong> \( f(x) = \frac{p(x)}{q(x)} \), \( q(x) \neq 0 \)</li>
+<li><strong>Modulus Function:</strong> \( f(x) = |x| = \begin{cases} x, &amp; x \ge 0 \ -x, &amp; x &lt; 0 \end{cases} \)</li>
+<li><strong>Signum Function:</strong> \( f(x) = \begin{cases} 1, &amp; x &gt; 0 \ 0, &amp; x = 0 \ -1, &amp; x &lt; 0 \end{cases} \)</li>
+<li><strong>Greatest Integer Function:</strong> \( f(x) = [x] \), where \( [x] \) assumes the value of the greatest integer less than or equal to \( x \).</li>
+</ul>
+<h3 id="algebra-of-real-functions"><a class="header" href="#algebra-of-real-functions">Algebra of Real Functions</a></h3>
+<p>For functions \( f : X \to \mathbb{R} \) and \( g : X \to \mathbb{R} \):</p>
+<ul>
+<li><strong>Addition:</strong> \( (f + g)(x) = f(x) + g(x) \)</li>
+<li><strong>Subtraction:</strong> \( (f - g)(x) = f(x) - g(x) \)</li>
+<li><strong>Multiplication:</strong> \( (fg)(x) = f(x) g(x) \)</li>
+<li><strong>Quotient:</strong> \( \left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)} \), provided \( g(x) \neq 0 \)</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-1"><a class="header" href="#competency-based-questions-1">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>An e-commerce company determines that its daily revenue \( R \) (in thousands of rupees) depends on the unit price \( p \) (in rupees) set for a specific electronic item. The relationship is modeled by the function:</p>
+<p>\[ R(p) = -2p^2 + 400p - 15000 \]</p>
+<p>(a) Find the domain of the price \( p \) for which the company generates a positive revenue.</p>
+<p>(b) What is the maximum possible revenue the company can generate per day?</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p><strong>(a) Domain for positive revenue:</strong></p>
+<p>We need to find the values of \( p \) such that \( R(p) &gt; 0 \).</p>
+<p>\[ -2p^2 + 400p - 15000 &gt; 0 \]</p>
+<p>Divide by -2 (and reverse the inequality):</p>
+<p>\[ p^2 - 200p + 7500 &lt; 0 \]</p>
+<p>Factor the quadratic equation:</p>
+<p>\[ (p - 50)(p - 150) &lt; 0 \]</p>
+<p>The roots are \( p = 50 \) and \( p = 150 \). Since this is an upward-opening parabola opening below the x-axis, the solution is the open interval between the roots.</p>
+<p>\[ 50 &lt; p &lt; 150 \]</p>
+<p>The domain of \( p \) for positive revenue is \( (50, 150) \).</p>
+<p><strong>(b) Maximum revenue:</strong></p>
+<p>The function \( R(p) = -2p^2 + 400p - 15000 \) is a downward-facing parabola (since \( a = -2 &lt; 0 \)). The maximum value occurs at the vertex.</p>
+<p>The p-coordinate of the vertex is:</p>
+<p>\[ p = \frac{-b}{2a} = \frac{-400}{2(-2)} = \frac{-400}{-4} = 100 \]</p>
+<p>Substitute \( p = 100 \) into the revenue function to find maximum revenue:</p>
+<p>\[ R(100) = -2(100)^2 + 400(100) - 15000 \]</p>
+<p>\[ R(100) = -20000 + 40000 - 15000 = 5000 \]</p>
+<p><strong>Conclusion:</strong> The maximum possible revenue is 5000 thousand rupees (or 5,000,000 rupees), achieved at unit price \( p = 100 \).</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Determine the domain and range of the real function \( f(x) = \sqrt{9 - x^2} \).</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p><strong>Domain:</strong></p>
+<p>For purely real values of \( f(x) \), the expression inside the square root must be non-negative.</p>
+<p>\[ 9 - x^2 \ge 0 \]</p>
+<p>\[ x^2 \le 9 \]</p>
+<p>Taking the square root on both sides:</p>
+<p>\[ |x| \le 3 \]</p>
+<p>\[ -3 \le x \le 3 \]</p>
+<p>Domain = \( [-3, 3] \).</p>
+<p><strong>Range:</strong></p>
+<p>Let \( y = \sqrt{9 - x^2} \).</p>
+<p>Since a square root yields a principal (non-negative) value, \( y \ge 0 \).</p>
+<p>Square both sides:</p>
+<p>\[ y^2 = 9 - x^2 \]</p>
+<p>\[ x^2 = 9 - y^2 \]</p>
+<p>Since \( x^2 \ge 0 \), we must have \( 9 - y^2 \ge 0 \).</p>
+<p>\[ y^2 \le 9 \Rightarrow -3 \le y \le 3 \]</p>
+<p>Combining \( y \ge 0 \) and \( -3 \le y \le 3 \), we get \( 0 \le y \le 3 \).</p>
+<p>Range = \( [0, 3] \).</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-3-trigonometric-functions"><a class="header" href="#chapter-3-trigonometric-functions">Chapter 3: Trigonometric Functions</a></h1>
+<h2 id="31-angles"><a class="header" href="#31-angles">3.1 Angles</a></h2>
+<p>An <strong>angle</strong> is considered as the figure obtained by rotating a given ray about its endpoint. The original ray is called the <strong>initial side</strong> and the final position of the ray after rotation is called the <strong>terminal side</strong> of the angle.</p>
+<ul>
+<li><strong>Positive angle:</strong> Anti-clockwise rotation.</li>
+<li><strong>Negative angle:</strong> Clockwise rotation.</li>
+</ul>
+<h3 id="measure-of-an-angle"><a class="header" href="#measure-of-an-angle">Measure of an Angle</a></h3>
+<ol>
+<li><strong>Degree Measure:</strong> If a rotation from the initial side to terminal side is \( \frac{1}{360} \) of a revolution, the angle is said to have a measure of one degree (1°).
+<ul>
+<li>1 degree = 60 minutes (1° = 60’)</li>
+<li>1 minute = 60 seconds (1’ = 60“)</li>
+</ul>
+</li>
+<li><strong>Radian Measure:</strong> Angle subtended at the center by an arc of length 1 unit in a unit circle is said to have a measure of 1 radian.
+<ul>
+<li>If an arc of length \( l \) subtends an angle \( \theta \) radians at the center of a circle of radius \( r \), then \( \theta = \frac{l}{r} \).</li>
+</ul>
+</li>
+<li><strong>Relation between Degree and Radian:</strong>
+\[ \pi \text{ radians} = 180^\circ \]</li>
+</ol>
+<h2 id="32-trigonometric-functions"><a class="header" href="#32-trigonometric-functions">3.2 Trigonometric Functions</a></h2>
+<p>Let a unit circle with center at origin of the coordinate axes. The angle \( x \) subtends from point \( P(a,b) \) on the unit circle. We define:</p>
+<ul>
+<li>\( \cos x = a \)</li>
+<li>\( \sin x = b \)</li>
+</ul>
+<p>Since \( P(a,b) \) lies on the unit circle \( x^2 + y^2 = 1 \), we get:
+\[ \sin^2 x + \cos^2 x = 1 \]</p>
+<h3 id="domain-and-range-of-trigonometric-functions"><a class="header" href="#domain-and-range-of-trigonometric-functions">Domain and Range of Trigonometric Functions</a></h3>
+<ul>
+<li><strong>Sine &amp; Cosine:</strong> Domain = \( \mathbb{R} \), Range = \( [-1, 1] \).</li>
+<li><strong>Tangent:</strong> Domain = \( \mathbb{R} - { x : x = (2n+1)\frac{\pi}{2}, n \in \mathbb{Z} } \), Range = \( \mathbb{R} \).</li>
+</ul>
+<h3 id="graphs-of-trigonometric-functions"><a class="header" href="#graphs-of-trigonometric-functions">Graphs of Trigonometric Functions</a></h3>
+<p>The periodic nature of trigonometric functions can be visualized easily:</p>
+<div style="text-align: center; margin: 20px 0;">
+    <svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid and Axes -->
+        <g stroke="#ccc" stroke-dasharray="2,2">
+            <line x1="0" y1="50" x2="600" y2="50" />
+            <line x1="0" y1="150" x2="600" y2="150" />
+            <line x1="300" y1="0" x2="300" y2="200" stroke="#000" stroke-width="1.5" stroke-dasharray="none" />
+            <line x1="0" y1="100" x2="600" y2="100" stroke="#000" stroke-width="1.5" stroke-dasharray="none" />
+        </g>
+        <!-- y-labels -->
+        <text x="280" y="55" font-family="Arial" font-size="12">1</text>
+        <text x="275" y="155" font-family="Arial" font-size="12">-1</text>
+        <!-- x-labels -->
+        <text x="450" y="115" font-family="Arial" font-size="12">π</text>
+        <text x="590" y="115" font-family="Arial" font-size="12">2π</text>
+        <text x="145" y="115" font-family="Arial" font-size="12">-π</text>
+        <!-- Sine Wave -->
+        <path d="M 0 100 Q 75 -50 150 100 T 300 100 T 450 100 T 600 100" fill="none" stroke="blue" stroke-width="2" />
+    </svg>
+    <br />
+    <em>Figure 3.1: Graph of y = sin(x) plotted from -2π to 2π.</em>
+</div>
+
+<h2 id="33-trigonometric-identities"><a class="header" href="#33-trigonometric-identities">3.3 Trigonometric Identities</a></h2>
+<p>Sum and difference of two angles:</p>
+<ol>
+<li>\( \sin(x \pm y) = \sin x \cos y \pm \cos x \sin y \)</li>
+<li>\( \cos(x \pm y) = \cos x \cos y \mp \sin x \sin y \)</li>
+<li>\( \tan(x \pm y) = \frac{\tan x \pm \tan y}{1 \mp \tan x \tan y} \)</li>
+</ol>
+<p>Double and triple angles:</p>
+<ul>
+<li>\( \sin 2x = 2 \sin x \cos x = \frac{2 \tan x}{1 + \tan^2 x} \)</li>
+<li>\( \cos 2x = \cos^2 x - \sin^2 x = 2 \cos^2 x - 1 = 1 - 2 \sin^2 x = \frac{1 - \tan^2 x}{1 + \tan^2 x} \)</li>
+<li>\( \sin 3x = 3 \sin x - 4 \sin^3 x \)</li>
+</ul>
+<p>Sums into products:</p>
+<ul>
+<li>\( \sin x + \sin y = 2 \sin\left(\frac{x+y}{2}\right) \cos\left(\frac{x-y}{2}\right) \)</li>
+<li>\( \cos x + \cos y = 2 \cos\left(\frac{x+y}{2}\right) \cos\left(\frac{x-y}{2}\right) \)</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-2"><a class="header" href="#competency-based-questions-2">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>A Ferris wheel has a radius of 20 meters and its center is 25 meters above the ground. The wheel turns at a constant speed, making one complete rotation every 4 minutes.</p>
+<p>If a passenger starts at the lowest point of the wheel, express their height \( h \) above the ground as a function of time \( t \) (in minutes). Construct the equation of height.</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>The motion is periodic and circular, so we will use a trigonometric function.</p>
+<p>The wheel makes a full revolution in 4 minutes, so its period \( T = 4 \).</p>
+<p>The angular speed \( \omega = \frac{2\pi}{T} = \frac{2\pi}{4} = \frac{\pi}{2} \) radians per minute.</p>
+<p>The minimum height of the passenger = Center height - Radius = 25 - 20 = 5m.</p>
+<p>The maximum height = Center height + Radius = 25 + 20 = 45m.</p>
+<p>The amplitude of the function is the radius, \( A = 20 \).</p>
+<p>The vertical shift is the center position, \( D = 25 \).</p>
+<p>Since the passenger starts at the lowest point at \( t = 0 \), a negative cosine function is the best fit, as \( \cos(0) = 1 \), and we want the minimum value. Structure:</p>
+<p>\[ h(t) = -A \cos(\omega t) + D \]</p>
+<p>\[ h(t) = -20 \cos\left(\frac{\pi}{2} t\right) + 25 \]</p>
+<p><strong>Conclusion:</strong> The equation representing the passenger’s height is \( h(t) = 25 - 20 \cos\left(\frac{\pi}{2} t\right) \).</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Prove the identity using the properties of trigonometric functions:</p>
+<p>\[ \frac{\sin 5x + \sin 3x}{\cos 5x + \cos 3x} = \tan 4x \]</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>We use the sum-to-product formulas for sine and cosine:</p>
+<p>\[ \sin A + \sin B = 2 \sin\left(\frac{A+B}{2}\right) \cos\left(\frac{A-B}{2}\right) \]</p>
+<p>\[ \cos A + \cos B = 2 \cos\left(\frac{A+B}{2}\right) \cos\left(\frac{A-B}{2}\right) \]</p>
+<p>Apply these formulas to the numerator and denominator:</p>
+<p><strong>Numerator:</strong></p>
+<p>\[ \sin 5x + \sin 3x = 2 \sin\left(\frac{5x+3x}{2}\right) \cos\left(\frac{5x-3x}{2}\right) = 2 \sin 4x \cos x \]</p>
+<p><strong>Denominator:</strong></p>
+<p>\[ \cos 5x + \cos 3x = 2 \cos\left(\frac{5x+3x}{2}\right) \cos\left(\frac{5x-3x}{2}\right) = 2 \cos 4x \cos x \]</p>
+<p>Substitute back into the expression:</p>
+<p>\[ \frac{2 \sin 4x \cos x}{2 \cos 4x \cos x} \]</p>
+<p>Assuming \( \cos x \neq 0 \), we can cancel \( 2 \cos x \) from both numerator and denominator:</p>
+<p>\[ \frac{\sin 4x}{\cos 4x} = \tan 4x \]</p>
+<p><strong>Conclusion:</strong> Hence proved.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-ii-algebra"><a class="header" href="#unit-ii-algebra">Unit II: Algebra</a></h1>
+<p>This unit covers foundational algebraic concepts including complex numbers, inequalities, permutations and combinations, the binomial theorem, and sequences and series.</p>
+<p><strong>Chapters in this Unit:</strong>
+4. Complex Numbers and Quadratic Equations
+5. Linear Inequalities
+6. Permutations and Combinations
+7. Binomial Theorem
+8. Sequence and Series</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-4-complex-numbers-and-quadratic-equations"><a class="header" href="#chapter-4-complex-numbers-and-quadratic-equations">Chapter 4: Complex Numbers and Quadratic Equations</a></h1>
+<h2 id="41-introduction"><a class="header" href="#41-introduction">4.1 Introduction</a></h2>
+<p>The extension of the real number system to the complex number system arises because there is no real number \( x \) that satisfies the equation \( x^2 + 1 = 0 \). We introduce a symbol \( i \) defined as \( i = \sqrt{-1} \), such that \( i^2 = -1 \). This allows us to define solutions for all polynomial equations.</p>
+<h2 id="42-complex-numbers"><a class="header" href="#42-complex-numbers">4.2 Complex Numbers</a></h2>
+<p>A number of the form \( a + ib \), where \( a \) and \( b \) are real numbers, is defined to be a <strong>complex number</strong>.
+For the complex number \( z = a + ib \):</p>
+<ul>
+<li>\( a \) is called the <strong>real part</strong>, denoted by \( \text{Re}(z) \).</li>
+<li>\( b \) is called the <strong>imaginary part</strong>, denoted by \( \text{Im}(z) \).</li>
+</ul>
+<p>Two complex numbers \( z_1 = a + ib \) and \( z_2 = c + id \) are equal if \( a = c \) and \( b = d \).</p>
+<h3 id="algebraic-properties"><a class="header" href="#algebraic-properties">Algebraic Properties</a></h3>
+<ol>
+<li><strong>Addition:</strong> \( (a + ib) + (c + id) = (a+c) + i(b+d) \)</li>
+<li><strong>Difference:</strong> \( (a + ib) - (c + id) = (a-c) + i(b-d) \)</li>
+<li><strong>Multiplication:</strong> \( (a + ib)(c + id) = (ac - bd) + i(ad + bc) \)</li>
+<li><strong>Division:</strong> \( \frac{z_1}{z_2} = \frac{z_1 \bar{z_2}}{z_2 \bar{z_2}} \)</li>
+</ol>
+<h3 id="modulus-and-conjugate"><a class="header" href="#modulus-and-conjugate">Modulus and Conjugate</a></h3>
+<p>Let \( z = a + ib \).</p>
+<ul>
+<li>The <strong>conjugate</strong> of \( z \) is denoted by \( \bar{z} = a - ib \).</li>
+<li>The <strong>modulus</strong> of \( z \) is denoted by \( |z| = \sqrt{a^2 + b^2} \).</li>
+</ul>
+<p>Important properties:</p>
+<ul>
+<li>\( z\bar{z} = |z|^2 \)</li>
+<li>\( |z_1 z_2| = |z_1| |z_2| \)</li>
+<li>\( \overline{z_1 \pm z_2} = \bar{z}_1 \pm \bar{z}_2 \)</li>
+<li>\( \overline{z_1 z_2} = \bar{z}_1 \bar{z}_2 \)</li>
+</ul>
+<h2 id="43-argand-plane"><a class="header" href="#43-argand-plane">4.3 Argand Plane</a></h2>
+<p>A complex number \( z = x + iy \) can be represented geometrically by the unique point \( P(x, y) \) in the Cartesian plane, known as the <strong>Argand Plane</strong> or Complex Plane.
+The x-axis is called the Real Axis, and the y-axis is called the Imaginary Axis.</p>
+<div style="text-align: center; margin: 20px 0;">
+    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#ccc" stroke-dasharray="2,2">
+            <line x1="0" y1="150" x2="300" y2="150" stroke="#000" stroke-width="1.5" stroke-dasharray="none" />
+            <line x1="150" y1="0" x2="150" y2="300" stroke="#000" stroke-width="1.5" stroke-dasharray="none" />
+        </g>
+        <text x="280" y="140" font-family="Arial">Re</text>
+        <text x="160" y="20" font-family="Arial">Im</text>
+        <!-- Plotting z = 3 + 2i -->
+        <!-- Scaled by 30 units: x = 150 + 90 = 240, y = 150 - 60 = 90 -->
+        <circle cx="240" cy="90" r="4" fill="red" />
+        <line x1="150" y1="150" x2="240" y2="90" stroke="blue" stroke-width="2" />
+        <line x1="240" y1="150" x2="240" y2="90" stroke="gray" stroke-dasharray="4,4" />
+        <line x1="150" y1="90" x2="240" y2="90" stroke="gray" stroke-dasharray="4,4" />
+        <text x="250" y="85" font-family="Arial" font-size="14">P(3, 2)</text>
+        <text x="180" y="110" font-family="Arial" font-size="14" fill="blue">|z|</text>
+    </svg>
+    <br />
+    <em>Figure 4.1: Standard representation of a complex number z=3+2i in the Argand Plane.</em>
+</div>
+
+<h2 id="44-quadratic-equations"><a class="header" href="#44-quadratic-equations">4.4 Quadratic Equations</a></h2>
+<p>For the quadratic equation \( ax^2 + bx + c = 0 \) with real coefficients, where \( D = b^2 - 4ac &lt; 0 \), the roots are complex conjugate pairs:
+\[ x = \frac{-b \pm i\sqrt{4ac - b^2}}{2a} \]</p>
+<hr>
+<h2 id="competency-based-questions-3"><a class="header" href="#competency-based-questions-3">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>Evaluate the following expression if \( z = 2 - \sqrt{-3} \).</p>
+<p>Find the value of \( z^2 - 4z + 13 \).</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>First, express \( z \) in the standard form.</p>
+<p>\[ z = 2 - \sqrt{3}i \]</p>
+<p>We need to find the value of \( z^2 - 4z + 13 \).</p>
+<p>Let’s first compute \( z^2 \):</p>
+<p>\[ z^2 = (2 - \sqrt{3}i)^2 = 2^2 - 2(2)(\sqrt{3}i) + (\sqrt{3}i)^2 \]</p>
+<p>\[ z^2 = 4 - 4\sqrt{3}i + 3i^2 = 4 - 4\sqrt{3}i - 3 = 1 - 4\sqrt{3}i \]</p>
+<p>Now calculate \( -4z \):</p>
+<p>\[ -4z = -4(2 - \sqrt{3}i) = -8 + 4\sqrt{3}i \]</p>
+<p>Substitute everything into the expression:</p>
+<p>\[ z^2 - 4z + 13 = (1 - 4\sqrt{3}i) + (-8 + 4\sqrt{3}i) + 13 \]</p>
+<p>The imaginary parts cancel out: \( -4\sqrt{3}i + 4\sqrt{3}i = 0 \).</p>
+<p>Add the real parts:</p>
+<p>\[ 1 - 8 + 13 = 6 \]</p>
+<p><strong>Conclusion:</strong> The value of the expression is 6.</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>An electrical circuit has an impedance \( Z_{1} = 4 + 3i \) ohms in series with another impedance \( Z_{2} = 2 - i \) ohms. Find the total impedance, and then find its modulus.</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>For series impedances, the total impedance \( Z_{total} \) is the sum:</p>
+<p>\[ Z_{total} = Z_{1} + Z_{2} = (4 + 3i) + (2 - i) \]</p>
+<p>\[ Z_{total} = (4 + 2) + (3i - i) = 6 + 2i \]</p>
+<p>Now compute the modulus:</p>
+<p>\[ |Z_{total}| = |6 + 2i| = \sqrt{6^2 + 2^2} = \sqrt{36 + 4} = \sqrt{40} = 2\sqrt{10} \]</p>
+<p><strong>Conclusion:</strong> The total impedance is \( 6 + 2i \) ohms, and its magnitude is \( 2\sqrt{10} \) ohms.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-5-linear-inequalities"><a class="header" href="#chapter-5-linear-inequalities">Chapter 5: Linear Inequalities</a></h1>
+<h2 id="51-introduction"><a class="header" href="#51-introduction">5.1 Introduction</a></h2>
+<p>Two real numbers or two algebraic expressions related by the symbol ‘( &lt; )’, ‘( &gt; )’, ‘( \le )’ or ‘( \ge )’ form an <strong>inequality</strong>.
+Examples of linear inequalities in one variable: \( 3x &lt; 20 \), or \( 4x + 1 \ge 5 \).</p>
+<h2 id="52-algebraic-solutions-of-linear-inequalities-in-one-variable"><a class="header" href="#52-algebraic-solutions-of-linear-inequalities-in-one-variable">5.2 Algebraic Solutions of Linear Inequalities in One Variable</a></h2>
+<p>Rules for solving inequalities:</p>
+<ol>
+<li><strong>Addition/Subtraction:</strong> Equal numbers may be added to (or subtracted from) both sides of an inequality without affecting the sign of inequality.</li>
+<li><strong>Multiplication/Division by Positive Numbers:</strong> Both sides of an inequality can be multiplied (or divided) by the same positive number.</li>
+<li><strong>Multiplication/Division by Negative Numbers:</strong> When both sides are multiplied or divided by a negative number, then the sign of inequality is reversed.</li>
+</ol>
+<h3 id="representation-on-number-line"><a class="header" href="#representation-on-number-line">Representation on Number Line</a></h3>
+<p>The solution to a linear inequality can be represented on a number line.</p>
+<ul>
+<li>A hollow circle ‘\( \circ \)’ is used if the point is excluded (for ‘\( &lt; \)’ or ‘\( &gt; \)’).</li>
+<li>A solid dot ‘\( \bullet \)’ is used if the point is included (for ‘\( \le \)’ or ‘\( \ge \)’).</li>
+</ul>
+<p>Example: Represent the solution of \( 3x - 5 &lt; x + 7 \).
+\[ 3x - x &lt; 7 + 5 \]
+\[ 2x &lt; 12 \]
+\[ x &lt; 6 \]</p>
+<div style="text-align: center; margin: 20px 0;">
+    <svg width="400" height="80" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="40" x2="380" y2="40" stroke="#000" stroke-width="2" />
+        <!-- Draw ticks -->
+        <g stroke="#000" stroke-width="1.5">
+            <line x1="50" y1="35" x2="50" y2="45" />
+            <line x1="100" y1="35" x2="100" y2="45" />
+            <line x1="150" y1="35" x2="150" y2="45" />
+            <line x1="200" y1="35" x2="200" y2="45" />
+            <line x1="250" y1="35" x2="250" y2="45" />
+            <line x1="300" y1="35" x2="300" y2="45" />
+            <line x1="350" y1="35" x2="350" y2="45" />
+        </g>
+        <!-- Tick labels -->
+        <text x="45" y="60" font-family="Arial" font-size="12">1</text>
+        <text x="95" y="60" font-family="Arial" font-size="12">2</text>
+        <text x="145" y="60" font-family="Arial" font-size="12">3</text>
+        <text x="195" y="60" font-family="Arial" font-size="12">4</text>
+        <text x="245" y="60" font-family="Arial" font-size="12">5</text>
+        <text x="295" y="60" font-family="Arial" font-size="12">6</text>
+        <text x="345" y="60" font-family="Arial" font-size="12">7</text>
+        <!-- Solution shading x < 6 -->
+        <!-- Start at 6 and draw leftward -->
+        <line x1="300" y1="40" x2="20" y2="40" stroke="red" stroke-width="4" />
+        <circle cx="300" cy="40" r="5" fill="white" stroke="red" stroke-width="2" />
+    </svg>
+    <br />
+    <em>Figure 5.1: Number line representation of x &lt; 6.</em>
+</div>
+
+<hr>
+<h2 id="competency-based-questions-4"><a class="header" href="#competency-based-questions-4">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>To receive Grade ‘A’ in a course, one must obtain an average of 90 marks or more in five examinations (each of 100 marks). If Sunita’s marks in first four examinations are 87, 92, 94 and 95, find minimum marks that Sunita must obtain in fifth examination to get grade ‘A’ in the course.</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>Let \( x \) be the marks Sunita must obtain in the 5th examination.</p>
+<p>Her average marks over five exams must be at least 90.</p>
+<p>\[ \frac{87 + 92 + 94 + 95 + x}{5} \ge 90 \]</p>
+<p>\[ \frac{368 + x}{5} \ge 90 \]</p>
+<p>Multiply both sides by 5:</p>
+<p>\[ 368 + x \ge 450 \]</p>
+<p>Subtract 368 from both sides:</p>
+<p>\[ x \ge 450 - 368 \]</p>
+<p>\[ x \ge 82 \]</p>
+<p><strong>Conclusion:</strong> Sunita must obtain at least 82 marks in her 5th examination to get a Grade ‘A’.</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Solve the inequality: \( \frac{5 - 2x}{3} \le \frac{x}{6} - 5 \). Display the solution as an interval.</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>Given: \( \frac{5 - 2x}{3} \le \frac{x}{6} - 5 \).</p>
+<p>Get a common denominator on the right side:</p>
+<p>\[ \frac{5 - 2x}{3} \le \frac{x - 30}{6} \]</p>
+<p>Multiply both sides by 6 (since it’s positive, the inequality sign doesn’t change):</p>
+<p>\[ 2(5 - 2x) \le x - 30 \]</p>
+<p>\[ 10 - 4x \le x - 30 \]</p>
+<p>Bring x terms to one side and constants to the other:</p>
+<p>\[ -4x - x \le -30 - 10 \]</p>
+<p>\[ -5x \le -40 \]</p>
+<p>Divide by -5, remembering to <strong>reverse the inequality symbol</strong>:</p>
+<p>\[ x \ge 8 \]</p>
+<p><strong>Conclusion:</strong> The solution in interval form is \( [8, \infty) \).</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-6-permutations-and-combinations"><a class="header" href="#chapter-6-permutations-and-combinations">Chapter 6: Permutations and Combinations</a></h1>
+<h2 id="61-fundamental-principle-of-counting"><a class="header" href="#61-fundamental-principle-of-counting">6.1 Fundamental Principle of Counting</a></h2>
+<p>“If an event can occur in \( m \) different ways, following which another event can occur in \( n \) different ways, then the total number of occurrence of the events in the given order is \( m \times n \).”
+This is known as the <strong>Multiplication Principle</strong>.</p>
+<p>Alternatively, the <strong>Addition Principle</strong>: “If there are two jobs such that they can be performed independently in \( m \) and \( n \) ways respectively, then either of the two jobs can be performed in \( (m + n) \) ways.”</p>
+<h2 id="62-factorial-notation"><a class="header" href="#62-factorial-notation">6.2 Factorial Notation</a></h2>
+<p>The notation \( n! \) represents the product of first \( n \) natural numbers.
+\[ n! = n \times (n-1) \times (n-2) \times \dots \times 3 \times 2 \times 1 \]
+By convention, \( 0! = 1 \).</p>
+<h2 id="63-permutations"><a class="header" href="#63-permutations">6.3 Permutations</a></h2>
+<p>A permutation is an arrangement in a definite order of a number of objects taken some or all at a time. The number of permutations of \( n \) different objects taken \( r \) at a time, where \( 0 \le r \le n \), is denoted by \( {}^nP_r \) and is given by:
+\[ {}^nP_r = \frac{n!}{(n - r)!} \]</p>
+<h3 id="permutations-when-all-objects-are-not-distinct"><a class="header" href="#permutations-when-all-objects-are-not-distinct">Permutations when all objects are not distinct</a></h3>
+<p>The number of permutations of \( n \) objects, where \( p_1 \) objects are of one kind, \( p_2 \) are of second kind, …, \( p_k \) are of \( k^{\text{th}} \) kind and the rest, if any, are of different kind is:
+\[ \frac{n!}{p_1! p_2! \dots p_k!} \]</p>
+<h2 id="64-combinations"><a class="header" href="#64-combinations">6.4 Combinations</a></h2>
+<p>A combination is a selection of some or all of a number of different objects where the order of selection is ignored. The number of combinations of \( n \) different objects taken \( r \) at a time, where \( 0 \le r \le n \), is denoted by \( {}^nC_r \) and is given by:
+\[ {}^nC_r = \frac{n!}{r!(n - r)!} \]</p>
+<h3 id="important-properties"><a class="header" href="#important-properties">Important Properties</a></h3>
+<ul>
+<li>\( {}^nC_r + {}^nC_{r-1} = {}^{n+1}C_r \)</li>
+<li>\( {}^nC_r = {}^nC_{n-r} \) (Choosing \( r \) elements is identical to rejecting \( n-r \) elements)</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-5"><a class="header" href="#competency-based-questions-5">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>A committee of 3 persons is to be constituted from a group of 2 men and 3 women. In how many ways can this be done? How many of these committees would consist of exactly 1 man and 2 women?</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p><strong>Total number of ways to form the committee:</strong></p>
+<p>Since we are selecting 3 persons out of 5 (2 men + 3 women) and order does not matter, this is a combination problem.</p>
+<p>The total number of ways = \( {}^5C_3 \).</p>
+<p>\[ {}^5C_3 = \frac{5!}{3!(5-3)!} = \frac{5!}{3!2!} = \frac{5 \times 4 \times 3!}{3! \times 2 \times 1} = \frac{20}{2} = 10 \]</p>
+<p>So, there are <strong>10</strong> ways to form the committee.</p>
+<p><strong>Committees with exactly 1 man and 2 women:</strong></p>
+<p>We need to select 1 man from 2 men AND 2 women from 3 women.</p>
+<p>By the Fundamental Principle of Counting, we multiply the combinations:</p>
+<p>Number of ways = \( {}^2C_1 \times {}^3C_2 \)</p>
+<p>\[ {}^2C_1 = 2 \]</p>
+<p>\[ {}^3C_2 = \frac{3!}{2!1!} = 3 \]</p>
+<p>Total = \( 2 \times 3 = 6 \)</p>
+<p><strong>Conclusion:</strong> There are 6 committees that consists of exactly 1 man and 2 women out of total 10 committees.</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>How many words, with or without meaning, can be formed using all the letters of the word “EQUATION” at a time so that the vowels and consonants occur together?</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>The word “EQUATION” has 8 letters.</p>
+<p>Vowels (V): E, U, A, I, O (5 vowels)</p>
+<p>Consonants (C): Q, T, N (3 consonants)</p>
+<p>Since vowels and consonants must occur together, we can block them into two groups: [V] and [C].</p>
+<p>These 2 groups can be arranged among themselves in \( 2! \) ways.</p>
+<p>Inside group [V], the 5 vowels can be arranged in \( 5! \) ways.</p>
+<p>Inside group [C], the 3 consonants can be arranged in \( 3! \) ways.</p>
+<p>By the Multiplication Principle, the total number of permutations is:</p>
+<p>\[ 2! \times 5! \times 3! = 2 \times 120 \times 6 = 1440 \]</p>
+<p><strong>Conclusion:</strong> 1440 different words can be formed.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-7-binomial-theorem"><a class="header" href="#chapter-7-binomial-theorem">Chapter 7: Binomial Theorem</a></h1>
+<h2 id="71-introduction"><a class="header" href="#71-introduction">7.1 Introduction</a></h2>
+<p>An algebraic expression consisting of two terms is called a binomial expression. Example: \( x + y \), \( 2a - b \).
+The expansion of power of a binomial expression is what we study in the Binomial Theorem.</p>
+<p>Observations on simple expansions:</p>
+<ul>
+<li>\( (a+b)^0 = 1 \)</li>
+<li>\( (a+b)^1 = a + b \)</li>
+<li>\( (a+b)^2 = a^2 + 2ab + b^2 \)</li>
+<li>\( (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 \)</li>
+</ul>
+<h2 id="72-pascals-triangle"><a class="header" href="#72-pascals-triangle">7.2 Pascal’s Triangle</a></h2>
+<p>The coefficients of the expansions of \( (a+b)^n \) for \( n = 0, 1, 2, \dots \) form a pattern that is easily generated by Pascal’s Triangle.</p>
+<div style="text-align: center; margin: 20px 0; font-family: monospace; font-size: 16px;">
+        1          <br>
+       1 1         <br>
+      1 2 1        <br>
+     1 3 3 1       <br>
+    1 4 6 4 1      <br>
+  1 5 10 10 5 1    <br>
+  <em>Figure 7.1: Pascal's Triangle up to n=5.</em>
+</div>
+
+<h2 id="73-binomial-theorem-for-positive-integral-indices"><a class="header" href="#73-binomial-theorem-for-positive-integral-indices">7.3 Binomial Theorem for Positive Integral Indices</a></h2>
+<p>The expansion of \( (a+b)^n \) where \( n \in \mathbb{N} \) is:
+\[ (a+b)^n = {}^nC_0 a^n + {}^nC_1 a^{n-1}b + {}^nC_2 a^{n-2}b^2 + \dots + {}^nC_{n-1} ab^{n-1} + {}^nC_n b^n \]
+Or simply:
+\[ (a+b)^n = \sum_{k=0}^{n} {}^nC_k a^{n-k} b^k \]</p>
+<p>Observations:</p>
+<ol>
+<li>The total number of terms in the expansion is \( n+1 \).</li>
+<li>The sum of indices of \( a \) and \( b \) in each term is \( n \).</li>
+<li>The coefficients \( {}^nC_k \) are called the <strong>binomial coefficients</strong>, and \( {}^nC_r = {}^nC_{n-r} \). Equidistant terms from the beginning and end have equal coefficients.</li>
+</ol>
+<hr>
+<h2 id="competency-based-questions-6"><a class="header" href="#competency-based-questions-6">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>Compute \( (98)^5 \) using the Binomial Theorem.</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>We express 98 as \( 100 - 2 \) so that we can use the Binomial Theorem easily.</p>
+<p>\[ (98)^5 = (100 - 2)^5 \]</p>
+<p>Using Binomial Theorem:</p>
+<p>\[ (100 - 2)^5 = {}^5C_0 (100)^5 - {}^5C_1 (100)^4 (2) + {}^5C_2 (100)^3 (2)^2 - {}^5C_3 (100)^2 (2)^3 + {}^5C_4 (100)(2)^4 - {}^5C_5 (2)^5 \]</p>
+<p>Evaluate the terms:</p>
+<p>\[ (100 - 2)^5 = 1 \cdot 10^{10} - 5 \cdot 10^8 \cdot 2 + 10 \cdot 10^6 \cdot 4 - 10 \cdot 10^4 \cdot 8 + 5 \cdot 100 \cdot 16 - 1 \cdot 32 \]</p>
+<p>\[ = 10,000,000,000 - 1,000,000,000 + 40,000,000 - 800,000 + 8,000 - 32 \]</p>
+<p>Summing the positive terms:</p>
+<p>\[ 10,000,000,000 + 40,000,000 + 8,000 = 10,040,008,000 \]</p>
+<p>Summing the negative terms:</p>
+<p>\[ 1,000,000,000 + 800,000 + 32 = 1,000,800,032 \]</p>
+<p>Result:</p>
+<p>\[ 10,040,008,000 - 1,000,800,032 = 9,039,207,968 \]</p>
+<p><strong>Conclusion:</strong> \( 98^5 = 9,039,207,968 \).</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Find \( (x + 1)^6 + (x - 1)^6 \). Hence or otherwise evaluate \( (\sqrt{2} + 1)^6 + (\sqrt{2} - 1)^6 \).</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>Let’s find the expansion of \( (x + 1)^6 + (x - 1)^6 \):</p>
+<p>\[ (x + 1)^6 = x^6 + {}^6C_1 x^5 + {}^6C_2 x^4 + {}^6C_3 x^3 + {}^6C_4 x^2 + {}^6C_5 x + 1 \]</p>
+<p>\[ (x - 1)^6 = x^6 - {}^6C_1 x^5 + {}^6C_2 x^4 - {}^6C_3 x^3 + {}^6C_4 x^2 - {}^6C_5 x + 1 \]</p>
+<p>Upon adding both equations, the odd power terms cancel out to 0:</p>
+<p>\[ (x + 1)^6 + (x - 1)^6 = 2 \left( x^6 + {}^6C_2 x^4 + {}^6C_4 x^2 + 1 \right) \]</p>
+<p>Substitute combinations values:</p>
+<p>\[ (x + 1)^6 + (x - 1)^6 = 2 \left( x^6 + 15x^4 + 15x^2 + 1 \right) \]</p>
+<p>Now calculate the value at \( x = \sqrt{2} \):</p>
+<p>\[ (\sqrt{2} + 1)^6 + (\sqrt{2} - 1)^6 = 2 \left( (\sqrt{2})^6 + 15(\sqrt{2})^4 + 15(\sqrt{2})^2 + 1 \right) \]</p>
+<p>\[ = 2 (8 + 15(4) + 15(2) + 1) \]</p>
+<p>\[ = 2 (8 + 60 + 30 + 1) = 2 (99) = 198 \]</p>
+<p><strong>Conclusion:</strong> The value of the expression is 198.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-8-sequence-and-series"><a class="header" href="#chapter-8-sequence-and-series">Chapter 8: Sequence and Series</a></h1>
+<h2 id="81-introduction"><a class="header" href="#81-introduction">8.1 Introduction</a></h2>
+<p>A <strong>sequence</strong> is an ordered list of numbers obeying a certain rule. Elements of a sequence are called its <strong>terms</strong>, usually denoted by \( a_1, a_2, a_3, \dots, a_n \).
+If a sequence has a finite number of terms, it is a finite sequence. Otherwise, it is an infinite sequence.</p>
+<p>A <strong>series</strong> is the sum of elements of a sequence. If \( a_1, a_2, a_3, \dots, a_n \) limit the sequence, then the expression \( a_1 + a_2 + a_3 + \dots + a_n \) is called series.</p>
+<h2 id="82-arithmetic-progression-ap"><a class="header" href="#82-arithmetic-progression-ap">8.2 Arithmetic Progression (A.P.)</a></h2>
+<p>A sequence \( a_1, a_2, \dots \) is an Arithmetic Progression (AP) if \( a_{n+1} - a_n = d \), a constant, for all \( n \ge 1 \). \( d \) is the common difference.</p>
+<ul>
+<li><strong>General Term:</strong> \( a_n = a + (n-1)d \)</li>
+<li><strong>Sum of first n terms:</strong> \( S_n = \frac{n}{2} [2a + (n-1)d] = \frac{n}{2} (a + l) \), where \( l \) is the last term.</li>
+<li><strong>Arithmetic Mean (A.M.):</strong> Given two numbers \( a \) and \( b \), their A.M. is \( A = \frac{a+b}{2} \). We can insert \( n \) numbers between \( a \) and \( b \) to form an A.P.</li>
+</ul>
+<h2 id="83-geometric-progression-gp"><a class="header" href="#83-geometric-progression-gp">8.3 Geometric Progression (G.P.)</a></h2>
+<p>A sequence \( a_1, a_2, \dots \) with non-zero terms is a Geometric Progression (GP) if \( \frac{a_{k+1}}{a_k} = r \), a constant, for all \( k \ge 1 \). \( r \) is called the common ratio.</p>
+<ul>
+<li><strong>General Term:</strong> \( a_n = ar^{n-1} \)</li>
+<li><strong>Sum of first n terms:</strong>
+\[ S_n = \frac{a(r^n - 1)}{r - 1} \text{ if } r \neq 1 \]
+If \( r = 1 \), then \( S_n = na \).</li>
+<li><strong>Sum of an infinite G.P.:</strong> If \( |r| &lt; 1 \), then sum up to infinity is:
+\[ S_\infty = \frac{a}{1 - r} \]</li>
+<li><strong>Geometric Mean (G.M.):</strong> Given two numbers \( a \) and \( b \), their G.M. is \( G = \sqrt{ab} \).</li>
+</ul>
+<h3 id="relationship-between-am-and-gm"><a class="header" href="#relationship-between-am-and-gm">Relationship between A.M. and G.M.</a></h3>
+<p>Let \( A \) and \( G \) be A.M. and G.M. of two given positive real numbers \( a \) and \( b \), respectively. Then:
+\[ A = \frac{a+b}{2} \text{ and } G = \sqrt{ab} \]
+It can be shown that \( A \ge G \), because
+\[ A - G = \frac{a+b}{2} - \sqrt{ab} = \frac{a+b - 2\sqrt{ab}}{2} = \frac{(\sqrt{a} - \sqrt{b})^2}{2} \ge 0 \]</p>
+<hr>
+<h2 id="competency-based-questions-7"><a class="header" href="#competency-based-questions-7">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>The sum of the first \( p, q, r \) terms of an A.P. are \( a, b, c \), respectively. Prove that:</p>
+<p>\[ \frac{a}{p}(q-r) + \frac{b}{q}(r-p) + \frac{c}{r}(p-q) = 0 \]</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>Let the first term of the A.P. be \( A \) and common difference be \( D \).</p>
+<p>Given:</p>
+<p>\[ S_p = \frac{p}{2}[2A + (p-1)D] = a \Rightarrow \frac{a}{p} = A + \frac{1}{2}(p-1)D \]</p>
+<p>\[ S_q = \frac{q}{2}[2A + (q-1)D] = b \Rightarrow \frac{b}{q} = A + \frac{1}{2}(q-1)D \]</p>
+<p>\[ S_r = \frac{r}{2}[2A + (r-1)D] = c \Rightarrow \frac{c}{r} = A + \frac{1}{2}(r-1)D \]</p>
+<p>Substitute these values into LHS of the given expression:</p>
+<p>\[ LHS = \left[ A + (p-1)\frac{D}{2} \right] (q-r) + \left[ A + (q-1)\frac{D}{2} \right] (r-p) + \left[ A + (r-1)\frac{D}{2} \right] (p-q) \]</p>
+<p>Collect A terms:</p>
+<p>\[ A(q-r + r-p + p-q) = A(0) = 0 \]</p>
+<p>Collect D/2 terms:</p>
+<p>\[ \frac{D}{2} [ (p-1)(q-r) + (q-1)(r-p) + (r-1)(p-q) ] \]</p>
+<p>Evaluate bracket for D/2 terms:</p>
+<p>\[ = pq - pr - q + r + qr - pq - r + p + pr - qr - p + q \]</p>
+<p>All terms cancel each other out to yield 0.</p>
+<p>\[ LHS = 0 + \frac{D}{2}[0] = 0 \]</p>
+<p><strong>Conclusion:</strong> Hence proved.</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Determine the 10th term of a G.P. whose 3rd term is 24 and whose 6th term is 192.</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>Let the first term be \( a \) and common ratio be \( r \).</p>
+<p>We are given:</p>
+<p>\[ a_3 = ar^2 = 24  \qquad \text{— (1)} \]</p>
+<p>\[ a_6 = ar^5 = 192 \qquad \text{— (2)} \]</p>
+<p>Divide eq (2) by eq (1):</p>
+<p>\[ \frac{ar^5}{ar^2} = \frac{192}{24} \]</p>
+<p>\[ r^3 = 8 \Rightarrow r = 2 \]</p>
+<p>Substitute \( r=2 \) in eq (1):</p>
+<p>\[ a(2^2) = 24 \Rightarrow 4a = 24 \Rightarrow a = 6 \]</p>
+<p>Now we must find the 10th term (\( a_{10} \)):</p>
+<p>\[ a_{10} = ar^9 = 6(2^9) = 6(512) = 3072 \]</p>
+<p><strong>Conclusion:</strong> The 10th term of the G.P. is 3072.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-iii-coordinate-geometry"><a class="header" href="#unit-iii-coordinate-geometry">Unit III: Coordinate Geometry</a></h1>
+<p>This unit covers the algebraic representation of geometric shapes like straight lines, circles, parabolas, ellipses, and hyperbolas, as well as an introduction to 3D coordinate geometry.</p>
+<p><strong>Chapters in this Unit:</strong>
+9. Straight Lines
+10. Conic Sections
+11. Introduction to Three-dimensional Geometry</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-9-straight-lines"><a class="header" href="#chapter-9-straight-lines">Chapter 9: Straight Lines</a></h1>
+<h2 id="91-introduction"><a class="header" href="#91-introduction">9.1 Introduction</a></h2>
+<p>Coordinate geometry involves the study of geometry using a coordinate system. This bridges the gap between algebra and geometry.</p>
+<p>Important formulas from earlier classes:</p>
+<ul>
+<li><strong>Distance Formula:</strong> The distance between points \( P(x_1, y_1) \) and \( Q(x_2, y_2) \) is \( PQ = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \).</li>
+<li><strong>Section Formula:</strong> The coordinates of a point dividing the line segment joining \( (x_1, y_1) \) and \( (x_2, y_2) \) internally in the ratio \( m:n \) are \( \left(\frac{mx_2 + nx_1}{m + n}, \frac{my_2 + ny_1}{m + n}\right) \).</li>
+<li><strong>Area of Triangle:</strong> Area = \( \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)| \).</li>
+</ul>
+<h2 id="92-slope-of-a-line"><a class="header" href="#92-slope-of-a-line">9.2 Slope of a Line</a></h2>
+<p>If \( \theta \) is the angle of inclination of a line \( l \), then \( \tan \theta \) is called the slope or gradient of the line \( l \). Slope is usually denoted by \( m \).
+\[ m = \tan \theta, ; \text{where } \theta \neq 90^\circ \]
+The slope of a line passing through points \( (x_1, y_1) \) and \( (x_2, y_2) \) is:
+\[ m = \frac{y_2 - y_1}{x_2 - x_1}, ; \text{where } x_1 \neq x_2 \]</p>
+<h3 id="angle-between-two-lines"><a class="header" href="#angle-between-two-lines">Angle between Two Lines</a></h3>
+<p>If \( m_1 \) and \( m_2 \) are slopes of two non-vertical lines, the acute angle \( \theta \) between them is:
+\[ \tan \theta = \left| \frac{m_2 - m_1}{1 + m_1 m_2} \right| \]</p>
+<ul>
+<li>Lines are <strong>parallel</strong> if \( m_1 = m_2 \).</li>
+<li>Lines are <strong>perpendicular</strong> if \( m_1 m_2 = -1 \).</li>
+</ul>
+<h2 id="93-various-forms-of-equations-of-a-line"><a class="header" href="#93-various-forms-of-equations-of-a-line">9.3 Various Forms of Equations of a Line</a></h2>
+<ol>
+<li><strong>Horizontal and vertical lines:</strong> Equation of x-axis is \( y = 0 \). Equation of y-axis is \( x = 0 \).</li>
+<li><strong>Point-slope form:</strong> Equation of a line passing through \( (x_0, y_0) \) with slope \( m \) is:
+\[ y - y_0 = m(x - x_0) \]</li>
+<li><strong>Two-point form:</strong> Line passing through \( (x_1, y_1) \) and \( (x_2, y_2) \) is:
+\[ y - y_1 = \frac{y_2 - y_1}{x_2 - x_1} (x - x_1) \]</li>
+<li><strong>Slope-intercept form:</strong> Line with slope \( m \) and y-intercept \( c \) is \( y = mx + c \).</li>
+<li><strong>Intercept form:</strong> Line making intercepts \( a \) and \( b \) on x and y axes is:
+\[ \frac{x}{a} + \frac{y}{b} = 1 \]</li>
+<li><strong>Normal form:</strong> Line uniquely determined by length of perpendicular \( p \) from origin and angle \( \omega \) this perpendicular makes with positive x-axis:
+\[ x \cos \omega + y \sin \omega = p \]</li>
+</ol>
+<div style="text-align: center; margin: 20px 0;">
+    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#ccc" stroke-dasharray="2,2">
+            <line x1="0" y1="150" x2="300" y2="150" stroke="#000" stroke-width="1.5" stroke-dasharray="none" />
+            <line x1="150" y1="0" x2="150" y2="300" stroke="#000" stroke-width="1.5" stroke-dasharray="none" />
+        </g>
+        <text x="280" y="140" font-family="Arial">X</text>
+        <text x="160" y="20" font-family="Arial">Y</text>
+        <!-- y = -x + c, say y = -x + 100 -->
+        <line x1="50" y1="50" x2="250" y2="250" stroke="green" stroke-width="2" />
+        <text x="180" y="60" font-family="Arial" font-size="14" fill="green">y = mx + c</text>
+        <!-- P(x, y) & intercepts -->
+        <circle cx="150" cy="150" r="3" fill="black" />
+        <text x="155" y="145" font-family="Arial" font-size="12">O(0,0)</text>
+    </svg>
+    <br />
+    <em>Figure 9.1: Slope-intercept form of a straight line in Cartesian plane.</em>
+</div>
+
+<h2 id="94-general-equation-of-a-line"><a class="header" href="#94-general-equation-of-a-line">9.4 General Equation of a Line</a></h2>
+<p>Any equation of the form \( Ax + By + C = 0 \), where \( A \) and \( B \) are not simultaneously zero, is called the general linear equation. It always represents a straight line.</p>
+<ul>
+<li>Slope \( m = -\frac{A}{B} \)</li>
+<li>x-intercept \( = -\frac{C}{A} \)</li>
+<li>y-intercept \( = -\frac{C}{B} \)</li>
+</ul>
+<h3 id="distance-of-a-point-from-a-line"><a class="header" href="#distance-of-a-point-from-a-line">Distance of a Point From a Line</a></h3>
+<p>The perpendicular distance \( d \) from a point \( (x_1, y_1) \) to a line \( Ax + By + C = 0 \) is:
+\[ d = \frac{|Ax_1 + By_1 + C|}{\sqrt{A^2 + B^2}} \]
+Distance between two parallel lines \( Ax + By + C_1 = 0 \) and \( Ax + By + C_2 = 0 \):
+\[ d = \frac{|C_1 - C_2|}{\sqrt{A^2 + B^2}} \]</p>
+<hr>
+<h2 id="competency-based-questions-8"><a class="header" href="#competency-based-questions-8">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>A line passes through the point \( P(3,4) \) and cuts off intercepts on the coordinate axes such that their sum is 14. Determine the possible equation(s) of this line.</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>Let the intercepts on the x and y axes be \( a \) and \( b \) respectively.</p>
+<p>The equation of the line in intercept form is:</p>
+<p>\[ \frac{x}{a} + \frac{y}{b} = 1 \]</p>
+<p>We are given that \( a + b = 14 \Rightarrow b = 14 - a \).</p>
+<p>Also, the line passes through \( (3, 4) \), so we substitute \( x=3 \) and \( y=4 \):</p>
+<p>\[ \frac{3}{a} + \frac{4}{14 - a} = 1 \]</p>
+<p>Take the LCM:</p>
+<p>\[ \frac{3(14 - a) + 4a}{a(14 - a)} = 1 \]</p>
+<p>\[ 42 - 3a + 4a = 14a - a^2 \]</p>
+<p>\[ 42 + a = 14a - a^2 \]</p>
+<p>Rearranging to form a quadratic equation:</p>
+<p>\[ a^2 - 13a + 42 = 0 \]</p>
+<p>Factorizing the quadratic equation:</p>
+<p>\[ (a - 6)(a - 7) = 0 \]</p>
+<p>So, \( a = 6 \) or \( a = 7 \).</p>
+<p><strong>Case 1:</strong> If \( a = 6 \), then \( b = 14 - 6 = 8 \).</p>
+<p>The equation is \( \frac{x}{6} + \frac{y}{8} = 1 \Rightarrow 4x + 3y = 24 \).</p>
+<p><strong>Case 2:</strong> If \( a = 7 \), then \( b = 14 - 7 = 7 \).</p>
+<p>The equation is \( \frac{x}{7} + \frac{y}{7} = 1 \Rightarrow x + y = 7 \).</p>
+<p><strong>Conclusion:</strong> The two possible equations for the line are \( 4x + 3y = 24 \) and \( x + y = 7 \).</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Find the angle between the lines \( y - \sqrt{3}x - 5 = 0 \) and \( \sqrt{3}y - x + 6 = 0 \).</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>First, rewrite both equations in slope-intercept form (\( y = mx + c \)) to find their slopes.</p>
+<p><strong>Line 1:</strong> \( y = \sqrt{3}x + 5 \)</p>
+<p>Slope \( m_1 = \sqrt{3} \)</p>
+<p><strong>Line 2:</strong> \( \sqrt{3}y = x - 6 \Rightarrow y = \frac{1}{\sqrt{3}}x - \frac{6}{\sqrt{3}} \)</p>
+<p>Slope \( m_2 = \frac{1}{\sqrt{3}} \)</p>
+<p>The acute angle \( \theta \) between the lines is given by:</p>
+<p>\[ \tan \theta = \left| \frac{m_1 - m_2}{1 + m_1 m_2} \right| \]</p>
+<p>\[ \tan \theta = \left| \frac{\sqrt{3} - \frac{1}{\sqrt{3}}}{1 + (\sqrt{3})\left(\frac{1}{\sqrt{3}}\right)} \right| \]</p>
+<p>Simplify numerator:</p>
+<p>\[ \sqrt{3} - \frac{1}{\sqrt{3}} = \frac{3 - 1}{\sqrt{3}} = \frac{2}{\sqrt{3}} \]</p>
+<p>Simplify denominator:</p>
+<p>\[ 1 + 1 = 2 \]</p>
+<p>Thus,</p>
+<p>\[ \tan \theta = \left| \frac{ \frac{2}{\sqrt{3}} }{2} \right| = \frac{1}{\sqrt{3}} \]</p>
+<p>The angle whose tangent is \( \frac{1}{\sqrt{3}} \) is \( 30^\circ \) or \( \frac{\pi}{6} \) radians.</p>
+<p><strong>Conclusion:</strong> The angle between the two lines is \( 30^\circ \).</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-10-conic-sections"><a class="header" href="#chapter-10-conic-sections">Chapter 10: Conic Sections</a></h1>
+<h2 id="101-introduction"><a class="header" href="#101-introduction">10.1 Introduction</a></h2>
+<p>The curves we obtain by slicing a double-napped right circular cone with a plane are called <strong>conic sections</strong>. Depending on the angle of the intersecting plane relative to the axis of the cone, we get circles, ellipses, parabolas, and hyperbolas.</p>
+<h2 id="102-sections-of-a-cone"><a class="header" href="#102-sections-of-a-cone">10.2 Sections of a Cone</a></h2>
+<p>Let \( \alpha \) be the angle made by the generator with the axis of the cone, and \( \beta \) be the angle made by the intersecting plane with the axis.</p>
+<ul>
+<li><strong>Circle:</strong> When \( \beta = 90^\circ \), the section is a circle.</li>
+<li><strong>Ellipse:</strong> When \( \alpha &lt; \beta &lt; 90^\circ \), the section is an ellipse.</li>
+<li><strong>Parabola:</strong> When \( \beta = \alpha \), the section is a parabola.</li>
+<li><strong>Hyperbola:</strong> When \( 0 \le \beta &lt; \alpha \), the plane intersects both nappes, forming a hyperbola.</li>
+</ul>
+<h2 id="103-circle"><a class="header" href="#103-circle">10.3 Circle</a></h2>
+<p>A circle is the set of all points in a plane that are equidistant from a fixed point in the plane.
+The fixed point is the <strong>center</strong> and the fixed distance is the <strong>radius</strong>.</p>
+<p>Equation of a circle with center \( (h, k) \) and radius \( r \):
+\[ (x - h)^2 + (y - k)^2 = r^2 \]</p>
+<h2 id="104-parabola"><a class="header" href="#104-parabola">10.4 Parabola</a></h2>
+<p>A parabola is the set of all points in a plane that are equidistant from a fixed line (the directrix) and a fixed point (the focus).</p>
+<ul>
+<li><strong>Vertex:</strong> The point of intersection of the parabola with its axis of symmetry.</li>
+<li><strong>Standard Equations:</strong>
+<ol>
+<li>\( y^2 = 4ax \) (Opens right)</li>
+<li>\( y^2 = -4ax \) (Opens left)</li>
+<li>\( x^2 = 4ay \) (Opens up)</li>
+<li>\( x^2 = -4ay \) (Opens down)</li>
+</ol>
+</li>
+<li><strong>Latus Rectum:</strong> The focal chord perpendicular to the axis of the parabola. Its length is \( 4a \).</li>
+</ul>
+<div style="text-align: center; margin: 20px 0;">
+    <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+        <!-- Axes -->
+        <g stroke="#ccc" stroke-dasharray="2,2">
+            <line x1="0" y1="150" x2="300" y2="150" stroke="#000" stroke-dasharray="none" />
+            <line x1="150" y1="0" x2="150" y2="300" stroke="#000" stroke-dasharray="none" />
+        </g>
+        <!-- y^2 = 4ax, let a=30. Focus at (180, 150) -->
+        <!-- Parametric: x = 150 + at^2, y = 150 - 2at -->
+        <path d="M 300 10 Q 150 150 300 290" fill="none" stroke="red" stroke-width="2" />
+        <!-- Focus F(a, 0) -->
+        <circle cx="180" cy="150" r="4" fill="blue" />
+        <text x="185" y="145" font-family="Arial" font-size="12">F(a, 0)</text>
+        <!-- Directrix x = -a -->
+        <line x1="120" y1="50" x2="120" y2="250" stroke="green" stroke-width="2" />
+        <text x="50" y="80" font-family="Arial" font-size="12" fill="green">Directrix x = -a</text>
+    </svg>
+    <br />
+    <em>Figure 10.1: Standard Parabola y² = 4ax.</em>
+</div>
+
+<h2 id="105-ellipse"><a class="header" href="#105-ellipse">10.5 Ellipse</a></h2>
+<p>An ellipse is the set of all points in a plane, the sum of whose distances from two fixed points (the foci) in the plane is a constant.</p>
+<ul>
+<li><strong>Standard Equation:</strong> \( \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \)</li>
+<li><strong>Vertices:</strong> \( (\pm a, 0) \)</li>
+<li><strong>Foci:</strong> \( (\pm c, 0) \) where \( c^2 = a^2 - b^2 \)</li>
+<li><strong>Eccentricity:</strong> \( e = \frac{c}{a} &lt; 1 \)</li>
+<li><strong>Length of Latus Rectum:</strong> \( \frac{2b^2}{a} \)</li>
+</ul>
+<h2 id="106-hyperbola"><a class="header" href="#106-hyperbola">10.6 Hyperbola</a></h2>
+<p>A hyperbola is the set of all points in a plane, the difference of whose distances from two fixed points (the foci) in the plane is a constant.</p>
+<ul>
+<li><strong>Standard Equation:</strong> \( \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1 \)</li>
+<li><strong>Vertices:</strong> \( (\pm a, 0) \)</li>
+<li><strong>Foci:</strong> \( (\pm c, 0) \) where \( c^2 = a^2 + b^2 \)</li>
+<li><strong>Eccentricity:</strong> \( e = \frac{c}{a} &gt; 1 \)</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-9"><a class="header" href="#competency-based-questions-9">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>Find the equation of a circle passing through the points \( (4,1) \) and \( (6,5) \) and whose center is on the line \( 4x + y = 16 \).</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>Let the equation of the circle be \( (x-h)^2 + (y-k)^2 = r^2 \).</p>
+<p>Since the center \( (h, k) \) lies on the line \( 4x + y = 16 \), we have:</p>
+<p>\[ 4h + k = 16 \Rightarrow k = 16 - 4h \qquad \text{— (1)} \]</p>
+<p>The circle passes through \( (4,1) \):</p>
+<p>\[ (4-h)^2 + (1-k)^2 = r^2 \qquad \text{— (2)} \]</p>
+<p>The circle passes through \( (6,5) \):</p>
+<p>\[ (6-h)^2 + (5-k)^2 = r^2 \qquad \text{— (3)} \]</p>
+<p>Equating (2) and (3) since both equal \( r^2 \):</p>
+<p>\[ (4-h)^2 + (1-k)^2 = (6-h)^2 + (5-k)^2 \]</p>
+<p>\[ 16 - 8h + h^2 + 1 - 2k + k^2 = 36 - 12h + h^2 + 25 - 10k + k^2 \]</p>
+<p>Cancel \( h^2 \) and \( k^2 \):</p>
+<p>\[ 17 - 8h - 2k = 61 - 12h - 10k \]</p>
+<p>Bring all terms to one side:</p>
+<p>\[ 4h + 8k = 44 \Rightarrow h + 2k = 11 \qquad \text{— (4)} \]</p>
+<p>Substitute value of \( k \) from (1) into (4):</p>
+<p>\[ h + 2(16 - 4h) = 11 \]</p>
+<p>\[ h + 32 - 8h = 11 \]</p>
+<p>\[ -7h = -21 \Rightarrow h = 3 \]</p>
+<p>Now find \( k \):</p>
+<p>\[ k = 16 - 4(3) = 16 - 12 = 4 \]</p>
+<p>The center is \( (3, 4) \).</p>
+<p>Find radius squared \( r^2 \) using eq (2):</p>
+<p>\[ r^2 = (4-3)^2 + (1-4)^2 = 1^2 + (-3)^2 = 1 + 9 = 10 \]</p>
+<p>The equation of the circle is \( (x-3)^2 + (y-4)^2 = 10 \), which can be expanded as:</p>
+<p>\[ x^2 - 6x + 9 + y^2 - 8y + 16 = 10 \]</p>
+<p>\[ x^2 + y^2 - 6x - 8y + 15 = 0 \]</p>
+<p><strong>Conclusion:</strong> The equation of the circle is \( x^2 + y^2 - 6x - 8y + 15 = 0 \).</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Determine the coordinates of the focus, axis, the equation of directrix and latus rectum of the parabola \( y^2 = -8x \).</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>The equation involves \( y^2 \), so its axis is the x-axis. The coefficient of \( x \) is negative, meaning the parabola opens towards the left.</p>
+<p>Compare \( y^2 = -8x \) with the standard form \( y^2 = -4ax \).</p>
+<p>\[ -4a = -8 \Rightarrow a = 2 \]</p>
+<ul>
+<li>
+<p><strong>Focus:</strong> Since it opens to the left, focus \( F(-a, 0) \rightarrow (-2, 0) \).</p>
+</li>
+<li>
+<p><strong>Axis:</strong> The axis of symmetry is the x-axis, whose equation is \( y = 0 \).</p>
+</li>
+<li>
+<p><strong>Directrix:</strong> The equation is \( x = a \rightarrow x = 2 \).</p>
+</li>
+<li>
+<p><strong>Latus Rectum:</strong> Length \( = 4a = 4(2) = 8 \).</p>
+</li>
+</ul>
+<p><strong>Conclusion:</strong> Focus: \( (-2, 0) \), Axis: \( y=0 \), Directrix: \( x=2 \), Latus Rectum: 8.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-11-introduction-to-three-dimensional-geometry"><a class="header" href="#chapter-11-introduction-to-three-dimensional-geometry">Chapter 11: Introduction to Three-Dimensional Geometry</a></h1>
+<h2 id="111-introduction"><a class="header" href="#111-introduction">11.1 Introduction</a></h2>
+<p>In two-dimensional geometry, we use two intersecting coordinate axes (X-axis and Y-axis) to locate a point in a plane. To locate a point in space, we require a system of three intersecting, mutually perpendicular lines, forming the <strong>three-dimensional coordinate system</strong>.</p>
+<h2 id="112-coordinate-axes-and-coordinate-planes"><a class="header" href="#112-coordinate-axes-and-coordinate-planes">11.2 Coordinate Axes and Coordinate Planes</a></h2>
+<p>Let X’OX, Y’OY, and Z’OZ be three mutually perpendicular lines passing through the origin O. These three lines form the coordinate axes (X-axis, Y-axis, Z-axis).
+The planes determined by pairs of axes are called Coordinate Planes:</p>
+<ol>
+<li><strong>XY-plane:</strong> The plane determined by the X-axis and Y-axis. Every point on this plane has a z-coordinate of zero.</li>
+<li><strong>YZ-plane:</strong> Determined by Y and Z axes. The x-coordinate is zero.</li>
+<li><strong>ZX-plane:</strong> Determined by Z and X axes. The y-coordinate is zero.</li>
+</ol>
+<p>These three planes divide space into eight parts called <strong>octants</strong>.</p>
+<h3 id="coordinates-of-a-point-in-space"><a class="header" href="#coordinates-of-a-point-in-space">Coordinates of a Point in Space</a></h3>
+<p>The coordinates of a point \( P \) in 3D space are always written in the form of an ordered triplet \( (x, y, z) \).
+Here, \( x, y, z \) represent the perpendicular distances from the YZ, ZX, and XY planes respectively.</p>
+<h2 id="113-distance-between-two-points"><a class="header" href="#113-distance-between-two-points">11.3 Distance between Two Points</a></h2>
+<p>The distance \( PQ \) between two points \( P(x_1, y_1, z_1) \) and \( Q(x_2, y_2, z_2) \) in space is given by the 3D distance formula:
+\[ PQ = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} \]</p>
+<p>This is a direct derivation from the 2D distance formula by applying the Pythagorean Theorem twice in space.</p>
+<h2 id="114-section-formula"><a class="header" href="#114-section-formula">11.4 Section Formula</a></h2>
+<p>The coordinates of a point \( R \) that divides the line segment joining points \( P(x_1, y_1, z_1) \) and \( Q(x_2, y_2, z_2) \) internally in the ratio \( m:n \) are given by:
+\[ \left( \frac{mx_2 + nx_1}{m+n}, \frac{my_2 + ny_1}{m+n}, \frac{mz_2 + nz_1}{m+n} \right) \]</p>
+<p>If point \( R \) divides the segment externally in the ratio \( m:n \), then the coordinates are:
+\[ \left( \frac{mx_2 - nx_1}{m-n}, \frac{my_2 - ny_1}{m-n}, \frac{mz_2 - nz_1}{m-n} \right) \]</p>
+<p><strong>Mid-point Formula:</strong>
+If \( R \) is the midpoint of segment \( PQ \), the ratio is \( 1:1 \), and the coordinates are:
+\[ \left( \frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}, \frac{z_1 + z_2}{2} \right) \]</p>
+<hr>
+<h2 id="competency-based-questions-10"><a class="header" href="#competency-based-questions-10">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>Show that the points \( P(-2, 3, 5) \), \( Q(1, 2, 3) \), and \( R(7, 0, -1) \) are collinear.</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>Points are collinear if they lie on the same straight line. We can check this by calculating the distances between the points. If the sum of any two distances is equal to the third distance, the points are collinear.</p>
+<p>Calculate \( PQ \):</p>
+<p>\[ PQ = \sqrt{(1 - (-2))^2 + (2 - 3)^2 + (3 - 5)^2} \]</p>
+<p>\[ PQ = \sqrt{3^2 + (-1)^2 + (-2)^2} = \sqrt{9 + 1 + 4} = \sqrt{14} \]</p>
+<p>Calculate \( QR \):</p>
+<p>\[ QR = \sqrt{(7 - 1)^2 + (0 - 2)^2 + (-1 - 3)^2} \]</p>
+<p>\[ QR = \sqrt{6^2 + (-2)^2 + (-4)^2} = \sqrt{36 + 4 + 16} = \sqrt{56} = 2\sqrt{14} \]</p>
+<p>Calculate \( PR \):</p>
+<p>\[ PR = \sqrt{(7 - (-2))^2 + (0 - 3)^2 + (-1 - 5)^2} \]</p>
+<p>\[ PR = \sqrt{9^2 + (-3)^2 + (-6)^2} = \sqrt{81 + 9 + 36} = \sqrt{126} = 3\sqrt{14} \]</p>
+<p>Notice that \( PQ + QR = \sqrt{14} + 2\sqrt{14} = 3\sqrt{14} \).</p>
+<p>Since \( PQ + QR = PR \), the points \( P, Q, \) and \( R \) are collinear.</p>
+<p><strong>Conclusion:</strong> The given points are collinear.</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Find the coordinates of the point which divides the line segment joining the points \( (1, -2, 3) \) and \( (3, 4, -5) \) in the ratio \( 2:3 \) internally.</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>Let the given points be \( A(1, -2, 3) \) and \( B(3, 4, -5) \).</p>
+<p>The ratio is \( m:n = 2:3 \).</p>
+<p>Using the internal section formula, the coordinates \( (x,y,z) \) of the point \( P \) are:</p>
+<p>\[ x = \frac{mx_2 + nx_1}{m+n} = \frac{2(3) + 3(1)}{2+3} = \frac{6 + 3}{5} = \frac{9}{5} \]</p>
+<p>\[ y = \frac{my_2 + ny_1}{m+n} = \frac{2(4) + 3(-2)}{2+3} = \frac{8 - 6}{5} = \frac{2}{5} \]</p>
+<p>\[ z = \frac{mz_2 + nz_1}{m+n} = \frac{2(-5) + 3(3)}{2+3} = \frac{-10 + 9}{5} = \frac{-1}{5} \]</p>
+<p><strong>Conclusion:</strong> The coordinates of the point are \( \left(\frac{9}{5}, \frac{2}{5}, \frac{-1}{5}\right) \).</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-iv-calculus"><a class="header" href="#unit-iv-calculus">Unit IV: Calculus</a></h1>
+<p>Calculus is the mathematical study of continuous change. This introductory unit for Class 11 focuses on the foundational concepts of limits and the calculation of derivatives.</p>
+<p><strong>Chapters in this Unit:</strong>
+12. Limits and Derivatives</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-12-limits-and-derivatives"><a class="header" href="#chapter-12-limits-and-derivatives">Chapter 12: Limits and Derivatives</a></h1>
+<h2 id="121-introduction-to-limits"><a class="header" href="#121-introduction-to-limits">12.1 Introduction to Limits</a></h2>
+<p>Calculus is that branch of mathematics which mainly deals with the study of change in the value of a function as the points in the domain change.
+The concept of a <strong>limit</strong> is fundamental to calculus. It allows us to determine the value that a function approaches as its input approaches some value.</p>
+<p>Let \( y = f(x) \). If \( f(x) \) gets closer and closer to a real number \( L \) as \( x \) gets closer and closer to \( a \) (from both sides), we say that the limit of \( f(x) \) as \( x \) approaches \( a \) is \( L \), and we write:
+\[ \lim_{x \to a} f(x) = L \]</p>
+<h3 id="algebra-of-limits"><a class="header" href="#algebra-of-limits">Algebra of Limits</a></h3>
+<p>Let \( \lim_{x \to a} f(x) = l \) and \( \lim_{x \to a} g(x) = m \).</p>
+<ol>
+<li><strong>Limit of sum:</strong> \( \lim_{x \to a} [f(x) + g(x)] = l + m \)</li>
+<li><strong>Limit of difference:</strong> \( \lim_{x \to a} [f(x) - g(x)] = l - m \)</li>
+<li><strong>Limit of product:</strong> \( \lim_{x \to a} [f(x) \cdot g(x)] = l \cdot m \)</li>
+<li><strong>Limit of quotient:</strong> \( \lim_{x \to a} \frac{f(x)}{g(x)} = \frac{l}{m} \), provided \( m \neq 0 \).</li>
+</ol>
+<h3 id="standard-limits"><a class="header" href="#standard-limits">Standard Limits</a></h3>
+<ol>
+<li>\[ \lim_{x \to a} \frac{x^n - a^n}{x - a} = n a^{n-1} \]</li>
+<li>\[ \lim_{x \to 0} \frac{\sin x}{x} = 1 \] (where x is in radians)</li>
+<li>\[ \lim_{x \to 0} \frac{1 - \cos x}{x} = 0 \]</li>
+</ol>
+<h2 id="122-derivatives"><a class="header" href="#122-derivatives">12.2 Derivatives</a></h2>
+<p>Derivative of a function \( f(x) \) at a point \( a \) represents the rate of change of \( f(x) \) with respect to \( x \) at \( x = a \). It is geometrically the slope of the tangent to the curve \( y = f(x) \) at that point.</p>
+<p>The derivative of a function \( f \) at \( a \) is defined as:
+\[ f’(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h} \]
+provided this limit exists.</p>
+<p>If we view derivative as a function, then the derivative of \( f(x) \) with respect to \( x \) is:
+\[ f’(x) = \frac{d}{dx} f(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \]
+This process of finding the derivative is called differentiation from first principles.</p>
+<h3 id="algebra-of-derivatives"><a class="header" href="#algebra-of-derivatives">Algebra of Derivatives</a></h3>
+<ol>
+<li><strong>Sum/Difference Rule:</strong> \( \frac{d}{dx}[u \pm v] = \frac{du}{dx} \pm \frac{dv}{dx} \)</li>
+<li><strong>Product Rule (Leibniz Rule):</strong> \( \frac{d}{dx}[uv] = u \frac{dv}{dx} + v \frac{du}{dx} \)</li>
+<li><strong>Quotient Rule:</strong> \( \frac{d}{dx}\left[\frac{u}{v}\right] = \frac{v \frac{du}{dx} - u \frac{dv}{dx}}{v^2} \), where \( v \neq 0 \).</li>
+</ol>
+<h3 id="derivatives-of-standard-functions"><a class="header" href="#derivatives-of-standard-functions">Derivatives of Standard Functions</a></h3>
+<ul>
+<li>\( \frac{d}{dx}(x^n) = n x^{n-1} \)</li>
+<li>\( \frac{d}{dx}(\sin x) = \cos x \)</li>
+<li>\( \frac{d}{dx}(\cos x) = -\sin x \)</li>
+<li>\( \frac{d}{dx}(\tan x) = \sec^2 x \)</li>
+<li>\( \frac{d}{dx}(\text{constant}) = 0 \)</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-11"><a class="header" href="#competency-based-questions-11">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>Evaluate the limit: \( \lim_{x \to 2} \frac{x^3 - 2x^2}{x^2 - 5x + 6} \).</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>Let \( f(x) = \frac{x^3 - 2x^2}{x^2 - 5x + 6} \).</p>
+<p>If we substitute \( x = 2 \) directly, we get:</p>
+<p>Numerator: \( 2^3 - 2(2^2) = 8 - 8 = 0 \)</p>
+<p>Denominator: \( 2^2 - 5(2) + 6 = 4 - 10 + 6 = 0 \)</p>
+<p>This gives a \( \frac{0}{0} \) indeterminate form, which means \( (x-2) \) is a common factor in both numerator and denominator. Let’s factorize.</p>
+<p>Numerator: \( x^3 - 2x^2 = x^2(x - 2) \)</p>
+<p>Denominator: \( x^2 - 5x + 6 = x^2 - 3x - 2x + 6 = x(x-3) - 2(x-3) = (x-2)(x-3) \)</p>
+<p>So, the function can be written as:</p>
+<p>\[ \lim_{x \to 2} \frac{x^2(x - 2)}{(x-2)(x-3)} \]</p>
+<p>Cancel the common factor \( (x-2) \) for \( x \neq 2 \):</p>
+<p>\[ \lim_{x \to 2} \frac{x^2}{x-3} \]</p>
+<p>Now substitute \( x = 2 \):</p>
+<p>\[ = \frac{2^2}{2 - 3} = \frac{4}{-1} = -4 \]</p>
+<p><strong>Conclusion:</strong> The value of the limit is -4.</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Find the derivative of the function \( f(x) = \frac{x + \cos x}{\tan x} \) with respect to \( x \).</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>Here we use the Quotient Rule: \( \frac{d}{dx}\left[\frac{u}{v}\right] = \frac{v \cdot u’ - u \cdot v’}{v^2} \).</p>
+<p>Let \( u = x + \cos x \) and \( v = \tan x \).</p>
+<p>Differentiate \( u \):</p>
+<p>\[ u’ = \frac{d}{dx}(x + \cos x) = 1 - \sin x \]</p>
+<p>Differentiate \( v \):</p>
+<p>\[ v’ = \frac{d}{dx}(\tan x) = \sec^2 x \]</p>
+<p>Apply the rule:</p>
+<p>\[ f’(x) = \frac{(\tan x)(1 - \sin x) - (x + \cos x)(\sec^2 x)}{(\tan x)^2} \]</p>
+<p>Expand the numerator:</p>
+<p>\[ = \frac{\tan x - \tan x \sin x - x \sec^2 x - \cos x \sec^2 x}{\tan^2 x} \]</p>
+<p>We know \( \cos x \sec^2 x = \cos x \cdot \frac{1}{\cos^2 x} = \frac{1}{\cos x} = \sec x \). And \( \tan x \sin x = \frac{\sin^2 x}{\cos x} \).</p>
+<p>\[ f’(x) = \frac{\tan x - \frac{\sin^2 x}{\cos x} - x \sec^2 x - \sec x}{\tan^2 x} \]</p>
+<p><strong>Conclusion:</strong> The final derivative is \( f’(x) = \frac{\tan x - \frac{\sin^2 x}{\cos x} - x \sec^2 x - \sec x}{\tan^2 x} \).</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-v-statistics-and-probability"><a class="header" href="#unit-v-statistics-and-probability">Unit V: Statistics and Probability</a></h1>
+<p>This final unit discusses the measures of dispersion in data and the theoretical probability of different events.</p>
+<p><strong>Chapters in this Unit:</strong>
+13. Statistics
+14. Probability</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-13-statistics"><a class="header" href="#chapter-13-statistics">Chapter 13: Statistics</a></h1>
+<h2 id="131-measures-of-dispersion"><a class="header" href="#131-measures-of-dispersion">13.1 Measures of Dispersion</a></h2>
+<p>In earlier classes, we have studied measures of central tendency: Mean, Median, and Mode. These measures give us a single value around which the data is clustered. However, they do not tell us how the data is scattered around the central value. The scattering of data is called <strong>dispersion</strong>.</p>
+<p>Some important measures of dispersion are:</p>
+<ol>
+<li>Range</li>
+<li>Mean Deviation</li>
+<li>Variance</li>
+<li>Standard Deviation</li>
+</ol>
+<h2 id="132-range"><a class="header" href="#132-range">13.2 Range</a></h2>
+<p>The range is the simplest measure of dispersion. It is the difference between the maximum and minimum values of a series.
+\[ \text{Range} = x_{\text{max}} - x_{\text{min}} \]</p>
+<h2 id="133-mean-deviation"><a class="header" href="#133-mean-deviation">13.3 Mean Deviation</a></h2>
+<p>Mean deviation is the arithmetic mean of the absolute deviations of the observations from an appropriate measure of central tendency (usually mean or median).</p>
+<h3 id="for-ungrouped-data"><a class="header" href="#for-ungrouped-data">For Ungrouped Data</a></h3>
+<p>Let \( x_1, x_2, \dots, x_n \) be \( n \) observations.
+Let \( a \) be the measure of central tendency (Mean \( \bar{x} \) or Median \( M \)).
+Then, Mean Deviation about \( a \) is:
+\[ M.D.(a) = \frac{1}{n} \sum_{i=1}^{n} |x_i - a| \]</p>
+<h3 id="for-grouped-data"><a class="header" href="#for-grouped-data">For Grouped Data</a></h3>
+<p>Let the observations \( x_1, x_2, \dots, x_n \) have frequencies \( f_1, f_2, \dots, f_n \) respectively. Let \( N = \sum f_i \).
+Then:
+\[ M.D.(a) = \frac{1}{N} \sum_{i=1}^{n} f_i |x_i - a| \]</p>
+<h2 id="134-variance-and-standard-deviation"><a class="header" href="#134-variance-and-standard-deviation">13.4 Variance and Standard Deviation</a></h2>
+<p>The square of the standard deviation is called variance. It overcomes the drawback of taking absolute values in Mean Deviation by squaring the deviations before averaging them.</p>
+<h3 id="variance--sigma2-"><a class="header" href="#variance--sigma2-">Variance (\( \sigma^2 \))</a></h3>
+<p>For ungrouped data:
+\[ \sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2 \]
+A commonly used alternative formula is:
+\[ \sigma^2 = \frac{1}{n} \sum x_i^2 - (\bar{x})^2 \]</p>
+<h3 id="standard-deviation--sigma-"><a class="header" href="#standard-deviation--sigma-">Standard Deviation (\( \sigma \))</a></h3>
+<p>The standard deviation is the positive square root of the variance.
+\[ \sigma = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2 } \]</p>
+<h3 id="coefficient-of-variation-cv"><a class="header" href="#coefficient-of-variation-cv">Coefficient of Variation (C.V.)</a></h3>
+<p>To compare the variability or dispersion of two or more series, we use the Coefficient of Variation.
+\[ C.V. = \frac{\sigma}{\bar{x}} \times 100 \]
+A series with lesser C.V. is more consistent (less dispersed).</p>
+<hr>
+<h2 id="competency-based-questions-12"><a class="header" href="#competency-based-questions-12">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>The mean and standard deviation of 20 observations are found to be 10 and 2, respectively. On rechecking, it was found that an observation 8 was incorrect. Calculate the correct mean and standard deviation if the wrong item is omitted.</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>Given: Number of observations \( n = 20 \)</p>
+<p>Incorrect Mean \( \bar{x} = 10 \)</p>
+<p>Incorrect Standard Deviation \( \sigma = 2 \)</p>
+<p>Incorrect observation \( = 8 \)</p>
+<p>First, let’s find the correct sum of observations.</p>
+<p>\[ \text{Incorrect sum of observations } \sum x = n \bar{x} = 20 \times 10 = 200 \]</p>
+<p>Since observation 8 is omitted, the new number of observations \( n’ = 19 \).</p>
+<p>\[ \text{Correct sum of observations } \sum x’ = 200 - 8 = 192 \]</p>
+<p>\[ \text{Correct Mean } \bar{x}’ = \frac{192}{19} \approx 10.105 \]</p>
+<p>Now calculate the correct variance. We know:</p>
+<p>\[ \sigma^2 = \frac{1}{n} \sum x^2 - (\bar{x})^2 \]</p>
+<p>\[ 2^2 = \frac{1}{20} \sum x^2 - (10)^2 \]</p>
+<p>\[ 4 = \frac{1}{20} \sum x^2 - 100 \]</p>
+<p>\[ 104 = \frac{1}{20} \sum x^2 \Rightarrow \text{Incorrect } \sum x^2 = 2080 \]</p>
+<p>When the item 8 is removed, the correct sum of squares:</p>
+<p>\[ \text{Correct } \sum x’^2 = 2080 - 8^2 = 2080 - 64 = 2016 \]</p>
+<p>Now find the new variance:</p>
+<p>\[ \text{New Variance } \sigma’^2 = \frac{\text{Correct } \sum x’^2}{n’} - (\bar{x}’)^2 \]</p>
+<p>\[ \sigma’^2 = \frac{2016}{19} - \left(\frac{192}{19}\right)^2 = \frac{2016}{19} - \frac{36864}{361} \]</p>
+<p>\[ \sigma’^2 = \frac{2016 \times 19 - 36864}{361} = \frac{38304 - 36864}{361} = \frac{1440}{361} \approx 3.988 \]</p>
+<p>The new standard deviation is:</p>
+<p>\[ \sigma’ = \sqrt{ \frac{1440}{361} } = \frac{\sqrt{1440}}{19} = \frac{12\sqrt{10}}{19} \approx \frac{37.947}{19} \approx 1.997 \]</p>
+<p><strong>Conclusion:</strong> The correct mean is 10.105 and the correct standard deviation is 1.997.</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>Determine the range and mean deviation about the mean for the simple data set: 6, 7, 10, 12, 13, 4, 8, 12.</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p><strong>Range:</strong></p>
+<p>Maximum value = 13, Minimum value = 4.</p>
+<p>Range = 13 - 4 = 9.</p>
+<p><strong>Mean Deviation about mean:</strong></p>
+<p>Data points: 4, 6, 7, 8, 10, 12, 12, 13.</p>
+<p>Number of observations \( n = 8 \).</p>
+<p>Mean \( \bar{x} = \frac{4 + 6 + 7 + 8 + 10 + 12 + 12 + 13}{8} = \frac{72}{8} = 9 \).</p>
+<p>Deviations \( |x_i - \bar{x}| \):</p>
+<p>\( |4 - 9| = 5 \)</p>
+<p>\( |6 - 9| = 3 \)</p>
+<p>\( |7 - 9| = 2 \)</p>
+<p>\( |8 - 9| = 1 \)</p>
+<p>\( |10 - 9| = 1 \)</p>
+<p>\( |12 - 9| = 3 \)</p>
+<p>\( |12 - 9| = 3 \)</p>
+<p>\( |13 - 9| = 4 \)</p>
+<p>Sum of absolute deviations = 5 + 3 + 2 + 1 + 1 + 3 + 3 + 4 = 22.</p>
+<p>Mean Deviation = \( \frac{22}{8} = 2.75 \).</p>
+<p><strong>Conclusion:</strong> Range = 9, Mean Deviation about Mean = 2.75.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-14-probability"><a class="header" href="#chapter-14-probability">Chapter 14: Probability</a></h1>
+<h2 id="141-introduction"><a class="header" href="#141-introduction">14.1 Introduction</a></h2>
+<p>Probability is the measure of uncertainty of various phenomena. In mathematical terms, probability defines the likelihood of occurrence of an event.</p>
+<ul>
+<li><strong>Random Experiment:</strong> An experiment whose outcomes cannot be predicted with certainty.</li>
+<li><strong>Sample Space (S):</strong> The set of all possible outcomes of a random experiment.</li>
+<li><strong>Event (E):</strong> A subset of the sample space.</li>
+</ul>
+<h2 id="142-types-of-events"><a class="header" href="#142-types-of-events">14.2 Types of Events</a></h2>
+<ul>
+<li><strong>Impossible Event:</strong> The empty set \( \emptyset \). It indicates an event that cannot occur.</li>
+<li><strong>Sure Event:</strong> The entire sample space \( S \).</li>
+<li><strong>Simple Event:</strong> An event containing only one sample point.</li>
+<li><strong>Compound Event:</strong> An event containing more than one sample point.</li>
+</ul>
+<h3 id="algebra-of-events"><a class="header" href="#algebra-of-events">Algebra of Events</a></h3>
+<ul>
+<li><strong>Complementary Event (Not E):</strong> The event ‘\( \text{not } E \)’ occurs when \( E \) does not occur. Denoted by \( E’ \). \( E’ = S - E \).</li>
+<li><strong>Event ‘A or B’:</strong> Occurs if either \( A \) occurs, or \( B \) occurs, or both occur. Denoted by \( A \cup B \).</li>
+<li><strong>Event ‘A and B’:</strong> Occurs if both \( A \) and \( B \) occur simultaneously. Denoted by \( A \cap B \).</li>
+<li><strong>Mutually Exclusive Events:</strong> Two events \( A \) and \( B \) are mutually exclusive if they cannot occur simultaneously. \( A \cap B = \emptyset \).</li>
+<li><strong>Exhaustive Events:</strong> Events \( E_1, E_2, \dots, E_n \) are exhaustive if their union equals the sample space. \( E_1 \cup E_2 \cup \dots \cup E_n = S \).</li>
+</ul>
+<h2 id="143-axiomatic-approach-to-probability"><a class="header" href="#143-axiomatic-approach-to-probability">14.3 Axiomatic Approach to Probability</a></h2>
+<p>Let \( S \) be the sample space of a random experiment. A probability \( P \) is a real valued function whose domain is the power set of \( S \) and range is the interval \( [0, 1] \) satisfying the following axioms:</p>
+<ol>
+<li>For any event \( E \), \( P(E) \ge 0 \).</li>
+<li>\( P(S) = 1 \).</li>
+<li>If \( E \) and \( F \) are mutually exclusive events, then \( P(E \cup F) = P(E) + P(F) \).</li>
+</ol>
+<h3 id="important-theorems"><a class="header" href="#important-theorems">Important Theorems</a></h3>
+<ul>
+<li>\( P(E’) = 1 - P(E) \)</li>
+<li>\( P(A \cup B) = P(A) + P(B) - P(A \cap B) \)</li>
+<li>If \( A \) and \( B \) are mutually exclusive, \( P(A \cap B) = 0 \), so \( P(A \cup B) = P(A) + P(B) \).</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-13"><a class="header" href="#competency-based-questions-13">Competency-Based Questions</a></h2>
+<br>
+<p><strong>Question 1:</strong></p>
+<p>Two students Anil and Ashima appeared in an examination. The probability that Anil will qualify the examination is 0.05 and that Ashima will qualify the examination is 0.10. The probability that both will qualify the examination is 0.02. Find the probability that:</p>
+<p>(a) Both अनिल and Ashima will not qualify the examination.</p>
+<p>(b) At least one of them will not qualify the examination.</p>
+<br>
+<p><strong>Answer 1:</strong></p>
+<p>Let \( A \) be the event “Anil qualifies” and \( B \) be the event “Ashima qualifies”.</p>
+<p>Given:</p>
+<p>\( P(A) = 0.05 \)</p>
+<p>\( P(B) = 0.10 \)</p>
+<p>\( P(A \cap B) = 0.02 \)</p>
+<p><strong>(a) Both will not qualify:</strong></p>
+<p>This is the event \( A’ \cap B’ \). By De Morgan’s Laws, \( A’ \cap B’ = (A \cup B)’ \).</p>
+<p>First, find \( P(A \cup B) \):</p>
+<p>\[ P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0.05 + 0.10 - 0.02 = 0.13 \]</p>
+<p>Now, \( P(A’ \cap B’) = P((A \cup B)’) = 1 - P(A \cup B) = 1 - 0.13 = 0.87 \]</p>
+<p>.</p>
+<p><strong>(b) At least one of them will not qualify:</strong></p>
+<p>This is the event “not both qualify”, which is \( (A \cap B)’ \).</p>
+<p>\[ P((A \cap B)’) = 1 - P(A \cap B) = 1 - 0.02 = 0.98 \]</p>
+<p>.</p>
+<p><strong>Conclusion:</strong> The probability that neither qualifies is 0.87, and the probability that at least one does not qualify is 0.98.</p>
+<br>
+<p><strong>Question 2:</strong></p>
+<p>A bag contains 9 discs of which 4 are red, 3 are blue and 2 are yellow. The discs are similar in shape and size. A disc is drawn at random from the bag. Calculate the probability that it will be:</p>
+<p>(i) red</p>
+<p>(ii) yellow</p>
+<p>(iii) blue</p>
+<p>(iv) not blue</p>
+<p>(v) either red or blue</p>
+<br>
+<p><strong>Answer 2:</strong></p>
+<p>Total number of discs = \( 4 + 3 + 2 = 9 \).</p>
+<p>(i) <strong>Probability of red:</strong></p>
+<p>\( P(R) = \frac{\text{Number of Red Discs}}{\text{Total Discs}} = \frac{4}{9} \)</p>
+<p>(ii) <strong>Probability of yellow:</strong></p>
+<p>\( P(Y) = \frac{2}{9} \)</p>
+<p>(iii) <strong>Probability of blue:</strong></p>
+<p>\( P(B) = \frac{3}{9} = \frac{1}{3} \)</p>
+<p>(iv) <strong>Probability of not blue:</strong></p>
+<p>\( P(B’) = 1 - P(B) = 1 - \frac{1}{3} = \frac{2}{3} \)</p>
+<p>(v) <strong>Probability of either red or blue:</strong></p>
+<p>Since a single disc cannot be both red and blue, events R and B are mutually exclusive.</p>
+<p>\( P(R \cup B) = P(R) + P(B) = \frac{4}{9} + \frac{3}{9} = \frac{7}{9} \)</p>
+<p><strong>Conclusion:</strong> The answers are (i) 4/9, (ii) 2/9, (iii) 1/3, (iv) 2/3, and (v) 7/9.</p>
+
+                    </main>
+                    <footer style="text-align: center; margin-top: 2em; padding: 1em 0; border-top: 1px solid var(--theme-popup-border); font-size: 0.9em; opacity: 0.8;">
+                        &copy; 2026 Abhishek Kumar | <a href="mailto:support@abhishek-kumar.co.in">support@abhishek-kumar.co.in</a>
+                    </footer>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-b4ce0524.js"></script>
+        <script src="book-553ae1f8.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
