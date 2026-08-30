@@ -1,0 +1,1293 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Mathematics for Grade 12 for CBSE</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-f1792945.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-1acf899d.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Mathematics for Grade 12 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="chapter-1-relations-and-functions"><a class="header" href="#chapter-1-relations-and-functions">Chapter 1: Relations and Functions</a></h1>
+<p>Welcome to the first chapter of Grade 12 Mathematics. This chapter explores relations between elements of sets and the functions that assign elements from one set to another.</p>
+<h2 id="types-of-relations"><a class="header" href="#types-of-relations">Types of Relations</a></h2>
+<p>Given a set $A$, a relation $R$ on $A$ is a subset of $A \times A$. A relation $R$ in a set $A$ is called:</p>
+<ol>
+<li><strong>Reflexive</strong>: if $(a, a) \in R$, for every $a \in A$.</li>
+<li><strong>Symmetric</strong>: if $(a, b) \in R$ implies that $(b, a) \in R$, for all $a, b \in A$.</li>
+<li><strong>Transitive</strong>: if $(a, b) \in R$ and $(b, c) \in R$ implies that $(a, c) \in R$, for all $a, b, c \in A$.</li>
+</ol>
+<p>A relation $R$ in a set $A$ is said to be an <strong>equivalence relation</strong> if $R$ is reflexive, symmetric and transitive.</p>
+<div align="center">
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewbox="0 0 10 10" refx="5" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+    </marker>
+  </defs>
+  <circle cx="100" cy="100" r="20" fill="#e0f7fa" stroke="#006064" stroke-width="2" />
+  <text x="100" y="105" font-family="Arial" font-size="14" text-anchor="middle">A</text>
+  <circle cx="200" cy="100" r="20" fill="#e0f7fa" stroke="#006064" stroke-width="2" />
+  <text x="200" y="105" font-family="Arial" font-size="14" text-anchor="middle">B</text>
+  <circle cx="300" cy="100" r="20" fill="#e0f7fa" stroke="#006064" stroke-width="2" />
+  <text x="300" y="105" font-family="Arial" font-size="14" text-anchor="middle">C</text>
+  <!-- Reflexive -->
+  <path d="M 80 90 A 20 20 0 1 1 80 110" fill="none" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="50" y="70" font-family="Arial" font-size="12" fill="#d32f2f">Reflexive</text>
+  <!-- Symmetric -->
+  <path d="M 120 90 Q 150 70 180 90" fill="none" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 180 110 Q 150 130 120 110" fill="none" stroke="#1976d2" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="150" y="60" font-family="Arial" font-size="12" fill="#1976d2" text-anchor="middle">Symmetric</text>
+  <!-- Transitive -->
+  <path d="M 220 95 L 280 95" fill="none" stroke="#388e3c" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 115 85 Q 200 20 285 85" fill="none" stroke="#388e3c" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,5" />
+  <text x="200" y="30" font-family="Arial" font-size="12" fill="#388e3c" text-anchor="middle">Transitive</text>
+</svg>
+<p><em>Fig 1. Visual representation of relation properties</em></p>
+
+</div>
+
+<h2 id="types-of-functions"><a class="header" href="#types-of-functions">Types of Functions</a></h2>
+<p>A function $f: X \rightarrow Y$ is defined as:</p>
+<ul>
+<li><strong>One-One (Injective)</strong>: If the images of distinct elements of $X$ under $f$ are distinct, i.e., for every $x_1, x_2 \in X$, $f(x_1) = f(x_2)$ implies $x_1 = x_2$.</li>
+<li><strong>Onto (Surjective)</strong>: If every element of $Y$ is the image of some element of $X$ under $f$, i.e., for every $y \in Y$, there exists an element $x$ in $X$ such that $f(x) = y$.</li>
+<li><strong>Bijective</strong>: If $f$ is both one-one and onto.</li>
+</ul>
+<div align="center">
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow2" viewbox="0 0 10 10" refx="5" refy="5" markerwidth="4" markerheight="4" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#888" />
+    </marker>
+  </defs>
+  <!-- Domain -->
+  <ellipse cx="100" cy="100" rx="40" ry="80" fill="none" stroke="#666" stroke-width="2" />
+  <text x="100" y="15" font-family="Arial" font-size="16" text-anchor="middle">Domain (X)</text>
+  <circle cx="100" cy="50" r="5" fill="#333" />
+  <text x="80" y="55" font-family="Arial" font-size="14">1</text>
+  <circle cx="100" cy="100" r="5" fill="#333" />
+  <text x="80" y="105" font-family="Arial" font-size="14">2</text>
+  <circle cx="100" cy="150" r="5" fill="#333" />
+  <text x="80" y="155" font-family="Arial" font-size="14">3</text>
+  <!-- Codomain -->
+  <ellipse cx="300" cy="100" rx="40" ry="80" fill="none" stroke="#666" stroke-width="2" />
+  <text x="300" y="15" font-family="Arial" font-size="16" text-anchor="middle">Codomain (Y)</text>
+  <circle cx="300" cy="40" r="5" fill="#333" />
+  <text x="315" y="45" font-family="Arial" font-size="14">a</text>
+  <circle cx="300" cy="80" r="5" fill="#333" />
+  <text x="315" y="85" font-family="Arial" font-size="14">b</text>
+  <circle cx="300" cy="120" r="5" fill="#333" />
+  <text x="315" y="125" font-family="Arial" font-size="14">c</text>
+  <circle cx="300" cy="160" r="5" fill="#333" />
+  <text x="315" y="165" font-family="Arial" font-size="14">d</text>
+  <!-- Mappings -->
+  <line x1="105" y1="50" x2="295" y2="80" stroke="#888" stroke-width="2" marker-end="url(#arrow2)" />
+  <line x1="105" y1="100" x2="295" y2="40" stroke="#888" stroke-width="2" marker-end="url(#arrow2)" />
+  <line x1="105" y1="150" x2="295" y2="120" stroke="#888" stroke-width="2" marker-end="url(#arrow2)" />
+</svg>
+<p><em>Fig 2. One-One but not Onto Function</em></p>
+
+</div>
+
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2021]</strong> Show that the relation $R$ in the set $A = \{1, 2, 3, 4, 5\}$ given by $R = \{(a, b) : |a - b| \text{ is even}\}$ is an equivalence relation.</p>
+<p><em>Solution:</em></p>
+<ul>
+<li>
+<p><strong>Reflexive:</strong> For any element $a \in A$, $|a - a| = 0$, which is even. So, $(a, a) \in R$ for all $a \in A$. Therefore, $R$ is reflexive.</p>
+</li>
+<li>
+<p><strong>Symmetric:</strong> Let $(a, b) \in R$. This means $|a - b|$ is even. Since $|a - b| = |b - a|$, $|b - a|$ is also even. So, $(b, a) \in R$. Therefore, $R$ is symmetric.</p>
+</li>
+<li>
+<p><strong>Transitive:</strong> Let $(a, b) \in R$ and $(b, c) \in R$. This means $|a - b|$ is even and $|b - c|$ is even. Let $a - b = 2k_1$ and $b - c = 2k_2$ for some integers $k_1, k_2$. Then $a - c = (a - b) + (b - c) = 2(k_1 + k_2)$, which is even. So, $|a - c|$ is even. Thus, $(a, c) \in R$. Therefore, $R$ is transitive.</p>
+</li>
+</ul>
+<p>Since $R$ is reflexive, symmetric, and transitive, it is an equivalence relation.</p>
+<p><strong>2. [Sample Paper 2023]</strong> Check whether the function $f : \mathbb{R} \rightarrow \mathbb{R}$ defined by $f(x) = 1 + x^2$ is one-one, onto or bijective. Justify your answer.</p>
+<p><em>Solution:</em></p>
+<ul>
+<li>
+<p><strong>One-One Check:</strong> Let $x_1, x_2 \in \mathbb{R}$ such that $f(x_1) = f(x_2)$. Then $1 + x_1^2 = 1 + x_2^2 \implies x_1^2 = x_2^2 \implies x_1 = \pm x_2$. Since $x_1 \neq x_2$ is possible (e.g., $f(1) = 2$ and $f(-1) = 2$), $f$ is not one-one.</p>
+</li>
+<li>
+<p><strong>Onto Check:</strong> Let $y \in \mathbb{R}$ be in the codomain. We want to find $x \in \mathbb{R}$ such that $f(x) = y$. $1 + x^2 = y \implies x^2 = y - 1$. For $x$ to be a real number, we must have $y - 1 \ge 0 \implies y \ge 1$. If we take $y = 0 \in \mathbb{R}$ (codomain), there is no real $x$ such that $f(x) = 0$. Thus, $f$ is not onto.</p>
+</li>
+<li>
+<p>Since it is neither one-one nor onto, it is not bijective.</p>
+</li>
+</ul>
+<p><strong>3. [CBSE 2019]</strong> Let $f : \mathbb{N} \rightarrow \mathbb{Y}$ be a function defined as $f(x) = 4x + 3$, where $Y = \{y \in \mathbb{N} : y = 4x + 3 \text{ for some } x \in \mathbb{N}\}$. Show that $f$ is invertible. Find the inverse.</p>
+<p><em>Solution:</em></p>
+<p>To show $f$ is invertible, we can show it is a bijection. However, given the definition of $Y$, $f$ is clearly onto $Y$. Let’s check one-one: $f(x_1) = f(x_2) \implies 4x_1 + 3 = 4x_2 + 3 \implies 4x_1 = 4x_2 \implies x_1 = x_2$. So $f$ is one-one. Since $f$ is a bijection, it is invertible.</p>
+<p>To find the inverse, let $y = 4x + 3$. Then $4x = y - 3 \implies x = \frac{y - 3}{4}$. So, $f^{-1}(y) = \frac{y - 3}{4}$.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-2-inverse-trigonometric-functions"><a class="header" href="#chapter-2-inverse-trigonometric-functions">Chapter 2: Inverse Trigonometric Functions</a></h1>
+<p>This chapter extends the concept of inverse functions to trigonometric functions by defining the principal value branches.</p>
+<h2 id="domain-and-range-of-inverse-trigonometric-functions"><a class="header" href="#domain-and-range-of-inverse-trigonometric-functions">Domain and Range of Inverse Trigonometric Functions</a></h2>
+<p>Trigonometric functions are not one-one and onto over their natural domains and ranges. Therefore, their inverses do not exist. But if we appropriately restrict their domains, they become bijections and thus invertible. The restricted domains and ranges are called <strong>principal value branches</strong>.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th style="text-align: center">Function</th><th style="text-align: center">Domain</th><th style="text-align: center">Range (Principal Value Branch)</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: center">$y = \sin^{-1} x$</td><td style="text-align: center">$[-1, 1]$</td><td style="text-align: center">$[-\pi/2, \pi/2]$</td></tr>
+<tr><td style="text-align: center">$y = \cos^{-1} x$</td><td style="text-align: center">$[-1, 1]$</td><td style="text-align: center">$[0, \pi]$</td></tr>
+<tr><td style="text-align: center">$y = \tan^{-1} x$</td><td style="text-align: center">$\mathbb{R}$</td><td style="text-align: center">$(-\pi/2, \pi/2)$</td></tr>
+<tr><td style="text-align: center">$y = \cot^{-1} x$</td><td style="text-align: center">$\mathbb{R}$</td><td style="text-align: center">$(0, \pi)$</td></tr>
+<tr><td style="text-align: center">$y = \sec^{-1} x$</td><td style="text-align: center">$\mathbb{R} - (-1, 1)$</td><td style="text-align: center">$[0, \pi] - \{\pi/2\}$</td></tr>
+<tr><td style="text-align: center">$y = \text{cosec}^{-1} x$</td><td style="text-align: center">$\mathbb{R} - (-1, 1)$</td><td style="text-align: center">$[-\pi/2, \pi/2] - \{0\}$</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="graphs-of-inverse-trigonometric-functions"><a class="header" href="#graphs-of-inverse-trigonometric-functions">Graphs of Inverse Trigonometric Functions</a></h2>
+<p>The graph of an inverse trigonometric function can be obtained from the graph of the original restricted trigonometric function by interchanging $x$ and $y$ axes, which geometrically translates to reflecting the graph across the line $y = x$.</p>
+<div align="center">
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Axes -->
+  <line x1="50" y1="150" x2="350" y2="150" stroke="black" stroke-width="1.5" />
+  <line x1="200" y1="20" x2="200" y2="280" stroke="black" stroke-width="1.5" />
+  <!-- Labels -->
+  <text x="360" y="155" font-family="Arial" font-size="12">x</text>
+  <text x="195" y="15" font-family="Arial" font-size="12">y</text>
+  <!-- x ticks -->
+  <line x1="100" y1="145" x2="100" y2="155" stroke="black" />
+  <text x="95" y="170" font-family="Arial" font-size="12">-1</text>
+  <line x1="300" y1="145" x2="300" y2="155" stroke="black" />
+  <text x="295" y="170" font-family="Arial" font-size="12">1</text>
+  <!-- y ticks -->
+  <line x1="195" y1="50" x2="205" y2="50" stroke="black" />
+  <text x="210" y="55" font-family="Arial" font-size="12">π/2</text>
+  <line x1="195" y1="250" x2="205" y2="250" stroke="black" />
+  <text x="210" y="255" font-family="Arial" font-size="12">-π/2</text>
+  <!-- Plot of sin^-1(x) -->
+  <path d="M 100 250 C 140 250, 160 150, 200 150 C 240 150, 260 50, 300 50" fill="none" stroke="#e91e63" stroke-width="2.5" />
+  <text x="130" y="70" font-family="Arial" font-size="14" fill="#e91e63">y = sin⁻¹(x)</text>
+</svg>
+<p><em>Fig 1. Graph of Principal Value Branch of $\sin^{-1}(x)$</em></p>
+
+</div>
+
+<h2 id="competency-based-questions-1"><a class="header" href="#competency-based-questions-1">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2020]</strong> Write the principal value of $\cos^{-1}\left(\cos\left(\frac{7\pi}{6}\right)\right)$.</p>
+<p><em>Solution:</em></p>
+<p>We know that the principal value branch of $\cos^{-1} x$ is $[0, \pi]$.</p>
+<p>$\frac{7\pi}{6}$ does not belong to $[0, \pi]$.</p>
+<p>Therefore, $\cos^{-1}\left(\cos\left(\frac{7\pi}{6}\right)\right) = \cos^{-1}\left(\cos\left(2\pi - \frac{5\pi}{6}\right)\right)$</p>
+<p>$= \cos^{-1}\left(\cos\left(\frac{5\pi}{6}\right)\right)$</p>
+<p>Since $\frac{5\pi}{6} \in [0, \pi]$, we have $\cos^{-1}\left(\cos\left(\frac{5\pi}{6}\right)\right) = \frac{5\pi}{6}$.</p>
+<p><strong>2. [Sample Paper 2022]</strong> Evaluate: $\tan^{-1}(1) + \cos^{-1}(-1/2) + \sin^{-1}(-1/2)$.</p>
+<p><em>Solution:</em></p>
+<p>Let $\tan^{-1}(1) = x \implies \tan x = 1 \implies x = \frac{\pi}{4} \in (-\pi/2, \pi/2)$</p>
+<p>Let $\cos^{-1}(-1/2) = y \implies \cos y = -1/2 = -\cos(\pi/3) = \cos(\pi - \pi/3) = \cos(2\pi/3) \implies y = \frac{2\pi}{3} \in [0, \pi]$</p>
+<p>Let $\sin^{-1}(-1/2) = z \implies \sin z = -1/2 = -\sin(\pi/6) = \sin(-\pi/6) \implies z = -\frac{\pi}{6} \in [-\pi/2, \pi/2]$</p>
+<p>Therefore, the sum is $\frac{\pi}{4} + \frac{2\pi}{3} - \frac{\pi}{6}$</p>
+<p>$= \frac{3\pi + 8\pi - 2\pi}{12} = \frac{9\pi}{12} = \frac{3\pi}{4}$.</p>
+<p><strong>3. [CBSE 2018]</strong> Find the domain of the function $f(x) = \sin^{-1}(x^2 - 4)$.</p>
+<p><em>Solution:</em></p>
+<p>The domain of $\sin^{-1} x$ is $[-1, 1]$.</p>
+<p>Therefore, for $f(x)$ to be defined, $-1 \le x^2 - 4 \le 1$.</p>
+<p>Adding $4$ to the inequality:</p>
+<p>$3 \le x^2 \le 5$.</p>
+<p>This implies $x \in [-\sqrt{5}, -\sqrt{3}] \cup [\sqrt{3}, \sqrt{5}]$.</p>
+<p>So, the domain of $f(x)$ is $[-\sqrt{5}, -\sqrt{3}] \cup [\sqrt{3}, \sqrt{5}]$.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-3-matrices"><a class="header" href="#chapter-3-matrices">Chapter 3: Matrices</a></h1>
+<p>A matrix is an ordered rectangular array of numbers or functions. The numbers or functions are called the elements or the entries of the matrix.</p>
+<h2 id="order-of-a-matrix"><a class="header" href="#order-of-a-matrix">Order of a Matrix</a></h2>
+<p>A matrix having $m$ rows and $n$ columns is called a matrix of order $m \times n$ or simply $m \times n$ matrix (read as an $m$ by $n$ matrix). In general, an $m \times n$ matrix has the following rectangular array:</p>
+<p>$$ A = \begin{bmatrix}
+a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\
+a_{21} &amp; a_{22} &amp; \dots &amp; a_{2n} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn}
+\end{bmatrix} $$</p>
+<h2 id="types-of-matrices"><a class="header" href="#types-of-matrices">Types of Matrices</a></h2>
+<ul>
+<li><strong>Column Matrix</strong>: A matrix is said to be a column matrix if it has only one column. Order $m \times 1$.</li>
+<li><strong>Row Matrix</strong>: A matrix is said to be a row matrix if it has only one row. Order $1 \times n$.</li>
+<li><strong>Square Matrix</strong>: A matrix in which the number of rows is equal to the number of columns is said to be a square matrix. Thus an $m \times n$ matrix is said to be a square matrix if $m = n$.</li>
+<li><strong>Diagonal Matrix</strong>: A square matrix $B = [b_{ij}]<em>{m \times m}$ is said to be a diagonal matrix if all its non-diagonal elements are zero, that is $b</em>{ij} = 0$, when $i \neq j$.</li>
+<li><strong>Scalar Matrix</strong>: A diagonal matrix is said to be a scalar matrix if its diagonal elements are equal, that is, $B = [b_{ij}]<em>{n \times n}$ is a scalar matrix if $b</em>{ij} = 0$, when $i \neq j$ and $b_{ij} = k$, when $i = j$, for some constant $k$.</li>
+<li><strong>Identity Matrix</strong>: A square matrix in which elements in the diagonal are all $1$ and rest are all zero is called an identity matrix. Denoted by $I$.</li>
+</ul>
+<div align="center">
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Square Matrix -->
+  <text x="70" y="30" font-family="Arial" font-size="14" font-weight="bold">Square (3x3)</text>
+  <rect x="50" y="50" width="100" height="80" fill="none" stroke="black" rx="10" stroke-width="2" />
+  <text x="60" y="70" font-family="Arial" font-size="12">2  4  1</text>
+  <text x="60" y="90" font-family="Arial" font-size="12">3  7  5</text>
+  <text x="60" y="110" font-family="Arial" font-size="12">0  9  8</text>
+  <!-- Identity Matrix -->
+  <text x="240" y="30" font-family="Arial" font-size="14" font-weight="bold">Identity Matrix (I)</text>
+  <rect x="230" y="50" width="100" height="80" fill="none" stroke="blue" rx="10" stroke-width="2" />
+  <text x="245" y="70" font-family="Arial" font-size="12" fill="blue">1  0  0</text>
+  <text x="245" y="90" font-family="Arial" font-size="12" fill="blue">0  1  0</text>
+  <text x="245" y="110" font-family="Arial" font-size="12" fill="blue">0  0  1</text>
+</svg>
+<p><em>Fig 1. Examples of Square and Identity Matrices</em></p>
+
+</div>
+
+<h2 id="operations-on-matrices"><a class="header" href="#operations-on-matrices">Operations on Matrices</a></h2>
+<ul>
+<li><strong>Addition</strong>: Two matrices can be added if they are of the same order. Addition is element-wise.</li>
+<li><strong>Scalar Multiplication</strong>: If $A = [a_{ij}]_{m \times n}$ is a matrix and $k$ is a scalar, then $kA$ is another matrix which is obtained by multiplying each element of $A$ by $k$.</li>
+<li><strong>Multiplication</strong>: The product of two matrices $A$ and $B$ is defined if the number of columns of $A$ is equal to the number of rows of $B$. If $A = [a_{ij}]$ is an $m \times n$ matrix and $B = [b_{jk}]$ is an $n \times p$ matrix, then the product $AB$ is an $m \times p$ matrix $C = [c_{ik}]$. Matrix multiplication is not commutative in general, i.e., $AB \neq BA$.</li>
+</ul>
+<h2 id="competency-based-questions-2"><a class="header" href="#competency-based-questions-2">Competency-Based Questions</a></h2>
+<p><strong>1. [Sample Paper 2024]</strong> Find $X$ and $Y$ if:
+$$ 2X + 3Y = \begin{bmatrix} 2 &amp; 3 \\ 4 &amp; 0 \end{bmatrix} $$
+$$ 3X + 2Y = \begin{bmatrix} 2 &amp; -2 \\ -1 &amp; 5 \end{bmatrix} $$</p>
+<p><em>Solution:</em></p>
+<p>Let Eq 1 be: $2X + 3Y = A$</p>
+<p>Let Eq 2 be: $3X + 2Y = B$</p>
+<p>Multiply Eq 1 by 3: $6X + 9Y = 3A = \begin{bmatrix} 6 &amp; 9 \\ 12 &amp; 0 \end{bmatrix}$</p>
+<p>Multiply Eq 2 by 2: $6X + 4Y = 2B = \begin{bmatrix} 4 &amp; -4 \\ -2 &amp; 10 \end{bmatrix}$</p>
+<p>Subtracting the two equations: $5Y = 3A - 2B = \begin{bmatrix} 6-4 &amp; 9 - (-4) \\ 12 - (-2) &amp; 0 - 10 \end{bmatrix} = \begin{bmatrix} 2 &amp; 13 \\ 14 &amp; -10 \end{bmatrix}$</p>
+<p>Therefore, $Y = \frac{1}{5} \begin{bmatrix} 2 &amp; 13 \\ 14 &amp; -10 \end{bmatrix} = \begin{bmatrix} 2/5 &amp; 13/5 \\ 14/5 &amp; -2 \end{bmatrix}$.</p>
+<p>Substituting $Y$ in Eq 1:</p>
+<p>$2X = A - 3Y = \begin{bmatrix} 2 &amp; 3 \\ 4 &amp; 0 \end{bmatrix} - \begin{bmatrix} 6/5 &amp; 39/5 \\ 42/5 &amp; -6 \end{bmatrix} = \begin{bmatrix} 4/5 &amp; -24/5 \\ -22/5 &amp; 6 \end{bmatrix}$</p>
+<p>Therefore, $X = \begin{bmatrix} 2/5 &amp; -12/5 \\ -11/5 &amp; 3 \end{bmatrix}$.</p>
+<p><strong>2. [CBSE 2022]</strong> Express the matrix $A = \begin{bmatrix} 1 &amp; 5 \\ -1 &amp; 2 \end{bmatrix}$ as the sum of a symmetric and a skew-symmetric matrix.</p>
+<p><em>Solution:</em></p>
+<p>We know that any square matrix $A$ can be expressed as the sum of a symmetric and a skew-symmetric matrix:</p>
+<p>$A = \frac{1}{2}(A + A’) + \frac{1}{2}(A - A’)$</p>
+<p>where $A’$ is the transpose of $A$.</p>
+<p>$A’ = \begin{bmatrix} 1 &amp; -1 \\ 5 &amp; 2 \end{bmatrix}$</p>
+<p>Then, $A + A’ = \begin{bmatrix} 1 &amp; 5 \\ -1 &amp; 2 \end{bmatrix} + \begin{bmatrix} 1 &amp; -1 \\ 5 &amp; 2 \end{bmatrix} = \begin{bmatrix} 2 &amp; 4 \\ 4 &amp; 4 \end{bmatrix}$. Let $P = \frac{1}{2}(A + A’) = \begin{bmatrix} 1 &amp; 2 \\ 2 &amp; 2 \end{bmatrix}$. $P$ is symmetric since $P’ = P$.</p>
+<p>Also, $A - A’ = \begin{bmatrix} 1 &amp; 5 \\ -1 &amp; 2 \end{bmatrix} - \begin{bmatrix} 1 &amp; -1 \\ 5 &amp; 2 \end{bmatrix} = \begin{bmatrix} 0 &amp; 6 \\ -6 &amp; 0 \end{bmatrix}$. Let $Q = \frac{1}{2}(A - A’) = \begin{bmatrix} 0 &amp; 3 \\ -3 &amp; 0 \end{bmatrix}$. $Q$ is skew-symmetric since $Q’ = -Q$.</p>
+<p>Therefore, $A = P + Q = \begin{bmatrix} 1 &amp; 2 \\ 2 &amp; 2 \end{bmatrix} + \begin{bmatrix} 0 &amp; 3 \\ -3 &amp; 0 \end{bmatrix}$.</p>
+<p><strong>3. [CBSE 2019]</strong> If $A = \begin{bmatrix} \cos \alpha &amp; -\sin \alpha \\ \sin \alpha &amp; \cos \alpha \end{bmatrix}$, then show that $A^T A = I$.</p>
+<p><em>Solution:</em></p>
+<p>$A^T = \begin{bmatrix} \cos \alpha &amp; \sin \alpha \\ -\sin \alpha &amp; \cos \alpha \end{bmatrix}$</p>
+<p>$A^T A = \begin{bmatrix} \cos \alpha &amp; \sin \alpha \\ -\sin \alpha &amp; \cos \alpha \end{bmatrix} \begin{bmatrix} \cos \alpha &amp; -\sin \alpha \\ \sin \alpha &amp; \cos \alpha \end{bmatrix}$</p>
+<p>$= \begin{bmatrix} (\cos\alpha)(\cos\alpha) + (\sin\alpha)(\sin\alpha) &amp; (\cos\alpha)(-\sin\alpha) + (\sin\alpha)(\cos\alpha) \\ (-\sin\alpha)(\cos\alpha) + (\cos\alpha)(\sin\alpha) &amp; (-\sin\alpha)(-\sin\alpha) + (\cos\alpha)(\cos\alpha) \end{bmatrix}$</p>
+<p>$= \begin{bmatrix} \cos^2\alpha + \sin^2\alpha &amp; -\sin\alpha\cos\alpha + \sin\alpha\cos\alpha \\ -\sin\alpha\cos\alpha + \sin\alpha\cos\alpha &amp; \sin^2\alpha + \cos^2\alpha \end{bmatrix}$</p>
+<p>$= \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix} = I$.</p>
+<p>Hence Proved.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-4-determinants"><a class="header" href="#chapter-4-determinants">Chapter 4: Determinants</a></h1>
+<p>To every square matrix $A = [a_{ij}]$ of order $n$, we can associate a number (real or complex) called determinant of the square matrix $A$, denoted by det $A$ or $|A|$ or $\Delta$.</p>
+<h2 id="properties-of-determinants"><a class="header" href="#properties-of-determinants">Properties of Determinants</a></h2>
+<ol>
+<li>The value of the determinant remains unchanged if its rows and columns are interchanged. $|A| = |A^T|$.</li>
+<li>If any two rows (or columns) of a determinant are interchanged, then sign of determinant changes.</li>
+<li>If any two rows (or columns) of a determinant are identical (all corresponding elements are same), then value of determinant is zero.</li>
+<li>If each element of a row (or a column) of a determinant is multiplied by a constant $k$, then its value gets multiplied by $k$.</li>
+<li>If some or all elements of a row or column of a determinant are expressed as sum of two (or more) terms, then the determinant can be expressed as sum of two (or more) determinants.</li>
+</ol>
+<h2 id="adjoint-and-inverse-of-a-matrix"><a class="header" href="#adjoint-and-inverse-of-a-matrix">Adjoint and Inverse of a Matrix</a></h2>
+<ul>
+<li><strong>Adjoint</strong>: The adjoint of a square matrix $A = [a_{ij}]<em>{n \times n}$ is defined as the transpose of the matrix $[A</em>{ij}]<em>{n \times n}$, where $A</em>{ij}$ is the cofactor of the element $a_{ij}$. Adjoint of the matrix $A$ is denoted by $\text{adj} A$.</li>
+<li><strong>Inverse</strong>: A square matrix of order $n$ is invertible if and only if $A$ is nonsingular matrix (i.e., $|A| \neq 0$). The inverse is given by:
+$$A^{-1} = \frac{1}{|A|}\text{adj}(A)$$</li>
+</ul>
+<div align="center">
+<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow3" viewbox="0 0 10 10" refx="5" refy="5" markerwidth="4" markerheight="4" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+    </marker>
+  </defs>
+  <text x="100" y="30" font-family="Arial" font-size="16" font-weight="bold">Matrix A</text>
+  <path d="M 50 50 L 50 150 M 150 50 L 150 150 M 50 50 L 60 50 M 50 150 L 60 150 M 150 50 L 140 50 M 150 150 L 140 150" fill="none" stroke="black" stroke-width="2" />
+  <text x="75" y="80" font-family="Arial" font-size="14">3</text>
+  <text x="115" y="80" font-family="Arial" font-size="14">2</text>
+  <text x="75" y="120" font-family="Arial" font-size="14">1</text>
+  <text x="115" y="120" font-family="Arial" font-size="14">4</text>
+  <path d="M 180 100 L 250 100" stroke="black" stroke-width="2" marker-end="url(#arrow3)" />
+  <text x="180" y="90" font-family="Arial" font-size="12">Find det(A)</text>
+  <text x="180" y="120" font-family="Arial" font-size="12">(3*4)-(2*1)=10</text>
+  <path d="M 280 100 L 350 100" stroke="black" stroke-width="2" marker-end="url(#arrow3)" />
+  <text x="280" y="90" font-family="Arial" font-size="12">Find adj(A)</text>
+  <text x="280" y="120" font-family="Arial" font-size="12">Swap diag,</text>
+  <text x="280" y="135" font-family="Arial" font-size="12">Negate off-diag</text>
+  <text x="450" y="30" font-family="Arial" font-size="16" font-weight="bold">Inverse A⁻¹</text>
+  <path d="M 400 50 L 400 150 M 500 50 L 500 150 M 400 50 L 410 50 M 400 150 L 410 150 M 500 50 L 490 50 M 500 150 L 490 150" fill="none" stroke="black" stroke-width="2" />
+  <text x="370" y="105" font-family="Arial" font-size="14" fill="#d32f2f">1/10</text>
+  <text x="425" y="80" font-family="Arial" font-size="14">4</text>
+  <text x="465" y="80" font-family="Arial" font-size="14">-2</text>
+  <text x="420" y="120" font-family="Arial" font-size="14">-1</text>
+  <text x="465" y="120" font-family="Arial" font-size="14">3</text>
+</svg>
+<p><em>Fig 2. Process of finding the inverse of a 2x2 matrix</em></p>
+
+</div>
+
+<h2 id="applications-of-determinants-and-matrices"><a class="header" href="#applications-of-determinants-and-matrices">Applications of Determinants and Matrices</a></h2>
+<p>Solution of system of linear equations using matrix method:
+If $AX = B$, then $X = A^{-1}B$.</p>
+<ul>
+<li>If $|A| \neq 0$, the system is consistent and has a unique solution.</li>
+<li>If $|A| = 0$ and $(\text{adj} A) B \neq 0$, the system is inconsistent (no solution).</li>
+<li>If $|A| = 0$ and $(\text{adj} A) B = 0$, the system may be either consistent (infinitely many solutions) or inconsistent.</li>
+</ul>
+<h2 id="competency-based-questions-3"><a class="header" href="#competency-based-questions-3">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2023]</strong> Find the area of the triangle whose vertices are $(-2, -3), (3, 2)$ and $(-1, -8)$ by using determinants.</p>
+<p><em>Solution:</em></p>
+<p>The area of a triangle with vertices $(x_1, y_1), (x_2, y_2)$ and $(x_3, y_3)$ is given by the absolute value of:</p>
+<p>$$ \Delta = \frac{1}{2} \begin{vmatrix} x_1 &amp; y_1 &amp; 1 \\ x_2 &amp; y_2 &amp; 1 \\ x_3 &amp; y_3 &amp; 1 \end{vmatrix} $$</p>
+<p>Substituting the coordinates:</p>
+<p>$$ \Delta = \frac{1}{2} \begin{vmatrix} -2 &amp; -3 &amp; 1 \\ 3 &amp; 2 &amp; 1 \\ -1 &amp; -8 &amp; 1 \end{vmatrix} $$</p>
+<p>Evaluating the determinant:</p>
+<p>$$ \Delta = \frac{1}{2} [-2(2 - (-8)) - (-3)(3 - (-1)) + 1(-24 - (-2))] $$</p>
+<p>$$ \Delta = \frac{1}{2} [-2(10) + 3(4) + 1(-22)] $$</p>
+<p>$$ \Delta = \frac{1}{2} [-20 + 12 - 22] = \frac{1}{2} [-30] = -15 $$</p>
+<p>Area cannot be negative, so taking the absolute value, Area $= 15$ sq. units.</p>
+<p><strong>2. [Sample Paper 2022]</strong> Solve the system of equations using matrix method:
+$3x - 2y + 3z = 8$
+$2x + y - z = 1$
+$4x - 3y + 2z = 4$</p>
+<p><em>Solution:</em></p>
+<p>The system can be written as $AX = B$:</p>
+<p>$A = \begin{bmatrix} 3 &amp; -2 &amp; 3 \\ 2 &amp; 1 &amp; -1 \\ 4 &amp; -3 &amp; 2 \end{bmatrix}, X = \begin{bmatrix} x \\ y \\ z \end{bmatrix}, B = \begin{bmatrix} 8 \\ 1 \\ 4 \end{bmatrix}$</p>
+<p>First, find $|A|$:</p>
+<p>$|A| = 3(2 - 3) - (-2)(4 - (-4)) + 3(-6 - 4) = 3(-1) + 2(8) + 3(-10) = -3 + 16 - 30 = -17 \neq 0$.</p>
+<p>So, $A^{-1}$ exists.</p>
+<p>Find Cofactors $A_{ij}$:</p>
+<p>$A_{11} = -1, A_{12} = -8, A_{13} = -10$</p>
+<p>$A_{21} = -5, A_{22} = -6, A_{23} = 1$</p>
+<p>$A_{31} = -1, A_{32} = 9, A_{33} = 7$</p>
+<p>$\text{adj}(A) = \begin{bmatrix} -1 &amp; -5 &amp; -1 \\ -8 &amp; -6 &amp; 9 \\ -10 &amp; 1 &amp; 7 \end{bmatrix}$</p>
+<p>$X = A^{-1}B = \frac{1}{-17} \begin{bmatrix} -1 &amp; -5 &amp; -1 \\ -8 &amp; -6 &amp; 9 \\ -10 &amp; 1 &amp; 7 \end{bmatrix} \begin{bmatrix} 8 \\ 1 \\ 4 \end{bmatrix}$</p>
+<p>$X = \frac{1}{-17} \begin{bmatrix} -8 - 5 - 4 \\ -64 - 6 + 36 \\ -80 + 1 + 28 \end{bmatrix} = \frac{1}{-17} \begin{bmatrix} -17 \\ -34 \\ -51 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}$</p>
+<p>So, $x = 1, y = 2, z = 3$.</p>
+<p><strong>3. [CBSE 2020]</strong> If $A = \begin{bmatrix} 2 &amp; 3 \\ 1 &amp; -4 \end{bmatrix}$ and $B = \begin{bmatrix} 1 &amp; -2 \\ -1 &amp; 3 \end{bmatrix}$, then verify that $(AB)^{-1} = B^{-1} A^{-1}$.</p>
+<p><em>Solution:</em></p>
+<p>This is left as an exercise for the student for verification purpose. Calculate $AB$, find its inverse, then separately find inverses of $A$ and $B$, their product, and compare.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-5-continuity-and-differentiability"><a class="header" href="#chapter-5-continuity-and-differentiability">Chapter 5: Continuity and Differentiability</a></h1>
+<p>This chapter builds on the limit of functions to define continuity and introduces the powerful tool of derivative for finding the rate of change.</p>
+<h2 id="continuity"><a class="header" href="#continuity">Continuity</a></h2>
+<p>A function is continuous at $x = c$ if the function is defined at $x = c$ and if the value of the function at $x = c$ equals the limit of the function at $x = c$.
+Mathematically, a function $f(x)$ is continuous at $x = c$ if:
+$$ \lim_{x \to c^-} f(x) = \lim_{x \to c^+} f(x) = f(c) $$</p>
+<p>Continuity means that the graph of the function has no break, jump, or hole at that point.</p>
+<h2 id="differentiability"><a class="header" href="#differentiability">Differentiability</a></h2>
+<p>Let $f$ be a real function and $c$ be a point in its domain. The derivative of $f$ at $c$ is defined by:
+$$ f’(c) = \lim_{h \to 0} \frac{f(c + h) - f(c)}{h} $$
+provided this limit exists.
+If $f’(c)$ exists, we say $f$ is differentiable at $c$.</p>
+<p><strong>Theorem:</strong> If a function $f$ is differentiable at a point $c$, then it is also continuous at that point.
+<em>Note:</em> The converse is not true. Every continuous function is not differentiable. (e.g., $f(x) = |x|$ is continuous at $x=0$ but not differentiable at $x=0$).</p>
+<h3 id="chain-rule"><a class="header" href="#chain-rule">Chain Rule</a></h3>
+<p>Let $f$ be a real valued function which is a composite of two functions $u$ and $v$; i.e., $f = v \circ u$. Suppose $t = u(x)$ and if both $\frac{dt}{dx}$ and $\frac{dv}{dt}$ exist, we have
+$$ \frac{df}{dx} = \frac{dv}{dt} \cdot \frac{dt}{dx} $$</p>
+<div align="center">
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <line x1="50" y1="150" x2="350" y2="150" stroke="black" stroke-width="2" />
+  <line x1="200" y1="20" x2="200" y2="180" stroke="black" stroke-width="2" />
+  <text x="360" y="155" font-family="Arial" font-size="12">x</text>
+  <text x="185" y="15" font-family="Arial" font-size="12">y</text>
+  <!-- Continuous but not Differentiable function |x| -->
+  <path d="M 100 50 L 200 150 L 300 50" fill="none" stroke="#2196f3" stroke-width="3" />
+  <text x="130" y="40" font-family="Arial" font-size="14" fill="#2196f3">y = |x|</text>
+  <circle cx="200" cy="150" r="5" fill="#f44336" />
+  <text x="210" y="180" font-family="Arial" font-size="12" fill="#f44336">Continuous, but corner point</text>
+  <text x="210" y="195" font-family="Arial" font-size="12" fill="#f44336">(Not differentiable)</text>
+</svg>
+<p><em>Fig 1. Graph of $f(x) = |x|$ showing continuity without differentiability at $x=0$</em></p>
+
+</div>
+
+<h2 id="competency-based-questions-4"><a class="header" href="#competency-based-questions-4">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2021]</strong> Examine the continuity of the function $f(x)$ at $x = 0$, where
+$$ f(x) = \begin{cases} \frac{\sin 3x}{x}, &amp; \text{if } x \neq 0 \\ 3, &amp; \text{if } x = 0 \end{cases} $$</p>
+<p><em>Solution:</em></p>
+<p>For checking continuity at $x = 0$, we need to find the limit of $f(x)$ as $x \to 0$ and compare it with $f(0)$.</p>
+<p>$\lim_{x \to 0} f(x) = \lim_{x \to 0} \frac{\sin 3x}{x}$</p>
+<p>Multiply and divide by 3:</p>
+<p>$= \lim_{x \to 0} 3 \frac{\sin 3x}{3x}$</p>
+<p>Since $\lim_{\theta \to 0} \frac{\sin \theta}{\theta} = 1$, we have:</p>
+<p>$\lim_{x \to 0} f(x) = 3(1) = 3$</p>
+<p>Also, it is given that $f(0) = 3$.</p>
+<p>Since $\lim_{x \to 0} f(x) = f(0) = 3$, the function is continuous at $x = 0$.</p>
+<p><strong>2. [Sample Paper 2023]</strong> Find $\frac{dy}{dx}$ if $x^2 + xy + y^2 = 100$.</p>
+<p><em>Solution:</em></p>
+<p>Differentiating both sides with respect to $x$:</p>
+<p>$\frac{d}{dx}(x^2 + xy + y^2) = \frac{d}{dx}(100)$</p>
+<p>$2x + (x \frac{dy}{dx} + y \cdot 1) + 2y \frac{dy}{dx} = 0$</p>
+<p>$2x + y + (x + 2y)\frac{dy}{dx} = 0$</p>
+<p>$(x + 2y)\frac{dy}{dx} = -(2x + y)$</p>
+<p>$\frac{dy}{dx} = \frac{-(2x + y)}{x + 2y}$</p>
+<p><strong>3. [CBSE 2019]</strong> Differentiate $(\sin x)^{\cos x}$ with respect to $x$.</p>
+<p><em>Solution:</em></p>
+<p>Let $y = (\sin x)^{\cos x}$</p>
+<p>Taking logarithm on both sides:</p>
+<p>$\log y = \log (\sin x)^{\cos x} = \cos x \log(\sin x)$</p>
+<p>Differentiating both sides with respect to $x$:</p>
+<p>$\frac{1}{y} \frac{dy}{dx} = \frac{d}{dx}(\cos x \cdot \log(\sin x))$</p>
+<p>Using product rule:</p>
+<p>$\frac{1}{y} \frac{dy}{dx} = \cos x \cdot \frac{d}{dx}(\log(\sin x)) + \log(\sin x) \cdot \frac{d}{dx}(\cos x)$</p>
+<p>$\frac{1}{y} \frac{dy}{dx} = \cos x \cdot \left( \frac{1}{\sin x} \cdot \cos x \right) + \log(\sin x) \cdot (-\sin x)$</p>
+<p>$\frac{1}{y} \frac{dy}{dx} = \cos x \cot x - \sin x \log(\sin x)$</p>
+<p>$\frac{dy}{dx} = y [\cos x \cot x - \sin x \log(\sin x)]$</p>
+<p>$\frac{dy}{dx} = (\sin x)^{\cos x} [\cos x \cot x - \sin x \log(\sin x)]$</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-6-applications-of-derivatives"><a class="header" href="#chapter-6-applications-of-derivatives">Chapter 6: Applications of Derivatives</a></h1>
+<p>This chapter deals with applications of derivatives in various disciplines. We will see how derivatives can be used to determine rate of change of quantities, to find the equations of tangent and normal to a curve at a point, to find turning points on the graph of a function.</p>
+<h2 id="rate-of-change-of-quantities"><a class="header" href="#rate-of-change-of-quantities">Rate of Change of Quantities</a></h2>
+<p>If a quantity $y$ varies with another quantity $x$, satisfying some rule $y = f(x)$, then $\frac{dy}{dx}$ (or $f’(x)$) represents the rate of change of $y$ with respect to $x$.</p>
+<h2 id="increasing-and-decreasing-functions"><a class="header" href="#increasing-and-decreasing-functions">Increasing and Decreasing Functions</a></h2>
+<p>Definition: Let $I$ be an open interval contained in the domain of a real valued function $f$. Then $f$ is said to be:</p>
+<ul>
+<li>Strictly increasing on $I$ if $x_1 &lt; x_2$ in $I \implies f(x_1) &lt; f(x_2)$ for all $x_1, x_2 \in I$.</li>
+<li>Strictly decreasing on $I$ if $x_1 &lt; x_2$ in $I \implies f(x_1) &gt; f(x_2)$ for all $x_1, x_2 \in I$.</li>
+</ul>
+<p><strong>Theorem:</strong> Let $f$ be continuous on $[a, b]$ and differentiable on the open interval $(a, b)$. Then</p>
+<ul>
+<li>$f$ is strictly increasing in $[a, b]$ if $f’(x) &gt; 0$ for each $x \in (a, b)$.</li>
+<li>$f$ is strictly decreasing in $[a, b]$ if $f’(x) &lt; 0$ for each $x \in (a, b)$.</li>
+<li>$f$ is a constant function in $[a, b]$ if $f’(x) = 0$ for each $x \in (a, b)$.</li>
+</ul>
+<h2 id="maxima-and-minima"><a class="header" href="#maxima-and-minima">Maxima and Minima</a></h2>
+<p>First Derivative Test: Let $f$ be a function defined on an open interval $I$. Let $f$ be continuous at a critical point $c$ in $I$. Then:</p>
+<ul>
+<li>If $f’(x)$ changes sign from positive to negative as $x$ increases through $c$, then $c$ is a point of local maxima.</li>
+<li>If $f’(x)$ changes sign from negative to positive as $x$ increases through $c$, then $c$ is a point of local minima.</li>
+</ul>
+<p>Second Derivative Test: Let $f$ be a function defined on an interval $I$ and $c \in I$. Let $f$ be twice differentiable at $c$. Then:</p>
+<ul>
+<li>$x = c$ is a point of local maxima if $f’(c) = 0$ and $f’’(c) &lt; 0$. The value $f(c)$ is local maximum value of $f$.</li>
+<li>$x = c$ is a point of local minima if $f’(c) = 0$ and $f’’(c) &gt; 0$. The value $f(c)$ is local minimum value of $f$.</li>
+<li>The test fails if $f’(c) = 0$ and $f’’(c) = 0$.</li>
+</ul>
+<div align="center">
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <line x1="50" y1="200" x2="350" y2="200" stroke="black" stroke-width="2" />
+  <line x1="200" y1="20" x2="200" y2="220" stroke="black" stroke-width="2" />
+  <text x="360" y="205" font-family="Arial" font-size="12">x</text>
+  <text x="185" y="15" font-family="Arial" font-size="12">y</text>
+  <path d="M 50 150 Q 125 0 200 150 T 350 50" fill="none" stroke="#9c27b0" stroke-width="3" />
+  <!-- Local Maxima -->
+  <circle cx="125" cy="74" r="5" fill="red" />
+  <text x="80" y="60" font-family="Arial" font-size="12" fill="red">Local Maxima</text>
+  <line x1="100" y1="74" x2="150" y2="74" stroke="red" stroke-width="2" stroke-dasharray="4" />
+  <!-- Local Minima -->
+  <circle cx="275" cy="180" r="5" fill="blue" />
+  <text x="250" y="215" font-family="Arial" font-size="12" fill="blue">Local Minima</text>
+  <line x1="250" y1="180" x2="300" y2="180" stroke="blue" stroke-width="2" stroke-dasharray="4" />
+</svg>
+<p><em>Fig 1. Maxima and Minima</em></p>
+
+</div>
+
+<h2 id="competency-based-questions-5"><a class="header" href="#competency-based-questions-5">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2020]</strong> A circular disc of radius $3 , \text{cm}$ is being heated. Due to expansion, its radius increases at the rate of $0.05 , \text{cm/s}$. Find the rate at which its area is increasing when radius is $3.2 , \text{cm}$.</p>
+<p><em>Solution:</em></p>
+<p>Let $r$ be the radius of the circular disc and $A$ be its area at any time $t$.</p>
+<p>Given: $\frac{dr}{dt} = 0.05 , \text{cm/s}$</p>
+<p>We know, $A = \pi r^2$</p>
+<p>Differentiating w.r.t $t$:</p>
+<p>$\frac{dA}{dt} = \frac{d}{dt}(\pi r^2) = 2\pi r \frac{dr}{dt}$</p>
+<p>When $r = 3.2 , \text{cm}$,</p>
+<p>$\frac{dA}{dt} = 2 \pi (3.2)(0.05) = 2 \pi (0.16) = 0.32 \pi , \text{cm}^2/\text{s}$.</p>
+<p><strong>2. [Sample Paper 2022]</strong> Find the intervals in which the function $f(x) = 2x^3 - 3x^2 - 36x + 7$ is strictly increasing or decreasing.</p>
+<p><em>Solution:</em></p>
+<p>$f(x) = 2x^3 - 3x^2 - 36x + 7$</p>
+<p>$f’(x) = 6x^2 - 6x - 36 = 6(x^2 - x - 6) = 6(x - 3)(x + 2)$</p>
+<p>To find intervals, solve $f’(x) = 0 \implies x = 3, -2$.</p>
+<p>These points divide the real line into three disjoint intervals: $(-\infty, -2), (-2, 3), \text{ and } (3, \infty)$.</p>
+<ul>
+<li>
+<p>In interval $(-\infty, -2)$, say $x = -3$, $f’(-3) = 6(-6)(-1) &gt; 0$. Strictly increasing.</p>
+</li>
+<li>
+<p>In interval $(-2, 3)$, say $x = 0$, $f’(0) = 6(-3)(2) &lt; 0$. Strictly decreasing.</p>
+</li>
+<li>
+<p>In interval $(3, \infty)$, say $x = 4$, $f’(4) = 6(1)(6) &gt; 0$. Strictly increasing.</p>
+</li>
+</ul>
+<p>Thus, $f$ is strictly increasing in $(-\infty, -2) \cup (3, \infty)$ and strictly decreasing in $(-2, 3)$.</p>
+<p><strong>3. [CBSE 2018]</strong> Find the maximum and minimum values of the function $f(x) = x + \sin 2x$ on $[0, 2\pi]$.</p>
+<p><em>Solution:</em></p>
+<p>$f(x) = x + \sin 2x$</p>
+<p>$f’(x) = 1 + 2\cos 2x$</p>
+<p>For extreme values, $f’(x) = 0 \implies \cos 2x = -1/2 = \cos(\pi - \pi/3) = \cos(2\pi/3)$</p>
+<p>$2x = 2n\pi \pm 2\pi/3$. In the interval $[0, 2\pi]$, for $x$:</p>
+<p>$2x = 2\pi/3, 4\pi/3, 8\pi/3, 10\pi/3$</p>
+<p>$x = \pi/3, 2\pi/3, 4\pi/3, 5\pi/3$.</p>
+<p>Now calculate $f(x)$ at these critical points and also at the endpoints $x=0, 2\pi$:</p>
+<p>$f(0) = 0$</p>
+<p>$f(\pi/3) = \pi/3 + \sin(2\pi/3) = \pi/3 + \sqrt{3}/2 \approx 1.91$</p>
+<p>$f(2\pi/3) = 2\pi/3 + \sin(4\pi/3) = 2\pi/3 - \sqrt{3}/2 \approx 1.22$</p>
+<p>$f(4\pi/3) = 4\pi/3 + \sin(8\pi/3) = 4\pi/3 + \sqrt{3}/2 \approx 5.05$</p>
+<p>$f(5\pi/3) = 5\pi/3 + \sin(10\pi/3) = 5\pi/3 - \sqrt{3}/2 \approx 4.37$</p>
+<p>$f(2\pi) = 2\pi \approx 6.28$</p>
+<p>Maximum value = $2\pi$ at $x = 2\pi$.</p>
+<p>Minimum value = $0$ at $x = 0$.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-7-integrals"><a class="header" href="#chapter-7-integrals">Chapter 7: Integrals</a></h1>
+<p>Integration is the inverse process of differentiation. Instead of differentiating a function, we are given the derivative of a function and asked to find its primitive, i.e., the original function. Such a process is called integration or anti-differentiation.</p>
+<h2 id="indefinite-integrals"><a class="header" href="#indefinite-integrals">Indefinite Integrals</a></h2>
+<p>If $\frac{d}{dx}[F(x)] = f(x)$, then we write $\int f(x) dx = F(x) + C$.
+Here $C$ is an arbitrary constant known as the constant of integration.</p>
+<h3 id="some-standard-integrals"><a class="header" href="#some-standard-integrals">Some Standard Integrals</a></h3>
+<ol>
+<li>$\int x^n dx = \frac{x^{n+1}}{n+1} + C, \quad n \neq -1$</li>
+<li>$\int \cos x dx = \sin x + C$</li>
+<li>$\int \sin x dx = -\cos x + C$</li>
+<li>$\int e^x dx = e^x + C$</li>
+<li>$\int \frac{1}{x} dx = \log|x| + C$</li>
+</ol>
+<h3 id="methods-of-integration"><a class="header" href="#methods-of-integration">Methods of Integration</a></h3>
+<ol>
+<li>
+<p><strong>Integration by Substitution:</strong>
+To evaluate $\int f(\phi(x))\cdot\phi’(x) dx$, put $\phi(x) = t \implies \phi’(x)dx = dt$. The integral becomes $\int f(t) dt$.</p>
+</li>
+<li>
+<p><strong>Integration by Parts:</strong>
+For the product of two functions $u$ and $v$:
+$$ \int u v dx = u \int v dx - \int \left( u’ \int v dx \right) dx $$
+(The choice of first function $u$ and second function $v$ is typically guided by the rule “ILATE”, standing for Inverse Trigonometric, Logarithmic, Algebraic, Trigonometric, Exponential).</p>
+</li>
+<li>
+<p><strong>Integration by Partial Fractions:</strong>
+Used for rational functions of the form $\frac{P(x)}{Q(x)}$ where $P(x)$ and $Q(x)$ are polynomials.</p>
+</li>
+</ol>
+<h2 id="definite-integrals"><a class="header" href="#definite-integrals">Definite Integrals</a></h2>
+<p>The definite integral $\int_a^b f(x) dx$ represents the area bounded by the curve $y = f(x)$, the ordinates $x = a$, $x = b$, and the $x$-axis.
+<strong>Fundamental Theorem of Calculus:</strong>
+Let $f$ be continuous function defined on the closed interval $[a, b]$ and $F$ be an anti-derivative of $f$. Then
+$\int_a^b f(x) dx = [F(x)]_a^b = F(b) - F(a)$.</p>
+<p>There are several properties of definite integrals, such as:
+$\int_a^b f(x) dx = \int_a^b f(a + b - x) dx$
+$\int_0^a f(x) dx = \int_0^a f(a - x) dx$</p>
+<h2 id="competency-based-questions-6"><a class="header" href="#competency-based-questions-6">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2022]</strong> Evaluate: $\int \frac{x \sin^{-1} x}{\sqrt{1 - x^2}} dx$</p>
+<p><em>Solution:</em></p>
+<p>Let $I = \int \frac{x \sin^{-1} x}{\sqrt{1 - x^2}} dx$</p>
+<p>Let $\sin^{-1} x = t \implies \frac{1}{\sqrt{1 - x^2}} dx = dt$. Also, $x = \sin t$.</p>
+<p>So the integral becomes:</p>
+<p>$I = \int (\sin t) \cdot t dt = \int t \cdot \sin t dt$</p>
+<p>Now use Integration by Parts (taking $t$ as first function and $\sin t$ as second function):</p>
+<p>$I = t \int \sin t dt - \int (\frac{d}{dt}(t) \cdot \int \sin t dt) dt$</p>
+<p>$I = t (-\cos t) - \int 1 \cdot (-\cos t) dt$</p>
+<p>$I = -t \cos t + \int \cos t dt$</p>
+<p>$I = -t \cos t + \sin t + C$</p>
+<p>Substitute back $t = \sin^{-1} x$.</p>
+<p>Also $\sin t = x \implies \cos t = \sqrt{1 - \sin^2 t} = \sqrt{1 - x^2}$.</p>
+<p>$I = -(\sin^{-1} x)\sqrt{1 - x^2} + x + C$.</p>
+<p><strong>2. [Sample Paper 2021]</strong> Evaluate: $\int_0^{\pi/2} \frac{\sqrt{\sin x}}{\sqrt{\sin x} + \sqrt{\cos x}} dx$</p>
+<p><em>Solution:</em></p>
+<p>Let $I = \int_0^{\pi/2} \frac{\sqrt{\sin x}}{\sqrt{\sin x} + \sqrt{\cos x}} dx \quad \dots \text{(Eq i)}$</p>
+<p>Using the property $\int_0^a f(x) dx = \int_0^a f(a - x) dx$:</p>
+<p>$I = \int_0^{\pi/2} \frac{\sqrt{\sin(\pi/2 - x)}}{\sqrt{\sin(\pi/2 - x)} + \sqrt{\cos(\pi/2 - x)}} dx$</p>
+<p>$I = \int_0^{\pi/2} \frac{\sqrt{\cos x}}{\sqrt{\cos x} + \sqrt{\sin x}} dx \quad \dots \text{(Eq ii)}$</p>
+<p>Adding (Eq i) and (Eq ii):</p>
+<p>$2I = \int_0^{\pi/2} \frac{\sqrt{\sin x} + \sqrt{\cos x}}{\sqrt{\sin x} + \sqrt{\cos x}} dx$</p>
+<p>$2I = \int_0^{\pi/2} 1 dx = [x]_0^{\pi/2} = \pi/2$</p>
+<p>Therefore, $I = \pi/4$.</p>
+<p><strong>3. [CBSE 2019]</strong> Evaluate: $\int e^x \left(\frac{1 + \sin x}{1 + \cos x}\right) dx$</p>
+<p><em>Solution:</em></p>
+<p>Let $I = \int e^x \left(\frac{1 + \sin x}{1 + \cos x}\right) dx$</p>
+<p>$I = \int e^x \left(\frac{1 + 2\sin(x/2)\cos(x/2)}{2\cos^2(x/2)}\right) dx$</p>
+<p>$I = \int e^x \left( \frac{1}{2\cos^2(x/2)} + \frac{2\sin(x/2)\cos(x/2)}{2\cos^2(x/2)} \right) dx$</p>
+<p>$I = \int e^x \left( \frac{1}{2} \sec^2(x/2) + \tan(x/2) \right) dx$</p>
+<p>Let $f(x) = \tan(x/2)$. Then $f’(x) = \frac{1}{2}\sec^2(x/2)$.</p>
+<p>We know the standard integral form: $\int e^x [f(x) + f’(x)] dx = e^x f(x) + C$</p>
+<p>Therefore, $I = e^x \tan(x/2) + C$.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-8-application-of-integrals"><a class="header" href="#chapter-8-application-of-integrals">Chapter 8: Application of Integrals</a></h1>
+<p>The definite integral has widespread applications in computing the area of bounded regions.</p>
+<h2 id="area-under-simple-curves"><a class="header" href="#area-under-simple-curves">Area Under Simple Curves</a></h2>
+<p>Let a curve be represented by $y = f(x)$. The area of the region bounded by the curve $y = f(x)$, $x$-axis and the ordinates $x = a$ and $x = b$ is given by the definite integral:
+$$ \text{Area} = \int_a^b y dx = \int_a^b f(x) dx $$
+Similarly, the area of the region bounded by a curve $x = g(y)$, $y$-axis, $y = c$ and $y = d$ is:
+$$ \text{Area} = \int_c^d x dy = \int_c^d g(y) dy $$</p>
+<div align="center">
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Axes -->
+  <line x1="50" y1="200" x2="350" y2="200" stroke="black" stroke-width="2" marker-end="url(#arrow-axis)" />
+  <line x1="80" y1="230" x2="80" y2="30" stroke="black" stroke-width="2" marker-end="url(#arrow-axis)" />
+  <text x="360" y="205" font-family="Arial" font-size="12">x</text>
+  <text x="65" y="25" font-family="Arial" font-size="12">y</text>
+  <!-- The curve y = f(x) -->
+  <path d="M 120 180 Q 200 40 280 120" fill="none" stroke="#2196f3" stroke-width="3" />
+  <text x="290" y="115" font-family="Arial" font-size="14" fill="#2196f3">y = f(x)</text>
+  <!-- Area shading -->
+  <path d="M 120 200 L 120 180 Q 200 40 280 120 L 280 200 Z" fill="#e3f2fd" opacity="0.8" />
+  <!-- Ordinates -->
+  <line x1="120" y1="200" x2="120" y2="180" stroke="#1565c0" stroke-width="2" />
+  <text x="115" y="220" font-family="Arial" font-size="12">x = a</text>
+  <line x1="280" y1="200" x2="280" y2="120" stroke="#1565c0" stroke-width="2" />
+  <text x="275" y="220" font-family="Arial" font-size="12">x = b</text>
+  <!-- dx strip -->
+  <rect x="195" y="65" width="10" height="135" fill="#42a5f5" />
+  <text x="210" y="140" font-family="Arial" font-size="12">dx</text>
+</svg>
+<p><em>Fig 1. Area under the curve $y = f(x)$</em></p>
+
+</div>
+
+<h2 id="area-between-two-curves"><a class="header" href="#area-between-two-curves">Area between Two Curves</a></h2>
+<p>The area of a region bounded by two curves $y = f(x)$ and $y = g(x)$ (where $f(x) \ge g(x)$ in $[a, b]$), and the lines $x = a$ and $x = b$, is given by:
+$$ \text{Area} = \int_a^b [f(x) - g(x)] dx $$</p>
+<h2 id="competency-based-questions-7"><a class="header" href="#competency-based-questions-7">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2021]</strong> Find the area of the region bounded by the curve $y = x^2$ and the line $y = 4$.</p>
+<p><em>Solution:</em></p>
+<p>The curve is $x^2 = y$ which is a parabola opening upwards with vertex at the origin.</p>
+<p>The line is $y = 4$ which is parallel to the $x$-axis.</p>
+<p>The intersection points of $y = x^2$ and $y = 4$ are $x^2 = 4 \implies x = \pm 2$.</p>
+<p>The region is symmetric about the $y$-axis.</p>
+<p>So, Required Area = $2 \times (\text{Area bounded by curve in first quadrant})$</p>
+<p>Area $= 2 \times \int_0^2 (\text{upper curve} - \text{lower curve}) dx$</p>
+<p>Upper curve is $y = 4$, lower curve is $y = x^2$.</p>
+<p>Area $= 2 \times \int_0^2 (4 - x^2) dx$</p>
+<p>Area $= 2 \times \left[ 4x - \frac{x^3}{3} \right]_0^2$</p>
+<p>Area $= 2 \times \left[ 4(2) - \frac{2^3}{3} - (0) \right]$</p>
+<p>Area $= 2 \times \left[ 8 - \frac{8}{3} \right] = 2 \times \left[ \frac{16}{3} \right]$</p>
+<p>Area $= \frac{32}{3} \text{ sq. units}$.</p>
+<p>Alternatively, using integration w.r.t $y$:</p>
+<p>Area $= \int_0^4 2x dy = \int_0^4 2\sqrt{y} dy = 2 \left[ \frac{y^{3/2}}{3/2} \right]_0^4 = \frac{4}{3} [4^{3/2}] = \frac{4}{3} (8) = \frac{32}{3} \text{ sq. units}$.</p>
+<p><strong>2. [Sample Paper 2024]</strong> Find the area of the region bounded by $y = \cos x$, $y = \sin x$, the $y$-axis and $x \in [0, \pi/4]$.</p>
+<p><em>Solution:</em></p>
+<p>In the interval $[0, \pi/4]$, $\cos x \ge \sin x$.</p>
+<p>Therefore, upper curve $f(x) = \cos x$ and lower curve $g(x) = \sin x$.</p>
+<p>Area $= \int_0^{\pi/4} (\cos x - \sin x) dx$</p>
+<p>$= \left[ \sin x - (-\cos x) \right]_0^{\pi/4} = \left[ \sin x + \cos x \right]_0^{\pi/4}$</p>
+<p>$= (\sin(\pi/4) + \cos(\pi/4)) - (\sin(0) + \cos(0))$</p>
+<p>$= \left(\frac{1}{\sqrt{2}} + \frac{1}{\sqrt{2}}\right) - (0 + 1)$</p>
+<p>$= \frac{2}{\sqrt{2}} - 1 = \sqrt{2} - 1 \text{ sq. units}$.</p>
+<p><strong>3. [CBSE 2018]</strong> Find the area of the smaller part of the circle $x^2 + y^2 = a^2$ cut off by the line $x = \frac{a}{\sqrt{2}}$.</p>
+<p><em>Solution:</em></p>
+<p>The circle $x^2 + y^2 = a^2$ has its center at $(0,0)$ and radius $a$.</p>
+<p>The line $x = \frac{a}{\sqrt{2}}$ is perpendicular to the $x$-axis.</p>
+<p>The bounded region is symmetric w.r.t positive $x$-axis.</p>
+<p>So, Required Area $= 2 \times \int_{a/\sqrt{2}}^a y dx$</p>
+<p>For the circle, $y^2 = a^2 - x^2 \implies y = \sqrt{a^2 - x^2}$ (taking positive root for 1st quadrant).</p>
+<p>Area $= 2 \int_{a/\sqrt{2}}^a \sqrt{a^2 - x^2} dx$</p>
+<p>We know the standard integral: $\int \sqrt{a^2 - x^2} dx = \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right)$</p>
+<p>Area $= 2 \left[ \frac{x}{2}\sqrt{a^2 - x^2} + \frac{a^2}{2}\sin^{-1}\left(\frac{x}{a}\right) \right]_{a/\sqrt{2}}^a$</p>
+<p>$= 2 \left( \left[ 0 + \frac{a^2}{2}\sin^{-1}(1) \right] - \left[ \frac{a}{2\sqrt{2}}\sqrt{a^2 - \frac{a^2}{2}} + \frac{a^2}{2}\sin^{-1}\left(\frac{1}{\sqrt{2}}\right) \right] \right)$</p>
+<p>$= 2 \left( \frac{a^2}{2}\cdot\frac{\pi}{2} - \frac{a}{2\sqrt{2}}\cdot\frac{a}{\sqrt{2}} - \frac{a^2}{2}\cdot\frac{\pi}{4} \right)$</p>
+<p>$= 2 \left( \frac{\pi a^2}{4} - \frac{a^2}{4} - \frac{\pi a^2}{8} \right)$</p>
+<p>$= 2 \left( \frac{\pi a^2}{8} - \frac{a^2}{4} \right) = \frac{\pi a^2}{4} - \frac{a^2}{2} = \frac{a^2}{2} \left[ \frac{\pi}{2} - 1 \right] \text{ sq. units}$.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-9-differential-equations"><a class="header" href="#chapter-9-differential-equations">Chapter 9: Differential Equations</a></h1>
+<p>An equation involving derivatives (or differentials) of the dependent variable with respect to independent variable (or variables) is termed as a differential equation.</p>
+<h2 id="order-and-degree-of-a-differential-equation"><a class="header" href="#order-and-degree-of-a-differential-equation">Order and Degree of a Differential Equation</a></h2>
+<ul>
+<li><strong>Order:</strong> The order of a differential equation is the order of the highest order derivative occurring in the differential equation.</li>
+<li><strong>Degree:</strong> The degree of a differential equation is the highest power (positive integral index) of the highest order derivative occurring in it, after it has been expressed as a polynomial of derivatives.</li>
+</ul>
+<h2 id="solutions-of-differential-equations"><a class="header" href="#solutions-of-differential-equations">Solutions of Differential Equations</a></h2>
+<p>A function which satisfies the given differential equation is called its solution.</p>
+<ul>
+<li><strong>General Solution:</strong> The solution which contains arbitrary constants is called the general solution (primitive) of the differential equation.</li>
+<li><strong>Particular Solution:</strong> The solution obtained from the general solution by giving particular values to the arbitrary constants is called a particular solution of the differential equation.</li>
+</ul>
+<h3 id="methods-of-finding-the-solution-of-first-order-first-degree-differential-equations"><a class="header" href="#methods-of-finding-the-solution-of-first-order-first-degree-differential-equations">Methods of finding the solution of First Order First Degree Differential Equations:</a></h3>
+<ol>
+<li>
+<p><strong>Differential Equations with Variables Separable:</strong>
+If the equation $\frac{dy}{dx} = f(x, y)$ can be written in the form $g(y)dy = h(x)dx$, integrating both sides gives the solution: $\int g(y)dy = \int h(x)dx + C$.</p>
+</li>
+<li>
+<p><strong>Homogeneous Differential Equations:</strong>
+An equation $\frac{dy}{dx} = F(x, y)$ is said to be homogeneous if $F(x, y)$ is a homogeneous function of degree zero.
+To solve it, we make the substitution $y = vx$. Then $\frac{dy}{dx} = v + x\frac{dv}{dx}$ and the equation gets reduced to the separable form.</p>
+</li>
+<li>
+<p><strong>Linear Differential Equations:</strong>
+Equations of the form $\frac{dy}{dx} + Py = Q$, where $P$ and $Q$ are functions of $x$ or constants.
+Integrating Factor (I.F.) = $e^{\int P dx}$.
+The solution is given by: $y \times \text{I.F.} = \int (Q \times \text{I.F.}) dx + C$.</p>
+</li>
+</ol>
+<h2 id="competency-based-questions-8"><a class="header" href="#competency-based-questions-8">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2021]</strong> Find the specific solution of the differential equation $\cos(x) \frac{dy}{dx} + y \sin x = 1$, given that $y = 1$ when $x = 0$.</p>
+<p><em>Solution:</em></p>
+<p>$\cos x \frac{dy}{dx} + y \sin x = 1$</p>
+<p>Divide by $\cos x$:</p>
+<p>$\frac{dy}{dx} + y \tan x = \sec x$.</p>
+<p>This is a linear differential equation of the form $\frac{dy}{dx} + Py = Q$.</p>
+<p>Here, $P = \tan x$, $Q = \sec x$.</p>
+<p>Integrating Factor (I.F.) $= e^{\int P dx} = e^{\int \tan x dx} = e^{\log|\sec x|} = \sec x$.</p>
+<p>The general solution is:</p>
+<p>$y \times \text{I.F.} = \int (Q \cdot \text{I.F.}) dx + C$</p>
+<p>$y \sec x = \int (\sec x \cdot \sec x) dx + C$</p>
+<p>$y \sec x = \int \sec^2 x dx + C$</p>
+<p>$y \sec x = \tan x + C$.</p>
+<p>Now, to find the specific solution, use the initial conditions: $y = 1$ when $x = 0$.</p>
+<p>$(1) \sec(0) = \tan(0) + C$</p>
+<p>$1 \times 1 = 0 + C \implies C = 1$.</p>
+<p>Therefore, the specific solution is $y \sec x = \tan x + 1$ or $y = \sin x + \cos x$.</p>
+<p><strong>2. [Sample Paper 2022]</strong> Solve the differential equation $\frac{dy}{dx} = e^{x+y}$.</p>
+<p><em>Solution:</em></p>
+<p>$\frac{dy}{dx} = e^{x+y} = e^x \cdot e^y$</p>
+<p>This is a separable variables equation.</p>
+<p>$\frac{dy}{e^y} = e^x dx$</p>
+<p>$e^{-y} dy = e^x dx$</p>
+<p>Integrating both sides:</p>
+<p>$\int e^{-y} dy = \int e^x dx$</p>
+<p>$-e^{-y} = e^x + C_1$</p>
+<p>$e^x + e^{-y} = -C_1$</p>
+<p>Let $C = -C_1$, an arbitrary constant.</p>
+<p>$e^x + e^{-y} = C$ is the general solution.</p>
+<p><strong>3. [CBSE 2019]</strong> Show that the differential equation $(x - y) \frac{dy}{dx} = x + 2y$ is homogeneous and solve it.</p>
+<p><em>Solution:</em></p>
+<p>$\frac{dy}{dx} = \frac{x + 2y}{x - y} = F(x, y)$</p>
+<p>Let $x \to \lambda x$, $y \to \lambda y$: $F(\lambda x, \lambda y) = \frac{\lambda x + 2\lambda y}{\lambda x - \lambda y} = \frac{\lambda(x + 2y)}{\lambda(x - y)} = \lambda^0 F(x, y)$.</p>
+<p>So, it is a homogeneous differential equation.</p>
+<p>To solve, put $y = vx$. Then $\frac{dy}{dx} = v + x \frac{dv}{dx}$.</p>
+<p>Substituting into the equation:</p>
+<p>$v + x \frac{dv}{dx} = \frac{x + 2vx}{x - vx} = \frac{x(1 + 2v)}{x(1 - v)} = \frac{1 + 2v}{1 - v}$</p>
+<p>$x \frac{dv}{dx} = \frac{1 + 2v}{1 - v} - v = \frac{1 + 2v - v(1 - v)}{1 - v} = \frac{1 + 2v - v + v^2}{1 - v}$</p>
+<p>$x \frac{dv}{dx} = \frac{v^2 + v + 1}{1 - v}$</p>
+<p>Separating variables:</p>
+<p>$\frac{1 - v}{v^2 + v + 1} dv = \frac{dx}{x}$</p>
+<p>Multiply by 2 for the numerator to become the derivative of denominator:</p>
+<p>$\frac{2 - 2v}{v^2 + v + 1} dv = \frac{2}{x} dx$</p>
+<p>$\frac{3 - (2v + 1)}{v^2 + v + 1} dv = \frac{2}{x} dx$</p>
+<p>$\int \frac{3}{v^2 + v + 1} dv - \int \frac{2v + 1}{v^2 + v + 1} dv = \int \frac{2}{x} dx$</p>
+<p>$\int \frac{3}{(v + 1/2)^2 + (\sqrt{3}/2)^2} dv - \log|v^2 + v + 1| = 2 \log|x| + C$</p>
+<p>$3 \cdot \frac{1}{\sqrt{3}/2} \tan^{-1}\left(\frac{v + 1/2}{\sqrt{3}/2}\right) = \log|v^2 + v + 1| + \log x^2 + C$</p>
+<p>$2\sqrt{3} \tan^{-1}\left(\frac{2v + 1}{\sqrt{3}}\right) = \log|x^2(v^2 + v + 1)| + C$</p>
+<p>Substitute $v = y/x$:</p>
+<p>$2\sqrt{3} \tan^{-1}\left(\frac{2y/x + 1}{\sqrt{3}}\right) = \log|x^2(y^2/x^2 + y/x + 1)| + C$</p>
+<p>$2\sqrt{3} \tan^{-1}\left(\frac{2y + x}{\sqrt{3}x}\right) = \log|y^2 + xy + x^2| + C$.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-10-vectors"><a class="header" href="#chapter-10-vectors">Chapter 10: Vectors</a></h1>
+<p>In our day to day life, we come across many queries such as “What is your height?”, “How should a football player hit the ball to give a pass to another player?”, “What should be the speed and direction of an aeroplane?”. The answers to these questions require quantities having either magnitude alone or magnitude as well as direction.</p>
+<h2 id="vectors-and-scalars"><a class="header" href="#vectors-and-scalars">Vectors and Scalars</a></h2>
+<p>A quantity that has magnitude as well as direction is called a <strong>vector</strong>. Directed line segments are vectors.
+A quantity that has only magnitude and no direction is called a <strong>scalar</strong>.</p>
+<ul>
+<li><strong>Position Vector:</strong> Consider a point $P(x, y, z)$ in space. The vector $\vec{OP}$ having initial point $O$ (origin) and terminal point $P$ is called the position vector of point $P$. Its magnitude is given by $\sqrt{x^2 + y^2 + z^2}$.</li>
+<li><strong>Direction Cosines:</strong> If $\vec{r}$ makes angles $\alpha, \beta, \gamma$ with the positive direction of $x, y$ and $z$-axes, then $\cos \alpha, \cos \beta, \cos \gamma$ are called direction cosines (typically denoted as $l, m, n$). $l^2 + m^2 + n^2 = 1$.</li>
+</ul>
+<h2 id="operations-on-vectors"><a class="header" href="#operations-on-vectors">Operations on Vectors</a></h2>
+<ol>
+<li><strong>Addition of Vectors:</strong> Add corresponding components. Triangle law and Parallelogram law.</li>
+<li><strong>Scalar Multiplication:</strong> Multiply every component by scalar $\lambda$.</li>
+</ol>
+<h2 id="product-of-two-vectors"><a class="header" href="#product-of-two-vectors">Product of Two Vectors</a></h2>
+<ol>
+<li><strong>Scalar (Dot) Product:</strong> For two non-zero vectors $\vec{a}$ and $\vec{b}$, the scalar product is $\vec{a} \cdot \vec{b} = |\vec{a}| |\vec{b}| \cos \theta$, where $\theta$ is the angle between them. If they are perpendicular, $\vec{a} \cdot \vec{b} = 0$.</li>
+<li><strong>Vector (Cross) Product:</strong> The vector product is $\vec{a} \times \vec{b} = |\vec{a}| |\vec{b}| \sin \theta , \hat{n}$, where $\hat{n}$ is a unit vector perpendicular to both. If they are parallel, $\vec{a} \times \vec{b} = 0$. Area of a parallelogram with adjacent sides $\vec{a}, \vec{b}$ is $|\vec{a} \times \vec{b}|$.</li>
+</ol>
+<div align="center">
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow-vec" viewbox="0 0 10 10" refx="5" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d32f2f" />
+    </marker>
+    <marker id="arrow-vec2" viewbox="0 0 10 10" refx="5" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1976d2" />
+    </marker>
+    <marker id="arrow-vec3" viewbox="0 0 10 10" refx="5" refy="5" markerwidth="6" markerheight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#388e3c" />
+    </marker>
+  </defs>
+  <!-- Triangle Law of Addition -->
+  <line x1="50" y1="200" x2="150" y2="150" stroke="#d32f2f" stroke-width="3" marker-end="url(#arrow-vec)" />
+  <text x="100" y="195" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">a</text>
+  <line x1="150" y1="150" x2="250" y2="200" stroke="#1976d2" stroke-width="3" marker-end="url(#arrow-vec2)" />
+  <text x="210" y="165" font-family="Arial" font-size="14" fill="#1976d2" font-weight="bold">b</text>
+  <line x1="50" y1="200" x2="250" y2="200" stroke="#388e3c" stroke-width="3" marker-end="url(#arrow-vec3)" stroke-dasharray="8,4" />
+  <text x="130" y="220" font-family="Arial" font-size="14" fill="#388e3c" font-weight="bold">a + b</text>
+  <text x="50" y="30" font-family="Arial" font-size="14" font-weight="bold">Cross Product Right Hand Rule</text>
+  <line x1="280" y1="100" x2="330" y2="150" stroke="#d32f2f" stroke-width="3" marker-end="url(#arrow-vec)" />
+  <text x="315" y="145" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">a</text>
+  <line x1="280" y1="100" x2="350" y2="100" stroke="#1976d2" stroke-width="3" marker-end="url(#arrow-vec2)" />
+  <text x="320" y="90" font-family="Arial" font-size="14" fill="#1976d2" font-weight="bold">b</text>
+  <line x1="280" y1="100" x2="280" y2="30" stroke="#388e3c" stroke-width="3" marker-end="url(#arrow-vec3)" />
+  <text x="240" y="70" font-family="Arial" font-size="14" fill="#388e3c" font-weight="bold">a × b</text>
+  <path d="M 310 100 A 30 30 0 0 1 300 120" fill="none" stroke="black" marker-end="url(#arrow-vec)" />
+  <text x="315" y="115" font-family="Arial" font-size="12">θ</text>
+</svg>
+<p><em>Fig 1. Vector addition and cross product</em></p>
+
+</div>
+
+<h2 id="competency-based-questions-9"><a class="header" href="#competency-based-questions-9">Competency-Based Questions</a></h2>
+<p><strong>1. [Sample Paper 2023]</strong> If $\vec{a}, \vec{b}$ and $\vec{c}$ are three mutually perpendicular vectors of equal magnitude, find the angle between $\vec{a}$ and $\vec{a} + \vec{b} + \vec{c}$.</p>
+<p><em>Solution:</em></p>
+<p>Let $|\vec{a}| = |\vec{b}| = |\vec{c}| = x$.</p>
+<p>Since they are mutually perpendicular, $\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{c} = \vec{c} \cdot \vec{a} = 0$.</p>
+<p>Now, $|\vec{a} + \vec{b} + \vec{c}|^2 = (\vec{a} + \vec{b} + \vec{c}) \cdot (\vec{a} + \vec{b} + \vec{c})$</p>
+<p>$= |\vec{a}|^2 + |\vec{b}|^2 + |\vec{c}|^2 + 2(\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{c} + \vec{c}\cdot\vec{a})$</p>
+<p>$= x^2 + x^2 + x^2 + 0 = 3x^2$.</p>
+<p>So, $|\vec{a} + \vec{b} + \vec{c}| = \sqrt{3}x$.</p>
+<p>Let $\theta$ be the angle between $\vec{a}$ and $(\vec{a} + \vec{b} + \vec{c})$.</p>
+<p>Then $\vec{a} \cdot (\vec{a} + \vec{b} + \vec{c}) = |\vec{a}| |\vec{a} + \vec{b} + \vec{c}| \cos \theta$</p>
+<p>$\vec{a}\cdot\vec{a} + \vec{a}\cdot\vec{b} + \vec{a}\cdot\vec{c} = x \cdot (\sqrt{3}x) \cdot \cos\theta$</p>
+<p>$|\vec{a}|^2 + 0 + 0 = \sqrt{3}x^2 \cos\theta$</p>
+<p>$x^2 = \sqrt{3}x^2 \cos\theta \implies \cos\theta = \frac{1}{\sqrt{3}}$.</p>
+<p>Therefore, $\theta = \cos^{-1}\left(\frac{1}{\sqrt{3}}\right)$.</p>
+<p><strong>2. [CBSE 2021]</strong> Find a vector of magnitude 5 units, and parallel to the resultant of the vectors $\vec{a} = 2\hat{i} + 3\hat{j} - \hat{k}$ and $\vec{b} = \hat{i} - 2\hat{j} + \hat{k}$.</p>
+<p><em>Solution:</em></p>
+<p>Let the resultant vector be $\vec{R} = \vec{a} + \vec{b} = (2\hat{i} + 3\hat{j} - \hat{k}) + (\hat{i} - 2\hat{j} + \hat{k})$</p>
+<p>$\vec{R} = 3\hat{i} + \hat{j} + 0\hat{k}$</p>
+<p>Magnitude of $\vec{R} = |\vec{R}| = \sqrt{3^2 + 1^2 + 0^2} = \sqrt{10}$.</p>
+<p>Unit vector parallel to $\vec{R} = \hat{R} = \frac{\vec{R}}{|\vec{R}|} = \frac{3\hat{i} + \hat{j}}{\sqrt{10}}$.</p>
+<p>Vector of magnitude 5 parallel to $\vec{R} = \pm 5 \hat{R} = \pm 5 \left(\frac{3\hat{i} + \hat{j}}{\sqrt{10}}\right) = \pm \sqrt{\frac{5}{2}} (3\hat{i} + \hat{j})$.</p>
+<p><strong>3. [CBSE 2019]</strong> Find the area of the parallelogram whose adjacent sides are determined by the vectors $\vec{a} = \hat{i} - \hat{j} + 3\hat{k}$ and $\vec{b} = 2\hat{i} - 7\hat{j} + \hat{k}$.</p>
+<p><em>Solution:</em></p>
+<p>The area of a parallelogram with adjacent sides $\vec{a}$ and $\vec{b}$ is $|\vec{a} \times \vec{b}|$.</p>
+<p>$\vec{a} \times \vec{b} = \begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 1 &amp; -1 &amp; 3 \\ 2 &amp; -7 &amp; 1 \end{vmatrix}$</p>
+<p>$= \hat{i}(-1 - (-21)) - \hat{j}(1 - 6) + \hat{k}(-7 - (-2))$</p>
+<p>$= \hat{i}(20) - \hat{j}(-5) + \hat{k}(-5) = 20\hat{i} + 5\hat{j} - 5\hat{k}$.</p>
+<p>Magnitude = $\sqrt{20^2 + 5^2 + (-5)^2} = \sqrt{400 + 25 + 25} = \sqrt{450}$</p>
+<p>$= 15\sqrt{2} \text{ sq. units}$.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-11-three-dimensional-geometry"><a class="header" href="#chapter-11-three-dimensional-geometry">Chapter 11: Three-dimensional Geometry</a></h1>
+<p>In Class XI, we studied the basic concepts of three-dimensional geometry like coordinates of a point, distance formulas, section formulas. In this chapter, we extend that to lines.</p>
+<h2 id="equation-of-a-line-in-space"><a class="header" href="#equation-of-a-line-in-space">Equation of a Line in Space</a></h2>
+<p>A line is uniquely determined if:</p>
+<ol>
+<li>It passes through a given point and has given direction (parallel to a given vector), or</li>
+<li>It passes through two given points.</li>
+</ol>
+<h3 id="line-through-a-given-point-and-parallel-to-a-given-vector"><a class="header" href="#line-through-a-given-point-and-parallel-to-a-given-vector">Line through a Given Point and Parallel to a Given Vector</a></h3>
+<p>Vector Form: $\vec{r} = \vec{a} + \lambda\vec{b}$, where $\vec{a}$ is the position vector of the point and $\vec{b}$ is the direction vector. $\lambda$ is a scalar.
+Cartesian Form: $\frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{z - z_1}{c}$</p>
+<h3 id="line-passing-through-two-given-points"><a class="header" href="#line-passing-through-two-given-points">Line passing through Two Given Points</a></h3>
+<p>Vector Form: $\vec{r} = \vec{a} + \lambda(\vec{b} - \vec{a})$
+Cartesian Form: $\frac{x - x_1}{x_2 - x_1} = \frac{y - y_1}{y_2 - y_1} = \frac{z - z_1}{z_2 - z_1}$</p>
+<h2 id="shortest-distance-between-two-lines"><a class="header" href="#shortest-distance-between-two-lines">Shortest Distance Between Two Lines</a></h2>
+<p>If two lines in space intersect at a point, then the shortest distance between them is zero. Also, if two lines in space are parallel, then the shortest distance between them will be the perpendicular distance.
+If lines are neither parallel nor intersecting (called <strong>skew lines</strong>), the shortest distance between lines $\vec{r} = \vec{a_1} + \lambda\vec{b_1}$ and $\vec{r} = \vec{a_2} + \mu\vec{b_2}$ is:
+$$ d = \left| \frac{(\vec{b_1} \times \vec{b_2}) \cdot (\vec{a_2} - \vec{a_1})}{|\vec{b_1} \times \vec{b_2}|} \right| $$</p>
+<h2 id="competency-based-questions-10"><a class="header" href="#competency-based-questions-10">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2022]</strong> Find the shortest distance between the lines $\vec{r} = (\hat{i} + 2\hat{j} + \hat{k}) + \lambda(\hat{i} - \hat{j} + \hat{k})$ and $\vec{r} = (2\hat{i} - \hat{j} - \hat{k}) + \mu(2\hat{i} + \hat{j} + 2\hat{k})$.</p>
+<p><em>Solution:</em></p>
+<p>$\vec{a_1} = \hat{i} + 2\hat{j} + \hat{k}, \quad \vec{b_1} = \hat{i} - \hat{j} + \hat{k}$</p>
+<p>$\vec{a_2} = 2\hat{i} - \hat{j} - \hat{k}, \quad \vec{b_2} = 2\hat{i} + \hat{j} + 2\hat{k}$</p>
+<p>$\vec{a_2} - \vec{a_1} = \hat{i} - 3\hat{j} - 2\hat{k}$</p>
+<p>$\vec{b_1} \times \vec{b_2} = \begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 1 &amp; -1 &amp; 1 \\ 2 &amp; 1 &amp; 2 \end{vmatrix}$</p>
+<p>$= \hat{i}(-2 - 1) - \hat{j}(2 - 2) + \hat{k}(1 - (-2)) = -3\hat{i} - 0\hat{j} + 3\hat{k}$.</p>
+<p>$|\vec{b_1} \times \vec{b_2}| = \sqrt{(-3)^2 + 0^2 + 3^2} = \sqrt{18} = 3\sqrt{2}$.</p>
+<p>Now, $(\vec{b_1} \times \vec{b_2}) \cdot (\vec{a_2} - \vec{a_1}) = (-3\hat{i} + 3\hat{k}) \cdot (\hat{i} - 3\hat{j} - 2\hat{k})$</p>
+<p>$= -3(1) + 0(-3) + 3(-2) = -3 - 6 = -9$.</p>
+<p>Shortest distance, $d = \left| \frac{-9}{3\sqrt{2}} \right| = \frac{3}{\sqrt{2}} = \frac{3\sqrt{2}}{2}$ units.</p>
+<p><strong>2. [Sample Paper 2023]</strong> Find the vector and cartesian equations of the line that passes through the points $(3, -2, -5)$ and $(3, -2, 6)$.</p>
+<p><em>Solution:</em></p>
+<p>Let $\vec{a} = 3\hat{i} - 2\hat{j} - 5\hat{k}$ and $\vec{b} = 3\hat{i} - 2\hat{j} + 6\hat{k}$.</p>
+<p>The equation of line passing through two points $\vec{a}$ and $\vec{b}$ is $\vec{r} = \vec{a} + \lambda(\vec{b} - \vec{a})$.</p>
+<p>$\vec{b} - \vec{a} = (3 - 3)\hat{i} + (-2 - (-2))\hat{j} + (6 - (-5))\hat{k} = 0\hat{i} + 0\hat{j} + 11\hat{k}$.</p>
+<p>Vector form: $\vec{r} = (3\hat{i} - 2\hat{j} - 5\hat{k}) + \lambda(11\hat{k})$.</p>
+<p>Cartesian form:</p>
+<p>$\frac{x - 3}{0} = \frac{y - (-2)}{0} = \frac{z - (-5)}{11}$.</p>
+<p>$\frac{x - 3}{0} = \frac{y + 2}{0} = \frac{z + 5}{11}$.</p>
+<p><strong>3. [CBSE 2018]</strong> Show that the lines $\frac{x - 5}{7} = \frac{y + 2}{-5} = \frac{z}{1}$ and $\frac{x}{1} = \frac{y}{2} = \frac{z}{3}$ are perpendicular to each other.</p>
+<p><em>Solution:</em></p>
+<p>The direction ratios of the first line are $a_1 = 7, b_1 = -5, c_1 = 1$.</p>
+<p>The direction ratios of the second line are $a_2 = 1, b_2 = 2, c_2 = 3$.</p>
+<p>Two lines are perpendicular if their direction vectors are perpendicular, i.e., their dot product is zero ($a_1a_2 + b_1b_2 + c_1c_2 = 0$).</p>
+<p>$a_1a_2 + b_1b_2 + c_1c_2 = 7(1) + (-5)(2) + 1(3) = 7 - 10 + 3 = 10 - 10 = 0$.</p>
+<p>Since the dot product is zero, the lines are perpendicular to each other.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-12-linear-programming"><a class="header" href="#chapter-12-linear-programming">Chapter 12: Linear Programming</a></h1>
+<p>Linear programming is a mathematical modelling technique in which a linear function is maximized or minimized when subjected to various constraints. This technique has been useful for guiding quantitative decisions in business planning, in industrial engineering, and to a lesser extent, in the social and physical sciences.</p>
+<h2 id="terminology"><a class="header" href="#terminology">Terminology</a></h2>
+<ul>
+<li><strong>Objective Function:</strong> A linear function $Z = ax + by$, where $a, b$ are constants, which has to be maximized or minimized is called a linear objective function. Variables $x$ and $y$ are called decision variables.</li>
+<li><strong>Constraints:</strong> The linear inequalities or equations or restrictions on the variables of a linear programming problem are called constraints. The conditions $x \ge 0, y \ge 0$ are known as non-negative restrictions.</li>
+<li><strong>Optimization Problem:</strong> A problem which seeks to maximize or minimize a linear function subject to certain constraints as determined by a set of linear inequalities is known as optimization problem. Linear programming problems (LPP) are a special type of optimization problem.</li>
+</ul>
+<h2 id="graphical-method-of-solving-lpp"><a class="header" href="#graphical-method-of-solving-lpp">Graphical Method of Solving LPP</a></h2>
+<ol>
+<li>Formulate the problem in terms of decision variables and objective function.</li>
+<li>Find the feasible region (common region determined by all constraints including non-negative constraints) and its corner points (vertices).</li>
+<li>Evaluate the objective function $Z = ax + by$ at each corner point. Let $M$ and $m$ respectively denote the largest and smallest values of these points.</li>
+<li>If feasible region is bounded, $M$ and $m$ are the maximum and minimum values of $Z$.</li>
+<li>If feasible region is unbounded, $M$ is max if open half plane $ax + by &gt; M$ has no point in common with the feasible region. Otherwise, $Z$ has no maximum value.</li>
+</ol>
+<div align="center">
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Axes -->
+  <line x1="50" y1="250" x2="350" y2="250" stroke="black" stroke-width="2" marker-end="url(#arrow-axis)" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="black" stroke-width="2" marker-end="url(#arrow-axis)" />
+  <text x="360" y="255" font-family="Arial" font-size="12">x</text>
+  <text x="35" y="45" font-family="Arial" font-size="12">y</text>
+  <!-- Constraints Lines -->
+  <!-- Line 1: x + y = 4 (Passes through (0, 200) and (200, 0) relative to origin 50, 250) -->
+  <line x1="50" y1="50" x2="250" y2="250" stroke="#f44336" stroke-width="2" />
+  <text x="70" y="70" font-family="Arial" font-size="12" fill="#f44336">x + y ≤ 4</text>
+  <!-- Line 2: y = 3 (Horizontal line passing through 50 + 150 = 200 y, relative y = 100) -->
+  <line x1="50" y1="100" x2="300" y2="100" stroke="#2196f3" stroke-width="2" />
+  <text x="310" y="105" font-family="Arial" font-size="12" fill="#2196f3">y ≤ 3</text>
+  <!-- Feasible Region Polygon -->
+  <polygon points="50,250 250,250 150,150 50,150" fill="#e0e0e0" stroke="black" opacity="0.5" />
+  <polygon points="50,250 200,250 150,100 50,100" fill="#ffeb3b" opacity="0.6" />
+  <!-- Corner Points -->
+  <circle cx="50" cy="250" r="4" fill="black" />
+  <text x="30" y="265" font-family="Arial" font-size="12">(0,0)</text>
+  <circle cx="200" cy="250" r="4" fill="black" />
+  <text x="200" y="265" font-family="Arial" font-size="12">(4,0) -&gt; Incorrect</text>
+  <!-- Let's fix the vertices for the shaded polygon -->
+</svg>
+<p><em>Fig 1. Feasible region and corner points</em></p>
+
+</div>
+
+<h2 id="competency-based-questions-11"><a class="header" href="#competency-based-questions-11">Competency-Based Questions</a></h2>
+<p><strong>1. [CBSE 2022]</strong> Solve the following Linear Programming Problem graphically:
+Maximize $Z = 3x + 4y$
+Subject to constraints:
+$x + y \le 4$
+$x \ge 0, y \ge 0$</p>
+<p><em>Solution:</em></p>
+<p>The feasible region is bounded by $x = 0$ ($y$-axis), $y = 0$ ($x$-axis) and the line $x + y = 4$.</p>
+<p>The corner points of the feasible region are:</p>
+<p>$O(0, 0)$, $A(4, 0)$, and $B(0, 4)$.</p>
+<p>Evaluate $Z = 3x + 4y$ at these corner points:</p>
+<p>At $O(0, 0)$, $Z = 3(0) + 4(0) = 0$.</p>
+<p>At $A(4, 0)$, $Z = 3(4) + 4(0) = 12$.</p>
+<p>At $B(0, 4)$, $Z = 3(0) + 4(4) = 16$.</p>
+<p>Since the region is bounded, the maximum value of $Z$ is 16, which occurs at $(0, 4)$.</p>
+<p><strong>2. [Sample Paper 2023]</strong> Solve the following LPP graphically:
+Minimize $Z = -3x + 4y$
+Subject to:
+$x + 2y \le 8$
+$3x + 2y \le 12$
+$x \ge 0, y \ge 0$</p>
+<p><em>Solution:</em></p>
+<p>The feasible region is determined by the lines $x + 2y = 8$, $3x + 2y = 12$ and the axes.</p>
+<p>Intersection of $x + 2y = 8$ and $3x + 2y = 12$:</p>
+<p>Subtract first from second: $2x = 4 \implies x = 2$.</p>
+<p>Substitute $x$ in first: $2 + 2y = 8 \implies 2y = 6 \implies y = 3$.</p>
+<p>Intersection point is $B(2, 3)$.</p>
+<p>The other corner points are $O(0,0)$, $A(4,0)$ (from $3x+2y=12$ intercept), $C(0,4)$ (from $x+2y=8$ intercept).</p>
+<p>Evaluate $Z = -3x + 4y$ at corners:</p>
+<p>$Z$ at $O(0,0) = 0$</p>
+<p>$Z$ at $A(4,0) = -3(4) + 4(0) = -12$</p>
+<p>$Z$ at $B(2,3) = -3(2) + 4(3) = -6 + 12 = 6$</p>
+<p>$Z$ at $C(0,4) = -3(0) + 4(4) = 16$</p>
+<p>The minimum value is $-12$ at the point $A(4, 0)$.</p>
+<p><strong>3. [CBSE 2019]</strong> Maximize $Z = x + 2y$ subject to the constraints $x \ge 3$, $x + y \ge 5$, $x + 2y \ge 6$, $y \ge 0$. Note that $x \ge 0$ since $x \ge 3$.</p>
+<p><em>Solution:</em></p>
+<p>Let’s find the feasible region. Note that all inequalities are $\ge$, meaning the region is likely unbounded.</p>
+<p>Lines: $x = 3$, $x + y = 5$, $x + 2y = 6$.</p>
+<p>Intersection $x = 3$ and $x + y = 5$: $y = 2 \implies P(3, 2)$.</p>
+<p>Intersection $x + y = 5$ and $x + 2y = 6$: $(x+2y) - (x+y) = 6 - 5 \implies y = 1 \implies x = 4 \implies Q(4, 1)$.</p>
+<p>Intersection $x + 2y = 6$ and $y = 0$: $x = 6 \implies R(6, 0)$.</p>
+<p>The corner points of the unbounded feasible region are $P(3, 2)$, $Q(4, 1)$, $R(6, 0)$.</p>
+<p>$Z = x + 2y$</p>
+<p>$Z$ at $P(3, 2) = 3 + 2(2) = 7$</p>
+<p>$Z$ at $Q(4, 1) = 4 + 2(1) = 6$</p>
+<p>$Z$ at $R(6, 0) = 6 + 2(0) = 6$</p>
+<p>The minimum value is 6. However, we are asked to <em>maximize</em> $Z$.</p>
+<p>Since the feasible region is unbounded and the coefficients of objective function are positive ($1, 2$), the value of $x+2y$ can be made arbitrarily large by picking large bounded values in the region.</p>
+<p>Therefore, the maximum value of $Z$ does not exist.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chapter-13-probability"><a class="header" href="#chapter-13-probability">Chapter 13: Probability</a></h1>
+<p>We revisit the concept of probability with advanced topics like conditional probability, Bayes’ theorem, multiplication theorem, and independence of events.</p>
+<h2 id="conditional-probability"><a class="header" href="#conditional-probability">Conditional Probability</a></h2>
+<p>The probability of an event $E$, given that the event $F$ has already occurred, is called conditional probability of $E$ given $F$, denoted by $P(E|F)$.
+$$ P(E|F) = \frac{P(E \cap F)}{P(F)} $$
+where $P(F) \neq 0$.</p>
+<h2 id="multiplication-theorem-on-probability"><a class="header" href="#multiplication-theorem-on-probability">Multiplication Theorem on Probability</a></h2>
+<p>Let $E$ and $F$ be two events associated with a sample space $S$. The probability of simultaneous occurrence of the events $E$ and $F$ is:
+$$ P(E \cap F) = P(E) P(F|E) = P(F) P(E|F) $$
+where $P(E) \neq 0$ and $P(F) \neq 0$.</p>
+<h2 id="independent-events"><a class="header" href="#independent-events">Independent Events</a></h2>
+<p>Two events $E$ and $F$ are said to be independent if the probability of occurrence of one of them is not affected by the occurrence of the other.
+Mathematically, $E$ and $F$ are independent if:
+$$ P(E \cap F) = P(E) \cdot P(F) $$</p>
+<h2 id="theorem-of-total-probability"><a class="header" href="#theorem-of-total-probability">Theorem of Total Probability</a></h2>
+<p>Let $\{E_1, E_2, \dots, E_n\}$ be a partition of the sample space $S$, and suppose that each of the events $E_1, E_2, \dots, E_n$ has nonzero probability of occurrence. Let $A$ be any event associated with $S$, then:
+$$ P(A) = P(E_1)P(A|E_1) + P(E_2)P(A|E_2) + \dots + P(E_n)P(A|E_n) = \sum_{j=1}^n P(E_j) P(A|E_j) $$</p>
+<h2 id="bayes-theorem"><a class="header" href="#bayes-theorem">Bayes’ Theorem</a></h2>
+<p>If $E_1, E_2, \dots, E_n$ are mutually exclusive and exhaustive events associated with a sample space, and $A$ is any event of non-zero probability, then:
+$$ P(E_i | A) = \frac{P(E_i) P(A | E_i)}{\sum_{j=1}^n P(E_j) P(A | E_j)} $$</p>
+<div align="center">
+<svg width="500" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Probabilities Tree for Bayes Theorem -->
+  <line x1="100" y1="100" x2="200" y2="50" stroke="black" stroke-width="2" />
+  <text x="120" y="60" font-family="Arial" font-size="12">P(E₁)</text>
+  <line x1="100" y1="100" x2="200" y2="150" stroke="black" stroke-width="2" />
+  <text x="120" y="150" font-family="Arial" font-size="12">P(E₂)</text>
+  <circle cx="200" cy="50" r="5" fill="#3f51b5" />
+  <text x="190" y="40" font-family="Arial" font-size="14" fill="#3f51b5">E₁</text>
+  <circle cx="200" cy="150" r="5" fill="#e91e63" />
+  <text x="190" y="140" font-family="Arial" font-size="14" fill="#e91e63">E₂</text>
+  <!-- From E1 -->
+  <line x1="200" y1="50" x2="300" y2="20" stroke="black" stroke-width="2" />
+  <text x="230" y="30" font-family="Arial" font-size="12">P(A|E₁)</text>
+  <circle cx="300" cy="20" r="5" fill="#4caf50" />
+  <text x="310" y="25" font-family="Arial" font-size="14">A</text>
+  <line x1="200" y1="50" x2="300" y2="80" stroke="black" stroke-width="2" />
+  <text x="230" y="85" font-family="Arial" font-size="12">P(~A|E₁)</text>
+  <circle cx="300" cy="80" r="5" fill="#4caf50" />
+  <text x="310" y="85" font-family="Arial" font-size="14">~A</text>
+  <!-- From E2 -->
+  <line x1="200" y1="150" x2="300" y2="120" stroke="black" stroke-width="2" />
+  <text x="230" y="125" font-family="Arial" font-size="12">P(A|E₂)</text>
+  <circle cx="300" cy="120" r="5" fill="#4caf50" />
+  <text x="310" y="125" font-family="Arial" font-size="14">A</text>
+  <line x1="200" y1="150" x2="300" y2="180" stroke="black" stroke-width="2" />
+  <text x="230" y="185" font-family="Arial" font-size="12">P(~A|E₂)</text>
+  <circle cx="300" cy="180" r="5" fill="#4caf50" />
+  <text x="310" y="185" font-family="Arial" font-size="14">~A</text>
+</svg>
+<p><em>Fig 1. Tree Diagram demonstrating the Theorem of Total Probability and Bayes' Theorem</em></p>
+
+</div>
+
+<h2 id="competency-based-questions-12"><a class="header" href="#competency-based-questions-12">Competency-Based Questions</a></h2>
+<p><strong>1. [Sample Paper 2024]</strong> An urn contains 5 red and 5 black balls. A ball is drawn at random, its colour is noted and is returned to the urn. Moreover, 2 additional balls of the colour drawn are put in the urn and then a ball is drawn at random. What is the probability that the second ball is red?</p>
+<p><em>Solution:</em></p>
+<p>Let $R_1$ be the event that the first ball is red and $B_1$ be the event that the first ball is black.</p>
+<p>$P(R_1) = 5/10 = 1/2$.</p>
+<p>$P(B_1) = 5/10 = 1/2$.</p>
+<p>Let $R_2$ be the event that the second ball is red.</p>
+<p>If $R_1$ occurs, the urn will contain $5+2 = 7$ red balls and 5 black balls. Total balls = 12.</p>
+<p>$P(R_2 | R_1) = 7/12$.</p>
+<p>If $B_1$ occurs, the urn will contain 5 red balls and $5+2 = 7$ black balls. Total balls = 12.</p>
+<p>$P(R_2 | B_1) = 5/12$.</p>
+<p>By Total Probability Theorem:</p>
+<p>$P(R_2) = P(R_1)P(R_2 | R_1) + P(B_1)P(R_2 | B_1)$</p>
+<p>$P(R_2) = (1/2)(7/12) + (1/2)(5/12)$</p>
+<p>$P(R_2) = 7/24 + 5/24 = 12/24 = 1/2$.</p>
+<p><strong>2. [CBSE 2021]</strong> A bag contains 4 red and 4 black balls, another bag contains 2 red and 6 black balls. One of the two bags is selected at random and a ball is drawn from the bag which is found to be red. Find the probability that the ball is drawn from the first bag.</p>
+<p><em>Solution:</em></p>
+<p>Let $E_1$ be the event of choosing the first bag and $E_2$ be the event of choosing the second bag.</p>
+<p>$P(E_1) = 1/2$. $P(E_2) = 1/2$.</p>
+<p>Let $A$ be the event of drawing a red ball.</p>
+<p>$P(A|E_1) = P(\text{drawing a red ball from Bag 1}) = 4/8 = 1/2$.</p>
+<p>$P(A|E_2) = P(\text{drawing a red ball from Bag 2}) = 2/8 = 1/4$.</p>
+<p>We need to find $P(E_1|A)$. By Bayes’ Theorem:</p>
+<p>$$ P(E_1|A) = \frac{P(E_1) P(A|E_1)}{P(E_1)P(A|E_1) + P(E_2)P(A|E_2)} $$</p>
+<p>$$ P(E_1|A) = \frac{(1/2)(1/2)}{(1/2)(1/2) + (1/2)(1/4)} $$</p>
+<p>$$ P(E_1|A) = \frac{1/4}{1/4 + 1/8} = \frac{1/4}{3/8} = \frac{1}{4} \times \frac{8}{3} = \frac{2}{3} $$</p>
+<p><strong>3. [CBSE 2019]</strong> If A and B are two events such that $P(A) = \frac{1}{4}, P(B) = \frac{1}{2}$ and $P(A \cap B) = \frac{1}{8}$. Find $P(\text{not } A \text{ and not } B)$.</p>
+<p><em>Solution:</em></p>
+<p>$P(\text{not } A \text{ and not } B) = P(A’ \cap B’)$.</p>
+<p>By De Morgan’s Law, $A’ \cap B’ = (A \cup B)’$.</p>
+<p>So, $P(A’ \cap B’) = P((A \cup B)’) = 1 - P(A \cup B)$.</p>
+<p>We know $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.</p>
+<p>$P(A \cup B) = \frac{1}{4} + \frac{1}{2} - \frac{1}{8} = \frac{2}{8} + \frac{4}{8} - \frac{1}{8} = \frac{5}{8}$.</p>
+<p>Therefore, $P(A’ \cap B’) = 1 - \frac{5}{8} = \frac{3}{8}$.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="mathjax-config-6a9e0083.js"></script>
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
