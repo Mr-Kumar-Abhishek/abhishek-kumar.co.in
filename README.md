@@ -19,7 +19,13 @@ Live Site: [abhishek-kumar.co.in](https://abhishek-kumar.co.in/)
 
 ## 📊 Cost Estimation
 
-We have calculated the estimated development cost of this entire repository using the Constructive Cost Model (COCOMO). You can view the full calculations and pricing breakdown in the [`cocomo_calculation.md`](cocomo_calculation.md) file.
+We have calculated the estimated development cost of this entire repository (226,371 lines of code) using the Constructive Cost Model (COCOMO) assuming a $5,000/PM salary:
+
+- **Organic Mode:** ~30.3 Months / $3.56 Million
+- **Semi-Detached Mode:** ~30.8 Months / $6.51 Million
+- **Embedded Mode:** ~30.2 Months / $12.05 Million
+
+You can view the full calculations and breakdown in the [`cocomo_calculation.md`](cocomo_calculation.md) file.
 
 ## 🚀 Architecture
 
