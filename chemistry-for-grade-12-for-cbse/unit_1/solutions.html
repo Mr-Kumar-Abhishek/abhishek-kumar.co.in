@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Unit 1: Solutions - Chemistry Grade 12 for CBSE</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-0392ca55.css">
+        <link rel="stylesheet" href="../css/chrome-fc474251.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-78eb6896.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-a9933d8b.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Chemistry Grade 12 for CBSE</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="unit-1-solutions"><a class="header" href="#unit-1-solutions">Unit 1: Solutions</a></h1>
+<h2 id="11-types-of-solutions"><a class="header" href="#11-types-of-solutions">1.1 Types of Solutions</a></h2>
+<p>A solution is a homogeneous mixture of two or more chemically non-reacting substances whose composition can be varied within certain limits.</p>
+<ul>
+<li><strong>Solute</strong>: Component present in smaller quantity.</li>
+<li><strong>Solvent</strong>: Component present in larger quantity.</li>
+</ul>
+<p>Solutions can be classified based on the physical state of the solvent. Our primary focus is on liquid solutions.</p>
+<h2 id="12-expression-of-concentration-of-solutions"><a class="header" href="#12-expression-of-concentration-of-solutions">1.2 Expression of Concentration of Solutions</a></h2>
+<p>The concentration of a solution is the amount of solute present in a given quantity of solvent or solution.</p>
+<ul>
+<li><strong>Mass Percentage (w/w)</strong>: \( \text{Mass } % = \frac{\text{Mass of component in solution}}{\text{Total mass of solution}} \times 100 \)</li>
+<li><strong>Volume Percentage (v/v)</strong>: \( \text{Volume } % = \frac{\text{Volume of component}}{\text{Total volume of solution}} \times 100 \)</li>
+<li><strong>Molarity (M)</strong>: \( M = \frac{\text{Moles of solute}}{\text{Volume of solution in litres}} \)</li>
+<li><strong>Molality (m)</strong>: \( m = \frac{\text{Moles of solute}}{\text{Mass of solvent in kg}} \)</li>
+<li><strong>Mole Fraction (x)</strong>: \( x_A = \frac{n_A}{n_A + n_B} \)</li>
+</ul>
+<h2 id="13-solubility-of-gases-in-liquids"><a class="header" href="#13-solubility-of-gases-in-liquids">1.3 Solubility of Gases in Liquids</a></h2>
+<p>The solubility of gases in liquids is greatly affected by pressure and temperature.</p>
+<p><strong>Henry’s Law</strong>: At a constant temperature, the solubility of a gas in a liquid is directly proportional to the partial pressure of the gas present above the surface of liquid or solution.
+\[ p = K_H \cdot x \]
+where \( p \) is the partial pressure of the gas, \( x \) is the mole fraction of the gas in solution, and \( K_H \) is Henry’s law constant.</p>
+<div style="text-align: center; margin: 20px 0;">
+<svg width="400" height="300" viewbox="0 -20 400 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- Axes -->
+  <line x1="50" y1="250" x2="350" y2="250" stroke="black" stroke-width="2" />
+  <line x1="50" y1="250" x2="50" y2="50" stroke="black" stroke-width="2" />
+  <!-- Graph line -->
+  <line x1="50" y1="250" x2="300" y2="80" stroke="blue" stroke-width="3" />
+  <!-- Labels -->
+  <text x="200" y="280" font-family="Arial" font-size="14" text-anchor="middle">Mole fraction of gas in solution (x)</text>
+  <text x="30" y="150" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90, 30, 150)">Partial pressure of HCl (torr)</text>
+  <text x="250" y="120" font-family="Arial" font-size="14" fill="blue">Slope = K_H</text>
+  <text x="200" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Henry's Law for HCl in Cyclohexane (293 K)</text>
+</svg>
+<p><em>Figure 1.1: Experimental results showing partial pressure versus mole fraction of HCl in cyclohexane.</em></p>
+
+</div>
+
+<h2 id="14-raoults-law-and-solid-solutions"><a class="header" href="#14-raoults-law-and-solid-solutions">1.4 Raoult’s Law and Solid Solutions</a></h2>
+<p>For a solution of volatile liquids, the partial vapour pressure of each component of the solution is directly proportional to its mole fraction present in solution.
+\[ p_1 = p_1^0 x_1 \]
+where \( p_1^0 \) is the vapour pressure of pure component 1 at the same temperature.</p>
+<p>An <strong>Ideal Solution</strong> strictly obeys Raoult’s law over the entire range of concentration. Most solutions, however, are non-ideal and show either positive or negative deviation from Raoult’s law.</p>
+<h2 id="15-colligative-properties"><a class="header" href="#15-colligative-properties">1.5 Colligative Properties</a></h2>
+<p>Properties of dilute solutions which depend only on the number of solute particles (molecules/ions) and not on their nature.</p>
+<h3 id="1-relative-lowering-of-vapour-pressure"><a class="header" href="#1-relative-lowering-of-vapour-pressure">1. Relative Lowering of Vapour Pressure</a></h3>
+<p>When a non-volatile solute is added to a solvent, the vapour pressure of the solution is lower than that of the pure solvent.
+\[ \frac{p_1^0 - p_1}{p_1^0} = x_2 \]</p>
+<h3 id="2-elevation-of-boiling-point--delta-t_b-"><a class="header" href="#2-elevation-of-boiling-point--delta-t_b-">2. Elevation of Boiling Point (\( \Delta T_b \))</a></h3>
+<p>The boiling point of a solution containing a non-volatile solute is higher than that of the pure solvent.
+\[ \Delta T_b = K_b \cdot m \]
+where \( K_b \) is the molal elevation constant (ebullioscopic constant) and \( m \) is molality.</p>
+<h3 id="3-depression-of-freezing-point--delta-t_f-"><a class="header" href="#3-depression-of-freezing-point--delta-t_f-">3. Depression of Freezing Point (\( \Delta T_f \))</a></h3>
+<p>The freezing point of a solution is lower than that of the pure solvent.
+\[ \Delta T_f = K_f \cdot m \]
+where \( K_f \) is the molal depression constant (cryoscopic constant).</p>
+<h3 id="4-osmosis-and-osmotic-pressure--pi-"><a class="header" href="#4-osmosis-and-osmotic-pressure--pi-">4. Osmosis and Osmotic Pressure (\( \pi \))</a></h3>
+<p>Osmosis is the spontaneous flow of solvent molecules from a region of lower solute concentration to a region of higher solute concentration through a semi-permeable membrane.
+The osmotic pressure is the excess pressure that must be applied to a solution to prevent osmosis.
+\[ \pi = C R T \]
+where \( C \) is the molar concentration (molarity) of the solution, \( R \) is the gas constant, and \( T \) is temperature.</p>
+<h2 id="16-abnormal-molecular-masses-and-vant-hoff-factor"><a class="header" href="#16-abnormal-molecular-masses-and-vant-hoff-factor">1.6 Abnormal Molecular Masses and van’t Hoff Factor</a></h2>
+<p>When a solute undergoes dissociation or association in a solution, the observed molecular mass differs from the normal (expected) molecular mass.
+The van’t Hoff factor (\( i \)) accounts for the extent of dissociation or association.</p>
+<p>\[ i = \frac{\text{Normal molar mass}}{\text{Abnormal molar mass}} = \frac{\text{Observed colligative property}}{\text{Calculated colligative property}} \]
+\[ i = \frac{\text{Total number of moles of particles after association/dissociation}}{\text{Number of moles of particles before association/dissociation}} \]</p>
+<p>Modified Colligative Properties Equations:</p>
+<ul>
+<li>Relative lowering of vapour pressure: \( \frac{p_1^0 - p_1}{p_1^0} = i \cdot x_2 \)</li>
+<li>Elevation of Boiling Point: \( \Delta T_b = i \cdot K_b \cdot m \)</li>
+<li>Depression of Freezing Point: \( \Delta T_f = i \cdot K_f \cdot m \)</li>
+<li>Osmotic Pressure: \( \pi = i \cdot C R T \)</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-cbqs"><a class="header" href="#competency-based-questions-cbqs">Competency-Based Questions (CBQs)</a></h2>
+<p><strong>Q1. (CBSE 2023) Based on intermolecular forces and Raoult’s law, a solution of chloroform (\(CHCl_3\)) and acetone (\(CH_3COCH_3\)) shows a specific deviation. Identify the type of deviation and provide the underlying reason.</strong></p>
+<br />
+<p><strong>Answer:</strong>
+The solution of chloroform and acetone shows a <strong>negative deviation</strong> from Raoult’s law.</p>
+<p><em>Reason:</em> In pure state, both chloroform and acetone have dipole-dipole interactions. When they are mixed, the hydrogen atom of chloroform forms a hydrogen bond with the highly electronegative oxygen atom of acetone:
+\[ CH_3COCH_3 \cdots H-CCl_3 \]
+Due to this new intermolecular hydrogen bonding, the interactions between chloroform and acetone molecules are stronger than the pure A-A and B-B interactions. This decreases the escaping tendency of molecules, leading to a lower vapour pressure than predicted by Raoult’s law, and hence a negative deviation.</p>
+<p><strong>Q2. (Sample Paper 2023) A 5% (by mass) solution of cane sugar (molar mass 342 g/mol) in water has a freezing point of 271 K. Calculate the freezing point of a 5% (by mass) solution of glucose (molar mass 180 g/mol) in water if the freezing point of pure water is 273.15 K.</strong></p>
+<br />
+<p><strong>Answer:</strong>
+It is given that mass percentage of both solutions is 5%.
+This means 5 g of solute is present in 100 g of solution, i.e. mass of solvent (water) = 95 g.</p>
+<p><strong>For cane sugar solution:</strong></p>
+<ul>
+<li>\( w_2 \) (cane sugar) = 5 g</li>
+<li>\( M_2 \) = 342 g/mol</li>
+<li>\( w_1 \) (water) = 95 g</li>
+<li>\( \Delta T_f \) = Freezing point of pure water - Freezing point of solution = 273.15 - 271 = 2.15 K</li>
+</ul>
+<p>Using the formula:
+\[ \Delta T_f = K_f \cdot \frac{w_2 \times 1000}{M_2 \times w_1} \]
+\[ 2.15 = K_f \cdot \frac{5 \times 1000}{342 \times 95} \]
+\[ K_f = \frac{2.15 \times 342 \times 95}{5000} = 13.99 , \text{K kg mol}^{-1} \]</p>
+<p><strong>For glucose solution:</strong></p>
+<ul>
+<li>\( w_2 \) (glucose) = 5 g</li>
+<li>\( M_2 \) = 180 g/mol</li>
+<li>\( w_1 \) (water) = 95 g</li>
+<li>\( K_f \) = 13.99 K kg/mol</li>
+</ul>
+<p>\[ \Delta T_f’ = K_f \cdot \frac{w_2 \times 1000}{M_2 \times w_1} \]
+\[ \Delta T_f’ = 13.99 \cdot \frac{5 \times 1000}{180 \times 95} = 4.09 , \text{K} \]</p>
+<p>The freezing point of the glucose solution = Freezing point of pure water - \(\Delta T_f’\)
+\[ T_f’ = 273.15 - 4.09 = 269.06 , \text{K} \]</p>
+<p><strong>Q3. (CBSE 2020) Why is osmotic pressure considered the preferred colligative property for determining the molecular masses of macromolecules such as proteins and polymers?</strong></p>
+<br />
+<p><strong>Answer:</strong>
+Osmotic pressure is preferred for determining the molecular masses of macromolecules for the following reasons:</p>
+<ol>
+<li><strong>Magnitude:</strong> The osmotic pressure values are reasonably large and measurable even for very dilute solutions of macromolecules. In contrast, the changes in boiling point or freezing point are negligibly small.</li>
+<li><strong>Temperature:</strong> Osmotic pressure is measured at room temperature, which prevents the denaturation or degradation of sensitive biomolecules like proteins that might decompose at higher temperatures (e.g., during boiling point elevation).</li>
+<li><strong>Molarity vs Molality:</strong> Osmotic pressure depends on molarity instead of molality. For large polymers, it is easier to prepare solutions of known volume than known mass of solvent accurately.</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../unit_2/electrochemistry.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../unit_2/electrochemistry.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-09f2665d.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
