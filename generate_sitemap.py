@@ -21,7 +21,9 @@ def generate():
         "CS-grade-12-for-CBSE",
         "accountancy-grade-11-for-cbse",
         "mathematics-grade-11-for-cbse",
-        "mathematics-for-grade-12-for-cbse"
+        "mathematics-for-grade-12-for-cbse",
+        "applied-mathematics-for-grade-11-cbse",
+        "applied-mathematics-for-grade-12-cbse"
     ]
     
     urls = []
