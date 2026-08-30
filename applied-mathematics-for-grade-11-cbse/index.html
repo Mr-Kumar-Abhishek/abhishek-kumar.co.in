@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Unit 1: Numbers, Quantification and Numerical Applications - Applied Mathematics Grade 11 (CBSE)</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\\[','\\]']],
+            processEscapes: true
+          }
+        });
+        </script>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-23da65e8.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-b69d0fa4.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Applied Mathematics Grade 11 (CBSE)</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="unit-1-numbers-quantification-and-numerical-applications"><a class="header" href="#unit-1-numbers-quantification-and-numerical-applications">Unit 1: Numbers, Quantification and Numerical Applications</a></h1>
+<p>Mathematics provides a powerful way of modelling real-world behavior. In this unit, we explore various quantitative tools and numerical applications essential for fields like finance, computing, and logical deduction.</p>
+<h2 id="1-binary-numbers"><a class="header" href="#1-binary-numbers">1. Binary Numbers</a></h2>
+<p>A <strong>number system</strong> is a method for expressing quantities. The decimal system (Base 10) uses digits 0-9. The <strong>binary system</strong> (Base 2) is used extensively in computing and uses only two digits: <code>0</code> and <code>1</code>.</p>
+<h3 id="converting-decimal-to-binary"><a class="header" href="#converting-decimal-to-binary">Converting Decimal to Binary</a></h3>
+<p>To convert a decimal number to binary, repeatedly divide the number by 2 and record the remainders.
+The binary representation is formed by reading the remainders from bottom to top.</p>
+<p><strong>Example</strong>: Convert 25 to binary.</p>
+<ul>
+<li>$25 \div 2 = 12$ remainder $1$</li>
+<li>$12 \div 2 = 6$ remainder $0$</li>
+<li>$6 \div 2 = 3$ remainder $0$</li>
+<li>$3 \div 2 = 1$ remainder $1$</li>
+<li>$1 \div 2 = 0$ remainder $1$</li>
+</ul>
+<p>Reading bottom to top, $(25)_{10} = (11001)_2$.</p>
+<h3 id="converting-binary-to-decimal"><a class="header" href="#converting-binary-to-decimal">Converting Binary to Decimal</a></h3>
+<p>Multiply each binary digit by $2^n$, where $n$ is the position of the digit starting from 0 on the right.</p>
+<p><strong>Example</strong>: Convert $(1011)_2$ to decimal.
+$$ (1011)<em>2 = 1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 1 \times 2^0 $$
+$$ = 8 + 0 + 2 + 1 = (11)</em>{10} $$</p>
+<hr>
+<h2 id="2-indices-logarithm-and-antilogarithm"><a class="header" href="#2-indices-logarithm-and-antilogarithm">2. Indices, Logarithm and Antilogarithm</a></h2>
+<h3 id="indices"><a class="header" href="#indices">Indices</a></h3>
+<p>Indices (or powers) tell us how many times to multiply a number by itself.
+Let $a^x = N$. Here $a$ is the base and $x$ is the index or exponent.</p>
+<h3 id="logarithm"><a class="header" href="#logarithm">Logarithm</a></h3>
+<p>The logarithm is the inverse operation to exponentiation. If $a^x = N$, then the logarithm of $N$ to the base $a$ is $x$.
+$$ \log_a N = x $$
+(where $a &gt; 0, a \neq 1$)</p>
+<p><strong>Types of Logarithms:</strong></p>
+<ul>
+<li><strong>Common Logarithm</strong>: Base 10, often written as $\log x$.</li>
+<li><strong>Natural Logarithm</strong>: Base $e$ (approx. 2.718), often written as $\ln x$.</li>
+</ul>
+<h3 id="laws-of-logarithms"><a class="header" href="#laws-of-logarithms">Laws of Logarithms</a></h3>
+<ol>
+<li><strong>Product Rule</strong>: $\log_a (mn) = \log_a m + \log_a n$</li>
+<li><strong>Quotient Rule</strong>: $\log_a \left(\frac{m}{n}\right) = \log_a m - \log_a n$</li>
+<li><strong>Power Rule</strong>: $\log_a (m^n) = n \log_a m$</li>
+<li><strong>Change of Base Rule</strong>: $\log_a m = \frac{\log_b m}{\log_b a}$</li>
+</ol>
+<h3 id="antilogarithm"><a class="header" href="#antilogarithm">Antilogarithm</a></h3>
+<p>The antilogarithm of a number is the number for which the given value is the logarithm.
+If $\log_{10} x = y$, then $x = \text{Antilog}(y) = 10^y$.</p>
+<hr>
+<h2 id="3-clock"><a class="header" href="#3-clock">3. Clock</a></h2>
+<p>A clock face is a circle of $360^\circ$ divided into 12 hour spaces ($30^\circ$ each) and 60 minute spaces ($6^\circ$ each).</p>
+<div style="text-align: center;">
+<svg width="200" height="200" viewbox="0 0 200 200">
+  <!-- Clock Circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="black" stroke-width="4" />
+  <circle cx="100" cy="100" r="4" fill="black" />
+  <!-- Hour Markers -->
+  <line x1="100" y1="10" x2="100" y2="20" stroke="black" stroke-width="3" />
+  <line x1="100" y1="180" x2="100" y2="190" stroke="black" stroke-width="3" />
+  <line x1="10" y1="100" x2="20" y2="100" stroke="black" stroke-width="3" />
+  <line x1="180" y1="100" x2="190" y2="100" stroke="black" stroke-width="3" />
+  <!-- Hands for 10:10 -->
+  <line x1="100" y1="100" x2="60" y2="70" stroke="green" stroke-width="4" /> <!-- Hour -->
+  <line x1="100" y1="100" x2="140" y2="40" stroke="blue" stroke-width="2" /> <!-- Minute -->
+</svg>
+<p><em>Fig 1.1: Clock face showing angles between hands</em></p>
+
+</div>
+
+<h3 id="speeds-of-hands"><a class="header" href="#speeds-of-hands">Speeds of Hands</a></h3>
+<ul>
+<li><strong>Minute hand</strong>: Traverses $360^\circ$ in 60 minutes. Speed = $6^\circ$ per minute.</li>
+<li><strong>Hour hand</strong>: Traverses $30^\circ$ in 60 minutes. Speed = $0.5^\circ$ per minute.</li>
+</ul>
+<p><strong>Angle between hands at time $H$ hours and $M$ minutes</strong>:
+$$ \theta = |30H - 5.5M|^\circ $$
+<em>(Note: If $\theta &gt; 180^\circ$, the reflex angle is $360^\circ - \theta$.)</em></p>
+<p><strong>Example</strong>: Find the angle at 4:20.
+$$ \theta = |30(4) - 5.5(20)| = |120 - 110| = 10^\circ $$</p>
+<hr>
+<h2 id="4-calendar"><a class="header" href="#4-calendar">4. Calendar</a></h2>
+<p>The calendar concept is based on finding the number of <strong>Odd Days</strong> – days remaining after grouping periods into full weeks.</p>
+<ul>
+<li><strong>Ordinary Year</strong>: 365 days = 52 weeks + 1 odd day.</li>
+<li><strong>Leap Year</strong>: 366 days = 52 weeks + 2 odd days.</li>
+</ul>
+<h3 id="odd-days-in-centuries"><a class="header" href="#odd-days-in-centuries">Odd Days in Centuries</a></h3>
+<ul>
+<li>100 years: 5 odd days</li>
+<li>200 years: 3 odd days</li>
+<li>300 years: 1 odd day</li>
+<li>400 years (and multiples): 0 odd days</li>
+</ul>
+<h3 id="finding-the-day-of-the-week"><a class="header" href="#finding-the-day-of-the-week">Finding the Day of the Week</a></h3>
+<p>Count the total odd days up to the given date and map the result to:</p>
+<ul>
+<li>0 = Sunday</li>
+<li>1 = Monday</li>
+<li>2 = Tuesday</li>
+<li>… 6 = Saturday</li>
+</ul>
+<hr>
+<h2 id="5-time-work-and-distance"><a class="header" href="#5-time-work-and-distance">5. Time, Work and Distance</a></h2>
+<h3 id="time-and-work"><a class="header" href="#time-and-work">Time and Work</a></h3>
+<p>If a person can finish a piece of work in $n$ days, their 1-day’s work is $\frac{1}{n}$.
+If A does $\frac{1}{x}$ work in a day and B does $\frac{1}{y}$ work in a day, together their 1-day work is $\left(\frac{1}{x} + \frac{1}{y}\right)$.</p>
+<h3 id="time-and-distance"><a class="header" href="#time-and-distance">Time and Distance</a></h3>
+<p>The fundamental relationship is:
+$$ \text{Distance} = \text{Speed} \times \text{Time} $$</p>
+<hr>
+<h2 id="6-seating-arrangement"><a class="header" href="#6-seating-arrangement">6. Seating Arrangement</a></h2>
+<p>Logical deduction determines the exact position of a person based on given clues.</p>
+<ul>
+<li><strong>Linear Arrangement</strong>: People sitting in a row. Left/Right tracking is crucial.</li>
+<li><strong>Circular Arrangement</strong>: People sitting around a table. Left/Right depends on whether they face the center or outwards.</li>
+</ul>
+<div style="text-align: center;">
+<svg width="240" height="240" viewbox="0 0 240 240">
+  <circle cx="120" cy="120" r="80" fill="none" stroke="gray" stroke-width="2" />
+  <circle cx="120" cy="40" r="10" fill="blue" />
+  <text x="115" y="30" font-size="12">A</text>
+  <circle cx="120" cy="200" r="10" fill="red" />
+  <text x="115" y="225" font-size="12">C</text>
+  <circle cx="40" cy="120" r="10" fill="green" />
+  <text x="25" y="125" font-size="12">D</text>
+  <circle cx="200" cy="120" r="10" fill="orange" />
+  <text x="215" y="125" font-size="12">B</text>
+</svg>
+<p><em>Fig 1.2: Circular Seating Arrangement</em></p>
+
+</div>
+
+<hr>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<ol>
+<li>
+<p><strong>(Application/Analysis):</strong> A digital system tracks user login times using a secondary processor that registers time in binary format. If a user logged in at the binary equivalent of $105$ minutes past midnight, what is the binary representation of this minute? Furthermore, convert the binary time <code>1001011</code> to minutes to verify the logout time in decimal.</p>
+</li>
+<li>
+<p><strong>(Logarithms in Real Life):</strong> Certain virus spreads follow an exponential decay when quarantined, modeled by the equation $P = P_0 (0.8)^t$, where $t$ is the number of days. If the town had 10,000 cases initially ($P_0$), use logarithms to find out approximately how many days it will take for cases to drop below 100. (Given $\log 0.8 = -0.0969$).</p>
+</li>
+<li>
+<p><strong>(Clock/Angles):</strong> An automated telescope needs to align with a star tracking algorithm at exactly 8:15 PM. To ensure exact calibration, the software calculates the interior angle between the hour and minute hands of an analog clock at 8:15. What is this analytical angle?</p>
+</li>
+<li>
+<p><strong>(Calendar/Calculation):</strong> The historical independence day of a certain nation was celebrated on July 4, 1776. By counting the number of odd days starting from 0001 AD, determine the exact day of the week this event occurred.</p>
+</li>
+<li>
+<p><strong>(Time &amp; Work):</strong> A construction project requires a bridge to be built. Company A can build it in 45 days. Company B can build it in 60 days. An external supervisor is tracking this project using project management software. If both companies work together for 12 days, what fraction of the work remains for the supervisor to allocate to a third company?</p>
+</li>
+</ol>
+<br>
+<h3 id="answers-to-competency-based-questions"><a class="header" href="#answers-to-competency-based-questions">Answers to Competency-Based Questions</a></h3>
+<p><strong>1. Application/Analysis:</strong></p>
+<ul>
+<li>$105 = 64 + 32 + 8 + 1 = 2^6 + 2^5 + 2^3 + 2^0 \implies 1101001_2$.</li>
+<li>$1001011_2 = 1(64) + 0(32) + 0(16) + 1(8) + 0(4) + 1(2) + 1(1) = 64 + 8 + 2 + 1 = 75$ minutes.</li>
+</ul>
+<p><strong>2. Logarithms in Real Life:</strong>
+$$ 100 = 10000(0.8)^t \implies 0.01 = 0.8^t $$
+Taking log on both sides:
+$$ \log(0.01) = t \log(0.8) \implies -2 = t(-0.0969) $$
+$$ t = \frac{2}{0.0969} \approx 20.64 \text{ days} $$</p>
+<p><strong>3. Clock/Angles:</strong>
+At 8:15, $H=8$ and $M=15$.
+$$ \theta = |30(8) - 5.5(15)| = |240 - 82.5| = 157.5^\circ $$</p>
+<p><strong>4. Calendar/Calculation:</strong>
+Total Odd Days up to 1775:</p>
+<ul>
+<li>1600 years = $0$ odd days.</li>
+<li>100 years = $5$ odd days.</li>
+<li>75 years = 18 leap years + 57 ordinary years = $(18 \times 2) + (57 \times 1) = 36 + 57 = 93 \equiv 2$ odd days.
+Odd days in 1776 up to July 4 (1776 is leap):</li>
+<li>Jan(3) + Feb(1) + Mar(3) + Apr(2) + May(3) + Jun(2) + Jul(4) = $18 \equiv 4$ odd days.</li>
+<li>Total $= 5 + 2 + 4 = 11 \equiv 4$ odd days. 0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu. <strong>Thursday</strong>.</li>
+</ul>
+<p><strong>5. Time &amp; Work:</strong>
+Work done by A and B in 1 day $= \frac{1}{45} + \frac{1}{60} = \frac{4+3}{180} = \frac{7}{180}$.
+Work done in 12 days $= 12 \times \frac{7}{180} = \frac{7}{15}$.
+Fraction of work remaining $= 1 - \frac{7}{15} = \frac{8}{15}$.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+                            <a rel="next prefetch" href="chapter_2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+                    <a rel="next prefetch" href="chapter_2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

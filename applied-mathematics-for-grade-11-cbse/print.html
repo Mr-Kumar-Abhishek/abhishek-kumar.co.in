@@ -1,0 +1,1251 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Applied Mathematics Grade 11 (CBSE)</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            displayMath: [['$$','$$'], ['\\[','\\]']],
+            processEscapes: true
+          }
+        });
+        </script>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-23da65e8.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-b69d0fa4.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Applied Mathematics Grade 11 (CBSE)</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="unit-1-numbers-quantification-and-numerical-applications"><a class="header" href="#unit-1-numbers-quantification-and-numerical-applications">Unit 1: Numbers, Quantification and Numerical Applications</a></h1>
+<p>Mathematics provides a powerful way of modelling real-world behavior. In this unit, we explore various quantitative tools and numerical applications essential for fields like finance, computing, and logical deduction.</p>
+<h2 id="1-binary-numbers"><a class="header" href="#1-binary-numbers">1. Binary Numbers</a></h2>
+<p>A <strong>number system</strong> is a method for expressing quantities. The decimal system (Base 10) uses digits 0-9. The <strong>binary system</strong> (Base 2) is used extensively in computing and uses only two digits: <code>0</code> and <code>1</code>.</p>
+<h3 id="converting-decimal-to-binary"><a class="header" href="#converting-decimal-to-binary">Converting Decimal to Binary</a></h3>
+<p>To convert a decimal number to binary, repeatedly divide the number by 2 and record the remainders.
+The binary representation is formed by reading the remainders from bottom to top.</p>
+<p><strong>Example</strong>: Convert 25 to binary.</p>
+<ul>
+<li>$25 \div 2 = 12$ remainder $1$</li>
+<li>$12 \div 2 = 6$ remainder $0$</li>
+<li>$6 \div 2 = 3$ remainder $0$</li>
+<li>$3 \div 2 = 1$ remainder $1$</li>
+<li>$1 \div 2 = 0$ remainder $1$</li>
+</ul>
+<p>Reading bottom to top, $(25)_{10} = (11001)_2$.</p>
+<h3 id="converting-binary-to-decimal"><a class="header" href="#converting-binary-to-decimal">Converting Binary to Decimal</a></h3>
+<p>Multiply each binary digit by $2^n$, where $n$ is the position of the digit starting from 0 on the right.</p>
+<p><strong>Example</strong>: Convert $(1011)_2$ to decimal.
+$$ (1011)<em>2 = 1 \times 2^3 + 0 \times 2^2 + 1 \times 2^1 + 1 \times 2^0 $$
+$$ = 8 + 0 + 2 + 1 = (11)</em>{10} $$</p>
+<hr>
+<h2 id="2-indices-logarithm-and-antilogarithm"><a class="header" href="#2-indices-logarithm-and-antilogarithm">2. Indices, Logarithm and Antilogarithm</a></h2>
+<h3 id="indices"><a class="header" href="#indices">Indices</a></h3>
+<p>Indices (or powers) tell us how many times to multiply a number by itself.
+Let $a^x = N$. Here $a$ is the base and $x$ is the index or exponent.</p>
+<h3 id="logarithm"><a class="header" href="#logarithm">Logarithm</a></h3>
+<p>The logarithm is the inverse operation to exponentiation. If $a^x = N$, then the logarithm of $N$ to the base $a$ is $x$.
+$$ \log_a N = x $$
+(where $a &gt; 0, a \neq 1$)</p>
+<p><strong>Types of Logarithms:</strong></p>
+<ul>
+<li><strong>Common Logarithm</strong>: Base 10, often written as $\log x$.</li>
+<li><strong>Natural Logarithm</strong>: Base $e$ (approx. 2.718), often written as $\ln x$.</li>
+</ul>
+<h3 id="laws-of-logarithms"><a class="header" href="#laws-of-logarithms">Laws of Logarithms</a></h3>
+<ol>
+<li><strong>Product Rule</strong>: $\log_a (mn) = \log_a m + \log_a n$</li>
+<li><strong>Quotient Rule</strong>: $\log_a \left(\frac{m}{n}\right) = \log_a m - \log_a n$</li>
+<li><strong>Power Rule</strong>: $\log_a (m^n) = n \log_a m$</li>
+<li><strong>Change of Base Rule</strong>: $\log_a m = \frac{\log_b m}{\log_b a}$</li>
+</ol>
+<h3 id="antilogarithm"><a class="header" href="#antilogarithm">Antilogarithm</a></h3>
+<p>The antilogarithm of a number is the number for which the given value is the logarithm.
+If $\log_{10} x = y$, then $x = \text{Antilog}(y) = 10^y$.</p>
+<hr>
+<h2 id="3-clock"><a class="header" href="#3-clock">3. Clock</a></h2>
+<p>A clock face is a circle of $360^\circ$ divided into 12 hour spaces ($30^\circ$ each) and 60 minute spaces ($6^\circ$ each).</p>
+<div style="text-align: center;">
+<svg width="200" height="200" viewbox="0 0 200 200">
+  <!-- Clock Circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="black" stroke-width="4" />
+  <circle cx="100" cy="100" r="4" fill="black" />
+  <!-- Hour Markers -->
+  <line x1="100" y1="10" x2="100" y2="20" stroke="black" stroke-width="3" />
+  <line x1="100" y1="180" x2="100" y2="190" stroke="black" stroke-width="3" />
+  <line x1="10" y1="100" x2="20" y2="100" stroke="black" stroke-width="3" />
+  <line x1="180" y1="100" x2="190" y2="100" stroke="black" stroke-width="3" />
+  <!-- Hands for 10:10 -->
+  <line x1="100" y1="100" x2="60" y2="70" stroke="green" stroke-width="4" /> <!-- Hour -->
+  <line x1="100" y1="100" x2="140" y2="40" stroke="blue" stroke-width="2" /> <!-- Minute -->
+</svg>
+<p><em>Fig 1.1: Clock face showing angles between hands</em></p>
+
+</div>
+
+<h3 id="speeds-of-hands"><a class="header" href="#speeds-of-hands">Speeds of Hands</a></h3>
+<ul>
+<li><strong>Minute hand</strong>: Traverses $360^\circ$ in 60 minutes. Speed = $6^\circ$ per minute.</li>
+<li><strong>Hour hand</strong>: Traverses $30^\circ$ in 60 minutes. Speed = $0.5^\circ$ per minute.</li>
+</ul>
+<p><strong>Angle between hands at time $H$ hours and $M$ minutes</strong>:
+$$ \theta = |30H - 5.5M|^\circ $$
+<em>(Note: If $\theta &gt; 180^\circ$, the reflex angle is $360^\circ - \theta$.)</em></p>
+<p><strong>Example</strong>: Find the angle at 4:20.
+$$ \theta = |30(4) - 5.5(20)| = |120 - 110| = 10^\circ $$</p>
+<hr>
+<h2 id="4-calendar"><a class="header" href="#4-calendar">4. Calendar</a></h2>
+<p>The calendar concept is based on finding the number of <strong>Odd Days</strong> – days remaining after grouping periods into full weeks.</p>
+<ul>
+<li><strong>Ordinary Year</strong>: 365 days = 52 weeks + 1 odd day.</li>
+<li><strong>Leap Year</strong>: 366 days = 52 weeks + 2 odd days.</li>
+</ul>
+<h3 id="odd-days-in-centuries"><a class="header" href="#odd-days-in-centuries">Odd Days in Centuries</a></h3>
+<ul>
+<li>100 years: 5 odd days</li>
+<li>200 years: 3 odd days</li>
+<li>300 years: 1 odd day</li>
+<li>400 years (and multiples): 0 odd days</li>
+</ul>
+<h3 id="finding-the-day-of-the-week"><a class="header" href="#finding-the-day-of-the-week">Finding the Day of the Week</a></h3>
+<p>Count the total odd days up to the given date and map the result to:</p>
+<ul>
+<li>0 = Sunday</li>
+<li>1 = Monday</li>
+<li>2 = Tuesday</li>
+<li>… 6 = Saturday</li>
+</ul>
+<hr>
+<h2 id="5-time-work-and-distance"><a class="header" href="#5-time-work-and-distance">5. Time, Work and Distance</a></h2>
+<h3 id="time-and-work"><a class="header" href="#time-and-work">Time and Work</a></h3>
+<p>If a person can finish a piece of work in $n$ days, their 1-day’s work is $\frac{1}{n}$.
+If A does $\frac{1}{x}$ work in a day and B does $\frac{1}{y}$ work in a day, together their 1-day work is $\left(\frac{1}{x} + \frac{1}{y}\right)$.</p>
+<h3 id="time-and-distance"><a class="header" href="#time-and-distance">Time and Distance</a></h3>
+<p>The fundamental relationship is:
+$$ \text{Distance} = \text{Speed} \times \text{Time} $$</p>
+<hr>
+<h2 id="6-seating-arrangement"><a class="header" href="#6-seating-arrangement">6. Seating Arrangement</a></h2>
+<p>Logical deduction determines the exact position of a person based on given clues.</p>
+<ul>
+<li><strong>Linear Arrangement</strong>: People sitting in a row. Left/Right tracking is crucial.</li>
+<li><strong>Circular Arrangement</strong>: People sitting around a table. Left/Right depends on whether they face the center or outwards.</li>
+</ul>
+<div style="text-align: center;">
+<svg width="240" height="240" viewbox="0 0 240 240">
+  <circle cx="120" cy="120" r="80" fill="none" stroke="gray" stroke-width="2" />
+  <circle cx="120" cy="40" r="10" fill="blue" />
+  <text x="115" y="30" font-size="12">A</text>
+  <circle cx="120" cy="200" r="10" fill="red" />
+  <text x="115" y="225" font-size="12">C</text>
+  <circle cx="40" cy="120" r="10" fill="green" />
+  <text x="25" y="125" font-size="12">D</text>
+  <circle cx="200" cy="120" r="10" fill="orange" />
+  <text x="215" y="125" font-size="12">B</text>
+</svg>
+<p><em>Fig 1.2: Circular Seating Arrangement</em></p>
+
+</div>
+
+<hr>
+<h2 id="competency-based-questions"><a class="header" href="#competency-based-questions">Competency-Based Questions</a></h2>
+<ol>
+<li>
+<p><strong>(Application/Analysis):</strong> A digital system tracks user login times using a secondary processor that registers time in binary format. If a user logged in at the binary equivalent of $105$ minutes past midnight, what is the binary representation of this minute? Furthermore, convert the binary time <code>1001011</code> to minutes to verify the logout time in decimal.</p>
+</li>
+<li>
+<p><strong>(Logarithms in Real Life):</strong> Certain virus spreads follow an exponential decay when quarantined, modeled by the equation $P = P_0 (0.8)^t$, where $t$ is the number of days. If the town had 10,000 cases initially ($P_0$), use logarithms to find out approximately how many days it will take for cases to drop below 100. (Given $\log 0.8 = -0.0969$).</p>
+</li>
+<li>
+<p><strong>(Clock/Angles):</strong> An automated telescope needs to align with a star tracking algorithm at exactly 8:15 PM. To ensure exact calibration, the software calculates the interior angle between the hour and minute hands of an analog clock at 8:15. What is this analytical angle?</p>
+</li>
+<li>
+<p><strong>(Calendar/Calculation):</strong> The historical independence day of a certain nation was celebrated on July 4, 1776. By counting the number of odd days starting from 0001 AD, determine the exact day of the week this event occurred.</p>
+</li>
+<li>
+<p><strong>(Time &amp; Work):</strong> A construction project requires a bridge to be built. Company A can build it in 45 days. Company B can build it in 60 days. An external supervisor is tracking this project using project management software. If both companies work together for 12 days, what fraction of the work remains for the supervisor to allocate to a third company?</p>
+</li>
+</ol>
+<br>
+<h3 id="answers-to-competency-based-questions"><a class="header" href="#answers-to-competency-based-questions">Answers to Competency-Based Questions</a></h3>
+<p><strong>1. Application/Analysis:</strong></p>
+<ul>
+<li>$105 = 64 + 32 + 8 + 1 = 2^6 + 2^5 + 2^3 + 2^0 \implies 1101001_2$.</li>
+<li>$1001011_2 = 1(64) + 0(32) + 0(16) + 1(8) + 0(4) + 1(2) + 1(1) = 64 + 8 + 2 + 1 = 75$ minutes.</li>
+</ul>
+<p><strong>2. Logarithms in Real Life:</strong>
+$$ 100 = 10000(0.8)^t \implies 0.01 = 0.8^t $$
+Taking log on both sides:
+$$ \log(0.01) = t \log(0.8) \implies -2 = t(-0.0969) $$
+$$ t = \frac{2}{0.0969} \approx 20.64 \text{ days} $$</p>
+<p><strong>3. Clock/Angles:</strong>
+At 8:15, $H=8$ and $M=15$.
+$$ \theta = |30(8) - 5.5(15)| = |240 - 82.5| = 157.5^\circ $$</p>
+<p><strong>4. Calendar/Calculation:</strong>
+Total Odd Days up to 1775:</p>
+<ul>
+<li>1600 years = $0$ odd days.</li>
+<li>100 years = $5$ odd days.</li>
+<li>75 years = 18 leap years + 57 ordinary years = $(18 \times 2) + (57 \times 1) = 36 + 57 = 93 \equiv 2$ odd days.
+Odd days in 1776 up to July 4 (1776 is leap):</li>
+<li>Jan(3) + Feb(1) + Mar(3) + Apr(2) + May(3) + Jun(2) + Jul(4) = $18 \equiv 4$ odd days.</li>
+<li>Total $= 5 + 2 + 4 = 11 \equiv 4$ odd days. 0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu. <strong>Thursday</strong>.</li>
+</ul>
+<p><strong>5. Time &amp; Work:</strong>
+Work done by A and B in 1 day $= \frac{1}{45} + \frac{1}{60} = \frac{4+3}{180} = \frac{7}{180}$.
+Work done in 12 days $= 12 \times \frac{7}{180} = \frac{7}{15}$.
+Fraction of work remaining $= 1 - \frac{7}{15} = \frac{8}{15}$.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-2-algebra"><a class="header" href="#unit-2-algebra">Unit 2: Algebra</a></h1>
+<p>Algebra focuses on abstract mathematical structures and relationships. This unit covers Sets, Relations, Sequences &amp; Series, and Permutations &amp; Combinations.</p>
+<hr>
+<h2 id="1-sets"><a class="header" href="#1-sets">1. Sets</a></h2>
+<p>A <strong>set</strong> is a well-defined collection of distinct objects. Objects in a set are called elements.</p>
+<h3 id="representation-of-sets"><a class="header" href="#representation-of-sets">Representation of Sets</a></h3>
+<ol>
+<li><strong>Roster Form</strong>: Listing all elements inside braces, e.g., $A = {1, 2, 3, 4, 5}$.</li>
+<li><strong>Set-Builder Form</strong>: Defining properties of elements, e.g., $A = {x : x \text{ is a natural number and } x \leq 5}$.</li>
+</ol>
+<h3 id="types-of-sets"><a class="header" href="#types-of-sets">Types of Sets</a></h3>
+<ul>
+<li><strong>Empty Set/Null Set</strong>: A set with no elements, denoted by $\emptyset$ or ${}$.</li>
+<li><strong>Singleton Set</strong>: A set with a single element.</li>
+<li><strong>Finite and Infinite Sets</strong>: Sets with a countable or uncountable number of elements.</li>
+<li><strong>Equal Sets</strong>: Two sets with the exact same elements.</li>
+</ul>
+<h3 id="operations-on-sets-and-venn-diagrams"><a class="header" href="#operations-on-sets-and-venn-diagrams">Operations on Sets and Venn Diagrams</a></h3>
+<p>Venn diagrams visually represent relationships between sets.</p>
+<div style="text-align: center;">
+<svg width="300" height="200" viewbox="0 0 300 200">
+  <rect x="10" y="10" width="280" height="180" fill="none" stroke="black" stroke-width="2" />
+  <text x="20" y="30" font-size="14">Universal Set U</text>
+  <circle cx="110" cy="100" r="60" fill="blue" fill-opacity="0.3" stroke="blue" stroke-width="2" />
+  <text x="80" y="100" font-weight="bold">A</text>
+  <circle cx="190" cy="100" r="60" fill="red" fill-opacity="0.3" stroke="red" stroke-width="2" />
+  <text x="210" y="100" font-weight="bold">B</text>
+  <text x="145" y="105" font-weight="bold">A ∩ B</text>
+</svg>
+<p><em>Fig 2.1: Venn Diagram showing Intersection of two sets A and B (A ∩ B)</em></p>
+
+</div>
+
+<ul>
+<li><strong>Union ($A \cup B$)</strong>: Elements in A or B or both.</li>
+<li><strong>Intersection ($A \cap B$)</strong>: Elements common to A and B.</li>
+<li><strong>Difference ($A - B$)</strong>: Elements in A but not in B.</li>
+<li><strong>Complement ($A’$)</strong>: Elements in Universal set but not in A.</li>
+<li><strong>De Morgan’s Laws</strong>: $(A \cup B)’ = A’ \cap B’$ and $(A \cap B)’ = A’ \cup B’$.</li>
+</ul>
+<hr>
+<h2 id="2-relations"><a class="header" href="#2-relations">2. Relations</a></h2>
+<h3 id="cartesian-product"><a class="header" href="#cartesian-product">Cartesian Product</a></h3>
+<p>For two non-empty sets $A$ and $B$, the Cartesian product $A \times B$ is the set of all ordered pairs $(a, b)$ where $a \in A$ and $b \in B$.
+$$ A \times B = {(a,b) : a \in A \text{ and } b \in B} $$</p>
+<h3 id="relations"><a class="header" href="#relations">Relations</a></h3>
+<p>A relation $R$ from $A$ to $B$ is a subset of $A \times B$.</p>
+<ul>
+<li><strong>Domain</strong>: Set of all first elements of ordered pairs in $R$.</li>
+<li><strong>Range</strong>: Set of all second elements of ordered pairs in $R$.</li>
+</ul>
+<hr>
+<h2 id="3-sequences-and-series"><a class="header" href="#3-sequences-and-series">3. Sequences and Series</a></h2>
+<p>A sequence is an ordered list of numbers. A series is the sum of a sequence.</p>
+<h3 id="arithmetic-progression-ap"><a class="header" href="#arithmetic-progression-ap">Arithmetic Progression (A.P.)</a></h3>
+<p>A sequence where the difference between consecutive terms is constant ($d$).</p>
+<ul>
+<li>$n^{\text{th}}$ term: $t_n = a + (n - 1)d$</li>
+<li>Sum of $n$ terms: $S_n = \frac{n}{2} [2a + (n - 1)d]$</li>
+<li>Arithmetic Mean (AM) of $a$ and $b$ is $\frac{a+b}{2}$.</li>
+</ul>
+<h3 id="geometric-progression-gp"><a class="header" href="#geometric-progression-gp">Geometric Progression (G.P.)</a></h3>
+<p>A sequence where the ratio of consecutive terms is constant ($r$).</p>
+<ul>
+<li>$n^{\text{th}}$ term: $t_n = a r^{n-1}$</li>
+<li>Sum of $n$ terms:
+$$ S_n = \frac{a(r^n - 1)}{r - 1} $$ (for $r \neq 1$)</li>
+<li>Sum of infinite G.P. ($|r| &lt; 1$): $S_\infty = \frac{a}{1 - r}$</li>
+<li>Geometric Mean (GM) of $a$ and $b$ is $\sqrt{ab}$.</li>
+</ul>
+<blockquote>
+<p><strong>Relationship</strong>: For any two positive numbers, $\text{AM} \geq \text{GM}$.</p>
+</blockquote>
+<hr>
+<h2 id="4-permutations-and-combinations"><a class="header" href="#4-permutations-and-combinations">4. Permutations and Combinations</a></h2>
+<h3 id="factorial"><a class="header" href="#factorial">Factorial</a></h3>
+<p>$n! = n \times (n-1) \times (n-2) \times \dots \times 1$.</p>
+<h3 id="fundamental-principle-of-counting"><a class="header" href="#fundamental-principle-of-counting">Fundamental Principle of Counting</a></h3>
+<p>If one event can occur in $m$ different ways and another event can occur in $n$ different ways, then both events can occur in $m \times n$ ways.</p>
+<h3 id="permutation-arrangement"><a class="header" href="#permutation-arrangement">Permutation (Arrangement)</a></h3>
+<p>The number of ways to arrange $r$ objects out of $n$ distinct objects, where order matters:
+$$ ^nP_r = \frac{n!}{(n-r)!} $$</p>
+<h3 id="combination-selection"><a class="header" href="#combination-selection">Combination (Selection)</a></h3>
+<p>The number of ways to select $r$ objects from $n$ distinct objects, where order does not matter:
+$$ ^nC_r = \frac{n!}{r!(n-r)!} $$</p>
+<hr>
+<h2 id="competency-based-questions-1"><a class="header" href="#competency-based-questions-1">Competency-Based Questions</a></h2>
+<ol>
+<li>
+<p><strong>(Sets Application):</strong> In a software company, 120 engineers are skilled in Java, 85 are skilled in Python, and 45 are skilled in both. If the total number of engineers is 200, find the number of engineers who do not know either Java or Python using Venn diagrams.</p>
+</li>
+<li>
+<p><strong>(A.P. &amp; G.P. Models):</strong> The spread of a computer virus in a network doubles every hour. If initially 3 computers were infected, model this spread as a sequence. Calculate how many computers will be infected by the 10th hour. Is this an Arithmetic or Geometric Progression?</p>
+</li>
+<li>
+<p><strong>(Permutation):</strong> A database requires a password of exactly 6 characters using uppercase letters (A-Z) and digits (0-9). If characters cannot be repeated and the password must start with a letter, how many such passwords can be generated?</p>
+</li>
+<li>
+<p><strong>(Relations Application):</strong> Let $A = {1, 2, 3}$ and $B = {2, 4, 6}$. A relation $R$ from $A$ to $B$ is defined by $R = {(x, y) : x \in A, y \in B \text{ and } 2x = y}$. Find the domain and range of the relation $R$.</p>
+</li>
+<li>
+<p><strong>(Combination):</strong> An IT networking committee of 5 members is to be formed from 8 network architects and 6 security specialists. In how many ways can this committee be formed if it must include exactly 2 security specialists?</p>
+</li>
+</ol>
+<br>
+<h3 id="answers-to-competency-based-questions-1"><a class="header" href="#answers-to-competency-based-questions-1">Answers to Competency-Based Questions</a></h3>
+<p><strong>1. Sets Application:</strong>
+Let the total engineers be $U$ ($n(U) = 200$), Java be $J$, and Python be $P$.
+We know $n(J)=120$, $n(P)=85$, $n(J \cap P)=45$.
+Number of engineers knowing at least one:
+$$ n(J \cup P) = 120 + 85 - 45 = 160 $$
+Engineers who know neither:
+$$ n((J \cup P)’) = 200 - 160 = 40 \text{ engineers} $$</p>
+<p><strong>2. A.P. &amp; G.P. Models:</strong>
+The sequence doubles, making it a <strong>Geometric Progression</strong>.
+Initial amount ($a$) = 3. Common ratio ($r$) = 2.
+At the $t^{\text{th}}$ hour, there have been exactly $t$ multiplications. So, for the 10th hour, term $= a \cdot r^{10}$.
+$$ N_{10} = 3 \times 2^{10} = 3 \times 1024 = 3072 \text{ computers} $$</p>
+<p><strong>3. Permutation:</strong></p>
+<ul>
+<li>1st character must be a letter: $26$ options.</li>
+<li>The remaining 5 characters are chosen from the remaining $25$ letters + $10$ digits $= 35$ characters available.</li>
+<li>Order matters, therefore we use permutations for the remaining characters: $^{35}P_5$.
+$$ \text{Total Passwords} = 26 \times ^{35}P_5 = 26 \times 38,955,840 = 1,012,851,840 $$</li>
+</ul>
+<p><strong>4. Relations Application:</strong>
+A relation $R$ from $A$ to $B$ defined by $2x=y$:
+Elements of $A: {1,2,3}$.</p>
+<ul>
+<li>$x=1 \implies y=2 \in B$</li>
+<li>$x=2 \implies y=4 \in B$</li>
+<li>$x=3 \implies y=6 \in B$
+Relation $R = {(1,2), (2,4), (3,6)}$.
+<strong>Domain</strong>: ${1, 2, 3}$. <strong>Range</strong>: ${2, 4, 6}$.</li>
+</ul>
+<p><strong>5. Combination:</strong>
+Select 2 security specialists from 6: $^6C_2$.
+Select the remaining 3 networking architects from 8: $^8C_3$.
+$$ \text{Total Ways} = ^6C_2 \times ^8C_3 = \left(\frac{6 \times 5}{2}\right) \times \left(\frac{8 \times 7 \times 6}{3 \times 2}\right) = 15 \times 56 = 840 \text{ ways} $$</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-3-mathematical-reasoning"><a class="header" href="#unit-3-mathematical-reasoning">Unit 3: Mathematical Reasoning</a></h1>
+<p>Mathematical Reasoning involves taking a given set of facts and using logic to draw conclusions. These logical frameworks are critical for algorithm design, data analysis, and general problem-solving.</p>
+<h2 id="1-odd-man-out"><a class="header" href="#1-odd-man-out">1. Odd Man Out</a></h2>
+<p><strong>Odd Man Out</strong> is the process of identifying a given series or group of elements and locating the one element that doesn’t share the common characteristics of the rest.</p>
+<h3 id="key-strategies"><a class="header" href="#key-strategies">Key Strategies</a></h3>
+<ul>
+<li>Look for mathematical patterns (primes, squares, cubes, multiples).</li>
+<li>Check alphabetical patterns (vowels/consonants, skip sequences).</li>
+<li>Observe physical or conceptual attributes.</li>
+</ul>
+<p><strong>Example</strong>: Find the odd one out: $5, 7, 11, 13, 15, 17$
+<strong>Solution</strong>: $15$. All other numbers are prime numbers, whereas $15$ is a composite number ($3 \times 5$).</p>
+<hr>
+<h2 id="2-syllogism"><a class="header" href="#2-syllogism">2. Syllogism</a></h2>
+<p>A <strong>Syllogism</strong> is a form of deductive reasoning where a conclusion is drawn from two or more given premises. Venn diagrams are frequently used to solve syllogisms accurately.</p>
+<p><strong>Example Premises</strong>:</p>
+<ol>
+<li>All computers are machines.</li>
+<li>All machines require power.</li>
+</ol>
+<p><strong>Conclusion</strong>: Therefore, all computers require power.</p>
+<div style="text-align: center;">
+<svg width="250" height="250" viewbox="0 0 250 250">
+  <circle cx="125" cy="125" r="100" fill="none" stroke="black" stroke-width="2" />
+  <text x="125" y="45" font-size="12" text-anchor="middle">Things requiring power</text>
+  <circle cx="125" cy="140" r="70" fill="none" stroke="blue" stroke-width="2" />
+  <text x="125" y="85" font-size="12" text-anchor="middle">Machines</text>
+  <circle cx="125" cy="160" r="40" fill="lightblue" stroke="darkblue" stroke-width="2" />
+  <text x="125" y="165" font-size="12" text-anchor="middle">Computers</text>
+</svg>
+<p><em>Fig 3.1: Syllogism Venn Diagram Representation</em></p>
+
+</div>
+
+<h3 id="common-patterns"><a class="header" href="#common-patterns">Common Patterns</a></h3>
+<ul>
+<li><em>All A are B</em>: Represents A as a subset of B.</li>
+<li><em>Some A are B</em>: Represents an intersection between A and B.</li>
+<li><em>No A are B</em>: Represents disjoint sets A and B.</li>
+</ul>
+<hr>
+<h2 id="3-blood-relations"><a class="header" href="#3-blood-relations">3. Blood Relations</a></h2>
+<p>Blood Relation problems test the ability to understand genealogical structures and the relationships between family members based on specific clues.</p>
+<h3 id="family-tree-mapping"><a class="header" href="#family-tree-mapping">Family Tree Mapping</a></h3>
+<p>To accurately represent relations, construct a family tree:</p>
+<ul>
+<li>Use horizontal lines <code>—</code> for siblings.</li>
+<li>Use vertical lines <code>|</code> for parent-child relationships.</li>
+<li>Use a <code>+</code> sign for male, and <code>-</code> sign for female (or squares/circles).</li>
+<li>Use a <code>=</code> sign for a married couple.</li>
+</ul>
+<p><strong>Example Problem</strong>:
+A says, “B is the father of my sister’s son.” How is B related to A?
+<strong>Solution</strong>: A’s sister’s son = A’s nephew. The father of A’s nephew is A’s sister’s husband. Therefore, B is A’s brother-in-law.</p>
+<hr>
+<h2 id="4-coding-decoding"><a class="header" href="#4-coding-decoding">4. Coding Decoding</a></h2>
+<p><strong>Coding</strong> is a method of encrypting a word or number based on a specific set of rules. <strong>Decoding</strong> is the process of reverting the encrypted format back to the original based on the same rules.</p>
+<h3 id="common-techniques"><a class="header" href="#common-techniques">Common Techniques</a></h3>
+<ul>
+<li><strong>Letter Shifting</strong>: Shifting each letter forward or backward by a specific value (e.g., A $\to$ C, B $\to$ D).</li>
+<li><strong>Position Value</strong>: Mapping letters to their numerical positions in the alphabet (A=1, B=2, Z=26) and applying arithmetic operations.</li>
+<li><strong>Substitution</strong>: Replacing a word with another word or a symbol unconditionally.</li>
+</ul>
+<p><strong>Example Problem</strong>:
+If <code>CPU</code> is coded as <code>D QV</code>, how will <code>RAM</code> be coded?
+<strong>Solution</strong>:
+C + 1 = D
+P + 1 = Q
+U + 1 = V
+Therefore, applying the same logic: R + 1 = S, A + 1 = B, M + 1 = N.
+The code for <code>RAM</code> is <code>SBN</code>.</p>
+<hr>
+<h2 id="competency-based-questions-2"><a class="header" href="#competency-based-questions-2">Competency-Based Questions</a></h2>
+<ol>
+<li>
+<p><strong>(Odd Man Out):</strong> Considering binary patterns in computer science, which of these numbers is the odd man out in decimal form: $2, 4, 8, 16, 24, 32$? Justify your reasoning mathematically.</p>
+</li>
+<li>
+<p><strong>(Syllogism Analysis):</strong>
+<em>Premise 1</em>: No algorithms are hardware.
+<em>Premise 2</em>: All CPUs are hardware.
+Draw a Venn diagram to determine if the conclusion “No CPUs are algorithms” is logically valid.</p>
+</li>
+<li>
+<p><strong>(Blood Relations Logic):</strong> In a database representing a digital family tree structure, Entity $X$ is logged as the mother of the father of Entity $Y$’s sister. How is Entity $X$ related to Entity $Y$?</p>
+</li>
+<li>
+<p><strong>(Coding / Cryptography):</strong> A basic encryption algorithm shifts the letters of the alphabet backward by 3 places (i.e., D becomes A, E becomes B, etc.). An intercepted network packet contains the ciphertext <code>ZHOFRPH</code>. Decode this ciphertext to reveal the original message.</p>
+</li>
+<li>
+<p><strong>(Composite Reasoning):</strong> A company employs 5 people: A, B, C, D, E. B is the brother of A. C is the father of B. D is the sister of E. E is the daughter of A. Based on these relationships, create a family tree and determine how D is related to C. Additionally, if you were to assign sequential employee IDs based on age (oldest first), what logical assumptions must you make?</p>
+</li>
+</ol>
+<br>
+<h3 id="answers-to-competency-based-questions-2"><a class="header" href="#answers-to-competency-based-questions-2">Answers to Competency-Based Questions</a></h3>
+<p><strong>1. Odd Man Out:</strong>
+The sequence is ${2, 4, 8, 16, 24, 32}$.
+Mathematically, $2=2^1$, $4=2^2$, $8=2^3$, $16=2^4$, and $32=2^5$. All these are pure powers of $2$.
+$24$ is mathematically $8 \times 3$, which is not a pure power of $2$. Therefore, <strong>24</strong> is the odd man out.</p>
+<p><strong>2. Syllogism Analysis:</strong>
+Let $U$ be the universal set of all objects.</p>
+<ul>
+<li>$H$ = set of Hardware.</li>
+<li>$A$ = set of Algorithms.</li>
+<li>$C$ = set of CPUs.
+Premises state: $A \cap H = \emptyset$ (No algorithms are hardware) and $C \subseteq H$ (All CPUs are hardware).
+Since all elements of $C$ are in $H$, and $H$ shares no elements with $A$, it must be that $C$ shares no elements with $A$ ($C \cap A = \emptyset$).
+Thus, “No CPUs are algorithms” is <strong>logically valid</strong>.</li>
+</ul>
+<p><strong>3. Blood Relations Logic:</strong></p>
+<ul>
+<li>Entity $Y$’s sister shares the same father as $Y$. Let this father be $F$.</li>
+<li>The mother of $F$ is logged as Entity $X$.</li>
+<li>Since $F$ is the father of $Y$, $X$ is the mother of $Y$’s father.
+Therefore, $X$ is the <strong>paternal grandmother</strong> of $Y$.</li>
+</ul>
+<p><strong>4. Coding / Cryptography:</strong>
+If shifting <em>backward</em> by 3 places encrypts the data (meaning Decryption requires a forward shift of +3), then treating ZHOFRPH with +3 yields CKRIUSK, which has no meaning.
+Instead, observe standard Caeser shifts: the ciphertext <code>ZHOFRPH</code> when shifted backward by 3 places (Z-3=W, H-3=E, O-3=L, F-3=C, R-3=O, P-3=M, H-3=E) yields <strong>WELCOME</strong>.
+Thus, the encryption shifted the original message forward, and the decoding rule is a backward shift of 3. Code: <strong>WELCOME</strong>.</p>
+<p><strong>5. Composite Reasoning:</strong></p>
+<ul>
+<li>$C$ is the father of $B$. $B$ is the brother of $A$. So, $C$ is the father of both $A$ and $B$.</li>
+<li>$E$ is the daughter of $A$. $D$ is the sister of $E$. So, $D$ is the daughter of $A$.</li>
+<li>Since $D$ is the daughter of $A$, and $C$ is the father of $A$, <strong>$D$ is the granddaughter of $C$</strong>.</li>
+<li><strong>Assumptions for Age IDs</strong>: To assign age-based IDs, you must logically assume that parents are strictly older than their children ($C &gt; A, B$ and $A &gt; D, E$). You must also assume or require external data to tie-break between siblings ($A$ vs $B$, and $D$ vs $E$), as the family tree alone does not determine sibling seniority.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-4-calculus"><a class="header" href="#unit-4-calculus">Unit 4: Calculus</a></h1>
+<p>Calculus is the mathematical study of continuous change. It provides the foundation for determining rates of change and finding optimal solutions.</p>
+<h2 id="1-functions"><a class="header" href="#1-functions">1. Functions</a></h2>
+<p>A <strong>function</strong> is a relationship or rule that links an input variable to an output variable such that each input has exactly one output.
+If $y = f(x)$, $x$ is the <strong>independent variable</strong> and $y$ is the <strong>dependent variable</strong>.</p>
+<h3 id="domain-and-range"><a class="header" href="#domain-and-range">Domain and Range</a></h3>
+<ul>
+<li><strong>Domain</strong>: The set of all possible input values ($x$) for which the function is defined.</li>
+<li><strong>Range</strong>: The set of all possible resulting output values ($y$) of the dependent variable.</li>
+<li><strong>Co-domain</strong>: The set from which the dependent variable takes its values. Range is a subset of the co-domain.</li>
+</ul>
+<h3 id="types-of-functions"><a class="header" href="#types-of-functions">Types of Functions</a></h3>
+<ol>
+<li><strong>Constant Function</strong>: $f(x) = c$</li>
+<li><strong>Identity Function</strong>: $f(x) = x$</li>
+<li><strong>Polynomial Function</strong>: $f(x) = a_n x^n + \dots + a_1 x + a_0$</li>
+<li><strong>Rational Function</strong>: $f(x) = \frac{p(x)}{q(x)}$, where $q(x) \neq 0$</li>
+<li><strong>Exponential Function</strong>: $f(x) = a^x$ where $a &gt; 0, a \neq 1$</li>
+<li><strong>Logarithmic Function</strong>: $f(x) = \log_a x$</li>
+<li><strong>Modulus Function</strong>: $f(x) = |x|$</li>
+</ol>
+<div style="text-align: center;">
+<svg width="250" height="200" viewbox="0 0 250 200">
+  <line x1="25" y1="100" x2="225" y2="100" stroke="black" stroke-width="2" /> <!-- X-axis -->
+  <line x1="125" y1="20" x2="125" y2="180" stroke="black" stroke-width="2" /> <!-- Y-axis -->
+<p><text x="210" y="90" font-size="12">x</text>
+<text x="135" y="30" font-size="12">y</text></p>
+  <!-- Parabola f(x) = x^2 approx -->
+  <path d="M 65 20 Q 125 180 185 20" fill="none" stroke="blue" stroke-width="2" />
+  <text x="160" y="45" fill="blue">Polynomial f(x) = x²</text>
+</svg>
+<p><em>Fig 4.1: Example of a Parabolic / Polynomial Function Graph</em></p>
+
+</div>
+
+<hr>
+<h2 id="2-limits-and-continuity"><a class="header" href="#2-limits-and-continuity">2. Limits and Continuity</a></h2>
+<h3 id="limit-of-a-function"><a class="header" href="#limit-of-a-function">Limit of a Function</a></h3>
+<p>The limit of a function $f(x)$ as $x$ approaches $a$ is the value that $f(x)$ approaches as $x \to a$.
+$$ \lim_{x \to a} f(x) = L $$
+For a limit to exist, the Left Hand Limit (LHL) must equal the Right Hand Limit (RHL):
+$$ \lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L $$</p>
+<h3 id="continuity"><a class="header" href="#continuity">Continuity</a></h3>
+<p>A function $f(x)$ is continuous at $x = a$ if:</p>
+<ol>
+<li>$f(a)$ is defined.</li>
+<li>The limit exists at $a$.</li>
+<li>The limit equals the function’s value:
+$$ \lim_{x \to a} f(x) = f(a) $$</li>
+</ol>
+<hr>
+<h2 id="3-instantaneous-rate-of-change"><a class="header" href="#3-instantaneous-rate-of-change">3. Instantaneous Rate of Change</a></h2>
+<p>The rate of change measures how one variable changes relative to another. The <strong>instantaneous rate of change</strong> is the rate at a specific analytical instant, given by the ratio:
+$$ \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x} $$
+This fundamental concept leads to differentiation.</p>
+<hr>
+<h2 id="4-differentiation"><a class="header" href="#4-differentiation">4. Differentiation</a></h2>
+<p>Differentiation is the process of finding the derivative. We study non-trigonometric derivatives.</p>
+<h3 id="common-derivatives"><a class="header" href="#common-derivatives">Common Derivatives</a></h3>
+<ol>
+<li><strong>Power Rule</strong>: $\frac{d}{dx} (x^n) = n x^{n-1}$</li>
+<li><strong>Exponential</strong>: $\frac{d}{dx} (e^x) = e^x$</li>
+<li><strong>Logarithmic</strong>: $\frac{d}{dx} (\ln x) = \frac{1}{x}$</li>
+<li><strong>Constant</strong>: $\frac{d}{dx} (c) = 0$</li>
+</ol>
+<h3 id="rules-of-differentiation"><a class="header" href="#rules-of-differentiation">Rules of Differentiation</a></h3>
+<p>Let $u$ and $v$ be functions of $x$:</p>
+<ul>
+<li><strong>Sum Rule</strong>: $\frac{d}{dx} (u + v) = \frac{du}{dx} + \frac{dv}{dx}$</li>
+<li><strong>Product Rule</strong>: $\frac{d}{dx} (uv) = u \frac{dv}{dx} + v \frac{du}{dx}$</li>
+<li><strong>Quotient Rule</strong>: $\frac{d}{dx} \left(\frac{u}{v}\right) = \frac{v \frac{du}{dx} - u \frac{dv}{dx}}{v^2}$</li>
+</ul>
+<h3 id="chain-rule"><a class="header" href="#chain-rule">Chain Rule</a></h3>
+<p>Used for differentiating composite functions. If $y = f(u)$ and $u = g(x)$, then:
+$$ \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} $$</p>
+<p><strong>Example</strong>: Find the derivative of $y = (x^2 + 3)^4$.
+Using Chain Rule, let $u = x^2 + 3$, so $y = u^4$.
+$\frac{dy}{du} = 4u^3$ and $\frac{du}{dx} = 2x$.
+$$ \frac{dy}{dx} = 4(x^2 + 3)^3 \cdot 2x = 8x(x^2 + 3)^3 $$</p>
+<hr>
+<h2 id="competency-based-questions-3"><a class="header" href="#competency-based-questions-3">Competency-Based Questions</a></h2>
+<ol>
+<li>
+<p><strong>(Domain/Range Application):</strong> A software algorithm logs system temperature $T$ (in Celsius) as a function of processing load $x$ (in Gigahertz) modeled by $T(x) = \frac{100}{x-3}$. What is the practical domain of this function, assuming processing load cannot be negative but must avoid critical failure at $x=3$?</p>
+</li>
+<li>
+<p><strong>(Limits &amp; Continuity):</strong> In analyzing network latency limits, a server’s response time $R(t)$ follows the rule $R(t) = \frac{t^2 - 4}{t - 2}$ when $t \neq 2$, and $R(2) = k$. What must be the value of $k$ for the response time function to be continuous at $t = 2$ milliseconds?</p>
+</li>
+<li>
+<p><strong>(Differentiation in Economics):</strong> A tech company models its profit function $P(x)$ based on the sale of thousands of units of newly embedded systems as $P(x) = 50x - 2x^2$ (in millions of rupees). Using differentiation, find the instantaneous rate of change of profit when exactly 10,000 units are sold ($x = 10$).</p>
+</li>
+<li>
+<p><strong>(Chain Rule Usage):</strong> In machine learning, a loss function $L$ needs optimization. If $L = \ln(3x^2 + 2x + 1)$, find $\frac{dL}{dx}$ which represents the algorithmic gradient.</p>
+</li>
+<li>
+<p><strong>(Rate of Change):</strong> A bacterial population $B$ in a laboratory experiment increases according to the equation $B(t) = 500 e^{0.02t}$, where $t$ is time in hours. Find the instantaneous rate of growth of the population at the 50th hour.</p>
+</li>
+</ol>
+<br>
+<h3 id="answers-to-competency-based-questions-3"><a class="header" href="#answers-to-competency-based-questions-3">Answers to Competency-Based Questions</a></h3>
+<p><strong>1. Domain/Range Application:</strong>
+The function is $T(x) = \frac{100}{x-3}$.
+Since the processing load cannot be negative, $x \ge 0$. Since critical failure happens at $x = 3$, $x \neq 3$.
+Thus, the practical domain is all non-negative real numbers excluding $3$:
+$$ x \in [0, 3) \cup (3, \infty) $$</p>
+<p><strong>2. Limits &amp; Continuity:</strong>
+For $R(t)$ to be continuous at $t = 2$, the limit as $t \to 2$ must equal $R(2)$.
+$$ \lim_{t \to 2} \frac{t^2 - 4}{t - 2} = \lim_{t \to 2} \frac{(t-2)(t+2)}{t-2} = \lim_{t \to 2} (t+2) = 2 + 2 = 4 $$
+Therefore, the value of $k$ must be <strong>$4$</strong> milliseconds.</p>
+<p><strong>3. Differentiation in Economics:</strong>
+The profit function is $P(x) = 50x - 2x^2$.
+The instantaneous rate of change is the derivative $P’(x)$:
+$$ P’(x) = \frac{d}{dx}(50x - 2x^2) = 50 - 4x $$
+At $x = 10$ (representing 10,000 units):
+$$ P’(10) = 50 - 4(10) = 50 - 40 = 10 $$
+The profit is increasing at an instantaneous rate of <strong>$10$ million rupees per thousand units</strong> sold.</p>
+<p><strong>4. Chain Rule Usage:</strong>
+Let $L(x) = \ln(3x^2 + 2x + 1)$. Using the Chain Rule where $u = 3x^2 + 2x + 1$ and $L = \ln u$:
+$$ \frac{dL}{dx} = \frac{dL}{du} \cdot \frac{du}{dx} = \frac{1}{u} \cdot \frac{d}{dx}(3x^2 + 2x + 1) $$
+$$ \frac{dL}{dx} = \frac{1}{3x^2 + 2x + 1} \cdot (6x + 2) = \frac{6x + 2}{3x^2 + 2x + 1} $$</p>
+<p><strong>5. Rate of Change:</strong>
+The population function is $B(t) = 500 e^{0.02t}$.
+The instantaneous rate of growth is the derivative $B’(t)$:
+$$ B’(t) = 500 \cdot (0.02) \cdot e^{0.02t} = 10 e^{0.02t} $$
+At the 50th hour ($t = 50$):
+$$ B’(50) = 10 e^{0.02(50)} = 10 e^1 = 10e $$
+Using $e \approx 2.718$, the growth rate is approximately <strong>$27.18$ bacteria per hour</strong>.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-5-probability"><a class="header" href="#unit-5-probability">Unit 5: Probability</a></h1>
+<p>Probability provides a quantitative measure of certainty and uncertainty. It is widely applied in determining insurance premiums, weather forecasting, financial risk modeling, and modern machine learning algorithms.</p>
+<h2 id="1-introduction-to-probability"><a class="header" href="#1-introduction-to-probability">1. Introduction to Probability</a></h2>
+<p>The <strong>probability</strong> of an event $E$ occurring is the ratio of the number of favorable outcomes to the total number of possible outcomes in an experiment.
+$$ P(E) = \frac{\text{Number of favorable outcomes}}{\text{Total number of possible outcomes}} $$</p>
+<p>For any event $E$, $0 \leq P(E) \leq 1$.
+The sum of all possible probabilities in an experiment is 1.</p>
+<hr>
+<h2 id="2-random-experiment-and-sample-space"><a class="header" href="#2-random-experiment-and-sample-space">2. Random Experiment and Sample Space</a></h2>
+<h3 id="random-experiment"><a class="header" href="#random-experiment">Random Experiment</a></h3>
+<p>An experiment where all possible outcomes are known in advance, but the exact outcome of a specific performance cannot be predicted. Example: Tossing a coin or rolling a die.</p>
+<h3 id="sample-space"><a class="header" href="#sample-space">Sample Space</a></h3>
+<p>The set of all possible outcomes of a random experiment. Denoted by $S$.
+<strong>Example</strong>: For tossing two coins, the Sample Space $S = {HH, HT, TH, TT}$.</p>
+<hr>
+<h2 id="3-event"><a class="header" href="#3-event">3. Event</a></h2>
+<p>An <strong>event</strong> is any subset of the sample space $S$.</p>
+<h3 id="types-of-events"><a class="header" href="#types-of-events">Types of Events</a></h3>
+<ul>
+<li><strong>Impossible Event</strong>: An event that cannot happen (probability = 0).</li>
+<li><strong>Sure Event</strong>: An event that is certain to happen (probability = 1).</li>
+<li><strong>Mutually Exclusive Events</strong>: Two events $A$ and $B$ that cannot occur simultaneously. $P(A \cap B) = 0$.</li>
+<li><strong>Exhaustive Events</strong>: A set of events whose union forms the entire sample space.</li>
+<li><strong>Independent Events</strong>: The occurrence of one event does not affect the probability of the other. $P(A \cap B) = P(A) \cdot P(B)$.</li>
+<li><strong>Dependent Events</strong>: The occurrence of one event affects the probability of the other.</li>
+</ul>
+<hr>
+<h2 id="4-conditional-probability"><a class="header" href="#4-conditional-probability">4. Conditional Probability</a></h2>
+<p><strong>Conditional Probability</strong> is the probability of an event $E$ occurring, given that another event $F$ has already occurred.
+$$ P(E|F) = \frac{P(E \cap F)}{P(F)}, \quad \text{provided } P(F) \neq 0 $$</p>
+<h3 id="important-notes"><a class="header" href="#important-notes">Important Notes</a></h3>
+<ul>
+<li>If $E$ and $F$ are independent, $P(E|F) = P(E)$.</li>
+<li>The formula can be rearranged as $P(E \cap F) = P(F) \cdot P(E|F)$, known as the Multiplication Theorem on Probability.</li>
+</ul>
+<hr>
+<h2 id="competency-based-questions-4"><a class="header" href="#competency-based-questions-4">Competency-Based Questions</a></h2>
+<ol>
+<li>
+<p><strong>(Application in Data Storage):</strong> A cloud server database consists of 1,000 sectors. 5% of these are marked as ‘corrupted’. A diagnostic script checks a random sector. What is the probability that the chosen sector is NOT corrupted?</p>
+</li>
+<li>
+<p><strong>(Mutually Exclusive Events Analysis):</strong> An insurance firm analyzes policies. Let $A$ be the event that a policyholder claims an auto accident, and $B$ be the event they claim house fire damage. Data shows $P(A) = 0.12$, $P(B) = 0.05$. If these events are mutually exclusive, what is the probability a holder will claim either auto or house damage ($P(A \cup B)$)? Can a person claim both simultaneously according to your model?</p>
+</li>
+<li>
+<p><strong>(Conditional Probability in Algorithm):</strong> A spam-filtering algorithm flags emails. The probability that an email contains the word “Lottery” (Event F) is 0.05. The probability that an email is marked as spam AND contains the word “Lottery” (Event $E \cap F$) is 0.045. If an incoming email contains the word “Lottery”, what is the conditional probability that it is spam?</p>
+</li>
+<li>
+<p><strong>(Sample Space Modeling):</strong> List the complete sample space $S$ for rolling two 6-sided dice simultaneously. Define an event $G$ such that the sum of the dice is greater than or equal to 10. Calculate $P(G)$.</p>
+</li>
+<li>
+<p><strong>(Independent Events in Finance):</strong> The probability of Stock $X$ going up tomorrow is 0.6. The probability of Stock $Y$ going up tomorrow is 0.7. If the movements of these two stocks are completely independent, calculate the probability that:</p>
+<ul>
+<li>Both stocks go up.</li>
+<li>At least one stock goes up.</li>
+</ul>
+</li>
+</ol>
+<br>
+<h3 id="answers-to-competency-based-questions-4"><a class="header" href="#answers-to-competency-based-questions-4">Answers to Competency-Based Questions</a></h3>
+<p><strong>1. Application in Data Storage:</strong>
+The probability a sector is corrupted $P(C) = 0.05$.
+The probability it is NOT corrupted is the complement:
+$$ P(C’) = 1 - P(C) = 1 - 0.05 = 0.95 , (\text{or } 95%) $$</p>
+<p><strong>2. Mutually Exclusive Events Analysis:</strong>
+For mutually exclusive events, $P(A \cap B) = 0$.
+The probability of claiming either is:
+$$ P(A \cup B) = P(A) + P(B) = 0.12 + 0.05 = 0.17 $$
+No, a person <strong>cannot claim both</strong> simultaneously in this model because the events are mutually exclusive ($P(A \cap B) = 0$).</p>
+<p><strong>3. Conditional Probability in Algorithm:</strong>
+Given $P(F) = 0.05$ and $P(E \cap F) = 0.045$.
+The conditional probability $P(E|F)$:
+$$ P(E|F) = \frac{P(E \cap F)}{P(F)} = \frac{0.045}{0.05} = 0.9 $$
+There is a <strong>$90%$ chance</strong> the email is spam.</p>
+<p><strong>4. Sample Space Modeling:</strong>
+The sample space $S$ for two dice has $6 \times 6 = 36$ total outcomes.
+$S = {(1,1), (1,2), \dots (6,6)}$.
+Event $G$ (sum $\ge 10$) $= {(4,6), (5,5), (6,4), (5,6), (6,5), (6,6)}$. Thus, $n(G) = 6$.
+$$ P(G) = \frac{n(G)}{n(S)} = \frac{6}{36} = \frac{1}{6} $$</p>
+<p><strong>5. Independent Events in Finance:</strong>
+Let $P(X) = 0.6$ and $P(Y) = 0.7$. Since they are independent:</p>
+<ul>
+<li><strong>Both stocks go up ($X \cap Y$)</strong>:
+$$ P(X \cap Y) = P(X) \cdot P(Y) = 0.6 \times 0.7 = 0.42 $$</li>
+<li><strong>At least one stock goes up ($X \cup Y$)</strong>:
+$$ P(X \cup Y) = P(X) + P(Y) - P(X \cap Y) = 0.6 + 0.7 - 0.42 = 1.3 - 0.42 = 0.88 $$</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-6-descriptive-statistics"><a class="header" href="#unit-6-descriptive-statistics">Unit 6: Descriptive Statistics</a></h1>
+<p>Descriptive Statistics summarizes and organizes data so it can be easily understood. Unlike inferential statistics, which uses samples to make predictions about populations, descriptive statistics merely describes the data at hand.</p>
+<h2 id="1-measure-of-dispersion"><a class="header" href="#1-measure-of-dispersion">1. Measure of Dispersion</a></h2>
+<p>Dispersion measures the variation or spread of data in a given dataset. Common measures include:</p>
+<h3 id="range"><a class="header" href="#range">Range</a></h3>
+<p>The difference between the highest and lowest values in a dataset.
+$$ \text{Range} = \text{Maximum Value} - \text{Minimum Value} $$</p>
+<h3 id="quartile-deviation"><a class="header" href="#quartile-deviation">Quartile Deviation</a></h3>
+<p>Describes the spread of the middle 50% of data.
+$$ \text{Quartile Deviation (QD)} = \frac{Q_3 - Q_1}{2} $$
+Where $Q_1$ is the first quartile (25th percentile) and $Q_3$ is the third quartile (75th percentile).</p>
+<h3 id="mean-deviation"><a class="header" href="#mean-deviation">Mean Deviation</a></h3>
+<p>The average of the absolute differences between each data point and the mean (or median).
+$$ \text{Mean Deviation about Mean (MD)} = \frac{\sum |x_i - \bar{x}|}{N} $$</p>
+<h3 id="standard-deviation-and-variance"><a class="header" href="#standard-deviation-and-variance">Standard Deviation and Variance</a></h3>
+<p>Standard deviation ($\sigma$) is the most widely used measure of dispersion. It squares the deviations to avoid negative signs, averages them (variance), and takes the square root.
+$$ \text{Variance } (\sigma^2) = \frac{\sum (x_i - \bar{x})^2}{N} $$
+$$ \text{Standard Deviation } (\sigma) = \sqrt{\frac{\sum (x_i - \bar{x})^2}{N}} $$</p>
+<hr>
+<h2 id="2-percentile-rank"><a class="header" href="#2-percentile-rank">2. Percentile Rank</a></h2>
+<p>Percentile Rank describes the percentage of values mathematically lower than a given score.
+$$ \text{Percentile Rank} = \left( \frac{\text{Number of values below } x}{N} \right) \times 100 $$</p>
+<p><strong>Example</strong>: If a student scores 85 on a test and 80 out of 100 students scored lower than 85, the student is in the 80th percentile.</p>
+<hr>
+<h2 id="3-correlation"><a class="header" href="#3-correlation">3. Correlation</a></h2>
+<p>Correlation measures the strength and direction of a linear relationship between two variables.</p>
+<h3 id="spearmans-rank-correlation"><a class="header" href="#spearmans-rank-correlation">Spearman’s Rank Correlation</a></h3>
+<p>When data ranks (instead of raw values) are evaluated, or data is non-parametric, Spearman’s rank correlation ($\rho$ or $r_s$) is used.
+$$ r_s = 1 - \frac{6 \sum d_i^2}{n(n^2 - 1)} $$
+Where:</p>
+<ul>
+<li>$d_i$ = difference between the ranks of corresponding variables.</li>
+<li>$n$ = number of observations.</li>
+</ul>
+<p><strong>Interpretation</strong>:</p>
+<ul>
+<li>$+1$: Perfect positive correlation.</li>
+<li>$-1$: Perfect negative correlation.</li>
+<li>$0$: No correlation.</li>
+</ul>
+<div style="text-align: center;">
+<svg width="300" height="200" viewbox="0 0 300 200">
+  <line x1="20" y1="180" x2="280" y2="180" stroke="black" stroke-width="2" /> <!-- X-axis -->
+  <line x1="20" y1="20" x2="20" y2="180" stroke="black" stroke-width="2" /> <!-- Y-axis -->
+  <!-- Positive Correlation Scatter Plot -->
+  <circle cx="50" cy="150" r="3" fill="blue" />
+  <circle cx="80" cy="140" r="3" fill="blue" />
+  <circle cx="110" cy="110" r="3" fill="blue" />
+  <circle cx="150" cy="90" r="3" fill="blue" />
+  <circle cx="190" cy="60" r="3" fill="blue" />
+  <circle cx="230" cy="50" r="3" fill="blue" />
+  <circle cx="260" cy="30" r="3" fill="blue" />
+  <line x1="30" y1="170" x2="270" y2="20" stroke="red" stroke-dasharray="5,5" stroke-width="2" />
+  <text x="120" y="195" font-size="12">Variable X</text>
+  <text x="5" y="100" font-size="12" transform="rotate(-90 5 100)">Variable Y</text>
+</svg>
+<p><em>Fig 6.1: Scatter plot demonstrating Strong Positive Correlation</em></p>
+
+</div>
+
+<hr>
+<h2 id="competency-based-questions-5"><a class="header" href="#competency-based-questions-5">Competency-Based Questions</a></h2>
+<ol>
+<li>
+<p><strong>(Evaluating Dispersion):</strong> Two algorithmic models for predicting stock prices are tested over 10 days. Model A has predictions with a standard deviation of $$1.50$, while Model B has a standard deviation of $$0.20$. Both have the same mean error. Based on the measure of dispersion, which model is more reliable for trading and why?</p>
+</li>
+<li>
+<p><strong>(Standard Deviation Calculation):</strong> A server farm records the following ping times (in ms) for 5 requests: $45, 50, 48, 52, 55$. Calculate the variance and standard deviation of these ping times to determine internal network consistency.</p>
+</li>
+<li>
+<p><strong>(Percentile Rank Interpretation):</strong> In a data structure consisting of 5,000 algorithmic runtimes, a specific quick-sort operation took 12 seconds. If exactly 4,200 operations took shorter than 12 seconds, what is the percentile rank of this sorting operation? Interpret this result.</p>
+</li>
+<li>
+<p><strong>(Spearman’s Rank Correlation):</strong> A psychologist evaluates 6 patients on two different psychological scales (A and B). Their ranks are as follows:</p>
+<ul>
+<li>Patient 1: Rank A=1, Rank B=2</li>
+<li>Patient 2: Rank A=2, Rank B=1</li>
+<li>Patient 3: Rank A=3, Rank B=4</li>
+<li>Patient 4: Rank A=4, Rank B=3</li>
+<li>Patient 5: Rank A=5, Rank B=5</li>
+<li>Patient 6: Rank A=6, Rank B=6
+Calculate Spearman’s rank correlation coefficient and state if the relationship is positive or negative.</li>
+</ul>
+</li>
+<li>
+<p><strong>(Comparing Measure of Dispersion):</strong> Differentiate between Quartile Deviation and Standard Deviation in terms of how they handle extreme outliers in a large economic dataset. Which one would you prefer if a dataset had heavy outliers?</p>
+</li>
+</ol>
+<br>
+<h3 id="answers-to-competency-based-questions-5"><a class="header" href="#answers-to-competency-based-questions-5">Answers to Competency-Based Questions</a></h3>
+<p><strong>1. Evaluating Dispersion:</strong>
+<strong>Model B</strong> is more reliable. A lower standard deviation ($ $0.20 $ vs $ $1.50 $) means Model B’s predictions are consistently closer to its mean error, indicating far less volatility and tighter precision on average.</p>
+<p><strong>2. Standard Deviation Calculation:</strong>
+Times: $45, 50, 48, 52, 55$. Mean $\bar{x} = \frac{45+50+48+52+55}{5} = \frac{250}{5} = 50$.
+Deviations ($x_i - \bar{x}$): $-5, 0, -2, 2, 5$.
+Squared deviations: $25, 0, 4, 4, 25$.
+Sum of squares $= 58$.</p>
+<ul>
+<li><strong>Variance ($\sigma^2$)</strong> $= \frac{58}{5} = 11.6$</li>
+<li><strong>Standard Deviation ($\sigma$)</strong> $= \sqrt{11.6} \approx 3.41$ ms.</li>
+</ul>
+<p><strong>3. Percentile Rank Interpretation:</strong>
+$$ \text{Percentile Rank} = \left( \frac{4200}{5000} \right) \times 100 = 84% $$
+<strong>Interpretation</strong>: The 12-second sorting time sits at the <strong>84th percentile</strong>. This means it took longer to run than $84%$ of all recorded operations (it is in the slower subset of occurrences).</p>
+<p><strong>4. Spearman’s Rank Correlation:</strong>
+Differences ($d_i$):</p>
+<ul>
+<li>$d_1 = 1-2 = -1 \implies d_1^2 = 1$</li>
+<li>$d_2 = 2-1 = 1 \implies d_2^2 = 1$</li>
+<li>$d_3 = 3-4 = -1 \implies d_3^2 = 1$</li>
+<li>$d_4 = 4-3 = 1 \implies d_4^2 = 1$</li>
+<li>$d_5 = 5-5 = 0 \implies d_5^2 = 0$</li>
+<li>$d_6 = 6-6 = 0 \implies d_6^2 = 0$
+Sum $\sum d_i^2 = 4$. $n = 6$.
+$$ r_s = 1 - \frac{6 \times 4}{6(6^2 - 1)} = 1 - \frac{24}{6 \times 35} = 1 - \frac{24}{210} \approx 1 - 0.114 = 0.886 $$
+Since $r_s &gt; 0$, the scales show a <strong>Strong Positive Correlation</strong>.</li>
+</ul>
+<p><strong>5. Comparing Measure of Dispersion:</strong>
+Standard Deviation calculates squared distances from the mean for <em>all</em> points, meaning extreme outliers disproportionately inflate the result. Quartile Deviation solely measures the spread of the middle 50% of the data ($Q_3$ to $Q_1$), effectively ignoring extreme high or low tails.
+If a dataset has heavy outliers, <strong>Quartile Deviation</strong> is generally preferred as it is a more robust indicator of centralized spread.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-7-financial-mathematics"><a class="header" href="#unit-7-financial-mathematics">Unit 7: Financial Mathematics</a></h1>
+<p>Financial Mathematics applies quantitative methods to financial problems. It is essential for banking, investing, taxation, and economic modeling.</p>
+<h2 id="1-interest-and-interest-rates"><a class="header" href="#1-interest-and-interest-rates">1. Interest and Interest Rates</a></h2>
+<p>Interest is the cost of borrowing money or the return on an investment.</p>
+<h3 id="simple-interest-si"><a class="header" href="#simple-interest-si">Simple Interest (SI)</a></h3>
+<p>Calculated only on the principal amount.
+$$ \text{SI} = \frac{P \times R \times T}{100} $$
+Where $P$ = Principal, $R$ = Rate of Interest per annum, $T$ = Time in years.</p>
+<h3 id="compound-interest-ci"><a class="header" href="#compound-interest-ci">Compound Interest (CI)</a></h3>
+<p>Calculated on the principal and the accumulated interest of previous periods.
+$$ A = P \left(1 + \frac{r}{100}\right)^n $$
+$$ \text{CI} = A - P $$
+Where $A$ = Amount, $r$ = Rate per compounding period, $n$ = Total number of periods.</p>
+<h3 id="effective-rate-of-interest"><a class="header" href="#effective-rate-of-interest">Effective Rate of Interest</a></h3>
+<p>The true annual interest rate considering the effect of compounding.
+$$ E = \left(1 + \frac{i}{n}\right)^n - 1 $$
+Where $i$ = Nominal interest rate, $n$ = Number of compounding periods per year.</p>
+<hr>
+<h2 id="2-annuities"><a class="header" href="#2-annuities">2. Annuities</a></h2>
+<p>An <strong>annuity</strong> is a series of equal payments made at regular intervals.</p>
+<h3 id="regular-annuity"><a class="header" href="#regular-annuity">Regular Annuity</a></h3>
+<p>Payments are made at the <strong>end</strong> of each period.
+Future Value of a Regular Annuity ($FV$):
+$$ FV = C \times \left[ \frac{(1 + i)^n - 1}{i} \right] $$
+Where $C$ = Cash flow per period, $i$ = Interest rate per period, $n$ = Number of periods.</p>
+<p><em>(Note: Simple applications up to 3 periods only are expected).</em></p>
+<hr>
+<h2 id="3-taxation"><a class="header" href="#3-taxation">3. Taxation</a></h2>
+<p>Taxes are mandatory contributions levied on individuals or corporations by the government.</p>
+<h3 id="goods-and-services-tax-gst"><a class="header" href="#goods-and-services-tax-gst">Goods and Services Tax (GST)</a></h3>
+<p>An indirect tax used in India on the supply of goods and services.</p>
+<ul>
+<li><strong>CGST</strong>: Central GST (varies by state/center split).</li>
+<li><strong>SGST</strong>: State GST.</li>
+<li><strong>IGST</strong>: Integrated GST (inter-state transactions).</li>
+</ul>
+<p>$$ \text{Tax Amount} = \text{Base Price} \times \left( \frac{\text{Rate}}{100} \right) $$</p>
+<h3 id="income-tax"><a class="header" href="#income-tax">Income Tax</a></h3>
+<p>Computed by adding income from various sources (salary, house property, business, capital gain, etc.) and deducting allowances defined under the Income Tax Act (PF, PPF, LIC, Housing loan, etc.).
+$$ \text{Taxable Income} = \text{Gross Income} - \text{Deductions} $$
+Income tax is calculated based on predefined tax slabs.</p>
+<hr>
+<h2 id="4-utility-bills"><a class="header" href="#4-utility-bills">4. Utility Bills</a></h2>
+<p>The calculation of utility bills involves evaluating fixed charges and variable usage.</p>
+<h3 id="electricity-and-water-bills"><a class="header" href="#electricity-and-water-bills">Electricity and Water Bills</a></h3>
+<ul>
+<li><strong>Tariff Rates</strong>: Depending on user brackets (residential, commercial).</li>
+<li><strong>Fixed Charge</strong>: A mandatory stationary fee regardless of usage.</li>
+<li><strong>Service Charge/Surcharge</strong>: Extra percentage added to the main cost or specific service fees.</li>
+</ul>
+<p>$$ \text{Total Bill} = \text{Fixed Charge} + (\text{Units Consumed} \times \text{Rate per Unit}) + \text{Taxes/Surcharges} $$</p>
+<hr>
+<h2 id="competency-based-questions-6"><a class="header" href="#competency-based-questions-6">Competency-Based Questions</a></h2>
+<ol>
+<li>
+<p><strong>(Simple vs. Compound Trade-off):</strong> A business wants to borrow ₹500,000 for 3 years. Bank A offers 6.5% Simple Interest. Bank B offers 6.2% Compound Interest compounded annually. By calculating the total interest for both loans, which bank offers the lower cost of borrowing?</p>
+</li>
+<li>
+<p><strong>(Annuity Application):</strong> A software engineer decides to invest ₹10,000 at the end of every year into a tech fund that guarantees a return of 5% compounded annually. Using the Regular Annuity formula, calculate the accumulated future value of this investment at the end of exactly 3 years.</p>
+</li>
+<li>
+<p><strong>(GST Computation in E-commerce):</strong> A customer buys an electronic CPU online. The base price is ₹15,000. If the GST on electronics is divided equally into 9% CGST and 9% SGST, calculate the total amount the customer pays during checkout.</p>
+</li>
+<li>
+<p><strong>(Income Tax Deduction Logic):</strong> An individual has a gross yearly income of ₹1,200,000. They have total deductions of ₹250,000 under sections PF, LIC, and Medical. If the tax slab imposes a 10% rate on taxable income above ₹500,000 (and 0% below), calculate their final income tax liability.</p>
+</li>
+<li>
+<p><strong>(Tariff and Utility Modeling):</strong> Model an electricity bill using an algebraic expression where the fixed meter rent is $F$, the first 100 units cost $R_1$ per unit, and units above 100 cost $R_2$ per unit. Write the unified total cost function $C(x)$ for total units consumed $x$, assuming $x &gt; 100$. Evaluate $C(250)$ if $F = ₹50, R_1 = ₹3, R_2 = ₹5$.</p>
+</li>
+</ol>
+<br>
+<h3 id="answers-to-competency-based-questions-6"><a class="header" href="#answers-to-competency-based-questions-6">Answers to Competency-Based Questions</a></h3>
+<p><strong>1. Simple vs. Compound Trade-off:</strong>
+<strong>Bank A (Simple Interest):</strong>
+$$ \text{SI} = \frac{500,000 \times 6.5 \times 3}{100} = ₹97,500 $$
+<strong>Bank B (Compound Interest):</strong>
+$$ A = 500,000 \left(1 + \frac{6.2}{100}\right)^3 = 500,000 (1.062)^3 \approx 500,000(1.19777) = ₹598,885.16 $$
+$$ \text{CI} = 598,885.16 - 500,000 = ₹98,885.16 $$
+Since $₹97,500 &lt; ₹98,885.16$, <strong>Bank A (Simple Interest)</strong> offers the lower cost of borrowing.</p>
+<p><strong>2. Annuity Application:</strong>
+Using the Future Value of a Regular Annuity formula:
+$$ FV = 10,000 \times \left[ \frac{(1 + 0.05)^3 - 1}{0.05} \right] $$
+$$ FV = 10,000 \times \left[ \frac{(1.157625) - 1}{0.05} \right] = 10,000 \times \left[ \frac{0.157625}{0.05} \right] = 10,000 \times 3.1525 $$
+$$ FV = ₹31,525 $$</p>
+<p><strong>3. GST Computation in E-commerce:</strong>
+Base Price = ₹15,000.
+$$ \text{CGST} (9%) = 15,000 \times 0.09 = ₹1,350 $$
+$$ \text{SGST} (9%) = 15,000 \times 0.09 = ₹1,350 $$
+$$ \text{Total Bill} = 15,000 + 1,350 + 1,350 = ₹17,700 $$</p>
+<p><strong>4. Income Tax Deduction Logic:</strong>
+$$ \text{Gross Income} = ₹1,200,000 $$
+$$ \text{Taxable Income} = \text{Gross} - \text{Deductions} = 1,200,000 - 250,000 = ₹950,000 $$
+Tax is applied only on the amount above ₹500,000:
+$$ \text{Amount subject to Tax} = 950,000 - 500,000 = ₹450,000 $$
+$$ \text{Final Tax Liability} = 10% \text{ of } 450,000 = ₹45,000 $$</p>
+<p><strong>5. Tariff and Utility Modeling:</strong>
+The cost function $C(x)$ for an electricity bill when consumption $x &gt; 100$ is modeled algebraically as:
+$$ C(x) = F + 100 R_1 + (x - 100) R_2 $$
+Evaluating $C(250)$ given $F = 50, R_1 = 3, R_2 = 5$:
+$$ C(250) = 50 + 100(3) + (250 - 100)(5) $$
+$$ C(250) = 50 + 300 + 150(5) = 350 + 750 = ₹1,100 $$</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="unit-8-coordinate-geometry"><a class="header" href="#unit-8-coordinate-geometry">Unit 8: Coordinate Geometry</a></h1>
+<p>Coordinate geometry (or analytic geometry) is defined as the study of geometry using coordinate systems. It bridges algebra and geometry, allowing geometric shapes to be defined by algebraic equations.</p>
+<h2 id="1-straight-line"><a class="header" href="#1-straight-line">1. Straight Line</a></h2>
+<p>A straight line is a set of points extending infinitely in opposite directions.</p>
+<h3 id="gradient-slope-of-a-line"><a class="header" href="#gradient-slope-of-a-line">Gradient (Slope) of a Line</a></h3>
+<p>The gradient $m$ of a line passing through $(x_1, y_1)$ and $(x_2, y_2)$ is:
+$$ m = \frac{y_2 - y_1}{x_2 - x_1} \quad (x_1 \neq x_2) $$</p>
+<h3 id="equations-of-a-line"><a class="header" href="#equations-of-a-line">Equations of a Line</a></h3>
+<ol>
+<li><strong>Parallel to Axes</strong>: $x = a$ (parallel to y-axis), $y = b$ (parallel to x-axis)</li>
+<li><strong>Point-Slope Form</strong>: $y - y_1 = m(x - x_1)$</li>
+<li><strong>Two-Point Form</strong>: $y - y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1)$</li>
+<li><strong>Slope-Intercept Form</strong>: $y = mx + c$</li>
+<li><strong>Intercept Form</strong>: $\frac{x}{a} + \frac{y}{b} = 1$</li>
+</ol>
+<h3 id="distance-from-a-point-to-a-line"><a class="header" href="#distance-from-a-point-to-a-line">Distance from a Point to a Line</a></h3>
+<p>The perpendicular distance from $(x_1, y_1)$ to the line $ax + by + c = 0$ is:
+$$ d = \frac{|a x_1 + b y_1 + c|}{\sqrt{a^2 + b^2}} $$</p>
+<h3 id="distance-between-parallel-lines"><a class="header" href="#distance-between-parallel-lines">Distance between Parallel Lines</a></h3>
+<p>For $ax + by + c_1 = 0$ and $ax + by + c_2 = 0$:
+$$ d = \frac{|c_1 - c_2|}{\sqrt{a^2 + b^2}} $$</p>
+<hr>
+<h2 id="2-circle"><a class="header" href="#2-circle">2. Circle</a></h2>
+<p>A circle is the locus of a point moving in a plane such that its distance from a fixed point (center) is constant.</p>
+<h3 id="equations-of-a-circle"><a class="header" href="#equations-of-a-circle">Equations of a Circle</a></h3>
+<ol>
+<li><strong>Standard Form</strong> (Center at origin): $x^2 + y^2 = r^2$</li>
+<li><strong>Central Form</strong> (Center at $(h, k)$): $(x - h)^2 + (y - k)^2 = r^2$</li>
+<li><strong>Diameter Form</strong>: If $(x_1,y_1)$ and $(x_2,y_2)$ are endpoints of a diameter:
+$$ (x - x_1)(x - x_2) + (y - y_1)(y - y_2) = 0 $$</li>
+<li><strong>General Form</strong>: $x^2 + y^2 + 2gx + 2fy + c = 0$
+<ul>
+<li>Center: $(-g, -f)$</li>
+<li>Radius: $r = \sqrt{g^2 + f^2 - c}$</li>
+</ul>
+</li>
+</ol>
+<div style="text-align: center;">
+<svg width="250" height="250" viewbox="0 0 250 250">
+  <!-- Grid/Axes -->
+  <line x1="25" y1="125" x2="225" y2="125" stroke="gray" stroke-width="1" />
+  <line x1="125" y1="25" x2="125" y2="225" stroke="gray" stroke-width="1" />
+  <!-- Circle -->
+  <circle cx="125" cy="125" r="70" fill="none" stroke="blue" stroke-width="2" />
+  <circle cx="125" cy="125" r="3" fill="red" />
+  <text x="135" y="135" font-size="12">C(h, k)</text>
+  <line x1="125" y1="125" x2="175" y2="75" stroke="red" stroke-width="2" />
+  <text x="155" y="95" font-size="12" fill="red">r</text>
+</svg>
+<p><em>Fig 8.1: Circle in Central Form</em></p>
+
+</div>
+
+<hr>
+<h2 id="3-parabola"><a class="header" href="#3-parabola">3. Parabola</a></h2>
+<p>A parabola is the locus of a point whose distance from a fixed point (focus) is equal to its perpendicular distance from a fixed straight line (directrix).</p>
+<h3 id="standard-equations-of-a-parabola"><a class="header" href="#standard-equations-of-a-parabola">Standard Equations of a Parabola</a></h3>
+<ol>
+<li><strong>Rightward Opening</strong>: $y^2 = 4ax$
+<ul>
+<li>Focus: $(a, 0)$</li>
+<li>Directrix: $x = -a$</li>
+<li>Latus Rectum Length: $4a$</li>
+</ul>
+</li>
+<li><strong>Upward Opening</strong>: $x^2 = 4ay$
+<ul>
+<li>Focus: $(0, a)$</li>
+<li>Directrix: $y = -a$</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="competency-based-questions-7"><a class="header" href="#competency-based-questions-7">Competency-Based Questions</a></h2>
+<ol>
+<li>
+<p><strong>(Application of Straight Lines):</strong> An architect is modeling a roof slope linearly using a CAD software. The highest point is at coordinate $(15, 20)$ and the gutter starts at $(5, 8)$. What is the gradient of the roof, and what is its linear equation in slope-intercept form?</p>
+</li>
+<li>
+<p><strong>(Distance Optimization):</strong> A new fiber-optic cable is plotted along the line $3x - 4y + 12 = 0$. A server room is located at map coordinates $(2, -1)$. What is the shortest (perpendicular) length of wire required to connect the server room to the fiber route?</p>
+</li>
+<li>
+<p><strong>(Circle Area Analysis):</strong> A cell tower’s coverage area on a digital map is given by the equation $x^2 + y^2 - 6x + 8y - 75 = 0$. Determine the coordinates of the cell tower (the center) and the coverage radius.</p>
+</li>
+<li>
+<p><strong>(Parabolic Antennas):</strong> Satellite TV dishes are parabolic. If the cross-section of a dish is modeled by the equation $y^2 = 32x$ (measurements in cm), where should the receiver (focus) be placed relative to the vertex to capture the strongest signal?</p>
+</li>
+<li>
+<p><strong>(Economics Demand Curve):</strong> A linear demand curve relates price ($y$) and quantity demanded ($x$). At a price of ₹50, 100 units are demanded. At a price of ₹40, 120 units are demanded. Use the Two-Point Form of a straight line to find the demand equation, and predict the demand at a price of ₹25.</p>
+</li>
+</ol>
+<br>
+<h3 id="answers-to-competency-based-questions-7"><a class="header" href="#answers-to-competency-based-questions-7">Answers to Competency-Based Questions</a></h3>
+<p><strong>1. Application of Straight Lines:</strong>
+Gradient $m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{20 - 8}{15 - 5} = \frac{12}{10} = 1.2$.
+Using point-slope form with point $(5, 8)$:
+$$ y - 8 = 1.2(x - 5) \implies y = 1.2x - 6 + 8 $$
+<strong>Linear Equation</strong>: $y = 1.2x + 2$.</p>
+<p><strong>2. Distance Optimization:</strong>
+Distance $d$ from point $(2, -1)$ to line $3x - 4y + 12 = 0$:
+$$ d = \frac{|3(2) - 4(-1) + 12|}{\sqrt{3^2 + (-4)^2}} = \frac{|6 + 4 + 12|}{\sqrt{9 + 16}} = \frac{22}{\sqrt{25}} = \frac{22}{5} $$
+The shortest length of wire is <strong>$4.4$ units</strong>.</p>
+<p><strong>3. Circle Area Analysis:</strong>
+Comparing $x^2 + y^2 - 6x + 8y - 75 = 0$ with the general form $x^2 + y^2 + 2gx + 2fy + c = 0$:</p>
+<ul>
+<li>$2g = -6 \implies g = -3$</li>
+<li>$2f = 8 \implies f = 4$</li>
+<li>$c = -75$
+<strong>Center of Tower</strong> $(-g, -f) = (3, -4)$.
+<strong>Radius</strong> $r = \sqrt{g^2 + f^2 - c} = \sqrt{(-3)^2 + 4^2 - (-75)} = \sqrt{9 + 16 + 75} = \sqrt{100} = \textbf{10 units}$.</li>
+</ul>
+<p><strong>4. Parabolic Antennas:</strong>
+The equation is $y^2 = 32x$. This maps to the right-opening parabola standard form $y^2 = 4ax$.
+$$ 4a = 32 \implies a = 8 $$
+The receiver (focus) must be placed at $(a, 0)$, which is <strong>$8$ cm</strong> directly in front of the vertex of the dish.</p>
+<p><strong>5. Economics Demand Curve:</strong>
+Let $(x, y)$ be $(\text{demand}, \text{price})$. Points are $(100, 50)$ and $(120, 40)$.
+Two-Point Form:
+$$ y - 50 = \frac{40 - 50}{120 - 100}(x - 100) $$
+$$ y - 50 = \frac{-10}{20}(x - 100) = -0.5(x - 100) $$
+<strong>Demand Equation</strong>: $y = -0.5x + 100$.
+Rearranged for Quantity Given Price ($x$):
+$$ 0.5x = 100 - y \implies x = 200 - 2y $$
+At a price of $y = ₹25$:
+$$ x = 200 - 2(25) = 200 - 50 = \textbf{150 units demanded} $$</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-09f2665d.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-c22b7243.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
